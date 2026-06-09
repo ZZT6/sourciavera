@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SourciaVera — Factory Verification & Sourcing from China</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='white'/><text x='50%' y='50%' dominant-baseline='central' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='13' fill='black'>SV</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic;flex-shrink:0}
+.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none}
+.nav-links a:hover{color:var(--yellow)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.lang-switcher{display:flex;align-items:center;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:4px;overflow:hidden}
+.lang-btn{background:transparent;border:none;color:rgba(255,255,255,0.5);padding:0.35rem 0.75rem;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;cursor:pointer;transition:all 0.2s}
+.lang-btn.active{background:var(--yellow);color:var(--navy)}
+.lang-btn:hover:not(.active){color:white}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+.hero{background:var(--navy);padding:5rem 3rem 4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
+.hero h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;font-weight:700;color:white;margin-bottom:0.8rem}
+.hero h1 span{color:var(--yellow)}
+.hero p{color:rgba(255,255,255,0.65);font-size:1rem;max-width:480px;margin-bottom:2rem;line-height:1.8}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-main{background:var(--coral);color:white;padding:0.9rem 1.8rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer}
+.btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:white;padding:0.9rem 1.8rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;background:transparent}
+.hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem}
+.hero-card-tag{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--yellow);margin-bottom:1rem}
+.hero-card h3{font-size:1.2rem;font-weight:600;color:white;margin-bottom:0.75rem}
+.hero-card p{color:rgba(255,255,255,0.6);font-size:0.88rem;line-height:1.7}
+.hero-card-badge{display:inline-block;background:var(--yellow);color:var(--navy);font-size:0.72rem;font-weight:600;padding:0.25rem 0.7rem;margin-top:1rem;text-transform:uppercase;letter-spacing:0.08em}
+.stats{background:var(--yellow);padding:1.8rem 3rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stat{text-align:center}
+.stat-num{font-size:1.8rem;font-weight:700;color:var(--navy);display:block}
+.stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);opacity:0.7}
+.services{padding:5rem 3rem;background:var(--white)}
+.section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
+.section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:3rem;line-height:1.2}
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.service-card{border:1.5px solid var(--border);padding:2.5rem;position:relative}
+.service-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--coral)}
+.service-card:nth-child(2)::before{background:var(--teal)}
+.service-num{font-size:2.5rem;color:var(--border);font-weight:700;position:absolute;top:1rem;right:1.5rem;line-height:1}
+.service-card h3{font-size:1.3rem;font-weight:700;margin-bottom:0.2rem;color:var(--navy)}
+.service-card .service-sub{font-size:0.8rem;color:var(--coral);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;font-weight:500}
+.service-card:nth-child(2) .service-sub{color:var(--teal)}
+.service-card p{color:var(--muted);font-size:0.9rem;line-height:1.7;margin-bottom:1rem}
+.service-steps{display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem}
+.service-step{display:flex;gap:0.75rem;align-items:flex-start}
+.step-dot{width:24px;height:24px;background:var(--coral);color:white;font-size:0.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:0.1rem}
+.service-card:nth-child(2) .step-dot{background:var(--teal)}
+.step-text{font-size:0.88rem;color:var(--navy);line-height:1.5}
+.step-text strong{display:block;font-weight:500;margin-bottom:0.1rem}
+.step-text span{color:var(--muted);font-size:0.82rem;display:block}
+.service-highlight{background:var(--light);border-left:3px solid var(--coral);padding:0.75rem 1rem;font-size:0.85rem;color:var(--navy);font-style:italic;margin-top:0.5rem}
+.service-card:nth-child(2) .service-highlight{border-color:var(--teal)}
+.why{background:var(--navy);padding:5rem 3rem}
+.why .section-tag{color:var(--yellow)}
+.why .section-title{color:white}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.why-card{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.1);padding:2rem}
+.why-icon{font-size:1.6rem;margin-bottom:1rem}
+.why-card h3{font-size:1rem;font-weight:500;color:white;margin-bottom:0.3rem}
+.why-card p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7}
+.how{background:var(--light);padding:5rem 3rem}
+.how-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem}
+.how-step{padding:2rem 1.5rem;border-right:1px solid var(--border)}
+.how-step:last-child{border-right:none}
+.how-num{width:44px;height:44px;background:var(--coral);color:white;font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.how-step:nth-child(2) .how-num{background:var(--navy)}
+.how-step:nth-child(3) .how-num{background:var(--teal)}
+.how-step h3{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem}
+.how-step p{color:var(--muted);font-size:0.85rem;line-height:1.6}
+.contact{padding:5rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-left>p{color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:2rem}
+.contact-details{display:flex;flex-direction:column;gap:1rem}
+.contact-item{display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--navy)}
+.contact-dot{width:8px;height:8px;background:var(--coral);flex-shrink:0}
+.contact-right form{display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:0.4rem}
+.form-group label{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.form-group input,.form-group textarea,.form-group select{background:var(--light);border:1.5px solid var(--border);color:var(--navy);padding:0.75rem 1rem;font-size:0.9rem;outline:none;width:100%;font-family:inherit}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--coral)}
+.form-group textarea{resize:vertical;min-height:110px}
+.btn-submit{background:var(--coral);color:white;padding:1rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;width:100%;font-family:inherit}
+.cta-banner{background:var(--coral);padding:4rem 3rem;text-align:center}
+.cta-banner h2{font-size:2rem;color:white;font-weight:700;margin-bottom:0.6rem}
+.cta-banner p{color:rgba(255,255,255,0.85);margin-bottom:2rem}
+.btn-white{background:white;color:var(--coral);padding:1rem 2.5rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border:none;cursor:pointer;font-family:inherit}
+.wa-float{position:fixed;bottom:2rem;right:2rem;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:100;text-decoration:none}
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+@media(max-width:768px){
+nav{padding:1rem 1.5rem}.nav-links{display:none}
+.hero{grid-template-columns:1fr;padding:3rem 1.5rem}
+.hero-card{display:none}
+.stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
+.services,.why,.how,.contact{padding:3rem 1.5rem}
+.services-grid,.why-grid{grid-template-columns:1fr}
+.how-flow{grid-template-columns:1fr 1fr}
+.how-step{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem}
+.contact{grid-template-columns:1fr;gap:2rem}
+.form-row{grid-template-columns:1fr}
+.cta-banner{padding:3rem 1.5rem}
+footer{flex-direction:column;gap:0.5rem;text-align:center;padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">SourciaVera</div>
+  <div class="nav-links">
+    <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+    <a href="#process" data-en="Process" data-es="Proceso">Process</a>
+    <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('es')">ES</button>
+    </div>
+    <a href="#contact" class="nav-cta" data-en="Free Consult" data-es="Consulta gratis">Free Consult</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag" data-en="📍 Guangzhou, China — Worldwide Buyers" data-es="📍 Guangzhou, China — Compradores Globales">📍 Guangzhou, China — Worldwide Buyers</div>
+    <h1 data-en='The <span>truth</span> about your Alibaba supplier,<br>before you send your money.' data-es='La <span>verdad</span> sobre tu proveedor de Alibaba,<br>antes de enviar tu dinero.'>The <span>truth</span> about your Alibaba supplier,<br>before you send your money.</h1>
+    <p data-en="We visit factories in person, on camera, and negotiate directly in Chinese. You get real information before committing. Based in Guangzhou." data-es="Visitamos fábricas en persona, con cámara, y negociamos directamente en chino. Información real antes de comprometerte. Con base en Guangzhou.">We visit factories in person, on camera, and negotiate directly in Chinese. You get real information before committing. Based in Guangzhou.</p>
+    <div class="hero-btns">
+      <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Verify My Supplier" data-es="Verificar mi proveedor">Verify My Supplier</button>
+      <button class="btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" data-en="See Services" data-es="Ver servicios">See Services</button>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-card-tag" data-en="Did you know?" data-es="¿Sabías que...?">Did you know?</div>
+    <h3 data-en='Many "manufacturers" on Alibaba are just middlemen' data-es='Muchos "fabricantes" en Alibaba son solo intermediarios'>Many "manufacturers" on Alibaba are just middlemen</h3>
+    <p data-en="They charge factory prices but buy from someone else. We visit in person — as local Chinese buyers — and find the truth before you send a single dollar." data-es="Te cobran precio de fábrica pero compran en otro lado. Nosotros vamos en persona, como compradores locales chinos, y descubrimos la verdad antes de que envíes un solo dólar.">They charge factory prices but buy from someone else. We visit in person — as local Chinese buyers — and find the truth before you send a single dollar.</p>
+    <div class="hero-card-badge" data-en="No deal = No charge" data-es="Sin trato = Sin cobro">No deal = No charge</div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat"><span class="stat-num">48h</span><span class="stat-label" data-en="Report in 48 hours" data-es="Informe en 48 horas">Report in 48 hours</span></div>
+  <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-en="Raw video footage" data-es="Video sin editar">Raw video footage</span></div>
+  <div class="stat"><span class="stat-num">EN/ES</span><span class="stat-label" data-en="English & Spanish" data-es="Inglés y Español">English & Spanish</span></div>
+  <div class="stat"><span class="stat-num">0%</span><span class="stat-label" data-en="Factory commission" data-es="Comisión de fábrica">Factory commission</span></div>
+</div>
+
+<section class="services" id="services">
+  <div class="section-tag" data-en="Our Services" data-es="Nuestros Servicios">Our Services</div>
+  <div class="section-title" data-en="Two services. One mission:<br>don't get scammed." data-es="Dos servicios. Una misión:<br>que no te estafen.">Two services. One mission:<br>don't get scammed.</div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <h3 data-en="Factory Verification" data-es="Verificación de Fábrica">Factory Verification</h3>
+      <div class="service-sub" data-en="On-site investigation" data-es="Investigación en persona">On-site investigation</div>
+      <p data-en="We show up as local Chinese buyers. The factory doesn't know we're investigating for you. That's how we get the real story." data-es="Nos presentamos como compradores locales chinos. La fábrica no sabe que investigamos para ti. Así conseguimos la información real.">We show up as local Chinese buyers. The factory doesn't know we're investigating for you. That's how we get the real story.</p>
+      <div class="service-steps">
+        <div class="service-step">
+          <div class="step-dot">1</div>
+          <div class="step-text">
+            <strong data-en="Undercover visit as local buyer" data-es="Visita encubierta como comprador local">Undercover visit as local buyer</strong>
+            <span data-en="Access real info they'd never share with a foreign buyer" data-es="Acceso a información real que nunca compartirían con un comprador extranjero">Access real info they'd never share with a foreign buyer</span>
+          </div>
+        </div>
+        <div class="service-step">
+          <div class="step-dot">2</div>
+          <div class="step-text">
+            <strong data-en="Real factory-gate price check" data-es="Verificación del precio real de fábrica">Real factory-gate price check</strong>
+            <span data-en="We quote as if we're buying ourselves — real numbers, no markup" data-es="Cotizamos como si compráramos nosotros — precios reales, sin sobrecargo">We quote as if we're buying ourselves — real numbers, no markup</span>
+          </div>
+        </div>
+        <div class="service-step">
+          <div class="step-dot">3</div>
+          <div class="step-text">
+            <strong data-en="First-person video walkthrough" data-es="Recorrido en video en primera persona">First-person video walkthrough</strong>
+            <span data-en="Production line, warehouse, equipment, staff — all on camera" data-es="Línea de producción, almacén, equipos, personal — todo en cámara">Production line, warehouse, equipment, staff — all on camera</span>
+          </div>
+        </div>
+        <div class="service-step">
+          <div class="step-dot">4</div>
+          <div class="step-text">
+            <strong data-en="Full report in English & Spanish" data-es="Informe completo en inglés y español">Full report in English & Spanish</strong>
+            <span data-en="Photos, unedited video, honest factory assessment" data-es="Fotos, video sin editar, evaluación honesta de la fábrica">Photos, unedited video, honest factory assessment</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-highlight" data-en='"Real factory or middleman? We tell you before you send a single dollar."' data-es='"¿Fábrica real o intermediario? Te lo decimos antes de que envíes un solo dólar."'>"Real factory or middleman? We tell you before you send a single dollar."</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <h3 data-en="Negotiation & Procurement" data-es="Negociación y Compra">Negotiation & Procurement</h3>
+      <div class="service-sub" data-en="Your buying team in China" data-es="Tu equipo de compras en China">Your buying team in China</div>
+      <p data-en="Once the factory is verified, we handle the entire purchase process. You just approve and receive." data-es="Una vez verificada la fábrica, nos encargamos de todo el proceso de compra. Tú solo apruebas y recibes.">Once the factory is verified, we handle the entire purchase process. You just approve and receive.</p>
+      <div class="service-steps">
+        <div class="service-step">
+          <div class="step-dot">1</div>
+          <div class="step-text">
+            <strong data-en="Direct negotiation in Chinese" data-es="Negociación directa en chino">Direct negotiation in Chinese</strong>
+            <span data-en="Prices change when you don't depend on English — we negotiate like locals" data-es="Los precios cambian cuando no dependes del inglés — negociamos como locales">Prices change when you don't depend on English — we negotiate like locals</span>
+          </div>
+        </div>
+        <div class="service-step">
+          <div class="step-dot">2</div>
+          <div class="step-text">
+            <strong data-en="Dedicated sourcing specialist" data-es="Especialista de compras dedicado">Dedicated sourcing specialist</strong>
+            <span data-en="One expert manages your order, terms, timeline, and quality control" data-es="Un experto gestiona tu pedido, términos, plazos y control de calidad">One expert manages your order, terms, timeline, and quality control</span>
+          </div>
+        </div>
+        <div class="service-step">
+          <div class="step-dot">3</div>
+          <div class="step-text">
+            <strong data-en="Professional shipping quote" data-es="Cotización de envío profesional">Professional shipping quote</strong>
+            <span data-en="We contact freight agents and calculate full landed cost to your port" data-es="Contactamos agentes de carga y calculamos el costo total hasta tu puerto">We contact freight agents and calculate full landed cost to your port</span>
+          </div>
+        </div>
+        <div class="service-step">
+          <div class="step-dot">4</div>
+          <div class="step-text">
+            <strong data-en="All-in final report" data-es="Reporte final todo incluido">All-in final report</strong>
+            <span data-en="Product + freight + insurance. One number. No surprises." data-es="Producto + flete + seguro. Un solo número. Sin sorpresas.">Product + freight + insurance. One number. No surprises.</span>
+          </div>
+        </div>
+      </div>
+      <div class="service-highlight" data-en='"Product + freight + insurance. One number. You decide."' data-es='"Producto + flete + seguro. Un solo número. Tú decides."'>"Product + freight + insurance. One number. You decide."</div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="section-tag" data-en="Why Us" data-es="¿Por qué elegirnos?">Why Us</div>
+  <div class="section-title" data-en="We're on your side,<br>not the factory's." data-es="Estamos de tu lado,<br>no del lado de la fábrica.">We're on your side,<br>not the factory's.</div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">📍</div>
+      <h3 data-en="Based in Guangzhou" data-es="Con base en Guangzhou">Based in Guangzhou</h3>
+      <p data-en="At the heart of China's largest manufacturing hub. We can reach any factory in Guangdong province the same day." data-es="En el corazón del mayor hub manufacturero de China. Podemos llegar a cualquier fábrica en Guangdong el mismo día.">At the heart of China's largest manufacturing hub. We can reach any factory in Guangdong province the same day.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🗣️</div>
+      <h3 data-en="English & Spanish, native Chinese" data-es="Inglés, español y chino nativo">English & Spanish, native Chinese</h3>
+      <p data-en="We communicate with you in English or Spanish, and negotiate with factories in Chinese. No auto-translations, no misunderstandings." data-es="Nos comunicamos contigo en inglés o español, y negociamos con las fábricas en chino. Sin traducciones automáticas, sin malentendidos.">We communicate with you in English or Spanish, and negotiate with factories in Chinese. No auto-translations, no misunderstandings.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🤝</div>
+      <h3 data-en="No deal = No charge" data-es="Solo cobramos si hay trato">No deal = No charge</h3>
+      <p data-en="We receive zero commission from factories. Our income depends entirely on you closing a good deal." data-es="No recibimos comisión de las fábricas. Nuestros ingresos dependen exclusivamente de que tú cierres un buen trato.">We receive zero commission from factories. Our income depends entirely on you closing a good deal.</p>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="process">
+  <div class="section-tag" data-en="The Process" data-es="El Proceso">The Process</div>
+  <div class="section-title" data-en="Simple. Transparent. No risk." data-es="Simple. Transparente. Sin riesgos.">Simple. Transparent. No risk.</div>
+  <div class="how-flow">
+    <div class="how-step">
+      <div class="how-num">1</div>
+      <h3 data-en="Tell us what you need" data-es="Cuéntanos qué necesitas">Tell us what you need</h3>
+      <p data-en="Share the supplier link or factory name. Tell us the product and your budget." data-es="Comparte el enlace del proveedor o nombre de la fábrica. Cuéntanos el producto y tu presupuesto.">Share the supplier link or factory name. Tell us the product and your budget.</p>
+    </div>
+    <div class="how-step">
+      <div class="how-num">2</div>
+      <h3 data-en="We verify in person" data-es="Verificamos en persona">We verify in person</h3>
+      <p data-en="We go as local buyers, film everything first-person, and send you the report within 48 hours." data-es="Vamos como compradores locales, filmamos todo en primera persona y te enviamos el informe en 48 horas.">We go as local buyers, film everything first-person, and send you the report within 48 hours.</p>
+    </div>
+    <div class="how-step">
+      <div class="how-num">3</div>
+      <h3 data-en="We negotiate & quote" data-es="Negociamos y cotizamos">We negotiate & quote</h3>
+      <p data-en="Our specialist negotiates in Chinese, contacts the freight agent, and presents the final total price." data-es="Nuestro especialista negocia en chino, contacta al agente de carga y presenta el precio total final.">Our specialist negotiates in Chinese, contacts the freight agent, and presents the final total price.</p>
+    </div>
+    <div class="how-step">
+      <div class="how-num">4</div>
+      <h3 data-en="You decide with confidence" data-es="Tú decides con seguridad">You decide with confidence</h3>
+      <p data-en="With full information in hand, you approve or walk away. We only charge if you close the deal." data-es="Con información completa en mano, apruebas o te retiras. Solo cobramos si cierras el trato.">With full information in hand, you approve or walk away. We only charge if you close the deal.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-left">
+    <div class="section-tag" data-en="Contact" data-es="Contacto">Contact</div>
+    <div class="section-title" data-en="Let's talk about your supplier" data-es="Hablemos sobre tu proveedor">Let's talk about your supplier</div>
+    <p data-en="Tell us what you need. We reply within 24 hours, in English or Spanish, no commitment required." data-es="Cuéntanos qué necesitas. Te respondemos en menos de 24 horas, en español o inglés, sin compromiso.">Tell us what you need. We reply within 24 hours, in English or Spanish, no commitment required.</p>
+    <div class="contact-details">
+      <div class="contact-item"><div class="contact-dot"></div>zhangzhitianzui6b@gmail.com</div>
+      <div class="contact-item"><div class="contact-dot"></div>+86 136 8805 7230 (WhatsApp)</div>
+      <div class="contact-item"><div class="contact-dot"></div>Guangzhou, Guangdong, China</div>
+    </div>
+  </div>
+  <div class="contact-right">
+    <form id="contact-form" action="https://formspree.io/f/mjgjqpbg" method="POST">
+      <input type="hidden" name="_subject" value="New inquiry - SourciaVera">
+      <div class="form-row">
+        <div class="form-group">
+          <label data-en="Your name" data-es="Tu nombre">Your name</label>
+          <input type="text" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label data-en="Country" data-es="País">Country</label>
+          <select name="country">
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+            <option>Canada</option>
+            <option>Germany</option>
+            <option>France</option>
+            <option>Netherlands</option>
+            <option>Mexico</option>
+            <option>Colombia</option>
+            <option>Argentina</option>
+            <option>Chile</option>
+            <option>Peru</option>
+            <option>Brazil</option>
+            <option data-en="Other" data-es="Otro">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label data-en="WhatsApp or Email" data-es="WhatsApp o Email">WhatsApp or Email</label>
+        <input type="text" name="contact" placeholder="+1 555 123 4567 or email@domain.com" required>
+      </div>
+      <div class="form-group">
+        <label data-en="What do you need?" data-es="¿Qué necesitas?">What do you need?</label>
+        <select name="service">
+          <option value="" data-en="Select a service" data-es="Selecciona un servicio">Select a service</option>
+          <option data-en="Factory Verification" data-es="Verificación de fábrica">Factory Verification</option>
+          <option data-en="Negotiation & Procurement" data-es="Negociación y compra">Negotiation & Procurement</option>
+          <option data-en="Both services" data-es="Ambos servicios">Both services</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label data-en="Tell us more" data-es="Cuéntanos más">Tell us more</label>
+        <textarea name="message" id="textarea-msg" placeholder="What product are you sourcing? Do you have a supplier in mind? Alibaba link if available..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit" id="submit-btn" data-en="Send Inquiry →" data-es="Enviar consulta →">Send Inquiry →</button>
+      <div id="form-success" style="display:none;background:#00897B;color:white;padding:1rem;text-align:center;margin-top:0.5rem;font-size:0.9rem;" data-en="✓ Received — we'll contact you within 24h" data-es="✓ Recibido — te contactamos en menos de 24h">
+        ✓ Received — we'll contact you within 24h
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2 data-en="Is your supplier trustworthy?" data-es="¿Tu proveedor es de confianza?">Is your supplier trustworthy?</h2>
+  <p data-en="Find out before you send your money. First consultation is free." data-es="Descúbrelo antes de enviar tu dinero. Primera consulta sin costo.">Find out before you send your money. First consultation is free.</p>
+  <button class="btn-white" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Free Consult Now" data-es="Consulta gratis ahora">Free Consult Now</button>
+</div>
+
+<footer>
+  <div class="footer-logo">SourciaVera</div>
+  <div data-en="© 2025 SourciaVera · Guangzhou, China · All rights reserved" data-es="© 2025 SourciaVera · Guangzhou, China · Todos los derechos reservados">© 2025 SourciaVera · Guangzhou, China · All rights reserved</div>
+</footer>
+
+<a href="https://wa.me/8613688057230" class="wa-float" title="WhatsApp">💬</a>
+
+<script>
+let currentLang = localStorage.getItem('sv-lang') || 'en';
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('sv-lang', lang);
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll('[data-en][data-es]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (!val) return;
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = val;
+    } else if (el.tagName === 'OPTION') {
+      el.textContent = val;
+    } else {
+      el.innerHTML = val;
+    }
+  });
+
+  const textarea = document.getElementById('textarea-msg');
+  if (textarea) {
+    textarea.placeholder = lang === 'es'
+      ? '¿Qué producto buscas? ¿Tienes ya un proveedor en mente? Link de Alibaba si tienes...'
+      : 'What product are you sourcing? Do you have a supplier in mind? Alibaba link if available...';
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent === lang.toUpperCase());
+  });
+}
+
+setLang(currentLang);
+
+const form = document.getElementById('contact-form');
+const btn = document.getElementById('submit-btn');
+const success = document.getElementById('form-success');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  btn.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
+    if (res.ok) {
+      form.reset();
+      btn.style.display = 'none';
+      success.style.display = 'block';
+      success.textContent = currentLang === 'es'
+        ? '✓ Recibido — te contactamos en menos de 24h'
+        : '✓ Received — we\'ll contact you within 24h';
+    } else {
+      btn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    btn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
+    btn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
