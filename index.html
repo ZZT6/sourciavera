@@ -123,6 +123,25 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .faq-cta{color:var(--coral);font-weight:600;text-decoration:none;border-bottom:2px solid var(--coral);padding-bottom:2px}
 .faq-cta:hover{opacity:0.75}
 .lang-es{display:none}
+#tradeshows{padding:5rem 3rem;background:var(--light)}
+.tradeshows-inner{max-width:860px;margin:0 auto}
+.tradeshows-sub{color:var(--muted);max-width:600px;margin:0.75rem auto 0;font-size:0.95rem;line-height:1.8;text-align:center}
+.tradeshow-timeline{position:relative;padding-left:2rem;border-left:2px solid var(--coral);margin-top:3rem}
+.timeline-month{margin-bottom:2.5rem;position:relative}
+.timeline-month-label{font-size:0.82rem;font-weight:700;color:var(--coral);margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.1em;position:relative}
+.timeline-month-label::before{content:'';position:absolute;left:-2.5rem;top:50%;transform:translateY(-50%);width:10px;height:10px;border-radius:50%;background:var(--coral)}
+.timeline-shows{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.show-card{background:var(--white);border:1.5px solid var(--border);padding:1.5rem;transition:border-color 0.2s}
+.show-card:hover{border-color:var(--coral)}
+.show-card--highlight{border-left:4px solid var(--coral)}
+.show-card-dates{font-size:0.72rem;color:var(--coral);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.4rem}
+.show-card-name{font-size:0.88rem;font-weight:600;color:var(--navy);margin-bottom:0.4rem;line-height:1.4}
+.show-card-venue{font-size:0.8rem;color:var(--muted);margin-bottom:0.5rem}
+.show-card-desc{font-size:0.8rem;color:var(--muted);line-height:1.6;margin-bottom:0.75rem}
+.show-card-link{font-size:0.8rem;color:var(--coral);text-decoration:none;font-weight:600;border-bottom:1px solid var(--coral);padding-bottom:1px}
+.show-card-link:hover{opacity:0.7}
+.tradeshows-cta{text-align:center;margin-top:3rem;padding:2.5rem 2rem;background:var(--navy)}
+.tradeshows-cta p{font-size:0.95rem;color:rgba(255,255,255,0.7);margin-bottom:1.25rem}
 @media(max-width:768px){
 nav{padding:1rem 1.5rem}.nav-links{display:none}
 .hero{grid-template-columns:1fr;padding:3rem 1.5rem}
@@ -137,6 +156,10 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .cta-banner{padding:3rem 1.5rem}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
+.faq{padding:3rem 1.5rem}
+#tradeshows{padding:3rem 1.5rem}
+.tradeshow-timeline{padding-left:1.25rem}
+.timeline-shows{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -147,6 +170,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="nav-links">
     <a href="#services" data-en="Services" data-es="Servicios">Services</a>
     <a href="#process" data-en="Process" data-es="Proceso">Process</a>
+    <a href="#tradeshows" data-en="Trade Shows" data-es="Ferias">Trade Shows</a>
     <a href="#faq" data-en="FAQ" data-es="FAQ">FAQ</a>
     <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
   </div>
@@ -310,6 +334,21 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <div class="how-num">4</div>
       <h3 data-en="You decide with confidence" data-es="Tú decides con seguridad">You decide with confidence</h3>
       <p data-en="With full information in hand, you approve or walk away. We only charge if you close the deal." data-es="Con información completa en mano, apruebas o te retiras. Solo cobramos si cierras el trato.">With full information in hand, you approve or walk away. We only charge if you close the deal.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tradeshows">
+  <div class="tradeshows-inner">
+    <div class="section-tag" data-en="Guangdong Trade Shows" data-es="Ferias Comerciales">Guangdong Trade Shows</div>
+    <div class="section-title" data-en="Coming to Guangzhou?<br>We can be your ground team." data-es="¿Viene a Guangzhou?<br>Seremos su equipo local.">Coming to Guangzhou?<br>We can be your ground team.</div>
+    <p class="tradeshows-sub lang-en">Planning a sourcing trip to Guangzhou? We can accompany you to any of these exhibitions — factory visits, live translation, and negotiation support included.</p>
+    <p class="tradeshows-sub lang-es">¿Planea un viaje de sourcing a Guangzhou? Podemos acompañarle a cualquiera de estas ferias — visitas a fábricas, traducción en vivo y apoyo en negociaciones incluidos.</p>
+    <div class="tradeshow-timeline" id="tradeshow-timeline"></div>
+    <div class="tradeshows-cta">
+      <p class="lang-en">Coming to Guangzhou for a trade show? Let us turn every visit into real factory access and verified deals.</p>
+      <p class="lang-es">¿Viene a Guangzhou para una feria? Le ayudamos a convertir cada visita en acceso real a fábricas y tratos verificados.</p>
+      <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Arrange Factory Visits →" data-es="Organizar visitas a fábricas →">Arrange Factory Visits →</button>
     </div>
   </div>
 </section>
@@ -567,10 +606,109 @@ function setLang(lang) {
       el.style.display = 'none';
     }
   });
+  if (typeof renderTimeline === 'function') renderTimeline();
 }
 
 function toggleFaq(btn) {
   btn.closest('.faq-item').classList.toggle('open');
+}
+
+const TRADESHOW_DATA = {
+  last_updated: "2026-06-16",
+  exhibitions: [
+    {
+      name_en: "Canton Fair 139th — Phase 1 (Electronics, Auto Parts & Hardware)",
+      date_start: "2026-04-15", date_end: "2026-04-19", month: 4, year: 2026,
+      venue: "Canton Fair Complex, Guangzhou",
+      official_url: "https://www.cantonfair.org.cn",
+      description_en: "World's largest trade fair — Phase 1 covers electronics, vehicles, spare parts, LED lighting, hardware & machinery.",
+      description_es: "La feria más grande del mundo — Fase 1 cubre electrónica, vehículos, repuestos, iluminación LED y maquinaria.",
+      relevance: "high"
+    },
+    {
+      name_en: "Guangzhou International Lighting Exhibition (GILE 2026) — 31st Edition",
+      date_start: "2026-06-09", date_end: "2026-06-12", month: 6, year: 2026,
+      venue: "Canton Fair Complex, Guangzhou",
+      official_url: "https://guangzhou-international-lighting-exhibition.hk.messefrankfurt.com",
+      description_en: "Asia's #1 LED & lighting fair. 2,800+ exhibitors, 21 halls, 210,000 sqm. Essential for LED buyers.",
+      description_es: "La principal feria de LED e iluminación de Asia. 2.800+ expositores en 21 pabellones. Esencial para compradores de LED.",
+      relevance: "high"
+    },
+    {
+      name_en: "Canton Fair 140th — Phase 1 (Electronics, Hardware & Auto Parts)",
+      date_start: "2026-10-15", date_end: "2026-10-19", month: 10, year: 2026,
+      venue: "Canton Fair Complex, Guangzhou",
+      official_url: "https://www.cantonfair.org.cn",
+      description_en: "Autumn Canton Fair Phase 1: electronics, machinery, hardware, auto parts & tools. 50,000+ exporters.",
+      description_es: "Feria de Cantón de otoño Fase 1: electrónica, maquinaria, hardware y repuestos. Más de 50.000 exportadores.",
+      relevance: "high"
+    },
+    {
+      name_en: "AUTO TECH China 2026 — 13th Guangzhou Automotive Technology Expo",
+      date_start: "2026-11-27", date_end: "2026-11-30", month: 11, year: 2026,
+      venue: "Canton Fair Complex Area D, Guangzhou",
+      official_url: "https://www.china-autotech.com/english",
+      description_en: "Asia's leading auto-tech expo: smart cockpit, automotive electronics, autonomous driving & EV systems.",
+      description_es: "La principal expo de tecnología automotriz de Asia: cabina inteligente, electrónica y sistemas de VE.",
+      relevance: "high"
+    },
+    {
+      name_en: "China (Guangzhou) Automotive Components & Molding Expo 2026 — 13th Edition",
+      date_start: "2026-11-27", date_end: "2026-11-30", month: 11, year: 2026,
+      venue: "Canton Fair Complex Area D, Guangzhou",
+      official_url: "https://autoprocessingexpo.com/english",
+      description_en: "Automotive components, processing technology & molds. Co-located with AUTO TECH. Full supply chain.",
+      description_es: "Componentes automotrices, tecnología de procesamiento y moldes. Junto a AUTO TECH. Cadena completa.",
+      relevance: "high"
+    },
+    {
+      name_en: "Guangzhou International Auto Show 2026 (Auto Guangzhou) — 24th Edition",
+      date_start: "2026-11-27", date_end: "2026-12-06", month: 11, year: 2026,
+      venue: "Canton Fair Complex, Guangzhou",
+      official_url: "https://www.gaachina.com",
+      description_en: "China's largest annual auto show. Full automotive ecosystem, NEV & aftermarket supply chain.",
+      description_es: "El mayor salón del automóvil anual de China. Ecosistema automotriz completo, VE y cadena de suministro.",
+      relevance: "high"
+    }
+  ]
+};
+
+function renderTimeline() {
+  const container = document.getElementById('tradeshow-timeline');
+  if (!container) return;
+  const lang = currentLang;
+  const monthNames = {
+    en: ['','January','February','March','April','May','June','July','August','September','October','November','December'],
+    es: ['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
+  };
+  const byMonth = {};
+  TRADESHOW_DATA.exhibitions.forEach(show => {
+    const key = show.year + '-' + String(show.month).padStart(2,'0');
+    if (!byMonth[key]) byMonth[key] = [];
+    byMonth[key].push(show);
+  });
+  let html = '';
+  Object.keys(byMonth).sort().forEach(function(monthKey) {
+    const parts = monthKey.split('-');
+    const year = parts[0], month = parseInt(parts[1]);
+    const shows = byMonth[monthKey];
+    html += '<div class="timeline-month"><div class="timeline-month-label">' + monthNames[lang][month] + ' ' + year + '</div><div class="timeline-shows">';
+    shows.forEach(function(show) {
+      const desc = lang === 'es' ? show.description_es : show.description_en;
+      const dateStr = show.date_start.slice(5).replace('-','/') + ' — ' + show.date_end.slice(5).replace('-','/');
+      const linkLabel = lang === 'es' ? 'Sitio oficial →' : 'Official site →';
+      const highlight = show.relevance === 'high' ? ' show-card--highlight' : '';
+      html += '<div class="show-card' + highlight + '">';
+      html += '<div class="show-card-dates">' + dateStr + '</div>';
+      html += '<div class="show-card-name">' + show.name_en + '</div>';
+      html += '<div class="show-card-venue">📍 ' + show.venue + '</div>';
+      html += '<div class="show-card-desc">' + desc + '</div>';
+      if (show.official_url) html += '<a href="' + show.official_url + '" target="_blank" rel="noopener" class="show-card-link">' + linkLabel + '</a>';
+      html += '</div>';
+    });
+    html += '</div></div>';
+  });
+  container.innerHTML = html;
 }
 
 setLang(currentLang);
