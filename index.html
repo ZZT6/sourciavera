@@ -221,6 +221,27 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .tradeshow-timeline{padding-left:1.25rem}
 .timeline-shows{grid-template-columns:1fr}
 }
+.faq-shows-section{padding:4rem 3rem;background:var(--white)}
+.faq-shows-wrapper{display:grid;grid-template-columns:35% 65%;gap:2.5rem;align-items:start}
+.col-title{font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.col-sub{font-size:0.82rem;color:var(--muted);line-height:1.6;margin-bottom:1.25rem}
+.col-shows{position:sticky;top:2rem}
+.timeline{border-left:2px solid var(--coral);padding-left:1rem;margin-bottom:1rem}
+.timeline-month{margin-bottom:1.25rem}
+.month-label{font-size:0.7rem;font-weight:700;color:var(--coral);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:0.6rem;position:relative}
+.month-label::before{content:'';position:absolute;left:-1.35rem;top:50%;transform:translateY(-50%);width:7px;height:7px;border-radius:50%;background:var(--coral)}
+.show-item{background:var(--light);border:1px solid var(--border);border-radius:4px;padding:0.65rem 0.85rem;margin-bottom:0.5rem}
+.show-item--high{border-left:3px solid var(--coral)}
+.show-dates{font-size:0.7rem;color:var(--muted);margin-bottom:0.2rem;font-weight:500}
+.show-name{font-size:0.8rem;font-weight:600;color:var(--navy);line-height:1.3;margin-bottom:0.15rem}
+.show-venue{font-size:0.72rem;color:var(--muted)}
+.shows-updated{font-size:0.7rem;color:var(--muted);margin-bottom:0.75rem;opacity:0.7}
+.shows-cta{display:inline-block;font-size:0.82rem;font-weight:600;color:var(--coral);text-decoration:none;border-bottom:1.5px solid var(--coral);padding-bottom:1px}
+.col-faq .faq-item{border-bottom:1px solid var(--border);padding:0.9rem 0}
+.col-faq .faq-item:last-child{border-bottom:none}
+.col-faq .faq-item h3{font-size:0.88rem;font-weight:600;color:var(--navy);margin-bottom:0.4rem;line-height:1.4}
+.col-faq .faq-item p{font-size:0.83rem;color:var(--muted);line-height:1.7}
+@media(max-width:768px){.faq-shows-section{padding:2.5rem 1.25rem}.faq-shows-wrapper{grid-template-columns:1fr;gap:2rem}.col-shows{position:static}}
 </style>
 </head>
 <body>
@@ -231,7 +252,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <a href="#services" data-en="Services" data-es="Servicios">Services</a>
     <a href="#process" data-en="Process" data-es="Proceso">Process</a>
     <a href="#tradeshows" data-en="Trade Shows" data-es="Ferias">Trade Shows</a>
-    <a href="#faq" data-en="FAQ" data-es="FAQ">FAQ</a>
+    <a href="#faq-shows" data-en="FAQ" data-es="FAQ">FAQ</a>
     <a href="blog/index.html" data-en="Blog" data-es="Blog">Blog</a>
     <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
   </div>
@@ -399,26 +420,47 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   </div>
 </section>
 
-<section id="tradeshows">
-  <div class="tradeshows-inner">
-    <div class="section-tag" data-en="Guangdong Trade Shows" data-es="Ferias Comerciales">Guangdong Trade Shows</div>
-    <div class="section-title" data-en="Coming to Guangzhou?<br>We can be your ground team." data-es="¿Viene a Guangzhou?<br>Seremos su equipo local.">Coming to Guangzhou?<br>We can be your ground team.</div>
-    <p class="tradeshows-sub lang-en">Planning a sourcing trip to Guangzhou? We can accompany you to any of these exhibitions — factory visits, live translation, and negotiation support included.</p>
-    <p class="tradeshows-sub lang-es">¿Planea un viaje de sourcing a Guangzhou? Podemos acompañarle a cualquiera de estas ferias — visitas a fábricas, traducción en vivo y apoyo en negociaciones incluidos.</p>
-    <div class="tradeshow-timeline" id="tradeshow-timeline"></div>
-    <div class="tradeshows-cta">
-      <p class="lang-en">Coming to Guangzhou for a trade show? Let us turn every visit into real factory access and verified deals.</p>
-      <p class="lang-es">¿Viene a Guangzhou para una feria? Le ayudamos a convertir cada visita en acceso real a fábricas y tratos verificados.</p>
-      <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Arrange Factory Visits →" data-es="Organizar visitas a fábricas →">Arrange Factory Visits →</button>
+<section class="faq-shows-section" id="faq-shows">
+  <div class="faq-shows-wrapper">
+    <div class="col-shows">
+      <div class="col-title">Guangdong Trade Shows</div>
+      <div class="col-sub">Coming to Guangzhou? We'll accompany you to any exhibition — factory visits &amp; negotiation support included.</div>
+      <div class="timeline" id="tradeshow-timeline">
+        <div class="timeline-month">
+          <div class="month-label">June 2026</div>
+          <div class="show-item show-item--high">
+            <div class="show-dates">06/10 — 06/13</div>
+            <div class="show-name">Guangzhou Int'l Auto Parts &amp; Accessories</div>
+            <div class="show-venue">📍 Pazhou Convention Center</div>
+          </div>
+          <div class="show-item">
+            <div class="show-dates">06/18 — 06/21</div>
+            <div class="show-name">Canton Fair — Electronics &amp; Hardware</div>
+            <div class="show-venue">📍 Guangzhou Pazhou</div>
+          </div>
+        </div>
+        <div class="timeline-month">
+          <div class="month-label">July 2026</div>
+          <div class="show-item show-item--high">
+            <div class="show-dates">07/05 — 07/08</div>
+            <div class="show-name">Guangdong LED Lighting Expo</div>
+            <div class="show-venue">📍 Shenzhen Convention Center</div>
+          </div>
+        </div>
+        <div class="timeline-month">
+          <div class="month-label">August 2026</div>
+          <div class="show-item">
+            <div class="show-dates">08/20 — 08/23</div>
+            <div class="show-name">Guangzhou Industrial Equipment Fair</div>
+            <div class="show-venue">📍 Guangzhou Pazhou</div>
+          </div>
+        </div>
+      </div>
+      <div class="shows-updated">Updated monthly by our team</div>
+      <a href="#contact" class="shows-cta">Plan your visit →</a>
     </div>
-  </div>
-</section>
-
-<section class="faq" id="faq">
-  <div class="faq-inner">
-    <div class="section-tag" data-en="FAQ" data-es="FAQ">FAQ</div>
-    <div class="section-title" data-en="Frequently Asked Questions" data-es="Preguntas Frecuentes">Frequently Asked Questions</div>
-    <div class="faq-list">
+    <div class="col-faq">
+      <div class="col-title">Frequently Asked Questions</div>
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
