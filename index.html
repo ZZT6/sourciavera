@@ -136,6 +136,16 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .why-icon{font-size:1.6rem;margin-bottom:1rem}
 .why-card h3{font-size:1rem;font-weight:500;color:white;margin-bottom:0.3rem}
 .why-card p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7}
+.who-section{background:var(--light);padding:5rem 3rem}
+.who-cards{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:3rem 0 2.5rem}
+.who-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.who-icon{font-size:2.5rem;margin-bottom:1rem}
+.who-card h3{font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.who-card p{color:var(--muted);font-size:0.9rem;line-height:1.8}
+.who-footer{text-align:center;border-top:1px solid var(--border);padding-top:2rem}
+.who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:640px;margin:0 auto 1.5rem}
+.who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
+.who-cta:hover{opacity:0.85}
 .how{background:var(--light);padding:5rem 3rem}
 .how-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem}
 .how-step{padding:2rem 1.5rem;border-right:1px solid var(--border)}
@@ -209,8 +219,8 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .hero{grid-template-columns:1fr;padding:3rem 1.5rem}
 .hero-card{display:none}
 .stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
-.services,.why,.how,.contact{padding:3rem 1.5rem}
-.services-grid,.why-grid{grid-template-columns:1fr}
+.services,.who-section,.why,.how,.contact{padding:3rem 1.5rem}
+.services-grid,.why-grid,.who-cards{grid-template-columns:1fr}
 .how-flow{grid-template-columns:1fr 1fr}
 .how-step{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem}
 .contact{grid-template-columns:1fr;gap:2rem}
@@ -372,6 +382,27 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       </div>
       <div class="service-highlight" data-en='"Product + freight + insurance. One number. You decide."' data-es='"Producto + flete + seguro. Un solo número. Tú decides."'>"Product + freight + insurance. One number. You decide."</div>
     </div>
+  </div>
+</section>
+
+<section class="who-section" id="who">
+  <div class="section-tag" data-en="Who We Work With" data-es="Con Quién Trabajamos">Who We Work With</div>
+  <div class="section-title" data-en="Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou." data-es="Ya sea que compres directamente o representes clientes —<br>somos tu equipo en terreno en Guangzhou.">Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou.</div>
+  <div class="who-cards">
+    <div class="who-card">
+      <div class="who-icon">🏭</div>
+      <h3 data-en="Direct Importers" data-es="Importadores Directos">Direct Importers</h3>
+      <p data-en="You found a supplier on Alibaba or through referrals. Before wiring money, you want someone local to verify the factory is real, capable, and trustworthy. We visit, audit, and report — so you source with confidence." data-es="Encontraste un proveedor en Alibaba o por referencias. Antes de transferir dinero, quieres que alguien local verifique que la fábrica es real, capaz y confiable. Visitamos, auditamos e informamos — para que importes con confianza.">You found a supplier on Alibaba or through referrals. Before wiring money, you want someone local to verify the factory is real, capable, and trustworthy. We visit, audit, and report — so you source with confidence.</p>
+    </div>
+    <div class="who-card">
+      <div class="who-icon">🤝</div>
+      <h3 data-en="Sourcing Agents & Trade Reps" data-es="Agentes de Compras y Representantes">Sourcing Agents & Trade Reps</h3>
+      <p data-en="You represent buyers overseas and need a reliable on-the-ground partner in China. We handle factory verification, quality inspection, and supplier coordination on your behalf — so you can focus on your clients." data-es="Representas compradores en el extranjero y necesitas un socio confiable en China. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores — para que te enfoques en tus clientes.">You represent buyers overseas and need a reliable on-the-ground partner in China. We handle factory verification, quality inspection, and supplier coordination on your behalf — so you can focus on your clients.</p>
+    </div>
+  </div>
+  <div class="who-footer">
+    <p data-en="Both paths lead to the same place: a verified supplier, a protected order, and a partner you can trust." data-es="Ambos caminos llevan al mismo lugar: un proveedor verificado, un pedido protegido y un socio en quien confiar.">Both paths lead to the same place: a verified supplier, a protected order, and a partner you can trust.</p>
+    <a href="#contact" class="who-cta" data-en="Get in Touch →" data-es="Contáctanos →">Get in Touch →</a>
   </div>
 </section>
 
