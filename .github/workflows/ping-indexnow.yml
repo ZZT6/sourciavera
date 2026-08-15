@@ -1,0 +1,90 @@
+name: Ping IndexNow after Vercel Deploy
+
+# Triggers when Vercel reports a deployment status back to GitHub.
+# This fires AFTER the site is actually live — no polling or fixed delays needed.
+on:
+  deployment_status:
+
+jobs:
+  ping-indexnow:
+    # Only run when Vercel's Production deployment succeeds
+    if: |
+      github.event.deployment_status.state == 'success' &&
+      contains(github.event.deployment.environment, 'roduction')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout deployed commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          fetch-depth: 2          # need HEAD~1 for diff
+
+      - name: Detect changed page URLs
+        id: urls
+        run: |
+          # Map every changed .html file to its public URL
+          changed=$(git diff --name-only HEAD~1 HEAD -- '*.html' 2>/dev/null || true)
+          urls=""
+          while IFS= read -r f; do
+            [ -z "$f" ] && continue
+            urls="$urls https://sourciavera.com/$f"
+          done <<< "$changed"
+
+          # Always include homepage when sitemap or index changes
+          if git diff --name-only HEAD~1 HEAD | grep -qE '(sitemap\.xml|index\.html)'; then
+            urls="$urls https://sourciavera.com/"
+          fi
+
+          # Fallback: at minimum ping the homepage
+          if [ -z "$(echo "$urls" | tr -d ' ')" ]; then
+            urls="https://sourciavera.com/"
+          fi
+
+          # Deduplicate
+          urls=$(echo "$urls" | tr ' ' '\n' | sort -u | grep 'http' | tr '\n' ' ')
+          echo "list=$urls" >> "$GITHUB_OUTPUT"
+          echo "URLs to ping: $urls"
+
+      - name: Ping Bing IndexNow
+        env:
+          CHANGED_URLS: ${{ steps.urls.outputs.list }}
+        run: |
+          python3 - <<'PYEOF'
+          import json, os, urllib.request, urllib.error, sys
+
+          KEY  = "e6cc767a2c98457b875afd5423178cc0"
+          HOST = "sourciavera.com"
+          urls = [u for u in os.environ["CHANGED_URLS"].split() if u]
+
+          print(f"Submitting {len(urls)} URL(s) to IndexNow...")
+
+          payload = json.dumps({
+              "host": HOST,
+              "key": KEY,
+              "keyLocation": f"https://{HOST}/{KEY}.txt",
+              "urlList": urls,
+          }).encode("utf-8")
+
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=payload,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=15) as r:
+                  print(f"[{r.status}] Accepted — IndexNow queued {len(urls)} URL(s)")
+          except urllib.error.HTTPError as e:
+              codes = {
+                  400: "Bad Request — malformed URL list",
+                  403: "Forbidden — key file unreachable",
+                  422: "Unprocessable — URLs don't match host",
+                  429: "Too Many Requests",
+              }
+              print(f"[{e.code}] {codes.get(e.code, e.reason)}", file=sys.stderr)
+              sys.exit(1)
+
+          for u in urls:
+              print(f"  ✓ {u}")
+          PYEOF
