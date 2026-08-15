@@ -56,6 +56,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .lang-en,.lang-es{display:block}
 .lang-es{display:none}
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
 </head>
 <body>
 
@@ -244,6 +245,47 @@ function setLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
   document.documentElement.lang = lang;
 }
+</script>
+<script type="module">
+import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
 </script>
 </body>
 </html>

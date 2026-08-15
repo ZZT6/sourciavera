@@ -6,6 +6,7 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: 'denied', wait_for_update: 500 });
   gtag('js', new Date());
   gtag('config', 'G-X40LT2MS4X');
 </script>
@@ -55,7 +56,10 @@
         {"@type":"Question","name":"Can I start with a small order to test quality?","acceptedAnswer":{"@type":"Answer","text":"Yes — we specialize in small batches from 50 units. Start small, verify quality with us, then scale with confidence."}},
         {"@type":"Question","name":"Can you accompany me to a factory if I visit Guangzhou?","acceptedAnswer":{"@type":"Answer","text":"Yes — we assign a dedicated team member for factory accompaniment, translation, and negotiation support. Tell us your travel dates and we handle the rest."}},
         {"@type":"Question","name":"I've been burned by a bad Alibaba supplier. Can you help?","acceptedAnswer":{"@type":"Answer","text":"That's exactly why we exist. Alibaba's Verified badge does not guarantee product quality or delivery timelines. We go on the ground so you don't have to trust a badge."}},
-        {"@type":"Question","name":"How much does your service cost?","acceptedAnswer":{"@type":"Answer","text":"Factory Verification Visit: $349. Pre-Shipment Inspection: $299/man-day. Factory Audit: $399/man-day. Sourcing commission: 10% of order value. First consultation is free."}}
+        {"@type":"Question","name":"How much does your service cost?","acceptedAnswer":{"@type":"Answer","text":"Factory Verification Visit: $349. Pre-Shipment Inspection: $299/man-day. Factory Audit: $399/man-day. Sourcing commission: 10% of order value. First consultation is free."}},
+        {"@type":"Question","name":"What's the difference between factory verification, factory audit, and supervision?","acceptedAnswer":{"@type":"Answer","text":"Factory Verification (Verificación de proveedores) confirms a supplier is real, registered, and operating as claimed — a basic trust check before you commit. Factory Audit (Auditoría de fábrica) is a deeper review of production capability, quality systems, and compliance, typically done before a large or first-time order. Supervision (Supervisión) is ongoing, hands-on monitoring during production or container loading to ensure your order is made and shipped correctly."}},
+        {"@type":"Question","name":"Do you offer factory verification for Spanish-speaking clients?","acceptedAnswer":{"@type":"Answer","text":"Yes. All our reports, quotes, and communication — from initial verificación de proveedores through a full auditoría de fábrica — are available in both English and Spanish."}},
+        {"@type":"Question","name":"Can you supervise my supplier in China?","acceptedAnswer":{"@type":"Answer","text":"Yes — this is exactly what our in-production supervision and container loading supervision services cover. We can also combine this with a one-time factory audit if you are working with a new supplier for the first time."}}
       ]
     },
     {
@@ -259,6 +263,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .col-faq .faq-item p{font-size:0.83rem;color:var(--muted);line-height:1.7}
 @media(max-width:768px){.faq-shows-section{padding:2.5rem 1.25rem}.faq-shows-wrapper{grid-template-columns:1fr;gap:2rem}.col-shows{position:static}}
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
 </head>
 <body>
 
@@ -270,6 +275,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <a href="#tradeshows" data-en="Trade Shows" data-es="Ferias">Trade Shows</a>
     <a href="#faq-shows" data-en="FAQ" data-es="FAQ">FAQ</a>
     <a href="blog/index.html" data-en="Blog" data-es="Blog">Blog</a>
+    <a href="/about" data-en="About" data-es="Nosotros">About</a>
     <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
   </div>
   <div class="nav-right">
@@ -611,6 +617,50 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text lang-en">What's the difference between factory verification, factory audit, and supervision?</span>
+          <span class="faq-q-text lang-es">What's the difference between factory verification, factory audit, and supervision?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner lang-en">These terms often get used interchangeably, but they refer to different depths of service:<br><br>
+            <strong>Verificación de proveedores / Factory Verification</strong> — confirms a supplier is real, registered, and operating as claimed. A basic trust check before you commit.<br><br>
+            <strong>Auditoría de fábrica / Factory Audit</strong> — a deeper review of production capability, quality systems, and compliance — typically done before placing a large or first-time order.<br><br>
+            <strong>Supervisión / Supervision</strong> — ongoing, hands-on monitoring during production or container loading, ensuring your order is made and shipped correctly.
+          </div>
+          <div class="faq-a-inner lang-es">These terms often get used interchangeably, but they refer to different depths of service:<br><br>
+            <strong>Verificación de proveedores / Factory Verification</strong> — confirms a supplier is real, registered, and operating as claimed. A basic trust check before you commit.<br><br>
+            <strong>Auditoría de fábrica / Factory Audit</strong> — a deeper review of production capability, quality systems, and compliance — typically done before placing a large or first-time order.<br><br>
+            <strong>Supervisión / Supervision</strong> — ongoing, hands-on monitoring during production or container loading, ensuring your order is made and shipped correctly.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text lang-en">Do you offer factory verification for Spanish-speaking clients?</span>
+          <span class="faq-q-text lang-es">¿Ofrecen verificación de fábrica para clientes hispanohablantes?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner lang-en">Yes. All our reports, quotes, and communication — from initial verificación de proveedores through a full auditoría de fábrica — are available in both English and Spanish.</div>
+          <div class="faq-a-inner lang-es">Sí. Todos nuestros informes, cotizaciones y comunicación — desde la verificación inicial de proveedores hasta una auditoría de fábrica completa — están disponibles en inglés y español.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text lang-en">I just need someone to supervisar a mi proveedor en China — is that something you do?</span>
+          <span class="faq-q-text lang-es">¿Pueden supervisar a mi proveedor en China?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner lang-en">Yes — this is exactly what our in-production supervision and container loading supervision services cover. We can also combine this with a one-time factory audit if you're working with a new supplier for the first time.</div>
+          <div class="faq-a-inner lang-es">Sí — esto es exactamente lo que cubren nuestros servicios de supervisión en producción y supervisión de carga de contenedores. También podemos combinar esto con una auditoría de fábrica puntual si está trabajando con un nuevo proveedor por primera vez.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
           <span class="faq-q-text lang-en">Have a question we didn't answer here?</span>
           <span class="faq-q-text lang-es">¿Tiene una pregunta que no respondimos aquí?</span>
           <span class="faq-toggle">+</span>
@@ -878,6 +928,47 @@ form.addEventListener('submit', async function(e) {
   } catch(err) {
     btn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
     btn.disabled = false;
+  }
+});
+</script>
+<script type="module">
+import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
   }
 });
 </script>
