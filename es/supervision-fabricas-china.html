@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supervisión de Fábricas en China — SourciaVera</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Supervisión de fábricas en China durante todo el proceso de producción — no solo una auditoría puntual. Reportes en español e inglés, equipo en Guangzhou.">
+<meta property="og:title" content="Supervisión de Fábricas en China — SourciaVera">
+<meta property="og:description" content="Control continuo durante producción y carga de contenedor. Verificación inicial, supervisión en línea y auditoría completa — en español.">
+<meta property="og:url" content="https://sourciavera.com/es/supervision-fabricas-china">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/es/supervision-fabricas-china">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+/* Nav */
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic;text-decoration:none;flex-shrink:0}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-back{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+.nav-back:hover{color:var(--yellow)}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+/* Hero */
+.hero{background:var(--navy);padding:5rem 3rem 4rem;text-align:center}
+.hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.9rem;margin-bottom:1.5rem;font-weight:500}
+.hero h1{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:white;max-width:820px;margin:0 auto 1.2rem;line-height:1.15}
+.hero h1 span{color:var(--yellow)}
+.hero p{color:rgba(255,255,255,0.65);font-size:1.05rem;max-width:640px;margin:0 auto 2.5rem;line-height:1.8}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-coral{display:inline-block;background:var(--coral);color:white;padding:0.9rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;text-decoration:none}
+.btn-wa{display:inline-block;background:#25D366;color:white;padding:0.9rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;text-decoration:none}
+/* Sections */
+.section{padding:5rem 3rem}
+.section-inner{max-width:900px;margin:0 auto}
+.section-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.6rem}
+.section h2{font-size:1.8rem;font-weight:700;color:var(--navy);margin-bottom:1.5rem;line-height:1.2}
+.section p{color:var(--muted);font-size:0.95rem;line-height:1.9;margin-bottom:1rem}
+/* Why section */
+.why-block{background:var(--navy);padding:5rem 3rem}
+.why-block .section-inner{max-width:900px;margin:0 auto}
+.why-block .section-label{color:var(--yellow)}
+.why-block h2{color:white;font-size:1.8rem;font-weight:700;margin-bottom:1.5rem;line-height:1.2}
+.why-block p{color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.9;margin-bottom:1rem}
+/* Service cards */
+.cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2.5rem}
+.card{border:1.5px solid var(--border);padding:2rem;position:relative}
+.card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--coral)}
+.card:nth-child(2)::before{background:var(--teal)}
+.card:nth-child(3)::before{background:var(--yellow)}
+.card:nth-child(4)::before{background:var(--navy)}
+.card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem}
+.card p{color:var(--muted);font-size:0.88rem;line-height:1.75;margin:0}
+/* Steps */
+.steps-section{background:var(--light);padding:5rem 3rem}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem}
+.step{padding:2rem 1.5rem;border-right:1px solid var(--border)}
+.step:last-child{border-right:none}
+.step-num{width:44px;height:44px;background:var(--coral);color:white;font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.step:nth-child(2) .step-num{background:var(--navy)}
+.step:nth-child(3) .step-num{background:var(--teal)}
+.step:nth-child(4) .step-num{background:var(--yellow);color:var(--navy)}
+.step h3{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem}
+.step p{color:var(--muted);font-size:0.85rem;line-height:1.6}
+/* FAQ */
+.faq-section{padding:5rem 3rem;background:var(--white)}
+.faq-inner{max-width:760px;margin:0 auto}
+.faq-list{margin-top:2.5rem}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:1.4rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;cursor:pointer;font-family:inherit}
+.faq-q-text{font-size:1rem;font-weight:600;color:var(--navy);line-height:1.4}
+.faq-toggle{width:22px;height:22px;min-width:22px;background:var(--coral);color:white;font-size:1.2rem;font-weight:300;line-height:22px;text-align:center;transition:transform 0.25s;flex-shrink:0}
+.faq-item.open .faq-toggle{transform:rotate(45deg)}
+.faq-a{overflow:hidden;max-height:0;transition:max-height 0.35s ease}
+.faq-item.open .faq-a{max-height:600px}
+.faq-a-inner{padding:0 0 1.5rem;color:var(--muted);font-size:0.9rem;line-height:1.8}
+/* Pricing */
+.pricing-section{background:var(--navy);padding:5rem 3rem;text-align:center}
+.pricing-section h2{color:white;font-size:1.8rem;font-weight:700;margin-bottom:0.75rem}
+.pricing-section .sub{color:rgba(255,255,255,0.55);margin-bottom:3rem;font-size:0.95rem}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:900px;margin:0 auto 3rem}
+.price-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:1.75rem 1.25rem}
+.price-card .service-name{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.5);margin-bottom:0.75rem}
+.price-card .amount{font-size:1.6rem;font-weight:700;color:var(--yellow);margin-bottom:0.25rem}
+.price-card .per{font-size:0.75rem;color:rgba(255,255,255,0.4)}
+.pricing-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+/* CTA block */
+.cta-block{background:var(--light);border:2px solid var(--coral);padding:3rem;text-align:center;margin:0}
+.cta-block h3{font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.cta-block p{color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:0.5rem;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.75rem}
+/* Footer */
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{color:rgba(255,255,255,0.4);text-decoration:none}
+.footer-links a:hover{color:var(--yellow)}
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .hero{padding:3rem 1.5rem}
+  .section,.why-block,.steps-section,.faq-section,.pricing-section{padding:3rem 1.5rem}
+  .cards-grid{grid-template-columns:1fr}
+  .steps-grid{grid-template-columns:1fr 1fr}
+  .step{border-right:none;border-bottom:1px solid var(--border)}
+  .pricing-grid{grid-template-columns:1fr 1fr}
+  footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">SourciaVera</a>
+  <div class="nav-right">
+    <a href="/" class="nav-back">← Inicio</a>
+    <a href="https://sourciavera.com/#contact" class="nav-cta">Solicitar cotización</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">Supervisión · China</div>
+  <h1>Supervisión de Fábricas en China:<br><span>Control Continuo, No Solo una Auditoría Puntual</span></h1>
+  <p>La mayoría de los servicios de verificación revisan tu proveedor una sola vez, antes de producción. Nosotros lo supervisamos durante todo el proceso — desde la primera muestra hasta la carga del contenedor.</p>
+  <div class="hero-btns">
+    <a href="https://sourciavera.com/#contact" class="btn-coral">Solicitar cotización</a>
+    <a href="https://wa.me/8613688057230" class="btn-wa">Hablar por WhatsApp</a>
+  </div>
+</section>
+
+<!-- WHY -->
+<div class="why-block">
+  <div class="section-inner">
+    <div class="section-label">El problema</div>
+    <h2>Por qué una sola auditoría no es suficiente</h2>
+    <p>Una auditoría inicial confirma que la fábrica existe y tiene capacidad. Pero no garantiza que la producción real, semanas después, cumpla con lo acordado.</p>
+    <p>Los problemas más costosos — cambios de material sin aviso, subcontratación no declarada, defectos de calidad — suelen aparecer <strong style="color:var(--yellow)">durante la producción</strong>, no antes.</p>
+    <p>Por eso "supervisar" un proveedor en China significa algo distinto a simplemente verificarlo una vez: significa tener a alguien en el terreno, en persona, durante todo el proceso.</p>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Servicios</div>
+    <h2>Qué supervisamos exactamente</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <h3>Verificación inicial de fábrica</h3>
+        <p>Confirmamos que el proveedor es un fabricante real — no un intermediario — revisando licencias, estructura legal y capacidad instalada.</p>
+      </div>
+      <div class="card">
+        <h3>Supervisión durante producción</h3>
+        <p>Visitas periódicas a la línea de producción para confirmar que se está fabricando según especificación, detectar desviaciones temprano y evitar sorpresas al final.</p>
+      </div>
+      <div class="card">
+        <h3>Supervisión de carga de contenedor</h3>
+        <p>Presencia física durante la carga para confirmar que el pedido completo, correctamente empacado, es lo que realmente se envía.</p>
+      </div>
+      <div class="card">
+        <h3>Auditoría de fábrica completa</h3>
+        <p>Para pedidos grandes o proveedores nuevos, evaluamos a fondo procesos, control de calidad y cumplimiento antes de comprometer producción.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<div class="steps-section">
+  <div class="section-inner">
+    <div class="section-label">Proceso</div>
+    <h2 style="font-size:1.8rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem">Cómo trabajamos</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Verificación inicial</h3>
+        <p>Confirmamos la legitimidad del proveedor antes de cualquier pago.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Plan de supervisión</h3>
+        <p>Definimos en qué etapas de producción visitaremos la fábrica según el riesgo del pedido.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Visitas en persona</h3>
+        <p>Nuestro equipo en Guangzhou visita la fábrica físicamente, no por videollamada.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>Reporte bilingüe</h3>
+        <p>Recibes un informe en español e inglés después de cada visita, con fotos y hallazgos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="section-label">Preguntas frecuentes</div>
+    <h2 style="font-size:1.8rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem">Resolvemos tus dudas</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Cuál es la diferencia entre verificación, auditoría y supervisión?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Verificación confirma que el proveedor es real. Auditoría evalúa a fondo su capacidad y sistemas de calidad. Supervisión es el seguimiento continuo durante producción y carga — la diferencia está en la profundidad y en si es un evento único o un proceso continuo.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Puedo contratar solo la supervisión sin la verificación inicial?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Sí, si ya conoces al proveedor. Pero recomendamos siempre empezar con una verificación básica si es la primera vez que trabajas con esa fábrica.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿En qué idiomas se entregan los reportes?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Español e inglés, siempre.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="section-label" style="color:var(--yellow)">Tarifas</div>
+  <h2>¿Cuánto cuesta?</h2>
+  <p class="sub">Publicamos nuestros precios — sin necesidad de llamar para saberlo.</p>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <div class="service-name">Verificación de fábrica</div>
+      <div class="amount">$349</div>
+      <div class="per">por visita</div>
+    </div>
+    <div class="price-card">
+      <div class="service-name">Inspección pre-embarque</div>
+      <div class="amount">$299</div>
+      <div class="per">por día</div>
+    </div>
+    <div class="price-card">
+      <div class="service-name">Auditoría de fábrica completa</div>
+      <div class="amount">$399</div>
+      <div class="per">por día</div>
+    </div>
+    <div class="price-card">
+      <div class="service-name">Comisión de sourcing</div>
+      <div class="amount">10%</div>
+      <div class="per">del valor del pedido</div>
+    </div>
+  </div>
+  <div class="pricing-btns">
+    <a href="https://sourciavera.com/#contact" class="btn-coral">Solicitar cotización</a>
+    <a href="https://wa.me/8613688057230" class="btn-wa">Hablar por WhatsApp</a>
+  </div>
+</section>
+
+<!-- CTA BLOCK -->
+<div class="cta-block">
+  <h3>¿No estás seguro de si tu proveedor es quien dice ser?</h3>
+  <p>SourciaVera verifica fábricas chinas en el terreno — sin fotos de stock ni declaraciones propias. Visitamos en persona, revisamos licencias y confirmamos la capacidad de producción antes de que envíes un depósito.</p>
+  <p>Ya sea que necesites una verificación única, una auditoría completa o supervisión continua durante la producción, lo hacemos en español e inglés — para que nada se pierda en la traducción.</p>
+  <div class="cta-btns">
+    <a href="https://sourciavera.com/#contact" class="btn-coral">Solicitar cotización</a>
+    <a href="https://wa.me/8613688057230" class="btn-wa">Hablar por WhatsApp</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">SourciaVera</div>
+  <div class="footer-links">
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+  </div>
+  <div>© 2025 SourciaVera · Guangzhou, China · All rights reserved</div>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  btn.closest('.faq-item').classList.toggle('open');
+}
+</script>
+<script type="module">
+import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: {}
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
