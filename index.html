@@ -23,6 +23,10 @@
 <meta property="og:description" content="We visit your Alibaba supplier in person, film the factory on video, and negotiate in Chinese. Real information before you send money.">
 <meta property="og:url" content="https://sourciavera.com">
 <meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/">
+<link rel="canonical" href="https://sourciavera.com/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -284,7 +288,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="nav-right">
     <div class="lang-switcher">
       <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <button class="lang-btn" onclick="window.location='/es/'">ES</button>
     </div>
     <a href="#contact" class="nav-cta" data-en="Free Consult" data-es="Consulta gratis">Free Consult</a>
   </div>
@@ -764,11 +768,16 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <a href="https://wa.me/8613688057230" class="wa-float" title="WhatsApp">💬</a>
 
 <script>
-let currentLang = localStorage.getItem('sv-lang') || 'en';
+function detectLang() {
+  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
+  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
+}
+let currentLang = detectLang();
 
 function setLang(lang) {
   currentLang = lang;
-  localStorage.setItem('sv-lang', lang);
+  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
   document.documentElement.lang = lang;
 
   document.querySelectorAll('[data-en][data-es]').forEach(el => {
@@ -906,6 +915,7 @@ function renderTimeline() {
   container.innerHTML = html;
 }
 
+(function(){var yr=new Date().getFullYear(),el=document.querySelector('[data-en*="rights reserved"]');if(el){el.dataset.en=el.dataset.en.replace(/\d{4}/,yr);el.dataset.es=el.dataset.es.replace(/\d{4}/,yr);}})();
 setLang(currentLang);
 
 const form = document.getElementById('contact-form');

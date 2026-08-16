@@ -9,6 +9,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/blog/trading-company-vs-factory">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/blog/es/trading-company-vs-fabrica">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/trading-company-vs-factory">
+<link rel="canonical" href="https://sourciavera.com/blog/trading-company-vs-factory">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -230,13 +234,19 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 </div>
 
 <footer class="article-footer">
-  &copy; 2026 SourciaVera &middot; <a href="/">sourciavera.com</a>
+  &copy; <script>document.write(new Date().getFullYear())</script> SourciaVera &middot; <a href="/">sourciavera.com</a>
 </footer>
 
 <script>
-let currentLang = 'en';
+function detectLang() {
+  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
+  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
+}
+let currentLang = detectLang();
 function setLang(lang) {
   currentLang = lang;
+  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
   document.querySelectorAll('[data-en]').forEach(el => {
     el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
   });
@@ -245,6 +255,7 @@ function setLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
   document.documentElement.lang = lang;
 }
+setLang(currentLang);
 </script>
 <script type="module">
 import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';

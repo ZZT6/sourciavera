@@ -280,13 +280,19 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 </div>
 
 <footer class="blog-footer">
-  &copy; 2026 SourciaVera &middot; <a href="../index.html">sourciavera.com</a>
+  &copy; <script>document.write(new Date().getFullYear())</script> SourciaVera &middot; <a href="../index.html">sourciavera.com</a>
 </footer>
 
 <script>
-let currentLang = 'en';
+function detectLang() {
+  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
+  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
+}
+let currentLang = detectLang();
 function setLang(lang) {
   currentLang = lang;
+  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
   document.querySelectorAll('[data-en]').forEach(el => {
     el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
   });
@@ -295,6 +301,7 @@ function setLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
   document.documentElement.lang = lang;
 }
+setLang(currentLang);
 </script>
 <script type="module">
 import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
