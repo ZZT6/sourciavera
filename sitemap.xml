@@ -32,4 +32,16 @@
   <url><loc>https://sourciavera.com/blog/es/senales-alerta-proveedor</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sourciavera.com/blog/es/trading-company-vs-fabrica</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
+  <url>
+    <loc>https://sourciavera.com/blog/glossary-factory-verification-terms</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sourciavera.com/blog/es/glosario-terminos-verificacion</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
