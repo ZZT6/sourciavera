@@ -85,7 +85,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .faq-toggle{width:22px;height:22px;min-width:22px;background:var(--coral);color:white;font-size:1.2rem;font-weight:300;line-height:22px;text-align:center;transition:transform 0.25s;flex-shrink:0}
 .faq-item.open .faq-toggle{transform:rotate(45deg)}
 .faq-a{overflow:hidden;max-height:0;transition:max-height 0.35s ease}
-.faq-item.open .faq-a{max-height:600px}
+.faq-item.open .faq-a{max-height:900px}
 .faq-a-inner{padding:0 0 1.5rem;color:var(--muted);font-size:0.9rem;line-height:1.8}
 /* Pricing */
 .pricing-section{background:var(--navy);padding:5rem 3rem;text-align:center}
@@ -152,6 +152,58 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   </div>
 </div>
 
+<!-- COMPARISON TABLE -->
+<section class="section" style="background:var(--light)">
+  <div class="section-inner">
+    <div class="section-label">Diferencia clave</div>
+    <h2>Auditoría puntual vs supervisión continua</h2>
+    <p style="color:var(--muted);font-size:0.95rem;margin-bottom:2rem">Una auditoría responde "¿puede fabricar lo que promete?". La supervisión responde "¿está fabricando lo que acordamos, ahora mismo?".</p>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:0.9rem">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:0.85rem 1.1rem;background:var(--navy);color:rgba(255,255,255,0.5);font-weight:500;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;width:28%">Característica</th>
+            <th style="text-align:left;padding:0.85rem 1.1rem;background:var(--navy);color:rgba(255,255,255,0.5);font-weight:500;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Auditoría puntual</th>
+            <th style="text-align:left;padding:0.85rem 1.1rem;background:var(--coral);color:white;font-weight:600;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase">Supervisión continua</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:0.9rem 1.1rem;font-weight:600;color:var(--navy)">Cuándo ocurre</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--muted)">Una vez, antes de producción</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">Durante todo el ciclo de fabricación</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);background:white">
+            <td style="padding:0.9rem 1.1rem;font-weight:600;color:var(--navy)">Qué detecta</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--muted)">Capacidad y legitimidad del proveedor</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">Desviaciones durante la producción real</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:0.9rem 1.1rem;font-weight:600;color:var(--navy)">Pregunta que responde</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--muted)">¿Puede fabricar lo que promete?</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">¿Está fabricando lo que acordamos?</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border);background:white">
+            <td style="padding:0.9rem 1.1rem;font-weight:600;color:var(--navy)">Capacidad de intervención</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--muted)">No — es una foto en el tiempo</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">Sí — se corrige en tiempo real</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--border)">
+            <td style="padding:0.9rem 1.1rem;font-weight:600;color:var(--navy)">Resultado</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--muted)">Reporte de aptitud inicial</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">Reportes periódicos + intervención activa</td>
+          </tr>
+          <tr style="background:white">
+            <td style="padding:0.9rem 1.1rem;font-weight:600;color:var(--navy)">Cuándo es suficiente</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--muted)">Primera evaluación de proveedor nuevo</td>
+            <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">Pedidos de alto valor, productos complejos, ciclos de producción largos</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <!-- SERVICES -->
 <section class="section">
   <div class="section-inner">
@@ -208,6 +260,46 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   </div>
 </div>
 
+<!-- INTERVENTION POINTS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Cuándo intervenimos</div>
+    <h2>Los 4 momentos críticos de la supervisión</h2>
+    <p style="color:var(--muted);font-size:0.95rem;margin-bottom:2.5rem">Los errores de producción son baratos de corregir al principio — y muy caros de corregir al final. Por eso definimos puntos de control específicos en cada pedido.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.75rem">
+
+      <div style="border:1.5px solid var(--border);padding:2rem;position:relative">
+        <div style="position:absolute;top:-1px;left:0;width:100%;height:3px;background:var(--coral)"></div>
+        <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.6rem">Etapa 01</div>
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem">Llegada de materias primas</h3>
+        <p style="color:var(--muted);font-size:0.88rem;line-height:1.75;margin:0">Verificamos que los materiales que entran a la línea corresponden a las especificaciones acordadas — composición, calibre, origen. Es el primer punto donde se producen sustituciones no declaradas, y el más barato de corregir antes de que el material se procese.</p>
+      </div>
+
+      <div style="border:1.5px solid var(--border);padding:2rem;position:relative">
+        <div style="position:absolute;top:-1px;left:0;width:100%;height:3px;background:var(--teal)"></div>
+        <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-bottom:0.6rem">Etapa 02</div>
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem">Primera pieza (First Article)</h3>
+        <p style="color:var(--muted);font-size:0.88rem;line-height:1.75;margin:0">Revisamos la primera unidad producida antes de que arranque la producción en serie. Si hay un error de molde, especificación o ensamblaje, aquí se puede corregir sin costo de re-trabajo masivo sobre todo el lote.</p>
+      </div>
+
+      <div style="border:1.5px solid var(--border);padding:2rem;position:relative">
+        <div style="position:absolute;top:-1px;left:0;width:100%;height:3px;background:var(--yellow)"></div>
+        <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:#b89200;font-weight:600;margin-bottom:0.6rem">Etapa 03</div>
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem">Punto medio de producción</h3>
+        <p style="color:var(--muted);font-size:0.88rem;line-height:1.75;margin:0">Revisión de muestra del lote ya fabricado al 50% del pedido. Confirma consistencia entre el inicio y la mitad de la producción — detecta deriva acumulativa de calidad antes de que afecte el pedido completo.</p>
+      </div>
+
+      <div style="border:1.5px solid var(--border);padding:2rem;position:relative">
+        <div style="position:absolute;top:-1px;left:0;width:100%;height:3px;background:var(--navy)"></div>
+        <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--navy);font-weight:600;margin-bottom:0.6rem">Etapa 04</div>
+        <h3 style="font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem">Pre-carga del contenedor</h3>
+        <p style="color:var(--muted);font-size:0.88rem;line-height:1.75;margin:0">Verificación final antes de que el pedido salga de la fábrica: conteo de unidades, integridad del embalaje, etiquetado, y confirmación de que lo que entra al contenedor corresponde exactamente al pedido acordado.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="faq-section">
   <div class="faq-inner">
@@ -242,6 +334,46 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
         </button>
         <div class="faq-a">
           <div class="faq-a-inner">Español e inglés, siempre.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿En qué provincias o ciudades de China pueden operar?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Operamos principalmente en Guangdong — Guangzhou, Dongguan, Foshan y Shenzhen concentran la mayor parte de los proveedores con los que trabajan nuestros clientes. También cubrimos Zhejiang (Yiwu, Ningbo, Wenzhou), Fujian y Shandong para productos específicos. Si su proveedor está fuera de estas zonas, consúltenos — evaluamos caso a caso según distancia y logística.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Con qué frecuencia se entregan los reportes durante la supervisión?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Recibes un reporte después de cada visita acordada. La frecuencia depende del plan definido para tu pedido: para una producción de 4–6 semanas, típicamente son 2 a 3 visitas (llegada de materiales, punto medio, pre-carga). Para ciclos más cortos puede ser 1–2 visitas. El plan se define antes de que empiece la producción, no se improvisa.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Qué pasa si durante la supervisión se detecta un problema?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Te lo comunicamos de inmediato con evidencia fotográfica y descripción del hallazgo. Coordinamos directamente con la fábrica en chino para entender las opciones de corrección. Tú decides cómo proceder: pausar producción, exigir re-trabajo, ajustar especificación o, en casos extremos, cancelar el pedido antes de pagar el saldo. El objetivo es que nunca descubras un problema al abrir el contenedor en tu destino.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          <span class="faq-q-text">¿Cómo se calcula el precio de la supervisión de producción?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">Cobramos por hombre-día de visita en fábrica: $299/día para inspección de calidad pre-embarque, $399/día para auditoría estructurada completa. Para supervisión continua (varias visitas a lo largo de la producción), el costo total depende del número de visitas acordadas y la distancia desde Guangzhou. La primera consulta es gratis — en esa llamada definimos cuántas visitas tiene sentido para tu pedido específico y te damos un presupuesto fijo.</div>
         </div>
       </div>
 
