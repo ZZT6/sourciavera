@@ -4,8 +4,8 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X"></script>
 <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{analytics_storage:'denied',wait_for_update:500});
-  gtag('js',new Date());gtag('config','G-X40LT2MS4X');
+  gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
+  gtag('js',new Date());gtag('config','G-X40LT2MS4X');gtag('config','AW-18086408472');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,24 +14,61 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<meta name="description" content="Verificación independiente de proveedores de Alibaba en China para importadores guatemaltecos. Visitamos fábricas en persona. Informe en español. Desde $349 USD.">
+<meta name="description" content="¿Importas desde China a Guatemala? Verificamos tu proveedor de Alibaba en persona, antes de que pagues. Informe en español, precios desde $349. Atención para compradores guatemaltecos.">
 <link rel="alternate" hreflang="en" href="https://sourciavera.com/verification-services/guatemala">
 <link rel="alternate" hreflang="es" href="https://sourciavera.com/es/verificacion-fabricas/guatemala">
 <link rel="alternate" hreflang="x-default" href="https://sourciavera.com/verification-services/guatemala">
 <meta property="og:title" content="Verificación de Fábricas en China para Importadores Guatemaltecos | SourciaVera">
+<meta property="og:description" content="¿Importas desde China a Guatemala? Verificamos tu proveedor de Alibaba en persona, antes de que pagues. Informe en español, precios desde $349.">
 <meta property="og:url" content="https://sourciavera.com/es/verificacion-fabricas/guatemala">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://sourciavera.com/og-image-es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/og-image-es.png">
 <link rel="canonical" href="https://sourciavera.com/es/verificacion-fabricas/guatemala">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Inicio","item":"https://sourciavera.com/es/"},
-    {"@type":"ListItem","position":2,"name":"Servicios de Verificación","item":"https://sourciavera.com/es/verificacion-fabricas/"},
-    {"@type":"ListItem","position":3,"name":"Guatemala","item":"https://sourciavera.com/es/verificacion-fabricas/guatemala"}
+  "@graph":[
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Inicio","item":"https://sourciavera.com/es/"},
+        {"@type":"ListItem","position":2,"name":"Servicios de Verificación","item":"https://sourciavera.com/es/verificacion-fabricas/"},
+        {"@type":"ListItem","position":3,"name":"Guatemala","item":"https://sourciavera.com/es/verificacion-fabricas/guatemala"}
+      ]
+    },
+    {
+      "@type":"Service",
+      "name":"Verificación de Fábricas en China para Importadores Guatemaltecos",
+      "description":"Servicio de verificación independiente de proveedores de Alibaba en China, especializado para compradores guatemaltecos. Visitamos fábricas en persona, filmamos en video y entregamos informe completo en español.",
+      "areaServed":{"@type":"Country","name":"Guatemala"},
+      "provider":{"@type":"Organization","name":"SourciaVera","url":"https://sourciavera.com"},
+      "hasOfferCatalog":{
+        "@type":"OfferCatalog",
+        "name":"Servicios de Verificación",
+        "itemListElement":[
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Verificación de Fábrica"},"price":"349","priceCurrency":"USD"},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Inspección Previa al Envío"},"price":"299","priceCurrency":"USD"},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Auditoría de Fábrica"},"price":"399","priceCurrency":"USD"}
+        ]
+      }
+    }
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Una historia real: verificación de fábrica para un cliente guatemalteco",
+  "description":"Lo que pasa cuando revisas una fábrica en persona — y lo que no sale en los videos de venta. Caso real de verificación de fábrica de casas contenedor para un importador guatemalteco.",
+  "author":{"@type":"Organization","name":"SourciaVera","url":"https://sourciavera.com"},
+  "publisher":{"@type":"Organization","name":"SourciaVera","url":"https://sourciavera.com"},
+  "inLanguage":"es",
+  "url":"https://sourciavera.com/es/verificacion-fabricas/guatemala"
 }
 </script>
 <style>
@@ -44,89 +81,410 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
 .nav-links a{color:rgba(255,255,255,0.6)}.nav-links a:hover{color:var(--yellow)}
 .nav-right{display:flex;align-items:center;gap:1rem}
-.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
+.lang-switcher{display:flex;align-items:center;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:4px;overflow:hidden}
+.lang-btn{background:transparent;border:none;color:rgba(255,255,255,0.5);padding:0.35rem 0.75rem;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;cursor:pointer;transition:all 0.2s;display:inline-block}
+.lang-btn.active{background:var(--yellow);color:var(--navy)}
+.lang-btn:hover:not(.active){color:white}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
 .breadcrumb{background:var(--navy);padding:0.6rem 3rem;border-top:1px solid rgba(255,255,255,0.08)}
 .breadcrumb a,.breadcrumb span{font-size:0.78rem;color:rgba(255,255,255,0.45)}
 .breadcrumb a:hover{color:var(--yellow)}
 .breadcrumb .sep{margin:0 0.5rem;color:rgba(255,255,255,0.2)}
 .breadcrumb .current{color:rgba(255,255,255,0.7)}
-.hero{background:var(--navy);padding:5rem 3rem;text-align:center}
+.hero{background:var(--navy);padding:4.5rem 3rem 4rem}
+.hero-inner{max-width:780px}
 .hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
-.hero h1{font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.15;font-weight:700;color:white;margin-bottom:1rem}
+.hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;font-weight:700;color:white;margin-bottom:1rem}
 .hero h1 span{color:var(--yellow)}
-.hero p{color:rgba(255,255,255,0.65);font-size:1rem;max-width:560px;margin:0 auto 2.5rem;line-height:1.8}
-.coming-soon{background:var(--light);padding:5rem 3rem;text-align:center}
-.coming-soon h2{font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:1rem}
-.coming-soon p{color:var(--muted);max-width:500px;margin:0 auto 2rem;font-size:0.95rem}
-.btn-coral{display:inline-block;background:var(--coral);color:white;padding:0.9rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;margin:0.5rem}
-.pricing{padding:4rem 3rem;background:var(--white);text-align:center}
-.pricing h2{font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:2rem}
-.price-row{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
-.price-item{text-align:center;padding:1.5rem 2rem;border:1.5px solid var(--border)}
-.price-val{font-size:1.4rem;font-weight:700;color:var(--coral);display:block;margin-bottom:0.3rem}
-.price-name{font-size:0.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em}
+.hero p{color:rgba(255,255,255,0.65);font-size:1rem;max-width:660px;margin-bottom:2rem;line-height:1.8}
+.hero p strong{color:var(--yellow);font-weight:500}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-main{background:var(--coral);color:white;padding:0.9rem 1.8rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;display:inline-block}
+.btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:white;padding:0.9rem 1.8rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;background:transparent;display:inline-block}
+.section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
+.section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2.5rem;line-height:1.2}
+.problem{background:var(--light);padding:5rem 3rem}
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.problem-card{background:var(--white);border:1.5px solid var(--border);padding:2rem;position:relative}
+.problem-num{font-size:2.5rem;color:var(--border);font-weight:700;position:absolute;top:1rem;right:1.5rem;line-height:1}
+.problem-card h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.problem-card p{color:var(--muted);font-size:0.9rem;line-height:1.7}
+.services{padding:5rem 3rem;background:var(--white)}
+.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.service-card{border:1.5px solid var(--border);padding:2.5rem;position:relative}
+.service-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%}
+.service-card:nth-child(1)::before{background:var(--coral)}
+.service-card:nth-child(2)::before{background:var(--teal)}
+.service-card:nth-child(3)::before{background:var(--navy)}
+.service-card:nth-child(4)::before{background:#b8962e}
+.service-num{font-size:2.5rem;color:var(--border);font-weight:700;position:absolute;top:1rem;right:1.5rem;line-height:1}
+.service-card h3{font-size:1.2rem;font-weight:700;margin-bottom:0.2rem;color:var(--navy)}
+.service-sub{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;font-weight:500;color:var(--muted)}
+.service-price{display:inline-block;color:white;font-size:0.8rem;font-weight:700;padding:0.3rem 0.85rem;margin-bottom:1rem;letter-spacing:0.04em}
+.service-card:nth-child(1) .service-price{background:var(--coral)}
+.service-card:nth-child(2) .service-price{background:var(--teal)}
+.service-card:nth-child(3) .service-price{background:var(--navy)}
+.service-card:nth-child(4) .service-price{background:#b8962e}
+.service-card p{color:var(--muted);font-size:0.88rem;line-height:1.7;margin-bottom:1rem}
+.check-list{list-style:none;display:flex;flex-direction:column;gap:0.45rem}
+.check-list li{font-size:0.86rem;color:var(--navy);padding-left:1.3rem;position:relative;line-height:1.5}
+.check-list li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:700;font-size:0.8rem}
+.service-note{background:var(--navy);padding:1.2rem 3rem;text-align:center;font-size:0.88rem;color:rgba(255,255,255,0.6);font-style:italic}
+.process{background:var(--light);padding:5rem 3rem}
+.process-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem}
+.process-step{padding:2rem 1.5rem;border-right:1px solid var(--border)}
+.process-step:last-child{border-right:none}
+.process-num{width:44px;height:44px;color:white;font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.process-step:nth-child(1) .process-num{background:var(--coral)}
+.process-step:nth-child(2) .process-num{background:var(--navy)}
+.process-step:nth-child(3) .process-num{background:var(--teal)}
+.process-step:nth-child(4) .process-num{background:#b8962e}
+.process-step h3{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem}
+.process-step p{color:var(--muted);font-size:0.85rem;line-height:1.6}
+.case-story{background:#F4F0EB;padding:5rem 3rem;border-top:3px solid var(--border)}
+.case-story-inner{max-width:780px;margin:0 auto}
+.case-tag{display:inline-block;background:var(--navy);color:var(--yellow);font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.75rem;margin-bottom:1.2rem;font-weight:600}
+.case-story h2{font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;line-height:1.25}
+.case-subtitle{font-size:0.95rem;color:var(--muted);font-style:italic;margin-bottom:2rem;line-height:1.5}
+.case-story p{color:#3a3a3a;font-size:0.95rem;line-height:1.85;margin-bottom:1.25rem}
+.case-list-title{font-size:0.9rem;font-weight:700;color:var(--navy);margin:2rem 0 0.75rem;letter-spacing:0.02em}
+.case-list{list-style:none;display:flex;flex-direction:column;gap:0.85rem}
+.case-list li{font-size:0.9rem;color:#3a3a3a;padding-left:1.5rem;position:relative;line-height:1.65}
+.case-list li::before{content:'—';position:absolute;left:0;color:var(--coral);font-weight:700}
+.contact{padding:5rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-left>p{color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:2rem}
+.contact-details{display:flex;flex-direction:column;gap:1rem}
+.contact-item{display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--navy)}
+.contact-dot{width:8px;height:8px;background:var(--coral);flex-shrink:0}
+.contact-right form{display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:0.4rem}
+.form-group label{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.form-group input,.form-group textarea,.form-group select{background:var(--light);border:1.5px solid var(--border);color:var(--navy);padding:0.75rem 1rem;font-size:0.9rem;outline:none;width:100%;font-family:inherit}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--coral)}
+.form-group textarea{resize:vertical;min-height:110px}
+.btn-submit{background:var(--coral);color:white;padding:1rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;width:100%;font-family:inherit}
+.wa-cta{display:inline-flex;align-items:center;gap:0.6rem;background:#25D366;color:white;padding:0.9rem 1.6rem;font-size:0.85rem;font-weight:500;letter-spacing:0.04em;margin-top:1.5rem}
+.cta-banner{background:var(--coral);padding:4rem 3rem;text-align:center}
+.cta-banner h2{font-size:2rem;color:white;font-weight:700;margin-bottom:0.6rem}
+.cta-banner p{color:rgba(255,255,255,0.85);margin-bottom:2rem}
+.btn-white{background:white;color:var(--coral);padding:1rem 2.5rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;border:none;cursor:pointer;font-family:inherit}
 .wa-float{position:fixed;bottom:2rem;right:2rem;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:100}
 footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
 .footer-links{display:flex;gap:1.5rem}
-.footer-links a{color:rgba(255,255,255,0.4)}
+.footer-links a{color:rgba(255,255,255,0.4);transition:color 0.2s}
 .footer-links a:hover{color:var(--yellow)}
-@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links{display:none}.breadcrumb{padding:0.6rem 1.5rem}.hero,.coming-soon,.pricing{padding:3rem 1.5rem}footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}.footer-links{gap:1rem}}
+@media(max-width:768px){
+nav{padding:1rem 1.5rem}.nav-links{display:none}
+.breadcrumb{padding:0.6rem 1.5rem}
+.hero{padding:3rem 1.5rem}
+.problem,.services,.process,.contact,.case-story{padding:3rem 1.5rem}
+.problem-grid,.service-grid{grid-template-columns:1fr}
+.process-flow{grid-template-columns:1fr 1fr}
+.process-step{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem}
+.contact{grid-template-columns:1fr;gap:2rem}
+.form-row{grid-template-columns:1fr}
+.cta-banner{padding:3rem 1.5rem}
+footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
+.footer-links{gap:1rem}
+}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
 <nav>
   <a href="/es/" class="logo">SourciaVera</a>
   <div class="nav-links">
     <a href="/es/#servicios">Servicios</a>
     <a href="/es/verificacion-fabricas/">Por País</a>
-    <a href="/blog">Blog</a>
+    <a href="/blog/es">Blog</a>
     <a href="/about">Nosotros</a>
-    <a href="/es/#contacto">Contacto</a>
+    <a href="#contacto">Contacto</a>
   </div>
   <div class="nav-right">
-    <a href="/es/#contacto" class="nav-cta">Consulta gratis</a>
+    <div class="lang-switcher">
+      <a class="lang-btn" href="/verification-services/guatemala">EN</a>
+      <button class="lang-btn active">ES</button>
+    </div>
+    <a href="#contacto" class="nav-cta">Consulta gratis</a>
   </div>
 </nav>
+
 <div class="breadcrumb">
   <a href="/es/">Inicio</a><span class="sep">›</span>
   <a href="/es/verificacion-fabricas/">Servicios de Verificación</a><span class="sep">›</span>
   <span class="current">Guatemala</span>
 </div>
+
 <section class="hero">
-  <div class="hero-tag">🇬🇹 Servicio de Verificación — Guatemala</div>
-  <h1>Verificación de fábricas en China<br><span>para importadores guatemaltecos.</span></h1>
-  <p>Visitamos proveedores de Alibaba en persona, filmamos en video y entregamos informe completo en español. Atención para compradores guatemaltecos.</p>
-</section>
-<section class="coming-soon">
-  <h2>Contenido especializado para Guatemala — próximamente</h2>
-  <p>Estamos preparando una guía completa para el mercado guatemalteco. Mientras tanto, atendemos importadores guatemaltecos ahora mismo — consúltanos sin compromiso.</p>
-  <a href="/es/verificacion-fabricas/mexico" class="btn-coral">Ver guía de importadores latinoamericanos →</a>
-  <a href="/es/#contacto" class="btn-coral" style="background:var(--teal)">Consulta gratis ahora</a>
-</section>
-<section class="pricing">
-  <h2>Tarifas estándar — aplican para Guatemala</h2>
-  <div class="price-row">
-    <div class="price-item"><span class="price-val">$349</span><span class="price-name">Verificación de Fábrica</span></div>
-    <div class="price-item"><span class="price-val">$299</span><span class="price-name">Inspección / día-hombre</span></div>
-    <div class="price-item"><span class="price-val">$399</span><span class="price-name">Auditoría / día-hombre</span></div>
-    <div class="price-item"><span class="price-val">10%</span><span class="price-name">Agente de Compras</span></div>
+  <div class="hero-inner">
+    <div class="hero-tag">🇬🇹 Servicio de Verificación — Compradores Guatemaltecos · Guangzhou, China</div>
+    <h1>Importa desde China a Guatemala <span>sin sorpresas desagradables.</span></h1>
+    <p>China es una de las principales fuentes de importación para Guatemala — y cada año, una parte de ese dinero se pierde en proveedores falsos, calidad inconsistente o intermediarios disfrazados de fábricas. <strong>Nosotros vamos por ti, en persona, antes de que pagues un solo quetzal.</strong></p>
+    <div class="hero-btns">
+      <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Verificar mi proveedor</button>
+      <button class="btn-outline" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios y precios</button>
+    </div>
   </div>
 </section>
+
+<section class="problem" id="problema">
+  <div class="section-tag">Por Qué Nos Necesitas</div>
+  <div class="section-title">El problema real de importar desde China<br>estando en Guatemala</div>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <div class="problem-num">01</div>
+      <h3>La distancia hace imposible verificar</h3>
+      <p>Un vuelo desde Ciudad de Guatemala hasta Guangzhou cuesta entre $1,000 y $1,700 USD — sin contar hotel ni los días que perderías. La mayoría de compradores ni siquiera sabe qué buscar cuando llega. Nosotros ya estamos aquí: esa es nuestra ventaja y la tuya.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-num">02</div>
+      <h3>Sin TLC con China: pagas aranceles completos</h3>
+      <p>Guatemala no tiene TLC con China: pagas el arancel completo (DAI 10% sobre CIF) más IVA (12% sobre CIF+DAI) — en total, cerca del 23.2% del valor CIF se va en impuestos antes de que tu contenedor toque tierra. Un proveedor que falla en calidad no solo arruina el pedido — hace que ese 23% también se pierda.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-num">03</div>
+      <h3>La barrera del idioma multiplica el riesgo</h3>
+      <p>La mayoría de proveedores en Alibaba se comunican en inglés básico. En español, la comunicación es prácticamente nula. Cada malentendido en especificaciones — dimensiones, materiales, capacidad de carga, acabados — sale muy caro cuando el contenedor ya está navegando hacia Puerto Barrios o Santo Tomás.</p>
+    </div>
+    <div class="problem-card">
+      <div class="problem-num">04</div>
+      <h3>Sin evidencia verificada, no hay reclamo posible</h3>
+      <p>Cuando un proveedor falla, los mecanismos de reclamo desde Guatemala son limitados. La Protección al Comprador de Alibaba tiene plazos y restricciones. Sin documentación independiente — fotos, videos, mediciones tomadas antes del envío — no tienes caso. Nosotros te damos esa evidencia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <div class="section-tag">Servicios y Precios</div>
+  <div class="section-title">Cuatro servicios. Un objetivo:<br>que tu pedido llegue como lo pediste.</div>
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <h3>Verificación de Fábrica</h3>
+      <div class="service-sub">Investigación en persona</div>
+      <div class="service-price">$349 por visita</div>
+      <p>Nos presentamos como compradores locales chinos. La fábrica no sabe que investigamos para ti. Así obtenemos la información real: si es fábrica o intermediario, el precio real de producción y la capacidad real.</p>
+      <ul class="check-list">
+        <li>Verificación de licencia comercial oficial</li>
+        <li>Recorrido completo en video sin editar</li>
+        <li>Cotización como comprador local (precios reales)</li>
+        <li>Informe completo en español en 48 horas</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <h3>Inspección Previa al Envío</h3>
+      <div class="service-sub">Control de calidad in situ</div>
+      <div class="service-price">$299 / día-hombre</div>
+      <p>Revisamos tu mercancía físicamente en la fábrica antes de que sea cargada. Lotes pequeños: revisión del 100% de unidades. Lotes grandes: muestreo aleatorio según tus especificaciones. Tú apruebas antes de que salga.</p>
+      <ul class="check-list">
+        <li>Revisión física producto a producto</li>
+        <li>Cotejo contra muestra original y especificaciones</li>
+        <li>Informe fotográfico y en video</li>
+        <li>Detenemos el envío si no cumple</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <h3>Auditoría de Fábrica</h3>
+      <div class="service-sub">Evaluación profunda de capacidad</div>
+      <div class="service-price">$399 / día-hombre</div>
+      <p>Para pedidos grandes o relaciones a largo plazo. Evaluamos los sistemas de calidad, la capacidad de producción real, el cumplimiento de normas y la solidez operativa del proveedor.</p>
+      <ul class="check-list">
+        <li>Revisión del sistema de gestión de calidad</li>
+        <li>Evaluación de maquinaria y línea de producción</li>
+        <li>Reporte de riesgos y recomendaciones</li>
+        <li>Ideal antes de comprometer grandes volúmenes</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <h3>Agente de Compras</h3>
+      <div class="service-sub">Tu equipo de compras en China</div>
+      <div class="service-price">10% del valor del pedido</div>
+      <p>Una vez verificada la fábrica, nos encargamos de todo el proceso. Negociamos en chino, coordinamos el pedido, gestionamos el envío y te entregamos el precio total final — producto, flete y seguro incluidos.</p>
+      <ul class="check-list">
+        <li>Negociación directa en chino mandarín</li>
+        <li>Gestión completa del pedido y control de calidad</li>
+        <li>Cotización de flete hasta tu puerto o Guatemala Ciudad</li>
+        <li>Solo cobramos si hay trato</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="service-note">Primera consulta siempre gratuita · Sin trato, sin cobro</div>
+
+<section class="process" id="proceso">
+  <div class="section-tag">El Proceso</div>
+  <div class="section-title">Simple. Cuatro pasos. Desde Guatemala.</div>
+  <div class="process-flow">
+    <div class="process-step">
+      <div class="process-num">1</div>
+      <h3>Cuéntanos qué necesitas</h3>
+      <p>Compártenos el enlace de Alibaba, el nombre de la empresa o la información de contacto que tienes. Nos dices qué producto buscas y tu presupuesto estimado.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">2</div>
+      <h3>Visitamos en 48–72 horas</h3>
+      <p>Llegamos como compradores locales chinos. La fábrica no sabe que investigamos para ti. Filmamos todo en primera persona y verificamos la documentación oficial.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">3</div>
+      <h3>Informe completo en español</h3>
+      <p>Video sin editar de la fábrica, fotos, evaluación honesta. ¿Fábrica real o intermediario? ¿El precio es competitivo? ¿Hay señales de alerta? Te lo decimos todo.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">4</div>
+      <h3>Tú decides con información real</h3>
+      <p>Con los datos en mano, decides si seguir adelante, negociar condiciones diferentes, o buscar otro proveedor. Solo cobramos si cierras el trato.</p>
+    </div>
+  </div>
+</section>
+
+<section class="case-story">
+  <div class="case-story-inner">
+    <div class="case-tag">Caso Real</div>
+    <h2>Una historia real: verificación de fábrica para un cliente guatemalteco</h2>
+    <p class="case-subtitle">Lo que pasa cuando revisas una fábrica en persona — y lo que no sale en los videos de venta</p>
+
+    <p>Hace unos meses, un cliente guatemalteco nos contactó buscando fabricar casas contenedoras expandibles para uso personal. Llevábamos semanas trabajando juntos — planos, cotizaciones, ajustes de especificaciones — cuando llegó el momento que realmente importa: verificar la fábrica en persona, antes de que él comprometiera su inversión.</p>
+
+    <p>Él quería una auditoría de 16 puntos. Le fuimos honestos: eso implicaba más tiempo, más costo, y probablemente más de lo que realmente necesitaba para su caso. Lo conversamos punto por punto hasta quedarnos con 8 críticos — los que de verdad protegían su decisión. No le vendimos el paquete más caro. Le ayudamos a encontrar el necesario.</p>
+
+    <p>Manejamos casi dos horas hasta la fábrica, con más de 34°C de calor. Y ahí nos encontramos con algo que preferimos contarle tal cual, en vez de maquillarlo: la fábrica no tenía una unidad de muestra armada para mostrar ese día. Pudimos haber grabado cualquier cosa y decir que todo estaba perfecto. En cambio, le explicamos la situación real y ajustamos el plan ahí mismo — grabamos, punto por punto, cada elemento de su lista: instalaciones eléctricas, tomas de corriente, acabados. Todo lo que él necesitaba ver con sus propios ojos, no con las palabras de un vendedor.</p>
+
+    <p>Lo que más recordamos de este caso, honestamente, no es la logística. Es que en algún momento dejó de sentirse como una transacción. Hubo semanas donde todo avanzaba rápido — él revisando cada video, cada plano, respondiendo el mismo día. Y hubo una semana donde todo se detuvo por completo, mientras él resolvía asuntos personales y coordinaba con su socio en Guatemala. No lo presionamos. Seguimos ahí, al ritmo que él necesitaba, porque una decisión de esta magnitud —comprar algo que no puedes tocar, de un país al que probablemente nunca vas a viajar— no se apura.</p>
+
+    <p class="case-list-title">Así trabajamos, en cada caso:</p>
+    <ul class="case-list">
+      <li>Si algo no está listo para mostrar, te lo decimos — no improvisamos una versión bonita de la realidad</li>
+      <li>No te vendemos el paquete más grande. Te ayudamos a decidir el que realmente necesitas</li>
+      <li>Entendemos que importar desde China rara vez avanza en línea recta — y ajustamos nuestro ritmo al tuyo, no al revés</li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="contact-left">
+    <div class="section-tag">Contacto</div>
+    <div class="section-title">¿Tienes un proveedor que verificar?</div>
+    <p>Cuéntanos qué necesitas. Te respondemos en menos de 24 horas, en español, sin compromiso.</p>
+    <div class="contact-details">
+      <div class="contact-item"><div class="contact-dot"></div>info@sourciavera.com</div>
+      <div class="contact-item"><div class="contact-dot"></div>+86 136 8805 7230 (WhatsApp)</div>
+      <div class="contact-item"><div class="contact-dot"></div>Guangzhou, Guangdong, China</div>
+    </div>
+    <a href="https://wa.me/8613688057230?text=Hola%2C%20soy%20importador%20guatemalteco%20y%20me%20interesa%20verificar%20un%20proveedor%20de%20Alibaba" class="wa-cta" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp</a>
+  </div>
+  <div class="contact-right">
+    <form id="contact-form" action="https://formspree.io/f/mjgjqpbg" method="POST">
+      <input type="hidden" name="_subject" value="Nueva consulta — Verificación Guatemala">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Tu nombre</label>
+          <input type="text" name="name" placeholder="Juan García" required>
+        </div>
+        <div class="form-group">
+          <label>País</label>
+          <select name="country">
+            <option selected>Guatemala</option>
+            <option>México</option>
+            <option>Colombia</option>
+            <option>Chile</option>
+            <option>Panamá</option>
+            <option>El Salvador</option>
+            <option>Honduras</option>
+            <option>Costa Rica</option>
+            <option>Otro</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>WhatsApp o Email</label>
+        <input type="text" name="contact" placeholder="+502 1234 5678 o email@dominio.com" required>
+      </div>
+      <div class="form-group">
+        <label>¿Qué necesitas?</label>
+        <select name="service">
+          <option value="">Selecciona un servicio</option>
+          <option value="Verificación de fábrica">Verificación de Fábrica — $349</option>
+          <option value="Inspección previa al envío">Inspección Previa al Envío — $299/día-hombre</option>
+          <option value="Auditoría de fábrica">Auditoría de Fábrica — $399/día-hombre</option>
+          <option value="Agente de compras">Agente de Compras — 10%</option>
+          <option value="Varios servicios">Varios servicios</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Cuéntanos más</label>
+        <textarea name="message" placeholder="¿Qué producto buscas? ¿Tienes ya un proveedor en mente? Enlace de Alibaba si tienes..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit" id="submit-btn">Enviar consulta →</button>
+      <div id="form-success" style="display:none;background:#00897B;color:white;padding:1rem;text-align:center;margin-top:0.5rem;font-size:0.9rem;">✓ Recibido — te contactamos en menos de 24h</div>
+    </form>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <h2>¿Tu proveedor es una fábrica real o un intermediario?</h2>
+  <p>Descúbrelo antes de enviar tu dinero. Primera consulta sin costo.</p>
+  <button class="btn-white" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Consulta gratis ahora</button>
+</div>
+
 <footer>
   <div class="footer-logo">SourciaVera</div>
   <div class="footer-links">
-    <a href="/privacy">Privacidad</a>
-    <a href="/terms">Términos</a>
+    <a href="/privacy">Política de Privacidad</a>
+    <a href="/terms">Términos de Servicio</a>
     <a href="/es/verificacion-fabricas/">Servicios por País</a>
   </div>
   <div>© <script>document.write(new Date().getFullYear())</script> SourciaVera · Guangzhou, China</div>
 </footer>
-<a href="https://wa.me/8613688057230?text=Hola%2C%20soy%20importador%20guatemalteco%20y%20me%20interesa%20verificar%20un%20proveedor" class="wa-float" title="WhatsApp" target="_blank" rel="noopener">💬</a>
+
+<a href="https://wa.me/8613688057230?text=Hola%2C%20soy%20importador%20guatemalteco%20y%20me%20interesa%20verificar%20un%20proveedor%20de%20Alibaba" class="wa-float" title="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+
+<script>
+const form=document.getElementById('contact-form');
+const btn=document.getElementById('submit-btn');
+form.addEventListener('submit',async e=>{
+  e.preventDefault();btn.textContent='Enviando...';btn.disabled=true;
+  try{
+    const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+    if(res.ok){
+      const success=document.getElementById('form-success');
+      form.reset();
+      btn.style.display='none';
+      success.style.display='block';
+      if(typeof gtag!=='undefined'){
+        gtag('event','conversion',{'send_to':'AW-18086408472/h2DFCLiqsekcEJjiorBD'});
+      }
+      setTimeout(function(){window.location.href='/blog/es';},2500);
+    }else{btn.textContent='Error — intenta de nuevo';btn.disabled=false;}
+  }catch(err){btn.textContent='Error — intenta de nuevo';btn.disabled=false;}
+});
+</script>
 <script type="module">
 import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
-CookieConsent.run({guiOptions:{consentModal:{layout:'bar',position:'bottom'}},onConsent:()=>{if(typeof gtag!=='undefined')gtag('consent','update',{analytics_storage:CookieConsent.acceptedCategory('analytics')?'granted':'denied'});},onChange:()=>{if(typeof gtag!=='undefined')gtag('consent','update',{analytics_storage:CookieConsent.acceptedCategory('analytics')?'granted':'denied'});},categories:{necessary:{enabled:true,readOnly:true},analytics:{autoClear:{cookies:[{name:/^(_ga|_gid)/}]}}},language:{default:'es',translations:{es:{consentModal:{title:'Usamos cookies',description:'Usamos cookies para analizar el tráfico.',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',showPreferencesBtn:'Preferencias'},preferencesModal:{title:'Preferencias',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',savePreferencesBtn:'Guardar',sections:[{title:'Necesarias',linkedCategory:'necessary'},{title:'Análisis',linkedCategory:'analytics'}]}}}}});
+CookieConsent.run({
+  guiOptions:{consentModal:{layout:'bar',position:'bottom'}},
+  onConsent:()=>{
+    if(typeof gtag!=='undefined'){
+      const v=CookieConsent.acceptedCategory('analytics')?'granted':'denied';
+      gtag('consent','update',{analytics_storage:v,ad_storage:v,ad_user_data:v,ad_personalization:v});
+    }
+  },
+  onChange:()=>{
+    if(typeof gtag!=='undefined'){
+      const v=CookieConsent.acceptedCategory('analytics')?'granted':'denied';
+      gtag('consent','update',{analytics_storage:v,ad_storage:v,ad_user_data:v,ad_personalization:v});
+    }
+  },
+  categories:{necessary:{enabled:true,readOnly:true},analytics:{autoClear:{cookies:[{name:/^(_ga|_gid)/}]}}},
+  language:{default:'es',translations:{es:{consentModal:{title:'Usamos cookies',description:'Usamos cookies para analizar el tráfico del sitio y mejorar tu experiencia.',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',showPreferencesBtn:'Preferencias'},preferencesModal:{title:'Preferencias de cookies',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',savePreferencesBtn:'Guardar preferencias',closeIconLabel:'Cerrar',sections:[{title:'Cookies necesarias',description:'Estas cookies son necesarias para el funcionamiento del sitio.',linkedCategory:'necessary'},{title:'Cookies de análisis',description:'Nos ayudan a entender cómo se usa el sitio mediante Google Analytics.',linkedCategory:'analytics'}]}}}}
+});
 </script>
 </body>
 </html>
