@@ -60,4 +60,14 @@
   <url><loc>https://sourciavera.com/blog/es/evitar-estafas-alibaba-comprador-mexicano</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sourciavera.com/blog/es/auditoria-fabrica-antes-importar-mexico</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
+  <!-- Product category pages (EN + ES) — 2026-08-28 -->
+  <url><loc>https://sourciavera.com/categories</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sourciavera.com/es/categorias</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sourciavera.com/categories/construction</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sourciavera.com/es/categorias/construccion</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sourciavera.com/categories/auto-parts</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sourciavera.com/es/categorias/autopartes</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sourciavera.com/categories/chemicals</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sourciavera.com/es/categorias/quimicos</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
 </urlset>

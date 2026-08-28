@@ -287,7 +287,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="nav-links">
     <a href="#services" data-en="Services" data-es="Servicios">Services</a>
     <a href="#process" data-en="Process" data-es="Proceso">Process</a>
-    <a href="#tradeshows" data-en="Trade Shows" data-es="Ferias">Trade Shows</a>
+    <a href="/categories/" data-en="Categories" data-es="Categorías">Categories</a>
     <a href="#faq-shows" data-en="FAQ" data-es="FAQ">FAQ</a>
     <a href="blog/index.html" data-en="Blog" data-es="Blog">Blog</a>
     <a href="/about" data-en="About" data-es="Nosotros">About</a>
@@ -745,6 +745,9 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
           <option data-en="Factory Verification" data-es="Verificación de fábrica">Factory Verification</option>
           <option data-en="Negotiation & Procurement" data-es="Negociación y compra">Negotiation & Procurement</option>
           <option data-en="Both services" data-es="Ambos servicios">Both services</option>
+          <option value="construction" data-en="Construction Materials" data-es="Materiales de Construcción">Construction Materials</option>
+          <option value="auto-parts" data-en="Auto Parts &amp; NEV" data-es="Autopartes &amp; NEV">Auto Parts &amp; NEV</option>
+          <option value="chemicals" data-en="Industrial Chemicals" data-es="Químicos Industriales">Industrial Chemicals</option>
         </select>
       </div>
       <div class="form-group">
@@ -927,6 +930,16 @@ function renderTimeline() {
 
 (function(){var yr=new Date().getFullYear(),el=document.querySelector('[data-en*="rights reserved"]');if(el){el.dataset.en=el.dataset.en.replace(/\d{4}/,yr);el.dataset.es=el.dataset.es.replace(/\d{4}/,yr);}})();
 setLang(currentLang);
+
+(function(){
+  var p = new URLSearchParams(window.location.search).get('service');
+  if(p){
+    var sel = document.getElementById('service-select');
+    if(sel){for(var i=0;i<sel.options.length;i++){if(sel.options[i].value===p){sel.selectedIndex=i;break;}}}
+    var el = document.getElementById('contact');
+    if(el) el.scrollIntoView({behavior:'smooth'});
+  }
+})();
 
 const form = document.getElementById('contact-form');
 const btn = document.getElementById('submit-btn');
