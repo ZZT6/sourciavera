@@ -73,7 +73,10 @@
 :root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
 body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
 a.logo{text-decoration:none}
-nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem;position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
+.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75);transition:background 0.2s}
+.nav-hamburger:hover span{background:white}
 .logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic;flex-shrink:0}
 .nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
 .nav-links a{color:rgba(255,255,255,0.6);text-decoration:none}
@@ -192,7 +195,14 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .footer-links a{color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s}
 .footer-links a:hover{color:var(--yellow)}
 @media(max-width:768px){
-nav{padding:1rem 1.5rem}.nav-links{display:none}
+html,body{overflow-x:hidden;max-width:100%}
+nav{padding:1rem 1.5rem}
+.nav-hamburger{display:flex}
+.nav-links{display:none}
+nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}
+nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}
+nav.nav-open .nav-links a:last-child{border-bottom:none}
+.nav-cta{font-size:0.7rem;padding:0.4rem 0.7rem;letter-spacing:0.02em}
 .hero{grid-template-columns:1fr;padding:3rem 1.5rem}
 .hero-card{display:none}
 .stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
@@ -206,6 +216,7 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .faq-section{padding:3rem 1.5rem}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
+.wa-cta{display:block;width:100%;box-sizing:border-box;text-align:center}
 }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
@@ -224,6 +235,9 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <a href="/about">Nosotros</a>
     <a href="#contacto">Contacto</a>
   </div>
+  <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
   <div class="nav-right">
     <div class="lang-switcher">
       <a class="lang-btn" href="/">EN</a>
@@ -601,6 +615,9 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 function toggleFaq(btn) {
   btn.closest('.faq-item').classList.toggle('open');
 }
+document.querySelectorAll('.nav-links a').forEach(function(a){
+  a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});
+});
 
 const form = document.getElementById('contact-form');
 const btn = document.getElementById('submit-btn');
