@@ -6,9 +6,10 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', { analytics_storage: 'denied', wait_for_update: 500 });
+  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
   gtag('js', new Date());
   gtag('config', 'G-X40LT2MS4X');
+  gtag('config', 'AW-18086408472');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,7 +126,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .stats{background:var(--yellow);padding:1.8rem 3rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .stat{text-align:center}
 .stat-num{font-size:1.8rem;font-weight:700;color:var(--navy);display:block}
-.stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);opacity:0.7}
+.stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy)}
 .services{padding:5rem 3rem;background:var(--white)}
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:3rem;line-height:1.2}
@@ -299,6 +300,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <a href="#contact" class="nav-cta" data-en="Free Consult" data-es="Consulta gratis">Free Consult</a>
   </div>
 </nav>
+<main>
 
 <section class="hero">
   <div class="hero-left">
@@ -327,7 +329,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="services" id="services">
   <div class="section-tag" data-en="Our Services" data-es="Nuestros Servicios">Our Services</div>
-  <div class="section-title" data-en="Two services. One mission:<br>Secure your supply chain." data-es="Dos servicios. Una misión:<br>Protege tu cadena de suministro.">Two services. One mission:<br>Secure your supply chain.</div>
+  <h2 class="section-title" data-en="Two services. One mission:<br>Secure your supply chain." data-es="Dos servicios. Una misión:<br>Protege tu cadena de suministro.">Two services. One mission:<br>Secure your supply chain.</h2>
   <div class="services-grid">
     <div class="service-card">
       <div class="service-num">01</div>
@@ -410,7 +412,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="who-section" id="who">
   <div class="section-tag" data-en="Who We Work With" data-es="Con Quién Trabajamos">Who We Work With</div>
-  <div class="section-title" data-en="Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou." data-es="Ya sea que compres directamente o representes clientes —<br>somos tu equipo en terreno en Guangzhou.">Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou.</div>
+  <h2 class="section-title" data-en="Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou." data-es="Ya sea que compres directamente o representes clientes —<br>somos tu equipo en terreno en Guangzhou.">Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou.</h2>
   <div class="who-cards">
     <div class="who-card">
       <div class="who-icon">🏭</div>
@@ -431,7 +433,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="why">
   <div class="section-tag" data-en="Why Us" data-es="¿Por qué elegirnos?">Why Us</div>
-  <div class="section-title" data-en="We're on your side,<br>not the factory's." data-es="Estamos de tu lado,<br>no del lado de la fábrica.">We're on your side,<br>not the factory's.</div>
+  <h2 class="section-title" data-en="We're on your side,<br>not the factory's." data-es="Estamos de tu lado,<br>no del lado de la fábrica.">We're on your side,<br>not the factory's.</h2>
   <div class="why-grid">
     <div class="why-card">
       <div class="why-icon">📍</div>
@@ -453,7 +455,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="how" id="process">
   <div class="section-tag" data-en="The Process" data-es="El Proceso">The Process</div>
-  <div class="section-title" data-en="Simple. Transparent. No risk." data-es="Simple. Transparente. Sin riesgos.">Simple. Transparent. No risk.</div>
+  <h2 class="section-title" data-en="Simple. Transparent. No risk." data-es="Simple. Transparente. Sin riesgos.">Simple. Transparent. No risk.</h2>
   <div class="how-flow">
     <div class="how-step">
       <div class="how-num">1</div>
@@ -695,7 +697,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <section class="contact" id="contact">
   <div class="contact-left">
     <div class="section-tag" data-en="Contact" data-es="Contacto">Contact</div>
-    <div class="section-title" data-en="Let's talk about your supplier" data-es="Hablemos sobre tu proveedor">Let's talk about your supplier</div>
+    <h2 class="section-title" data-en="Let's talk about your supplier" data-es="Hablemos sobre tu proveedor">Let's talk about your supplier</h2>
     <p data-en="Tell us what you need. We reply within 24 hours, in English or Spanish, no commitment required." data-es="Cuéntanos qué necesitas. Te respondemos en menos de 24 horas, en español o inglés, sin compromiso.">Tell us what you need. We reply within 24 hours, in English or Spanish, no commitment required.</p>
     <div class="contact-details">
       <div class="contact-item"><div class="contact-dot"></div>info@sourciavera.com</div>
@@ -712,8 +714,8 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
           <input type="text" name="name" placeholder="John Smith" required>
         </div>
         <div class="form-group">
-          <label data-en="Country" data-es="País">Country</label>
-          <select name="country">
+          <label for="country-select" data-en="Country" data-es="País">Country</label>
+          <select id="country-select" name="country">
             <option>United States</option>
             <option>United Kingdom</option>
             <option>Australia</option>
@@ -736,8 +738,8 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
         <input type="text" name="contact" placeholder="+1 555 123 4567 or email@domain.com" required>
       </div>
       <div class="form-group">
-        <label data-en="What do you need?" data-es="¿Qué necesitas?">What do you need?</label>
-        <select name="service">
+        <label for="service-select" data-en="What do you need?" data-es="¿Qué necesitas?">What do you need?</label>
+        <select id="service-select" name="service">
           <option value="" data-en="Select a service" data-es="Selecciona un servicio">Select a service</option>
           <option data-en="Factory Verification" data-es="Verificación de fábrica">Factory Verification</option>
           <option data-en="Negotiation & Procurement" data-es="Negociación y compra">Negotiation & Procurement</option>
@@ -761,6 +763,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <p data-en="Find out before you send your money. First consultation is free." data-es="Descúbrelo antes de enviar tu dinero. Primera consulta sin costo.">Find out before you send your money. First consultation is free.</p>
   <button class="btn-white" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Free Consult Now" data-es="Consulta gratis ahora">Free Consult Now</button>
 </div>
+</main>
 
 <footer>
   <div class="footer-logo">SourciaVera</div>
@@ -937,6 +940,11 @@ form.addEventListener('submit', async function(e) {
       form.reset();
       btn.style.display = 'none';
       success.style.display = 'block';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18086408472/h2DFCLiqsekcEJjiorBD'
+        });
+      }
       success.textContent = currentLang === 'es'
         ? '✓ Recibido — te contactamos en menos de 24h'
         : '✓ Received — we\'ll contact you within 24h';
@@ -955,10 +963,16 @@ import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {
-    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+    if (typeof gtag !== 'undefined') {
+      const adConsent = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', { analytics_storage: adConsent, ad_storage: adConsent, ad_user_data: adConsent, ad_personalization: adConsent });
+    }
   },
   onChange: () => {
-    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+    if (typeof gtag !== 'undefined') {
+      const adConsent = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', { analytics_storage: adConsent, ad_storage: adConsent, ad_user_data: adConsent, ad_personalization: adConsent });
+    }
   },
   categories: {
     necessary: { enabled: true, readOnly: true },

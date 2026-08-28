@@ -6,9 +6,10 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', { analytics_storage: 'denied', wait_for_update: 500 });
+  gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
   gtag('js', new Date());
   gtag('config', 'G-X40LT2MS4X');
+  gtag('config', 'AW-18086408472');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -100,7 +101,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .stats{background:var(--yellow);padding:1.8rem 3rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .stat{text-align:center}
 .stat-num{font-size:1.8rem;font-weight:700;color:var(--navy);display:block}
-.stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);opacity:0.7}
+.stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy)}
 .services{padding:5rem 3rem;background:var(--white)}
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:3rem;line-height:1.2}
@@ -229,6 +230,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <a href="#contacto" class="nav-cta">Consulta gratis</a>
   </div>
 </nav>
+<main>
 
 <section class="hero">
   <div class="hero-left">
@@ -257,7 +259,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="services" id="servicios">
   <div class="section-tag">Nuestros Servicios</div>
-  <div class="section-title">Dos servicios. Una misión:<br>Protege tu cadena de suministro.</div>
+  <h2 class="section-title">Dos servicios. Una misión:<br>Protege tu cadena de suministro.</h2>
   <div class="services-grid">
     <div class="service-card">
       <div class="service-num">01</div>
@@ -340,7 +342,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="who-section" id="quienes">
   <div class="section-tag">Con Quién Trabajamos</div>
-  <div class="section-title">Ya sea que compres directamente o representes clientes —<br>somos tu equipo en terreno en Guangzhou.</div>
+  <h2 class="section-title">Ya sea que compres directamente o representes clientes —<br>somos tu equipo en terreno en Guangzhou.</h2>
   <div class="who-cards">
     <div class="who-card">
       <div class="who-icon">🏭</div>
@@ -361,7 +363,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="why">
   <div class="section-tag">¿Por qué elegirnos?</div>
-  <div class="section-title">Estamos de tu lado,<br>no del lado de la fábrica.</div>
+  <h2 class="section-title">Estamos de tu lado,<br>no del lado de la fábrica.</h2>
   <div class="why-grid">
     <div class="why-card">
       <div class="why-icon">📍</div>
@@ -383,7 +385,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="how" id="proceso">
   <div class="section-tag">El Proceso</div>
-  <div class="section-title">Simple. Transparente. Sin riesgos.</div>
+  <h2 class="section-title">Simple. Transparente. Sin riesgos.</h2>
   <div class="how-flow">
     <div class="how-step">
       <div class="how-num">1</div>
@@ -411,7 +413,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <section class="faq-section" id="faq">
   <div class="faq-inner">
     <div class="section-tag">Preguntas Frecuentes</div>
-    <div class="section-title">Lo que más nos preguntan</div>
+    <h2 class="section-title">Lo que más nos preguntan</h2>
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
@@ -511,7 +513,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <section class="contact" id="contacto">
   <div class="contact-left">
     <div class="section-tag">Contacto</div>
-    <div class="section-title">Hablemos sobre tu proveedor</div>
+    <h2 class="section-title">Hablemos sobre tu proveedor</h2>
     <p>Cuéntanos qué necesitas. Te respondemos en menos de 24 horas, en español o inglés, sin compromiso.</p>
     <div class="contact-details">
       <div class="contact-item"><div class="contact-dot"></div>info@sourciavera.com</div>
@@ -531,8 +533,8 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
           <input type="text" name="name" placeholder="María García" required>
         </div>
         <div class="form-group">
-          <label>País</label>
-          <select name="country">
+          <label for="country-select">País</label>
+          <select id="country-select" name="country">
             <option>México</option>
             <option>Colombia</option>
             <option>Argentina</option>
@@ -552,8 +554,8 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
         <input type="text" name="contact" placeholder="+52 55 1234 5678 o email@dominio.com" required>
       </div>
       <div class="form-group">
-        <label>¿Qué necesitas?</label>
-        <select name="service">
+        <label for="service-select">¿Qué necesitas?</label>
+        <select id="service-select" name="service">
           <option value="">Selecciona un servicio</option>
           <option value="Verificación de fábrica">Verificación de Fábrica</option>
           <option value="Negociación y compra">Negociación y Compra</option>
@@ -577,6 +579,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <p>Descúbrelo antes de enviar tu dinero. Primera consulta sin costo.</p>
   <button class="btn-white" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Consulta gratis ahora</button>
 </div>
+</main>
 
 <footer>
   <div class="footer-logo">SourciaVera</div>
@@ -606,6 +609,11 @@ form.addEventListener('submit', async e => {
       const success = document.getElementById('form-success');
       form.reset();
       success.style.display = 'block';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18086408472/h2DFCLiqsekcEJjiorBD'
+        });
+      }
       btn.style.display = 'none';
     } else {
       btn.textContent = 'Error — intenta de nuevo';
@@ -622,10 +630,16 @@ import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {
-    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+    if (typeof gtag !== 'undefined') {
+      const adConsent = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', { analytics_storage: adConsent, ad_storage: adConsent, ad_user_data: adConsent, ad_personalization: adConsent });
+    }
   },
   onChange: () => {
-    if (typeof gtag !== 'undefined') gtag('consent', 'update', { analytics_storage: CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied' });
+    if (typeof gtag !== 'undefined') {
+      const adConsent = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', { analytics_storage: adConsent, ad_storage: adConsent, ad_user_data: adConsent, ad_personalization: adConsent });
+    }
   },
   categories: {
     necessary: { enabled: true, readOnly: true },
