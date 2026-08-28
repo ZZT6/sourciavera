@@ -91,6 +91,11 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .related{padding:2rem 1.5rem}
 .cta-btns{flex-direction:column;align-items:center}
 }
+nav{position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
+.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger:hover span{background:white}
+@media(max-width:768px){html,body{overflow-x:hidden;max-width:100%}nav{padding:1rem 1.5rem}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
 </head>
@@ -109,6 +114,7 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
     <a href="/blog/how-to-verify-alibaba-supplier" style="font-size:0.78rem;color:rgba(255,255,255,0.5);font-weight:600;padding:0.35rem 0.75rem;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">EN</a>
     <a href="/es/#contacto" class="nav-cta">Consulta gratis</a>
   </div>
+<button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 <main>
 
@@ -251,5 +257,6 @@ CookieConsent.run({
   language:{default:'es',translations:{es:{consentModal:{title:'Usamos cookies',description:'Usamos cookies para analizar el tráfico del sitio.',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',showPreferencesBtn:'Preferencias'},preferencesModal:{title:'Preferencias de cookies',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',savePreferencesBtn:'Guardar preferencias',sections:[{title:'Cookies necesarias',linkedCategory:'necessary'},{title:'Cookies de análisis',linkedCategory:'analytics'}]}}}}
 });
 </script>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
 </body>
 </html>

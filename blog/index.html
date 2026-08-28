@@ -46,6 +46,11 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-title{font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);font-weight:600;border-bottom:2px solid var(--border);padding-bottom:0.75rem}
 .blog-footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:2rem 3rem;font-size:0.82rem;margin-top:4rem}
 .blog-footer a{color:var(--yellow);text-decoration:none}
+nav{position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
+.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger:hover span{background:white}
+@media(max-width:768px){html,body{overflow-x:hidden;max-width:100%}nav{padding:1rem 1.5rem}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
 <meta property="og:title" content="SourciaVera Blog — China Sourcing & Supplier Verification">
@@ -65,9 +70,10 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
   <div class="nav-links">
     <a href="../index.html#services" data-en="Services" data-es="Servicios">Services</a>
     <a href="../index.html#process" data-en="Process" data-es="Proceso">Process</a>
-    <a href="../index.html#tradeshows" data-en="Trade Shows" data-es="Ferias">Trade Shows</a>
+    <a href="../categories/" data-en="Categories" data-es="Categorias">Categories</a>
     <a href="../index.html#faq" data-en="FAQ" data-es="FAQ">FAQ</a>
     <a href="index.html" class="active" data-en="Blog" data-es="Blog">Blog</a>
+    <a href="../about.html" data-en="About" data-es="Nosotros">About</a>
     <a href="../index.html#contact" data-en="Contact" data-es="Contacto">Contact</a>
   </div>
   <div class="nav-right">
@@ -77,6 +83,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
     </div>
     <a href="../index.html#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a>
   </div>
+<button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 <main>
 
@@ -431,5 +438,6 @@ CookieConsent.run({
   }
 });
 </script>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
 </body>
 </html>
