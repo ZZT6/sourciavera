@@ -950,7 +950,7 @@ form.addEventListener('submit', async function(e) {
         ? '✓ Recibido — te contactamos en menos de 24h'
         : '✓ Received — we\'ll contact you within 24h';
       setTimeout(function() {
-        window.location.href = currentLang === 'es' ? '/blog/es' : '/blog';
+        window.location.href = '/blog';
       }, 2500);
     } else {
       btn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
