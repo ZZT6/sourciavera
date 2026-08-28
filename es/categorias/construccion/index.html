@@ -86,7 +86,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
 .scope{padding:5rem 3rem;background:var(--light)}
-.scope-inner{max-width:900px}
+.scope-inner{max-width:900px;margin:0 auto}
 .scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:700px;margin-bottom:2.5rem}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
@@ -111,7 +111,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
 .footer-links{display:flex;gap:1.5rem}
 .footer-links a{color:rgba(255,255,255,0.4)}.footer-links a:hover{color:var(--yellow)}
-.product-detail-block{grid-column:1/-1;background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem}
+.product-detail-block{background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem;max-width:960px;margin:2rem auto 0}
+.product-img{width:100%;max-height:420px;object-fit:cover;margin-bottom:1.5rem;display:block}
 .detail-block-title{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.4rem}
 .detail-block-h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem}
 .config-table{width:100%;border-collapse:collapse;font-size:0.82rem;margin-bottom:0.5rem}
@@ -120,11 +121,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .config-table tr:nth-child(even) td{background:var(--light)}
 .table-source{font-size:0.74rem;color:var(--muted);font-style:italic;margin-bottom:0.4rem}
 .table-note{font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1.25rem;padding:0.5rem 0.75rem;background:var(--light);border-left:3px solid var(--coral)}
-.spec-details{border:1.5px solid var(--border);margin-bottom:0.6rem}
-.spec-details summary{padding:0.65rem 1rem;cursor:pointer;font-size:0.85rem;font-weight:600;color:var(--navy);background:var(--light);list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none}
-.spec-details summary::-webkit-details-marker{display:none}
-.spec-details summary::after{content:'+';font-size:1.1rem;color:var(--coral);font-weight:700}
-.spec-details[open] summary::after{content:'−'}
+.spec-section{border:1.5px solid var(--border);margin-bottom:0.6rem}
+.spec-section-title{padding:0.65rem 1rem;font-size:0.85rem;font-weight:600;color:var(--navy);background:var(--light)}
 .spec-details-body{padding:1rem}
 .spec-table{width:100%;border-collapse:collapse;font-size:0.82rem}
 .spec-table td{padding:0.4rem 0.75rem;border-bottom:1px solid var(--border);vertical-align:top}
@@ -186,136 +184,106 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <div class="section-tag">Qué Cubrimos</div>
     <div class="section-title">Productos de construcción que<br>verificamos y gestionamos</div>
     <p class="scope-intro">Trabajamos con compradores que importan materiales de construcción de gran formato desde China — productos donde la calidad de la fábrica, las especificaciones estructurales y la capacidad productiva son críticas antes de comprometer un contenedor.</p>
-    <div class="product-grid">
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Casas Contenedor Expandibles</strong><span>Unidades flat-pack y plegables de 20 y 40 pies, opciones de acabado interior, certificaciones estructurales</span></div>
-      </div>
+    <div class="product-item" style="max-width:960px;margin:0 auto 1.25rem">
+      <div class="product-dot"></div>
+      <div><strong>Casas Contenedor Expandibles</strong><span>Unidades flat-pack y plegables de 20 y 40 pies, opciones de acabado interior, certificaciones estructurales</span></div>
+    </div>
 
-      <div class="product-detail-block">
-        <div class="detail-block-title">Casas Contenedor · Datos de Mercado</div>
-        <div class="detail-block-h3">Opciones de Configuración — Casas Contenedoras Expandibles</div>
-        <div style="overflow-x:auto">
-          <table class="config-table">
-            <thead>
-              <tr>
-                <th>Opción</th>
-                <th>Material de Pared</th>
-                <th>Puerta</th>
-                <th>Techo</th>
-                <th>Precio EXW</th>
-                <th>Precio FOB</th>
-                <th>Recomendado Para</th>
-              </tr>
-            </thead>
+    <div class="product-detail-block">
+      <img class="product-img" src="/images/container-home.jpg" alt="Casa contenedora expandible - exterior">
+      <div class="detail-block-title">Casas Contenedor · Datos de Mercado</div>
+      <div class="detail-block-h3">Opciones de Configuración — Casas Contenedoras Expandibles</div>
+      <div style="overflow-x:auto">
+        <table class="config-table">
+          <thead>
+            <tr>
+              <th>Opción</th>
+              <th>Material de Pared</th>
+              <th>Puerta</th>
+              <th>Techo</th>
+              <th>Precio EXW</th>
+              <th>Precio FOB</th>
+              <th>Recomendado Para</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A (Estándar)</strong></td>
+              <td>EPS 75mm ext / EPS 50mm int</td>
+              <td>Puerta de vidrio</td>
+              <td>Techo plano</td>
+              <td>$17,160</td>
+              <td>$18,260</td>
+              <td>Presupuesto ajustado, climas templados, uso vacacional o temporal</td>
+            </tr>
+            <tr>
+              <td><strong>B (Intermedio)</strong></td>
+              <td>PU 50mm ext / PU 50mm int</td>
+              <td>Puerta de acero simple</td>
+              <td>Techo plano</td>
+              <td>$18,000</td>
+              <td>$19,100</td>
+              <td>Equilibrio entre costo y seguridad, uso residencial estándar</td>
+            </tr>
+            <tr>
+              <td><strong>C (Premium)</strong></td>
+              <td>PU 75mm ext / PU 50mm int</td>
+              <td>Puerta de acero doble</td>
+              <td>Techo a dos aguas</td>
+              <td>$18,380</td>
+              <td>$19,480</td>
+              <td>Climas cálidos y húmedos, mejor aislamiento, uso residencial prolongado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-source">Fuente: listados de la plataforma Alibaba, junio 2026.</p>
+      <p class="table-note">Opciones de mejora: puerta de vidrio → puerta de acero simple +$100, simple → doble +$100 adicional. Techo plano → techo a dos aguas +$100. Cualquier mejora se puede agregar a cualquier configuración.</p>
+      <div class="spec-section">
+        <div class="spec-section-title">Especificaciones Técnicas — Casas Contenedoras Expandibles</div>
+        <div class="spec-details-body">
+          <table class="spec-table">
             <tbody>
-              <tr>
-                <td><strong>A (Estándar)</strong></td>
-                <td>EPS 75mm ext / EPS 50mm int</td>
-                <td>Puerta de vidrio</td>
-                <td>Techo plano</td>
-                <td>$17,160</td>
-                <td>$18,260</td>
-                <td>Presupuesto ajustado, climas templados, uso vacacional o temporal</td>
-              </tr>
-              <tr>
-                <td><strong>B (Intermedio)</strong></td>
-                <td>PU 50mm ext / PU 50mm int</td>
-                <td>Puerta de acero simple</td>
-                <td>Techo plano</td>
-                <td>$18,000</td>
-                <td>$19,100</td>
-                <td>Equilibrio entre costo y seguridad, uso residencial estándar</td>
-              </tr>
-              <tr>
-                <td><strong>C (Premium)</strong></td>
-                <td>PU 75mm ext / PU 50mm int</td>
-                <td>Puerta de acero doble</td>
-                <td>Techo a dos aguas</td>
-                <td>$18,380</td>
-                <td>$19,480</td>
-                <td>Climas cálidos y húmedos, mejor aislamiento, uso residencial prolongado</td>
-              </tr>
+              <tr><td>Dimensiones totales (expandida)</td><td>5,900×6,240×2,480 mm</td></tr>
+              <tr><td>Dimensiones plegada</td><td>2,300×5,900×2,480 mm</td></tr>
+              <tr><td>Tara</td><td>3,600 kg</td></tr>
+              <tr><td>Carga en contenedor</td><td>2 unidades / 1×40HQ</td></tr>
+              <tr><td>Aislamiento térmico (λ)</td><td>0.04 W/m·K</td></tr>
+              <tr><td>Resistencia al viento</td><td>1.0 kN/㎡</td></tr>
+              <tr><td>Aislamiento acústico</td><td>≥30 dB</td></tr>
+              <tr><td>Clasificación contra incendio</td><td>Clase B</td></tr>
+              <tr><td>Resistencia sísmica</td><td>Intensidad 9</td></tr>
+              <tr><td>Vida útil</td><td>25 años</td></tr>
+              <tr><td>Capas de apilamiento máx.</td><td>2</td></tr>
+              <tr><td>Carga de apilamiento (poste esquinero)</td><td>2,500 kg</td></tr>
+              <tr><td>Carga útil máxima</td><td>3,600 kg</td></tr>
+              <tr><td>Prueba de carga de piso</td><td>2.0 kN/㎡</td></tr>
+              <tr><td>Prueba de carga de techo</td><td>0.75 kN/㎡</td></tr>
             </tbody>
           </table>
+          <p class="table-source" style="margin-top:0.75rem">Datos basados en especificaciones del fabricante, junio 2026.</p>
         </div>
-        <p class="table-source">Fuente: listados de la plataforma Alibaba, junio 2026.</p>
-        <p class="table-note">Opciones de mejora: puerta de vidrio → puerta de acero simple +$100, simple → doble +$100 adicional. Techo plano → techo a dos aguas +$100. Cualquier mejora se puede agregar a cualquier configuración.</p>
-        <details class="spec-details">
-          <summary>Especificaciones Técnicas — Casas Contenedoras Expandibles</summary>
-          <div class="spec-details-body">
-            <table class="spec-table">
-              <tbody>
-                <tr><td>Dimensiones totales (expandida)</td><td>5,900×6,240×2,480 mm</td></tr>
-                <tr><td>Dimensiones plegada</td><td>2,300×5,900×2,480 mm</td></tr>
-                <tr><td>Tara</td><td>3,600 kg</td></tr>
-                <tr><td>Carga en contenedor</td><td>2 unidades / 1×40HQ</td></tr>
-                <tr><td>Aislamiento térmico (λ)</td><td>0.04 W/m·K</td></tr>
-                <tr><td>Resistencia al viento</td><td>1.0 kN/㎡</td></tr>
-                <tr><td>Aislamiento acústico</td><td>≥30 dB</td></tr>
-                <tr><td>Clasificación contra incendio</td><td>Clase B</td></tr>
-                <tr><td>Resistencia sísmica</td><td>Intensidad 9</td></tr>
-                <tr><td>Vida útil</td><td>25 años</td></tr>
-                <tr><td>Capas de apilamiento máx.</td><td>2</td></tr>
-                <tr><td>Carga de apilamiento (poste esquinero)</td><td>2,500 kg</td></tr>
-                <tr><td>Carga útil máxima</td><td>3,600 kg</td></tr>
-                <tr><td>Prueba de carga de piso</td><td>2.0 kN/㎡</td></tr>
-                <tr><td>Prueba de carga de techo</td><td>0.75 kN/㎡</td></tr>
-              </tbody>
-            </table>
-            <p class="table-source" style="margin-top:0.75rem">Datos basados en especificaciones del fabricante, junio 2026.</p>
-          </div>
-        </details>
-        <details class="spec-details">
-          <summary>Materiales y Detalles de Construcción</summary>
-          <div class="spec-details-body">
-            <table class="spec-table">
-              <tbody>
-                <tr><td>Marco de pared plegable</td><td>Placa de acero 2.0mm, doblada + recubrimiento en polvo</td></tr>
-                <tr><td>Marco inferior plegable</td><td>Placa doblada 2.0mm + tubo cuadrado de acero 40×60×1.5mm, recubrimiento en polvo</td></tr>
-                <tr><td>Viga principal del chasis inferior</td><td>Tubo cuadrado de acero 60×120×3.0mm, recubrimiento en polvo</td></tr>
-                <tr><td>Viga secundaria del chasis inferior</td><td>Tubo cuadrado de acero galvanizado 80×80×2.0mm, recubrimiento en polvo</td></tr>
-                <tr><td>Viga secundaria del chasis superior</td><td>Tubo cuadrado de acero galvanizado 40×60×1.5mm, recubrimiento en polvo</td></tr>
-                <tr><td>Aislamiento de techo</td><td>Lana de vidrio 75mm, Clase A no combustible</td></tr>
-                <tr><td>Panel de pared</td><td>Panel sándwich PU 50mm, placa de acero prepintado (PPGI) 0.326mm, densidad 10 kg/m³, retardante de llama</td></tr>
-                <tr><td>Suelo</td><td>Tablero de silicato de calcio, 18mm, densidad ≥1.3 g/cm³</td></tr>
-                <tr><td>Ventana</td><td>Aleación de aluminio corrediza (970×970mm) / abatible</td></tr>
-                <tr><td>Puerta de entrada</td><td>Puerta doble de aleación de aluminio</td></tr>
-                <tr><td>Puerta interior</td><td>Puerta de seguridad de acero</td></tr>
-              </tbody>
-            </table>
-            <p class="table-source" style="margin-top:0.75rem">Datos basados en especificaciones del fabricante, junio 2026.</p>
-          </div>
-        </details>
       </div>
-
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Estructuras de Acero</strong><span>Marcos de acero ligero, bodegas de pórtico, edificios industriales prefabricados</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Viviendas Modulares y Prefabricadas</strong><span>Casas de panel sándwich, cabañas flat-pack, oficinas móviles y alojamientos de obra</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Techos y Revestimientos</strong><span>Láminas metálicas, paneles de acero corrugado, láminas PPGI con recubrimiento de color</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Puertas y Ventanas</strong><span>Marcos de aleación de aluminio, perfiles UPVC, unidades de doble vidrio, cortinas metálicas</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Plomería y Sanitarios</strong><span>Tuberías y accesorios PVC/CPVC, sanitarios, cabinas de ducha, tanques de agua</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Materiales Eléctricos</strong><span>Tubería conduit, interruptores automáticos, tableros de distribución, paneles LED</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Andamios y Encofrados</strong><span>Andamios de tubo de acero, sistemas cup-lock, mesas de encofrado para losas</span></div>
+      <div class="spec-section">
+        <div class="spec-section-title">Materiales y Detalles de Construcción</div>
+        <div class="spec-details-body">
+          <table class="spec-table">
+            <tbody>
+              <tr><td>Marco de pared plegable</td><td>Placa de acero 2.0mm, doblada + recubrimiento en polvo</td></tr>
+              <tr><td>Marco inferior plegable</td><td>Placa doblada 2.0mm + tubo cuadrado de acero 40×60×1.5mm, recubrimiento en polvo</td></tr>
+              <tr><td>Viga principal del chasis inferior</td><td>Tubo cuadrado de acero 60×120×3.0mm, recubrimiento en polvo</td></tr>
+              <tr><td>Viga secundaria del chasis inferior</td><td>Tubo cuadrado de acero galvanizado 80×80×2.0mm, recubrimiento en polvo</td></tr>
+              <tr><td>Viga secundaria del chasis superior</td><td>Tubo cuadrado de acero galvanizado 40×60×1.5mm, recubrimiento en polvo</td></tr>
+              <tr><td>Aislamiento de techo</td><td>Lana de vidrio 75mm, Clase A no combustible</td></tr>
+              <tr><td>Panel de pared</td><td>Panel sándwich PU 50mm, placa de acero prepintado (PPGI) 0.326mm, densidad 10 kg/m³, retardante de llama</td></tr>
+              <tr><td>Suelo</td><td>Tablero de silicato de calcio, 18mm, densidad ≥1.3 g/cm³</td></tr>
+              <tr><td>Ventana</td><td>Aleación de aluminio corrediza (970×970mm) / abatible</td></tr>
+              <tr><td>Puerta de entrada</td><td>Puerta doble de aleación de aluminio</td></tr>
+              <tr><td>Puerta interior</td><td>Puerta de seguridad de acero</td></tr>
+            </tbody>
+          </table>
+          <p class="table-source" style="margin-top:0.75rem">Datos basados en especificaciones del fabricante, junio 2026.</p>
+        </div>
       </div>
     </div>
   </div>

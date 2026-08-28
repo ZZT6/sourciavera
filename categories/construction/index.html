@@ -86,7 +86,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
 .scope{padding:5rem 3rem;background:var(--light)}
-.scope-inner{max-width:900px}
+.scope-inner{max-width:900px;margin:0 auto}
 .scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:700px;margin-bottom:2.5rem}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
@@ -111,7 +111,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
 .footer-links{display:flex;gap:1.5rem}
 .footer-links a{color:rgba(255,255,255,0.4)}.footer-links a:hover{color:var(--yellow)}
-.product-detail-block{grid-column:1/-1;background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem}
+.product-detail-block{background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem;max-width:960px;margin:2rem auto 0}
+.product-img{width:100%;max-height:420px;object-fit:cover;margin-bottom:1.5rem;display:block}
 .detail-block-title{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.4rem}
 .detail-block-h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem}
 .config-table{width:100%;border-collapse:collapse;font-size:0.82rem;margin-bottom:0.5rem}
@@ -120,11 +121,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .config-table tr:nth-child(even) td{background:var(--light)}
 .table-source{font-size:0.74rem;color:var(--muted);font-style:italic;margin-bottom:0.4rem}
 .table-note{font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:1.25rem;padding:0.5rem 0.75rem;background:var(--light);border-left:3px solid var(--coral)}
-.spec-details{border:1.5px solid var(--border);margin-bottom:0.6rem}
-.spec-details summary{padding:0.65rem 1rem;cursor:pointer;font-size:0.85rem;font-weight:600;color:var(--navy);background:var(--light);list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none}
-.spec-details summary::-webkit-details-marker{display:none}
-.spec-details summary::after{content:'+';font-size:1.1rem;color:var(--coral);font-weight:700}
-.spec-details[open] summary::after{content:'−'}
+.spec-section{border:1.5px solid var(--border);margin-bottom:0.6rem}
+.spec-section-title{padding:0.65rem 1rem;font-size:0.85rem;font-weight:600;color:var(--navy);background:var(--light)}
 .spec-details-body{padding:1rem}
 .spec-table{width:100%;border-collapse:collapse;font-size:0.82rem}
 .spec-table td{padding:0.4rem 0.75rem;border-bottom:1px solid var(--border);vertical-align:top}
@@ -187,136 +185,106 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <div class="section-tag">What We Cover</div>
     <div class="section-title">Construction products<br>we verify and source</div>
     <p class="scope-intro">We work with buyers sourcing large-format construction materials from China — products where factory quality, structural specs, and production capacity matter before you commit to a container load.</p>
-    <div class="product-grid">
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Expandable Container Homes</strong><span>20ft / 40ft flat-pack and foldable units, interior fit-out options, structural certifications</span></div>
-      </div>
+    <div class="product-item" style="max-width:960px;margin:0 auto 1.25rem">
+      <div class="product-dot"></div>
+      <div><strong>Expandable Container Homes</strong><span>20ft / 40ft flat-pack and foldable units, interior fit-out options, structural certifications</span></div>
+    </div>
 
-      <div class="product-detail-block">
-        <div class="detail-block-title">Container Homes · Market Data</div>
-        <div class="detail-block-h3">Configuration Options — Expandable Container Homes</div>
-        <div style="overflow-x:auto">
-          <table class="config-table">
-            <thead>
-              <tr>
-                <th>Option</th>
-                <th>Wall Material</th>
-                <th>Door</th>
-                <th>Roof</th>
-                <th>EXW Price</th>
-                <th>FOB Price</th>
-                <th>Best For</th>
-              </tr>
-            </thead>
+    <div class="product-detail-block">
+      <img class="product-img" src="/images/container-home.jpg" alt="Expandable container house exterior">
+      <div class="detail-block-title">Container Homes · Market Data</div>
+      <div class="detail-block-h3">Configuration Options — Expandable Container Homes</div>
+      <div style="overflow-x:auto">
+        <table class="config-table">
+          <thead>
+            <tr>
+              <th>Option</th>
+              <th>Wall Material</th>
+              <th>Door</th>
+              <th>Roof</th>
+              <th>EXW Price</th>
+              <th>FOB Price</th>
+              <th>Best For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A (Standard)</strong></td>
+              <td>75mm EPS ext / 50mm EPS int</td>
+              <td>Glass door</td>
+              <td>Flat roof</td>
+              <td>$17,160</td>
+              <td>$18,260</td>
+              <td>Budget-focused, mild climates, seasonal/vacation use</td>
+            </tr>
+            <tr>
+              <td><strong>B (Mid-tier)</strong></td>
+              <td>50mm PU ext / 50mm PU int</td>
+              <td>Single steel door</td>
+              <td>Flat roof</td>
+              <td>$18,000</td>
+              <td>$19,100</td>
+              <td>Balanced cost &amp; security, most standard residential use</td>
+            </tr>
+            <tr>
+              <td><strong>C (Premium)</strong></td>
+              <td>75mm PU ext / 50mm PU int</td>
+              <td>Double steel door</td>
+              <td>Gable roof</td>
+              <td>$18,380</td>
+              <td>$19,480</td>
+              <td>Hot/humid climates, stronger insulation, long-term living</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-source">Data source: Alibaba platform listings, June 2026.</p>
+      <p class="table-note">Upgrade options: Glass → single steel door +$100, single → double steel door +$100 more. Flat → gable roof +$100. Any upgrade can be added to any configuration.</p>
+      <div class="spec-section">
+        <div class="spec-section-title">Technical Specifications — Expandable Container Homes</div>
+        <div class="spec-details-body">
+          <table class="spec-table">
             <tbody>
-              <tr>
-                <td><strong>A (Standard)</strong></td>
-                <td>75mm EPS ext / 50mm EPS int</td>
-                <td>Glass door</td>
-                <td>Flat roof</td>
-                <td>$17,160</td>
-                <td>$18,260</td>
-                <td>Budget-focused, mild climates, seasonal/vacation use</td>
-              </tr>
-              <tr>
-                <td><strong>B (Mid-tier)</strong></td>
-                <td>50mm PU ext / 50mm PU int</td>
-                <td>Single steel door</td>
-                <td>Flat roof</td>
-                <td>$18,000</td>
-                <td>$19,100</td>
-                <td>Balanced cost &amp; security, most standard residential use</td>
-              </tr>
-              <tr>
-                <td><strong>C (Premium)</strong></td>
-                <td>75mm PU ext / 50mm PU int</td>
-                <td>Double steel door</td>
-                <td>Gable roof</td>
-                <td>$18,380</td>
-                <td>$19,480</td>
-                <td>Hot/humid climates, stronger insulation, long-term living</td>
-              </tr>
+              <tr><td>Overall dimensions (expanded)</td><td>5,900×6,240×2,480 mm</td></tr>
+              <tr><td>Folded dimensions</td><td>2,300×5,900×2,480 mm</td></tr>
+              <tr><td>Tare weight</td><td>3,600 kg</td></tr>
+              <tr><td>Container loading</td><td>2 units / 1×40HQ</td></tr>
+              <tr><td>Thermal insulation (λ)</td><td>0.04 W/m·K</td></tr>
+              <tr><td>Wind resistance</td><td>1.0 kN/㎡</td></tr>
+              <tr><td>Sound insulation</td><td>≥30 dB</td></tr>
+              <tr><td>Fire rating</td><td>Class B</td></tr>
+              <tr><td>Seismic fortification</td><td>Intensity 9</td></tr>
+              <tr><td>Service life</td><td>25 years</td></tr>
+              <tr><td>Max stacking layers</td><td>2</td></tr>
+              <tr><td>Corner post stack load</td><td>2,500 kg</td></tr>
+              <tr><td>Max payload</td><td>3,600 kg</td></tr>
+              <tr><td>Floor load test</td><td>2.0 kN/㎡</td></tr>
+              <tr><td>Roof load test</td><td>0.75 kN/㎡</td></tr>
             </tbody>
           </table>
+          <p class="table-source" style="margin-top:0.75rem">Data based on manufacturer specifications, June 2026.</p>
         </div>
-        <p class="table-source">Data source: Alibaba platform listings, June 2026.</p>
-        <p class="table-note">Upgrade options: Glass → single steel door +$100, single → double steel door +$100 more. Flat → gable roof +$100. Any upgrade can be added to any configuration.</p>
-        <details class="spec-details">
-          <summary>Technical Specifications — Expandable Container Homes</summary>
-          <div class="spec-details-body">
-            <table class="spec-table">
-              <tbody>
-                <tr><td>Overall dimensions (expanded)</td><td>5,900×6,240×2,480 mm</td></tr>
-                <tr><td>Folded dimensions</td><td>2,300×5,900×2,480 mm</td></tr>
-                <tr><td>Tare weight</td><td>3,600 kg</td></tr>
-                <tr><td>Container loading</td><td>2 units / 1×40HQ</td></tr>
-                <tr><td>Thermal insulation (λ)</td><td>0.04 W/m·K</td></tr>
-                <tr><td>Wind resistance</td><td>1.0 kN/㎡</td></tr>
-                <tr><td>Sound insulation</td><td>≥30 dB</td></tr>
-                <tr><td>Fire rating</td><td>Class B</td></tr>
-                <tr><td>Seismic fortification</td><td>Intensity 9</td></tr>
-                <tr><td>Service life</td><td>25 years</td></tr>
-                <tr><td>Max stacking layers</td><td>2</td></tr>
-                <tr><td>Corner post stack load</td><td>2,500 kg</td></tr>
-                <tr><td>Max payload</td><td>3,600 kg</td></tr>
-                <tr><td>Floor load test</td><td>2.0 kN/㎡</td></tr>
-                <tr><td>Roof load test</td><td>0.75 kN/㎡</td></tr>
-              </tbody>
-            </table>
-            <p class="table-source" style="margin-top:0.75rem">Data based on manufacturer specifications, June 2026.</p>
-          </div>
-        </details>
-        <details class="spec-details">
-          <summary>Materials &amp; Construction Details</summary>
-          <div class="spec-details-body">
-            <table class="spec-table">
-              <tbody>
-                <tr><td>Flip wall frame</td><td>2.0mm steel plate, bent + spray coated</td></tr>
-                <tr><td>Flip bottom steel frame</td><td>2.0mm bent plate + 40×60×1.5mm SHS, spray coated</td></tr>
-                <tr><td>Bottom chassis girder</td><td>60×120×3.0mm SHS, spray coated</td></tr>
-                <tr><td>Bottom chassis secondary beam</td><td>80×80×2.0mm galvanized SHS, spray coated</td></tr>
-                <tr><td>Top chassis secondary beam</td><td>40×60×1.5mm galvanized SHS, spray coated</td></tr>
-                <tr><td>Roof insulation</td><td>75mm glasswool, Class A non-combustible</td></tr>
-                <tr><td>Wall panel</td><td>50mm PU sandwich panel, 0.326mm PPGI, density 10 kg/m³, flame retardant</td></tr>
-                <tr><td>Floor</td><td>Calcium silicate board, 18mm, density ≥1.3 g/cm³</td></tr>
-                <tr><td>Window</td><td>Aluminum alloy sliding (970×970mm) / casement</td></tr>
-                <tr><td>Entrance door</td><td>Aluminum alloy double door</td></tr>
-                <tr><td>Internal door</td><td>Steel security door</td></tr>
-              </tbody>
-            </table>
-            <p class="table-source" style="margin-top:0.75rem">Data based on manufacturer specifications, June 2026.</p>
-          </div>
-        </details>
       </div>
-
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Steel Structure Buildings</strong><span>Light gauge steel frames, portal frame warehouses, prefab industrial buildings</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Modular & Prefab Housing</strong><span>Sandwich panel houses, flat-pack cabins, mobile offices and site accommodations</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Roofing & Cladding</strong><span>Metal roofing sheets, corrugated steel panels, color-coated PPGI sheets</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Doors & Windows</strong><span>Aluminium alloy frames, UPVC profiles, double-glazed units, roller shutters</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Plumbing & Sanitation</strong><span>PVC/CPVC pipes and fittings, sanitary ware, shower enclosures, water tanks</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Electrical Materials</strong><span>Cable conduit, circuit breakers, distribution boards, LED panel lights</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Scaffolding & Formwork</strong><span>Steel tube scaffolding, cup-lock systems, slab formwork tables</span></div>
+      <div class="spec-section">
+        <div class="spec-section-title">Materials &amp; Construction Details</div>
+        <div class="spec-details-body">
+          <table class="spec-table">
+            <tbody>
+              <tr><td>Flip wall frame</td><td>2.0mm steel plate, bent + spray coated</td></tr>
+              <tr><td>Flip bottom steel frame</td><td>2.0mm bent plate + 40×60×1.5mm SHS, spray coated</td></tr>
+              <tr><td>Bottom chassis girder</td><td>60×120×3.0mm SHS, spray coated</td></tr>
+              <tr><td>Bottom chassis secondary beam</td><td>80×80×2.0mm galvanized SHS, spray coated</td></tr>
+              <tr><td>Top chassis secondary beam</td><td>40×60×1.5mm galvanized SHS, spray coated</td></tr>
+              <tr><td>Roof insulation</td><td>75mm glasswool, Class A non-combustible</td></tr>
+              <tr><td>Wall panel</td><td>50mm PU sandwich panel, 0.326mm PPGI, density 10 kg/m³, flame retardant</td></tr>
+              <tr><td>Floor</td><td>Calcium silicate board, 18mm, density ≥1.3 g/cm³</td></tr>
+              <tr><td>Window</td><td>Aluminum alloy sliding (970×970mm) / casement</td></tr>
+              <tr><td>Entrance door</td><td>Aluminum alloy double door</td></tr>
+              <tr><td>Internal door</td><td>Steel security door</td></tr>
+            </tbody>
+          </table>
+          <p class="table-source" style="margin-top:0.75rem">Data based on manufacturer specifications, June 2026.</p>
+        </div>
       </div>
     </div>
   </div>
