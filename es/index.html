@@ -616,6 +616,9 @@ form.addEventListener('submit', async e => {
         });
       }
       btn.style.display = 'none';
+      setTimeout(function() {
+        window.location.href = '/blog/es';
+      }, 2500);
     } else {
       btn.textContent = 'Error — intenta de nuevo';
       btn.disabled = false;
