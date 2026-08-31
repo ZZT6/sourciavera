@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -43,7 +43,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 }
 @media(max-width:768px){html,body{overflow-x:hidden;max-width:100%}}
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <meta property="og:url" content="https://sourciavera.com/privacy">
 <link rel="canonical" href="https://sourciavera.com/privacy">
 </head>
@@ -130,7 +130,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 </footer>
 
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {

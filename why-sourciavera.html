@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta name="description" content="Why choose SourciaVera to verify your Alibaba supplier? Flat-fee third-party verification, bilingual reports, hands-on production oversight.">
 <link rel="canonical" href="https://sourciavera.com/why-sourciavera">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
@@ -144,7 +144,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 </footer>
 
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://sourciavera.com/og-image-es.png">
 <link rel="canonical" href="https://sourciavera.com/es/supervision-fabricas-china">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
@@ -441,7 +441,7 @@ function toggleFaq(btn) {
 }
 </script>
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {

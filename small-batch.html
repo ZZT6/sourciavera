@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- rebuild trigger 2026-06-22 -->
 <html lang="en">
 <head>
@@ -188,7 +188,7 @@ footer{
 }
 @media(max-width:768px){html,body{overflow-x:hidden;max-width:100%}}
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <meta property="og:title" content="Small Batch Custom Manufacturing from China | SourciaVera">
 <meta property="og:description" content="Get custom products made in China in small quantities (50–500 units). Real factory pricing, no middlemen, quality verified before shipping.">
 <meta property="og:url" content="https://sourciavera.com/small-batch">
@@ -373,7 +373,7 @@ sbForm.addEventListener('submit', async function(e) {
 });
 </script>
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {

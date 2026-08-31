@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -37,7 +37,7 @@
   "inLanguage": "es"
 }
 </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
@@ -285,7 +285,7 @@ nav{position:relative}
 <footer>&copy; <script>document.write(new Date().getFullYear())</script> SourciaVera &middot; <a href="/">sourciavera.com</a></footer>
 
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions:{consentModal:{layout:'bar',position:'bottom'}},
   onConsent:()=>{if(typeof gtag!=='undefined')gtag('consent','update',{analytics_storage:CookieConsent.acceptedCategory('analytics')?'granted':'denied'});},

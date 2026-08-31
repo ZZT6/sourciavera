@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About SourciaVera — Third-Party Alibaba Verification Team</title>
+<title>About SourciaVera — Our Team & Why We Exist</title>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<meta name="description" content="Who is SourciaVera? An independent, China-based team in Guangzhou providing third-party verification of Alibaba suppliers for global buyers.">
+<meta name="description" content="SourciaVera is a bilingual team based in Guangzhou handling factory verification, production supervision, and procurement for importers in the US, UK, and Latin America.">
 <link rel="canonical" href="https://sourciavera.com/about">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
@@ -38,6 +38,15 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .value-item:nth-child(4){border-color:var(--navy);background:var(--white);border:1.5px solid var(--border);border-left:3px solid var(--navy)}
 .value-item strong{display:block;font-size:0.92rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem}
 .value-item p{color:var(--muted);font-size:0.88rem;line-height:1.75;margin:0}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:0.5rem}
+.team-card{border:1px solid var(--border);padding:1.5rem}
+.team-card-role{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.team-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.team-card p{color:var(--muted);font-size:0.85rem;line-height:1.7}
+.pain-list{display:flex;flex-direction:column;gap:0.75rem;margin:1.25rem 0}
+.pain-item{display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--muted);line-height:1.6}
+.pain-dot{width:8px;height:8px;min-width:8px;background:var(--coral);margin-top:0.5rem}
+@media(max-width:768px){.team-grid{grid-template-columns:1fr}}
 .divider{border:none;border-top:1px solid var(--border);margin:0 0 3.5rem}
 footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
@@ -71,20 +80,27 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 </nav>
 
 <div class="page-header">
-  <div class="tag">About</div>
-  <h1>Who We Are & Why We Exist</h1>
-  <p>A factory verification agency built for buyers that most of China trade never bothered to serve.</p>
+  <div class="tag">About Us</div>
+  <h1>You've been there.<br>We fix that.</h1>
+  <p>SourciaVera is a bilingual team based in Guangzhou — built to handle every step between your order and your doorstep.</p>
 </div>
 
 <div class="content">
 
   <div class="section">
-    <div class="section-label">Our Story</div>
+    <div class="section-label">Sound familiar?</div>
     <div class="prose">
-      <p>In 2025, I made my first trip into the Mexican market — and it changed how I saw trade with China.</p>
-      <p>What struck me wasn't the opportunity. It was the people: hardworking importers across Latin America, consistently priced out of fair deals — not for lack of a strong business, but because they spoke Spanish, and most Chinese factories only speak Mandarin.</p>
-      <p>I watched good buyers get quoted worse prices, get ignored by factories, or get stuck working through agents who didn't understand their market — simply because of a language gap that had nothing to do with the quality of their business.</p>
-      <p>That's the gap SourciaVera exists to close.</p>
+      <p>Before we tell you who we are, let us tell you what we've seen happen to importers who tried to go it alone:</p>
+    </div>
+    <div class="pain-list">
+      <div class="pain-item"><div class="pain-dot"></div>Deposit paid. Factory stops responding. Money gone.</div>
+      <div class="pain-item"><div class="pain-dot"></div>Samples arrived perfect. Bulk order looked nothing like them.</div>
+      <div class="pain-item"><div class="pain-dot"></div>Goods held at customs. Nobody on the China side can explain why.</div>
+      <div class="pain-item"><div class="pain-dot"></div>Supplier quoted you double what they quoted someone who speaks Mandarin.</div>
+    </div>
+    <div class="prose">
+      <p>These aren't edge cases. They happen every week to buyers who are otherwise running solid businesses. The common thread: no one on the ground in China who was actually on their side.</p>
+      <p><strong>That's the only problem SourciaVera exists to solve.</strong> We handle China — so you can focus on your business.</p>
     </div>
   </div>
 
@@ -93,30 +109,56 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <div class="section">
     <div class="section-label">Our Mission</div>
     <div class="mission-block">
-      <p>We believe a language barrier should never be the reason a hardworking importer in Mexico, Guatemala, or Colombia can't access the same verified factories, the same fair pricing, and the same level of trust that English-speaking buyers take for granted.</p>
+      <p>We believe a language barrier should never be the reason a hardworking importer in the US, UK, Mexico, Guatemala, or Colombia can't access the same verified factories, the same fair pricing, and the same level of protection that the biggest players take for granted. Hand us your requirements — we handle the rest.</p>
     </div>
   </div>
 
   <hr class="divider">
 
   <div class="section">
-    <div class="section-label">Our Values</div>
+    <div class="section-label">Our Team</div>
+    <div class="prose">
+      <p>We are a team, not a solo operator. Each engagement is handled by specialists — not one person wearing every hat.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-card-role">Ground Team</div>
+        <h3>Verification &amp; Audit</h3>
+        <p>On-site coordinators across Guangdong and East China. They visit factories, film walkthroughs, run audits, and supervise production. Same-day reach to any supplier in the Pearl River Delta.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card-role">Language Team</div>
+        <h3>EN / ES / ZH</h3>
+        <p>Bilingual client managers who communicate with you in English or Spanish and negotiate directly with factories in Mandarin — no auto-translations, no third-party interpreters losing nuance mid-deal.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card-role">Logistics Team</div>
+        <h3>Shipment &amp; Documents</h3>
+        <p>Freight coordination, pre-shipment inspection, document review, and customs prep. We don't hand you off to a freight forwarder and disappear — we stay through to dispatch.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <div class="section-label">What We Stand For</div>
     <div class="values-list">
       <div class="value-item">
-        <strong>Transparency first.</strong>
-        <p>We verify factories on the ground — not just on paper — before we ever recommend them to a client.</p>
+        <strong>Certainty over optimism.</strong>
+        <p>We verify on the ground — not on paper. We report what we actually find, even when it's not what you hoped to hear.</p>
+      </div>
+      <div class="value-item">
+        <strong>Your side, not the factory's.</strong>
+        <p>We receive zero commission from suppliers. Our incentive is your successful order — nothing else.</p>
       </div>
       <div class="value-item">
         <strong>Bilingual by design, not as an afterthought.</strong>
-        <p>Every quote, every report, every conversation happens in the language our client is most comfortable in.</p>
+        <p>Every quote, report, and conversation happens in the language you're most comfortable in. No information loss between you and the factory.</p>
       </div>
       <div class="value-item">
-        <strong>Fair deals, both ways.</strong>
-        <p>We believe good factories and good buyers both deserve honest partners in the middle — not middlemen who profit from confusion.</p>
-      </div>
-      <div class="value-item">
-        <strong>We're still early.</strong>
-        <p>But we believe that with the right people bridging the right gap, Chinese manufacturing and Latin American business don't have to be worlds apart — they can be genuine partners.</p>
+        <strong>Ongoing, not one-and-done.</strong>
+        <p>We don't walk away after the verification visit. Supervision, production follow-up, and QC are part of how we work — because a single audit doesn't protect a 60-day production run.</p>
       </div>
     </div>
   </div>
@@ -133,7 +175,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 </footer>
 
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   categories: {

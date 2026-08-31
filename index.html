@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -244,8 +244,40 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
 .faq{padding:3rem 1.5rem}
 }
+/* 8-card services */
+.services-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.svc-card{border:1px solid var(--border);padding:1.75rem 1.5rem}
+.svc-icon{font-size:1.5rem;margin-bottom:0.75rem}
+.svc-card h3{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;line-height:1.3}
+.svc-card p{color:var(--muted);font-size:0.82rem;line-height:1.6}
+.svc-price-tag{display:inline-block;background:var(--light);color:var(--coral);font-size:0.7rem;font-weight:600;padding:0.15rem 0.5rem;margin-bottom:0.5rem;border-left:2px solid var(--coral);letter-spacing:0.04em}
+.services-outro{margin-top:2.5rem;text-align:center;padding-top:2rem;border-top:1px solid var(--border);font-size:0.9rem;color:var(--muted);font-style:italic;line-height:1.8}
+/* 5-step process */
+.how-flow-5{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:3rem}
+.how-step-v2{padding:1.75rem 1.25rem;border-right:1px solid var(--border)}
+.how-step-v2:last-child{border-right:none}
+.how-step-v2.step-featured{background:var(--navy)}
+.how-step-v2.step-featured h3{color:white}
+.how-step-v2.step-featured p{color:rgba(255,255,255,0.7)}
+.how-step-v2.step-featured .trust-line{color:rgba(255,255,255,0.5);border-color:rgba(255,255,255,0.15)}
+.step-vs-badge{display:inline-block;background:var(--yellow);color:var(--navy);font-size:0.62rem;font-weight:700;padding:0.2rem 0.55rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
+.how-num-v2{width:40px;height:40px;background:var(--coral);color:white;font-size:0.9rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.how-step-v2:nth-child(2) .how-num-v2{background:var(--teal)}
+.how-step-v2:nth-child(3) .how-num-v2{background:var(--navy)}
+.how-step-v2.step-featured .how-num-v2{background:var(--yellow);color:var(--navy)}
+.how-step-v2:nth-child(5) .how-num-v2{background:var(--teal)}
+.how-step-v2 h3{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.35rem}
+.how-step-v2 p{color:var(--muted);font-size:0.82rem;line-height:1.6}
+.trust-line{color:var(--teal);font-size:0.78rem;font-style:italic;line-height:1.5;margin-top:0.75rem;padding-top:0.6rem;border-top:1px dashed var(--border)}
+@media(max-width:768px){
+.services-grid-8{grid-template-columns:1fr 1fr}
+.how-flow-5{grid-template-columns:1fr}
+.how-step-v2{border-right:none;border-bottom:1px solid var(--border);padding:1.25rem 1rem}
+.how-step-v2.step-featured{border-bottom:1px solid rgba(255,255,255,0.15)}
+.how-step-v2:last-child{border-bottom:none}
+}
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -277,18 +309,18 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag" data-en="📍 Guangzhou, China — Worldwide Buyers" data-es="📍 Guangzhou, China — Compradores Globales">📍 Guangzhou, China — Worldwide Buyers</div>
-    <h1 data-en='Verified <span>intelligence</span> on your Alibaba supplier,<br>before you commit.' data-es='Información <span>verificada</span> sobre tu proveedor de Alibaba,<br>antes de comprometerte.'>Verified <span>intelligence</span> on your Alibaba supplier,<br>before you commit.</h1>
-    <p data-en="We visit factories in person, on camera, and negotiate directly in Chinese. You get real information before committing. Based in Guangzhou." data-es="Visitamos fábricas en persona, con cámara, y negociamos directamente en chino. Información real antes de comprometerte. Con base en Guangzhou.">We visit factories in person, on camera, and negotiate directly in Chinese. You get real information before committing. Based in Guangzhou.</p>
+    <h1 data-en='No more sourcing nightmares.<br>Get <span>verified goods</span> delivered right.' data-es='Sin más pesadillas de importación.<br>Recibe <span>productos verificados</span> sin complicaciones.'>No more sourcing nightmares.<br>Get <span>verified goods</span> delivered right.</h1>
+    <p data-en="From factory audit to your doorstep — we handle every step. No flights to China, no guesswork, no middlemen. Verified products at honest prices, while you wait at home for your delivery." data-es="Desde la auditoría en fábrica hasta tu puerta — manejamos cada etapa. Sin volar a China, sin adivinar, sin intermediarios. Productos verificados a precios honestos, tú solo esperas en casa.">From factory audit to your doorstep — we handle every step. No flights to China, no guesswork, no middlemen. Verified products at honest prices, while you wait at home for your delivery.</p>
     <div class="hero-btns">
-      <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Verify My Supplier" data-es="Verificar mi proveedor">Verify My Supplier</button>
+      <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Get Started Free" data-es="Comenzar gratis">Get Started Free</button>
       <button class="btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" data-en="See Services" data-es="Ver servicios">See Services</button>
     </div>
   </div>
   <div class="hero-card">
-    <div class="hero-card-tag" data-en="Did you know?" data-es="¿Sabías que...?">Did you know?</div>
-    <h3 data-en='Many "manufacturers" on Alibaba are just middlemen' data-es='Muchos "fabricantes" en Alibaba son solo intermediarios'>Many "manufacturers" on Alibaba are just middlemen</h3>
-    <p data-en="With us on your side, you can stop worrying about fake factories and inflated quotes. Just sit back and receive real, honest quality at a real, honest price — the kind of deal China is actually capable of giving you." data-es="Con nosotros de tu lado, ya no tienes que preocuparte por fábricas falsas ni cotizaciones infladas. Solo relájate y recibe calidad real, a un precio real — el tipo de trato que China realmente puede ofrecerte.">With us on your side, you can stop worrying about fake factories and inflated quotes. Just sit back and receive real, honest quality at a real, honest price — the kind of deal China is actually capable of giving you.</p>
-    <div class="hero-card-badge" data-en="No deal = No charge" data-es="Sin trato = Sin cobro">No deal = No charge</div>
+    <div class="hero-card-tag" data-en="Our three-layer promise" data-es="Nuestra promesa en tres capas">Our three-layer promise</div>
+    <h3 data-en="Certainty. Peace of mind. Honest prices." data-es="Certeza. Tranquilidad. Precios honestos.">Certainty. Peace of mind. Honest prices.</h3>
+    <p data-en="No more supplier roulette. Our bilingual team handles every step in China — factory verification, production monitoring, QC, shipment — so you receive exactly what you ordered, at the price you agreed." data-es="Sin más ruleta de proveedores. Nuestro equipo bilingüe maneja cada etapa en China — verificación, seguimiento, QC, despacho — para que recibas exactamente lo que pediste, al precio acordado.">No more supplier roulette. Our bilingual team handles every step in China — factory verification, production monitoring, QC, shipment — so you receive exactly what you ordered, at the price you agreed.</p>
+    <div class="hero-card-badge" data-en="First consultation is free" data-es="Primera consulta gratuita">First consultation is free</div>
   </div>
 </section>
 
@@ -301,84 +333,55 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="services" id="services">
   <div class="section-tag" data-en="Our Services" data-es="Nuestros Servicios">Our Services</div>
-  <h2 class="section-title" data-en="Two services. One mission:<br>Secure your supply chain." data-es="Dos servicios. Una misión:<br>Protege tu cadena de suministro.">Two services. One mission:<br>Secure your supply chain.</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-num">01</div>
+  <h2 class="section-title" data-en="Everything you need to source from China — safely." data-es="Todo lo que necesitas para importar desde China — con seguridad.">Everything you need to source from China — safely.</h2>
+  <div class="services-grid-8">
+    <div class="svc-card">
+      <div class="svc-icon">🏭</div>
+      <div class="svc-price-tag" data-en="From $349" data-es="Desde $349">From $349</div>
       <h3 data-en="Factory Verification" data-es="Verificación de Fábrica">Factory Verification</h3>
-      <div class="service-sub" data-en="On-site investigation" data-es="Investigación en persona">On-site investigation</div>
-      <div class="service-price" data-en="$349 per visit" data-es="$349 por visita">$349 per visit</div>
-      <p data-en="Our team conducts an independent, third-party on-site verification of the factory — giving you an objective, accurate picture before you commit." data-es="Nuestro equipo realiza una verificación independiente de terceros en la fábrica — dándote una imagen objetiva y precisa antes de comprometerte.">Our team conducts an independent, third-party on-site verification of the factory — giving you an objective, accurate picture before you commit.</p>
-      <div class="service-steps">
-        <div class="service-step">
-          <div class="step-dot">1</div>
-          <div class="step-text">
-            <strong data-en="Independent third-party verification" data-es="Verificación independiente de terceros">Independent third-party verification</strong>
-            <span data-en="We assess the factory objectively and report exactly what we find" data-es="Evaluamos la fábrica de forma objetiva y reportamos exactamente lo que encontramos">We assess the factory objectively and report exactly what we find</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">2</div>
-          <div class="step-text">
-            <strong data-en="Real factory-gate price check" data-es="Verificación del precio real de fábrica">Real factory-gate price check</strong>
-            <span data-en="We quote as if we're buying ourselves — real numbers, no markup" data-es="Cotizamos como si compráramos nosotros — precios reales, sin sobrecargo">We quote as if we're buying ourselves — real numbers, no markup</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">3</div>
-          <div class="step-text">
-            <strong data-en="First-person video walkthrough" data-es="Recorrido en video en primera persona">First-person video walkthrough</strong>
-            <span data-en="Production line, warehouse, equipment, staff — all on camera" data-es="Línea de producción, almacén, equipos, personal — todo en cámara">Production line, warehouse, equipment, staff — all on camera</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">4</div>
-          <div class="step-text">
-            <strong data-en="Full report in English & Spanish" data-es="Informe completo en inglés y español">Full report in English & Spanish</strong>
-            <span data-en="Photos, unedited video, honest factory assessment" data-es="Fotos, video sin editar, evaluación honesta de la fábrica">Photos, unedited video, honest factory assessment</span>
-          </div>
-        </div>
-      </div>
-      <div class="service-highlight" data-en='"Real factory or middleman? We tell you before you send a single dollar."' data-es='"¿Fábrica real o intermediario? Te lo decimos antes de que envíes un solo dólar."'>"Real factory or middleman? We tell you before you send a single dollar."</div>
+      <p data-en="Confirm legitimacy, production capacity, and real conditions on the ground. No more deposits for phantom factories." data-es="Confirma existencia, capacidad productiva y condiciones reales. Sin más depósitos para fábricas fantasma.">Confirm legitimacy, production capacity, and real conditions on the ground. No more deposits for phantom factories.</p>
     </div>
-    <div class="service-card">
-      <div class="service-num">02</div>
-      <h3 data-en="Negotiation & Procurement" data-es="Negociación y Compra">Negotiation & Procurement</h3>
-      <div class="service-sub" data-en="Your buying team in China" data-es="Tu equipo de compras en China">Your buying team in China</div>
-      <div class="service-price" data-en="10% of order value" data-es="10% del valor del pedido">10% of order value</div>
-      <p data-en="Once the factory is verified, we handle the entire purchase process. You just approve and receive." data-es="Una vez verificada la fábrica, nos encargamos de todo el proceso de compra. Tú solo apruebas y recibes.">Once the factory is verified, we handle the entire purchase process. You just approve and receive.</p>
-      <div class="service-steps">
-        <div class="service-step">
-          <div class="step-dot">1</div>
-          <div class="step-text">
-            <strong data-en="Direct negotiation in Chinese" data-es="Negociación directa en chino">Direct negotiation in Chinese</strong>
-            <span data-en="Prices change when you don't depend on English — we negotiate like locals" data-es="Los precios cambian cuando no dependes del inglés — negociamos como locales">Prices change when you don't depend on English — we negotiate like locals</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">2</div>
-          <div class="step-text">
-            <strong data-en="Dedicated sourcing specialist" data-es="Especialista de compras dedicado">Dedicated sourcing specialist</strong>
-            <span data-en="One expert manages your order, terms, timeline, and quality control" data-es="Un experto gestiona tu pedido, términos, plazos y control de calidad">One expert manages your order, terms, timeline, and quality control</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">3</div>
-          <div class="step-text">
-            <strong data-en="Professional shipping quote" data-es="Cotización de envío profesional">Professional shipping quote</strong>
-            <span data-en="We contact freight agents and calculate full landed cost to your port" data-es="Contactamos agentes de carga y calculamos el costo total hasta tu puerto">We contact freight agents and calculate full landed cost to your port</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">4</div>
-          <div class="step-text">
-            <strong data-en="All-in final report" data-es="Reporte final todo incluido">All-in final report</strong>
-            <span data-en="Product + freight + insurance. One number. No surprises." data-es="Producto + flete + seguro. Un solo número. Sin sorpresas.">Product + freight + insurance. One number. No surprises.</span>
-          </div>
-        </div>
-      </div>
-      <div class="service-highlight" data-en='"Product + freight + insurance. One number. You decide."' data-es='"Producto + flete + seguro. Un solo número. Tú decides."'>"Product + freight + insurance. One number. You decide."</div>
+    <div class="svc-card">
+      <div class="svc-icon">👁️</div>
+      <div class="svc-price-tag" data-en="From $299/day" data-es="Desde $299/día">From $299/day</div>
+      <h3 data-en="On-site Supervision" data-es="Supervisión Presencial">On-site Supervision</h3>
+      <p data-en="Continuous production monitoring. Stop chasing suppliers daily — we're on the factory floor so you don't have to be." data-es="Supervisión continua de producción. Deja de perseguir al proveedor — estamos en la fábrica por ti.">Continuous production monitoring. Stop chasing suppliers daily — we're on the factory floor so you don't have to be.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">✅</div>
+      <div class="svc-price-tag" data-en="$299/man-day" data-es="$299/día-hombre">$299/man-day</div>
+      <h3 data-en="Pre-Shipment Inspection" data-es="Inspección Previa al Envío">Pre-Shipment Inspection</h3>
+      <p data-en="Quantity, appearance, packaging, function — every item checked against your specs before it leaves the factory." data-es="Cantidad, apariencia, empaque, función — cada artículo verificado contra tus especificaciones antes de salir.">Quantity, appearance, packaging, function — every item checked against your specs before it leaves the factory.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">📋</div>
+      <div class="svc-price-tag" data-en="$399/man-day" data-es="$399/día-hombre">$399/man-day</div>
+      <h3 data-en="Factory Audit" data-es="Auditoría de Fábrica">Factory Audit</h3>
+      <p data-en="Deep review of supplier credentials, production capability, and compliance risk — before committing to a large order." data-es="Revisión profunda de credenciales, capacidad productiva y riesgos de cumplimiento — antes de comprometerte.">Deep review of supplier credentials, production capability, and compliance risk — before committing to a large order.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🤝</div>
+      <div class="svc-price-tag" data-en="10% commission" data-es="10% comisión">10% commission</div>
+      <h3 data-en="Sourcing &amp; Procurement" data-es="Abastecimiento y Compra">Sourcing &amp; Procurement</h3>
+      <p data-en="Direct source factory connections. Zero kickbacks from factories — every dollar you pay goes to the product, not a middleman." data-es="Conexión directa con fábricas origen. Sin comisiones ocultas — cada dólar va al producto, no al intermediario.">Direct source factory connections. Zero kickbacks from factories — every dollar you pay goes to the product, not a middleman.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🏗️</div>
+      <h3 data-en="Vertical Sourcing" data-es="Abastecimiento por Sector">Vertical Sourcing</h3>
+      <p data-en="Construction / Auto Parts / Chemicals. Serving buyers in Mexico, Guatemala, Colombia, Chile, and Panama." data-es="Construcción / Autopartes / Químicos. Servicio a compradores en México, Guatemala, Colombia, Chile y Panamá.">Construction / Auto Parts / Chemicals. Serving buyers in Mexico, Guatemala, Colombia, Chile, and Panama.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🗣️</div>
+      <h3 data-en="Bilingual Coordination" data-es="Coordinación Bilingüe">Bilingual Coordination</h3>
+      <p data-en="EN/ES bilingual team talks directly to you and the factory. Less lost in translation. Fewer costly misunderstandings." data-es="Equipo bilingüe EN/ES habla directamente contigo y la fábrica. Menos información perdida. Menos errores costosos.">EN/ES bilingual team talks directly to you and the factory. Less lost in translation. Fewer costly misunderstandings.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">⚖️</div>
+      <h3 data-en="Dispute Support" data-es="Apoyo en Disputas">Dispute Support</h3>
+      <p data-en="Sourcing went wrong? We provide legal referrals and supplier dispute coordination when things don't go as planned." data-es="¿Algo salió mal? Ofrecemos derivación legal y coordinación de disputas cuando el proceso no va según lo planeado.">Sourcing went wrong? We provide legal referrals and supplier dispute coordination when things don't go as planned.</p>
+    </div>
   </div>
+  <p class="services-outro" data-en="Every service above is designed for one outcome: you receive the goods you ordered, at the price you agreed, without surprises. First consultation is always free." data-es="Cada servicio está diseñado para un solo resultado: recibes lo que pediste, al precio acordado, sin sorpresas. La primera consulta siempre es gratuita.">Every service above is designed for one outcome: you receive the goods you ordered, at the price you agreed, without surprises. First consultation is always free.</p>
 </section>
 
 <section class="who-section" id="who">
@@ -424,28 +427,40 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 </section>
 
 <section class="how" id="process">
-  <div class="section-tag" data-en="The Process" data-es="El Proceso">The Process</div>
-  <h2 class="section-title" data-en="Simple. Transparent. No risk." data-es="Simple. Transparente. Sin riesgos.">Simple. Transparent. No risk.</h2>
-  <div class="how-flow">
-    <div class="how-step">
-      <div class="how-num">1</div>
-      <h3 data-en="Tell us what you need" data-es="Cuéntanos qué necesitas">Tell us what you need</h3>
-      <p data-en="Share the supplier link or factory name. Tell us the product and your budget." data-es="Comparte el enlace del proveedor o nombre de la fábrica. Cuéntanos el producto y tu presupuesto.">Share the supplier link or factory name. Tell us the product and your budget.</p>
+  <div class="section-tag" data-en="How It Works" data-es="Cómo Funciona">How It Works</div>
+  <h2 class="section-title" data-en="From your first message to goods at your door — five steps." data-es="Desde tu primer mensaje hasta la mercancía en tu puerta — cinco pasos.">From your first message to goods at your door — five steps.</h2>
+  <div class="how-flow-5">
+    <div class="how-step-v2">
+      <div class="how-num-v2">01</div>
+      <h3 data-en="Submit Requirements" data-es="Envía tus Necesidades">Submit Requirements</h3>
+      <p data-en="Product specs, target quantity, budget, quality standards, timeline — everything we need to get moving." data-es="Especificaciones, cantidad, presupuesto, estándares de calidad, plazos — todo lo que necesitamos para arrancar.">Product specs, target quantity, budget, quality standards, timeline — everything we need to get moving.</p>
+      <div class="trust-line" data-en="From day one, a dedicated person handles your case. No messages into a void." data-es="Desde el primer día, una persona dedicada atiende tu caso. Sin mensajes al vacío.">From day one, a dedicated person handles your case. No messages into a void.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">2</div>
-      <h3 data-en="We verify in person" data-es="Verificamos en persona">We verify in person</h3>
-      <p data-en="We go as local buyers, film everything first-person, and send you the report within 48 hours." data-es="Vamos como compradores locales, filmamos todo en primera persona y te enviamos el informe en 48 horas.">We go as local buyers, film everything first-person, and send you the report within 48 hours.</p>
+    <div class="how-step-v2">
+      <div class="how-num-v2">02</div>
+      <h3 data-en="Supplier Matching" data-es="Búsqueda de Proveedor">Supplier Matching</h3>
+      <p data-en="We source by vertical — construction, auto parts, chemicals — from origin factories, not agents." data-es="Buscamos por sector — construcción, autopartes, químicos — en fábricas origen, no agentes.">We source by vertical — construction, auto parts, chemicals — from origin factories, not agents.</p>
+      <div class="trust-line" data-en="We help you bypass middlemen and ghost factories before you commit a dollar." data-es="Te ayudamos a evitar intermediarios y fábricas fantasma antes de comprometer un dólar.">We help you bypass middlemen and ghost factories before you commit a dollar.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">3</div>
-      <h3 data-en="We negotiate & quote" data-es="Negociamos y cotizamos">We negotiate & quote</h3>
-      <p data-en="Our specialist negotiates in Chinese, contacts the freight agent, and presents the final total price." data-es="Nuestro especialista negocia en chino, contacta al agente de carga y presenta el precio total final.">Our specialist negotiates in Chinese, contacts the freight agent, and presents the final total price.</p>
+    <div class="how-step-v2">
+      <div class="how-num-v2">03</div>
+      <h3 data-en="Verification &amp; Audit" data-es="Verificación y Auditoría">Verification &amp; Audit</h3>
+      <p data-en="Transparent pricing from $349. On-site visit with unedited video — what you see is what exists." data-es="Precios transparentes desde $349. Visita presencial con video sin editar — lo que ves es lo que existe.">Transparent pricing from $349. On-site visit with unedited video — what you see is what exists.</p>
+      <div class="trust-line" data-en="Seeing is believing. We eliminate the 'photo factory' scam — every time." data-es="Ver para creer. Eliminamos la estafa de la 'fábrica foto' — siempre.">Seeing is believing. We eliminate the 'photo factory' scam — every time.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">4</div>
-      <h3 data-en="You decide with confidence" data-es="Tú decides con seguridad">You decide with confidence</h3>
-      <p data-en="With full information in hand, you approve or walk away. We only charge if you close the deal." data-es="Con información completa en mano, apruebas o te retiras. Solo cobramos si cierras el trato.">With full information in hand, you approve or walk away. We only charge if you close the deal.</p>
+    <div class="how-step-v2 step-featured">
+      <div class="step-vs-badge" data-en="vs. one-time inspection" data-es="vs. inspección única">vs. one-time inspection</div>
+      <div class="how-num-v2">04</div>
+      <h3 data-en="Ongoing Supervision" data-es="Seguimiento Continuo">Ongoing Supervision</h3>
+      <p data-en="On-site production follow-up, milestone by milestone — not just one visit and walk away." data-es="Seguimiento presencial de producción, hito por hito — no solo una visita y adiós.">On-site production follow-up, milestone by milestone — not just one visit and walk away.</p>
+      <div class="trust-line" data-en="We stay until your goods ship correctly. This is our key differentiator." data-es="Nos quedamos hasta que tu mercancía salga bien. Así nos diferenciamos del mercado.">We stay until your goods ship correctly. This is our key differentiator.</div>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">05</div>
+      <h3 data-en="QC &amp; Shipment" data-es="QC y Despacho">QC &amp; Shipment</h3>
+      <p data-en="Pre-shipment inspection, document coordination, and risk backup — everything in order before goods leave China." data-es="Inspección final, coordinación de documentos y respaldo ante riesgos — todo en orden antes de que salga.">Pre-shipment inspection, document coordination, and risk backup — everything in order before goods leave China.</p>
+      <div class="trust-line" data-en="What you paid for is what arrives. Every time." data-es="Lo que pagaste es lo que llega. Siempre.">What you paid for is what arrives. Every time.</div>
+    </div>
   </div>
 </section>
 
@@ -813,7 +828,7 @@ form.addEventListener('submit', async function(e) {
 });
 </script>
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {

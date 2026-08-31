@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -155,6 +155,38 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .how-step:nth-child(3) .how-num{background:var(--teal)}
 .how-step h3{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem}
 .how-step p{color:var(--muted);font-size:0.85rem;line-height:1.6}
+/* 8-card services */
+.services-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.svc-card{border:1px solid var(--border);padding:1.75rem 1.5rem}
+.svc-icon{font-size:1.5rem;margin-bottom:0.75rem}
+.svc-card h3{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;line-height:1.3}
+.svc-card p{color:var(--muted);font-size:0.82rem;line-height:1.6}
+.svc-price-tag{display:inline-block;background:var(--light);color:var(--coral);font-size:0.7rem;font-weight:600;padding:0.15rem 0.5rem;margin-bottom:0.5rem;border-left:2px solid var(--coral);letter-spacing:0.04em}
+.services-outro{margin-top:2.5rem;text-align:center;padding-top:2rem;border-top:1px solid var(--border);font-size:0.9rem;color:var(--muted);font-style:italic;line-height:1.8}
+/* 5-step process */
+.how-flow-5{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:3rem}
+.how-step-v2{padding:1.75rem 1.25rem;border-right:1px solid var(--border)}
+.how-step-v2:last-child{border-right:none}
+.how-step-v2.step-featured{background:var(--navy)}
+.how-step-v2.step-featured h3{color:white}
+.how-step-v2.step-featured p{color:rgba(255,255,255,0.7)}
+.how-step-v2.step-featured .trust-line{color:rgba(255,255,255,0.5);border-color:rgba(255,255,255,0.15)}
+.step-vs-badge{display:inline-block;background:var(--yellow);color:var(--navy);font-size:0.62rem;font-weight:700;padding:0.2rem 0.55rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
+.how-num-v2{width:40px;height:40px;background:var(--coral);color:white;font-size:0.9rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.how-step-v2:nth-child(2) .how-num-v2{background:var(--teal)}
+.how-step-v2:nth-child(3) .how-num-v2{background:var(--navy)}
+.how-step-v2.step-featured .how-num-v2{background:var(--yellow);color:var(--navy)}
+.how-step-v2:nth-child(5) .how-num-v2{background:var(--teal)}
+.how-step-v2 h3{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.35rem}
+.how-step-v2 p{color:var(--muted);font-size:0.82rem;line-height:1.6}
+.trust-line{color:var(--teal);font-size:0.78rem;font-style:italic;line-height:1.5;margin-top:0.75rem;padding-top:0.6rem;border-top:1px dashed var(--border)}
+@media(max-width:768px){
+.services-grid-8{grid-template-columns:1fr 1fr}
+.how-flow-5{grid-template-columns:1fr}
+.how-step-v2{border-right:none;border-bottom:1px solid var(--border);padding:1.25rem 1rem}
+.how-step-v2.step-featured{border-bottom:1px solid rgba(255,255,255,0.15)}
+.how-step-v2:last-child{border-bottom:none}
+}
 .faq-section{padding:5rem 3rem;background:var(--white)}
 .faq-inner{max-width:800px;margin:0 auto}
 .faq-item{border-bottom:1px solid var(--border)}
@@ -219,7 +251,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .wa-cta{display:block;width:100%;box-sizing:border-box;text-align:center}
 }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -251,18 +283,18 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag">📍 Guangzhou, China — Compradores Globales</div>
-    <h1>Información <span>verificada</span> sobre tu proveedor de Alibaba,<br>antes de comprometerte.</h1>
-    <p>Visitamos fábricas en persona, con cámara, y negociamos directamente en chino. Información real antes de comprometerte. Con base en Guangzhou. <strong>Atención completa en español.</strong></p>
+    <h1>Sin más pesadillas de importación.<br>Recibe <span>productos verificados</span> sin complicaciones.</h1>
+    <p>Desde la auditoría en fábrica hasta tu puerta — manejamos cada etapa. Sin volar a China, sin adivinar, sin intermediarios. Productos verificados a precios honestos, tú solo esperas en casa. <strong>Atención completa en español.</strong></p>
     <div class="hero-btns">
-      <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Verificar mi proveedor</button>
+      <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Comenzar gratis</button>
       <button class="btn-outline" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios</button>
     </div>
   </div>
   <div class="hero-card">
-    <div class="hero-card-tag">¿Sabías que...?</div>
-    <h3>Muchos "fabricantes" en Alibaba son solo intermediarios</h3>
-    <p>Con nosotros de tu lado, ya no tienes que preocuparte por fábricas falsas ni cotizaciones infladas. Solo relájate y recibe calidad real, a un precio real — el tipo de trato que China realmente puede ofrecerte.</p>
-    <div class="hero-card-badge">Sin trato = Sin cobro</div>
+    <div class="hero-card-tag">Nuestra promesa en tres capas</div>
+    <h3>Certeza. Tranquilidad. Precios honestos.</h3>
+    <p>Sin más ruleta de proveedores. Nuestro equipo bilingüe maneja cada etapa en China — verificación, seguimiento de producción, control de calidad, despacho — para que recibas exactamente lo que pediste, al precio que acordaste.</p>
+    <div class="hero-card-badge">Primera consulta gratuita</div>
   </div>
 </section>
 
@@ -275,85 +307,55 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="services" id="servicios">
   <div class="section-tag">Nuestros Servicios</div>
-  <h2 class="section-title">Dos servicios. Una misión:<br>Protege tu cadena de suministro.</h2>
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-num">01</div>
+  <h2 class="section-title">Todo lo que necesitas para importar desde China — con seguridad.</h2>
+  <div class="services-grid-8">
+    <div class="svc-card">
+      <div class="svc-icon">🏭</div>
+      <div class="svc-price-tag">Desde $349</div>
       <h3>Verificación de Fábrica</h3>
-      <div class="service-sub">Investigación en persona</div>
-      <div class="service-price">$349 por visita</div>
-      <p>Nos presentamos como compradores locales chinos. La fábrica no sabe que investigamos para ti. Así conseguimos la información real.</p>
-      <div class="service-steps">
-        <div class="service-step">
-          <div class="step-dot">1</div>
-          <div class="step-text">
-            <strong>Visita encubierta como comprador local</strong>
-            <span>Acceso a información real que nunca compartirían con un comprador extranjero</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">2</div>
-          <div class="step-text">
-            <strong>Verificación del precio real de fábrica</strong>
-            <span>Cotizamos como si compráramos nosotros — precios reales, sin sobrecargo</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">3</div>
-          <div class="step-text">
-            <strong>Recorrido en video en primera persona</strong>
-            <span>Línea de producción, almacén, equipos, personal — todo en cámara</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">4</div>
-          <div class="step-text">
-            <strong>Informe completo en español e inglés</strong>
-            <span>Fotos, video sin editar, evaluación honesta de la fábrica</span>
-          </div>
-        </div>
-      </div>
-      <div class="service-highlight">"¿Fábrica real o intermediario? Te lo decimos antes de que envíes un solo dólar."</div>
+      <p>Confirma existencia, capacidad productiva y condiciones reales en terreno. Sin más depósitos para fábricas fantasma.</p>
     </div>
-    <div class="service-card">
-      <div class="service-num">02</div>
-      <h3>Negociación y Compra</h3>
-      <div class="service-sub">Tu equipo de compras en China</div>
-      <div class="service-price">10% del valor del pedido</div>
-      <p>Una vez verificada la fábrica, nos encargamos de todo el proceso de compra. Tú solo apruebas y recibes.</p>
-      <div class="service-steps">
-        <div class="service-step">
-          <div class="step-dot">1</div>
-          <div class="step-text">
-            <strong>Negociación directa en chino</strong>
-            <span>Los precios cambian cuando no dependes del inglés — negociamos como locales</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">2</div>
-          <div class="step-text">
-            <strong>Especialista de compras dedicado</strong>
-            <span>Un experto gestiona tu pedido, términos, plazos y control de calidad</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">3</div>
-          <div class="step-text">
-            <strong>Cotización de envío profesional</strong>
-            <span>Contactamos agentes de carga y calculamos el costo total hasta tu puerto</span>
-          </div>
-        </div>
-        <div class="service-step">
-          <div class="step-dot">4</div>
-          <div class="step-text">
-            <strong>Reporte final todo incluido</strong>
-            <span>Producto + flete + seguro. Un solo número. Sin sorpresas.</span>
-          </div>
-        </div>
-      </div>
-      <div class="service-highlight">"Producto + flete + seguro. Un solo número. Tú decides."</div>
+    <div class="svc-card">
+      <div class="svc-icon">👁️</div>
+      <div class="svc-price-tag">Desde $299/día</div>
+      <h3>Supervisión Presencial</h3>
+      <p>Supervisión continua de producción. Deja de perseguir al proveedor a diario — estamos en la fábrica por ti.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">✅</div>
+      <div class="svc-price-tag">$299/día-hombre</div>
+      <h3>Inspección Previa al Envío</h3>
+      <p>Cantidad, apariencia, empaque, función — cada artículo verificado contra tus especificaciones antes de salir de fábrica.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">📋</div>
+      <div class="svc-price-tag">$399/día-hombre</div>
+      <h3>Auditoría de Fábrica</h3>
+      <p>Revisión profunda de credenciales, capacidad productiva y riesgos de cumplimiento — antes de comprometerte a un pedido grande.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🤝</div>
+      <div class="svc-price-tag">10% comisión</div>
+      <h3>Abastecimiento y Compra</h3>
+      <p>Conexión directa con fábricas origen. Sin comisiones ocultas de fábrica — cada dólar que pagas va al producto, no al intermediario.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🏗️</div>
+      <h3>Abastecimiento por Sector</h3>
+      <p>Construcción / Autopartes / Químicos. Servicio a compradores en México, Guatemala, Colombia, Chile y Panamá.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">🗣️</div>
+      <h3>Coordinación Bilingüe</h3>
+      <p>Equipo bilingüe ES/EN habla directamente contigo y con la fábrica. Menos información perdida. Menos errores costosos.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-icon">⚖️</div>
+      <h3>Apoyo en Disputas</h3>
+      <p>¿Algo salió mal? Ofrecemos derivación legal y coordinación de disputas con proveedores cuando el proceso no va según lo planeado.</p>
     </div>
   </div>
+  <p class="services-outro">Cada servicio está diseñado para un solo resultado: recibes lo que pediste, al precio acordado, sin sorpresas. La primera consulta siempre es gratuita.</p>
 </section>
 
 <section class="who-section" id="quienes">
@@ -400,28 +402,39 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 </section>
 
 <section class="how" id="proceso">
-  <div class="section-tag">El Proceso</div>
-  <h2 class="section-title">Simple. Transparente. Sin riesgos.</h2>
-  <div class="how-flow">
-    <div class="how-step">
-      <div class="how-num">1</div>
-      <h3>Cuéntanos qué necesitas</h3>
-      <p>Comparte el enlace del proveedor o nombre de la fábrica. Cuéntanos el producto y tu presupuesto.</p>
+  <div class="section-tag">Cómo Funciona</div>
+  <h2 class="section-title">Desde tu primer mensaje hasta la mercancía en tu puerta — cinco pasos.</h2>
+  <div class="how-flow-5">
+    <div class="how-step-v2">
+      <div class="how-num-v2">01</div>
+      <h3>Envía tus Necesidades</h3>
+      <p>Especificaciones, cantidad objetivo, presupuesto, estándares de calidad y plazos — todo lo que necesitamos para arrancar.</p>
+      <div class="trust-line">Desde el primer día, una persona dedicada atiende tu caso. Sin mensajes al vacío.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">2</div>
-      <h3>Verificamos en persona</h3>
-      <p>Vamos como compradores locales, filmamos todo en primera persona y te enviamos el informe en 48 horas.</p>
+    <div class="how-step-v2">
+      <div class="how-num-v2">02</div>
+      <h3>Búsqueda de Proveedor</h3>
+      <p>Buscamos por sector — construcción, autopartes, químicos — en fábricas origen verificadas, no en agentes.</p>
+      <div class="trust-line">Te ayudamos a evitar intermediarios y fábricas fantasma antes de comprometer un dólar.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">3</div>
-      <h3>Negociamos y cotizamos</h3>
-      <p>Nuestro especialista negocia en chino, contacta al agente de carga y presenta el precio total final.</p>
+    <div class="how-step-v2">
+      <div class="how-num-v2">03</div>
+      <h3>Verificación y Auditoría</h3>
+      <p>Precios transparentes desde $349. Visita presencial con video sin editar — lo que ves es lo que existe.</p>
+      <div class="trust-line">Ver para creer. Eliminamos la estafa de la "fábrica foto" — siempre.</div>
     </div>
-    <div class="how-step">
-      <div class="how-num">4</div>
-      <h3>Tú decides con seguridad</h3>
-      <p>Con información completa en mano, apruebas o te retiras. Solo cobramos si cierras el trato.</p>
+    <div class="how-step-v2 step-featured">
+      <div class="step-vs-badge">vs. inspección única</div>
+      <div class="how-num-v2">04</div>
+      <h3>Seguimiento Continuo</h3>
+      <p>Seguimiento presencial de producción, hito por hito — no solo una visita y adiós.</p>
+      <div class="trust-line">Nos quedamos hasta que tu mercancía salga bien. Así nos diferenciamos del mercado.</div>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">05</div>
+      <h3>QC y Despacho</h3>
+      <p>Inspección final, coordinación de documentos y respaldo ante riesgos — todo en orden antes de que salga de China.</p>
+      <div class="trust-line">Lo que pagaste es lo que llega. Siempre.</div>
     </div>
   </div>
 </section>
@@ -661,7 +674,7 @@ form.addEventListener('submit', async e => {
 })();
 </script>
 <script type="module">
-import CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.esm.js';
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({
   guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
   onConsent: () => {
