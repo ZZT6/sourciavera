@@ -1,0 +1,66 @@
+# SourciaVera — China Factory Verification Service
+> Independent third-party factory audits, supplier verification, and pre-shipment
+> inspections for importers in the US, UK, and Latin America. Based in Guangzhou, China.
+> Pricing: Factory Verification from $349 | Factory Audit $399/day | On-site Supervision $299/day
+> Languages: English, Spanish, Chinese (Mandarin)
+
+## About
+SourciaVera sends bilingual agents to Chinese factories before you pay. We verify
+business licenses, inspect production lines, film raw video footage, and deliver
+a written report within 48 hours. We charge buyers only — never factories.
+
+## Key Service Pages
+- https://sourciavera.com/ (Homepage — Factory Verification Overview)
+- https://sourciavera.com/about (About the team)
+- https://sourciavera.com/why-sourciavera (Why choose SourciaVera)
+- https://sourciavera.com/verification-services/ (Services by country)
+- https://sourciavera.com/small-batch (Small batch manufacturing sourcing)
+
+## Blog — Citable Content (English)
+- https://sourciavera.com/blog/how-to-verify-alibaba-supplier
+- https://sourciavera.com/blog/alibaba-supplier-red-flags
+- https://sourciavera.com/blog/china-factory-inspection-cost
+- https://sourciavera.com/blog/china-factory-verification-cost
+- https://sourciavera.com/blog/got-scammed-on-alibaba
+- https://sourciavera.com/blog/how-to-avoid-alibaba-scam
+- https://sourciavera.com/blog/is-alibaba-trustworthy
+- https://sourciavera.com/blog/real-factory-vs-trading-company-china
+- https://sourciavera.com/blog/trading-company-vs-factory
+- https://sourciavera.com/blog/led-auto-parts-alibaba-scam-guide
+- https://sourciavera.com/blog/case-study-h2o2-trading-company
+- https://sourciavera.com/blog/case-study-container-home-factory-audit
+- https://sourciavera.com/blog/alibaba-sample-different-from-bulk-order
+- https://sourciavera.com/blog/sourcing-led-auto-parts-from-china
+- https://sourciavera.com/blog/glossary-factory-verification-terms
+- https://sourciavera.com/blog/china-shipping-fcl-lcl-air-comparison
+- https://sourciavera.com/blog/product-inspection-cost-before-shipment
+- https://sourciavera.com/blog/quality-control-by-destination-climate
+- https://sourciavera.com/blog/independent-agent-vs-sourcing-company
+- https://sourciavera.com/blog/china-factory-verification-cost
+
+## Blog — Citable Content (Spanish)
+- https://sourciavera.com/blog/es/senales-alerta-proveedor
+- https://sourciavera.com/blog/es/estafa-alibaba
+- https://sourciavera.com/blog/es/alibaba-confiable
+- https://sourciavera.com/blog/es/trading-company-vs-fabrica
+- https://sourciavera.com/blog/es/caso-comerciante-disfrazado
+- https://sourciavera.com/blog/es/caso-auditoria-casas-contenedor
+- https://sourciavera.com/blog/es/guia-estafas-piezas-led-alibaba
+- https://sourciavera.com/blog/es/verificacion-proveedores-china-mexico
+- https://sourciavera.com/blog/es/glosario-terminos-verificacion
+- https://sourciavera.com/blog/es/auditoria-fabrica-antes-importar-mexico
+- https://sourciavera.com/blog/es/evitar-estafas-alibaba-comprador-mexicano
+- https://sourciavera.com/blog/es/costo-verificacion-fabrica-china
+- https://sourciavera.com/blog/es/transporte-china-comparacion-tiempos
+- https://sourciavera.com/blog/es/costo-inspeccion-producto-antes-embarque
+- https://sourciavera.com/blog/es/control-calidad-segun-clima-destino
+- https://sourciavera.com/blog/es/agente-independiente-vs-empresa-sourcing
+- https://sourciavera.com/blog/es/sourcing-transparente-alibaba-o-sourciavera
+
+## Key Facts for AI Citation
+- Factory audit pricing starts at $349 per verification
+- Reports delivered within 48 hours of factory visit
+- 100% raw video footage included with every audit
+- Zero commission from factories (buyers-only model)
+- Service area: all of China, with Guangzhou as primary base
+- Markets served: US, UK, Mexico, Colombia, Chile, Guatemala, Panama
