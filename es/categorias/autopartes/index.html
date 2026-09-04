@@ -87,7 +87,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
 .scope{padding:5rem 3rem;background:var(--light)}
-.scope-inner{max-width:900px}
+.scope-inner{max-width:900px;margin:0 auto}
 .scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:700px;margin-bottom:2.5rem}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
@@ -127,6 +127,25 @@ nav{position:relative}
 .nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
 .nav-hamburger:hover span{background:white}
 @media(max-width:768px){html,body{overflow-x:hidden;max-width:100%}nav{padding:1rem 1.5rem}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
+.product-icon{flex-shrink:0;width:28px;height:28px;margin-top:0.1rem}
+.product-icon img{display:block;width:28px;height:28px;opacity:0.72}
+.new-products-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.5rem}
+.new-products-intro{color:var(--muted);font-size:0.9rem;line-height:1.8;max-width:680px;margin-bottom:1.5rem}
+.cs-section{padding:5rem 3rem;background:var(--white);border-bottom:3px solid var(--coral)}
+.cs-section-inner{max-width:900px;margin:0 auto}
+.cs-steps{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:2rem 0 2rem}
+.cs-step{background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--coral);padding:1.4rem 1.5rem}
+.cs-step-num{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.4rem}
+.cs-step h3{font-size:0.92rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;line-height:1.35}
+.cs-step p{font-size:0.84rem;color:var(--muted);line-height:1.65;margin:0}
+.cs-result{background:var(--navy);padding:1.4rem 2rem;margin-bottom:2rem;border-left:4px solid var(--yellow)}
+.cs-result p{font-size:0.9rem;color:rgba(255,255,255,0.8);line-height:1.75;margin:0}
+.cs-result strong{color:var(--yellow)}
+.dual-photo{display:flex;gap:4px;margin:1.75rem 0 2rem}
+.dual-photo-img{flex:1;overflow:hidden;border:1.5px solid var(--border)}
+.dual-photo-img img{display:block;width:100%;height:auto}
+.dual-photo-cap{font-size:0.78rem;color:var(--muted);margin-top:0.5rem;font-style:italic}
+@media(max-width:768px){.cs-steps{grid-template-columns:1fr}.cs-section{padding:3rem 1.5rem}.dual-photo{flex-direction:column}}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -169,43 +188,80 @@ nav{position:relative}
   </div>
 </section>
 
+<section class="cs-section">
+  <div class="cs-section-inner">
+    <div class="section-tag">Caso Real &middot; C&oacute;mo Trabajamos</div>
+    <div class="section-title" style="margin-bottom:1rem">C&oacute;mo verificamos el offset correcto (ET&nbsp;54.1)<br>para las llantas OEM de un BYD Seagull</div>
+    <p class="scope-intro">Un comprador en Latinoam&eacute;rica necesitaba llantas OEM para el BYD Seagull &mdash; con un offset espec&iacute;fico de ET&nbsp;54.1. Lo que parec&iacute;a simple revel&oacute; una cadena de decisiones t&eacute;cnicas que, sin verificaci&oacute;n en terreno, dif&iacute;cilmente se pueden validar desde el extranjero.</p>
+    <div class="dual-photo">
+      <div class="dual-photo-img">
+        <img src="/images/auto-parts-byd-wheel-rim.jpg" alt="Rin y llanta OEM BYD Seagull — offset ET 54.1 verificado en fábrica" loading="lazy">
+      </div>
+      <div class="dual-photo-img">
+        <img src="/images/auto-parts-hub-cap-kit.jpg" alt="Kit de hub caps automotriz — verificado y gestionado desde Guangzhou" loading="lazy">
+      </div>
+    </div>
+    <p class="dual-photo-cap">Muestra verificada: rin + llanta BYD Seagull (ET&nbsp;54.1) &mdash; y kit de hub caps, entregados completos antes del dep&oacute;sito.</p>
+    <div class="cs-steps">
+      <div class="cs-step">
+        <div class="cs-step-num">Paso 1 &mdash; El dato que lo cambiaba todo</div>
+        <h3>Offset ET&nbsp;54.1 &mdash; no es negociable</h3>
+        <p>Si el rin llega con un offset distinto, el instalador se ve obligado a usar un espaciador. Eso no es cosm&eacute;tico: afecta la geometr&iacute;a de suspensi&oacute;n, el comportamiento en curva y puede generar desgaste irregular a velocidad de carretera.</p>
+      </div>
+      <div class="cs-step">
+        <div class="cs-step-num">Paso 2 &mdash; Evaluaci&oacute;n de proveedores</div>
+        <h3>Cuatro f&aacute;bricas, solo una con evidencia</h3>
+        <p>Contactamos cuatro fabricantes de rines. La mayor&iacute;a confirmaba el offset &ldquo;de palabra&rdquo;, sin ninguna forma de comprobarlo antes del env&iacute;o. Solo una f&aacute;brica en Sichuan acept&oacute; documentar la especificaci&oacute;n real antes de que el cliente comprometiera el pedido.</p>
+      </div>
+      <div class="cs-step">
+        <div class="cs-step-num">Paso 3 &mdash; Verificaci&oacute;n antes del dep&oacute;sito</div>
+        <h3>Video de instalaci&oacute;n + ficha t&eacute;cnica real</h3>
+        <p>Coordinamos con la f&aacute;brica para obtener un video del rin instalado en el veh&iacute;culo sin espaciador, y una ficha t&eacute;cnica con los datos reales de fabricaci&oacute;n &mdash; no una hoja de cat&aacute;logo gen&eacute;rica.</p>
+      </div>
+      <div class="cs-step">
+        <div class="cs-step-num">Paso 4 &mdash; Muestra completa</div>
+        <h3>Set completo, como lo recibir&iacute;a el cliente final</h3>
+        <p>Se orden&oacute; rin + llanta + llave de cambio + gato hidr&aacute;ulico + bolsa de almacenamiento. El cliente confirm&oacute; en persona que cumpl&iacute;a exactamente la especificaci&oacute;n antes de comprometer cualquier pedido mayor.</p>
+      </div>
+    </div>
+    <div class="cs-result">
+      <p><strong>El resultado:</strong> De una muestra a pedidos recurrentes. Este es el tipo de verificaci&oacute;n que ofrecemos en cada categor&iacute;a de autopartes &mdash; no solo encontrar un fabricante, sino confirmar con evidencia real que la pieza cumple la especificaci&oacute;n exacta del veh&iacute;culo de tu cliente.</p>
+    </div>
+    <a href="/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541" class="btn-main">Leer el caso completo &rarr;</a>
+  </div>
+</section>
+
 <section class="scope">
   <div class="scope-inner">
-    <div class="section-tag">Qué Cubrimos</div>
+    <div class="section-tag">Qu&eacute; Cubrimos</div>
     <div class="section-title">Autopartes que verificamos<br>y gestionamos</div>
-    <p class="scope-intro">Trabajamos con compradores que importan repuestos aftermarket, compatibles OEM y componentes para vehículos eléctricos desde Guangzhou. Nuestro equipo sabe qué fábricas realmente fabrican y cuáles reempaquetan.</p>
+    <p class="scope-intro">Trabajamos con compradores que importan accesorios, repuestos compatibles OEM y productos de marca propia desde Guangzhou. Nuestro equipo verifica qu&eacute; f&aacute;bricas realmente fabrican y cu&aacute;les reempaquetan.</p>
+    <div class="new-products-label">Accesorios &amp; Marca Propia</div>
+    <p class="new-products-intro">Verificamos y gestionamos accesorios automotrices y productos de interior personalizados &mdash; incluyendo soporte de packaging para marcas DTC y retail.</p>
     <div class="product-grid">
       <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Iluminación LED Automotriz</strong><span>Faros, DRL, luces de niebla y traseras — incluyendo verificación de certificaciones DOT/ECE y revisión de chipsets</span></div>
+        <div class="product-icon"><img src="/images/auto-parts-icon-1-diffuser.svg" alt="" aria-hidden="true"></div>
+        <div><strong>Ambientadores de Coche Personalizados</strong><span>Difusores y clips para rejillas con aroma personalizado &mdash; packaging de marca propia, selecci&oacute;n de fragancia y compra a granel.</span></div>
       </div>
       <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Componentes para Vehículos Eléctricos</strong><span>Accesorios compatibles con BYD, Chery, MG y CATL, conectores EV, componentes de carga</span></div>
+        <div class="product-icon"><img src="/images/auto-parts-icon-2-decal.svg" alt="" aria-hidden="true"></div>
+        <div><strong>Vinilos y Stickers de Interior</strong><span>Vinilos, stickers para salpicadero e interior &mdash; tama&ntilde;os personalizados, impresi&oacute;n y tipos de adhesivo seg&uacute;n dise&ntilde;o.</span></div>
       </div>
       <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Sistemas de Frenos</strong><span>Pastillas, discos, calibradores, líneas de freno — incluyendo verificación de composición del material de fricción</span></div>
+        <div class="product-icon"><img src="/images/auto-parts-icon-3-seat.svg" alt="" aria-hidden="true"></div>
+        <div><strong>Fundas y Accesorios de Cuero</strong><span>Fundas universales y espec&iacute;ficas por modelo, tapizado y accesorios de cuero &mdash; calidad de material y costura verificadas.</span></div>
       </div>
       <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Filtros y Piezas de Mantenimiento</strong><span>Filtros de aceite, aire, combustible, correas, juntas — universales y específicos por modelo</span></div>
+        <div class="product-icon"><img src="/images/auto-parts-icon-4-led.svg" alt="" aria-hidden="true"></div>
+        <div><strong>Iluminaci&oacute;n LED Ambiental Interior</strong><span>Tiras y kits de luz LED ambiental &mdash; color, brillo y compatibilidad con app o mando confirmados con el fabricante.</span></div>
       </div>
       <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Sensores y Módulos Electrónicos</strong><span>Sensores OBD, sensores de oxígeno, caudalímetros, módulos ECU, cámaras de reversa</span></div>
+        <div class="product-icon"><img src="/images/auto-parts-icon-5-vent.svg" alt="" aria-hidden="true"></div>
+        <div><strong>Difusores Aromáticos para Rejilla y Faros</strong><span>Difusores de fragancia para rejillas y carcasas de luces &mdash; formatos compactos para retail de marca propia.</span></div>
       </div>
       <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Carrocería y Partes Exteriores</strong><span>Parachoques, guardabarros, retrovisores, parrillas, paneles de puerta — verificación de ajuste disponible</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Piezas de Motor y Transmisión</strong><span>Kits de distribución, bombas de agua, alternadores, motores de arranque, componentes de transmisión</span></div>
-      </div>
-      <div class="product-item">
-        <div class="product-dot"></div>
-        <div><strong>Suspensión y Dirección</strong><span>Amortiguadores, brazos de control, rótulas de dirección, rotulas, cojinetes de rueda</span></div>
+        <div class="product-icon"><img src="/images/auto-parts-icon-6-wheel.svg" alt="" aria-hidden="true"></div>
+        <div><strong>Tapacubos Aromáticos</strong><span>Tapacubos con fragancia integrada &mdash; categor&iacute;a nicho que verificamos y gestionamos para vendedores de marca propia.</span></div>
       </div>
     </div>
   </div>

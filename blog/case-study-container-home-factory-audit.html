@@ -70,8 +70,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-footer a{color:var(--yellow);text-decoration:none}
 .back-link{display:inline-block;color:var(--coral);font-size:0.85rem;text-decoration:none;margin-bottom:2rem;letter-spacing:0.05em}
 .back-link::before{content:'← '}
-.lang-en,.lang-es{display:block}
-.lang-es{display:none}
+
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
 .step-num{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.2rem 0.6rem;font-weight:600;margin-bottom:0.5rem}
 nav{position:relative}
@@ -97,8 +96,8 @@ nav{position:relative}
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <button class="lang-btn active">EN</button>
+      <a class="lang-btn" href="/blog/es/caso-auditoria-casas-contenedor">ES</a>
     </div>
     <a href="/#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a>
   </div>
@@ -106,8 +105,6 @@ nav{position:relative}
 </nav>
 <main>
 
-<!-- ENGLISH VERSION -->
-<div class="lang-en">
   <div style="background:var(--navy);">
     <div class="article-hero">
       <span class="article-tag">Real Case</span>
@@ -144,81 +141,13 @@ nav{position:relative}
       <a href="/#contact" class="cta-btn">Request a Factory Comparison</a>
     </div>
   </div>
-</div>
-
-<!-- SPANISH VERSION -->
-<div class="lang-es" style="display:none;">
-  <div style="background:var(--navy);">
-    <div class="article-hero">
-      <span class="article-tag">Caso Real</span>
-      <h1>Caso Real: Comparamos 6 Fábricas para un Pedido de Casas Contenedor &mdash; Solo Una Aprobó</h1>
-      <div class="article-meta">21 de agosto de 2026 &middot; 5 min de lectura &middot; Zhang Peng</div>
-    </div>
-  </div>
-
-  <div class="article-body">
-    <a href="/blog/" class="back-link">Volver al Blog</a>
-
-    <p>Un comprador llegó necesitando dos unidades de casas contenedor expandibles para envío internacional. Ya había preseleccionado seis proveedores de Alibaba &mdash; los llamaremos Fábrica A hasta F &mdash; todos con listados de aspecto similar y precios comparables.</p>
-
-    <h2>Por Qué No Evaluamos Solo un Proveedor</h2>
-    <p>Una sola auditoría de fábrica solo informa sobre esa fábrica en particular. Para poder recomendar algo con certeza, comparamos las seis lado a lado: material de aislamiento (espuma EPS vs. PU), capacidad de techo inclinado, capacidad de producción, historial de documentación de exportación y titularidad real de la fábrica.</p>
-
-    <h2>Lo que Expuso la Comparación Directa</h2>
-    <p>Dos de las seis subcontrataban exactamente la misma línea de producción bajo diferentes nombres de tienda &mdash; el mismo proveedor de estructura de acero, diferente pintura, presentadas como opciones competidoras sin nada que las diferenciara en realidad. Una cotizó un 25% o más por debajo de las demás pero no pudo presentar una licencia comercial que coincidiera con el alcance de fabricación declarado &mdash; un patrón clásico de precios bajos para asegurar un depósito rápidamente. Otras dos eran fabricantes legítimos, pero en realidad no tenían capacidad de techo inclinado propia &mdash; habrían subcontratado esa parte sin mencionarlo.</p>
-
-    <h2>La Auditoría en Sitio que Cerró la Decisión</h2>
-    <p>Para el finalista, realizamos y pagamos una auditoría en sitio de la fábrica &mdash; confirmando que la línea de soldadura de estructura de acero, el proceso de inyección de EPS y la línea de embalaje para exportación coincidían con lo que se había declarado.</p>
-
-    <h2>El Resultado</h2>
-    <p>Entregamos al cliente tres niveles de precios FOB basados en diferentes especificaciones de materiales, junto con una lista de verificación de auditoría bilingüe, para que pudiera avanzar sabiendo exactamente qué fábrica produciría sus unidades &mdash; no solo cuál respondió más rápido en Alibaba.</p>
-
-    <h2>La Lección</h2>
-    <p>El precio y las fotos por sí solos no distinguen seis listados de apariencia idéntica. Solo una comparación real lado a lado de especificaciones verificadas &mdash; seguida de una visita en sitio al finalista &mdash; revela qué proveedor realmente se ajusta a sus necesidades.</p>
-
-    <div class="cta-box">
-      <h3>¿Comparando Múltiples Fábricas de Alibaba Antes de Comprometerse?</h3>
-      <p>SourciaVera evalúa múltiples fábricas candidatas lado a lado, realiza auditorías en sitio para el finalista y entrega informes bilingües para que sepa exactamente qué fábrica cumple sus requisitos &mdash; antes de pagar cualquier depósito.</p>
-      <a href="/#contact" class="cta-btn">Solicitar Comparación de Fábricas</a>
-    </div>
-  </div>
-</div>
-
-<div class="cta-box" style="text-align:left">
-  <h3 style="text-align:center">Not sure if your supplier is who they claim to be?</h3>
-  <p>SourciaVera verifies Chinese factories on the ground &mdash; no stock photos, no self-reported claims. We visit in person, check business licenses, and confirm production capability before you ever send a deposit.</p>
-  <p>Whether you need a one-time factory verification, a full audit, or ongoing supervision during production, we handle it in English and Spanish &mdash; so nothing gets lost in translation.</p>
-  <div class="sv-cta-btns">
-    <a href="https://sourciavera.com/#contact" class="cta-btn">Get a Free Quote</a>
-    <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa">Chat on WhatsApp</a>
-  </div>
-</div>
 
 </main>
 <footer class="article-footer">
   &copy; <script>document.write(new Date().getFullYear())</script> SourciaVera &middot; <a href="/">sourciavera.com</a>
 </footer>
 
-<script>
-function detectLang() {
-  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
-  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
-  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
-}
-let currentLang = detectLang();
-function setLang(lang) {
-  currentLang = lang;
-  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
-  });
-  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
-  document.querySelectorAll('.lang-es').forEach(el => el.style.display = lang === 'es' ? 'block' : 'none');
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
-  document.documentElement.lang = lang;
-}
-setLang(currentLang);
-</script>
+
 
 <!-- Related Articles -->
 <div style="background:#FFF8F0;border-top:3px solid #E8472A;padding:3.5rem 3rem">

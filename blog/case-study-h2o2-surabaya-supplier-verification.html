@@ -79,8 +79,6 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .back-link::before{content:'← '}
 .dg-notice{background:#fff8e1;border:1.5px solid #f0c040;border-left:4px solid #e0a000;padding:1.25rem 1.5rem;margin:2rem 0;font-size:0.88rem;color:#5a4500;line-height:1.65}
 .dg-notice strong{color:#3a2d00}
-.lang-en,.lang-es{display:block}
-.lang-es{display:none}
 .article-footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:2rem 3rem;font-size:0.82rem}
 .article-footer a{color:var(--yellow);text-decoration:none}
 nav{position:relative}
@@ -107,8 +105,8 @@ nav{position:relative}
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <button class="lang-btn active">EN</button>
+      <a class="lang-btn" href="/blog/es/verificar-proveedor-peroxido-hidrogeno-surabaya">ES</a>
     </div>
     <a href="/?service=chemicals#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a>
   </div>
@@ -117,17 +115,16 @@ nav{position:relative}
 
 <main>
 
-<!-- ENGLISH VERSION -->
-<div class="lang-en">
-  <div style="background:var(--navy);">
-    <div class="article-hero">
-      <span class="article-tag">⚗️ Case Study &middot; Chemicals &mdash; HS 2847000000</span>
+<div style="background:var(--navy);">
+  <div class="article-hero">
+    <span class="article-tag">⚗️ Case Study &middot; Chemicals &mdash; HS 2847000000</span>
       <h1>Verifying a 50% Hydrogen Peroxide Supplier: A Case Study from Surabaya</h1>
       <div class="article-meta">Aug 31, 2026 &middot; 6 min read &middot; Zhang Peng</div>
     </div>
   </div>
+</div>
 
-  <div class="article-body">
+<div class="article-body">
     <a href="/blog/" class="back-link">Back to Blog</a>
 
     <img
@@ -191,85 +188,6 @@ nav{position:relative}
         <a href="https://sourciavera.com/?service=chemicals#contact" class="cta-btn">Request Verification</a>
         <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa">Chat on WhatsApp</a>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- SPANISH VERSION -->
-<div class="lang-es" style="display:none;">
-  <div style="background:var(--navy);">
-    <div class="article-hero">
-      <span class="article-tag">⚗️ Caso de Estudio &middot; Química &mdash; HS 2847000000</span>
-      <h1>Verificar un proveedor de peróxido de hidrógeno al 50%: el caso de un cliente en Surabaya</h1>
-      <div class="article-meta">31 de agosto de 2026 &middot; 6 min de lectura &middot; Zhang Peng</div>
-    </div>
-  </div>
-
-  <div class="article-body">
-    <a href="/blog/es/" class="back-link">Volver al Blog</a>
-
-    <img
-      src="/images/h2o2-surabaya-verificacion-proveedor.jpg"
-      alt="Verificación de proveedor de peróxido de hidrógeno al 50% en China para cliente en Surabaya, Indonesia"
-      class="article-img"
-      width="860"
-      height="480"
-      loading="eager"
-    >
-
-    <p>Hace unas semanas recibimos un mensaje de un comprador en Surabaya, Indonesia. Buscaba peróxido de hidrógeno al 50% de concentración, y su necesidad no era encontrar el precio más bajo &mdash; eso ya lo tenía, después de meses buscando en directorios y páginas web de exportación. Lo que necesitaba era algo más difícil de conseguir: un agente en China capaz de verificar si esas empresas eran legítimas, y de encontrar a la persona real detrás del contacto de ventas de exportación.</p>
-
-    <p>Nos pidió dos cosas concretas:</p>
-
-    <ol>
-      <li>Confirmar si las empresas que había encontrado eran legales y operativas.</li>
-      <li>Identificar quién, dentro de cada empresa, gestionaba realmente las ventas de exportación.</li>
-    </ol>
-
-    <p>Nos compartió una lista de datos de exportación con diez empresas asociadas al código HS 2847000000 (peróxido de hidrógeno). La mayoría se agrupaba cerca de Jiangsu, con nombres como Wuxi Dongfeng New Energy Technology, Tianjin Jusheng Chemical o Shisoko (Zhenjiang) Chemicals. A primera vista, una lista sólida. Pero al revisarla de cerca surgió el primer problema: buena parte de esas empresas eran <strong>comercializadoras (trading companies)</strong>, no fabricantes directos &mdash; algo que un comprador extranjero, sin acceso a registros mercantiles chinos ni a la estructura del sector, difícilmente puede distinguir por sí mismo.</p>
-
-    <div class="dg-notice">
-      <strong>⚠️ Nota DG:</strong> El peróxido de hidrógeno al 50% está clasificado como mercancía peligrosa <strong>Clase 5.1 (oxidante)</strong> bajo normativa IMDG. Requiere documentación específica: SDS, número ONU 2014, etiquetado DG y permisos de importación según el país de destino. Consulte siempre antes de solicitar cotización.
-    </div>
-
-    <h2>El factor que nadie le había mencionado: la geografía del puerto</h2>
-
-    <p>El cliente no tenía forma de saber que el origen geográfico del proveedor cambiaría por completo la ecuación de costos. Solo un puerto de Guangxi (China) está realmente cerca del puerto de destino del cliente, Surabaya &mdash; el resto de las opciones, aunque parecían igual de válidas en el papel, implicaban una desventaja logística estructural:</p>
-
-    <ul>
-      <li><strong>Desde Jiangsu</strong>, la carga normalmente sale por Shanghái o Ningbo: unas 3.200&ndash;3.500 millas náuticas hasta Surabaya, con 9&ndash;14 días de tránsito.</li>
-      <li><strong>Desde Guangxi</strong>, la carga sale por Qinzhou o Fangcheng: solo 2.000&ndash;2.300 millas náuticas hasta Surabaya, con 6&ndash;9 días de tránsito.</li>
-    </ul>
-
-    <p>Esa diferencia de aproximadamente 1.000 millas náuticas se traduce en costos reales:</p>
-
-    <ul>
-      <li><strong>Contenedor estándar (20GP/40HQ):</strong> $100&ndash;250 USD menos por contenedor saliendo desde Guangxi.</li>
-      <li><strong>Contenedor de mercancía peligrosa</strong> &mdash; el peróxido de hidrógeno al 50% es Clase 5.1 &mdash; $150&ndash;300 USD menos, porque el recargo de peligrosidad se calcula sobre una base ya más alta.</li>
-    </ul>
-
-    <p>A esto se suma un segundo factor que el cliente tampoco había considerado: varias de las fábricas de Jiangsu no están junto al puerto, sino tierra adentro, lo que añade transporte terrestre adicional hasta el punto de embarque &mdash; un costo que se acumula kilómetro a kilómetro y que rara vez aparece reflejado en la cotización inicial que recibe el comprador.</p>
-
-    <h2>Contactar al fabricante real</h2>
-
-    <p>La parte más difícil no fue analizar la logística &mdash; fue llegar a una persona real. Es habitual que un comprador extranjero encuentre el sitio web oficial, el correo o incluso el número de fax de un fabricante chino, y aun así nunca reciba respuesta. No es mala voluntad: son canales que muchas fábricas mantienen desactualizados, o que simplemente no están gestionados por nadie con autoridad para negociar exportación.</p>
-
-    <p>En este caso, gracias al contacto directo en terreno, conseguimos que el cliente hablara con el <strong>gerente general de uno de los fabricantes de peróxido de hidrógeno</strong> &mdash; algo que, por los canales públicos disponibles, habría sido prácticamente imposible.</p>
-
-    <h2>El resultado &mdash; y por qué igual vale la pena contarlo</h2>
-
-    <p>Al final, la diferencia de precio entre las opciones no permitió cerrar el trato. No todos los casos terminan en una orden de compra &mdash; y eso también es información valiosa. El cliente terminó el proceso sabiendo exactamente qué empresas eran fabricantes reales y cuáles intermediarios, qué puerto le convenía estructuralmente por geografía, y con una vía directa de contacto con la fábrica para negociaciones futuras.</p>
-
-    <p>Compartimos este caso no porque haya terminado en una venta, sino porque ilustra el tipo de trabajo que realmente mueve la aguja antes de firmar cualquier contrato: verificar quién está al otro lado, entender la geografía que va a definir tu costo logístico, y abrir una línea de comunicación real con quien toma las decisiones.</p>
-
-    <div class="cta-box">
-      <h3>¿Necesita verificar un proveedor de productos químicos en China?</h3>
-      <p>SourciaVera verifica fabricantes chinos en persona &mdash; confirmamos que la empresa es un productor real (no una comercializadora), revisamos documentación de exportación y le conectamos directamente con quien toma las decisiones. Primera consulta gratuita.</p>
-      <div class="sv-cta-btns">
-        <a href="https://sourciavera.com/?service=chemicals#contact" class="cta-btn">Solicitar Verificación</a>
-        <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa">Chat en WhatsApp</a>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -305,26 +223,6 @@ nav{position:relative}
 
 <a href="https://wa.me/8613688057230" style="position:fixed;bottom:2rem;right:2rem;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:100;text-decoration:none" title="WhatsApp" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
 
-<script>
-function detectLang() {
-  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
-  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
-  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
-}
-let currentLang = detectLang();
-function setLang(lang) {
-  currentLang = lang;
-  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
-  });
-  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
-  document.querySelectorAll('.lang-es').forEach(el => el.style.display = lang === 'es' ? 'block' : 'none');
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
-  document.documentElement.lang = lang;
-}
-setLang(currentLang);
-</script>
 <script type="module">
 import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({

@@ -70,8 +70,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-footer a{color:var(--yellow);text-decoration:none}
 .back-link{display:inline-block;color:var(--coral);font-size:0.85rem;text-decoration:none;margin-bottom:2rem;letter-spacing:0.05em}
 .back-link::before{content:'← '}
-.lang-en,.lang-es{display:block}
-.lang-es{display:none}
+
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
 .step-num{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.2rem 0.6rem;font-weight:600;margin-bottom:0.5rem}
 nav{position:relative}
@@ -97,8 +96,8 @@ nav{position:relative}
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <button class="lang-btn active">EN</button>
+      <a class="lang-btn" href="/blog/es/caso-comerciante-disfrazado">ES</a>
     </div>
     <a href="/#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a>
   </div>
@@ -106,8 +105,6 @@ nav{position:relative}
 </nav>
 <main>
 
-<!-- ENGLISH VERSION -->
-<div class="lang-en">
   <div style="background:var(--navy);">
     <div class="article-hero">
       <span class="article-tag">Real Case</span>
@@ -148,87 +145,13 @@ nav{position:relative}
       <a href="/#contact" class="cta-btn">Request a Supplier Verification</a>
     </div>
   </div>
-</div>
-
-<!-- SPANISH VERSION -->
-<div class="lang-es" style="display:none;">
-  <div style="background:var(--navy);">
-    <div class="article-hero">
-      <span class="article-tag">Caso Real</span>
-      <h1>Caso Real: Cuatro &ldquo;Fabricantes&rdquo; en Alibaba Eran en Realidad una Sola Comercializadora</h1>
-      <div class="article-meta">21 de agosto de 2026 &middot; 5 min de lectura &middot; Zhang Peng</div>
-    </div>
-  </div>
-
-  <div class="article-body">
-    <a href="/blog/" class="back-link">Volver al Blog</a>
-
-    <p>Un cliente llegó con una lista corta de cuatro proveedores de Alibaba, todos ofreciendo peróxido de hidrógeno al 50%, todos con la insignia de &ldquo;Proveedor Verificado&rdquo;. Antes de transferir un depósito, querían que confirmáramos exactamente qué estaban comprando.</p>
-
-    <h2>La Lista Corta Parecía Sólida</h2>
-    <p>Cuatro nombres de empresa diferentes, cuatro tiendas distintas en Alibaba, cada una afirmando fabricación propia. Sobre el papel, nada las diferenciaba &mdash; precios similares, fotos similares, afirmaciones de producción similares.</p>
-
-    <h2>Lo que Reveló la Verificación de Licencias Comerciales</h2>
-    <p>Consultamos la licencia comercial de cada empresa en el Sistema Nacional de Publicidad de Información de Crédito Empresarial de China (NECIPS) y verificamos el alcance del negocio registrado. Ninguna de las cuatro tenía un alcance de fabricación que cubriera la producción de peróxido de hidrógeno &mdash; las cuatro estaban registradas como entidades comerciales o de importación-exportación, no como productoras.</p>
-
-    <h2>La Llamada de Seguimiento que lo Confirmó</h2>
-    <p>Contactamos directamente a cada proveedor y solicitamos un video en vivo de la línea de producción y números de lote específicos. Tres no pudieron proporcionar imágenes en tiempo real de una planta en funcionamiento. Una envió un video promocional antiguo &mdash; al examinarlo más de cerca, resultó pertenecer al material de marketing de una empresa completamente diferente.</p>
-
-    <h2>Rastreando Todo Hasta un Solo Productor Real</h2>
-    <p>Las cuatro tiendas revendían de los mismos pocos fabricantes reales en la zona de Shaoguan. Los productores reales no venden directamente a compradores extranjeros pequeños, por lo que una capa de revendedores había construido cuatro perfiles de Alibaba de apariencia independiente alrededor del mismo suministro.</p>
-
-    <h2>Lo que Esto Casi le Costó al Cliente</h2>
-    <p>Basándose únicamente en la insignia y las fotos del producto, el cliente estaba preparando un depósito del 30% a uno de los cuatro &mdash; sin ninguna forma de saber, desde la plataforma, que no era una fábrica en absoluto.</p>
-
-    <h2>Lo que Hicimos en su Lugar</h2>
-    <p>Identificamos y negociamos una introducción directa con un fabricante real &mdash; un productor con una capacidad de aproximadamente 270,000 toneladas/año &mdash; eliminando el margen de reventa y añadiendo una rendición de cuentas real que el cliente podía verificar.</p>
-
-    <h2>La Lección</h2>
-    <p>Una insignia de &ldquo;Proveedor Verificado&rdquo; confirma que una empresa existe y pasó una verificación básica. No confirma que la empresa fabrique el producto en sí. Dos verificaciones separan de manera confiable una fábrica de una comercializadora: cruzar el alcance del negocio registrado y solicitar video de producción en vivo, sin editar.</p>
-
-    <div class="cta-box">
-      <h3>¿No Sabe Si Su Proveedor de Alibaba Realmente Fabrica lo que Vende?</h3>
-      <p>SourciaVera realiza verificaciones independientes de terceros de proveedores de Alibaba antes de que pague un depósito &mdash; verificación de licencias comerciales, confirmación del alcance de producción y video en vivo de la fábrica.</p>
-      <a href="/#contact" class="cta-btn">Solicitar Verificación de Proveedor</a>
-    </div>
-  </div>
-</div>
-
-<div class="cta-box" style="text-align:left">
-  <h3 style="text-align:center">Not sure if your supplier is who they claim to be?</h3>
-  <p>SourciaVera verifies Chinese factories on the ground &mdash; no stock photos, no self-reported claims. We visit in person, check business licenses, and confirm production capability before you ever send a deposit.</p>
-  <p>Whether you need a one-time factory verification, a full audit, or ongoing supervision during production, we handle it in English and Spanish &mdash; so nothing gets lost in translation.</p>
-  <div class="sv-cta-btns">
-    <a href="https://sourciavera.com/#contact" class="cta-btn">Get a Free Quote</a>
-    <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa">Chat on WhatsApp</a>
-  </div>
-</div>
 
 </main>
 <footer class="article-footer">
   &copy; <script>document.write(new Date().getFullYear())</script> SourciaVera &middot; <a href="/">sourciavera.com</a>
 </footer>
 
-<script>
-function detectLang() {
-  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
-  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
-  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
-}
-let currentLang = detectLang();
-function setLang(lang) {
-  currentLang = lang;
-  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
-  });
-  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
-  document.querySelectorAll('.lang-es').forEach(el => el.style.display = lang === 'es' ? 'block' : 'none');
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
-  document.documentElement.lang = lang;
-}
-setLang(currentLang);
-</script>
+
 
 <!-- Related Articles -->
 <div style="background:#FFF8F0;border-top:3px solid #E8472A;padding:3.5rem 3rem">

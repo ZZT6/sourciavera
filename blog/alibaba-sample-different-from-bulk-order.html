@@ -58,8 +58,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-footer a{color:var(--yellow);text-decoration:none}
 .back-link{display:inline-block;color:var(--coral);font-size:0.85rem;text-decoration:none;margin-bottom:2rem;letter-spacing:0.05em}
 .back-link::before{content:'← '}
-.lang-en,.lang-es{display:block}
-.lang-es{display:none}
+
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
 nav{position:relative}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
@@ -95,8 +94,8 @@ nav{position:relative}
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <button class="lang-btn active">EN</button>
+      <a class="lang-btn" href="/blog/es/">ES</a>
     </div>
     <a href="../index.html#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a>
   </div>
@@ -104,8 +103,6 @@ nav{position:relative}
 </nav>
 <main>
 
-<!-- ENGLISH VERSION -->
-<div class="lang-en">
   <div style="background:var(--navy);">
     <div class="article-hero">
       <span class="article-tag">Quality Control</span>
@@ -238,26 +235,7 @@ nav{position:relative}
   &copy; <script>document.write(new Date().getFullYear())</script> SourciaVera &middot; <a href="../index.html">sourciavera.com</a>
 </footer>
 
-<script>
-function detectLang() {
-  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
-  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
-  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
-}
-let currentLang = detectLang();
-function setLang(lang) {
-  currentLang = lang;
-  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
-  });
-  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
-  document.querySelectorAll('.lang-es').forEach(el => el.style.display = lang === 'es' ? 'block' : 'none');
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
-  document.documentElement.lang = lang;
-}
-setLang(currentLang);
-</script>
+
 
 <!-- Related Articles -->
 <div style="background:#FFF8F0;border-top:3px solid #E8472A;padding:3.5rem 3rem">

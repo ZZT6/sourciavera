@@ -70,8 +70,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-footer a{color:var(--yellow);text-decoration:none}
 .back-link{display:inline-block;color:var(--coral);font-size:0.85rem;text-decoration:none;margin-bottom:2rem;letter-spacing:0.05em}
 .back-link::before{content:'← '}
-.lang-en,.lang-es{display:block}
-.lang-es{display:none}
+
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
 .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
 .compare-card{background:var(--light);border:1px solid var(--border);padding:1.5rem}
@@ -101,8 +100,8 @@ nav{position:relative}
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <button class="lang-btn active">EN</button>
+      <a class="lang-btn" href="/blog/es/trading-company-vs-fabrica">ES</a>
     </div>
     <a href="/#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a>
   </div>
@@ -110,8 +109,6 @@ nav{position:relative}
 </nav>
 <main>
 
-<!-- ENGLISH VERSION -->
-<div class="lang-en">
   <div style="background:var(--navy);">
     <div class="article-hero">
       <span class="article-tag">Supplier Types</span>
@@ -176,106 +173,13 @@ nav{position:relative}
       <a href="/#contact" class="cta-btn">Request a Factory Verification</a>
     </div>
   </div>
-</div>
-
-<!-- SPANISH VERSION -->
-<div class="lang-es" style="display:none;">
-  <div style="background:var(--navy);">
-    <div class="article-hero">
-      <span class="article-tag">Tipos de Proveedores</span>
-      <h1>Trading Company vs Fábrica: Por Qué Importa Más de lo que Cree</h1>
-      <div class="article-meta">15 de agosto de 2026 &middot; 7 min de lectura &middot; Zhang Peng</div>
-    </div>
-  </div>
-
-  <div class="article-body">
-    <a href="/blog/" class="back-link">Volver al Blog</a>
-
-    <p>Una de las preguntas más comunes de los compradores que importan de Alibaba: "¿Estoy hablando con una fábrica o con una empresa comercializadora?" Y el seguimiento: "¿Importa siquiera?" La respuesta es sí — pero no siempre en la dirección que esperaría.</p>
-
-    <h2>¿Cuál Es la Diferencia Real?</h2>
-    <p>Una fábrica fabrica el producto. Una empresa comercializadora (trading company) compra de fábricas y revende a compradores, generalmente con un margen que cubre sus gastos de coordinación, idioma y servicio. Algunas empresas comercializadoras representan a una docena de fábricas en categorías no relacionadas; otras se especializan estrechamente en una área de producto y construyen relaciones profundas con un puñado de fabricantes confiables.</p>
-    <p>En chino: <strong>工厂 (gōngchǎng)</strong> = fábrica. <strong>贸易公司 (màoyì gōngsī)</strong> = empresa comercializadora. Algunos proveedores se listan como fábricas cuando en realidad son comercializadores — lo que la verificación de Gold Supplier de Alibaba no detecta de manera confiable.</p>
-
-    <h2>Por Qué Muchos Proveedores No Le Dirán la Verdad</h2>
-    <p>Las empresas comercializadoras frecuentemente se presentan como fábricas porque los compradores perciben las relaciones directas con fábricas como preferibles. Pero esto crea asimetría de información que le perjudica cuando algo sale mal. Cuando hay un problema de calidad, un retraso o un desajuste de especificaciones, usted no tiene visibilidad sobre si el problema se originó en el fabricante o en las instrucciones del comercializador.</p>
-    <p>También está en una posición negociadora más débil en precio si no conoce la estructura real de la cadena de suministro. Y la capacidad de su "proveedor" para solucionar su problema depende enteramente de cuánto control real tiene sobre la producción — lo cual, si son un comercializador, puede ser muy poco.</p>
-
-    <h2>Cuándo una Empresa Comercializadora Es la Opción Correcta</h2>
-    <p>Las empresas comercializadoras no son inherentemente peores que las fábricas. En algunos escenarios, son genuinamente la mejor opción:</p>
-    <ul>
-      <li>Necesita múltiples tipos de productos de un solo punto de contacto</li>
-      <li>Sus cantidades de pedido son demasiado pequeñas para que una fábrica las priorice</li>
-      <li>Necesita soporte en español e inglés y la fábrica solo habla mandarín</li>
-      <li>Quiere que alguien con relaciones existentes con fábricas gestione el control de calidad y la logística</li>
-      <li>Está entrando en una nueva categoría de producto y quiere un guía, no solo un vendedor</li>
-    </ul>
-
-    <h2>Cuándo Ser una Empresa Comercializadora Es un Problema</h2>
-    <p>Se convierte en un problema en situaciones específicas:</p>
-    <ul>
-      <li>Le dicen que está comprando directamente de fábrica pero no es así, por lo que la prima de precio no le genera ningún beneficio</li>
-      <li>Surge un problema de calidad y el comercializador culpa a la fábrica, la fábrica culpa a las especificaciones del comercializador, y usted queda atrapado en el medio sin recurso</li>
-      <li>El comercializador no conoce profundamente su producto — simplemente lo revende de quien cotice más bajo ese trimestre</li>
-      <li>El MOQ que le dan no coincide con la realidad porque necesitan suficiente para hacer viable su propio lote con la fábrica</li>
-    </ul>
-
-    <h2>Cómo Descubrir con Cuál Está Tratando</h2>
-    <p>Varios enfoques funcionan en combinación:</p>
-    <ul>
-      <li><strong>Solicite el registro comercial (营业执照)</strong> — las licencias de fábricas listan "manufactura" como alcance comercial; los registros de comercializadores listan "comercio" o "consultoría"</li>
-      <li><strong>Verifique la dirección de la fábrica en Baidu Maps</strong> — ¿coincide con un parque industrial? Una dirección residencial o edificio de oficinas no es una fábrica</li>
-      <li><strong>Haga preguntas específicas de producción</strong> — una fábrica conoce las especificaciones de sus máquinas, los plazos de entrega por volumen y el abastecimiento de materias primas; un comercializador tiene que "preguntar a la fábrica"</li>
-      <li><strong>Pregunte sobre una visita a la fábrica</strong> — las fábricas reales dicen que sí; los comercializadores a menudo evaden o dicen que el fabricante no permite visitas</li>
-    </ul>
-
-    <h2>La Verificación que Responde la Pregunta Definitivamente</h2>
-    <p>La única forma de saber con certeza es ver las instalaciones. Una visita de verificación de fábrica de terceros puede confirmar en pocas horas si la entidad que está considerando fabrica o revende — y darle el contexto de capacidad de producción, capacidad de equipos y control de calidad que necesita para tomar una decisión real e informada.</p>
-    <p>Esto es especialmente importante en materiales de construcción, piezas automotrices y bienes industriales — categorías donde la precisión de las especificaciones importa y donde la sustitución de producción es común.</p>
-
-    <div class="cta-box">
-      <h3>¿Fábrica o Comercializador — Quiere Saberlo con Certeza?</h3>
-      <p>SourciaVera visita las instalaciones en persona y le dice exactamente con qué está tratando: capacidad de producción, MOQ real, tipo de registro comercial y si la operación coincide con lo que fue descrito.</p>
-      <a href="/#contact" class="cta-btn">Solicitar Verificación de Fábrica</a>
-    </div>
-  </div>
-</div>
-
-<div class="cta-box" style="text-align:left">
-  <h3 style="text-align:center">Not sure if your supplier is who they claim to be?</h3>
-  <p>SourciaVera verifies Chinese factories on the ground — no stock photos, no self-reported claims. We visit in person, check business licenses, and confirm production capability before you ever send a deposit.</p>
-  <p>Whether you need a one-time factory verification, a full audit, or ongoing supervision during production, we handle it in English and Spanish — so nothing gets lost in translation.</p>
-  <div class="sv-cta-btns">
-    <a href="https://sourciavera.com/#contact" class="cta-btn">Get a Free Quote</a>
-    <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa">Chat on WhatsApp</a>
-  </div>
-</div>
 
 </main>
 <footer class="article-footer">
   &copy; <script>document.write(new Date().getFullYear())</script> SourciaVera &middot; <a href="/">sourciavera.com</a>
 </footer>
 
-<script>
-function detectLang() {
-  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
-  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
-  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
-}
-let currentLang = detectLang();
-function setLang(lang) {
-  currentLang = lang;
-  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
-  });
-  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
-  document.querySelectorAll('.lang-es').forEach(el => el.style.display = lang === 'es' ? 'block' : 'none');
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
-  document.documentElement.lang = lang;
-}
-setLang(currentLang);
-</script>
+
 
 <!-- Related Articles -->
 <div style="background:#FFF8F0;border-top:3px solid #E8472A;padding:3.5rem 3rem">
