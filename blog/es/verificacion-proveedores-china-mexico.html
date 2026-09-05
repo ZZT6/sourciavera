@@ -85,6 +85,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:2rem 3rem;font-size:0.82rem}
 .article-footer a{color:var(--yellow)}
 .wa-float{position:fixed;bottom:2rem;right:2rem;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:100}
+@media(max-width:600px){.wa-float{width:48px;height:48px;font-size:1.3rem;bottom:1.1rem;right:1.1rem}}
 @media(max-width:768px){
 nav{padding:1rem 1.5rem}.nav-links{display:none}
 .article-hero{padding:3rem 1.5rem 2rem}
@@ -202,13 +203,15 @@ nav{position:relative}
 
   <h2>¿Cuánto cuesta verificar un proveedor en China desde México?</h2>
 
-  <table>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+<table>
     <tr><th>Servicio</th><th>Precio</th><th>Cuándo usarlo</th></tr>
     <tr><td>Verificación de Fábrica</td><td><strong>$349 USD</strong> por visita</td><td>Antes de cualquier primer pago a un proveedor nuevo</td></tr>
     <tr><td>Inspección Previa al Envío</td><td><strong>$299 USD</strong> / día-hombre</td><td>Antes de que la mercancía salga de la fábrica</td></tr>
     <tr><td>Auditoría de Fábrica</td><td><strong>$399 USD</strong> / día-hombre</td><td>Antes de pedidos grandes o relaciones a largo plazo</td></tr>
     <tr><td>Agente de Compras</td><td><strong>10%</strong> del valor del pedido</td><td>Cuando quieres delegar todo el proceso de compra</td></tr>
   </table>
+</div>
 
   <p>Para entender el costo real: si tu pedido es de $15,000 USD, una verificación de fábrica cuesta $349 — el 2.3% de tu inversión. Si el proveedor resulta ser un intermediario o la calidad no cumple, pierdes los $15,000. El costo de no verificar es entre 40 y 100 veces mayor que el costo de verificar.</p>
 
