@@ -28,7 +28,16 @@ jobs:
           urls=""
           while IFS= read -r f; do
             [ -z "$f" ] && continue
-            urls="$urls https://sourciavera.com/$f"
+            # Site uses cleanUrls + trailingSlash:false — strip .html, and
+            # collapse a trailing /index (or bare index) to the directory root
+            # so IndexNow gets the canonical URL, not a 308-redirect source.
+            u="${f%.html}"
+            if [ "$u" = "index" ]; then
+              u=""
+            else
+              u="${u%/index}"
+            fi
+            urls="$urls https://sourciavera.com/$u"
           done <<< "$changed"
 
           # Always include homepage when sitemap or index changes

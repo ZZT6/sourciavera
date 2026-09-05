@@ -14,7 +14,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: GoogleExtended
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://sourciavera.com/sitemap.xml

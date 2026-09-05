@@ -32,6 +32,13 @@
 - [Product Inspection Cost Before Shipment](https://sourciavera.com/blog/product-inspection-cost-before-shipment): Pre-shipment inspection pricing
 - [Quality Control by Destination Climate](https://sourciavera.com/blog/quality-control-by-destination-climate): Climate-adapted QC requirements
 - [Independent Agent vs Sourcing Company](https://sourciavera.com/blog/independent-agent-vs-sourcing-company): Which is right for your import
+- [Real Case: BYD Seagull Wheel Offset Verification](https://sourciavera.com/blog/case-study-byd-seagull-wheel-offset-et541): Catching a wheel-offset mismatch before shipment
+- [Real Case: H2O2 Surabaya Supplier Verification](https://sourciavera.com/blog/case-study-h2o2-surabaya-supplier-verification): Verifying a hydrogen peroxide supplier in Indonesia
+- [8 Documents to Request From a Chinese Manufacturer](https://sourciavera.com/blog/documents-to-request-chinese-manufacturer): Which paperwork actually proves a supplier is real
+- [7 Questions Before You Wire Money to an Alibaba Supplier](https://sourciavera.com/blog/questions-before-wiring-money-alibaba-supplier): Due-diligence questions to ask before a deposit
+- [5 Things a Video Call Reveals That Photos Can't](https://sourciavera.com/blog/video-call-vs-factory-photos): How to use a live walkthrough to catch fake factories
+- [6 Quality Checks for Auto Parts Buyers Before Shipping](https://sourciavera.com/blog/auto-parts-quality-checks-before-shipping): Fitment, coating, and AQL checks for auto parts orders
+- [6 Signs Your Factory Is a Trading Company](https://sourciavera.com/blog/signs-your-factory-is-a-trading-company): Cutting out a middleman typically saves 10-30%
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
@@ -52,3 +59,6 @@
 - [Agente Independiente vs Empresa de Sourcing](https://sourciavera.com/blog/es/agente-independiente-vs-empresa-sourcing): Cuál conviene más
 - [Glosario de Términos de Verificación de Fábricas](https://sourciavera.com/blog/es/glosario-terminos-verificacion): Terminología clave
 - [Sourcing Transparente: Alibaba o SourciaVera](https://sourciavera.com/blog/es/sourcing-transparente-alibaba-o-sourciavera): Comparativa directa
+- [Caso Real: Verificación de Llantas BYD Seagull](https://sourciavera.com/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541): Detectando un desfase de offset antes del embarque
+- [Caso Real: Verificación de Proveedor de Peróxido de Hidrógeno en Surabaya](https://sourciavera.com/blog/es/verificar-proveedor-peroxido-hidrogeno-surabaya): Verificación de proveedor en Indonesia
+- [6 Señales de que tu Fábrica es una Empresa Comercializadora](https://sourciavera.com/blog/es/senales-fabrica-trading-company): Prescindir del intermediario ahorra 10-30%
