@@ -158,6 +158,9 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .why .section-title{color:white}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .why-card{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.1);padding:2rem}
+.why-card.why-card-highlight{background:var(--coral);border-color:var(--coral)}
+.why-card.why-card-highlight p{color:rgba(255,255,255,0.85)}
+.why-card.why-card-highlight strong{color:white}
 .why-icon{font-size:1.6rem;margin-bottom:1rem}
 .why-card h3{font-size:1rem;font-weight:500;color:white;margin-bottom:0.3rem}
 .why-card p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7}
@@ -182,7 +185,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .how-flow-5{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:3rem}
 .how-step-v2{padding:1.75rem 1.25rem;border-right:1px solid var(--border)}
 .how-step-v2:last-child{border-right:none}
-.how-step-v2.step-featured{background:var(--navy)}
+.how-step-v2.step-featured{background:var(--coral)}
 .how-step-v2.step-featured h3{color:white}
 .how-step-v2.step-featured p{color:rgba(255,255,255,0.7)}
 .how-step-v2.step-featured .trust-line{color:rgba(255,255,255,0.5);border-color:rgba(255,255,255,0.15)}
@@ -302,7 +305,6 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <a class="lang-btn" href="/">EN</a>
       <button class="lang-btn active">ES</button>
     </div>
-    <a href="#contacto" class="nav-cta">Consulta Ahora</a>
   </div>
 </nav>
 <main>
@@ -311,7 +313,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="hero-left">
     <div class="hero-tag">📍 Guangzhou, China — Compradores Globales</div>
     <h1>Sin más pesadillas de importación.<br>Recibe <span>productos verificados</span> sin complicaciones.</h1>
-    <p>Desde la auditoría en fábrica hasta tu puerta — manejamos cada etapa. Sin volar a China, sin adivinar, sin intermediarios. Productos verificados a precios honestos, tú solo esperas en casa. <strong>Atención completa en español.</strong></p>
+    <p>Envíanos la ficha de la fábrica que encontraste en 1688 o Alibaba: la verificamos como tercero independiente, en el sitio, cámara en mano. Así logras tus compras al por mayor a proveedores chinos verificados — la forma segura de hacer tu compra mayorista de proveedores de China, tanto para ventas al por mayor como compras al por mayor recurrentes.</p>
     <div class="hero-btns">
       <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Consulta Ahora</button>
       <button class="btn-outline" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios</button>
@@ -320,8 +322,8 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="hero-card">
     <div class="hero-card-tag">Nuestra promesa en tres capas</div>
     <h3>Certeza. Tranquilidad. Precios honestos.</h3>
-    <p>Sin más ruleta de proveedores. Nuestro equipo bilingüe maneja cada etapa en China — verificación, seguimiento de producción, control de calidad, despacho — para que recibas exactamente lo que pediste, al precio que acordaste.</p>
-    <a href="#contacto" class="hero-card-badge">Consulta Ahora →</a>
+    <p>Sin más ruleta de proveedores — desde la auditoría en fábrica hasta tu puerta, manejamos cada etapa. Nuestro equipo bilingüe se encarga de la verificación, el seguimiento de producción, el control de calidad y el despacho en China, sin volar a China, sin adivinar, sin intermediarios. Productos verificados a precios honestos, exactamente lo que pediste, mientras esperas en casa.</p>
+    <a href="https://wa.me/8613688057230" class="hero-card-badge" target="_blank" rel="noopener">Chatear por WhatsApp →</a>
   </div>
 </section>
 
@@ -416,10 +418,10 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <h3>Inglés, español y chino nativo</h3>
       <p>Nos comunicamos contigo en español o inglés, y negociamos con las fábricas en chino. Sin traducciones automáticas, sin malentendidos.</p>
     </div>
-    <div class="why-card">
+    <div class="why-card why-card-highlight">
       <div class="why-icon">🤝</div>
       <h3>Solo cobramos si hay trato</h3>
-      <p>No recibimos comisión de las fábricas. Nuestros ingresos dependen exclusivamente de que tú cierres un buen trato.</p>
+      <p><strong>No recibimos comisión de las fábricas.</strong> Nuestros ingresos dependen exclusivamente de que tú cierres un buen trato.</p>
     </div>
   </div>
 </section>
