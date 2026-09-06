@@ -188,6 +188,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:640px;margin:0 auto 1.5rem}
 .who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .who-cta:hover{opacity:0.85}
+.agree-widget{margin-top:1.5rem;display:flex;align-items:center;justify-content:center;gap:0.85rem;flex-wrap:wrap}
+.agree-btn{background:transparent;border:1.5px solid var(--border);color:var(--navy);padding:0.6rem 1.3rem;font-size:0.82rem;letter-spacing:0.05em;cursor:pointer;transition:all 0.2s;font-family:inherit}
+.agree-btn:hover:not(:disabled){border-color:var(--coral);color:var(--coral)}
+.agree-btn.agreed{background:var(--coral);border-color:var(--coral);color:white;cursor:default;opacity:1}
+.agree-btn:disabled{cursor:default}
+.agree-count{font-size:0.85rem;color:var(--muted)}
 .who-cards-single{max-width:760px;margin-left:auto;margin-right:auto}
 .who-cards-single{grid-template-columns:1fr}
 .who-card-wide{text-align:center}
@@ -433,6 +439,10 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <p class="who-founder-text" data-en="“Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company.”" data-es="“Una vez que confirmas la fábrica, seguimos como tu tercero independiente en planta — supervisando la producción para proteger la calidad y la fecha de entrega. Tú solo esperas en WhatsApp los videos e información que te envío. Que el cliente tenga el control de cada cambio, en todo momento, es la razón por la que fundé esta empresa.”">"Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company."</p>
     <p class="who-founder-name" data-en="— Zhang Peng, Founder" data-es="— Zhang Peng, Fundador">— Zhang Peng, Founder</p>
     <a href="#contact" class="who-cta" data-en="Get in Touch →" data-es="Contáctanos →">Get in Touch →</a>
+    <div class="agree-widget">
+      <button class="agree-btn" id="agreeBtn" data-en="👍 I agree" data-es="👍 Estoy de acuerdo">👍 I agree</button>
+      <span class="agree-count" id="agreeCount"></span>
+    </div>
   </div>
 </section>
 
@@ -900,6 +910,40 @@ form.addEventListener('submit', async function(e) {
   window.addEventListener('scroll', checkAll, { passive: true });
   window.addEventListener('resize', checkAll);
   window.addEventListener('load', checkAll);
+})();
+
+(function() {
+  var btn = document.getElementById('agreeBtn');
+  var countEl = document.getElementById('agreeCount');
+  if (!btn || !countEl) return;
+  var VOTED_KEY = 'sv-agree-voted';
+  var lastCount = 0;
+
+  function label(n) {
+    var lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+    if (lang === 'es') return n + (n === 1 ? ' persona de acuerdo' : ' personas de acuerdo');
+    return n + (n === 1 ? ' person agrees' : ' people agree');
+  }
+  function renderCount(n) { lastCount = n; countEl.textContent = label(n); }
+
+  new MutationObserver(function() { renderCount(lastCount); }).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+
+  fetch('/api/agree-count').then(function(r) { return r.json(); }).then(function(d) { renderCount(d.count || 0); }).catch(function() {});
+
+  if (localStorage.getItem(VOTED_KEY)) {
+    btn.classList.add('agreed');
+    btn.disabled = true;
+  }
+
+  btn.addEventListener('click', function() {
+    if (localStorage.getItem(VOTED_KEY)) return;
+    btn.disabled = true;
+    fetch('/api/agree-count', { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
+      renderCount(d.count || 0);
+      btn.classList.add('agreed');
+      localStorage.setItem(VOTED_KEY, '1');
+    }).catch(function() { btn.disabled = false; });
+  });
 })();
 </script>
 <script type="module">

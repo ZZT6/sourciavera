@@ -73,6 +73,22 @@
         {"@type":"Question","name":"¿Ofrecen atención en español?","acceptedAnswer":{"@type":"Answer","text":"Sí. Toda nuestra comunicación, informes y cotizaciones están disponibles en español. Somos una empresa que habla español y entendemos las necesidades del importador latinoamericano."}},
         {"@type":"Question","name":"¿Pueden verificar cualquier tipo de proveedor en China?","acceptedAnswer":{"@type":"Answer","text":"Verificamos cualquier proveedor en el área de Guangzhou: iluminación LED, autopartes, electrónica, hardware, equipos industriales y más. Si se fabrica en Guangzhou, podemos verificarlo."}}
       ]
+    },
+    {
+      "@type":"Service",
+      "name":"Verificación de Fábrica",
+      "provider":{"@type":"LocalBusiness","name":"SourciaVera"},
+      "description":"Investigación presencial de la fábrica en Guangzhou. Visitamos como compradores locales chinos, verificamos la licencia comercial, filmamos la línea de producción y entregamos un informe completo en español e inglés en 48 horas.",
+      "areaServed":"Worldwide",
+      "serviceOutput":"Informe de verificación de fábrica con video sin editar"
+    },
+    {
+      "@type":"Service",
+      "name":"Negociación y Compra",
+      "provider":{"@type":"LocalBusiness","name":"SourciaVera"},
+      "description":"Servicio completo de abastecimiento que incluye negociación directa en chino, especialista de sourcing dedicado, cotización profesional de flete y un informe final de precio todo incluido.",
+      "areaServed":"Worldwide",
+      "serviceOutput":"Informe de compra todo incluido: producto + flete + seguro"
     }
   ]
 }
@@ -158,6 +174,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:640px;margin:0 auto 1.5rem}
 .who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .who-cta:hover{opacity:0.85}
+.agree-widget{margin-top:1.5rem;display:flex;align-items:center;justify-content:center;gap:0.85rem;flex-wrap:wrap}
+.agree-btn{background:transparent;border:1.5px solid var(--border);color:var(--navy);padding:0.6rem 1.3rem;font-size:0.82rem;letter-spacing:0.05em;cursor:pointer;transition:all 0.2s;font-family:inherit}
+.agree-btn:hover:not(:disabled){border-color:var(--coral);color:var(--coral)}
+.agree-btn.agreed{background:var(--coral);border-color:var(--coral);color:white;cursor:default;opacity:1}
+.agree-btn:disabled{cursor:default}
+.agree-count{font-size:0.85rem;color:var(--muted)}
 .who-cards-single{grid-template-columns:1fr;max-width:760px;margin-left:auto;margin-right:auto}
 .who-card-wide{text-align:center}
 .who-card-wide .who-icon{margin:0 auto 1rem}
@@ -413,6 +435,10 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <p class="who-founder-text">"Una vez que confirmas la fábrica, seguimos como tu tercero independiente en planta — supervisando la producción para proteger la calidad y la fecha de entrega. Tú solo esperas en WhatsApp los videos e información que te envío. Que el cliente tenga el control de cada cambio, en todo momento, es la razón por la que fundé esta empresa."</p>
     <p class="who-founder-name">— Zhang Peng, Fundador</p>
     <a href="#contacto" class="who-cta">Contáctanos →</a>
+    <div class="agree-widget">
+      <button class="agree-btn" id="agreeBtn">👍 Estoy de acuerdo</button>
+      <span class="agree-count" id="agreeCount"></span>
+    </div>
   </div>
 </section>
 
@@ -751,6 +777,34 @@ form.addEventListener('submit', async e => {
   window.addEventListener('scroll', checkAll, { passive: true });
   window.addEventListener('resize', checkAll);
   window.addEventListener('load', checkAll);
+})();
+
+(function() {
+  var btn = document.getElementById('agreeBtn');
+  var countEl = document.getElementById('agreeCount');
+  if (!btn || !countEl) return;
+  var VOTED_KEY = 'sv-agree-voted';
+
+  function renderCount(n) {
+    countEl.textContent = n + (n === 1 ? ' persona de acuerdo' : ' personas de acuerdo');
+  }
+
+  fetch('/api/agree-count').then(function(r) { return r.json(); }).then(function(d) { renderCount(d.count || 0); }).catch(function() {});
+
+  if (localStorage.getItem(VOTED_KEY)) {
+    btn.classList.add('agreed');
+    btn.disabled = true;
+  }
+
+  btn.addEventListener('click', function() {
+    if (localStorage.getItem(VOTED_KEY)) return;
+    btn.disabled = true;
+    fetch('/api/agree-count', { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
+      renderCount(d.count || 0);
+      btn.classList.add('agreed');
+      localStorage.setItem(VOTED_KEY, '1');
+    }).catch(function() { btn.disabled = false; });
+  });
 })();
 </script>
 <script type="module">
