@@ -174,18 +174,19 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:640px;margin:0 auto 1.5rem}
 .who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .who-cta:hover{opacity:0.85}
-.agree-widget{margin-top:1.5rem;display:flex;align-items:center;justify-content:center;gap:0.85rem;flex-wrap:wrap}
-.agree-btn{background:transparent;border:1.5px solid var(--border);color:var(--navy);padding:0.6rem 1.3rem;font-size:0.82rem;letter-spacing:0.05em;cursor:pointer;transition:all 0.2s;font-family:inherit}
-.agree-btn:hover:not(:disabled){border-color:var(--coral);color:var(--coral)}
-.agree-btn.agreed{background:var(--coral);border-color:var(--coral);color:white;cursor:default;opacity:1}
-.agree-btn:disabled{cursor:default}
-.agree-count{font-size:0.85rem;color:var(--muted)}
+.rating-widget{margin-top:1.5rem;display:flex;flex-direction:column;align-items:center;gap:0.5rem}
+.rating-stars{display:flex;gap:0.2rem}
+.star-btn{background:none;border:none;font-size:1.9rem;line-height:1;color:var(--border);cursor:pointer;padding:0.1rem 0.15rem;transition:color 0.15s;font-family:inherit}
+.star-btn:disabled{cursor:default}
+.rating-widget:not(.rated) .star-btn:hover,.rating-widget:not(.rated) .star-btn.hovered{color:var(--yellow)}
+.star-btn.selected{color:var(--coral)}
+.rating-summary{font-size:0.85rem;color:var(--muted)}
 .who-cards-single{grid-template-columns:1fr;max-width:760px;margin-left:auto;margin-right:auto}
 .who-card-wide{text-align:center}
 .who-card-wide .who-icon{margin:0 auto 1rem}
 .who-founder-text{font-size:1.05rem!important}
 .who-founder-name{color:var(--muted);font-size:0.82rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem;font-style:normal}
-.why{background:var(--navy);padding:5rem 3rem}
+.why{background:linear-gradient(rgba(13,34,64,0.88),rgba(13,34,64,0.88)),url('/images/factory-floor-verification.webp') center/cover no-repeat;padding:5rem 3rem}
 .why .section-tag{color:var(--yellow)}
 .why .section-title{color:white}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
@@ -435,9 +436,15 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <p class="who-founder-text">"Una vez que confirmas la fábrica, seguimos como tu tercero independiente en planta — supervisando la producción para proteger la calidad y la fecha de entrega. Tú solo esperas en WhatsApp los videos e información que te envío. Que el cliente tenga el control de cada cambio, en todo momento, es la razón por la que fundé esta empresa."</p>
     <p class="who-founder-name">— Zhang Peng, Fundador</p>
     <a href="#contacto" class="who-cta">Contáctanos →</a>
-    <div class="agree-widget">
-      <button class="agree-btn" id="agreeBtn">👍 Estoy de acuerdo</button>
-      <span class="agree-count" id="agreeCount"></span>
+    <div class="rating-widget" id="ratingWidget">
+      <div class="rating-stars" id="ratingStars">
+        <button class="star-btn" data-star="1">★</button>
+        <button class="star-btn" data-star="2">★</button>
+        <button class="star-btn" data-star="3">★</button>
+        <button class="star-btn" data-star="4">★</button>
+        <button class="star-btn" data-star="5">★</button>
+      </div>
+      <div class="rating-summary" id="ratingSummary"></div>
     </div>
   </div>
 </section>
@@ -780,31 +787,58 @@ form.addEventListener('submit', async e => {
 })();
 
 (function() {
-  var btn = document.getElementById('agreeBtn');
-  var countEl = document.getElementById('agreeCount');
-  if (!btn || !countEl) return;
-  var VOTED_KEY = 'sv-agree-voted';
+  var widget = document.getElementById('ratingWidget');
+  var starsWrap = document.getElementById('ratingStars');
+  var summaryEl = document.getElementById('ratingSummary');
+  if (!widget || !starsWrap || !summaryEl) return;
+  var stars = starsWrap.querySelectorAll('.star-btn');
+  var VOTED_KEY = 'sv-rating-voted';
 
-  function renderCount(n) {
-    countEl.textContent = n + (n === 1 ? ' persona de acuerdo' : ' personas de acuerdo');
+  function summaryText(average, total) {
+    if (total === 0) return 'Sé el primero en calificar';
+    var word = total === 1 ? 'calificación' : 'calificaciones';
+    return '★ ' + average.toFixed(1) + ' · ' + total + ' ' + word;
+  }
+  function paintSelected(n) {
+    stars.forEach(function(s) { s.classList.toggle('selected', parseInt(s.getAttribute('data-star'), 10) <= n); });
   }
 
-  fetch('/api/agree-count').then(function(r) { return r.json(); }).then(function(d) { renderCount(d.count || 0); }).catch(function() {});
-
-  if (localStorage.getItem(VOTED_KEY)) {
-    btn.classList.add('agreed');
-    btn.disabled = true;
+  var votedStar = parseInt(localStorage.getItem(VOTED_KEY), 10);
+  var hasVoted = votedStar >= 1 && votedStar <= 5;
+  if (hasVoted) {
+    widget.classList.add('rated');
+    paintSelected(votedStar);
+    stars.forEach(function(s) { s.disabled = true; });
   }
 
-  btn.addEventListener('click', function() {
-    if (localStorage.getItem(VOTED_KEY)) return;
-    btn.disabled = true;
-    fetch('/api/agree-count', { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
-      renderCount(d.count || 0);
-      btn.classList.add('agreed');
-      localStorage.setItem(VOTED_KEY, '1');
-    }).catch(function() { btn.disabled = false; });
-  });
+  fetch('/api/rating').then(function(r) { return r.json(); }).then(function(d) {
+    summaryEl.textContent = summaryText(d.average || 0, d.total || 0);
+  }).catch(function() {});
+
+  if (!hasVoted) {
+    stars.forEach(function(s) {
+      s.addEventListener('mouseenter', function() {
+        var v = parseInt(s.getAttribute('data-star'), 10);
+        stars.forEach(function(s2) { s2.classList.toggle('hovered', parseInt(s2.getAttribute('data-star'), 10) <= v); });
+      });
+      s.addEventListener('mouseleave', function() {
+        stars.forEach(function(s2) { s2.classList.remove('hovered'); });
+      });
+      s.addEventListener('click', function() {
+        if (localStorage.getItem(VOTED_KEY)) return;
+        var v = parseInt(s.getAttribute('data-star'), 10);
+        stars.forEach(function(s2) { s2.disabled = true; });
+        fetch('/api/rating?star=' + v, { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
+          summaryEl.textContent = summaryText(d.average || 0, d.total || 0);
+          widget.classList.add('rated');
+          paintSelected(v);
+          localStorage.setItem(VOTED_KEY, String(v));
+        }).catch(function() {
+          stars.forEach(function(s2) { s2.disabled = false; });
+        });
+      });
+    });
+  }
 })();
 </script>
 <script type="module">

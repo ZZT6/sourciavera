@@ -164,7 +164,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .step-text span{color:var(--muted);font-size:0.82rem;display:block}
 .service-highlight{background:var(--light);border-left:3px solid var(--coral);padding:0.75rem 1rem;font-size:0.85rem;color:var(--navy);font-style:italic;margin-top:0.5rem}
 .service-card:nth-child(2) .service-highlight{border-color:var(--teal)}
-.why{background:var(--navy);padding:5rem 3rem}
+.why{background:linear-gradient(rgba(13,34,64,0.88),rgba(13,34,64,0.88)),url('/images/factory-floor-verification.webp') center/cover no-repeat;padding:5rem 3rem}
 .why .section-tag{color:var(--yellow)}
 .why .section-title{color:white}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
@@ -188,12 +188,13 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:640px;margin:0 auto 1.5rem}
 .who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .who-cta:hover{opacity:0.85}
-.agree-widget{margin-top:1.5rem;display:flex;align-items:center;justify-content:center;gap:0.85rem;flex-wrap:wrap}
-.agree-btn{background:transparent;border:1.5px solid var(--border);color:var(--navy);padding:0.6rem 1.3rem;font-size:0.82rem;letter-spacing:0.05em;cursor:pointer;transition:all 0.2s;font-family:inherit}
-.agree-btn:hover:not(:disabled){border-color:var(--coral);color:var(--coral)}
-.agree-btn.agreed{background:var(--coral);border-color:var(--coral);color:white;cursor:default;opacity:1}
-.agree-btn:disabled{cursor:default}
-.agree-count{font-size:0.85rem;color:var(--muted)}
+.rating-widget{margin-top:1.5rem;display:flex;flex-direction:column;align-items:center;gap:0.5rem}
+.rating-stars{display:flex;gap:0.2rem}
+.star-btn{background:none;border:none;font-size:1.9rem;line-height:1;color:var(--border);cursor:pointer;padding:0.1rem 0.15rem;transition:color 0.15s;font-family:inherit}
+.star-btn:disabled{cursor:default}
+.rating-widget:not(.rated) .star-btn:hover,.rating-widget:not(.rated) .star-btn.hovered{color:var(--yellow)}
+.star-btn.selected{color:var(--coral)}
+.rating-summary{font-size:0.85rem;color:var(--muted)}
 .who-cards-single{max-width:760px;margin-left:auto;margin-right:auto}
 .who-cards-single{grid-template-columns:1fr}
 .who-card-wide{text-align:center}
@@ -439,9 +440,15 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <p class="who-founder-text" data-en="“Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company.”" data-es="“Una vez que confirmas la fábrica, seguimos como tu tercero independiente en planta — supervisando la producción para proteger la calidad y la fecha de entrega. Tú solo esperas en WhatsApp los videos e información que te envío. Que el cliente tenga el control de cada cambio, en todo momento, es la razón por la que fundé esta empresa.”">"Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company."</p>
     <p class="who-founder-name" data-en="— Zhang Peng, Founder" data-es="— Zhang Peng, Fundador">— Zhang Peng, Founder</p>
     <a href="#contact" class="who-cta" data-en="Get in Touch →" data-es="Contáctanos →">Get in Touch →</a>
-    <div class="agree-widget">
-      <button class="agree-btn" id="agreeBtn" data-en="👍 I agree" data-es="👍 Estoy de acuerdo">👍 I agree</button>
-      <span class="agree-count" id="agreeCount"></span>
+    <div class="rating-widget" id="ratingWidget">
+      <div class="rating-stars" id="ratingStars">
+        <button class="star-btn" data-star="1">★</button>
+        <button class="star-btn" data-star="2">★</button>
+        <button class="star-btn" data-star="3">★</button>
+        <button class="star-btn" data-star="4">★</button>
+        <button class="star-btn" data-star="5">★</button>
+      </div>
+      <div class="rating-summary" id="ratingSummary"></div>
     </div>
   </div>
 </section>
@@ -913,37 +920,65 @@ form.addEventListener('submit', async function(e) {
 })();
 
 (function() {
-  var btn = document.getElementById('agreeBtn');
-  var countEl = document.getElementById('agreeCount');
-  if (!btn || !countEl) return;
-  var VOTED_KEY = 'sv-agree-voted';
-  var lastCount = 0;
+  var widget = document.getElementById('ratingWidget');
+  var starsWrap = document.getElementById('ratingStars');
+  var summaryEl = document.getElementById('ratingSummary');
+  if (!widget || !starsWrap || !summaryEl) return;
+  var stars = starsWrap.querySelectorAll('.star-btn');
+  var VOTED_KEY = 'sv-rating-voted';
+  var lastData = { average: 0, total: 0 };
 
-  function label(n) {
-    var lang = document.documentElement.lang === 'es' ? 'es' : 'en';
-    if (lang === 'es') return n + (n === 1 ? ' persona de acuerdo' : ' personas de acuerdo');
-    return n + (n === 1 ? ' person agrees' : ' people agree');
+  function lang() { return document.documentElement.lang === 'es' ? 'es' : 'en'; }
+
+  function summaryText() {
+    var total = lastData.total || 0;
+    var average = lastData.average || 0;
+    if (total === 0) return lang() === 'es' ? 'Sé el primero en calificar' : 'Be the first to rate';
+    var word = lang() === 'es' ? (total === 1 ? 'calificación' : 'calificaciones') : (total === 1 ? 'rating' : 'ratings');
+    return '★ ' + average.toFixed(1) + ' · ' + total + ' ' + word;
   }
-  function renderCount(n) { lastCount = n; countEl.textContent = label(n); }
-
-  new MutationObserver(function() { renderCount(lastCount); }).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
-
-  fetch('/api/agree-count').then(function(r) { return r.json(); }).then(function(d) { renderCount(d.count || 0); }).catch(function() {});
-
-  if (localStorage.getItem(VOTED_KEY)) {
-    btn.classList.add('agreed');
-    btn.disabled = true;
+  function renderSummary() { summaryEl.textContent = summaryText(); }
+  function paintSelected(n) {
+    stars.forEach(function(s) { s.classList.toggle('selected', parseInt(s.getAttribute('data-star'), 10) <= n); });
   }
 
-  btn.addEventListener('click', function() {
-    if (localStorage.getItem(VOTED_KEY)) return;
-    btn.disabled = true;
-    fetch('/api/agree-count', { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
-      renderCount(d.count || 0);
-      btn.classList.add('agreed');
-      localStorage.setItem(VOTED_KEY, '1');
-    }).catch(function() { btn.disabled = false; });
-  });
+  var votedStar = parseInt(localStorage.getItem(VOTED_KEY), 10);
+  var hasVoted = votedStar >= 1 && votedStar <= 5;
+  if (hasVoted) {
+    widget.classList.add('rated');
+    paintSelected(votedStar);
+    stars.forEach(function(s) { s.disabled = true; });
+  }
+
+  fetch('/api/rating').then(function(r) { return r.json(); }).then(function(d) { lastData = d; renderSummary(); }).catch(function() {});
+
+  new MutationObserver(renderSummary).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+
+  if (!hasVoted) {
+    stars.forEach(function(s) {
+      s.addEventListener('mouseenter', function() {
+        var v = parseInt(s.getAttribute('data-star'), 10);
+        stars.forEach(function(s2) { s2.classList.toggle('hovered', parseInt(s2.getAttribute('data-star'), 10) <= v); });
+      });
+      s.addEventListener('mouseleave', function() {
+        stars.forEach(function(s2) { s2.classList.remove('hovered'); });
+      });
+      s.addEventListener('click', function() {
+        if (localStorage.getItem(VOTED_KEY)) return;
+        var v = parseInt(s.getAttribute('data-star'), 10);
+        stars.forEach(function(s2) { s2.disabled = true; });
+        fetch('/api/rating?star=' + v, { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
+          lastData = d;
+          renderSummary();
+          widget.classList.add('rated');
+          paintSelected(v);
+          localStorage.setItem(VOTED_KEY, String(v));
+        }).catch(function() {
+          stars.forEach(function(s2) { s2.disabled = false; });
+        });
+      });
+    });
+  }
 })();
 </script>
 <script type="module">
