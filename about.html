@@ -31,15 +31,17 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .page-header .tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1rem;font-weight:500}
 .page-header h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;color:white;margin-bottom:0.6rem;line-height:1.15}
 .page-header p{color:rgba(255,255,255,0.5);font-size:0.92rem;max-width:560px}
-.content{max-width:780px;margin:0 auto;padding:4rem 3rem}
+.content{max-width:1080px;margin:0 auto;padding:4rem 3rem}
 .section{margin-bottom:3.5rem}
+.two-col{display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:start;margin-bottom:3.5rem}
+.two-col .section{margin-bottom:0}
 .section-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section h2{font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem;line-height:1.2}
 .prose p{color:var(--muted);font-size:0.95rem;line-height:1.9;margin-bottom:1.1rem}
 .prose p:last-child{margin-bottom:0}
 .mission-block{background:var(--navy);border-left:4px solid var(--coral);padding:2rem 2.25rem;margin:0}
 .mission-block p{color:rgba(255,255,255,0.85);font-size:1.05rem;line-height:1.85;font-weight:300}
-.values-list{display:flex;flex-direction:column;gap:1.25rem;margin-top:0.5rem}
+.values-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:0.5rem}
 .value-item{border-left:3px solid var(--coral);padding:1rem 1.25rem;background:var(--light)}
 .value-item:nth-child(2){border-color:var(--teal)}
 .value-item:nth-child(3){border-color:var(--yellow)}
@@ -55,6 +57,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .pain-item{display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--muted);line-height:1.6}
 .pain-dot{width:8px;height:8px;min-width:8px;background:var(--coral);margin-top:0.5rem}
 @media(max-width:768px){.team-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.two-col{grid-template-columns:1fr;gap:0}.two-col .section{margin-bottom:3.5rem}.two-col .section:last-child{margin-bottom:0}.values-list{grid-template-columns:1fr}}
 .divider{border:none;border-top:1px solid var(--border);margin:0 0 3.5rem}
 footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
@@ -113,29 +116,29 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
 <div class="content">
 
-  <div class="section">
-    <div class="section-label">Sound familiar?</div>
-    <div class="prose">
-      <p>Before we tell you who we are, let us tell you what we've seen happen to importers who tried to go it alone:</p>
+  <div class="two-col">
+    <div class="section">
+      <div class="section-label">Sound familiar?</div>
+      <div class="prose">
+        <p>Before we tell you who we are, let us tell you what we've seen happen to importers who tried to go it alone:</p>
+      </div>
+      <div class="pain-list">
+        <div class="pain-item"><div class="pain-dot"></div>Deposit paid. Factory stops responding. Money gone.</div>
+        <div class="pain-item"><div class="pain-dot"></div>Samples arrived perfect. Bulk order looked nothing like them.</div>
+        <div class="pain-item"><div class="pain-dot"></div>Goods held at customs. Nobody on the China side can explain why.</div>
+        <div class="pain-item"><div class="pain-dot"></div>Supplier quoted you double what they quoted someone who speaks Mandarin.</div>
+      </div>
+      <div class="prose">
+        <p>These aren't edge cases. They happen every week to buyers who are otherwise running solid businesses. The common thread: no one on the ground in China who was actually on their side.</p>
+        <p><strong>That's the only problem SourciaVera exists to solve.</strong> We handle China — so you can focus on your business.</p>
+      </div>
     </div>
-    <div class="pain-list">
-      <div class="pain-item"><div class="pain-dot"></div>Deposit paid. Factory stops responding. Money gone.</div>
-      <div class="pain-item"><div class="pain-dot"></div>Samples arrived perfect. Bulk order looked nothing like them.</div>
-      <div class="pain-item"><div class="pain-dot"></div>Goods held at customs. Nobody on the China side can explain why.</div>
-      <div class="pain-item"><div class="pain-dot"></div>Supplier quoted you double what they quoted someone who speaks Mandarin.</div>
-    </div>
-    <div class="prose">
-      <p>These aren't edge cases. They happen every week to buyers who are otherwise running solid businesses. The common thread: no one on the ground in China who was actually on their side.</p>
-      <p><strong>That's the only problem SourciaVera exists to solve.</strong> We handle China — so you can focus on your business.</p>
-    </div>
-  </div>
 
-  <hr class="divider">
-
-  <div class="section">
-    <div class="section-label">Our Mission</div>
-    <div class="mission-block">
-      <p>We believe a language barrier should never be the reason a hardworking importer in the US, UK, Mexico, Guatemala, or Colombia can't access the same verified factories, the same fair pricing, and the same level of protection that the biggest players take for granted. Hand us your requirements — we handle the rest.</p>
+    <div class="section">
+      <div class="section-label">Our Mission</div>
+      <div class="mission-block">
+        <p>We believe a language barrier should never be the reason a hardworking importer in the US, UK, Mexico, Guatemala, or Colombia can't access the same verified factories, the same fair pricing, and the same level of protection that the biggest players take for granted. Hand us your requirements — we handle the rest.</p>
+      </div>
     </div>
   </div>
 
@@ -144,7 +147,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <div class="section">
     <div class="section-label">Our Team</div>
     <div class="prose">
-      <p>SourciaVera was founded by Zhang Peng, who leads verification strategy and client relationships directly — every engagement still goes through him, not a rotating account manager. Execution isn't one person wearing every hat, though: a specialist team handles the ground, language, and logistics work below.</p>
+      <p>SourciaVera was founded by Zhang Peng, who leads verification strategy and client relationships directly — every engagement still goes through him, not a rotating account manager. Execution isn't one person wearing every hat, though: a specialist team handles the ground, product, and logistics work below.</p>
     </div>
     <div class="team-grid">
       <div class="team-card">
@@ -153,9 +156,9 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
         <p>On-site coordinators across Guangdong and East China. They visit factories, film walkthroughs, run audits, and supervise production. Same-day reach to any supplier in the Pearl River Delta.</p>
       </div>
       <div class="team-card">
-        <div class="team-card-role">Language Team</div>
-        <h3>EN / ES / ZH</h3>
-        <p>Bilingual client managers who communicate with you in English or Spanish and negotiate directly with factories in Mandarin — no auto-translations, no third-party interpreters losing nuance mid-deal.</p>
+        <div class="team-card-role">Category Team</div>
+        <h3>Category Specialists</h3>
+        <p>Every question goes to someone who actually knows the product — auto parts, chemicals, construction, LED — not a generalist reading from a script. You get real technical answers, not the runaround you'd get from an Alibaba rep who barely knows their own catalog.</p>
       </div>
       <div class="team-card">
         <div class="team-card-role">Logistics Team</div>
@@ -176,11 +179,11 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       </div>
       <div class="value-item">
         <strong>Your side, not the factory's.</strong>
-        <p>We receive zero commission from suppliers. Our incentive is your successful order — nothing else.</p>
+        <p>Tell us what you need — bluntly, directly, no sugar-coating. We welcome every suggestion, even the harsh ones. Criticism makes us better.</p>
       </div>
       <div class="value-item">
-        <strong>Bilingual by design, not as an afterthought.</strong>
-        <p>Every quote, report, and conversation happens in the language you're most comfortable in. No information loss between you and the factory.</p>
+        <strong>Real friends, not one-time transactions.</strong>
+        <p>We're not chasing a single order — we want clients for 5, 10 years or more, real friendships built over time. One day, when our team visits your city, we want a true friend already waiting there: someone who'll show us around, share a meal, and make us feel at home.</p>
       </div>
       <div class="value-item">
         <strong>Ongoing, not one-and-done.</strong>
