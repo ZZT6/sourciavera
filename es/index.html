@@ -147,6 +147,11 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:640px;margin:0 auto 1.5rem}
 .who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .who-cta:hover{opacity:0.85}
+.who-cards-single{grid-template-columns:1fr;max-width:760px;margin-left:auto;margin-right:auto}
+.who-card-wide{text-align:center}
+.who-card-wide .who-icon{margin:0 auto 1rem}
+.who-founder-text{font-size:1.05rem!important}
+.who-founder-name{color:var(--muted);font-size:0.82rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem;font-style:normal}
 .why{background:var(--navy);padding:5rem 3rem}
 .why .section-tag{color:var(--yellow)}
 .why .section-title{color:white}
@@ -198,7 +203,16 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .how-step-v2:last-child{border-bottom:none}
 }
 .faq-section{padding:5rem 3rem;background:var(--white)}
-.faq-inner{max-width:800px;margin:0 auto}
+.faq-inner{max-width:1100px;margin:0 auto}
+.faq-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;margin-top:3rem;align-items:start}
+.faq-side-card{background:var(--navy);padding:2rem 1.75rem;position:sticky;top:2rem}
+.faq-side-tag{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);font-weight:600;margin-bottom:0.9rem}
+.faq-side-card h3{color:white;font-size:1.15rem;font-weight:700;margin-bottom:0.7rem;line-height:1.35}
+.faq-side-card p{color:rgba(255,255,255,0.65);font-size:0.88rem;line-height:1.65;margin-bottom:1.5rem}
+.faq-side-btn{display:block;text-align:center;padding:0.8rem 1rem;font-size:0.82rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;background:var(--coral);color:white;margin-bottom:0.75rem}
+.faq-side-btn-wa{background:#25D366}
+.faq-side-divider{border-top:1px solid rgba(255,255,255,0.15);margin:1.5rem 0 1.25rem}
+.faq-side-info{color:rgba(255,255,255,0.55);font-size:0.82rem;display:flex;flex-direction:column;gap:0.5rem}
 .faq-item{border-bottom:1px solid var(--border)}
 .faq-item:first-child{border-top:1px solid var(--border)}
 .faq-q{width:100%;background:none;border:none;text-align:left;padding:1.4rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;cursor:pointer;font-family:inherit}
@@ -257,6 +271,8 @@ nav.nav-open .nav-links a:last-child{border-bottom:none}
 .form-row{grid-template-columns:1fr}
 .cta-banner{padding:3rem 1.5rem}
 .faq-section{padding:3rem 1.5rem}
+.faq-layout{grid-template-columns:1fr;gap:2rem}
+.faq-side-card{position:static}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
 .wa-cta{display:block;width:100%;box-sizing:border-box;text-align:center}
@@ -271,8 +287,6 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <nav>
   <a href="/es" class="logo">SourciaVera</a>
   <div class="nav-links">
-    <a href="#servicios">Servicios</a>
-    <a href="#proceso">Proceso</a>
     <a href="/es/categorias">Categorías</a>
     <a href="#faq">FAQ</a>
     <a href="/blog/es">Blog</a>
@@ -287,7 +301,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <a class="lang-btn" href="/">EN</a>
       <button class="lang-btn active">ES</button>
     </div>
-    <a href="#contacto" class="nav-cta">Consulta gratis</a>
+    <a href="#contacto" class="nav-cta">Cotización Gratis</a>
   </div>
 </nav>
 <main>
@@ -372,21 +386,17 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="who-section" id="quienes">
   <div class="section-tag">Con Quién Trabajamos</div>
-  <h2 class="section-title">Ya sea que compres directamente o representes clientes —<br>somos tu equipo en terreno en Guangzhou.</h2>
-  <div class="who-cards">
-    <div class="who-card">
-      <div class="who-icon">🏭</div>
-      <h3>Importadores Directos</h3>
-      <p>Encontraste un proveedor en Alibaba o por referencias. Antes de transferir dinero, quieres que alguien local verifique que la fábrica es real, capaz y confiable. Visitamos, auditamos e informamos — para que importes con confianza.</p>
-    </div>
-    <div class="who-card">
-      <div class="who-icon">🤝</div>
-      <h3>Agentes de Compras y Representantes</h3>
-      <p>Representas compradores en el extranjero y necesitas un socio confiable en China. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores — para que te enfoques en tus clientes.</p>
+  <h2 class="section-title">Hecho para los grandes compradores de Latinoamérica.</h2>
+  <div class="who-cards who-cards-single">
+    <div class="who-card who-card-wide">
+      <div class="who-icon">🌎</div>
+      <h3>Abastecimiento a Gran Escala en Latinoamérica</h3>
+      <p>Ya sea que compres directamente o representes a clientes en el extranjero, nos especializamos en compras de gran volumen para compradores en México, Chile y el resto de Latinoamérica — acero y materiales de construcción, autopartes, iluminación LED personalizada, componentes de fibra de carbono y casas contenedoras expandibles. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores en Guangzhou, para que tú no tengas que hacerlo.</p>
     </div>
   </div>
-  <div class="who-footer">
-    <p>Ambos caminos llevan al mismo lugar: un proveedor verificado, un pedido protegido y un socio en quien confiar.</p>
+  <div class="who-footer who-founder-quote">
+    <p class="who-founder-text">"En cada visita a fábrica, la filmamos y te enviamos el video — para que sigas cada paso en tiempo real, sin sorpresas. No es solo nuestro proceso. Es la razón por la que fundé esta empresa."</p>
+    <p class="who-founder-name">— Zhang Peng, Fundador</p>
     <a href="#contacto" class="who-cta">Contáctanos →</a>
   </div>
 </section>
@@ -455,6 +465,9 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="faq-inner">
     <div class="section-tag">Preguntas Frecuentes</div>
     <h2 class="section-title">Lo que más nos preguntan</h2>
+
+    <div class="faq-layout">
+    <div class="faq-list">
 
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
@@ -546,6 +559,23 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <div class="faq-a"><div class="faq-a-inner">Cada situación de sourcing es diferente. Envíenos un mensaje y le responderemos en menos de 24 horas — sin compromiso.<br><br>
         <a href="#contacto" class="faq-cta">Contáctenos →</a>
       </div></div>
+    </div>
+
+    </div>
+    <div class="faq-side">
+      <div class="faq-side-card">
+        <div class="faq-side-tag">Habla con Nosotros</div>
+        <h3>¿No encontraste tu respuesta?</h3>
+        <p>Escríbenos directo por WhatsApp o envía tu solicitud — respondemos en menos de 24 horas, en inglés o español.</p>
+        <a href="https://wa.me/8613688057230" class="faq-side-btn faq-side-btn-wa" target="_blank" rel="noopener">Chatear por WhatsApp</a>
+        <a href="#contacto" class="faq-side-btn">Enviar tu Solicitud</a>
+        <div class="faq-side-divider"></div>
+        <div class="faq-side-info">
+          <div>📍 Guangzhou, China</div>
+          <div>✉️ info@sourciavera.com</div>
+        </div>
+      </div>
+    </div>
     </div>
 
   </div>

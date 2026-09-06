@@ -171,6 +171,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:640px;margin:0 auto 1.5rem}
 .who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .who-cta:hover{opacity:0.85}
+.who-cards-single{max-width:760px;margin-left:auto;margin-right:auto}
+.who-cards-single{grid-template-columns:1fr}
+.who-card-wide{text-align:center}
+.who-card-wide .who-icon{margin:0 auto 1rem}
+.who-founder-text{font-size:1.05rem!important}
+.who-founder-name{color:var(--muted);font-size:0.82rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem;font-style:normal}
 .how{background:var(--light);padding:5rem 3rem}
 .how-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem}
 .how-step{padding:2rem 1.5rem;border-right:1px solid var(--border)}
@@ -205,8 +211,16 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
 .footer-links a:hover{color:var(--yellow)}
 .faq{padding:5rem 3rem;background:var(--white)}
-.faq-inner{max-width:760px;margin:0 auto}
-.faq-list{margin-top:3rem}
+.faq-inner{max-width:1100px;margin:0 auto}
+.faq-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;margin-top:3rem;align-items:start}
+.faq-side-card{background:var(--navy);padding:2rem 1.75rem;position:sticky;top:2rem}
+.faq-side-tag{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);font-weight:600;margin-bottom:0.9rem}
+.faq-side-card h3{color:white;font-size:1.15rem;font-weight:700;margin-bottom:0.7rem;line-height:1.35}
+.faq-side-card p{color:rgba(255,255,255,0.65);font-size:0.88rem;line-height:1.65;margin-bottom:1.5rem}
+.faq-side-btn{display:block;text-align:center;padding:0.8rem 1rem;font-size:0.82rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;background:var(--coral);color:white;margin-bottom:0.75rem}
+.faq-side-btn-wa{background:#25D366}
+.faq-side-divider{border-top:1px solid rgba(255,255,255,0.15);margin:1.5rem 0 1.25rem}
+.faq-side-info{color:rgba(255,255,255,0.55);font-size:0.82rem;display:flex;flex-direction:column;gap:0.5rem}
 .faq-item{border-bottom:1px solid var(--border)}
 .faq-item:first-child{border-top:1px solid var(--border)}
 .faq-item:last-child{border-bottom:none}
@@ -247,6 +261,8 @@ nav.nav-open .nav-links a:last-child{border-bottom:none}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
 .faq{padding:3rem 1.5rem}
+.faq-layout{grid-template-columns:1fr;gap:2rem}
+.faq-side-card{position:static}
 }
 /* 8-card services */
 .services-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
@@ -291,8 +307,6 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 <nav>
   <div class="logo">SourciaVera</div>
   <div class="nav-links">
-    <a href="#services" data-en="Services" data-es="Servicios">Services</a>
-    <a href="#process" data-en="Process" data-es="Proceso">Process</a>
     <a href="/categories" data-en="Categories" data-es="Categorías">Categories</a>
     <a href="#faq-shows" data-en="FAQ" data-es="FAQ">FAQ</a>
     <a href="blog/index.html" data-en="Blog" data-es="Blog">Blog</a>
@@ -307,7 +321,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <button class="lang-btn active" onclick="setLang('en')">EN</button>
       <button class="lang-btn" onclick="window.location='/es/'">ES</button>
     </div>
-    <a href="#contact" class="nav-cta" data-en="Free Consult" data-es="Consulta gratis">Free Consult</a>
+    <a href="#contact" class="nav-cta" data-en="Get a Free Quote" data-es="Cotización Gratis">Get a Free Quote</a>
   </div>
 </nav>
 <main>
@@ -392,21 +406,17 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
 <section class="who-section" id="who">
   <div class="section-tag" data-en="Who We Work With" data-es="Con Quién Trabajamos">Who We Work With</div>
-  <h2 class="section-title" data-en="Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou." data-es="Ya sea que compres directamente o representes clientes —<br>somos tu equipo en terreno en Guangzhou.">Whether you buy directly or represent clients —<br>we're your boots on the ground in Guangzhou.</h2>
-  <div class="who-cards">
-    <div class="who-card">
-      <div class="who-icon">🏭</div>
-      <h3 data-en="Direct Importers" data-es="Importadores Directos">Direct Importers</h3>
-      <p data-en="You found a supplier on Alibaba or through referrals. Before wiring money, you want someone local to verify the factory is real, capable, and trustworthy. We visit, audit, and report — so you source with confidence." data-es="Encontraste un proveedor en Alibaba o por referencias. Antes de transferir dinero, quieres que alguien local verifique que la fábrica es real, capaz y confiable. Visitamos, auditamos e informamos — para que importes con confianza.">You found a supplier on Alibaba or through referrals. Before wiring money, you want someone local to verify the factory is real, capable, and trustworthy. We visit, audit, and report — so you source with confidence.</p>
-    </div>
-    <div class="who-card">
-      <div class="who-icon">🤝</div>
-      <h3 data-en="Sourcing Agents & Trade Reps" data-es="Agentes de Compras y Representantes">Sourcing Agents & Trade Reps</h3>
-      <p data-en="You represent buyers overseas and need a reliable on-the-ground partner in China. We handle factory verification, quality inspection, and supplier coordination on your behalf — so you can focus on your clients." data-es="Representas compradores en el extranjero y necesitas un socio confiable en China. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores — para que te enfoques en tus clientes.">You represent buyers overseas and need a reliable on-the-ground partner in China. We handle factory verification, quality inspection, and supplier coordination on your behalf — so you can focus on your clients.</p>
+  <h2 class="section-title" data-en="Built for Latin America's bulk buyers." data-es="Hecho para los grandes compradores de Latinoamérica.">Built for Latin America's bulk buyers.</h2>
+  <div class="who-cards who-cards-single">
+    <div class="who-card who-card-wide">
+      <div class="who-icon">🌎</div>
+      <h3 data-en="Bulk Sourcing Across Latin America" data-es="Abastecimiento a Gran Escala en Latinoamérica">Bulk Sourcing Across Latin America</h3>
+      <p data-en="Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for buyers across Mexico, Chile, and the rest of Latin America — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to." data-es="Ya sea que compres directamente o representes a clientes en el extranjero, nos especializamos en compras de gran volumen para compradores en México, Chile y el resto de Latinoamérica — acero y materiales de construcción, autopartes, iluminación LED personalizada, componentes de fibra de carbono y casas contenedoras expandibles. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores en Guangzhou, para que tú no tengas que hacerlo.">Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for buyers across Mexico, Chile, and the rest of Latin America — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to.</p>
     </div>
   </div>
-  <div class="who-footer">
-    <p data-en="Both paths lead to the same place: a verified supplier, a protected order, and a partner you can trust." data-es="Ambos caminos llevan al mismo lugar: un proveedor verificado, un pedido protegido y un socio en quien confiar.">Both paths lead to the same place: a verified supplier, a protected order, and a partner you can trust.</p>
+  <div class="who-footer who-founder-quote">
+    <p class="who-founder-text" data-en="“Every factory visit, we film it and send you the video — so you can track every step in real time, with zero surprises. That's not just our process. It's the reason I started this company.”" data-es="“En cada visita a fábrica, la filmamos y te enviamos el video — para que sigas cada paso en tiempo real, sin sorpresas. No es solo nuestro proceso. Es la razón por la que fundé esta empresa.”">"Every factory visit, we film it and send you the video — so you can track every step in real time, with zero surprises. That's not just our process. It's the reason I started this company."</p>
+    <p class="who-founder-name" data-en="— Zhang Peng, Founder" data-es="— Zhang Peng, Fundador">— Zhang Peng, Founder</p>
     <a href="#contact" class="who-cta" data-en="Get in Touch →" data-es="Contáctanos →">Get in Touch →</a>
   </div>
 </section>
@@ -475,6 +485,9 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 
       <div class="section-tag" data-en="FAQ" data-es="FAQ">FAQ</div>
       <h2 class="section-title" data-en="Frequently Asked Questions" data-es="Preguntas Frecuentes">Frequently Asked Questions</h2>
+
+      <div class="faq-layout">
+      <div class="faq-list">
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -642,6 +655,23 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
             <a href="#contact" class="faq-cta">Contáctenos →</a>
           </div>
         </div>
+      </div>
+
+      </div>
+      <div class="faq-side">
+        <div class="faq-side-card">
+          <div class="faq-side-tag" data-en="Talk to a Human" data-es="Habla con Nosotros">Talk to a Human</div>
+          <h3 data-en="Didn't find your answer?" data-es="¿No encontraste tu respuesta?">Didn't find your answer?</h3>
+          <p data-en="Message us directly on WhatsApp or send your requirements — we reply within 24 hours, in English or Spanish." data-es="Escríbenos directo por WhatsApp o envía tu solicitud — respondemos en menos de 24 horas, en inglés o español.">Message us directly on WhatsApp or send your requirements — we reply within 24 hours, in English or Spanish.</p>
+          <a href="https://wa.me/8613688057230" class="faq-side-btn faq-side-btn-wa" target="_blank" rel="noopener" data-en="Chat on WhatsApp" data-es="Chatear por WhatsApp">Chat on WhatsApp</a>
+          <a href="#contact" class="faq-side-btn" data-en="Send Your Brief" data-es="Enviar tu Solicitud">Send Your Brief</a>
+          <div class="faq-side-divider"></div>
+          <div class="faq-side-info">
+            <div>📍 <span data-en="Guangzhou, China" data-es="Guangzhou, China">Guangzhou, China</span></div>
+            <div>✉️ info@sourciavera.com</div>
+          </div>
+        </div>
+      </div>
       </div>
 
   </div>
