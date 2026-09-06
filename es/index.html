@@ -112,6 +112,9 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .hero-left{display:flex;flex-direction:column;justify-content:flex-start}
 .hero-map{display:flex;align-items:flex-start}
 .hero-map img{width:100%;height:auto;display:block;border-radius:12px}
+.reveal-water{filter:blur(16px);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 1.1s cubic-bezier(.22,.68,.36,1),opacity 0.9s ease,transform 1.1s cubic-bezier(.22,.68,.36,1),clip-path 1.1s cubic-bezier(.22,.68,.36,1)}
+.reveal-water.is-visible{filter:blur(0);opacity:1;transform:scale(1);clip-path:circle(150% at 50% 50%)}
+@media(prefers-reduced-motion:reduce){.reveal-water{filter:none;opacity:1;transform:none;clip-path:none;transition:none}}
 .hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem;margin-top:2.5rem}
 .hero-card-tag{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--yellow);margin-bottom:1rem}
 .hero-card h3{font-size:1.2rem;font-weight:600;color:white;margin-bottom:0.75rem}
@@ -331,7 +334,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <button class="btn-outline" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios</button>
     </div>
   </div>
-  <div class="hero-map"><img src="/images/latam-china-shipping-route-map.webp" alt="Mapa de ruta de envío desde Guangzhou, China hasta puertos de Latinoamérica incluyendo Lázaro Cárdenas, Colón y Callao" loading="eager"></div>
+  <div class="hero-map reveal-water"><img src="/images/latam-china-shipping-route-map.webp" alt="Mapa de ruta de envío desde Guangzhou, China hasta puertos de Latinoamérica incluyendo Lázaro Cárdenas, Colón y Callao" loading="eager"></div>
 </section>
 
 <div class="stats">
@@ -425,7 +428,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <h3>Expertos del sector, no solo vendedores</h3>
       <p>Entendemos lo que realmente necesitas, no solo tus palabras. Nuestro equipo son especialistas del sector que conocen el producto a fondo — mucho más de lo que te puede explicar un vendedor de Alibaba.</p>
     </div>
-    <div class="why-card why-card-highlight">
+    <div class="why-card why-card-highlight reveal-water">
       <div class="why-icon">🤝</div>
       <h3>Solo cobramos si hay trato</h3>
       <p><strong>No recibimos comisión de las fábricas.</strong> Nuestros ingresos dependen exclusivamente de que tú cierres un buen trato.</p>
@@ -455,7 +458,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <p>Precios transparentes desde $349. Visita presencial con video sin editar — lo que ves es lo que existe.</p>
       <div class="trust-line">Ver para creer. Eliminamos la estafa de la "fábrica foto" — siempre.</div>
     </div>
-    <div class="how-step-v2 step-featured">
+    <div class="how-step-v2 step-featured reveal-water">
       <div class="step-vs-badge">vs. inspección única</div>
       <div class="how-num-v2">04</div>
       <h3>Seguimiento Continuo</h3>
@@ -723,6 +726,24 @@ form.addEventListener('submit', async e => {
     var el = document.getElementById('contacto');
     if(el) el.scrollIntoView({behavior:'smooth'});
   }
+})();
+
+(function() {
+  var els = document.querySelectorAll('.reveal-water');
+  if (!els.length) return;
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  els.forEach(function(el) { io.observe(el); });
 })();
 </script>
 <script type="module">

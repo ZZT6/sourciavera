@@ -128,6 +128,9 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .hero-left{display:flex;flex-direction:column;justify-content:flex-start}
 .hero-map{display:flex;align-items:flex-start}
 .hero-map img{width:100%;height:auto;display:block;border-radius:12px}
+.reveal-water{filter:blur(16px);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 1.1s cubic-bezier(.22,.68,.36,1),opacity 0.9s ease,transform 1.1s cubic-bezier(.22,.68,.36,1),clip-path 1.1s cubic-bezier(.22,.68,.36,1)}
+.reveal-water.is-visible{filter:blur(0);opacity:1;transform:scale(1);clip-path:circle(150% at 50% 50%)}
+@media(prefers-reduced-motion:reduce){.reveal-water{filter:none;opacity:1;transform:none;clip-path:none;transition:none}}
 .hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem;margin-top:2.5rem}
 .hero-card-tag{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--yellow);margin-bottom:1rem}
 .hero-card h2{font-size:1.2rem;font-weight:600;color:white;margin-bottom:0.75rem}
@@ -351,7 +354,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <button class="btn-outline" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" data-en="See Services" data-es="Ver servicios">See Services</button>
     </div>
   </div>
-  <div class="hero-map"><img src="/images/latam-china-shipping-route-map.webp" alt="Shipping route map from Guangzhou, China to Latin American ports including Lázaro Cárdenas, Colón, and Callao" loading="eager"></div>
+  <div class="hero-map reveal-water"><img src="/images/latam-china-shipping-route-map.webp" alt="Shipping route map from Guangzhou, China to Latin American ports including Lázaro Cárdenas, Colón, and Callao" loading="eager"></div>
 </section>
 
 <div class="stats">
@@ -445,7 +448,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <h3 data-en="Industry experts, not order-takers" data-es="Expertos del sector, no solo vendedores">Industry experts, not order-takers</h3>
       <p data-en="We catch what you really mean, not just what you type. Our team are industry specialists who know the product inside and out — far more than an Alibaba sales rep can tell you." data-es="Entendemos lo que realmente necesitas, no solo tus palabras. Nuestro equipo son especialistas del sector que conocen el producto a fondo — mucho más de lo que te puede explicar un vendedor de Alibaba.">We catch what you really mean, not just what you type. Our team are industry specialists who know the product inside and out — far more than an Alibaba sales rep can tell you.</p>
     </div>
-    <div class="why-card why-card-highlight">
+    <div class="why-card why-card-highlight reveal-water">
       <div class="why-icon">🤝</div>
       <h3 data-en="No deal = No charge" data-es="Solo cobramos si hay trato">No deal = No charge</h3>
       <p data-en="<strong>We receive zero commission from factories.</strong> Our income depends entirely on you closing a good deal." data-es="<strong>No recibimos comisión de las fábricas.</strong> Nuestros ingresos dependen exclusivamente de que tú cierres un buen trato."><strong>We receive zero commission from factories.</strong> Our income depends entirely on you closing a good deal.</p>
@@ -475,7 +478,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <p data-en="Transparent pricing from $349. On-site visit with unedited video — what you see is what exists." data-es="Precios transparentes desde $349. Visita presencial con video sin editar — lo que ves es lo que existe.">Transparent pricing from $349. On-site visit with unedited video — what you see is what exists.</p>
       <div class="trust-line" data-en="Seeing is believing. We eliminate the 'photo factory' scam — every time." data-es="Ver para creer. Eliminamos la estafa de la 'fábrica foto' — siempre.">Seeing is believing. We eliminate the 'photo factory' scam — every time.</div>
     </div>
-    <div class="how-step-v2 step-featured">
+    <div class="how-step-v2 step-featured reveal-water">
       <div class="step-vs-badge" data-en="vs. one-time inspection" data-es="vs. inspección única">vs. one-time inspection</div>
       <div class="how-num-v2">04</div>
       <h3 data-en="Ongoing Supervision" data-es="Seguimiento Continuo">Ongoing Supervision</h3>
@@ -873,6 +876,24 @@ form.addEventListener('submit', async function(e) {
     btn.disabled = false;
   }
 });
+
+(function() {
+  var els = document.querySelectorAll('.reveal-water');
+  if (!els.length) return;
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el) { el.classList.add('is-visible'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  els.forEach(function(el) { io.observe(el); });
+})();
 </script>
 <script type="module">
 import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
