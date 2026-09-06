@@ -96,7 +96,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .lang-btn.active{background:var(--yellow);color:var(--navy)}
 .lang-btn:hover:not(.active){color:white}
 .nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
-.hero{background:var(--navy);padding:5rem 3rem 4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.hero{background:var(--navy);padding:5rem 3rem 4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:stretch}
 .hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
 .hero h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;font-weight:700;color:white;margin-bottom:0.8rem}
 .hero h1 span{color:var(--yellow)}
@@ -105,10 +105,10 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
 .btn-main{background:var(--coral);color:white;padding:0.9rem 1.8rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer}
 .btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:white;padding:0.9rem 1.8rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;background:transparent}
-.hero-right{display:flex;flex-direction:column;gap:1.25rem}
-.hero-map{border-radius:12px;overflow:hidden;line-height:0}
-.hero-map img{width:100%;height:220px;object-fit:cover;display:block}
-.hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem}
+.hero-left{display:flex;flex-direction:column}
+.hero-map{display:flex;align-items:center}
+.hero-map img{width:100%;height:auto;display:block;border-radius:12px}
+.hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem;margin-top:2.5rem}
 .hero-card-tag{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--yellow);margin-bottom:1rem}
 .hero-card h3{font-size:1.2rem;font-weight:600;color:white;margin-bottom:0.75rem}
 .hero-card p{color:rgba(255,255,255,0.6);font-size:0.88rem;line-height:1.7}
@@ -321,16 +321,13 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Consulta Ahora</button>
       <button class="btn-outline" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios</button>
     </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-map"><img src="/images/latam-china-shipping-route-map.webp" alt="Mapa de ruta de envío desde Guangzhou, China hasta puertos de Latinoamérica incluyendo Lázaro Cárdenas, Colón y Callao" width="900" height="220" loading="eager"></div>
     <div class="hero-card">
       <div class="hero-card-tag">Nuestra promesa en tres capas</div>
       <h3>Certeza. Tranquilidad. Precios honestos.</h3>
-      <p>Sin más ruleta de proveedores — desde la auditoría en fábrica hasta tu puerta, manejamos cada etapa. Nuestro equipo bilingüe se encarga de la verificación, el seguimiento de producción, el control de calidad y el despacho en China, sin volar a China, sin adivinar, sin intermediarios. Productos verificados a precios honestos, exactamente lo que pediste, mientras esperas en casa.</p>
       <a href="https://wa.me/8613688057230" class="hero-card-badge" target="_blank" rel="noopener">Chatear por WhatsApp →</a>
     </div>
   </div>
+  <div class="hero-map"><img src="/images/latam-china-shipping-route-map.webp" alt="Mapa de ruta de envío desde Guangzhou, China hasta puertos de Latinoamérica incluyendo Lázaro Cárdenas, Colón y Callao" loading="eager"></div>
 </section>
 
 <div class="stats">
