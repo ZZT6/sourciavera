@@ -112,7 +112,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .hero-left{display:flex;flex-direction:column;justify-content:flex-start}
 .hero-map{display:flex;align-items:flex-start}
 .hero-map img{width:100%;height:auto;display:block;border-radius:12px}
-.reveal-water{filter:blur(16px);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 1.1s cubic-bezier(.22,.68,.36,1),opacity 0.9s ease,transform 1.1s cubic-bezier(.22,.68,.36,1),clip-path 1.1s cubic-bezier(.22,.68,.36,1)}
+.reveal-water{filter:blur(16px);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 3s cubic-bezier(.22,.68,.36,1),opacity 3s ease,transform 3s cubic-bezier(.22,.68,.36,1),clip-path 3s cubic-bezier(.22,.68,.36,1)}
 .reveal-water.is-visible{filter:blur(0);opacity:1;transform:scale(1);clip-path:circle(150% at 50% 50%)}
 @media(prefers-reduced-motion:reduce){.reveal-water{filter:none;opacity:1;transform:none;clip-path:none;transition:none}}
 .hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem;margin-top:2.5rem}
@@ -223,7 +223,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 }
 .faq-section{padding:5rem 3rem;background:var(--white)}
 .faq-inner{max-width:1100px;margin:0 auto}
-.faq-layout{display:grid;grid-template-columns:1fr 300px;gap:3rem;margin-top:3rem;align-items:start}
+.faq-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;align-items:start}
 .faq-side-card{background:var(--navy);padding:2rem 1.75rem;position:sticky;top:2rem}
 .faq-side-tag{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);font-weight:600;margin-bottom:0.9rem}
 .faq-side-card h3{color:white;font-size:1.15rem;font-weight:700;margin-bottom:0.7rem;line-height:1.35}
@@ -280,6 +280,7 @@ nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255
 nav.nav-open .nav-links a:last-child{border-bottom:none}
 .nav-cta{display:none}
 .hero{grid-template-columns:1fr;padding:3rem 1.5rem}
+.faq-section{display:none}
 .hero-card{display:none}
 .stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
 .services,.who-section,.why,.how,.contact{padding:3rem 1.5rem}
@@ -528,6 +529,9 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       <div class="faq-a"><div class="faq-a-inner">Exactamente por eso existimos. La insignia de "Proveedor Verificado" de Alibaba no garantiza la calidad del producto, los plazos de entrega, ni que esté tratando con el fabricante real. Vamos al terreno para que usted no tenga que confiar en una insignia. Hemos visto salas de exhibición que no se parecen en nada a la fábrica real — no volverá a llevarse sorpresas.</div></div>
     </div>
 
+    </div>
+    <div class="faq-list">
+
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">
         <span class="faq-q-text">¿Solo trabajan con proveedores de autopartes LED?</span>
@@ -574,20 +578,6 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
       </div></div>
     </div>
 
-    </div>
-    <div class="faq-side">
-      <div class="faq-side-card">
-        <div class="faq-side-tag">Habla con Nosotros</div>
-        <h3>¿No encontraste tu respuesta?</h3>
-        <p>Escríbenos directo por WhatsApp o envía tu solicitud — respondemos en menos de 24 horas, en inglés o español.</p>
-        <a href="https://wa.me/8613688057230" class="faq-side-btn faq-side-btn-wa" target="_blank" rel="noopener">Chatear por WhatsApp</a>
-        <a href="#contacto" class="faq-side-btn">Enviar tu Solicitud</a>
-        <div class="faq-side-divider"></div>
-        <div class="faq-side-info">
-          <div>📍 Guangzhou, China</div>
-          <div>✉️ info@sourciavera.com</div>
-        </div>
-      </div>
     </div>
     </div>
 
@@ -731,19 +721,33 @@ form.addEventListener('submit', async e => {
 (function() {
   var els = document.querySelectorAll('.reveal-water');
   if (!els.length) return;
-  if (!('IntersectionObserver' in window)) {
-    els.forEach(function(el) { el.classList.add('is-visible'); });
-    return;
+
+  function reveal(el) { el.classList.add('is-visible'); }
+  function isInView(el) {
+    var r = el.getBoundingClientRect();
+    return r.top < (window.innerHeight || document.documentElement.clientHeight) && r.bottom > 0;
   }
-  var io = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.2 });
-  els.forEach(function(el) { io.observe(el); });
+  function checkAll() {
+    els.forEach(function(el) { if (isInView(el)) reveal(el); });
+  }
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          reveal(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
+    els.forEach(function(el) { io.observe(el); });
+  }
+
+  window.addEventListener('scroll', checkAll, { passive: true });
+  window.addEventListener('resize', checkAll);
+  window.addEventListener('load', checkAll);
+  setTimeout(checkAll, 300);
+  setTimeout(function() { els.forEach(reveal); }, 4000);
 })();
 </script>
 <script type="module">
