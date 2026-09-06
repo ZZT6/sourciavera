@@ -42,6 +42,7 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [Qué Importa México de China — y Qué se Fabrica Realmente en Guangzhou](https://sourciavera.com/blog/es/productos-mas-importados-china-mexico-guangzhou): Datos reales de comercio bilateral, categorías fabricadas en Guangzhou, y Alibaba vs 1688
 - [Señales de Alerta en Proveedores de Alibaba](https://sourciavera.com/blog/es/senales-alerta-proveedor): 9 señales de fraude antes de pagar
 - [Estafa en Alibaba: Qué Hacer](https://sourciavera.com/blog/es/estafa-alibaba): Pasos tras un fraude de importación
 - [¿Es Alibaba Confiable?](https://sourciavera.com/blog/es/alibaba-confiable): Evaluación honesta de la plataforma
