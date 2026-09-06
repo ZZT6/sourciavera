@@ -723,12 +723,16 @@ form.addEventListener('submit', async e => {
   if (!els.length) return;
 
   function reveal(el) { el.classList.add('is-visible'); }
-  function isInView(el) {
+  function isHalfVisible(el) {
     var r = el.getBoundingClientRect();
-    return r.top < (window.innerHeight || document.documentElement.clientHeight) && r.bottom > 0;
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var visible = Math.min(r.bottom, vh) - Math.max(r.top, 0);
+    return visible >= r.height * 0.5;
   }
   function checkAll() {
-    els.forEach(function(el) { if (isInView(el)) reveal(el); });
+    els.forEach(function(el) {
+      if (!el.classList.contains('is-visible') && isHalfVisible(el)) reveal(el);
+    });
   }
 
   if ('IntersectionObserver' in window) {
@@ -739,15 +743,13 @@ form.addEventListener('submit', async e => {
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
+    }, { threshold: 0.5 });
     els.forEach(function(el) { io.observe(el); });
   }
 
   window.addEventListener('scroll', checkAll, { passive: true });
   window.addEventListener('resize', checkAll);
   window.addEventListener('load', checkAll);
-  setTimeout(checkAll, 300);
-  setTimeout(function() { els.forEach(reveal); }, 4000);
 })();
 </script>
 <script type="module">
