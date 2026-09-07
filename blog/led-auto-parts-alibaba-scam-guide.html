@@ -78,6 +78,10 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .back-link::before{content:'← '}
 
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
+.cmp-table{width:100%;border-collapse:collapse;font-size:0.9rem;margin:1rem 0 1.5rem}
+.cmp-table th{background:var(--navy);color:white;padding:0.6rem 0.9rem;text-align:left;font-size:0.78rem;letter-spacing:0.03em}
+.cmp-table td{padding:0.6rem 0.9rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top}
+.cmp-table tr:nth-child(even) td{background:var(--light)}
 .step-num{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.2rem 0.6rem;font-weight:600;margin-bottom:0.5rem}
 nav{position:relative}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
@@ -127,6 +131,14 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <a href="/blog" class="back-link">Back to Blog</a>
 
     <p>LED auto parts &mdash; headlights, fog lights, light bars &mdash; have specific fraud patterns that generic &ldquo;how to avoid Alibaba scams&rdquo; guides don&rsquo;t cover. If you&rsquo;re a dealer or shop sourcing from China, here&rsquo;s what actually goes wrong in this category, with the numbers we see repeat order after order &mdash; and what a full container of it costs you if it ships before anyone catches it.</p>
+
+    <table class="cmp-table">
+      <tr><th>Listing Claim</th><th>What's Actually Measured</th><th>Where It Bites</th></tr>
+      <tr><td>&ldquo;60W, 12,000LM&rdquo;</td><td>28&ndash;34W, 4,500&ndash;6,000LM under real load</td><td>Bulk run quietly re-binned to a lower output tier after the sample passed</td></tr>
+      <tr><td>Named chipset (Cree, Osram, Philips-licensed)</td><td>Unbranded die at $0.15&ndash;$0.25 vs. $0.80&ndash;$1.20 branded</td><td>Shorter lifespan surfaces 3&ndash;6 months after customer install, not in QC</td></tr>
+      <tr><td>DOT / ECE / CE certification badge</td><td>Certificate belongs to a different SKU, or has lapsed</td><td>Customs hold, forced relabeling, or recall after parts are already on the road</td></tr>
+      <tr><td>&ldquo;Manufacturer&rdquo; storefront</td><td>15&ndash;20 storefronts often trace to the same 3&ndash;4 real factories</td><td>No production authority to fix a defect once it ships</td></tr>
+    </table>
 
     <h2>The Wattage and Lumen Claim Problem</h2>
     <p>A listing advertised as &ldquo;60W, 12,000LM&rdquo; is the single most common spec we test and fail. Measured under real load with a calibrated lux meter, the same bulb typically outputs 28&ndash;34W and 4,500&ndash;6,000LM &mdash; the lumen figure assumes a lab integrating sphere and a brand-new unit with zero thermal drift, conditions no buyer's customer will ever drive in. This isn't a rounding error: a headlight rated 12,000LM that actually delivers 5,000LM is a genuinely dimmer, less safe part than the listing promised, and on a retail shelf or an e-commerce return queue, that gap shows up as chargebacks, not a warranty claim you can trace back cleanly.</p>
