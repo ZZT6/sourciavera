@@ -38,7 +38,7 @@
   "author": {"@type": "Person", "name": "Zhang Peng", "jobTitle": "Fundador"},
   "publisher": {"@type": "Organization", "name": "SourciaVera", "url": "https://sourciavera.com"},
   "datePublished": "2026-08-15",
-  "dateModified": "2026-08-15",
+  "dateModified": "2026-09-07",
   "mainEntityOfPage": "https://sourciavera.com/blog/es/senales-alerta-proveedor",
   "keywords": "señales alerta proveedor alibaba, como detectar estafa alibaba, verificar proveedor chino, due diligence importacion china",
   "inLanguage": "es"
@@ -75,6 +75,11 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .back-link::before{content:'← '}
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
 .flag-num{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;font-weight:700;padding:0.15rem 0.5rem;margin-right:0.5rem;vertical-align:middle}
+.cmp-table{width:100%;border-collapse:collapse;font-size:0.9rem;margin:1rem 0 1.5rem}
+.cmp-table th{background:var(--navy);color:white;padding:0.6rem 0.9rem;text-align:left;font-size:0.78rem;letter-spacing:0.03em}
+.cmp-table td{padding:0.6rem 0.9rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top}
+.cmp-table td:first-child{font-weight:700;color:var(--coral);width:4%}
+.cmp-table tr:nth-child(even) td{background:var(--light)}
 nav{position:relative}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
 .nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
@@ -102,6 +107,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <a href="/#contact">Contacto</a>
   </div>
   <div class="nav-right">
+    <a href="/blog/alibaba-supplier-red-flags" style="font-size:0.78rem;color:rgba(255,255,255,0.5);font-weight:600;padding:0.35rem 0.75rem;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">EN</a>
   </div>
 <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -119,6 +125,20 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <a href="/blog" class="back-link">Volver al Blog</a>
 
   <p>No toda mala experiencia en Alibaba es una estafa directa. A veces la fábrica es real pero simplemente inadecuada para su pedido — escala incorrecta, equipo incorrecto, nivel de calidad incorrecto. Estas 9 señales siguen el orden en que realmente las encontrará: primero al revisar un perfil, luego en la conversación inicial, y después al llegar a fotos, documentación y condiciones de pago. Tanto el fraude como las fábricas inadecuadas aparecen en cada etapa.</p>
+
+  <table class="cmp-table">
+    <tr><th>#</th><th>Señal de Alerta</th><th>Qué la Delata</th></tr>
+    <tr><td>1</td><td>Perfil creado recientemente</td><td>Sin pedidos verificados, sin historial de transacciones ni reseñas acumuladas</td></tr>
+    <tr><td>2</td><td>Afirma fabricar de todo</td><td>El catálogo abarca 12+ categorías no relacionadas — las fábricas reales se especializan</td></tr>
+    <tr><td>3</td><td>Sin registro comercial verificable</td><td>No comparte el 营业执照, o el nombre no coincide con su perfil de Alibaba</td></tr>
+    <tr><td>4</td><td>No responde preguntas técnicas básicas</td><td>"Voy a consultar con la fábrica" sobre su propio producto</td></tr>
+    <tr><td>5</td><td>Respuesta lenta en horario comercial de China</td><td>Sin respuesta en 4 horas, 9am&ndash;6pm UTC+8, lunes a viernes</td></tr>
+    <tr><td>6</td><td>Fotos de fábrica de archivo o duplicadas</td><td>Una búsqueda de imagen inversa encuentra las mismas fotos en otros perfiles</td></tr>
+    <tr><td>7</td><td>MOQ muy por debajo del estándar</td><td>Ofrece 10 unidades cuando el estándar de la categoría es 500</td></tr>
+    <tr><td>8</td><td>Sin contrato escrito, solo chat</td><td>Se resiste a una confirmación de pedido formal en la plataforma</td></tr>
+    <tr><td>9</td><td>Urgencia artificial vinculada al pago</td><td>"Los precios suben la próxima semana," presión de plazo atada a una transferencia</td></tr>
+  </table>
+  <p>Ninguna de estas nueve, por sí sola, prueba fraude. Dos de ellas juntas en el mismo proveedor es donde la diligencia debida deja de ser opcional. Esto es por qué cada una se gana su lugar en la lista.</p>
 
   <h2>Señal #1 — El Perfil Fue Creado Recientemente</h2>
   <p>Perfil nuevo, precios agresivos, sin historial de pedidos. Los fabricantes reales construyen perfiles en Alibaba durante años — tienen historial de transacciones, registros de tiempo de respuesta y reseñas de compradores acumuladas. Un perfil creado en los últimos 6 meses sin pedidos verificados debe tratarse como completamente no probado, sin importar lo que diga su descripción.</p>

@@ -64,6 +64,11 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .back-link{display:inline-block;color:var(--coral);font-size:0.85rem;text-decoration:none;margin-bottom:2rem;letter-spacing:0.05em}
 .back-link::before{content:'← '}
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
+.cmp-table{width:100%;border-collapse:collapse;font-size:0.9rem;margin:1rem 0 1.5rem}
+.cmp-table th{background:var(--navy);color:white;padding:0.6rem 0.9rem;text-align:left;font-size:0.78rem;letter-spacing:0.03em}
+.cmp-table td{padding:0.6rem 0.9rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top}
+.cmp-table td:first-child{font-weight:600;color:var(--navy);width:22%}
+.cmp-table tr:nth-child(even) td{background:var(--light)}
 nav{position:relative}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
 .nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
@@ -99,6 +104,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <a href="/#contact">Contacto</a>
   </div>
   <div class="nav-right">
+    <a href="/blog/real-factory-vs-trading-company-china" style="font-size:0.78rem;color:rgba(255,255,255,0.5);font-weight:600;padding:0.35rem 0.75rem;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">EN</a>
   </div>
 <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -120,6 +126,16 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <h2>Por Qu&eacute; Importa</h2>
     <p>Las f&aacute;bricas controlan la producci&oacute;n, pueden personalizar productos, ofrecen MOQs m&aacute;s bajos en sus propias l&iacute;neas, y pueden resolver problemas de calidad directamente. Las comercializadoras suman un sobreprecio, tienen menos control de calidad, y a menudo no pueden darle opciones OEM reales. Saber con cu&aacute;l est&aacute; tratando cambia por completo su estrategia de negociaci&oacute;n.</p>
     <p>Cuando algo sale mal con un pedido &mdash; un defecto, un retraso, una discrepancia de especificaci&oacute;n &mdash; una f&aacute;brica puede actuar de inmediato. Una comercializadora tiene que transmitir el problema a la f&aacute;brica a trav&eacute;s de su propia relaci&oacute;n, agregando tiempo, riesgo de mala comunicaci&oacute;n, y a menudo un sentido de urgencia disminuido ya que el dolor financiero est&aacute; de su lado, no del de ellos.</p>
+
+    <table class="cmp-table">
+      <tr><th>Pista</th><th>Fábrica Real</th><th>Comercializadora</th></tr>
+      <tr><td>Nombre de la empresa</td><td>Contiene 制造 (manufactura), 实业 (industria), o 科技 (tecnología)</td><td>Contiene 贸易 (comercio) o 商贸 (comercio mercantil)</td></tr>
+      <tr><td>Catálogo de productos</td><td>Estrecho y profundo — una categoría para la que construyeron moldes y máquinas</td><td>Amplio y superficial — categorías no relacionadas en el mismo perfil</td></tr>
+      <tr><td>Recorrido de fábrica en vivo</td><td>Dice que sí, agenda una hora específica, muestra materia prima y área de calidad</td><td>"Nuestro socio de fábrica no permite visitas," o envía un video genérico</td></tr>
+      <tr><td>Desglose de costos</td><td>Da números reales de material, mano de obra y margen</td><td>Números redondos y vagos — solo conocen el precio mayorista que pagan</td></tr>
+      <tr><td>Dirección registrada</td><td>Corresponde a un complejo industrial con muelles de carga, visible en vista satelital</td><td>Un edificio de oficinas compartido en un centro comercial</td></tr>
+      <tr><td>Solicitudes de personalización</td><td>Responde en horas porque son dueños de las máquinas</td><td>Se queda callado por días mientras transmite la solicitud a su propio proveedor</td></tr>
+    </table>
 
     <h2>Pista 1 &mdash; El Nombre de la Empresa</h2>
     <p>Los nombres de empresas chinas revelan mucho. Un nombre que contiene <strong>贸易 (m&agrave;oy&igrave; = comercio)</strong> o <strong>商贸 (sh&#257;ngm&agrave;o = comercio mercantil)</strong> es casi seguro una comercializadora. Un nombre con <strong>制造 (zh&igrave;z&agrave;o = manufactura)</strong>, <strong>实业 (sh&iacute;y&egrave; = industria)</strong>, o <strong>科技 (k&#275;j&igrave; = tecnolog&iacute;a)</strong> m&aacute;s una categor&iacute;a de producto de f&aacute;brica es m&aacute;s probablemente un fabricante.</p>
