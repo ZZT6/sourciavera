@@ -38,7 +38,7 @@
   "author": {"@type": "Person", "name": "Zhang Peng", "jobTitle": "Founder"},
   "publisher": {"@type": "Organization", "name": "SourciaVera", "url": "https://sourciavera.com"},
   "datePublished": "2026-08-21",
-  "dateModified": "2026-08-21",
+  "dateModified": "2026-09-07",
   "mainEntityOfPage": "https://sourciavera.com/blog/case-study-h2o2-trading-company",
   "keywords": "alibaba trading company vs manufacturer, alibaba supplier verification, verify alibaba supplier, china factory audit, hydrogen peroxide supplier china"
 }
@@ -79,6 +79,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
 .step-num{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.2rem 0.6rem;font-weight:600;margin-bottom:0.5rem}
+.cmp-table{width:100%;border-collapse:collapse;font-size:0.92rem;margin:1rem 0 1.5rem}
+.cmp-table th{background:var(--navy);color:white;padding:0.6rem 0.9rem;text-align:left;font-size:0.8rem;letter-spacing:0.03em}
+.cmp-table td{padding:0.6rem 0.9rem;border-bottom:1px solid var(--border);color:#333}
+.cmp-table tr:nth-child(even) td{background:var(--light)}
+.warn-box{background:#FFF4E8;border-left:4px solid var(--coral);padding:1.2rem 1.5rem;margin:1.5rem 0}
+.warn-box p{margin-bottom:0!important}
 nav{position:relative}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
 .nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
@@ -119,7 +125,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <div class="article-hero">
       <span class="article-tag">Real Case</span>
       <h1>Real Case: Four &ldquo;Manufacturers&rdquo; on Alibaba Turned Out to Be One Trading Company</h1>
-      <div class="article-meta">Aug 21, 2026 &middot; 5 min read &middot; Zhang Peng, Founder</div>
+      <div class="article-meta">Aug 21, 2026 &middot; 7 min read &middot; Zhang Peng, Founder</div>
     </div>
   </div>
 
@@ -140,6 +146,18 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <h2>Tracing It Back to One Actual Producer</h2>
     <p>All four storefronts were reselling from the same handful of real manufacturers in the Shaoguan area. The actual producers don't sell direct to small overseas buyers, so a layer of resellers had built four separate-looking Alibaba profiles around the same supply.</p>
 
+    <h2>How We Told the Real Producer From the Resellers</h2>
+    <table class="cmp-table">
+      <tr><th>What We Checked</th><th>Real Producer</th><th>Reseller Storefront</th></tr>
+      <tr><td>Registered business scope</td><td>Scope explicitly covers chemical manufacturing</td><td>Registered as trading or import-export only</td></tr>
+      <tr><td>Live production video</td><td>Shows the actual plant and the batch in progress, on request</td><td>Sends a dated promotional video &mdash; one turned out to belong to a different company entirely</td></tr>
+      <tr><td>Batch traceability</td><td>Can name the specific batch/lot number and its QC certificate before shipment</td><td>Vague on which batch ships, since they don't control production</td></tr>
+      <tr><td>Pricing across "competitors"</td><td>N/A &mdash; there's only one source</td><td>Four different storefronts, four different prices, one identical underlying supply</td></tr>
+    </table>
+
+    <h2>What a Wrong Batch of H2O2 Actually Risks</h2>
+    <p>50% hydrogen peroxide isn't a low-stakes commodity to get wrong. It's classified internationally as a UN 2014 Class 5.1 oxidizer, which means correct concentration, stabilizer additive, and packaging aren't just quality specifications &mdash; they're what keeps the shipment from being rejected at customs or becoming a safety incident once it's sitting in the buyer's own warehouse. With four storefronts reselling the same unverified batch, a stabilizer or concentration mismatch traces back to nobody: each of the four resale relationships could plausibly point at the others, and none of them controls the plant that actually made the mistake.</p>
+
     <h2>What This Almost Cost the Client</h2>
     <p>Based on the badge and product photos alone, the client was preparing a 30% deposit to one of the four &mdash; with no way of knowing, from the platform alone, that it wasn't a factory at all.</p>
 
@@ -148,6 +166,15 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
     <h2>The Lesson</h2>
     <p>A &ldquo;Verified Supplier&rdquo; badge confirms a business exists and passed a basic check. It does not confirm the business manufactures the product itself. Two checks reliably separate a factory from a trading company: cross-referencing the registered business scope, and requesting live, unedited production video on request.</p>
+
+    <h2>Before You Wire a Deposit on a Bulk Chemical Order</h2>
+    <ol>
+      <li><strong>Cross-check the registered business scope</strong> against China's National Enterprise Credit Information Publicity System &mdash; it must cover manufacturing, not just trading, for the exact product category.</li>
+      <li><strong>Request a live, dated video of the actual batch</strong> you'd be buying, not a general promotional video that could belong to any company.</li>
+      <li><strong>Ask for the batch/lot number and its QC certificate before shipment</strong>, not after it's already on the water.</li>
+      <li><strong>If multiple "different" suppliers quote near-identical prices and specs</strong>, ask directly whether they share a source &mdash; a resale layer usually can't hide this once asked outright.</li>
+      <li><strong>For hazardous or regulated chemicals specifically</strong>, confirm the producer handles UN-classified packaging and labeling themselves, not through yet another intermediary.</li>
+    </ol>
 
     <div class="cta-box">
       <h3>Don&rsquo;t Know If Your Alibaba Supplier Actually Makes What They Sell?</h3>

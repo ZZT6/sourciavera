@@ -38,7 +38,7 @@
   "author": {"@type": "Person", "name": "Zhang Peng", "jobTitle": "Fundador"},
   "publisher": {"@type": "Organization", "name": "SourciaVera", "url": "https://sourciavera.com"},
   "datePublished": "2026-08-21",
-  "dateModified": "2026-08-21",
+  "dateModified": "2026-09-07",
   "mainEntityOfPage": "https://sourciavera.com/blog/es/caso-comerciante-disfrazado",
   "keywords": "comercializadora alibaba, verificar proveedor alibaba, fabrica vs comercializadora china, verificacion terceros alibaba",
   "inLanguage": "es"
@@ -61,7 +61,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-body{max-width:860px;margin:0 auto;padding:3rem}
 .article-body h2{font-size:1.4rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;padding-left:1rem;border-left:4px solid var(--coral)}
 .article-body p{color:#333;margin-bottom:1.2rem;font-size:0.97rem;line-height:1.85}
-.article-body ul{margin:0.8rem 0 1.2rem 1.5rem;color:#333;font-size:0.97rem;line-height:1.85}
+.article-body ul,.article-body ol{margin:0.8rem 0 1.2rem 1.5rem;color:#333;font-size:0.97rem;line-height:1.85}
 .article-body li{margin-bottom:0.5rem}
 .article-body strong{color:var(--navy);font-weight:600}
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
@@ -73,6 +73,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .back-link{display:inline-block;color:var(--coral);font-size:0.85rem;text-decoration:none;margin-bottom:2rem;letter-spacing:0.05em}
 .back-link::before{content:'← '}
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}.cta-btn-wa{background:#25D366;color:white}.cta-btn-wa:hover{opacity:0.85}
+.cmp-table{width:100%;border-collapse:collapse;font-size:0.92rem;margin:1rem 0 1.5rem}
+.cmp-table th{background:var(--navy);color:white;padding:0.6rem 0.9rem;text-align:left;font-size:0.8rem;letter-spacing:0.03em}
+.cmp-table td{padding:0.6rem 0.9rem;border-bottom:1px solid var(--border);color:#333}
+.cmp-table tr:nth-child(even) td{background:var(--light)}
+.warn-box{background:#FFF4E8;border-left:4px solid var(--coral);padding:1.2rem 1.5rem;margin:1.5rem 0}
+.warn-box p{margin-bottom:0!important}
 nav{position:relative}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
 .nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
@@ -100,6 +106,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <a href="/#contact">Contacto</a>
   </div>
   <div class="nav-right">
+    <a href="/blog/case-study-h2o2-trading-company" style="font-size:0.78rem;color:rgba(255,255,255,0.5);font-weight:600;padding:0.35rem 0.75rem;border:1px solid rgba(255,255,255,0.15);border-radius:4px;">EN</a>
   </div>
 <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -109,7 +116,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <div class="article-hero">
     <span class="article-tag">Caso Real</span>
     <h1>Caso Real: Cuatro &ldquo;Fabricantes&rdquo; en Alibaba Eran en Realidad una Sola Comercializadora</h1>
-    <div class="article-meta">21 de agosto de 2026 &middot; 5 min de lectura &middot; Zhang Peng, Fundador</div>
+    <div class="article-meta">21 de agosto de 2026 &middot; 7 min de lectura &middot; Zhang Peng, Fundador</div>
   </div>
 </div>
 
@@ -130,6 +137,18 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <h2>Rastreando Todo Hasta un Solo Productor Real</h2>
   <p>Las cuatro tiendas revendían de los mismos pocos fabricantes reales en la zona de Shaoguan. Los productores reales no venden directamente a compradores extranjeros pequeños, por lo que una capa de revendedores había construido cuatro perfiles de Alibaba de apariencia independiente alrededor del mismo suministro.</p>
 
+  <h2>Cómo Distinguimos al Productor Real de los Revendedores</h2>
+  <table class="cmp-table">
+    <tr><th>Qué Revisamos</th><th>Productor Real</th><th>Tienda Revendedora</th></tr>
+    <tr><td>Alcance de la licencia comercial</td><td>El alcance cubre explícitamente la fabricación química</td><td>Registrada solo como comercio o importación-exportación</td></tr>
+    <tr><td>Video de producción en vivo</td><td>Muestra la planta real y el lote en proceso, bajo pedido</td><td>Envía un video promocional fechado &mdash; uno resultó pertenecer a otra empresa por completo</td></tr>
+    <tr><td>Trazabilidad del lote</td><td>Puede indicar el número de lote específico y su certificado de calidad antes del embarque</td><td>Es vaga sobre qué lote se envía, porque no controla la producción</td></tr>
+    <tr><td>Precios entre "competidores"</td><td>N/A &mdash; solo hay una fuente</td><td>Cuatro tiendas, cuatro precios distintos, un mismo suministro subyacente idéntico</td></tr>
+  </table>
+
+  <h2>Lo Que Realmente Arriesga un Lote Equivocado de H2O2</h2>
+  <p>El peróxido de hidrógeno al 50% no es una materia prima de bajo riesgo para equivocarse. Está clasificado internacionalmente como oxidante Clase 5.1 (UN 2014), lo que significa que la concentración correcta, el aditivo estabilizante y el embalaje no son solo especificaciones de calidad &mdash; son lo que evita que el embarque sea rechazado en aduana o se convierta en un incidente de seguridad una vez que está en el almacén del comprador. Con cuatro tiendas revendiendo el mismo lote sin verificar, un error de estabilizante o concentración no se puede rastrear a nadie: cada una de las cuatro relaciones de reventa podría señalar plausiblemente a las otras, y ninguna controla la planta que realmente cometió el error.</p>
+
   <h2>Lo que Esto Casi le Costó al Cliente</h2>
   <p>Basándose únicamente en la insignia y las fotos del producto, el cliente estaba preparando un depósito del 30% a uno de los cuatro &mdash; sin ninguna forma de saber, desde la plataforma, que no era una fábrica en absoluto.</p>
 
@@ -138,6 +157,15 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <h2>La Lección</h2>
   <p>Una insignia de &ldquo;Proveedor Verificado&rdquo; confirma que una empresa existe y pasó una verificación básica. No confirma que la empresa fabrique el producto en sí. Dos verificaciones separan de manera confiable una fábrica de una comercializadora: cruzar el alcance del negocio registrado y solicitar video de producción en vivo, sin editar.</p>
+
+  <h2>Antes de Enviar un Depósito en un Pedido de Químicos a Granel</h2>
+  <ol>
+    <li><strong>Cruce el alcance de la licencia comercial registrada</strong> contra el Sistema Nacional de Publicidad de Información de Crédito Empresarial de China &mdash; debe cubrir fabricación, no solo comercio, para la categoría exacta del producto.</li>
+    <li><strong>Solicite un video en vivo y fechado del lote real</strong> que estaría comprando, no un video promocional genérico que podría pertenecer a cualquier empresa.</li>
+    <li><strong>Pida el número de lote y su certificado de calidad antes del embarque</strong>, no después de que ya esté en altamar.</li>
+    <li><strong>Si varios proveedores "distintos" cotizan precios y especificaciones casi idénticas</strong>, pregunte directamente si comparten la misma fuente &mdash; una capa de reventa normalmente no puede ocultar esto cuando se le pregunta abiertamente.</li>
+    <li><strong>Para químicos peligrosos o regulados específicamente</strong>, confirme que el productor maneja el embalaje y etiquetado clasificado por la ONU él mismo, no a través de otro intermediario más.</li>
+  </ol>
 
   <div class="cta-box">
     <h3>¿No Sabe Si Su Proveedor de Alibaba Realmente Fabrica lo que Vende?</h3>
