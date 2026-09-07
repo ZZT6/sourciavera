@@ -77,7 +77,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .breadcrumb .sep{margin:0 0.5rem;color:rgba(255,255,255,0.2)}
 .breadcrumb .current{color:rgba(255,255,255,0.7)}
 .hero{background:var(--navy);padding:4.5rem 3rem 4rem}
-.hero-inner{max-width:780px;margin:0 auto}
+.hero-inner{max-width:1040px;margin:0 auto}
 .hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
 .hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;font-weight:700;color:white;margin-bottom:1rem}
 .hero h1 span{color:var(--yellow)}
@@ -87,7 +87,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
 .scope{padding:5rem 3rem;background:var(--light)}
-.scope-inner{max-width:900px;margin:0 auto}
+.scope-inner{max-width:1140px;margin:0 auto}
 .scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:700px;margin-bottom:2.5rem}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
@@ -113,7 +113,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
 .footer-links{display:flex;gap:1.5rem}
 .footer-links a{color:rgba(255,255,255,0.4)}.footer-links a:hover{color:var(--yellow)}
-.product-detail-block{background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem;max-width:960px;margin:2rem auto 0}
+.product-detail-block{background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem;max-width:1100px;margin:2rem auto 0}
 .product-img{width:100%;height:auto;display:block;margin-bottom:1.5rem}
 .detail-block-title{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.4rem}
 .detail-block-h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem}
@@ -131,7 +131,26 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .spec-table td:first-child{color:var(--muted);width:45%;font-weight:500}
 .spec-table td:last-child{color:var(--navy);font-weight:600}
 .spec-table tr:nth-child(even) td{background:var(--light)}
-@media(max-width:768px){
+.guide-section{padding:5rem 3rem;background:var(--light)}
+.guide-inner{max-width:1140px;margin:0 auto}
+.pull-quote{background:var(--white);border-left:4px solid var(--coral);padding:1.5rem 2rem;margin:0 0 2.5rem;font-size:1.05rem;color:var(--navy);font-style:italic;line-height:1.7}
+.pull-quote span{display:block;margin-top:0.5rem;font-size:0.8rem;color:var(--muted);font-style:normal}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.guide-item h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem}
+.guide-item p{font-size:0.88rem;color:var(--muted);line-height:1.75;margin:0}
+.reg-note{font-size:0.82rem;color:var(--muted);line-height:1.75;padding:0.8rem 1rem;background:var(--white);border-left:3px solid var(--coral);margin-bottom:2.5rem}
+.reg-note a{color:var(--coral)}
+.faq-mini{border-top:1.5px solid var(--border)}
+.faq-mini-item{padding:1.1rem 0;border-bottom:1.5px solid var(--border)}
+.faq-mini-item h3{font-size:0.92rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.faq-mini-item p{font-size:0.85rem;color:var(--muted);line-height:1.7;margin:0}
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1rem}
+.hub-card{display:block;background:var(--white);border:1.5px solid var(--border);padding:1.4rem;text-decoration:none}
+.hub-card:hover{border-color:var(--coral)}
+.hub-card-tag{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.hub-card-title{font-size:0.92rem;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:0.5rem}
+.hub-card p{font-size:0.82rem;color:var(--muted);line-height:1.6;margin:0}
+@media(max-width:768px){.guide-grid,.hub-grid{grid-template-columns:1fr}.guide-section{padding:3rem 1.5rem}
 nav{padding:1rem 1.5rem}.nav-links{display:none}
 .breadcrumb{padding:0.6rem 1.5rem}
 .hero{padding:3rem 1.5rem}
@@ -195,7 +214,7 @@ nav{position:relative}
     <p class="scope-intro">Our on-site factory audits and supplier verifications inform the standards below — built from real inspections, not spec sheets.</p>
     <div class="product-item" style="max-width:960px;margin:0 auto 1.25rem">
       <div class="product-dot"></div>
-      <div><strong>Expandable Container Homes</strong><span>20ft / 40ft flat-pack and foldable units, interior fit-out options, structural certifications</span></div>
+      <div><strong>Expandable Container House <span style="font-weight:400">(折叠式集装箱房 / Folding Twin-Wing House)</span></strong><span>20ft / 40ft flat-pack and foldable units, interior fit-out options, structural certifications</span></div>
     </div>
 
     <div class="product-detail-block">
@@ -294,6 +313,90 @@ nav{position:relative}
           <p class="table-source" style="margin-top:0.75rem">Data based on manufacturer specifications, June 2026.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="guide-section">
+  <div class="guide-inner">
+    <div class="section-tag">How These Are Actually Built</div>
+    <div class="section-title">Expandable container houses:<br>manufacturing, climate, and what we check</div>
+    <p class="scope-intro" style="max-width:100%">Most of the factories making expandable container houses for export sit in Hebei, Shandong, and here in Guangdong — close enough to our Guangzhou base that a factory visit is a same-day trip, not a multi-day one. That proximity is what lets us verify a unit in person before a client wires a deposit, rather than relying on the same renderings every supplier on Alibaba reuses.</p>
+
+    <div class="guide-grid">
+      <div class="guide-item">
+        <h3>How the Folding Mechanism Works</h3>
+        <p>The unit ships flat-packed at roughly a third of its expanded footprint, then two side walls hinge outward and lock into place on site — typically a 2&ndash;4 hour job for a two-person crew with no crane required. The entire value proposition depends on that hinge system holding up under repeated use and years of thermal expansion, which is exactly why we test it before, not after, a client commits to a bulk order.</p>
+      </div>
+      <div class="guide-item">
+        <h3>What We Actually Check On Site</h3>
+        <p>Three failure points show up more than any others in the units we've inspected: hinge welds that crack under repeated folding, roof-to-wall joints that pass a visual check but leak under real rain, and floor drainage that was never tested with actual water. None of these show up in a factory's product photos — they only show up when someone runs the panel through its motions and pours water on the seams.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Steel Gauge — What Buyers Get Quoted vs. What Ships</h3>
+        <p>The spec sheet above lists 2.0mm steel plate for the flip wall frame — that's the number we verify against a caliper on the actual production line, not the quotation. Gauge substitution (shipping 1.6mm or 1.8mm stamped as 2.0mm) is the single most common cost-cutting move we catch, and it directly affects how the structure holds up to wind load and years of coastal humidity.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Insulation: PU vs. EPS, and Why It's Swapped</h3>
+        <p>PU (polyurethane) sandwich panels insulate roughly twice as well per millimeter as EPS (expanded polystyrene) and cost more to produce. Because both look identical once painted, a factory under margin pressure can quote PU and ship EPS — a swap that's invisible until the client's first hot season, when the interior runs several degrees warmer than the spec promised. We confirm panel type by checking the core at the factory, not by trusting the label.</p>
+      </div>
+    </div>
+
+    <div class="reg-note">
+      <strong>Climate and code notes for Latin American buyers:</strong> The unit's published wind resistance (1.0&nbsp;kN/m&sup2;) and seismic fortification rating (Intensity&nbsp;9) in the spec table above are the two numbers we cross-check most often against destination requirements. For buyers shipping into Mexico City, structural design is governed by the <strong>Reglamento de Construcciones para la Ciudad de M&eacute;xico</strong> and its Normas T&eacute;cnicas Complementarias for seismic and wind design, published by the city's Institute of Construction Sciences — worth confirming with a local structural engineer against the factory's stated ratings before installation, since a factory's internal test standard and a destination city's code aren't automatically the same document. Source: <a href="https://www.isc.cdmx.gob.mx/directores-res/cursos-de-actualizacion-2022/normas-tecnicas-complementarias-2023" target="_blank" rel="noopener">ISC CDMX &mdash; Normas T&eacute;cnicas Complementarias</a>. For coastal and high-rainfall regions across Central America and the Caribbean coast, the detail that matters most in practice isn't the seismic rating — it's whether the factory used a marine-grade coating on the steel frame and a real drainage slope on the roof, since salt air and sustained rain are what actually degrade a budget unit first.</div>
+
+    <div class="faq-mini">
+      <div class="faq-mini-item">
+        <h3>How long does an expandable container house last in a hot, humid climate?</h3>
+        <p>Manufacturers rate these units for roughly 25 years of service life, but that figure assumes the steel frame was properly galvanized and spray-coated as specified. In practice, coastal and high-humidity installations without a marine-grade coating upgrade show frame corrosion well before that mark — which is why we check coating spec, not just the headline service-life number.</p>
+      </div>
+      <div class="faq-mini-item">
+        <h3>Can one unit really fit two per 40ft container?</h3>
+        <p>Yes — folded dimensions of roughly 2,300 &times; 5,900 &times; 2,480mm allow two units to load into a single 1&times;40HQ container, which is the main freight-cost advantage over a rigid modular box. We verify actual loaded dimensions during the pre-shipment inspection, since a unit that folds a few centimeters larger than spec can turn "two per container" into "one plus wasted space."</p>
+      </div>
+      <div class="faq-mini-item">
+        <h3>Does the factory handle installation, or just the shipment?</h3>
+        <p>Most export-focused factories ship the unit and a printed assembly guide, but do not send installation crews abroad. Confirm this before ordering — buyers who assume "turnkey" without checking often discover the installation know-how stayed in China.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guide-section" style="background:var(--white)">
+  <div class="guide-inner">
+    <div class="section-tag">Learn More</div>
+    <div class="section-title">Buying an expandable container house from China</div>
+    <div class="hub-grid">
+      <a href="/blog/how-to-verify-container-house-factory-china" class="hub-card">
+        <div class="hub-card-tag">Factory Verification</div>
+        <div class="hub-card-title">How to Verify an Expandable Container House Factory in China</div>
+        <p>The 7 checks we run before telling a client a supplier is a real manufacturer, not a reseller of someone else's photos.</p>
+      </a>
+      <a href="/blog/expandable-container-house-china-import-guide" class="hub-card">
+        <div class="hub-card-tag">Import Guide</div>
+        <div class="hub-card-title">Expandable Container House China Import Guide</div>
+        <p>Shipping, customs, and real landed cost — including a Guatemala order where verification cut the quote from $7,900 to $6,700.</p>
+      </a>
+      <a href="/blog/container-house-factory-audit-checklist" class="hub-card">
+        <div class="hub-card-tag">Audit Checklist</div>
+        <div class="hub-card-title">Factory Audit Checklist: 15 Things to Check Before Ordering</div>
+        <p>Every item we inspect on site, and why each one matters more than the price on the quotation.</p>
+      </a>
+      <a href="/blog/container-house-vs-traditional-construction-cost" class="hub-card">
+        <div class="hub-card-tag">Cost Comparison</div>
+        <div class="hub-card-title">Expandable House vs. Traditional Construction: Cost Comparison</div>
+        <p>Why investors in Mexico and Central America are running the numbers on modular before breaking ground.</p>
+      </a>
+      <a href="/blog/hidden-risks-importing-container-houses-china" class="hub-card">
+        <div class="hub-card-tag">Buyer Risk</div>
+        <div class="hub-card-title">7 Hidden Risks When Importing Container Houses From China</div>
+        <p>The cheapest quotation is not always the lowest cost — 7 ways the gap gets created after you've already paid.</p>
+      </a>
+      <a href="/blog/case-study-container-home-factory-audit" class="hub-card">
+        <div class="hub-card-tag">Real Case</div>
+        <div class="hub-card-title">We Compared 6 Factories for a Container Home Order — Only One Passed</div>
+        <p>A side-by-side factory comparison for a Latin American buyer, and what separated the one we recommended.</p>
+      </a>
     </div>
   </div>
 </section>

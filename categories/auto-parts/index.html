@@ -77,7 +77,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .breadcrumb .sep{margin:0 0.5rem;color:rgba(255,255,255,0.2)}
 .breadcrumb .current{color:rgba(255,255,255,0.7)}
 .hero{background:var(--navy);padding:4.5rem 3rem 4rem}
-.hero-inner{max-width:780px;margin:0 auto}
+.hero-inner{max-width:1040px;margin:0 auto}
 .hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
 .hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;font-weight:700;color:white;margin-bottom:1rem}
 .hero h1 span{color:var(--yellow)}
@@ -87,7 +87,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
 .scope{padding:5rem 3rem;background:var(--light)}
-.scope-inner{max-width:900px;margin:0 auto}
+.scope-inner{max-width:1140px;margin:0 auto}
 .scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:700px;margin-bottom:2.5rem}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
@@ -134,7 +134,7 @@ nav{position:relative}
 .new-products-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.5rem}
 .new-products-intro{color:var(--muted);font-size:0.9rem;line-height:1.8;max-width:680px;margin-bottom:1.5rem}
 .cs-section{padding:5rem 3rem;background:var(--white);border-bottom:3px solid var(--coral)}
-.cs-section-inner{max-width:900px;margin:0 auto}
+.cs-section-inner{max-width:1140px;margin:0 auto}
 .cs-steps{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:2rem 0 2rem}
 .cs-step{background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--coral);padding:1.4rem 1.5rem}
 .cs-step-num{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.4rem}
@@ -149,6 +149,28 @@ nav{position:relative}
 .dual-photo-img img{display:block;width:100%;height:auto}
 .dual-photo-cap{font-size:0.78rem;color:var(--muted);margin-top:0.5rem;font-style:italic}
 @media(max-width:768px){.dual-photo{flex-direction:column}}
+.guide-section{padding:5rem 3rem;background:var(--light)}
+.guide-inner{max-width:1140px;margin:0 auto}
+.pull-quote{background:var(--white);border-left:4px solid var(--coral);padding:1.5rem 2rem;margin:0 0 2.5rem;font-size:1.05rem;color:var(--navy);font-style:italic;line-height:1.7}
+.pull-quote span{display:block;margin-top:0.5rem;font-size:0.8rem;color:var(--muted);font-style:normal}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.guide-item h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem}
+.guide-item p{font-size:0.88rem;color:var(--muted);line-height:1.75;margin:0}
+.spec-table{width:100%;border-collapse:collapse;font-size:0.85rem;background:var(--white)}
+.spec-table td{padding:0.5rem 0.85rem;border-bottom:1px solid var(--border);vertical-align:top}
+.spec-table td:first-child{color:var(--muted);width:45%;font-weight:500}
+.spec-table td:last-child{color:var(--navy);font-weight:600}
+.spec-table tr:nth-child(even) td{background:var(--light)}
+.spec-block{background:var(--white);border:1.5px solid var(--border);margin-bottom:2.5rem}
+.spec-block-title{padding:0.7rem 1.1rem;font-size:0.85rem;font-weight:700;color:var(--navy);background:var(--white);border-bottom:1.5px solid var(--border)}
+.spec-block-body{padding:0}
+.table-source{font-size:0.74rem;color:var(--muted);font-style:italic;padding:0.6rem 1.1rem 0}
+.reg-note{font-size:0.82rem;color:var(--muted);line-height:1.75;padding:0.8rem 1rem;background:var(--white);border-left:3px solid var(--coral);margin-bottom:2.5rem}
+.reg-note a{color:var(--coral)}
+.checklist-box{background:var(--navy);padding:2rem 2.2rem}
+.checklist-box h3{color:var(--yellow);font-size:1rem;font-weight:700;margin-bottom:1rem}
+.checklist-box ul{margin:0;padding-left:1.2rem;color:rgba(255,255,255,0.85);font-size:0.88rem;line-height:1.9}
+@media(max-width:768px){.guide-grid{grid-template-columns:1fr}.guide-section{padding:3rem 1.5rem}}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -193,9 +215,9 @@ nav{position:relative}
 
 <section class="cs-section">
   <div class="cs-section-inner">
-    <div class="section-tag">Caso Real &middot; How We Work</div>
-    <div class="section-title" style="margin-bottom:1rem">C&oacute;mo verificamos el offset correcto (ET&nbsp;54.1)<br>para las llantas OEM de un BYD Seagull</div>
-    <p class="scope-intro">Un comprador en Latinoam&eacute;rica necesitaba llantas OEM para el BYD Seagull &mdash; con un offset espec&iacute;fico de ET&nbsp;54.1. Lo que parec&iacute;a simple revel&oacute; una cadena de decisiones t&eacute;cnicas que, sin verificaci&oacute;n en terreno, dif&iacute;cilmente se pueden validar desde el extranjero.</p>
+    <div class="section-tag">Real Case &middot; How We Work</div>
+    <div class="section-title" style="margin-bottom:1rem">How we verified the correct offset (ET&nbsp;54.1)<br>for OEM wheels on a BYD Seagull</div>
+    <p class="scope-intro">A Latin American buyer needed OEM wheels for the BYD Seagull &mdash; with a specific ET&nbsp;54.1 offset. What looked like a simple order revealed a chain of technical decisions that are almost impossible to validate from abroad without someone on the ground.</p>
     <div class="dual-photo">
       <div class="dual-photo-img">
         <img src="/images/auto-parts-byd-wheel-rim.webp" alt="BYD Seagull OEM wheel rim and tire — offset ET 54.1 verified on site" loading="lazy">
@@ -204,33 +226,105 @@ nav{position:relative}
         <img src="/images/auto-parts-hub-cap-kit.webp" alt="Automotive hub cap kit — sourced and verified from Guangzhou factory" loading="lazy">
       </div>
     </div>
-    <p class="dual-photo-cap">Muestra verificada: rin + llanta BYD Seagull (ET&nbsp;54.1) &mdash; y kit de hub caps, entregados completos antes del dep&oacute;sito.</p>
+    <p class="dual-photo-cap">Verified sample: BYD Seagull wheel + tire (ET&nbsp;54.1) &mdash; and a hub cap kit, delivered complete before deposit.</p>
     <div class="cs-steps">
       <div class="cs-step">
-        <div class="cs-step-num">Paso 1 &mdash; El dato que lo cambiaba todo</div>
-        <h3>Offset ET&nbsp;54.1 &mdash; no es negociable</h3>
-        <p>Si el rin llega con un offset distinto, el instalador se ve obligado a usar un espaciador. Eso no es cosm&eacute;tico: afecta la geometr&iacute;a de suspensi&oacute;n, el comportamiento en curva y puede generar desgaste irregular a velocidad de carretera.</p>
+        <div class="cs-step-num">Step 1 &mdash; The spec that changed everything</div>
+        <h3>Offset ET&nbsp;54.1 &mdash; not negotiable</h3>
+        <p>If the wheel arrives with a different offset, the installer is forced to use a spacer. That's not cosmetic: it affects suspension geometry, cornering behavior, and can cause uneven tire wear at highway speed.</p>
       </div>
       <div class="cs-step">
-        <div class="cs-step-num">Paso 2 &mdash; Evaluaci&oacute;n de proveedores</div>
-        <h3>Cuatro f&aacute;bricas, solo una con evidencia</h3>
-        <p>Contactamos cuatro fabricantes de rines. La mayor&iacute;a confirmaba el offset &ldquo;de palabra&rdquo;, sin ninguna forma de comprobarlo antes del env&iacute;o. Solo una f&aacute;brica en Sichuan acept&oacute; documentar la especificaci&oacute;n real antes de que el cliente comprometiera el pedido.</p>
+        <div class="cs-step-num">Step 2 &mdash; Supplier evaluation</div>
+        <h3>Four factories, only one with evidence</h3>
+        <p>We contacted four wheel manufacturers. Most confirmed the offset "by word," with no way to verify it before shipment. Only one factory in Sichuan agreed to document the real specification before the client committed to the order.</p>
       </div>
       <div class="cs-step">
-        <div class="cs-step-num">Paso 3 &mdash; Verificaci&oacute;n antes del dep&oacute;sito</div>
-        <h3>Video de instalaci&oacute;n + ficha t&eacute;cnica real</h3>
-        <p>Coordinamos con la f&aacute;brica para obtener un video del rin instalado en el veh&iacute;culo sin espaciador, y una ficha t&eacute;cnica con los datos reales de fabricaci&oacute;n &mdash; no una hoja de cat&aacute;logo gen&eacute;rica.</p>
+        <div class="cs-step-num">Step 3 &mdash; Verification before deposit</div>
+        <h3>Installation video + real spec sheet</h3>
+        <p>We coordinated with the factory to get a video of the wheel installed on the vehicle without a spacer, plus a spec sheet with real manufacturing data &mdash; not a generic catalog page.</p>
       </div>
       <div class="cs-step">
-        <div class="cs-step-num">Paso 4 &mdash; Muestra completa</div>
-        <h3>Set completo, como lo recibir&iacute;a el cliente final</h3>
-        <p>Se orden&oacute; rin + llanta + llave de cambio + gato hidr&aacute;ulico + bolsa de almacenamiento. El cliente confirm&oacute; en persona que cumpl&iacute;a exactamente la especificaci&oacute;n antes de comprometer cualquier pedido mayor.</p>
+        <div class="cs-step-num">Step 4 &mdash; Complete sample</div>
+        <h3>Full set, exactly as the end customer would receive it</h3>
+        <p>We ordered wheel + tire + lug wrench + hydraulic jack + storage bag. The client confirmed in person that it matched the exact specification before committing to any larger order.</p>
       </div>
     </div>
     <div class="cs-result">
-      <p><strong>El resultado:</strong> De una muestra a pedidos recurrentes. Este es el tipo de verificaci&oacute;n que ofrecemos en cada categor&iacute;a de autopartes &mdash; no solo encontrar un fabricante, sino confirmar con evidencia real que la pieza cumple la especificaci&oacute;n exacta del veh&iacute;culo de tu cliente.</p>
+      <p><strong>The result:</strong> From one sample to recurring orders. This is the type of verification we offer across every auto parts category &mdash; not just finding a manufacturer, but confirming with real evidence that the part matches your customer's exact vehicle specification.</p>
     </div>
-    <a href="/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541" class="btn-main">Leer el caso completo &rarr;</a>
+    <a href="/blog/case-study-byd-seagull-wheel-offset-et541" class="btn-main">Read the full case &rarr;</a>
+  </div>
+</section>
+
+<section class="guide-section">
+  <div class="guide-inner">
+    <div class="section-tag">Deep Dive</div>
+    <div class="section-title">BYD Seagull OEM Wheel<br>Manufacturing Guide</div>
+    <div class="pull-quote">"I need a BYD Seagull wheel supplier in China" is one of the most common messages we get from Latin American buyers building out an NEV parts catalog.<span>It's also one of the easiest categories to get burned in — the Seagull's specific bolt pattern and offset get quietly substituted more often than buyers expect.</span></div>
+    <p class="scope-intro" style="max-width:100%">The BYD Seagull is now common enough on Latin American roads that OEM-compatible wheel demand has followed it — but "OEM-compatible" only means something if the factory actually holds to the real specification. Here's what we check before we tell a client a supplier is legitimate.</p>
+
+    <div class="spec-block">
+      <div class="spec-block-title">BYD Seagull (2023–) Wheel Specifications</div>
+      <div class="spec-block-body">
+        <table class="spec-table">
+          <tbody>
+            <tr><td>Bolt pattern (PCD)</td><td>4 &times; 100 mm</td></tr>
+            <tr><td>Center bore diameter</td><td>54.1 mm</td></tr>
+            <tr><td>Thread pitch</td><td>M12 &times; 1.5</td></tr>
+            <tr><td>Factory size — standard</td><td>5.5J &times; 15", ET40</td></tr>
+            <tr><td>Factory size — alternative</td><td>6J &times; 16", ET40</td></tr>
+            <tr><td>Acceptable offset (ET) range</td><td>ET38 &ndash; ET42</td></tr>
+            <tr><td>Lug nut seat type</td><td>Conical, 60&deg;</td></tr>
+            <tr><td>Wheel bolt torque</td><td>110 Nm</td></tr>
+          </tbody>
+        </table>
+        <p class="table-source">Data verified against independent fitment references, 2026. Wheels with a bore larger than 54.1&nbsp;mm require a centering ring — a detail aftermarket suppliers frequently skip.</p>
+      </div>
+    </div>
+
+    <div class="guide-grid">
+      <div class="guide-item">
+        <h3>OEM Wheel Production Process</h3>
+        <p>A real OEM-line wheel goes through low-pressure casting or forging, CNC machining of the bolt circle and hub bore, static and dynamic balancing, then a multi-stage coating (primer, base, clear) before final inspection. Factories that skip CNC finishing on the bore tolerance are the ones that ship a wheel that "almost" centers — and almost is what causes vibration at highway speed.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Aluminum Alloy Material</h3>
+        <p>Standard OEM-compatible wheels use A356 or A357 aluminum alloy, heat-treated (T6) after casting to reach the strength needed for a passenger vehicle. We ask every factory for the mill certificate on the aluminum ingot batch — not the finished-wheel spec sheet, which tells you nothing about what alloy actually went into the mold.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Forged vs. Cast Wheels</h3>
+        <p>Cast wheels (gravity or low-pressure) are the standard for OEM-compatible Seagull fitments and the right choice for most buyers on cost. Forged wheels cost 2&ndash;4&times; more but weigh less and resist cracking under impact — worth it for a premium aftermarket line, overkill for a standard replacement-parts catalog.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Quality Inspection</h3>
+        <p>Beyond the visual check, a real inspection includes an air leak test (wheels for tubeless tires must hold pressure), a radial/lateral runout check (excess runout causes steering vibration), and a salt-spray test on the coating — the single most relevant test for Latin America's coastal humidity and intense UV exposure, both of which accelerate clear-coat failure and corrosion on a wheel that looked fine in the factory photos.</p>
+      </div>
+      <div class="guide-item">
+        <h3>MOQ and Customization</h3>
+        <p>Most Guangzhou-area wheel factories quote an MOQ of 100&ndash;200 units per size/finish for a private-label or custom-offset run; some accept 50 units at a price premium. Custom finishes (gunmetal, machined-face, bronze) typically add 5&ndash;10 days to lead time. Any factory quoting a Seagull-fitment custom wheel at under 50 units with no premium is usually reselling stock they already have in a warehouse — not manufacturing to your spec.</p>
+      </div>
+      <div class="guide-item">
+        <h3>How to Import BYD Seagull Wheels from China</h3>
+        <p>Wheels ship as general cargo (not hazardous), palletized or crated, typically 4 wheels per box for 15&ndash;16" sizes. HS code 8708.70 (road wheels and parts) applies for most OEM-compatible fitments — confirm classification with your customs broker before booking, since duty treatment varies by destination country. Sea freight (FCL/LCL) is standard; air freight is only worth it for urgent low-volume orders given the weight-to-value ratio of wheels.</p>
+      </div>
+    </div>
+
+    <div class="reg-note">
+      <strong>Mexico-specific note:</strong> Wheel rims sold in Mexico for automobiles and light trucks (sizes 13&ndash;24") fall under the scope of <strong>PROY-NOM-150-SCFI-2002</strong>, which specifies fatigue-test cycle minimums (30,000 cycles for Type&nbsp;1 rims, 120,000 for Types&nbsp;2&ndash;4). It's a proposed standard rather than a fully enforced NOM, but it's the closest thing to an official technical benchmark for rim safety in the Mexican market, and it's the kind of document we ask a factory to test against when a client's end destination is Mexico. Source: <a href="http://legismex.mty.itesm.mx/normas/scfi/scfi150-02p.pdf" target="_blank" rel="noopener">PROY-NOM-150-SCFI-2002, published via DOF</a>.
+    </div>
+
+    <div class="checklist-box">
+      <h3>Factory Audit Checklist — What We Verify On Site</h3>
+      <ul>
+        <li>Business license matches the name on the contract and bank account</li>
+        <li>CNC machining line present for bore/bolt-circle finishing — not just a casting shop</li>
+        <li>Mill certificate for the aluminum or steel batch, not just a wheel spec sheet</li>
+        <li>Balancing and air-leak test stations on the actual production floor</li>
+        <li>Sample wheel installed on a real Seagull (or matching hub jig) with no spacer</li>
+        <li>Export history — prior shipments to Latin America or other humid/coastal markets</li>
+        <li>Packaging method suited for ocean freight, not just domestic distribution</li>
+      </ul>
+    </div>
   </div>
 </section>
 

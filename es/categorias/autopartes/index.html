@@ -77,7 +77,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .breadcrumb .sep{margin:0 0.5rem;color:rgba(255,255,255,0.2)}
 .breadcrumb .current{color:rgba(255,255,255,0.7)}
 .hero{background:var(--navy);padding:4.5rem 3rem 4rem}
-.hero-inner{max-width:780px;margin:0 auto}
+.hero-inner{max-width:1040px;margin:0 auto}
 .hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
 .hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;font-weight:700;color:white;margin-bottom:1rem}
 .hero h1 span{color:var(--yellow)}
@@ -87,7 +87,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
 .scope{padding:5rem 3rem;background:var(--light)}
-.scope-inner{max-width:900px;margin:0 auto}
+.scope-inner{max-width:1140px;margin:0 auto}
 .scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:700px;margin-bottom:2.5rem}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
@@ -133,7 +133,7 @@ nav{position:relative}
 .new-products-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.5rem}
 .new-products-intro{color:var(--muted);font-size:0.9rem;line-height:1.8;max-width:680px;margin-bottom:1.5rem}
 .cs-section{padding:5rem 3rem;background:var(--white);border-bottom:3px solid var(--coral)}
-.cs-section-inner{max-width:900px;margin:0 auto}
+.cs-section-inner{max-width:1140px;margin:0 auto}
 .cs-steps{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:2rem 0 2rem}
 .cs-step{background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--coral);padding:1.4rem 1.5rem}
 .cs-step-num{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.4rem}
@@ -147,6 +147,28 @@ nav{position:relative}
 .dual-photo-img img{display:block;width:100%;height:auto}
 .dual-photo-cap{font-size:0.78rem;color:var(--muted);margin-top:0.5rem;font-style:italic}
 @media(max-width:768px){.cs-steps{grid-template-columns:1fr}.cs-section{padding:3rem 1.5rem}.dual-photo{flex-direction:column}}
+.guide-section{padding:5rem 3rem;background:var(--light)}
+.guide-inner{max-width:1140px;margin:0 auto}
+.pull-quote{background:var(--white);border-left:4px solid var(--coral);padding:1.5rem 2rem;margin:0 0 2.5rem;font-size:1.05rem;color:var(--navy);font-style:italic;line-height:1.7}
+.pull-quote span{display:block;margin-top:0.5rem;font-size:0.8rem;color:var(--muted);font-style:normal}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.guide-item h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem}
+.guide-item p{font-size:0.88rem;color:var(--muted);line-height:1.75;margin:0}
+.spec-table{width:100%;border-collapse:collapse;font-size:0.85rem;background:var(--white)}
+.spec-table td{padding:0.5rem 0.85rem;border-bottom:1px solid var(--border);vertical-align:top}
+.spec-table td:first-child{color:var(--muted);width:45%;font-weight:500}
+.spec-table td:last-child{color:var(--navy);font-weight:600}
+.spec-table tr:nth-child(even) td{background:var(--light)}
+.spec-block{background:var(--white);border:1.5px solid var(--border);margin-bottom:2.5rem}
+.spec-block-title{padding:0.7rem 1.1rem;font-size:0.85rem;font-weight:700;color:var(--navy);background:var(--white);border-bottom:1.5px solid var(--border)}
+.spec-block-body{padding:0}
+.table-source{font-size:0.74rem;color:var(--muted);font-style:italic;padding:0.6rem 1.1rem 0}
+.reg-note{font-size:0.82rem;color:var(--muted);line-height:1.75;padding:0.8rem 1rem;background:var(--white);border-left:3px solid var(--coral);margin-bottom:2.5rem}
+.reg-note a{color:var(--coral)}
+.checklist-box{background:var(--navy);padding:2rem 2.2rem}
+.checklist-box h3{color:var(--yellow);font-size:1rem;font-weight:700;margin-bottom:1rem}
+.checklist-box ul{margin:0;padding-left:1.2rem;color:rgba(255,255,255,0.85);font-size:0.88rem;line-height:1.9}
+@media(max-width:768px){.guide-grid{grid-template-columns:1fr}.guide-section{padding:3rem 1.5rem}}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -228,6 +250,78 @@ nav{position:relative}
       <p><strong>El resultado:</strong> De una muestra a pedidos recurrentes. Este es el tipo de verificaci&oacute;n que ofrecemos en cada categor&iacute;a de autopartes &mdash; no solo encontrar un fabricante, sino confirmar con evidencia real que la pieza cumple la especificaci&oacute;n exacta del veh&iacute;culo de tu cliente.</p>
     </div>
     <a href="/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541" class="btn-main">Leer el caso completo &rarr;</a>
+  </div>
+</section>
+
+<section class="guide-section">
+  <div class="guide-inner">
+    <div class="section-tag">A Fondo</div>
+    <div class="section-title">Gu&iacute;a de Fabricaci&oacute;n OEM<br>de Rines BYD Seagull</div>
+    <div class="pull-quote">&ldquo;Necesito un proveedor de rines BYD Seagull en China&rdquo; es uno de los mensajes m&aacute;s comunes que recibimos de compradores latinoamericanos que arman un cat&aacute;logo de piezas para veh&iacute;culos NEV.<span>Tambi&eacute;n es una de las categor&iacute;as m&aacute;s f&aacute;ciles de salir perjudicado &mdash; el patr&oacute;n de birlos y el offset espec&iacute;fico del Seagull se sustituyen en silencio m&aacute;s seguido de lo que el comprador espera.</span></div>
+    <p class="scope-intro" style="max-width:100%">El BYD Seagull ya circula lo suficiente en carreteras latinoamericanas como para que la demanda de rines OEM-compatibles lo haya seguido &mdash; pero &ldquo;OEM-compatible&rdquo; solo significa algo si la f&aacute;brica realmente respeta la especificaci&oacute;n real. Esto es lo que verificamos antes de confirmarle a un cliente que un proveedor es leg&iacute;timo.</p>
+
+    <div class="spec-block">
+      <div class="spec-block-title">Especificaciones del Rin BYD Seagull (2023&ndash;)</div>
+      <div class="spec-block-body">
+        <table class="spec-table">
+          <tbody>
+            <tr><td>Patr&oacute;n de birlos (PCD)</td><td>4 &times; 100 mm</td></tr>
+            <tr><td>Di&aacute;metro del centro (bore)</td><td>54.1 mm</td></tr>
+            <tr><td>Paso de rosca</td><td>M12 &times; 1.5</td></tr>
+            <tr><td>Medida de f&aacute;brica &mdash; est&aacute;ndar</td><td>5.5J &times; 15&Prime;, ET40</td></tr>
+            <tr><td>Medida de f&aacute;brica &mdash; alternativa</td><td>6J &times; 16&Prime;, ET40</td></tr>
+            <tr><td>Rango de offset (ET) aceptable</td><td>ET38 &ndash; ET42</td></tr>
+            <tr><td>Tipo de asiento de tuerca</td><td>C&oacute;nico, 60&deg;</td></tr>
+            <tr><td>Torque de birlos</td><td>110 Nm</td></tr>
+          </tbody>
+        </table>
+        <p class="table-source">Datos verificados contra referencias independientes de ajuste, 2026. Los rines con un bore mayor a 54.1&nbsp;mm requieren anillo centrador &mdash; un detalle que los proveedores de aftermarket suelen omitir.</p>
+      </div>
+    </div>
+
+    <div class="guide-grid">
+      <div class="guide-item">
+        <h3>Proceso de Producci&oacute;n OEM</h3>
+        <p>Un rin real de l&iacute;nea OEM pasa por fundici&oacute;n a baja presi&oacute;n o forjado, maquinado CNC del c&iacute;rculo de birlos y el bore central, balanceo est&aacute;tico y din&aacute;mico, y un recubrimiento multietapa (primer, base, transparente) antes de la inspecci&oacute;n final. Las f&aacute;bricas que omiten el acabado CNC en la tolerancia del bore son las que env&iacute;an un rin que &ldquo;casi&rdquo; centra &mdash; y ese &ldquo;casi&rdquo; es lo que causa vibraci&oacute;n a velocidad de carretera.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Material de Aleaci&oacute;n de Aluminio</h3>
+        <p>Los rines OEM-compatibles est&aacute;ndar usan aleaci&oacute;n de aluminio A356 o A357, tratada t&eacute;rmicamente (T6) despu&eacute;s de la fundici&oacute;n para alcanzar la resistencia necesaria en un veh&iacute;culo de pasajeros. Le pedimos a cada f&aacute;brica el certificado de colada del lote de aluminio &mdash; no la ficha t&eacute;cnica del rin terminado, que no dice nada sobre qu&eacute; aleaci&oacute;n realmente entr&oacute; al molde.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Forjado vs. Fundido</h3>
+        <p>Los rines fundidos (gravedad o baja presi&oacute;n) son el est&aacute;ndar para ajustes OEM-compatibles del Seagull y la opci&oacute;n correcta para la mayor&iacute;a por costo. Los rines forjados cuestan 2&ndash;4 veces m&aacute;s pero pesan menos y resisten mejor los impactos &mdash; vale la pena para una l&iacute;nea premium de aftermarket, mucho para un cat&aacute;logo est&aacute;ndar de refacciones.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Inspecci&oacute;n de Calidad</h3>
+        <p>M&aacute;s all&aacute; de la revisi&oacute;n visual, una inspecci&oacute;n real incluye prueba de fuga de aire (los rines para llantas sin c&aacute;mara deben mantener presi&oacute;n), revisi&oacute;n de excentricidad radial/lateral (el exceso causa vibraci&oacute;n en el volante), y prueba de niebla salina en el recubrimiento &mdash; la prueba m&aacute;s relevante para la humedad costera y la exposici&oacute;n intensa a UV de Latinoam&eacute;rica, ambas aceleran la falla del transparente y la corrosi&oacute;n en un rin que se ve&iacute;a bien en las fotos de f&aacute;brica.</p>
+      </div>
+      <div class="guide-item">
+        <h3>MOQ y Personalizaci&oacute;n</h3>
+        <p>La mayor&iacute;a de las f&aacute;bricas de rines en la zona de Guangzhou cotizan un MOQ de 100&ndash;200 unidades por medida/acabado para una corrida personalizada o de marca propia; algunas aceptan 50 unidades con un sobreprecio. Los acabados personalizados (gunmetal, cara maquinada, bronce) suelen sumar 5&ndash;10 d&iacute;as al plazo de entrega. Cualquier f&aacute;brica que cotice un rin personalizado para Seagull en menos de 50 unidades sin sobreprecio normalmente est&aacute; revendiendo inventario que ya tiene en bodega &mdash; no fabricando seg&uacute;n tu especificaci&oacute;n.</p>
+      </div>
+      <div class="guide-item">
+        <h3>C&oacute;mo Importar Rines BYD Seagull desde China</h3>
+        <p>Los rines se env&iacute;an como carga general (no peligrosa), paletizados o en cajas, t&iacute;picamente 4 rines por caja para medidas de 15&ndash;16&Prime;. La fracci&oacute;n arancelaria 8708.70 (ruedas de carretera y sus partes) aplica para la mayor&iacute;a de los ajustes OEM-compatibles &mdash; confirma la clasificaci&oacute;n con tu agente aduanal antes de reservar, ya que el tratamiento arancelario var&iacute;a seg&uacute;n el pa&iacute;s destino. El env&iacute;o mar&iacute;timo (FCL/LCL) es lo est&aacute;ndar; el a&eacute;reo solo vale la pena para pedidos urgentes de bajo volumen dado el peso relativo de los rines.</p>
+      </div>
+    </div>
+
+    <div class="reg-note">
+      <strong>Nota espec&iacute;fica para M&eacute;xico:</strong> Los rines para autom&oacute;viles y camiones ligeros vendidos en M&eacute;xico (medidas 13&ndash;24&Prime;) caen dentro del alcance de la <strong>PROY-NOM-150-SCFI-2002</strong>, que especifica m&iacute;nimos de ciclos de fatiga (30,000 ciclos para rines Tipo&nbsp;1, 120,000 para Tipos&nbsp;2&ndash;4). Es una norma propuesta y no una NOM plenamente vigente, pero es el punto de referencia t&eacute;cnico oficial m&aacute;s cercano para la seguridad de rines en el mercado mexicano, y es el tipo de documento contra el que pedimos que una f&aacute;brica pruebe cuando el destino final de un cliente es M&eacute;xico. Fuente: <a href="http://legismex.mty.itesm.mx/normas/scfi/scfi150-02p.pdf" target="_blank" rel="noopener">PROY-NOM-150-SCFI-2002, publicada v&iacute;a DOF</a>.
+    </div>
+
+    <div class="checklist-box">
+      <h3>Checklist de Auditor&iacute;a de F&aacute;brica &mdash; Lo Que Verificamos en Sitio</h3>
+      <ul>
+        <li>La licencia de negocio coincide con el nombre en el contrato y la cuenta bancaria</li>
+        <li>L&iacute;nea de maquinado CNC presente para el bore/c&iacute;rculo de birlos &mdash; no solo un taller de fundici&oacute;n</li>
+        <li>Certificado de colada del lote de aluminio o acero, no solo una ficha t&eacute;cnica del rin</li>
+        <li>Estaciones de balanceo y prueba de fuga de aire en el piso de producci&oacute;n real</li>
+        <li>Rin de muestra instalado en un Seagull real (o gabarito equivalente) sin espaciador</li>
+        <li>Historial de exportaci&oacute;n &mdash; env&iacute;os previos a Latinoam&eacute;rica u otros mercados h&uacute;medos/costeros</li>
+        <li>M&eacute;todo de empaque adecuado para flete mar&iacute;timo, no solo distribuci&oacute;n dom&eacute;stica</li>
+      </ul>
+    </div>
   </div>
 </section>
 

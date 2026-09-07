@@ -77,7 +77,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .breadcrumb .sep{margin:0 0.5rem;color:rgba(255,255,255,0.2)}
 .breadcrumb .current{color:rgba(255,255,255,0.7)}
 .hero{background:var(--navy);padding:4.5rem 3rem 4rem}
-.hero-inner{max-width:780px;margin:0 auto}
+.hero-inner{max-width:1040px;margin:0 auto}
 .hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
 .hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;font-weight:700;color:white;margin-bottom:1rem}
 .hero h1 span{color:var(--yellow)}
@@ -87,7 +87,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
 .scope{padding:5rem 3rem;background:var(--light)}
-.scope-inner{max-width:900px;margin:0 auto}
+.scope-inner{max-width:1140px;margin:0 auto}
 .scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:700px;margin-bottom:2.5rem}
 .product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
@@ -113,7 +113,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
 .footer-links{display:flex;gap:1.5rem}
 .footer-links a{color:rgba(255,255,255,0.4)}.footer-links a:hover{color:var(--yellow)}
-.product-detail-block{background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem;max-width:960px;margin:2rem auto 0}
+.product-detail-block{background:var(--white);border:1.5px solid var(--border);padding:2rem 2.5rem;max-width:1100px;margin:2rem auto 0}
 .product-img{width:100%;height:auto;display:block;margin-bottom:1.5rem}
 .detail-block-title{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.4rem}
 .detail-block-h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem}
@@ -131,7 +131,26 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .spec-table td:first-child{color:var(--muted);width:45%;font-weight:500}
 .spec-table td:last-child{color:var(--navy);font-weight:600}
 .spec-table tr:nth-child(even) td{background:var(--light)}
-@media(max-width:768px){
+.guide-section{padding:5rem 3rem;background:var(--light)}
+.guide-inner{max-width:1140px;margin:0 auto}
+.pull-quote{background:var(--white);border-left:4px solid var(--coral);padding:1.5rem 2rem;margin:0 0 2.5rem;font-size:1.05rem;color:var(--navy);font-style:italic;line-height:1.7}
+.pull-quote span{display:block;margin-top:0.5rem;font-size:0.8rem;color:var(--muted);font-style:normal}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.guide-item h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem}
+.guide-item p{font-size:0.88rem;color:var(--muted);line-height:1.75;margin:0}
+.reg-note{font-size:0.82rem;color:var(--muted);line-height:1.75;padding:0.8rem 1rem;background:var(--white);border-left:3px solid var(--coral);margin-bottom:2.5rem}
+.reg-note a{color:var(--coral)}
+.faq-mini{border-top:1.5px solid var(--border)}
+.faq-mini-item{padding:1.1rem 0;border-bottom:1.5px solid var(--border)}
+.faq-mini-item h3{font-size:0.92rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.faq-mini-item p{font-size:0.85rem;color:var(--muted);line-height:1.7;margin:0}
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1rem}
+.hub-card{display:block;background:var(--white);border:1.5px solid var(--border);padding:1.4rem;text-decoration:none}
+.hub-card:hover{border-color:var(--coral)}
+.hub-card-tag{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.hub-card-title{font-size:0.92rem;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:0.5rem}
+.hub-card p{font-size:0.82rem;color:var(--muted);line-height:1.6;margin:0}
+@media(max-width:768px){.guide-grid,.hub-grid{grid-template-columns:1fr}.guide-section{padding:3rem 1.5rem}
 nav{padding:1rem 1.5rem}.nav-links{display:none}
 .breadcrumb{padding:0.6rem 1.5rem}
 .hero{padding:3rem 1.5rem}
@@ -194,7 +213,7 @@ nav{position:relative}
     <p class="scope-intro">Nuestras auditorías de fábrica y verificaciones de proveedores en persona sustentan los estándares a continuación — basados en inspecciones reales, no en fichas técnicas.</p>
     <div class="product-item" style="max-width:960px;margin:0 auto 1.25rem">
       <div class="product-dot"></div>
-      <div><strong>Casas Contenedor Expandibles</strong><span>Unidades flat-pack y plegables de 20 y 40 pies, opciones de acabado interior, certificaciones estructurales</span></div>
+      <div><strong>Casa Contenedor Expandible <span style="font-weight:400">(折叠式集装箱房 / Casa Plegable de Doble Ala)</span></strong><span>Unidades flat-pack y plegables de 20 y 40 pies, opciones de acabado interior, certificaciones estructurales</span></div>
     </div>
 
     <div class="product-detail-block">
@@ -293,6 +312,90 @@ nav{position:relative}
           <p class="table-source" style="margin-top:0.75rem">Datos basados en especificaciones del fabricante, junio 2026.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="guide-section">
+  <div class="guide-inner">
+    <div class="section-tag">C&oacute;mo Se Fabrican Realmente</div>
+    <div class="section-title">Casas contenedor expandibles:<br>fabricaci&oacute;n, clima y qu&eacute; verificamos</div>
+    <p class="scope-intro" style="max-width:100%">La mayor&iacute;a de las f&aacute;bricas que hacen casas contenedor expandibles para exportaci&oacute;n est&aacute;n en Hebei, Shandong y aqu&iacute; mismo en Guangdong &mdash; lo bastante cerca de nuestra base en Guangzhou como para que una visita de f&aacute;brica sea un viaje de un solo d&iacute;a, no de varios. Esa cercan&iacute;a es lo que nos permite verificar una unidad en persona antes de que un cliente transfiera un dep&oacute;sito, en lugar de confiar en los mismos renders que reutiliza cada proveedor en Alibaba.</p>
+
+    <div class="guide-grid">
+      <div class="guide-item">
+        <h3>C&oacute;mo Funciona el Mecanismo Plegable</h3>
+        <p>La unidad se env&iacute;a plegada en aproximadamente un tercio de su huella expandida; luego dos paredes laterales giran hacia afuera y se aseguran en sitio &mdash; t&iacute;picamente un trabajo de 2&ndash;4 horas para una cuadrilla de dos personas, sin necesidad de gr&uacute;a. Toda la propuesta de valor depende de que ese sistema de bisagras aguante el uso repetido y a&ntilde;os de expansi&oacute;n t&eacute;rmica, que es exactamente por lo que lo probamos antes &mdash; no despu&eacute;s &mdash; de que un cliente confirme un pedido mayor.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Lo Que Realmente Verificamos en Sitio</h3>
+        <p>Tres puntos de falla aparecen m&aacute;s que cualquier otro en las unidades que hemos inspeccionado: soldaduras de bisagra que se agrietan con el plegado repetido, uniones techo-pared que pasan una revisi&oacute;n visual pero gotean con lluvia real, y drenaje de piso que nunca fue probado con agua real. Ninguno de estos aparece en las fotos del producto de una f&aacute;brica &mdash; solo aparecen cuando alguien ejercita el panel y vierte agua sobre las juntas.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Calibre de Acero &mdash; Lo Cotizado vs. Lo Enviado</h3>
+        <p>La tabla de especificaciones arriba indica placa de acero de 2.0mm para el marco de pared abatible &mdash; ese es el n&uacute;mero que verificamos con un calibrador en la l&iacute;nea de producci&oacute;n real, no en la cotizaci&oacute;n. La sustituci&oacute;n de calibre (enviar 1.6mm o 1.8mm marcado como 2.0mm) es la maniobra de reducci&oacute;n de costos m&aacute;s com&uacute;n que detectamos, y afecta directamente c&oacute;mo resiste la estructura la carga de viento y a&ntilde;os de humedad costera.</p>
+      </div>
+      <div class="guide-item">
+        <h3>Aislamiento: PU vs. EPS, y Por Qu&eacute; Se Sustituye</h3>
+        <p>Los paneles sandwich de PU (poliuretano) aíslan aproximadamente el doble por mil&iacute;metro que el EPS (poliestireno expandido) y cuestan m&aacute;s producir. Como ambos se ven id&eacute;nticos una vez pintados, una f&aacute;brica bajo presi&oacute;n de margen puede cotizar PU y enviar EPS &mdash; una sustituci&oacute;n invisible hasta la primera temporada de calor del cliente, cuando el interior se siente varios grados m&aacute;s caliente de lo prometido. Confirmamos el tipo de panel revisando el n&uacute;cleo en la f&aacute;brica, no confiando en la etiqueta.</p>
+      </div>
+    </div>
+
+    <div class="reg-note">
+      <strong>Notas de clima y normativa para compradores latinoamericanos:</strong> La resistencia al viento publicada (1.0&nbsp;kN/m&sup2;) y la clasificaci&oacute;n de fortificaci&oacute;n s&iacute;smica (Intensidad&nbsp;9) en la tabla de especificaciones arriba son los dos n&uacute;meros que m&aacute;s cruzamos contra los requisitos del destino. Para compradores que env&iacute;an a la Ciudad de M&eacute;xico, el dise&ntilde;o estructural se rige por el <strong>Reglamento de Construcciones para la Ciudad de M&eacute;xico</strong> y sus Normas T&eacute;cnicas Complementarias para dise&ntilde;o s&iacute;smico y por viento, publicadas por el Instituto para la Seguridad de las Construcciones de la ciudad &mdash; vale la pena confirmar con un ingeniero estructural local que las calificaciones declaradas por la f&aacute;brica correspondan al c&oacute;digo del destino, ya que el est&aacute;ndar interno de prueba de una f&aacute;brica y el c&oacute;digo de una ciudad destino no son autom&aacute;ticamente el mismo documento. Fuente: <a href="https://www.isc.cdmx.gob.mx/directores-res/cursos-de-actualizacion-2022/normas-tecnicas-complementarias-2023" target="_blank" rel="noopener">ISC CDMX &mdash; Normas T&eacute;cnicas Complementarias</a>. Para zonas costeras y de alta pluviosidad en Centroam&eacute;rica y el Caribe, el detalle que m&aacute;s importa en la pr&aacute;ctica no es la clasificaci&oacute;n s&iacute;smica &mdash; es si la f&aacute;brica us&oacute; un recubrimiento grado marino en el marco de acero y una pendiente de drenaje real en el techo, ya que el aire salino y la lluvia sostenida son lo que primero degrada una unidad econ&oacute;mica.</div>
+
+    <div class="faq-mini">
+      <div class="faq-mini-item">
+        <h3>&iquest;Cu&aacute;nto dura una casa contenedor expandible en un clima c&aacute;lido y h&uacute;medo?</h3>
+        <p>Los fabricantes clasifican estas unidades para aproximadamente 25 a&ntilde;os de vida &uacute;til, pero esa cifra asume que el marco de acero fue galvanizado y recubierto correctamente seg&uacute;n la especificaci&oacute;n. En la pr&aacute;ctica, las instalaciones costeras y de alta humedad sin una mejora de recubrimiento grado marino muestran corrosi&oacute;n del marco mucho antes de esa marca &mdash; por eso verificamos la especificaci&oacute;n del recubrimiento, no solo la cifra de vida &uacute;til.</p>
+      </div>
+      <div class="faq-mini-item">
+        <h3>&iquest;De verdad caben dos unidades en un contenedor de 40 pies?</h3>
+        <p>S&iacute; &mdash; dimensiones plegadas de aproximadamente 2,300 &times; 5,900 &times; 2,480mm permiten cargar dos unidades en un solo contenedor 1&times;40HQ, que es la principal ventaja de costo de flete frente a una caja modular r&iacute;gida. Verificamos las dimensiones plegadas reales durante la inspecci&oacute;n previa al env&iacute;o, ya que una unidad que pliega unos cent&iacute;metros m&aacute;s grande de lo especificado puede convertir &ldquo;dos por contenedor&rdquo; en &ldquo;una m&aacute;s espacio desperdiciado.&rdquo;</p>
+      </div>
+      <div class="faq-mini-item">
+        <h3>&iquest;La f&aacute;brica se encarga de la instalaci&oacute;n, o solo del env&iacute;o?</h3>
+        <p>La mayor&iacute;a de las f&aacute;bricas enfocadas en exportaci&oacute;n env&iacute;an la unidad y una gu&iacute;a de ensamblaje impresa, pero no env&iacute;an cuadrillas de instalaci&oacute;n al extranjero. Confirma esto antes de ordenar &mdash; los compradores que asumen &ldquo;llave en mano&rdquo; sin verificar suelen descubrir que el conocimiento de instalaci&oacute;n se qued&oacute; en China.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guide-section" style="background:var(--white)">
+  <div class="guide-inner">
+    <div class="section-tag">M&aacute;s Informaci&oacute;n</div>
+    <div class="section-title">Comprar una casa contenedor expandible desde China</div>
+    <div class="hub-grid">
+      <a href="/blog/es/como-verificar-fabrica-casas-contenedor-china" class="hub-card">
+        <div class="hub-card-tag">Verificaci&oacute;n de F&aacute;brica</div>
+        <div class="hub-card-title">C&oacute;mo Verificar una F&aacute;brica de Casas Contenedor Expandibles en China</div>
+        <p>Las 7 verificaciones que hacemos antes de confirmarle a un cliente que un proveedor es un fabricante real, no un revendedor de fotos ajenas.</p>
+      </a>
+      <a href="/blog/es/guia-importar-casas-contenedor-expandibles-china" class="hub-card">
+        <div class="hub-card-tag">Gu&iacute;a de Importaci&oacute;n</div>
+        <div class="hub-card-title">Gu&iacute;a de Importaci&oacute;n de Casas Contenedor Expandibles desde China</div>
+        <p>Env&iacute;o, aduanas y costo real de aterrizaje &mdash; incluyendo un pedido en Guatemala donde la verificaci&oacute;n baj&oacute; la cotizaci&oacute;n de $7,900 a $6,700.</p>
+      </a>
+      <a href="/blog/es/checklist-auditoria-fabrica-casas-contenedor" class="hub-card">
+        <div class="hub-card-tag">Checklist de Auditor&iacute;a</div>
+        <div class="hub-card-title">Checklist de Auditor&iacute;a de F&aacute;brica: 15 Puntos Antes de Ordenar</div>
+        <p>Cada punto que inspeccionamos en sitio, y por qu&eacute; cada uno importa m&aacute;s que el precio en la cotizaci&oacute;n.</p>
+      </a>
+      <a href="/blog/es/casas-contenedor-vs-construccion-tradicional-costo" class="hub-card">
+        <div class="hub-card-tag">Comparaci&oacute;n de Costos</div>
+        <div class="hub-card-title">Casa Expandible vs. Construcci&oacute;n Tradicional: Comparaci&oacute;n de Costos</div>
+        <p>Por qu&eacute; inversionistas en M&eacute;xico y Centroam&eacute;rica est&aacute;n sacando las cuentas de lo modular antes de poner la primera piedra.</p>
+      </a>
+      <a href="/blog/es/riesgos-ocultos-importar-casas-contenedor-china" class="hub-card">
+        <div class="hub-card-tag">Riesgo del Comprador</div>
+        <div class="hub-card-title">7 Riesgos Ocultos al Importar Casas Contenedor desde China</div>
+        <p>La cotizaci&oacute;n m&aacute;s barata no siempre es el costo m&aacute;s bajo &mdash; 7 formas en que la diferencia aparece despu&eacute;s de que ya pagaste.</p>
+      </a>
+      <a href="/blog/es/caso-auditoria-casas-contenedor" class="hub-card">
+        <div class="hub-card-tag">Caso Real</div>
+        <div class="hub-card-title">Comparamos 6 F&aacute;bricas para un Pedido de Casas Contenedor &mdash; Solo Una Aprob&oacute;</div>
+        <p>Una comparaci&oacute;n de f&aacute;bricas lado a lado para un comprador latinoamericano, y qu&eacute; diferenci&oacute; a la que recomendamos.</p>
+      </a>
     </div>
   </div>
 </section>
