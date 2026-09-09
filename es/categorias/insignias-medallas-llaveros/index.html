@@ -96,7 +96,10 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .product-dot{width:8px;height:8px;background:var(--coral);flex-shrink:0;margin-top:0.5rem}
 .product-item strong{display:block;font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:0.15rem}
 .product-item span{font-size:0.82rem;color:var(--muted);line-height:1.5}
-.spec-table{width:100%;border-collapse:collapse;font-size:0.88rem;margin:0 0 0.5rem}
+.spec-table{width:100%;min-width:640px;border-collapse:collapse;font-size:0.88rem;margin:0 0 0.5rem}
+.spec-table th:nth-child(1),.spec-table td:nth-child(1){width:110px}
+.spec-table th:nth-child(2),.spec-table td:nth-child(2){width:290px}
+.spec-table th:nth-child(3),.spec-table td:nth-child(3){width:240px}
 .spec-table th{background:var(--navy);color:white;padding:0.7rem 1rem;text-align:left;font-weight:500;font-size:0.78rem;letter-spacing:0.04em}
 .spec-table td{padding:0.8rem 1rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top;line-height:1.65;font-size:0.86rem}
 .spec-table tr:nth-child(even) td{background:var(--light)}
@@ -235,20 +238,21 @@ nav{position:relative}
   <div class="scope-inner">
     <div class="section-tag">Referencia para Compradores</div>
     <div class="section-title">Las especificaciones que realmente separan a las fábricas</div>
-    <p class="scope-intro">La mayoría de las cotizaciones de insignias, medallas y llaveros describen la pieza terminada en términos vagos — "metal," "bañado en oro," "tamaño estándar." La siguiente tabla es lo que los compradores deberían pedirle a un proveedor que confirme por escrito, contra una muestra física, antes de que un pedido masivo entre en producción.</p>
+    <p class="scope-intro">La mayoría de las cotizaciones de insignias, medallas y llaveros describen la pieza terminada en términos vagos — "metal," "bañado en oro," "tamaño estándar." La siguiente tabla convierte esa vaguedad en siete preguntas que puedes copiar y enviarle a cualquier proveedor: un fabricante real responde de inmediato con datos concretos; un intermediario duda o te da una respuesta vaga y tranquilizadora.</p>
 
     <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
     <table class="spec-table">
-      <tr><th>Especificación</th><th>Qué se Ofrece Comúnmente</th><th>Qué Confirmar por Escrito</th></tr>
-      <tr><td><strong>Metal base</strong></td><td>Aleación de zinc (la más común — fundida a presión para detalle nítido) &middot; Hierro/acero (económico, puede oxidarse si el plateado se desgasta) &middot; Latón/cobre (premium, relieve más definido)</td><td>Qué aleación se cotizó realmente — "metal" solo no es una especificación</td></tr>
-      <tr><td><strong>Plateado y color</strong></td><td>Oro &middot; Oro antiguo &middot; Plata &middot; Plata antigua &middot; Níquel &middot; Níquel negro &middot; Cobre &middot; Doble plateado (dos tonos)</td><td>El grosor del plateado en micras, y que coincida con tu muestra aprobada — no con una foto de stock</td></tr>
-      <tr><td><strong>Esmalte / textura</strong></td><td>Esmalte suave — color hundido bajo la línea del metal, ligeramente cóncavo, líneas divisorias visibles (el más común) &middot; Esmalte duro / cloisonn&eacute; — esmalte pulido a ras con el metal, acabado liso tipo vidrio (premium) &middot; Troquelado — sin esmalte, solo relieve de metal esculpido &middot; Cúpula de epoxi — recubrimiento de resina transparente para más brillo y protección contra rayones</td><td>Qué acabado se cotizó realmente — el esmalte suave sustituido por el esmalte duro cotizado es la degradación silenciosa más común</td></tr>
-      <tr><td><strong>Tamaños estándar</strong></td><td>Medallas: 50–70mm de diámetro, 2–3mm de grosor &middot; Pines e insignias: menos de 32mm (1.25") suelen usar sujeciones simples; piezas más grandes necesitan una sujeción más resistente</td><td>Milímetros exactos — no "tamaño estándar"</td></tr>
-      <tr><td><strong>Cinta (medallas)</strong></td><td>20–25mm compacta &middot; 30–32mm estándar &middot; 35–38mm tamaño ceremonia &middot; Grogrén (textura acanalada, mate, ideal para texto/logos simples) o sublimada (impresión a todo color, no se agrieta ni se despega)</td><td>El ancho en mm y el material — la calidad de la cinta es un recorte de costos común</td></tr>
-      <tr><td><strong>Sujeción (pines/insignias)</strong></td><td>Broche mariposa (ligero, el más común) &middot; Broche de caucho &middot; Magnética (sin perforar la tela) &middot; Alfiler de seguridad (para piezas más pesadas)</td><td>Si la sujeción realmente soporta el peso y grosor de tu diseño</td></tr>
-      <tr><td><strong>Cuerpo del llavero</strong></td><td>Aleación de zinc fundida &middot; Acrílico / cúpula de epoxi &middot; Caucho suave PVC (2D/3D) &middot; Combinación de cuero y metal</td><td>Qué material — "llavero de metal" puede significar cuatro cosas distintas</td></tr>
+      <tr><th>Especificación</th><th>Qué se Ofrece Comúnmente</th><th>Pregúntale Esto a tu Proveedor</th></tr>
+      <tr><td><strong>Metal base</strong></td><td>Aleación de zinc (la más común — fundida a presión para detalle nítido) &middot; Hierro/acero (económico, puede oxidarse si el plateado se desgasta) &middot; Latón/cobre (premium, relieve más definido)</td><td>"¿Qué aleación exacta están usando — zinc, hierro o latón?"</td></tr>
+      <tr><td><strong>Plateado y color</strong></td><td>Oro &middot; Oro antiguo &middot; Plata &middot; Plata antigua &middot; Níquel &middot; Níquel negro &middot; Cobre &middot; Doble plateado (dos tonos)</td><td>"¿Cuál es el grosor del plateado en micras, y pueden igualarlo a mi muestra aprobada?"</td></tr>
+      <tr><td><strong>Esmalte / textura</strong></td><td>Esmalte suave — color hundido bajo la línea del metal, ligeramente cóncavo, líneas divisorias visibles (el más común) &middot; Esmalte duro / cloisonn&eacute; — esmalte pulido a ras con el metal, acabado liso tipo vidrio (premium) &middot; Troquelado — sin esmalte, solo relieve de metal esculpido &middot; Cúpula de epoxi — recubrimiento de resina transparente para más brillo y protección contra rayones</td><td>"¿Esto es esmalte suave o esmalte duro? ¿Puedo ver una muestra de cada uno antes de confirmar?"</td></tr>
+      <tr><td><strong>Tamaños estándar</strong></td><td>Medallas: 50–70mm de diámetro, 2–3mm de grosor &middot; Pines e insignias: menos de 32mm (1.25") suelen usar sujeciones simples; piezas más grandes necesitan una sujeción más resistente</td><td>"¿Cuáles son los milímetros exactos — diámetro y grosor?"</td></tr>
+      <tr><td><strong>Cinta (medallas)</strong></td><td>20–25mm compacta &middot; 30–32mm estándar &middot; 35–38mm tamaño ceremonia &middot; Grogrén (textura acanalada, mate, ideal para texto/logos simples) o sublimada (impresión a todo color, no se agrieta ni se despega)</td><td>"¿Cuál es el ancho de la cinta en mm, y es grogrén o sublimada?"</td></tr>
+      <tr><td><strong>Sujeción (pines/insignias)</strong></td><td>Broche mariposa (ligero, el más común) &middot; Broche de caucho &middot; Magnética (sin perforar la tela) &middot; Alfiler de seguridad (para piezas más pesadas)</td><td>"¿Esta sujeción soportará el peso de mi diseño sin doblarse?"</td></tr>
+      <tr><td><strong>Cuerpo del llavero</strong></td><td>Aleación de zinc fundida &middot; Acrílico / cúpula de epoxi &middot; Caucho suave PVC (2D/3D) &middot; Combinación de cuero y metal</td><td>"¿De qué material exacto está hecho el cuerpo del llavero?"</td></tr>
     </table>
     </div>
+    <p style="font-size:0.82rem;color:var(--muted);margin-top:0.75rem;line-height:1.6">¿No sabes cómo interpretar las respuestas? Envíanos la respuesta del proveedor — te decimos si es válida, antes de que pagues nada.</p>
 
     <div class="fact-row">
       <div class="fact-item"><div class="fact-dot"></div>MOQ típico: 50–100 piezas por diseño</div>

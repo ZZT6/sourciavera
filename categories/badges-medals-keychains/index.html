@@ -96,7 +96,10 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .product-dot{width:8px;height:8px;background:var(--coral);flex-shrink:0;margin-top:0.5rem}
 .product-item strong{display:block;font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:0.15rem}
 .product-item span{font-size:0.82rem;color:var(--muted);line-height:1.5}
-.spec-table{width:100%;border-collapse:collapse;font-size:0.88rem;margin:0 0 0.5rem}
+.spec-table{width:100%;min-width:640px;border-collapse:collapse;font-size:0.88rem;margin:0 0 0.5rem}
+.spec-table th:nth-child(1),.spec-table td:nth-child(1){width:110px}
+.spec-table th:nth-child(2),.spec-table td:nth-child(2){width:290px}
+.spec-table th:nth-child(3),.spec-table td:nth-child(3){width:240px}
 .spec-table th{background:var(--navy);color:white;padding:0.7rem 1rem;text-align:left;font-weight:500;font-size:0.78rem;letter-spacing:0.04em}
 .spec-table td{padding:0.8rem 1rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top;line-height:1.65;font-size:0.86rem}
 .spec-table tr:nth-child(even) td{background:var(--light)}
@@ -236,20 +239,21 @@ nav{position:relative}
   <div class="scope-inner">
     <div class="section-tag">Buyer's Reference</div>
     <div class="section-title">The specs that actually separate factories</div>
-    <p class="scope-intro">Most badge, medal, and keychain quotes describe the finished piece in vague terms — "metal," "gold plated," "standard size." The table below is what buyers should actually ask a supplier to confirm in writing, against a physical sample, before a bulk order goes into production.</p>
+    <p class="scope-intro">Most badge, medal, and keychain quotes describe the finished piece in vague terms — "metal," "gold plated," "standard size." The table below turns that vagueness into seven questions you can copy and send to any supplier: a real manufacturer answers immediately with specifics; a reseller hesitates or gives you a vague, reassuring non-answer.</p>
 
     <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
     <table class="spec-table">
-      <tr><th>Spec</th><th>What's Commonly Offered</th><th>What to Confirm in Writing</th></tr>
-      <tr><td><strong>Base metal</strong></td><td>Zinc alloy (most common — die-cast for crisp detail) &middot; Iron/steel (budget, can rust if plating wears) &middot; Brass/copper (premium, sharper relief)</td><td>Which alloy is actually quoted — "metal" alone isn't a spec</td></tr>
-      <tr><td><strong>Plating &amp; color</strong></td><td>Gold &middot; Antique gold &middot; Silver &middot; Antique silver &middot; Nickel &middot; Black nickel &middot; Copper &middot; Dual-plating (two-tone)</td><td>Plating thickness in microns, and that it matches your approved sample — not a stock photo</td></tr>
-      <tr><td><strong>Enamel / texture</strong></td><td>Soft enamel — color recessed below the metal line, slightly concave, visible dividing lines (most common) &middot; Hard enamel / cloisonn&eacute; — enamel polished flush with the metal, smooth glass-like finish (premium) &middot; Die-struck — no enamel, sculpted metal relief only &middot; Epoxy dome — clear resin coating for extra gloss and scratch protection</td><td>Which finish was actually quoted — soft enamel swapped in for quoted hard enamel is the most common silent downgrade</td></tr>
-      <tr><td><strong>Standard sizes</strong></td><td>Medals: 50–70mm diameter, 2–3mm thick &middot; Pins &amp; badges: under 32mm (1.25") typically use simple backings; larger pieces need a stronger back</td><td>Exact millimeters — not "standard size"</td></tr>
-      <tr><td><strong>Ribbon (medals)</strong></td><td>20–25mm compact &middot; 30–32mm standard &middot; 35–38mm ceremony-size &middot; Grosgrain (ribbed, matte, best for simple text/logos) or sublimated (full-color print, won't crack or peel)</td><td>Width in mm and material — ribbon quality is a common corner cut</td></tr>
-      <tr><td><strong>Backing (pins/badges)</strong></td><td>Butterfly clutch (lightweight, most common) &middot; Rubber clutch &middot; Magnetic (no fabric puncture) &middot; Safety pin (for heavier pieces)</td><td>Whether the backing can actually support your design's weight and thickness</td></tr>
-      <tr><td><strong>Keychain body</strong></td><td>Zinc alloy die-cast &middot; Acrylic / epoxy dome &middot; PVC soft rubber (2D/3D) &middot; Leather-and-metal combination</td><td>Which material — "metal keychain" can mean four different things</td></tr>
+      <tr><th>Spec</th><th>What's Commonly Offered</th><th>Ask Your Supplier This</th></tr>
+      <tr><td><strong>Base metal</strong></td><td>Zinc alloy (most common — die-cast for crisp detail) &middot; Iron/steel (budget, can rust if plating wears) &middot; Brass/copper (premium, sharper relief)</td><td>"What exact alloy are you using — zinc, iron, or brass?"</td></tr>
+      <tr><td><strong>Plating &amp; color</strong></td><td>Gold &middot; Antique gold &middot; Silver &middot; Antique silver &middot; Nickel &middot; Black nickel &middot; Copper &middot; Dual-plating (two-tone)</td><td>"What's the plating thickness in microns, and can you match it to my approved sample?"</td></tr>
+      <tr><td><strong>Enamel / texture</strong></td><td>Soft enamel — color recessed below the metal line, slightly concave, visible dividing lines (most common) &middot; Hard enamel / cloisonn&eacute; — enamel polished flush with the metal, smooth glass-like finish (premium) &middot; Die-struck — no enamel, sculpted metal relief only &middot; Epoxy dome — clear resin coating for extra gloss and scratch protection</td><td>"Is this soft enamel or hard enamel — can I see a sample of each before I confirm?"</td></tr>
+      <tr><td><strong>Standard sizes</strong></td><td>Medals: 50–70mm diameter, 2–3mm thick &middot; Pins &amp; badges: under 32mm (1.25") typically use simple backings; larger pieces need a stronger back</td><td>"What are the exact millimeters — diameter and thickness?"</td></tr>
+      <tr><td><strong>Ribbon (medals)</strong></td><td>20–25mm compact &middot; 30–32mm standard &middot; 35–38mm ceremony-size &middot; Grosgrain (ribbed, matte, best for simple text/logos) or sublimated (full-color print, won't crack or peel)</td><td>"What's the ribbon width in mm, and is it grosgrain or sublimated?"</td></tr>
+      <tr><td><strong>Backing (pins/badges)</strong></td><td>Butterfly clutch (lightweight, most common) &middot; Rubber clutch &middot; Magnetic (no fabric puncture) &middot; Safety pin (for heavier pieces)</td><td>"Will this backing hold the weight of my design without bending?"</td></tr>
+      <tr><td><strong>Keychain body</strong></td><td>Zinc alloy die-cast &middot; Acrylic / epoxy dome &middot; PVC soft rubber (2D/3D) &middot; Leather-and-metal combination</td><td>"What exact material is the keychain body made of?"</td></tr>
     </table>
     </div>
+    <p style="font-size:0.82rem;color:var(--muted);margin-top:0.75rem;line-height:1.6">Not sure how to read the answers? Send us the supplier's response — we'll tell you if it holds up, before you pay anything.</p>
 
     <div class="fact-row">
       <div class="fact-item"><div class="fact-dot"></div>Typical MOQ: 50–100 pieces per design</div>
