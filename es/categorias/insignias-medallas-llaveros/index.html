@@ -96,6 +96,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .product-dot{width:8px;height:8px;background:var(--coral);flex-shrink:0;margin-top:0.5rem}
 .product-item strong{display:block;font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:0.15rem}
 .product-item span{font-size:0.82rem;color:var(--muted);line-height:1.5}
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1rem}
+.hub-card{display:block;background:var(--white);border:1.5px solid var(--border);padding:1.4rem;text-decoration:none}
+.hub-card:hover{border-color:var(--coral)}
+.hub-card-tag{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.hub-card-title{font-size:0.92rem;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:0.5rem}
+.hub-card p{font-size:0.82rem;color:var(--muted);line-height:1.6;margin:0}
 .cta-section{padding:5rem 3rem;background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .cta-left h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:1rem;line-height:1.25}
 .cta-left p{color:var(--muted);font-size:0.9rem;line-height:1.8;margin-bottom:1.5rem}
@@ -120,7 +126,7 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .breadcrumb{padding:0.6rem 1.5rem}
 .hero{padding:3rem 1.5rem}
 .scope,.cta-section{padding:3rem 1.5rem}
-.product-grid,.cta-section{grid-template-columns:1fr}
+.product-grid,.cta-section,.hub-grid{grid-template-columns:1fr}
 .cta-banner{padding:3rem 1.5rem}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
@@ -214,6 +220,20 @@ nav{position:relative}
         <div class="product-dot"></div>
         <div><strong>Otros Artículos Promocionales de Aleación de Zinc y Fundición</strong><span>Formas personalizadas y artículos novedosos — contáctanos para confirmar el alcance</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="scope" style="background:var(--white)">
+  <div class="scope-inner">
+    <div class="section-tag">Más Información</div>
+    <div class="section-title">Ordenar medallas personalizadas desde China</div>
+    <div class="hub-grid">
+      <a href="/blog/es/como-verificar-fabrica-medallas-personalizadas-china" class="hub-card">
+        <div class="hub-card-tag">Verificación de Fábrica</div>
+        <div class="hub-card-title">Cómo Verificar una Fábrica de Medallas Personalizadas en China Antes de un Pedido al Por Mayor</div>
+        <p>Qué separa las promesas de un fabricante real de medallas de las de un intermediario, y por qué un pedido tardío o incorrecto es especialmente difícil de recuperar.</p>
+      </a>
     </div>
   </div>
 </section>
