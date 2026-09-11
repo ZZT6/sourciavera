@@ -200,11 +200,13 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-cards-single{grid-template-columns:1fr}
 .who-card-wide{text-align:center}
 .who-card-wide .who-icon{margin:0 auto 1rem}
-.who-testimonial{max-width:640px;margin:0 auto 2.5rem;text-align:center;padding-bottom:2rem;border-bottom:1px solid var(--border)}
-.who-testimonial-photo{width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block}
-.who-testimonial-text{color:var(--navy);font-size:0.95rem;font-style:italic;margin:0 auto 1rem}
-.who-testimonial-name{font-weight:700;margin:0;color:var(--navy)}
-.who-testimonial-role{color:var(--muted);font-size:0.85rem;margin:0.25rem 0 0}
+.testimonials-wrap{max-width:900px;margin:0 auto 3rem}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,340px));gap:2rem;justify-content:center}
+.testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-align:center}
+.testimonial-photo{width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block}
+.testimonial-text{color:var(--navy);font-size:0.92rem;font-style:italic;margin:0 auto 1rem}
+.testimonial-name{font-weight:700;margin:0;color:var(--navy)}
+.testimonial-role{color:var(--muted);font-size:0.85rem;margin:0.25rem 0 0}
 .who-founder-text{font-size:1.05rem!important}
 .who-founder-name{color:var(--muted);font-size:0.82rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem;font-style:normal}
 .how{background:var(--light);padding:5rem 3rem}
@@ -521,11 +523,16 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   </div>
 </section>
 
-<div class="who-testimonial">
-  <img src="/images/testimonial-carlos-mendoza.webp" alt="Carlos Mendoza" class="who-testimonial-photo" width="64" height="64" loading="lazy">
-  <p class="who-testimonial-text" data-en="“Hi! I want to thank you for all the support with the factory audit. Honestly, I had doubts since it was a lower-priced supplier, but with the live videos and photos you sent me on WhatsApp, I could clearly see the quality of the steel profile and the finishes on the folding houses.<br><br>Your response was super fast from the very first contact, and the service was top-notch. You gave us the confidence we needed to close the purchase from Mexico. We'll keep working together on the next container!”" data-es="“¡Hola! Quiero agradecerte por todo el apoyo con la auditoría de la fábrica. La verdad tenía dudas por ser un proveedor con precios más bajos, pero con los videos e imágenes en vivo que me mandaste por WhatsApp pude ver claramente la calidad del perfil de acero y los acabados de las casas plegables.<br><br>Tu respuesta fue superrápida desde el primer contacto y la atención fue de primera. Nos diste la seguridad que necesitábamos para cerrar la compra desde México. ¡Seguiremos trabajando juntos en el próximo contenedor!”">"Hi! I want to thank you for all the support with the factory audit. Honestly, I had doubts since it was a lower-priced supplier, but with the live videos and photos you sent me on WhatsApp, I could clearly see the quality of the steel profile and the finishes on the folding houses.<br><br>Your response was super fast from the very first contact, and the service was top-notch. You gave us the confidence we needed to close the purchase from Mexico. We'll keep working together on the next container!"</p>
-  <p class="who-testimonial-name">Carlos Mendoza 🇲🇽</p>
-  <p class="who-testimonial-role" data-en="Expandable Container Home Buyer" data-es="Comprador de Casa Contenedora Plegable">Expandable Container Home Buyer</p>
+<div class="testimonials-wrap">
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <img src="/images/testimonial-carlos-mendoza.webp" alt="Carlos Mendoza" class="testimonial-photo" width="64" height="64" loading="lazy">
+      <p class="testimonial-text" data-en="“Hi! I want to thank you for all the support with the factory audit. Honestly, I had doubts since it was a lower-priced supplier, but with the live videos and photos you sent me on WhatsApp, I could clearly see the quality of the steel profile and the finishes on the folding houses.<br><br>Your response was super fast from the very first contact, and the service was top-notch. You gave us the confidence we needed to close the purchase from Mexico. We'll keep working together on the next container!”" data-es="“¡Hola! Quiero agradecerte por todo el apoyo con la auditoría de la fábrica. La verdad tenía dudas por ser un proveedor con precios más bajos, pero con los videos e imágenes en vivo que me mandaste por WhatsApp pude ver claramente la calidad del perfil de acero y los acabados de las casas plegables.<br><br>Tu respuesta fue superrápida desde el primer contacto y la atención fue de primera. Nos diste la seguridad que necesitábamos para cerrar la compra desde México. ¡Seguiremos trabajando juntos en el próximo contenedor!”">"Hi! I want to thank you for all the support with the factory audit. Honestly, I had doubts since it was a lower-priced supplier, but with the live videos and photos you sent me on WhatsApp, I could clearly see the quality of the steel profile and the finishes on the folding houses.<br><br>Your response was super fast from the very first contact, and the service was top-notch. You gave us the confidence we needed to close the purchase from Mexico. We'll keep working together on the next container!"</p>
+      <p class="testimonial-name">Carlos Mendoza 🇲🇽</p>
+      <p class="testimonial-role" data-en="Expandable Container Home Buyer" data-es="Comprador de Casa Contenedora Plegable">Expandable Container Home Buyer</p>
+    </div>
+    <!-- Add more .testimonial-card blocks here as new client testimonials come in -->
+  </div>
 </div>
 
 <section class="faq" id="faq-shows">
