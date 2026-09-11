@@ -106,6 +106,14 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .fact-row{display:flex;flex-wrap:wrap;gap:0.6rem 2rem;margin-top:1.5rem}
 .fact-item{display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--muted)}
 .fact-dot{width:6px;height:6px;background:var(--coral);flex-shrink:0;border-radius:50%}
+.feature-row{display:flex;gap:2.5rem;align-items:center;padding:2rem 0;border-bottom:1px solid var(--border)}
+.feature-row:last-child{border-bottom:none}
+.feature-row img{width:260px;height:260px;object-fit:cover;flex-shrink:0;border:1.5px solid var(--border)}
+.feature-row-body{flex:1}
+.feature-row-tag{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.6rem}
+.feature-row-title{font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem;line-height:1.3}
+.feature-row-body p{font-size:0.92rem;color:var(--muted);line-height:1.8;margin-bottom:0.75rem}
+.feature-row-body p:last-child{margin-bottom:0}
 .hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1rem}
 .hub-card{display:block;background:var(--white);border:1.5px solid var(--border);padding:1.4rem;text-decoration:none}
 .hub-card:hover{border-color:var(--coral)}
@@ -140,6 +148,8 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .cta-banner{padding:3rem 1.5rem}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
+.feature-row{flex-direction:column;gap:1.25rem;align-items:stretch}
+.feature-row img{width:100%;height:auto;max-height:320px}
 }
 nav{position:relative}
 .nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
@@ -185,6 +195,43 @@ nav{position:relative}
     <h1>Badge and medal suppliers <span>verified in person</span><br>— mold ownership, plating, and finish.</h1>
     <p>Enamel pins, medals, and keychains are easy to quote low and hard to verify from a photo. A hand-finished sample can look perfect while the bulk run ships in a different alloy or a thinner plating layer. We visit the factory, confirm who actually owns the mold, and check the finish against your approved sample before you commit to a full order.</p>
     <a href="/?service=badges#contact" class="btn-main">Consult Us Now →</a>
+  </div>
+</section>
+
+<section class="scope" style="background:var(--white)">
+  <div class="scope-inner">
+    <div class="section-tag">Featured Products</div>
+    <div class="section-title">What buyers in this category actually order</div>
+
+    <div class="feature-row">
+      <img src="/images/badges-custom-award-medal.webp" alt="Custom gold enamel award medal with ribbon">
+      <div class="feature-row-body">
+        <div class="feature-row-tag">Award Medals</div>
+        <div class="feature-row-title">Custom Sports &amp; Award Medals</div>
+        <p>A zinc-alloy die-cast medal, dual-tone gold plating, enamel infill, and a woven or sublimated neck ribbon — this is the highest-volume item in the whole category. It's also the easiest to quietly downgrade on a reorder: a thinner plating pass, a cheaper base alloy, or a printed ribbon swapped in for a woven one, none of which shows up until the piece has been handled a few times.</p>
+        <p>Standard turnaround is a digital proof in 24–48 hours, then production once the design is locked.</p>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <img src="/images/badges-nfc-metal-card.webp" alt="Gold metal NFC membership card, engraved finish">
+      <div class="feature-row-body">
+        <div class="feature-row-tag">NFC / Smart Tech</div>
+        <div class="feature-row-title">NFC-Enabled Coins &amp; Cards</div>
+        <p>A newer category pairing a die-struck or etched metal coin or card with an embedded NFC chip — tap a phone to it and it opens a digital profile, membership page, or loyalty card, no app required. It's popular for VIP/membership programs and corporate gifting because the card itself never needs to be reprinted when the linked page changes.</p>
+        <p>Verification here covers more than the metal finish — the chip's read range and write-lock need to be tested against the approved sample, not just assumed to match it.</p>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <img src="/images/badges-enamel-pin-techniques.webp" alt="Comparison of enamel and printing techniques for custom pins">
+      <div class="feature-row-body">
+        <div class="feature-row-tag">Enamel &amp; Finish</div>
+        <div class="feature-row-title">Hard Enamel, Soft Enamel &amp; Printed Pins</div>
+        <p>The same pin can be finished five different ways, and each one changes the price and the feel of the piece: hard enamel polished flush with the metal for a glass-like finish, baked enamel for bright saturated colors, soft enamel with a recessed textured feel, full-color offset printing for photo-level detail, and an epoxy dome for a glossy, protective top coat.</p>
+        <p>Hard enamel is the finish most often quoted and then quietly swapped for the cheaper soft-enamel process once a bulk order goes into production — see the <a href="#buyer-reference" style="color:var(--coral)">buyer's reference below</a> for exactly what to ask.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -235,7 +282,7 @@ nav{position:relative}
   </div>
 </section>
 
-<section class="scope" style="background:var(--white)">
+<section class="scope" style="background:var(--white)" id="buyer-reference">
   <div class="scope-inner">
     <div class="section-tag">Buyer's Reference</div>
     <div class="section-title">The specs that actually separate factories</div>
