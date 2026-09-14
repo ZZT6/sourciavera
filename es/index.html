@@ -125,6 +125,8 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
 .btn-main{background:var(--coral);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer}
 .btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;background:transparent}
+.btn-wa{background:#25D366;color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-wa:hover{opacity:0.9}
 .hero-left{display:flex;flex-direction:column;justify-content:flex-start}
 .hero-map{display:flex;align-items:flex-start}
 .hero-map img{width:100%;height:auto;display:block;border-radius:12px}
@@ -361,7 +363,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
     <p>Envíanos la ficha de la fábrica que encontraste en 1688 o Alibaba: la verificamos como tercero independiente, en el sitio, cámara en mano. Así logras tus compras al por mayor a proveedores chinos verificados — la forma segura de hacer tu compra mayorista proveedores de China, tanto para ventas al por mayor como compras al por mayor recurrentes.</p>
     <div class="hero-btns">
       <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Consulta Ahora</button>
-      <button class="btn-outline" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">Ver servicios</button>
+      <a class="btn-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener">Ver servicios</a>
     </div>
   </div>
   <div class="hero-map reveal-water"><img src="/images/latam-china-shipping-route-map.webp" alt="Mapa de ruta de envío desde Guangzhou, China hasta puertos de Latinoamérica incluyendo Lázaro Cárdenas, Colón y Callao" loading="eager"></div>
