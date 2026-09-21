@@ -7,6 +7,16 @@
       "has": [{ "type": "host", "value": "www.sourciavera.com" }],
       "destination": "https://sourciavera.com/$1",
       "permanent": true
+    },
+    {
+      "source": "/how-to-verify-alibaba-supplier",
+      "destination": "/blog/how-to-verify-alibaba-supplier",
+      "permanent": true
+    },
+    {
+      "source": "/china-factory-inspection-cost",
+      "destination": "/blog/china-factory-inspection-cost",
+      "permanent": true
     }
   ],
   "headers": [
