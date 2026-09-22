@@ -166,6 +166,16 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .step-text span{color:var(--muted);font-size:0.82rem;display:block}
 .service-highlight{background:var(--light);border-left:3px solid var(--coral);padding:0.75rem 1rem;font-size:0.85rem;color:var(--navy);font-style:italic;margin-top:0.5rem}
 .service-card:nth-child(2) .service-highlight{border-color:var(--teal)}
+.paths{background:var(--light);padding:5rem 3rem}
+.paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.path-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column}
+.path-icon{font-size:2.5rem;margin-bottom:1rem}
+.path-tag{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.path-card h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.path-card p{color:var(--muted);font-size:0.9rem;line-height:1.8;flex-grow:1}
+.path-note{font-size:0.78rem;color:var(--teal);font-style:italic;margin-top:1rem;line-height:1.6}
+.path-link{display:inline-block;margin-top:1.5rem;color:var(--coral);font-weight:600;text-decoration:none;font-size:0.88rem}
+.path-link:hover{text-decoration:underline}
 .who-section{background:var(--light);padding:5rem 3rem}
 .who-cards{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:3rem 0 2.5rem}
 .who-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
@@ -313,8 +323,8 @@ nav.nav-open .nav-links a:last-child{border-bottom:none}
 .nav-faq-link{display:none}
 .hero-card{display:none}
 .stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
-.services,.who-section,.why,.how,.contact{padding:3rem 1.5rem}
-.services-grid,.why-grid,.who-cards{grid-template-columns:1fr}
+.services,.who-section,.why,.how,.contact,.paths{padding:3rem 1.5rem}
+.services-grid,.why-grid,.who-cards,.paths-grid{grid-template-columns:1fr}
 .how-flow{grid-template-columns:1fr 1fr}
 .how-step{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem}
 .contact{grid-template-columns:1fr;gap:2rem}
@@ -375,6 +385,28 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="stat"><span class="stat-num">ES/EN</span><span class="stat-label">Inglés y Español</span></div>
   <div class="stat"><span class="stat-num">0%</span><span class="stat-label">Comisión de fábrica</span></div>
 </div>
+
+<section class="paths" id="paths">
+  <div class="section-tag">Dos Formas de Trabajar con Nosotros</div>
+  <h2 class="section-title">¿Ya encontraste una fábrica? ¿O necesitas que te abramos la puerta?</h2>
+  <div class="paths-grid">
+    <div class="path-card">
+      <div class="path-icon">🔍</div>
+      <div class="path-tag">Camino 1 — Verificación Independiente</div>
+      <h3>Tú encontraste la fábrica. Nosotros confirmamos que es real.</h3>
+      <p>Ya tienes una ficha de Alibaba o 1688. Envíanosla y la verificamos en persona — como tercero independiente, cámara en mano, sin comisión de la fábrica. Recibes la evidencia antes de enviar el depósito.</p>
+      <a href="#servicios" class="path-link">Ver servicios de verificación →</a>
+    </div>
+    <div class="path-card">
+      <div class="path-icon">🤝</div>
+      <div class="path-tag">Camino 2 — Socio de Compras</div>
+      <h3>¿Aún no tienes fábrica? Nos convertimos en tu equipo de cadena de suministro.</h3>
+      <p>Más allá de una inspección puntual, ponemos nuestra propia red en Guangzhou a tu servicio como socio permanente — conectándote con fábricas en las que ya confiamos, almacenando tu mercancía, gestionando el cumplimiento de pedidos hasta el dropshipping de unidad por unidad, y manteniendo el control de calidad en cada etapa. Un solo socio responsable para toda la cadena, no un proveedor distinto para cada paso.</p>
+      <p class="path-note">Este camino es selectivo — pensado para compradores listos para crecer en una relación a largo plazo, no pedidos aislados.</p>
+      <a href="?service=Socio%20de%20Compras%20(largo%20plazo)#contacto" class="path-link">Hablemos de ser socios →</a>
+    </div>
+  </div>
+</section>
 
 <section class="services" id="servicios">
   <div class="section-tag">Nuestros Servicios</div>
@@ -698,6 +730,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
           <option value="Verificación de fábrica">Verificación de Fábrica</option>
           <option value="Negociación y compra">Negociación y Compra</option>
           <option value="Ambos servicios">Ambos servicios</option>
+          <option value="Socio de Compras (largo plazo)">Socio de Compras (largo plazo)</option>
           <option value="construccion">Materiales de Construcción</option>
           <option value="autopartes">Autopartes &amp; NEV</option>
           <option value="quimicos">Químicos Industriales</option>

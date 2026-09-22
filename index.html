@@ -181,6 +181,16 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .why-icon{font-size:1.6rem;margin-bottom:1rem}
 .why-card h3{font-size:1rem;font-weight:500;color:white;margin-bottom:0.3rem}
 .why-card p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7}
+.paths{background:var(--light);padding:5rem 3rem}
+.paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.path-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column}
+.path-icon{font-size:2.5rem;margin-bottom:1rem}
+.path-tag{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.path-card h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.path-card p{color:var(--muted);font-size:0.9rem;line-height:1.8;flex-grow:1}
+.path-note{font-size:0.78rem;color:var(--teal);font-style:italic;margin-top:1rem;line-height:1.6}
+.path-link{display:inline-block;margin-top:1.5rem;color:var(--coral);font-weight:600;text-decoration:none;font-size:0.88rem}
+.path-link:hover{text-decoration:underline}
 .who-section{background:var(--light);padding:5rem 3rem}
 .who-cards{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:3rem 0 2.5rem}
 .who-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
@@ -284,8 +294,8 @@ nav.nav-open .nav-links a:last-child{border-bottom:none}
 .nav-faq-link{display:none}
 .hero-card{display:none}
 .stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
-.services,.who-section,.why,.how,.contact{padding:3rem 1.5rem}
-.services-grid,.why-grid,.who-cards{grid-template-columns:1fr}
+.services,.who-section,.why,.how,.contact,.paths{padding:3rem 1.5rem}
+.services-grid,.why-grid,.who-cards,.paths-grid{grid-template-columns:1fr}
 .how-flow{grid-template-columns:1fr 1fr}
 .how-step{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem}
 .contact{grid-template-columns:1fr;gap:2rem}
@@ -380,6 +390,28 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
   <div class="stat"><span class="stat-num">EN/ES</span><span class="stat-label" data-en="English & Spanish" data-es="Inglés y Español">English & Spanish</span></div>
   <div class="stat"><span class="stat-num">0%</span><span class="stat-label" data-en="Factory commission" data-es="Comisión de fábrica">Factory commission</span></div>
 </div>
+
+<section class="paths" id="paths">
+  <div class="section-tag" data-en="Two Ways to Work With Us" data-es="Dos Formas de Trabajar con Nosotros">Two Ways to Work With Us</div>
+  <h2 class="section-title" data-en="Already found a factory? Or need us to open the door?" data-es="¿Ya encontraste una fábrica? ¿O necesitas que te abramos la puerta?">Already found a factory? Or need us to open the door?</h2>
+  <div class="paths-grid">
+    <div class="path-card">
+      <div class="path-icon">🔍</div>
+      <div class="path-tag" data-en="Path 1 — Independent Verification" data-es="Camino 1 — Verificación Independiente">Path 1 — Independent Verification</div>
+      <h3 data-en="You found the factory. We confirm it's real." data-es="Tú encontraste la fábrica. Nosotros confirmamos que es real.">You found the factory. We confirm it's real.</h3>
+      <p data-en="You already have a listing from Alibaba or 1688. Send it to us and we verify it in person — as an independent third party, camera in hand, zero commission from the factory. You get the evidence before you ever send a deposit." data-es="Ya tienes una ficha de Alibaba o 1688. Envíanosla y la verificamos en persona — como tercero independiente, cámara en mano, sin comisión de la fábrica. Recibes la evidencia antes de enviar el depósito.">You already have a listing from Alibaba or 1688. Send it to us and we verify it in person — as an independent third party, camera in hand, zero commission from the factory. You get the evidence before you ever send a deposit.</p>
+      <a href="#services" class="path-link" data-en="See verification services →" data-es="Ver servicios de verificación →">See verification services →</a>
+    </div>
+    <div class="path-card">
+      <div class="path-icon">🤝</div>
+      <div class="path-tag" data-en="Path 2 — Procurement Partner" data-es="Camino 2 — Socio de Compras">Path 2 — Procurement Partner</div>
+      <h3 data-en="Don't have a factory yet? We become your supply chain team." data-es="¿Aún no tienes fábrica? Nos convertimos en tu equipo de cadena de suministro.">Don't have a factory yet? We become your supply chain team.</h3>
+      <p data-en="Beyond a one-time inspection, we put our own network in Guangzhou to work for you as an ongoing partner — connecting you with factories we already trust, warehousing your goods, fulfilling orders down to single-unit drop-shipping, and keeping quality control in place at every stage. One accountable partner for the whole chain, not a new vendor for every step." data-es="Más allá de una inspección puntual, ponemos nuestra propia red en Guangzhou a tu servicio como socio permanente — conectándote con fábricas en las que ya confiamos, almacenando tu mercancía, gestionando el cumplimiento de pedidos hasta el dropshipping de unidad por unidad, y manteniendo el control de calidad en cada etapa. Un solo socio responsable para toda la cadena, no un proveedor distinto para cada paso.">Beyond a one-time inspection, we put our own network in Guangzhou to work for you as an ongoing partner — connecting you with factories we already trust, warehousing your goods, fulfilling orders down to single-unit drop-shipping, and keeping quality control in place at every stage. One accountable partner for the whole chain, not a new vendor for every step.</p>
+      <p class="path-note" data-en="This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders." data-es="Este camino es selectivo — pensado para compradores listos para crecer en una relación a largo plazo, no pedidos aislados.">This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders.</p>
+      <a href="?service=Procurement%20Partner%20(long-term)#contact" class="path-link" data-en="Talk to us about partnering →" data-es="Hablemos de ser socios →">Talk to us about partnering →</a>
+    </div>
+  </div>
+</section>
 
 <section class="services" id="services">
   <div class="section-tag" data-en="Our Services" data-es="Nuestros Servicios">Our Services</div>
@@ -780,6 +812,7 @@ footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
           <option data-en="Factory Verification" data-es="Verificación de fábrica">Factory Verification</option>
           <option data-en="Negotiation & Procurement" data-es="Negociación y compra">Negotiation & Procurement</option>
           <option data-en="Both services" data-es="Ambos servicios">Both services</option>
+          <option data-en="Procurement Partner (long-term)" data-es="Socio de Compras (largo plazo)">Procurement Partner (long-term)</option>
           <option value="construction" data-en="Construction Materials" data-es="Materiales de Construcción">Construction Materials</option>
           <option value="auto-parts" data-en="Auto Parts &amp; NEV" data-es="Autopartes &amp; NEV">Auto Parts &amp; NEV</option>
           <option value="chemicals" data-en="Industrial Chemicals" data-es="Químicos Industriales">Industrial Chemicals</option>
