@@ -45,6 +45,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .blog-header-img img{width:100%;height:auto;display:block;border:1.5px solid rgba(255,255,255,0.15)}
 .blog-main{max-width:2200px;padding:3rem}
 .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2rem;margin-top:2rem}
+.pagination{display:flex;justify-content:center;align-items:center;gap:0.5rem;margin:2.5rem 0}
+.pagination button{background:var(--white);border:1px solid var(--border);color:var(--navy);width:2.4rem;height:2.4rem;font-size:0.9rem;font-weight:500;cursor:pointer;border-radius:4px}
+.pagination button:hover:not(:disabled):not(.active){border-color:var(--coral);color:var(--coral)}
+.pagination button.active{background:var(--coral);border-color:var(--coral);color:white}
+.pagination button:disabled{opacity:0.35;cursor:default}
+.pagination .pg-ellipsis{color:var(--muted);padding:0 0.25rem}
 .card{background:white;border:1px solid var(--border);display:flex;flex-direction:column;transition:box-shadow 0.2s}
 .card-img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
 .card:hover{box-shadow:0 4px 20px rgba(0,0,0,0.08)}
@@ -150,7 +156,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <div class="featured-grid">
       <div class="card featured-card"><img class="card-img" src="/images/factory-line-walkthrough-a.webp" alt="8 Documents You Should Always Request From a Chinese Manufacturer" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Sep 4, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Aug 6, 2026</span></div>
           <h2>8 Documents You Should Always Request From a Chinese Manufacturer</h2>
           <p>Some documents any trading company can produce in five minutes. Others require someone physically at the factory to confirm they're real. The full list, in order.</p>
           <a href="/blog/documents-to-request-chinese-manufacturer" class="card-link">Read Article &rarr;</a>
@@ -158,7 +164,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       </div>
       <div class="card featured-card priority"><div class="featured-badge">Most Popular</div><img class="card-img" src="/images/factory-floor-verification.webp" alt="China Factory Verification Cost: Why Day Rate Alone Won't Tell You the Real Price" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Supplier Verification</span><span class="card-date">Aug 29, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Supplier Verification</span><span class="card-date">Jul 14, 2026</span></div>
           <h2>China Factory Verification Cost: Why Day Rate Alone Won't Tell You the Real Price</h2>
           <p>What actually determines the cost of a factory verification in China: visit scope, location, evidence requested, and when you need a second check. From $349.</p>
           <a href="/blog/china-factory-verification-cost" class="card-link">Read Article &rarr;</a>
@@ -166,7 +172,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       </div>
       <div class="card featured-card"><img class="card-img" src="/images/factory-quality-inspection-counterfeit-check.webp" alt="Is Alibaba Trustworthy? An Honest Answer for First-Time Buyers" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Buyer's Guide</span><span class="card-date">Aug 15, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Buyer's Guide</span><span class="card-date">Jun 21, 2026</span></div>
           <h2>Is Alibaba Trustworthy? An Honest Answer for First-Time Buyers</h2>
           <p>Is Alibaba safe for international buyers? An honest breakdown of what the platform protects, what it doesn't cover, and where the real risk actually lives.</p>
           <a href="/blog/is-alibaba-trustworthy" class="card-link">Read Article &rarr;</a>
@@ -174,7 +180,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       </div>
     </div>
     <h2 class="section-title">Latest Articles</h2>
-    <div class="blog-grid">
+    <div class="blog-grid" id="paginated-grid">
 
       <div class="card"><img class="card-img" src="/images/auto-parts-wheel-rims-warehouse.webp" alt="Mexican Auto Parts Terminology: A Complete Guide for International Buyers" loading="lazy">
         <div class="card-body">
@@ -187,7 +193,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
       <div class="card"><img class="card-img" src="/images/blog-factory-audit-discussion.webp" alt="Choosing a Manufacturer in China: The Due Diligence Checklist Most Buyers Skip" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Sep 19, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Sep 20, 2026</span></div>
           <h2>Choosing a Manufacturer in China: The Due Diligence Checklist Most Buyers Skip</h2>
           <p>Price, samples, and a good video call tell you a factory can make your product — not whether it'll still be reliable, solvent, and compliant a year in.</p>
           <a href="/blog/manufacturer-due-diligence-checklist-china" class="card-link">Read Article &rarr;</a>
@@ -196,7 +202,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
       <div class="card"><img class="card-img" src="/images/carbon-fiber-auto-part-factory-check.webp" alt="8 Things to Check Before Ordering Custom Carbon Fiber Auto Parts from China" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Carbon Fiber Sourcing</span><span class="card-date">Sep 19, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Carbon Fiber Sourcing</span><span class="card-date">Sep 18, 2026</span></div>
           <h2>8 Things to Check Before Ordering Custom Carbon Fiber Auto Parts from China</h2>
           <p>Real carbon fiber vs. carbon-look, wet layup vs. prepreg, mold ownership, and fitment verification — the checks that separate a structural part from an expensive decoration.</p>
           <a href="/blog/carbon-fiber-auto-parts-sourcing-checklist" class="card-link">Read Article &rarr;</a>
@@ -205,19 +211,10 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
       <div class="card"><img class="card-img" src="/images/blog-factory-audit-discussion.webp" alt="Inside a Chinese Factory's Visitor Playbook — And the Line That Gives Away a Trading Company" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Factory Visits</span><span class="card-date">Sep 14, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Factory Visits</span><span class="card-date">Sep 13, 2026</span></div>
           <h2>Inside a Chinese Factory's Visitor Playbook — And the Line That Gives Away a Trading Company</h2>
           <p>A real internal training document shows how factories prepare to host overseas buyers — including one rehearsed line meant to explain away a trading company's office location.</p>
           <a href="/blog/chinese-factory-visitor-playbook" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/factory-tour-08.webp" alt="Before Building a Hardware Product in China, Check If It Already Exists" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Sourcing Strategy</span><span class="card-date">Sep 11, 2026</span></div>
-          <h2>Before Building a Hardware Product in China, Check If It Already Exists</h2>
-          <p>Most hardware startups don't need to build their own manufacturing — they need to find out whether a supplier ecosystem for something close to their product already exists.</p>
-          <a href="/blog/before-building-hardware-product-in-china" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
@@ -230,153 +227,144 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
         </div>
       </div>
 
+      <div class="card"><img class="card-img" src="/images/factory-tour-08.webp" alt="Before Building a Hardware Product in China, Check If It Already Exists" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Sourcing Strategy</span><span class="card-date">Sep 9, 2026</span></div>
+          <h2>Before Building a Hardware Product in China, Check If It Already Exists</h2>
+          <p>Most hardware startups don't need to build their own manufacturing — they need to find out whether a supplier ecosystem for something close to their product already exists.</p>
+          <a href="/blog/before-building-hardware-product-in-china" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
       <div class="card"><img class="card-img" src="/images/badges-custom-award-medal.webp" alt="How to Verify a Custom Medal Factory in China Before Placing a Bulk Order" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Factory Verification</span><span class="card-date">Sep 8, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Factory Verification</span><span class="card-date">Sep 7, 2026</span></div>
           <h2>How to Verify a Custom Medal Factory in China Before Placing a Bulk Order</h2>
           <p>How buyers verify a medal supplier in China, avoid fake medal factories, and what a real China medal factory inspection checks before a bulk order ships.</p>
           <a href="/blog/how-to-verify-custom-medal-factory-china" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/container-house-showroom-walkthrough.webp" alt="How to Verify an Expandable Container House Factory in China" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Factory Verification</span><span class="card-date">Sep 6, 2026</span></div>
-          <h2>How to Verify an Expandable Container House Factory in China</h2>
-          <p>The 7 checks we run on site before telling a client an Alibaba supplier is a real manufacturer, not a reseller of someone else's photos.</p>
-          <a href="/blog/how-to-verify-container-house-factory-china" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/container-house-onsite-measuring.webp" alt="Expandable Container House China Import Guide" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Import Guide</span><span class="card-date">Sep 6, 2026</span></div>
-          <h2>Expandable Container House China Import Guide</h2>
-          <p>Shipping, customs, and real landed cost — including a Guatemala order where verification cut the quote from $7,900 to $6,700.</p>
-          <a href="/blog/expandable-container-house-china-import-guide" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
       <div class="card"><img class="card-img" src="/images/verification-review-laptop-c.webp" alt="What Are the Procedures to Buy Goods From a Factory or Company Wholesale for Retailing Purposes?" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Sourcing Guide</span><span class="card-date">Sep 7, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Sourcing Guide</span><span class="card-date">Sep 4, 2026</span></div>
           <h2>What Are the Procedures to Buy Goods From a Factory or Company Wholesale for Retailing Purposes?</h2>
           <p>Wholesale buying from a factory is not Find factory → Pay → Receive → Sell. Here's the real 8-step procedure retailers use to define specs, vet suppliers, ca...</p>
           <a href="/blog/how-to-buy-wholesale-from-a-factory" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/container-house-team-inspection.webp" alt="Factory Audit Checklist: 15 Things to Check Before Ordering" loading="lazy">
+      <div class="card"><img class="card-img" src="/images/container-house-showroom-walkthrough.webp" alt="How to Verify an Expandable Container House Factory in China" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Audit Checklist</span><span class="card-date">Sep 6, 2026</span></div>
-          <h2>Factory Audit Checklist: 15 Things to Check Before Ordering</h2>
-          <p>Every item we inspect on site before recommending a container house factory, and why each one matters more than the price on the quotation.</p>
-          <a href="/blog/container-house-factory-audit-checklist" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/container-house-two-story-balcony.webp" alt="Expandable House vs. Traditional Construction: Cost Comparison" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Cost Comparison</span><span class="card-date">Sep 6, 2026</span></div>
-          <h2>Expandable House vs. Traditional Construction: Cost Comparison</h2>
-          <p>Why investors in Mexico and Central America are running the numbers on modular before breaking ground.</p>
-          <a href="/blog/container-house-vs-traditional-construction-cost" class="card-link">Read Article &rarr;</a>
+          <div class="card-meta"><span class="card-tag">Factory Verification</span><span class="card-date">Sep 2, 2026</span></div>
+          <h2>How to Verify an Expandable Container House Factory in China</h2>
+          <p>The 7 checks we run on site before telling a client an Alibaba supplier is a real manufacturer, not a reseller of someone else's photos.</p>
+          <a href="/blog/how-to-verify-container-house-factory-china" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
       <div class="card"><img class="card-img" src="/images/container-house-onsite-measuring.webp" alt="7 Hidden Risks When Importing Expandable Container Houses From China" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Buyer Risk</span><span class="card-date">Sep 6, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Buyer Risk</span><span class="card-date">Aug 30, 2026</span></div>
           <h2>7 Hidden Risks When Importing Expandable Container Houses From China</h2>
           <p>The cheapest quotation is not always the lowest cost — 7 ways the gap gets created after you've already paid.</p>
           <a href="/blog/hidden-risks-importing-container-houses-china" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/full-container-cargo-consolidation-china.webp" alt="Can I Purchase a Full Container of Different Goods From Different Factories in China?" loading="lazy">
+      <div class="card"><img class="card-img" src="/images/container-house-onsite-measuring.webp" alt="Expandable Container House China Import Guide" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Cargo Consolidation</span><span class="card-date">Sep 5, 2026</span></div>
-          <h2>Can I Purchase a Full Container of Different Goods From Different Factories in China?</h2>
-          <p>Yes — this is called cargo consolidation. What it takes to mix products from multiple factories into one shipment, and why coordination matters more than sourcing.</p>
-          <a href="/blog/full-container-multiple-factories-china" class="card-link">Read Article &rarr;</a>
+          <div class="card-meta"><span class="card-tag">Import Guide</span><span class="card-date">Aug 27, 2026</span></div>
+          <h2>Expandable Container House China Import Guide</h2>
+          <p>Shipping, customs, and real landed cost — including a Guatemala order where verification cut the quote from $7,900 to $6,700.</p>
+          <a href="/blog/expandable-container-house-china-import-guide" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/verification-review-laptop-a.webp" alt="Independent Sourcing Agent vs Sourcing Company in China: Which Fits Your Order?" loading="lazy">
+      <div class="card"><img class="card-img" src="/images/container-house-two-story-balcony.webp" alt="Expandable House vs. Traditional Construction: Cost Comparison" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Supplier Verification</span><span class="card-date">Aug 29, 2026</span></div>
-          <h2>Independent Sourcing Agent vs Sourcing Company in China: Which Fits Your Order?</h2>
-          <p>Compare direct contact, crisis backup, real supplier visibility, and evidence delivered — to choose who to work with based on the size and risk of your order.</p>
-          <a href="/blog/independent-agent-vs-sourcing-company" class="card-link">Read Article &rarr;</a>
+          <div class="card-meta"><span class="card-tag">Cost Comparison</span><span class="card-date">Aug 25, 2026</span></div>
+          <h2>Expandable House vs. Traditional Construction: Cost Comparison</h2>
+          <p>Why investors in Mexico and Central America are running the numbers on modular before breaking ground.</p>
+          <a href="/blog/container-house-vs-traditional-construction-cost" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/factory-quality-inspection-counterfeit-check.webp" alt="Can Software Alone Solve the Problem of Counterfeit Goods in Global Supply Chains?" loading="lazy">
+      <div class="card"><img class="card-img" src="/images/container-house-team-inspection.webp" alt="Factory Audit Checklist: 15 Things to Check Before Ordering" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Anti-Counterfeiting</span><span class="card-date">Sep 5, 2026</span></div>
-          <h2>Can Software Alone Solve the Problem of Counterfeit Goods in Global Supply Chains?</h2>
-          <p>No — software can track information but cannot verify human behavior. Why supplier verification and factory audits remain essential to stopping counterfeits.</p>
-          <a href="/blog/can-software-solve-counterfeit-goods" class="card-link">Read Article &rarr;</a>
+          <div class="card-meta"><span class="card-tag">Audit Checklist</span><span class="card-date">Aug 23, 2026</span></div>
+          <h2>Factory Audit Checklist: 15 Things to Check Before Ordering</h2>
+          <p>Every item we inspect on site before recommending a container house factory, and why each one matters more than the price on the quotation.</p>
+          <a href="/blog/container-house-factory-audit-checklist" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
       <div class="card"><img class="card-img" src="/images/latam-china-shipping-route-map.webp" alt="What Mexico Imports From China - and What's Actually Made in Guangzhou" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Import Guide</span><span class="card-date">Sep 5, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Import Guide</span><span class="card-date">Aug 21, 2026</span></div>
           <h2>What Mexico Imports From China &mdash; and What's Actually Made in Guangzhou</h2>
           <p>Mexico imported over $106 billion from China in 2025. We break down which products dominate that figure, which are actually made in Guangzhou, and how wholes...</p>
           <a href="/blog/what-mexico-imports-from-china-guangzhou" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/factory-line-walkthrough-b.webp" alt="7 Questions to Ask Before You Wire Money to an Alibaba Supplier" loading="lazy">
+      <div class="card"><img class="card-img" src="/images/full-container-cargo-consolidation-china.webp" alt="Can I Purchase a Full Container of Different Goods From Different Factories in China?" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Sep 4, 2026</span></div>
-          <h2>7 Questions to Ask Before You Wire Money to an Alibaba Supplier</h2>
-          <p>These 7 questions take five minutes and separate suppliers who answer directly from ones who dodge — before, not after, your deposit leaves.</p>
-          <a href="/blog/questions-before-wiring-money-alibaba-supplier" class="card-link">Read Article &rarr;</a>
+          <div class="card-meta"><span class="card-tag">Cargo Consolidation</span><span class="card-date">Aug 19, 2026</span></div>
+          <h2>Can I Purchase a Full Container of Different Goods From Different Factories in China?</h2>
+          <p>Yes — this is called cargo consolidation. What it takes to mix products from multiple factories into one shipment, and why coordination matters more than sourcing.</p>
+          <a href="/blog/full-container-multiple-factories-china" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/factory-quality-inspection-counterfeit-check.webp" alt="Can Software Alone Solve the Problem of Counterfeit Goods in Global Supply Chains?" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Anti-Counterfeiting</span><span class="card-date">Aug 17, 2026</span></div>
+          <h2>Can Software Alone Solve the Problem of Counterfeit Goods in Global Supply Chains?</h2>
+          <p>No — software can track information but cannot verify human behavior. Why supplier verification and factory audits remain essential to stopping counterfeits.</p>
+          <a href="/blog/can-software-solve-counterfeit-goods" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
       <div class="card"><img class="card-img" src="/images/factory-tour-05.webp" alt="5 Things a Live Video Call Can Reveal That Factory Photos Can't" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Verification</span><span class="card-date">Sep 4, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Verification</span><span class="card-date">Aug 14, 2026</span></div>
           <h2>5 Things a Live Video Call Can Reveal That Factory Photos Can't</h2>
           <p>A video call is harder to fake than photos — but only if you know what to look for. 5 checks that make it count.</p>
           <a href="/blog/video-call-vs-factory-photos" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/auto-parts-brake-pads-factory.webp" alt="6 Quality Checks Every Auto Parts Buyer Should Run Before Shipping" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Auto Parts Sourcing</span><span class="card-date">Sep 4, 2026</span></div>
-          <h2>6 Quality Checks Every Auto Parts Buyer Should Run Before Shipping</h2>
-          <p>Wrong fitment, understated wattage, coatings that fail in transit — the checks that catch what we see most often out of Guangzhou.</p>
-          <a href="/blog/auto-parts-quality-checks-before-shipping" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/verification-review-laptop-b.webp" alt="Direct Alibaba or SourciaVera: Two Paths, the Same Transparency" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Sourcing Basics</span><span class="card-date">Aug 29, 2026</span></div>
-          <h2>Direct Alibaba or SourciaVera: Two Paths, the Same Transparency</h2>
-          <p>Buy directly on Alibaba or let SourciaVera manage it — either way, every step of your order should be traceable from your phone.</p>
-          <a href="/blog/direct-alibaba-or-sourciavera-transparent-sourcing" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
       <div class="card"><img class="card-img" src="/images/cleanroom-equipment-check-a.webp" alt="6 Signs Your "Factory" Is Actually a Trading Company in Disguise" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Supplier Types</span><span class="card-date">Sep 4, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Supplier Types</span><span class="card-date">Aug 11, 2026</span></div>
           <h2>6 Signs Your "Factory" Is Actually a Trading Company in Disguise</h2>
           <p>Cutting out a trading company typically saves 10-30% on standard products, up to 50% on custom goods. 6 signs you're paying factory price for a middleman.</p>
           <a href="/blog/signs-your-factory-is-a-trading-company" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
+      <div class="card"><img class="card-img" src="/images/factory-line-walkthrough-b.webp" alt="7 Questions to Ask Before You Wire Money to an Alibaba Supplier" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Aug 9, 2026</span></div>
+          <h2>7 Questions to Ask Before You Wire Money to an Alibaba Supplier</h2>
+          <p>These 7 questions take five minutes and separate suppliers who answer directly from ones who dodge — before, not after, your deposit leaves.</p>
+          <a href="/blog/questions-before-wiring-money-alibaba-supplier" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/auto-parts-brake-pads-factory.webp" alt="6 Quality Checks Every Auto Parts Buyer Should Run Before Shipping" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Auto Parts Sourcing</span><span class="card-date">Aug 4, 2026</span></div>
+          <h2>6 Quality Checks Every Auto Parts Buyer Should Run Before Shipping</h2>
+          <p>Wrong fitment, understated wattage, coatings that fail in transit — the checks that catch what we see most often out of Guangzhou.</p>
+          <a href="/blog/auto-parts-quality-checks-before-shipping" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
       <div class="card"><img class="card-img" src="/images/auto-parts-wheel-rims-warehouse.webp" alt="How We Verified the Correct Offset (ET 54.1) for OEM Wheels on a BYD Seagull" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Sep 3, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Aug 1, 2026</span></div>
           <h2>How We Verified the Correct Offset (ET 54.1) for OEM Wheels on a BYD Seagull</h2>
           <p>A Latin American buyer needed OEM wheels with an ET 54.1 offset. We evaluated four factories, demanded real installation proof, and confirmed the spec before any deposit.</p>
           <a href="/blog/case-study-byd-seagull-wheel-offset-et541" class="card-link">Read Article &rarr;</a>
@@ -385,61 +373,97 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
       <div class="card"><img class="card-img" src="/images/h2o2-surabaya-verificacion-proveedor.webp" alt="Verifying a 50% Hydrogen Peroxide Supplier: A Case Study from Surabaya" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Aug 31, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Jul 29, 2026</span></div>
           <h2>Verifying a 50% Hydrogen Peroxide Supplier: A Case Study from Surabaya</h2>
           <p>A buyer in Surabaya needed to verify H₂O₂ suppliers in China. We found who was a real manufacturer, identified the most cost-efficient port, and reached the factory's GM directly.</p>
           <a href="/blog/case-study-h2o2-surabaya-supplier-verification" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/cleanroom-caliper-measurement.webp" alt="Product Inspection Cost Before Shipment: What Actually Determines the Real Price" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Pre-Shipment Inspection</span><span class="card-date">Aug 29, 2026</span></div>
-          <h2>Product Inspection Cost Before Shipment: What Actually Determines the Real Price</h2>
-          <p>Why a simple appearance check, a functional test, and a multi-SKU inspection are not the same work — even when quoted at the same daily rate. From $299/man-day.</p>
-          <a href="/blog/product-inspection-cost-before-shipment" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/container-loading-dock-01.webp" alt="Shipping from China: FCL, LCL, or Air — How to Choose Based on Time and Volume" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Export Logistics</span><span class="card-date">Aug 29, 2026</span></div>
-          <h2>Shipping from China: FCL, LCL, or Air — How to Choose Based on Time and Volume</h2>
-          <p>Compare full container, consolidated cargo, and air freight: when each mode makes sense, what determines total lead time, and what to confirm before booking.</p>
-          <a href="/blog/china-shipping-fcl-lcl-air-comparison" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/verification-review-laptop-c.webp" alt="Got Scammed on Alibaba? Here's What to Do Next" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Scam Recovery</span><span class="card-date">Aug 15, 2026</span></div>
-          <h2>Got Scammed on Alibaba? Here's What to Do Next</h2>
-          <p>Already lost money to a Chinese supplier? Here are the exact steps to take in the first 72 hours — and how to protect yourself on every order after this one.</p>
-          <a href="/blog/got-scammed-on-alibaba" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
       <div class="card"><img class="card-img" src="/images/container-house-team-inspection.webp" alt="Quality Control by Destination Climate: The Case of Roofing in High-Rainfall Zones" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Quality Control</span><span class="card-date">Aug 29, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Quality Control</span><span class="card-date">Jul 27, 2026</span></div>
           <h2>Quality Control by Destination Climate: The Case of Roofing in High-Rainfall Zones</h2>
           <p>Why material specification must be defined by the exact installation zone — not just the country — and how the climate calendar also determines the best time to buy.</p>
           <a href="/blog/quality-control-by-destination-climate" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
+      <div class="card"><img class="card-img" src="/images/cleanroom-caliper-measurement.webp" alt="Product Inspection Cost Before Shipment: What Actually Determines the Real Price" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Pre-Shipment Inspection</span><span class="card-date">Jul 24, 2026</span></div>
+          <h2>Product Inspection Cost Before Shipment: What Actually Determines the Real Price</h2>
+          <p>Why a simple appearance check, a functional test, and a multi-SKU inspection are not the same work — even when quoted at the same daily rate. From $299/man-day.</p>
+          <a href="/blog/product-inspection-cost-before-shipment" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/verification-review-laptop-a.webp" alt="Independent Sourcing Agent vs Sourcing Company in China: Which Fits Your Order?" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Supplier Verification</span><span class="card-date">Jul 21, 2026</span></div>
+          <h2>Independent Sourcing Agent vs Sourcing Company in China: Which Fits Your Order?</h2>
+          <p>Compare direct contact, crisis backup, real supplier visibility, and evidence delivered — to choose who to work with based on the size and risk of your order.</p>
+          <a href="/blog/independent-agent-vs-sourcing-company" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/verification-review-laptop-b.webp" alt="Direct Alibaba or SourciaVera: Two Paths, the Same Transparency" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Sourcing Basics</span><span class="card-date">Jul 18, 2026</span></div>
+          <h2>Direct Alibaba or SourciaVera: Two Paths, the Same Transparency</h2>
+          <p>Buy directly on Alibaba or let SourciaVera manage it — either way, every step of your order should be traceable from your phone.</p>
+          <a href="/blog/direct-alibaba-or-sourciavera-transparent-sourcing" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/container-loading-dock-01.webp" alt="Shipping from China: FCL, LCL, or Air — How to Choose Based on Time and Volume" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Export Logistics</span><span class="card-date">Jul 16, 2026</span></div>
+          <h2>Shipping from China: FCL, LCL, or Air — How to Choose Based on Time and Volume</h2>
+          <p>Compare full container, consolidated cargo, and air freight: when each mode makes sense, what determines total lead time, and what to confirm before booking.</p>
+          <a href="/blog/china-shipping-fcl-lcl-air-comparison" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
       <div class="card"><img class="card-img" src="/images/latam-china-shipping-route-map.webp" alt="Factory Audit Before Importing to Mexico: What It Is and When You Need One" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Factory Audits · Mexico · 2026</span><span class="card-date">Aug 28, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Factory Audits · Mexico · 2026</span><span class="card-date">Jul 11, 2026</span></div>
           <h2>Factory Audit Before Importing to Mexico: What It Is and When You Need One</h2>
           <p>What is a factory audit in China and when does a Mexican importer need one? The difference between verification, inspection, and audit — with real costs.</p>
           <a href="/blog/factory-audit-before-importing-mexico" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
+      <div class="card"><img class="card-img" src="/images/factory-line-wide-view.webp" alt="China Supplier Verification: The Guide Every Mexican Importer Needs to Read" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Import Guide</span><span class="card-date">Jul 8, 2026</span></div>
+          <h2>China Supplier Verification: The Guide Every Mexican Importer Needs to Read</h2>
+          <p>Complete guide: how to verify an Alibaba supplier from Mexico, how much it costs, and how to avoid the most common scams.</p>
+          <a href="/blog/china-supplier-verification-guide-mexico" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/factory-inspection-06.webp" alt="How Mexican Buyers Can Avoid Alibaba Scams: 5 Common Traps" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Buyer Protection</span><span class="card-date">Jul 5, 2026</span></div>
+          <h2>How Mexican Buyers Can Avoid Alibaba Scams: 5 Common Traps</h2>
+          <p>The 5 most common Alibaba scams affecting Mexican importers, and how to avoid each one step by step. Free due-diligence checklist included.</p>
+          <a href="/blog/avoid-alibaba-scams-mexican-buyer" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/auto-parts-ignition-coils-factory.webp" alt="LED Auto Parts from Alibaba: What You're Actually Getting (And What Gets Swapped)" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Auto Parts Sourcing</span><span class="card-date">Jul 3, 2026</span></div>
+          <h2>LED Auto Parts from Alibaba: What You're Actually Getting (And What Gets Swapped)</h2>
+          <p>Wattage inflation, chipset substitution, and DOT/ECE certification gaps are standard practice in China's LED auto parts market. Here's how to verify before you order at scale.</p>
+          <a href="/blog/led-auto-parts-alibaba-scam-guide" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
       <div class="card"><img class="card-img" src="/images/china-indonesia-shipping-route.webp" alt="Real Case: Four "Manufacturers" on Alibaba Turned Out to Be One Trading Company" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Aug 21, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Jul 1, 2026</span></div>
           <h2>Real Case: Four &ldquo;Manufacturers&rdquo; on Alibaba Turned Out to Be One Trading Company</h2>
           <p>Four Alibaba suppliers claiming to manufacture hydrogen peroxide all traced back to the same trading company. Here's how we caught it before our client paid a deposit.</p>
           <a href="/blog/case-study-h2o2-trading-company" class="card-link">Read Article &rarr;</a>
@@ -448,153 +472,104 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
       <div class="card"><img class="card-img" src="/images/container-house-showroom-walkthrough.webp" alt="Real Case: We Compared 6 Factories for a Container Home Order - Only One Passed" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Aug 21, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Real Case</span><span class="card-date">Jun 28, 2026</span></div>
           <h2>Real Case: We Compared 6 Factories for a Container Home Order &mdash; Only One Passed</h2>
           <p>A Latin American buyer needed expandable container homes. We evaluated six Alibaba factories side by side — here's what separated the one we recommended from the five we didn't.</p>
           <a href="/blog/case-study-container-home-factory-audit" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/auto-parts-ignition-coils-factory.webp" alt="LED Auto Parts from Alibaba: What You're Actually Getting (And What Gets Swapped)" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Auto Parts Sourcing</span><span class="card-date">Aug 21, 2026</span></div>
-          <h2>LED Auto Parts from Alibaba: What You're Actually Getting (And What Gets Swapped)</h2>
-          <p>Wattage inflation, chipset substitution, and DOT/ECE certification gaps are standard practice in China's LED auto parts market. Here's how to verify before you order at scale.</p>
-          <a href="/blog/led-auto-parts-alibaba-scam-guide" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/verification-review-laptop-a.webp" alt="Is My Chinese Supplier a Real Factory or a Trading Company?" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Factory vs. Trader</span><span class="card-date">Jun 16, 2026</span></div>
-          <h2>Is My Chinese Supplier a Real Factory or a Trading Company?</h2>
-          <p>Trading companies add 15–30% to your cost while reducing your control over quality. Learn the six clues that reveal whether you're dealing with a manufacturer or a middleman.</p>
-          <a href="/blog/real-factory-vs-trading-company-china" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
       <div class="card"><img class="card-img" src="/images/factory-line-walkthrough-a.webp" alt="Glossary: Factory Verification, Audit, Inspection & Supervision" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Glossary</span><span class="card-date">Aug 18, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Glossary</span><span class="card-date">Jun 26, 2026</span></div>
           <h2>Glossary: Factory Verification, Audit, Inspection &amp; Supervision</h2>
           <p>Clear definitions of the terms that matter when sourcing from China — verification vs audit vs inspection vs supervision — with pricing and when each applies.</p>
           <a href="/blog/glossary-factory-verification-terms" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/factory-line-walkthrough-b.webp" alt="9 Alibaba Supplier Red Flags That Should Make You Walk Away" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Aug 15, 2026</span></div>
-          <h2>9 Alibaba Supplier Red Flags That Should Make You Walk Away</h2>
-          <p>Nine warning signs that appear before most Alibaba sourcing disasters — covering both outright fraud and bad-fit factories that cost you just as much.</p>
-          <a href="/blog/alibaba-supplier-red-flags" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
       <div class="card"><img class="card-img" src="/images/cleanroom-equipment-check-a.webp" alt="Trading Company vs Factory: Why It Matters More Than You Think" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Supplier Types</span><span class="card-date">Aug 15, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Supplier Types</span><span class="card-date">Jun 24, 2026</span></div>
           <h2>Trading Company vs Factory: Why It Matters More Than You Think</h2>
           <p>Buying from a trading company isn't always wrong — but you need to know what you're dealing with. Here's what actually changes between factory and trader, and when each makes sense.</p>
           <a href="/blog/trading-company-vs-factory" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
+      <div class="card"><img class="card-img" src="/images/verification-review-laptop-c.webp" alt="Got Scammed on Alibaba? Here's What to Do Next" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Scam Recovery</span><span class="card-date">Jun 19, 2026</span></div>
+          <h2>Got Scammed on Alibaba? Here's What to Do Next</h2>
+          <p>Already lost money to a Chinese supplier? Here are the exact steps to take in the first 72 hours — and how to protect yourself on every order after this one.</p>
+          <a href="/blog/got-scammed-on-alibaba" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/factory-line-walkthrough-b.webp" alt="9 Alibaba Supplier Red Flags That Should Make You Walk Away" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Due Diligence</span><span class="card-date">Jun 16, 2026</span></div>
+          <h2>9 Alibaba Supplier Red Flags That Should Make You Walk Away</h2>
+          <p>Nine warning signs that appear before most Alibaba sourcing disasters — covering both outright fraud and bad-fit factories that cost you just as much.</p>
+          <a href="/blog/alibaba-supplier-red-flags" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/auto-parts-wiper-blades-factory.webp" alt="Sourcing LED Auto Parts from China: A Buyer's Guide" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">LED Auto Parts</span><span class="card-date">Jun 13, 2026</span></div>
+          <h2>Sourcing LED Auto Parts from China: A Buyer's Guide</h2>
+          <p>Guangzhou is the world's hub for LED automotive lighting. This complete guide covers finding factories, verifying them, certifications required for the US market, and how to start small and scale.</p>
+          <a href="/blog/sourcing-led-auto-parts-from-china" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
+      <div class="card"><img class="card-img" src="/images/verification-review-laptop-a.webp" alt="Is My Chinese Supplier a Real Factory or a Trading Company?" loading="lazy">
+        <div class="card-body">
+          <div class="card-meta"><span class="card-tag">Factory vs. Trader</span><span class="card-date">Jun 10, 2026</span></div>
+          <h2>Is My Chinese Supplier a Real Factory or a Trading Company?</h2>
+          <p>Trading companies add 15–30% to your cost while reducing your control over quality. Learn the six clues that reveal whether you're dealing with a manufacturer or a middleman.</p>
+          <a href="/blog/real-factory-vs-trading-company-china" class="card-link">Read Article &rarr;</a>
+        </div>
+      </div>
+
       <div class="card"><img class="card-img" src="/images/factory-line-wide-view.webp" alt="How to Verify an Alibaba Supplier Before You Pay (2026 Guide)" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Verification</span><span class="card-date">Jun 16, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Verification</span><span class="card-date">Jun 7, 2026</span></div>
           <h2>How to Verify an Alibaba Supplier Before You Pay (2026 Guide)</h2>
           <p>A step-by-step checklist to confirm your Chinese supplier is real before sending money — business license checks, factory video tours, and red flags to watch.</p>
           <a href="/blog/how-to-verify-alibaba-supplier" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/verification-review-laptop-c.webp" alt="Sample Looks Great, Bulk Order Is Garbage — How to Prevent It" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Quality Control</span><span class="card-date">Jun 16, 2026</span></div>
-          <h2>Sample Looks Great, Bulk Order Is Garbage — How to Prevent It</h2>
-          <p>The "golden sample" trap is one of China sourcing's most common problems. Learn why bulk quality differs from samples and the three methods that prevent it.</p>
-          <a href="/blog/alibaba-sample-different-from-bulk-order" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
       <div class="card"><img class="card-img" src="/images/factory-quality-inspection-counterfeit-check.webp" alt="How to Avoid Alibaba Scams: 7 Red Flags Every Buyer Should Know" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Scam Prevention</span><span class="card-date">Jun 16, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Scam Prevention</span><span class="card-date">Jun 5, 2026</span></div>
           <h2>How to Avoid Alibaba Scams: 7 Red Flags Every Buyer Should Know</h2>
           <p>These 7 warning signs appear in almost every reported Alibaba fraud case. Learn to spot them before you send a deposit.</p>
           <a href="/blog/how-to-avoid-alibaba-scam" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/factory-inspection-06.webp" alt="How Mexican Buyers Can Avoid Alibaba Scams: 5 Common Traps" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Buyer Protection</span><span class="card-date">Aug 28, 2026</span></div>
-          <h2>How Mexican Buyers Can Avoid Alibaba Scams: 5 Common Traps</h2>
-          <p>The 5 most common Alibaba scams affecting Mexican importers, and how to avoid each one step by step. Free due-diligence checklist included.</p>
-          <a href="/blog/avoid-alibaba-scams-mexican-buyer" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
-      <div class="card"><img class="card-img" src="/images/factory-line-wide-view.webp" alt="China Supplier Verification: The Guide Every Mexican Importer Needs to Read" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Import Guide</span><span class="card-date">Aug 28, 2026</span></div>
-          <h2>China Supplier Verification: The Guide Every Mexican Importer Needs to Read</h2>
-          <p>Complete guide: how to verify an Alibaba supplier from Mexico, how much it costs, and how to avoid the most common scams.</p>
-          <a href="/blog/china-supplier-verification-guide-mexico" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-
       <div class="card"><img class="card-img" src="/images/cleanroom-caliper-measurement.webp" alt="What Does Factory Inspection in China Cost? (And Is It Worth It)" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Quality Inspection</span><span class="card-date">Jun 16, 2026</span></div>
+          <div class="card-meta"><span class="card-tag">Quality Inspection</span><span class="card-date">Jun 2, 2026</span></div>
           <h2>What Does Factory Inspection in China Cost? (And Is It Worth It)</h2>
           <p>SourciaVera charges $299/man-day for pre-shipment inspection. Here's what's included, when you need it, and why skipping it is almost always more expensive.</p>
           <a href="/blog/china-factory-inspection-cost" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
 
-      <div class="card"><img class="card-img" src="/images/auto-parts-wiper-blades-factory.webp" alt="Sourcing LED Auto Parts from China: A Buyer's Guide" loading="lazy">
+      <div class="card"><img class="card-img" src="/images/verification-review-laptop-c.webp" alt="Sample Looks Great, Bulk Order Is Garbage — How to Prevent It" loading="lazy">
         <div class="card-body">
-          <div class="card-meta"><span class="card-tag">LED Auto Parts</span><span class="card-date">Jun 16, 2026</span></div>
-          <h2>Sourcing LED Auto Parts from China: A Buyer's Guide</h2>
-          <p>Guangzhou is the world's hub for LED automotive lighting. This complete guide covers finding factories, verifying them, certifications required for the US market, and how to start small and scale.</p>
-          <a href="/blog/sourcing-led-auto-parts-from-china" class="card-link">Read Article &rarr;</a>
-        </div>
-      </div>
-    
-    </div>
-  </div>
-
-  <!-- SPANISH SECTION -->
-  <div class="lang-es" style="display:none;">
-    <div class="featured-label">Destacados — Empieza Aquí</div>
-    <div class="featured-grid">
-      <div class="card featured-card"><img class="card-img" src="/images/factory-line-walkthrough-a.webp" alt="8 Documentos Que Siempre Debe Solicitar a un Fabricante Chino" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Debida Diligencia</span><span class="card-date">4 de septiembre de 2026</span></div>
-          <h2>8 Documentos Que Siempre Debe Solicitar a un Fabricante Chino</h2>
-          <p>Los 8 documentos que realmente comprueban que un proveedor chino es quien dice ser — qué puede pedir usted mismo, y qué requiere a alguien en el terreno para confirmarlo.</p>
-          <a href="/blog/es/8-documentos-solicitar-fabricante-chino" class="card-link">Leer Art&iacute;culo &rarr;</a>
-        </div>
-      </div>
-      <div class="card featured-card priority"><div class="featured-badge">Más Popular</div><img class="card-img" src="/images/factory-floor-verification.webp" alt="Costo de Verificación de Fábrica en China: Por Qué No Debes Comparar Solo el Precio por Día" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Verificación de Proveedores</span><span class="card-date">29 de agosto de 2026</span></div>
-          <h2>Costo de Verificación de Fábrica en China: Por Qué No Debes Comparar Solo el Precio por Día</h2>
-          <p>Descubre qué determina el costo real de una verificación de fábrica en China: alcance de la visita, ubicación, evidencia solicitada y cuándo necesitas una segunda verificación.</p>
-          <a href="/blog/es/costo-verificacion-fabrica-china" class="card-link">Leer Artículo &rarr;</a>
-        </div>
-      </div>
-      <div class="card featured-card"><img class="card-img" src="/images/factory-quality-inspection-counterfeit-check.webp" alt="¿Es Alibaba de Confianza? Una Respuesta Honesta para Importadores" loading="lazy">
-        <div class="card-body">
-          <div class="card-meta"><span class="card-tag">Guía para Importadores</span><span class="card-date">15 de agosto de 2026</span></div>
-          <h2>¿Es Alibaba de Confianza? Una Respuesta Honesta para Importadores</h2>
-          <p>¿Es seguro Alibaba para compradores latinoamericanos? Descubra qué protege la plataforma, qué no cubre, y dónde vive el riesgo real cuando importa desde China.</p>
-          <a href="/blog/es/alibaba-confiable" class="card-link">Leer Artículo &rarr;</a>
+          <div class="card-meta"><span class="card-tag">Quality Control</span><span class="card-date">May 30, 2026</span></div>
+          <h2>Sample Looks Great, Bulk Order Is Garbage — How to Prevent It</h2>
+          <p>The "golden sample" trap is one of China sourcing's most common problems. Learn why bulk quality differs from samples and the three methods that prevent it.</p>
+          <a href="/blog/alibaba-sample-different-from-bulk-order" class="card-link">Read Article &rarr;</a>
         </div>
       </div>
     </div>
+    <div class="pagination" id="blog-pagination"></div>
     <h2 class="section-title">Artículos Recientes</h2>
     <div class="blog-grid">
 
@@ -1076,5 +1051,53 @@ CookieConsent.run({
 });
 </script>
 <script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
+<script>
+(function(){
+  var PAGE_SIZE = 7;
+  var grid = document.getElementById('paginated-grid');
+  var pag = document.getElementById('blog-pagination');
+  if(!grid || !pag) return;
+  var cards = Array.prototype.slice.call(grid.children).filter(function(el){return el.classList.contains('card');});
+  var totalPages = Math.max(1, Math.ceil(cards.length / PAGE_SIZE));
+
+  function showPage(page){
+    page = Math.min(Math.max(1, page), totalPages);
+    cards.forEach(function(card, i){
+      card.style.display = (Math.floor(i / PAGE_SIZE) + 1 === page) ? '' : 'none';
+    });
+    renderControls(page);
+  }
+
+  function renderControls(page){
+    pag.innerHTML = '';
+    if(totalPages <= 1) return;
+    var prev = document.createElement('button');
+    prev.textContent = '‹';
+    prev.disabled = page === 1;
+    prev.setAttribute('aria-label','Previous page');
+    prev.onclick = function(){ showPage(page - 1); grid.scrollIntoView({behavior:'smooth', block:'start'}); };
+    pag.appendChild(prev);
+
+    for(var i = 1; i <= totalPages; i++){
+      (function(i){
+        var btn = document.createElement('button');
+        btn.textContent = i;
+        if(i === page) btn.className = 'active';
+        btn.onclick = function(){ showPage(i); grid.scrollIntoView({behavior:'smooth', block:'start'}); };
+        pag.appendChild(btn);
+      })(i);
+    }
+
+    var next = document.createElement('button');
+    next.textContent = '›';
+    next.disabled = page === totalPages;
+    next.setAttribute('aria-label','Next page');
+    next.onclick = function(){ showPage(page + 1); grid.scrollIntoView({behavior:'smooth', block:'start'}); };
+    pag.appendChild(next);
+  }
+
+  showPage(1);
+})();
+</script>
 </body>
 </html>
