@@ -4,7 +4,12 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.sourciavera.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.sourciavera.com"
+        }
+      ],
       "destination": "https://sourciavera.com/$1",
       "permanent": true
     },
@@ -16,6 +21,16 @@
     {
       "source": "/china-factory-inspection-cost",
       "destination": "/blog/china-factory-inspection-cost",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-verify-custom-medal-factory-china",
+      "destination": "/categories/badges-medals-keychains",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/como-verificar-fabrica-medallas-personalizadas-china",
+      "destination": "/es/categorias/insignias-medallas-llaveros",
       "permanent": true
     }
   ],
