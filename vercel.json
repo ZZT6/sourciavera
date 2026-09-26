@@ -4,7 +4,12 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.sourciavera.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.sourciavera.com"
+        }
+      ],
       "destination": "https://sourciavera.com/$1",
       "permanent": true
     },
@@ -16,6 +21,106 @@
     {
       "source": "/china-factory-inspection-cost",
       "destination": "/blog/china-factory-inspection-cost",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-verify-custom-medal-factory-china",
+      "destination": "/categories/badges-medals-keychains",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/como-verificar-fabrica-medallas-personalizadas-china",
+      "destination": "/es/categorias/insignias-medallas-llaveros",
+      "permanent": true
+    },
+    {
+      "source": "/blog/case-study-container-home-factory-audit",
+      "destination": "/categories/construction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/caso-auditoria-casas-contenedor",
+      "destination": "/es/categorias/construccion",
+      "permanent": true
+    },
+    {
+      "source": "/blog/case-study-h2o2-surabaya-supplier-verification",
+      "destination": "/categories/chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/verificar-proveedor-peroxido-hidrogeno-surabaya",
+      "destination": "/es/categorias/quimicos",
+      "permanent": true
+    },
+    {
+      "source": "/blog/case-study-h2o2-trading-company",
+      "destination": "/categories/chemicals",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/caso-comerciante-disfrazado",
+      "destination": "/es/categorias/quimicos",
+      "permanent": true
+    },
+    {
+      "source": "/blog/container-house-factory-audit-checklist",
+      "destination": "/categories/construction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/checklist-auditoria-fabrica-casas-contenedor",
+      "destination": "/es/categorias/construccion",
+      "permanent": true
+    },
+    {
+      "source": "/blog/container-house-vs-traditional-construction-cost",
+      "destination": "/categories/construction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/casas-contenedor-vs-construccion-tradicional-costo",
+      "destination": "/es/categorias/construccion",
+      "permanent": true
+    },
+    {
+      "source": "/blog/expandable-container-house-china-import-guide",
+      "destination": "/categories/construction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/guia-importar-casas-contenedor-expandibles-china",
+      "destination": "/es/categorias/construccion",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hidden-risks-importing-container-houses-china",
+      "destination": "/categories/construction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/riesgos-ocultos-importar-casas-contenedor-china",
+      "destination": "/es/categorias/construccion",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-verify-container-house-factory-china",
+      "destination": "/categories/construction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/como-verificar-fabrica-casas-contenedor-china",
+      "destination": "/es/categorias/construccion",
+      "permanent": true
+    },
+    {
+      "source": "/blog/quality-control-by-destination-climate",
+      "destination": "/categories/construction",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/control-calidad-segun-clima-destino",
+      "destination": "/es/categorias/construccion",
       "permanent": true
     }
   ],
