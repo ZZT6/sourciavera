@@ -128,8 +128,9 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .btn-wa{background:#25D366;color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;text-decoration:none;display:inline-block}
 .btn-wa:hover{opacity:0.9}
 .hero-left{display:flex;flex-direction:column;justify-content:flex-start}
-.hero-map{display:flex;align-items:flex-start}
-.hero-map img{width:100%;height:auto;display:block;border-radius:12px}
+.hero-map{display:flex;align-items:flex-start;align-self:flex-start;position:relative}
+.hero-map img{width:100%;height:auto;display:block}
+.hero-map::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 100% 100% at center, transparent 65%, rgba(13,34,64,0.4) 85%, var(--navy) 105%);pointer-events:none}
 .reveal-water{filter:blur(16px);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 3s cubic-bezier(.22,.68,.36,1),opacity 3s ease,transform 3s cubic-bezier(.22,.68,.36,1),clip-path 3s cubic-bezier(.22,.68,.36,1)}
 .reveal-water.is-visible{filter:blur(0);opacity:1;transform:scale(1);clip-path:circle(150% at 50% 50%)}
 @media(prefers-reduced-motion:reduce){.reveal-water{filter:none;opacity:1;transform:none;clip-path:none;transition:none}}
@@ -380,7 +381,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <a class="btn-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener">Ver servicios</a>
     </div>
   </div>
-  <div class="hero-map reveal-water"><img src="/images/latam-china-shipping-route-map.webp" alt="Mapa de ruta de envío desde Guangzhou, China hasta puertos de Latinoamérica incluyendo Lázaro Cárdenas, Colón y Callao" loading="eager"></div>
+  <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Mapa ilustrado de la ruta de envío desde Guangzhou, China hasta Los Ángeles, Lázaro Cárdenas, Colón, Callao y Chile, con carga de autopartes" loading="eager"></div>
 </section>
 
 <div class="stats">
