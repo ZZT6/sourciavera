@@ -14,6 +14,16 @@
       "permanent": true
     },
     {
+      "source": "/blog/case-study-byd-seagull-wheel-offset-et541",
+      "destination": "/blog/case-study-byd-seagull-spare-wheel-offset",
+      "permanent": true
+    },
+    {
+      "source": "/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541",
+      "destination": "/blog/es/caso-verificacion-llanta-refaccion-byd-seagull",
+      "permanent": true
+    },
+    {
       "source": "/how-to-verify-alibaba-supplier",
       "destination": "/blog/how-to-verify-alibaba-supplier",
       "permanent": true
