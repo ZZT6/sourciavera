@@ -52,6 +52,16 @@
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Auditoría de Fábrica"},"price":"499","priceCurrency":"USD"}
         ]
       }
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"¿Cuál es la diferencia entre OEM y ODM para autopartes?","acceptedAnswer":{"@type":"Answer","text":"OEM significa que tú entregas el diseño y la fábrica construye una herramienta dedicada según tu especificación, típicamente 500 a 5,000+ unidades con un depósito de herramienta de $2,000–$15,000. ODM significa que la fábrica ya es dueña del diseño y la herramienta y tú pones tu marca, con MOQs más cercanos a 100–300 unidades y poco o ningún costo de herramienta."}},
+        {"@type":"Question","name":"¿Cómo sé si una pieza de fibra de carbono es real?","acceptedAnswer":{"@type":"Answer","text":"La fibra de carbono real es notablemente más ligera que la fibra de vidrio o ABS \"carbon-look\" del mismo tamaño, tiene una leve profundidad tridimensional en el tejido bajo el barniz, y suena hueco y nítido al golpearla. Pide una muestra física antes de comprometerte a una corrida de producción."}},
+        {"@type":"Question","name":"¿Qué certificaciones necesitan las piezas LED para el mercado de EE.UU.?","acceptedAnswer":{"@type":"Answer","text":"La certificación SAE es requerida para iluminación vendida como legal para circular en EE.UU., y las marcas DOT son requeridas en faros, luces traseras y direccionales. Verificamos el número de certificado real contra tu número de parte específico."}},
+        {"@type":"Question","name":"¿Por qué importa el offset del rin en un BYD Seagull?","acceptedAnswer":{"@type":"Answer","text":"Los rines OEM del BYD Seagull requieren un offset específico de ET 54.1. Si un rin llega con un offset diferente, el instalador tiene que agregar un espaciador, lo que afecta la geometría de la suspensión y el comportamiento en curvas, y puede causar desgaste desigual de la llanta a velocidad de carretera."}},
+        {"@type":"Question","name":"¿Cuánto cuesta una verificación de fábrica?","acceptedAnswer":{"@type":"Answer","text":"La verificación de fábrica inicia en $449 por visita. La inspección previa al embarque cuesta $399 por día-hombre, y una auditoría completa de fábrica es $499 por día-hombre."}}
+      ]
     }
   ]
 }
@@ -94,6 +104,11 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .product-dot{width:8px;height:8px;background:var(--coral);flex-shrink:0;margin-top:0.5rem}
 .product-item strong{display:block;font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:0.15rem}
 .product-item span{font-size:0.82rem;color:var(--muted);line-height:1.5}
+.related-guides{padding:5rem 3rem;background:var(--white)}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.related-item{display:block;background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--coral);padding:1rem 1.3rem;font-size:0.9rem;font-weight:600;color:var(--navy);line-height:1.5;transition:border-color 0.2s,background 0.2s}
+.related-item:hover{border-color:var(--coral);background:var(--white)}
+@media(max-width:768px){.related-guides{padding:3rem 1.5rem}.related-grid{grid-template-columns:1fr}}
 .cta-section{padding:5rem 3rem;background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .cta-left h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:1rem;line-height:1.25}
 .cta-left p{color:var(--muted);font-size:0.9rem;line-height:1.8;margin-bottom:1.5rem}
@@ -164,6 +179,16 @@ nav{position:relative}
 .checklist-box{background:var(--navy);padding:2rem 2.2rem}
 .checklist-box h3{color:var(--yellow);font-size:1rem;font-weight:700;margin-bottom:1rem}
 .checklist-box ul{margin:0;padding-left:1.2rem;color:rgba(255,255,255,0.85);font-size:0.88rem;line-height:1.9}
+.guide-inner h2,.cs-section-inner h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin:3.5rem 0 1.2rem;padding-left:1rem;border-left:4px solid var(--coral)}
+.cs-section-inner h2{margin-top:0}
+.h2-link{display:inline-block;margin-top:0.5rem;color:var(--coral);font-weight:600;font-size:0.9rem}
+.faq-section{padding:5rem 3rem;background:var(--white)}
+.faq-inner{max-width:2200px}
+.faq-item{border-top:1.5px solid var(--border);padding:1.5rem 0}
+.faq-item:last-child{border-bottom:1.5px solid var(--border)}
+.faq-q{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem}
+.faq-a{font-size:0.9rem;color:var(--muted);line-height:1.75}
+@media(max-width:768px){.faq-section{padding:3rem 1.5rem}.guide-inner h2{font-size:1.35rem;margin-top:2.5rem}}
 @media(max-width:768px){.guide-grid{grid-template-columns:1fr}.guide-section{padding:3rem 1.5rem}}
 span.sv-off{display:inline-flex;align-items:center;gap:0.4rem;background:#D62828;color:#fff;font-size:0.68rem;font-weight:600;line-height:1.2;padding:0.2rem 0.55rem;margin:0 0.45rem 0.4rem 0;border-radius:3px;letter-spacing:0.02em;vertical-align:middle;white-space:normal;text-transform:none;text-align:left}
 span.sv-off b{color:#fff;font-size:0.85rem;font-weight:800;letter-spacing:0}
@@ -211,6 +236,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 
 <section class="cs-section">
   <div class="cs-section-inner">
+    <h2>Rines y Llantas</h2>
     <div class="section-tag">Caso Real &middot; C&oacute;mo Trabajamos</div>
     <div class="section-title" style="margin-bottom:1rem">C&oacute;mo verificamos el offset correcto (ET&nbsp;54.1)<br>para las llantas OEM de un BYD Seagull</div>
     <p class="scope-intro">Un comprador en Latinoam&eacute;rica necesitaba llantas OEM para el BYD Seagull &mdash; con un offset espec&iacute;fico de ET&nbsp;54.1. Lo que parec&iacute;a simple revel&oacute; una cadena de decisiones t&eacute;cnicas que, sin verificaci&oacute;n en terreno, dif&iacute;cilmente se pueden validar desde el extranjero.</p>
@@ -321,6 +347,18 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <li>M&eacute;todo de empaque adecuado para flete mar&iacute;timo, no solo distribuci&oacute;n dom&eacute;stica</li>
       </ul>
     </div>
+
+    <h2>Piezas de Fibra de Carbono</h2>
+    <p class="scope-intro" style="max-width:100%">La fibra de carbono es de las piezas m&aacute;s f&aacute;ciles de falsificar en una foto de listado &mdash; fibra de vidrio o ABS con un acabado de tejido impreso se ve id&eacute;ntica en pantalla. En mano, la fibra de carbono real es notablemente m&aacute;s ligera, tiene una leve profundidad tridimensional bajo el barniz, y suena hueco y n&iacute;tido al golpearla. El proceso de fabricaci&oacute;n importa igual de mucho: el wet layup es el m&eacute;todo m&aacute;s barato y menos consistente, mientras que el curado prepreg en autoclave es lo que realmente necesitan las piezas estructurales que cargan peso. Tambi&eacute;n confirmamos qui&eacute;n es due&ntilde;o del molde &mdash; la f&aacute;brica o t&uacute; &mdash; porque eso decide si puedes reordenar en tus propios t&eacute;rminos m&aacute;s adelante.</p>
+    <a href="/blog/es/lista-verificacion-piezas-fibra-carbono-china" class="h2-link">Gu&iacute;a completa: 8 Cosas que Verificar Antes de Pedir Piezas de Fibra de Carbono &rarr;</a>
+
+    <h2>Iluminaci&oacute;n LED</h2>
+    <p class="scope-intro" style="max-width:100%">Guangzhou es el centro mundial de iluminaci&oacute;n LED para autos, y tambi&eacute;n donde los n&uacute;meros de vataje son menos confiables. Un foco anunciado como &ldquo;60W, 12,000LM&rdquo; t&iacute;picamente mide 28&ndash;34W y 4,500&ndash;6,000LM bajo carga real &mdash; la muestra pasa, y luego el lote grande se reclasifica silenciosamente a un nivel de salida menor. Un segundo patr&oacute;n com&uacute;n es la sustituci&oacute;n de chipset: un chip de marca reconocida cuesta entre $0.80&ndash;$1.20 por unidad frente a $0.15&ndash;$0.25 de un sustituto sin marca, y la falla aparece 3&ndash;6 meses despu&eacute;s de la instalaci&oacute;n, no en el control de calidad. Para cualquier mercado con regulaci&oacute;n de iluminaci&oacute;n, verificamos que el n&uacute;mero de certificado DOT/ECE/CE realmente corresponda a tu n&uacute;mero de parte, no solo a la foto del listado.</p>
+    <a href="/blog/es/importar-autopartes-led-china-guia" class="h2-link">Gu&iacute;a completa: Importar Autopartes LED de China a M&eacute;xico &rarr;</a>
+
+    <h2>Marca Propia OEM/ODM</h2>
+    <p class="scope-intro" style="max-width:100%">La mayor&iacute;a de los compradores que nos preguntan por &ldquo;OEM&rdquo; en realidad necesitan ODM. OEM significa que t&uacute; entregas el dise&ntilde;o y la f&aacute;brica construye una herramienta dedicada seg&uacute;n tu especificaci&oacute;n &mdash; los m&iacute;nimos t&iacute;picos van de 500 a 5,000+ unidades con un dep&oacute;sito de herramienta de $2,000&ndash;$15,000. ODM significa que la f&aacute;brica ya es due&ntilde;a del dise&ntilde;o y la herramienta y t&uacute; pones tu marca, con MOQs m&aacute;s cercanos a 100&ndash;300 unidades y poco o ning&uacute;n costo de herramienta. El verdadero riesgo no es el modelo que elijas &mdash; es una &ldquo;f&aacute;brica ODM&rdquo; que en realidad no es due&ntilde;a de la herramienta que te muestra, subcontratando tu pedido a un taller que no controla. Categor&iacute;as de menor riesgo para lanzar primero: plumillas, filtros de cabina, focos LED de reemplazo &mdash; deja rines y frenos para despu&eacute;s, ya que sus tolerancias de ajuste var&iacute;an seg&uacute;n la generaci&oacute;n del veh&iacute;culo.</p>
+    <a href="/blog/es/oem-vs-odm-autopartes-marca-propia-china" class="h2-link">Gu&iacute;a completa: OEM vs ODM Autopartes &rarr;</a>
   </div>
 </section>
 
@@ -356,6 +394,50 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <div class="product-icon"><img src="/images/auto-parts-icon-6-wheel.svg" alt="" aria-hidden="true"></div>
         <div><strong>Tapacubos Aromáticos</strong><span>Tapacubos con fragancia integrada &mdash; categor&iacute;a nicho que verificamos y gestionamos para vendedores de marca propia.</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="section-tag">Preguntas Frecuentes</div>
+    <div class="section-title">FAQ de Autopartes</div>
+
+    <div class="faq-item">
+      <div class="faq-q">&iquest;Cu&aacute;l es la diferencia entre OEM y ODM para autopartes?</div>
+      <div class="faq-a">OEM significa que t&uacute; entregas el dise&ntilde;o y la f&aacute;brica construye una herramienta dedicada seg&uacute;n tu especificaci&oacute;n, t&iacute;picamente 500 a 5,000+ unidades con un dep&oacute;sito de herramienta de $2,000&ndash;$15,000. ODM significa que la f&aacute;brica ya es due&ntilde;a del dise&ntilde;o y la herramienta y t&uacute; pones tu marca, con MOQs m&aacute;s cercanos a 100&ndash;300 unidades y poco o ning&uacute;n costo de herramienta.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">&iquest;C&oacute;mo s&eacute; si una pieza de fibra de carbono es real?</div>
+      <div class="faq-a">La fibra de carbono real es notablemente m&aacute;s ligera que la fibra de vidrio o ABS &ldquo;carbon-look&rdquo; del mismo tama&ntilde;o, tiene una leve profundidad tridimensional en el tejido bajo el barniz en lugar de un patr&oacute;n impreso plano, y suena hueco y n&iacute;tido al golpearla. Pide una muestra f&iacute;sica antes de comprometerte a una corrida de producci&oacute;n &mdash; las fotos por s&iacute; solas no distinguen fibra de carbono real de una imitaci&oacute;n convincente.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">&iquest;Qu&eacute; certificaciones necesitan las piezas LED para el mercado de EE.UU.?</div>
+      <div class="faq-a">La certificaci&oacute;n SAE es requerida para iluminaci&oacute;n vendida como legal para circular en EE.UU., y las marcas DOT son requeridas en faros, luces traseras y direccionales. Verificamos el n&uacute;mero de certificado real contra tu n&uacute;mero de parte espec&iacute;fico, no solo confiamos en una insignia en el listado.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">&iquest;Por qu&eacute; importa el offset del rin en un BYD Seagull?</div>
+      <div class="faq-a">Los rines OEM del BYD Seagull requieren un offset espec&iacute;fico de ET&nbsp;54.1. Si un rin llega con un offset diferente, el instalador tiene que agregar un espaciador, lo que afecta la geometr&iacute;a de la suspensi&oacute;n y el comportamiento en curvas, y puede causar desgaste desigual de la llanta a velocidad de carretera.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">&iquest;Cu&aacute;nto cuesta una verificaci&oacute;n de f&aacute;brica?</div>
+      <div class="faq-a">La verificaci&oacute;n de f&aacute;brica inicia en $449 por visita. La inspecci&oacute;n previa al embarque cuesta $399 por d&iacute;a-hombre, y una auditor&iacute;a completa de f&aacute;brica es $499 por d&iacute;a-hombre.</div>
+    </div>
+  </div>
+</section>
+
+<section class="related-guides">
+  <div class="scope-inner">
+    <div class="section-tag">Más Lecturas</div>
+    <div class="section-title">Guías Relacionadas de Autopartes</div>
+    <div class="related-grid">
+      <a href="/blog/es/lista-verificacion-piezas-fibra-carbono-china" class="related-item">Autopartes de Fibra de Carbono en China: 8 Cosas que Verificar Antes de Pedir</a>
+      <a href="/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541" class="related-item">Caso Real: Verificación de Llantas BYD Seagull</a>
+      <a href="/blog/es/oem-vs-odm-autopartes-marca-propia-china" class="related-item">OEM vs ODM Autopartes: Lanza tu Marca Propia desde China</a>
+      <a href="/blog/es/guia-terminologia-autopartes-mexico" class="related-item">Autopartes en Inglés: Glosario de Refacciones para Importar de China</a>
+      <a href="/blog/es/importar-autopartes-led-china-guia" class="related-item">Importar Autopartes LED de China a México: Guía del Comprador</a>
+      <a href="/blog/es/guia-estafas-piezas-led-alibaba" class="related-item">Focos y Faros LED para Auto en Alibaba: Estafas y Errores Comunes</a>
+      <a href="/blog/es/6-verificaciones-calidad-autopartes-antes-embarque" class="related-item">Inspección de Autopartes en China: 6 Verificaciones Antes de Embarcar</a>
     </div>
   </div>
 </section>

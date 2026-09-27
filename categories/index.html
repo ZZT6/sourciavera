@@ -10,17 +10,17 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Categories — China Factory Verification | SourciaVera</title>
+<title>Auto Parts & Other Products We Verify in China | SourciaVera</title>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<meta name="description" content="SourciaVera verifies Chinese suppliers by category — construction materials, auto parts, and industrial chemicals. Before you pay.">
+<meta name="description" content="SourciaVera verifies Chinese suppliers by category — construction materials, auto parts, and badges, medals & keychains. Before you pay.">
 <link rel="alternate" hreflang="en" href="https://sourciavera.com/categories">
 <link rel="alternate" hreflang="es" href="https://sourciavera.com/es/categorias">
 <link rel="alternate" hreflang="x-default" href="https://sourciavera.com/categories">
 <meta property="og:title" content="Product Categories — China Sourcing & Factory Verification | SourciaVera">
-<meta property="og:description" content="Factory verification and sourcing services by product category: construction, auto parts, chemicals. On-the-ground team in Guangzhou.">
+<meta property="og:description" content="Factory verification and sourcing services by product category: construction, auto parts, badges & medals. On-the-ground team in Guangzhou.">
 <meta property="og:url" content="https://sourciavera.com/categories">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://sourciavera.com/og-image.png">
@@ -67,9 +67,15 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .categories{padding:5rem 3rem;background:var(--white)}
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:3rem;line-height:1.2}
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .cat-card{border:1.5px solid var(--border);padding:2.5rem 2rem;transition:border-color 0.2s;display:flex;flex-direction:column}
 .cat-card:hover{border-color:var(--coral)}
+.cat-hero{background:var(--navy);padding:3rem 2.5rem;display:flex;flex-direction:column;margin-bottom:1.5rem}
+.cat-hero .cat-icon{font-size:3rem}
+.cat-hero h3{font-size:1.6rem;font-weight:700;color:white;margin-bottom:0.6rem}
+.cat-hero p{color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.7;max-width:680px;margin-bottom:1.5rem}
+.cat-hero .cat-link{align-self:flex-start}
+.other-products-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin:2.5rem 0 1.2rem}
 .cat-icon{font-size:2.4rem;margin-bottom:1rem;display:block}
 .cat-card h3{font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem}
 .cat-card p{color:var(--muted);font-size:0.88rem;line-height:1.65;flex:1;margin-bottom:1.5rem}
@@ -90,6 +96,7 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .breadcrumb{padding:0.6rem 1.5rem}
 .hero,.categories{padding:3rem 1.5rem}
 .cat-grid{grid-template-columns:1fr}
+.cat-hero{padding:2rem 1.5rem}
 .cta-banner{padding:3rem 1.5rem}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
@@ -139,7 +146,16 @@ nav{position:relative}
 
 <section class="categories">
   <div class="section-tag">Browse by Category</div>
-  <div class="section-title">Four categories.<br>One standard of verification.</div>
+  <div class="section-title">Auto parts is where we go deepest.<br>One standard of verification, everywhere.</div>
+
+  <div class="cat-hero">
+    <span class="cat-icon">🚗</span>
+    <h3>Auto Parts</h3>
+    <p>Wheels, carbon fiber parts, LED lighting, and OEM/ODM private label — plus aftermarket and OEM-compatible parts, NEV components, brake systems, sensors, and more. Guangzhou is the global hub — we know which factories actually manufacture.</p>
+    <a href="/categories/auto-parts" class="cat-link">View Auto Parts →</a>
+  </div>
+
+  <div class="other-products-label">Other products we verify</div>
   <div class="cat-grid">
 
     <div class="cat-card">
@@ -150,20 +166,6 @@ nav{position:relative}
     </div>
 
     <div class="cat-card">
-      <span class="cat-icon">🚗</span>
-      <h3>Auto Parts</h3>
-      <p>Aftermarket and OEM-compatible parts, LED lighting, NEV components, brake systems, sensors, and more. Guangzhou is the global hub — we know which factories actually manufacture.</p>
-      <a href="/categories/auto-parts" class="cat-link">View Auto Parts →</a>
-    </div>
-
-    <div class="cat-card">
-      <span class="cat-icon">⚗️</span>
-      <h3>Industrial Chemicals</h3>
-      <p>Industrial cleaning agents, H₂O₂, surfactants, water treatment, and specialty chemicals. DG-compliant sourcing with full documentation support.</p>
-      <a href="/categories/chemicals" class="cat-link">View Chemicals →</a>
-    </div>
-
-    <div class="cat-card">
       <span class="cat-icon">🎖️</span>
       <h3>Custom Badges, Medals &amp; Keychains</h3>
       <p>Enamel pins, challenge coins, award medals, custom keychains, and other promotional metal goods. We verify mold ownership and plating quality before your bulk order ships.</p>
@@ -171,6 +173,8 @@ nav{position:relative}
     </div>
 
   </div>
+
+  <p class="scope-intro" style="margin-top:2.5rem;margin-bottom:0">Not on this list? Send us the factory anyway — we'll tell you honestly whether we can verify it.</p>
 </section>
 
 <div class="cta-banner">

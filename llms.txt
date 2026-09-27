@@ -1,6 +1,6 @@
 # SourciaVera
 
-> Independent third-party factory verification, supplier audits, and pre-shipment inspections for importers in the US, UK, and Latin America. Based in Guangzhou, China. Pricing starts at $449 per factory verification visit ($399/man-day pre-shipment inspection, $499/man-day factory audit). Reports delivered within 48 hours. Zero factory commissions — we work for buyers only.
+> Independent third-party factory verification and sourcing for auto parts buyers in Latin America, primarily Mexico. Based in Guangzhou, China. We verify wheels, carbon fiber parts, LED lighting, and OEM/ODM private-label auto parts factories before you pay — and the same verification process covers any product category. Pricing starts at $449 per factory verification visit ($399/man-day pre-shipment inspection, $499/man-day factory audit). Reports delivered within 48 hours. Zero factory commissions — we work for buyers only.
 
 ## Core Service Pages
 
@@ -10,6 +10,35 @@
 - [Verification Services by Country](https://sourciavera.com/verification-services/): Country-specific service pages
 - [Mexico Factory Verification](https://sourciavera.com/verification-services/mexico/): Services for Mexican importers
 - [Small Batch Manufacturing](https://sourciavera.com/small-batch): Small order sourcing and custom manufacturing
+
+## Categories
+
+- [Auto Parts from China](https://sourciavera.com/categories/auto-parts): Factory verification for wheels, carbon fiber parts, LED lighting, and OEM/ODM private-label auto parts
+- [Autopartes desde China](https://sourciavera.com/es/categorias/autopartes): Verificación de fábricas de autopartes — rines, fibra de carbono, iluminación LED y marca propia
+- [Construction Materials from China](https://sourciavera.com/categories/construction): Factory verification for container homes, steel structures, and building materials
+- [Materiales de Construcción desde China](https://sourciavera.com/es/categorias/construccion): Verificación de fábricas de materiales de construcción
+- [Custom Badges, Medals & Keychains from China](https://sourciavera.com/categories/badges-medals-keychains): Factory verification for enamel pins, challenge coins, and promotional metal goods
+- [Insignias, Medallas y Llaveros desde China](https://sourciavera.com/es/categorias/insignias-medallas-llaveros): Verificación de fábricas de insignias, medallas y llaveros
+
+## Auto Parts Guides (English)
+
+- [8 Things to Check Before Ordering Custom Carbon Fiber Auto Parts from China](https://sourciavera.com/blog/carbon-fiber-auto-parts-sourcing-checklist): Carbon fiber sourcing checklist for buyers
+- [Real Case: BYD Seagull Wheel Offset Verification](https://sourciavera.com/blog/case-study-byd-seagull-wheel-offset-et541): Catching a wheel-offset mismatch before shipment
+- [OEM vs ODM Auto Parts: Launch a Private-Label Brand from China](https://sourciavera.com/blog/oem-vs-odm-auto-parts-private-label-china): Choosing between OEM and ODM for a private-label auto parts line
+- [Mexican Auto Parts Terminology: A Complete Guide for International Buyers](https://sourciavera.com/blog/mexican-auto-parts-terminology-guide): Local Mexican terms vs. standard Spanish and English auto parts vocabulary
+- [Sourcing LED Auto Parts from China: A Buyer's Guide](https://sourciavera.com/blog/sourcing-led-auto-parts-from-china): How to source LED lighting parts and avoid wattage/chipset substitution
+- [Sourcing LED Auto Parts from Alibaba: Common Buyer Mistakes](https://sourciavera.com/blog/led-auto-parts-alibaba-scam-guide): LED-specific fraud patterns on Alibaba
+- [6 Quality Checks for Auto Parts Buyers Before Shipping](https://sourciavera.com/blog/auto-parts-quality-checks-before-shipping): Fitment, coating, and AQL checks for auto parts orders
+
+## Auto Parts Guides (Español)
+
+- [Autopartes de Fibra de Carbono en China: 8 Cosas que Verificar Antes de Pedir](https://sourciavera.com/blog/es/lista-verificacion-piezas-fibra-carbono-china): Checklist de sourcing de piezas de fibra de carbono
+- [Caso Real: Verificación de Llantas BYD Seagull](https://sourciavera.com/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541): Detectando un desfase de offset antes del embarque
+- [OEM vs ODM Autopartes: Lanza tu Marca Propia desde China](https://sourciavera.com/blog/es/oem-vs-odm-autopartes-marca-propia-china): Cómo elegir entre OEM y ODM para una línea de marca propia
+- [Autopartes en Inglés: Glosario de Refacciones para Importar de China](https://sourciavera.com/blog/es/guia-terminologia-autopartes-mexico): Términos locales mexicanos vs. español e inglés estándar
+- [Importar Autopartes LED de China a México: Guía del Comprador](https://sourciavera.com/blog/es/importar-autopartes-led-china-guia): Cómo abastecerse de iluminación LED sin sustituciones de watts o chipset
+- [Focos y Faros LED para Auto en Alibaba: Estafas y Errores Comunes](https://sourciavera.com/blog/es/guia-estafas-piezas-led-alibaba): Patrones de fraude específicos de piezas LED en Alibaba
+- [Inspección de Autopartes en China: 6 Verificaciones Antes de Embarcar](https://sourciavera.com/blog/es/6-verificaciones-calidad-autopartes-antes-embarque): Verificaciones de ajuste, recubrimiento y AQL
 
 ## Blog — China Sourcing Guides (English)
 

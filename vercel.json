@@ -45,22 +45,32 @@
     },
     {
       "source": "/blog/case-study-h2o2-surabaya-supplier-verification",
-      "destination": "/categories/chemicals",
+      "destination": "/categories",
       "permanent": true
     },
     {
       "source": "/blog/es/verificar-proveedor-peroxido-hidrogeno-surabaya",
-      "destination": "/es/categorias/quimicos",
+      "destination": "/es/categorias",
       "permanent": true
     },
     {
       "source": "/blog/case-study-h2o2-trading-company",
-      "destination": "/categories/chemicals",
+      "destination": "/categories",
       "permanent": true
     },
     {
       "source": "/blog/es/caso-comerciante-disfrazado",
-      "destination": "/es/categorias/quimicos",
+      "destination": "/es/categorias",
+      "permanent": true
+    },
+    {
+      "source": "/categories/chemicals",
+      "destination": "/categories",
+      "permanent": true
+    },
+    {
+      "source": "/es/categorias/quimicos",
+      "destination": "/es/categorias",
       "permanent": true
     },
     {

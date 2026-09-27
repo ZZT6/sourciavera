@@ -52,6 +52,16 @@
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Factory Audit"},"price":"499","priceCurrency":"USD"}
         ]
       }
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"What's the difference between OEM and ODM for auto parts?","acceptedAnswer":{"@type":"Answer","text":"OEM means you supply the design and the factory builds dedicated tooling to your spec, typically 500 to 5,000+ units with a $2,000–$15,000 tooling deposit. ODM means the factory already owns the design and tooling and you put your brand on it, with MOQs closer to 100–300 units and little or no tooling cost."}},
+        {"@type":"Question","name":"How can I tell if carbon fiber auto parts are real?","acceptedAnswer":{"@type":"Answer","text":"Real carbon fiber is noticeably lighter than carbon-look fiberglass or ABS at the same size, has a slight three-dimensional weave depth under the clear coat instead of a flat printed pattern, and gives a sharp, hollow sound when tapped. Ask for a physical sample before committing to a production run."}},
+        {"@type":"Question","name":"What certifications do LED auto parts need for the US market?","acceptedAnswer":{"@type":"Answer","text":"SAE certification is required for lighting sold as road-legal in the US, and DOT marks are required on headlights, taillights, and turn signals. We verify the actual certificate number against your specific part number rather than trusting a badge on the listing page."}},
+        {"@type":"Question","name":"Why does wheel offset matter for a BYD Seagull?","acceptedAnswer":{"@type":"Answer","text":"The BYD Seagull's OEM wheels require a specific offset of ET 54.1. If a wheel arrives with a different offset, the installer has to add a spacer, which affects suspension geometry and cornering behavior and can cause uneven tire wear at highway speed."}},
+        {"@type":"Question","name":"How much does a factory verification cost?","acceptedAnswer":{"@type":"Answer","text":"Factory verification starts at $449 per visit. Pre-shipment inspection runs $399 per man-day, and a full factory audit is $499 per man-day."}}
+      ]
     }
   ]
 }
@@ -94,6 +104,11 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .product-dot{width:8px;height:8px;background:var(--coral);flex-shrink:0;margin-top:0.5rem}
 .product-item strong{display:block;font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:0.15rem}
 .product-item span{font-size:0.82rem;color:var(--muted);line-height:1.5}
+.related-guides{padding:5rem 3rem;background:var(--white)}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.related-item{display:block;background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--coral);padding:1rem 1.3rem;font-size:0.9rem;font-weight:600;color:var(--navy);line-height:1.5;transition:border-color 0.2s,background 0.2s}
+.related-item:hover{border-color:var(--coral);background:var(--white)}
+@media(max-width:768px){.related-guides{padding:3rem 1.5rem}.related-grid{grid-template-columns:1fr}}
 .cta-section{padding:5rem 3rem;background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .cta-left h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:1rem;line-height:1.25}
 .cta-left p{color:var(--muted);font-size:0.9rem;line-height:1.8;margin-bottom:1.5rem}
@@ -166,6 +181,16 @@ nav{position:relative}
 .checklist-box{background:var(--navy);padding:2rem 2.2rem}
 .checklist-box h3{color:var(--yellow);font-size:1rem;font-weight:700;margin-bottom:1rem}
 .checklist-box ul{margin:0;padding-left:1.2rem;color:rgba(255,255,255,0.85);font-size:0.88rem;line-height:1.9}
+.guide-inner h2,.cs-section-inner h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin:3.5rem 0 1.2rem;padding-left:1rem;border-left:4px solid var(--coral)}
+.cs-section-inner h2{margin-top:0}
+.h2-link{display:inline-block;margin-top:0.5rem;color:var(--coral);font-weight:600;font-size:0.9rem}
+.faq-section{padding:5rem 3rem;background:var(--white)}
+.faq-inner{max-width:2200px}
+.faq-item{border-top:1.5px solid var(--border);padding:1.5rem 0}
+.faq-item:last-child{border-bottom:1.5px solid var(--border)}
+.faq-q{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem}
+.faq-a{font-size:0.9rem;color:var(--muted);line-height:1.75}
+@media(max-width:768px){.faq-section{padding:3rem 1.5rem}.guide-inner h2{font-size:1.35rem;margin-top:2.5rem}}
 @media(max-width:768px){.guide-grid{grid-template-columns:1fr}.guide-section{padding:3rem 1.5rem}}
 span.sv-off{display:inline-flex;align-items:center;gap:0.4rem;background:#D62828;color:#fff;font-size:0.68rem;font-weight:600;line-height:1.2;padding:0.2rem 0.55rem;margin:0 0.45rem 0.4rem 0;border-radius:3px;letter-spacing:0.02em;vertical-align:middle;white-space:normal;text-transform:none;text-align:left}
 span.sv-off b{color:#fff;font-size:0.85rem;font-weight:800;letter-spacing:0}
@@ -214,6 +239,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 
 <section class="cs-section">
   <div class="cs-section-inner">
+    <h2>Wheels &amp; Tires</h2>
     <div class="section-tag">Real Case &middot; How We Work</div>
     <div class="section-title" style="margin-bottom:1rem">How we verified the correct offset (ET&nbsp;54.1)<br>for OEM wheels on a BYD Seagull</div>
     <p class="scope-intro">A Latin American buyer needed OEM wheels for the BYD Seagull &mdash; with a specific ET&nbsp;54.1 offset. What looked like a simple order revealed a chain of technical decisions that are almost impossible to validate from abroad without someone on the ground.</p>
@@ -324,6 +350,18 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <li>Packaging method suited for ocean freight, not just domestic distribution</li>
       </ul>
     </div>
+
+    <h2>Carbon Fiber Parts</h2>
+    <p class="scope-intro" style="max-width:100%">Carbon fiber is one of the easiest auto parts to fake in a listing photo &mdash; carbon-look fiberglass or ABS with a printed weave finish looks identical on screen. In hand, real carbon fiber is noticeably lighter, has slight three-dimensional depth under the clear coat, and gives a sharp, hollow sound when tapped. Manufacturing process matters just as much: wet layup is the cheapest and least consistent method, while prepreg-and-autoclave curing is what structural, load-bearing parts actually need. We also confirm who owns the mold &mdash; the factory or you &mdash; since that decides whether you can reorder on your own terms later.</p>
+    <a href="/blog/carbon-fiber-auto-parts-sourcing-checklist" class="h2-link">Full checklist: 8 Things to Check Before Ordering Custom Carbon Fiber Auto Parts &rarr;</a>
+
+    <h2>LED Lighting</h2>
+    <p class="scope-intro" style="max-width:100%">Guangzhou is the world's LED auto parts hub, and also where the wattage numbers are least reliable. A bulb listed as &ldquo;60W, 12,000LM&rdquo; typically measures 28&ndash;34W and 4,500&ndash;6,000LM under real load &mdash; the sample passes, then the bulk run gets quietly re-binned to a lower output tier. A second common pattern is chipset substitution: a named brand chip costs roughly $0.80&ndash;$1.20 per die versus $0.15&ndash;$0.25 for an unbranded substitute, and the failure shows up 3&ndash;6 months after installation, not in QC. For any market with lighting regulations, we check that the DOT/ECE/CE certificate number actually matches your part number, not just the listing photo.</p>
+    <a href="/blog/sourcing-led-auto-parts-from-china" class="h2-link">Full guide: Sourcing LED Auto Parts from China &rarr;</a>
+
+    <h2>OEM/ODM Private Label</h2>
+    <p class="scope-intro" style="max-width:100%">Most buyers who ask us about &ldquo;OEM&rdquo; actually need ODM. OEM means you supply the design and the factory builds dedicated tooling to your spec &mdash; typical minimums run 500 to 5,000+ units with a $2,000&ndash;$15,000 tooling deposit. ODM means the factory already owns the design and tooling and you brand it, with MOQs closer to 100&ndash;300 units and little or no tooling cost. The real risk isn't the model you pick &mdash; it's an &ldquo;ODM factory&rdquo; that doesn't actually own the tooling it's showing you, subcontracting your order to a shop it doesn't control. Lower-risk categories to launch first: wiper blades, cabin air filters, LED bulb replacements &mdash; save wheels and brakes for later, since fitment tolerances vary by vehicle generation.</p>
+    <a href="/blog/oem-vs-odm-auto-parts-private-label-china" class="h2-link">Full guide: OEM vs ODM Auto Parts &rarr;</a>
   </div>
 </section>
 
@@ -359,6 +397,50 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <div class="product-icon"><img src="/images/auto-parts-icon-6-wheel.svg" alt="" aria-hidden="true"></div>
         <div><strong>Scented Wheel Hub Caps</strong><span>Fragrance-infused wheel hub caps — a niche accessory category we can source and verify for private-label sellers.</span></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="section-tag">Common Questions</div>
+    <div class="section-title">Auto Parts FAQ</div>
+
+    <div class="faq-item">
+      <div class="faq-q">What's the difference between OEM and ODM for auto parts?</div>
+      <div class="faq-a">OEM means you supply the design and the factory builds dedicated tooling to your spec, typically 500 to 5,000+ units with a $2,000&ndash;$15,000 tooling deposit. ODM means the factory already owns the design and tooling and you put your brand on it, with MOQs closer to 100&ndash;300 units and little or no tooling cost.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How can I tell if carbon fiber auto parts are real?</div>
+      <div class="faq-a">Real carbon fiber is noticeably lighter than carbon-look fiberglass or ABS at the same size, has a slight three-dimensional weave depth under the clear coat instead of a flat printed pattern, and gives a sharp, hollow sound when tapped. Ask for a physical sample before committing to a production run &mdash; photos alone can't tell real carbon fiber from a convincing imitation.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What certifications do LED auto parts need for the US market?</div>
+      <div class="faq-a">SAE certification is required for lighting sold as road-legal in the US, and DOT marks are required on headlights, taillights, and turn signals. We verify the actual certificate number against your specific part number rather than trusting a badge on the listing page.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Why does wheel offset matter for a BYD Seagull?</div>
+      <div class="faq-a">The BYD Seagull's OEM wheels require a specific offset of ET&nbsp;54.1. If a wheel arrives with a different offset, the installer has to add a spacer, which affects suspension geometry and cornering behavior and can cause uneven tire wear at highway speed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How much does a factory verification cost?</div>
+      <div class="faq-a">Factory verification starts at $449 per visit. Pre-shipment inspection runs $399 per man-day, and a full factory audit is $499 per man-day.</div>
+    </div>
+  </div>
+</section>
+
+<section class="related-guides">
+  <div class="scope-inner">
+    <div class="section-tag">Further Reading</div>
+    <div class="section-title">Related Auto Parts Guides</div>
+    <div class="related-grid">
+      <a href="/blog/carbon-fiber-auto-parts-sourcing-checklist" class="related-item">8 Things to Check Before Ordering Custom Carbon Fiber Auto Parts from China</a>
+      <a href="/blog/case-study-byd-seagull-wheel-offset-et541" class="related-item">Real Case: BYD Seagull Wheel Offset Verification</a>
+      <a href="/blog/oem-vs-odm-auto-parts-private-label-china" class="related-item">OEM vs ODM Auto Parts: Launch a Private-Label Brand from China</a>
+      <a href="/blog/mexican-auto-parts-terminology-guide" class="related-item">Mexican Auto Parts Terminology: A Complete Guide for International Buyers</a>
+      <a href="/blog/sourcing-led-auto-parts-from-china" class="related-item">Sourcing LED Auto Parts from China: A Buyer's Guide</a>
+      <a href="/blog/led-auto-parts-alibaba-scam-guide" class="related-item">Sourcing LED Auto Parts from Alibaba: Common Buyer Mistakes</a>
+      <a href="/blog/auto-parts-quality-checks-before-shipping" class="related-item">6 Quality Checks for Auto Parts Buyers Before Shipping</a>
     </div>
   </div>
 </section>

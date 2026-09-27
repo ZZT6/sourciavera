@@ -10,17 +10,17 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Categorías de Productos — Importación desde China | SourciaVera</title>
+<title>Autopartes y Otros Productos Verificados en China | SourciaVera</title>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<meta name="description" content="SourciaVera verifica proveedores chinos por categoría: materiales de construcción, autopartes y químicos industriales, antes de pagar.">
+<meta name="description" content="SourciaVera verifica proveedores chinos por categoría: materiales de construcción, autopartes e insignias, medallas y llaveros, antes de pagar.">
 <link rel="alternate" hreflang="en" href="https://sourciavera.com/categories">
 <link rel="alternate" hreflang="es" href="https://sourciavera.com/es/categorias">
 <link rel="alternate" hreflang="x-default" href="https://sourciavera.com/categories">
 <meta property="og:title" content="Categorías de Productos — Importación desde China | SourciaVera">
-<meta property="og:description" content="Verificación de fábricas y sourcing por categoría: construcción, autopartes, químicos. Equipo en terreno en Guangzhou.">
+<meta property="og:description" content="Verificación de fábricas y sourcing por categoría: construcción, autopartes, insignias y medallas. Equipo en terreno en Guangzhou.">
 <meta property="og:url" content="https://sourciavera.com/es/categorias">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://sourciavera.com/og-image-es.png">
@@ -67,8 +67,14 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .categories{padding:5rem 3rem;background:var(--white)}
 .section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
 .section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:3rem;line-height:1.2}
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
 .cat-card{border:1.5px solid var(--border);padding:2.5rem 2rem;transition:border-color 0.2s;display:flex;flex-direction:column}
+.cat-hero{background:var(--navy);padding:3rem 2.5rem;display:flex;flex-direction:column;margin-bottom:1.5rem}
+.cat-hero .cat-icon{font-size:3rem}
+.cat-hero h3{font-size:1.6rem;font-weight:700;color:white;margin-bottom:0.6rem}
+.cat-hero p{color:rgba(255,255,255,0.7);font-size:0.95rem;line-height:1.7;max-width:680px;margin-bottom:1.5rem}
+.cat-hero .cat-link{align-self:flex-start}
+.other-products-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin:2.5rem 0 1.2rem}
 .cat-card:hover{border-color:var(--coral)}
 .cat-icon{font-size:2.4rem;margin-bottom:1rem;display:block}
 .cat-card h3{font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem}
@@ -90,6 +96,7 @@ nav{padding:1rem 1.5rem}.nav-links{display:none}
 .breadcrumb{padding:0.6rem 1.5rem}
 .hero,.categories{padding:3rem 1.5rem}
 .cat-grid{grid-template-columns:1fr}
+.cat-hero{padding:2rem 1.5rem}
 .cta-banner{padding:3rem 1.5rem}
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
 .footer-links{gap:1rem}
@@ -138,7 +145,16 @@ nav{position:relative}
 
 <section class="categories">
   <div class="section-tag">Explorar por Categoría</div>
-  <div class="section-title">Cuatro categorías.<br>Un estándar de verificación.</div>
+  <div class="section-title">En autopartes es donde vamos más a fondo.<br>Un estándar de verificación, en todo.</div>
+
+  <div class="cat-hero">
+    <span class="cat-icon">🚗</span>
+    <h3>Autopartes</h3>
+    <p>Rines, piezas de fibra de carbono, iluminación LED y marca propia OEM/ODM — además de repuestos aftermarket y compatibles OEM, componentes para vehículos eléctricos, frenos, sensores y más. Guangzhou es el hub global — sabemos qué fábricas realmente fabrican.</p>
+    <a href="/es/categorias/autopartes" class="cat-link">Ver Autopartes →</a>
+  </div>
+
+  <div class="other-products-label">Otros productos que verificamos</div>
   <div class="cat-grid">
 
     <div class="cat-card">
@@ -149,20 +165,6 @@ nav{position:relative}
     </div>
 
     <div class="cat-card">
-      <span class="cat-icon">🚗</span>
-      <h3>Autopartes</h3>
-      <p>Repuestos aftermarket y compatibles OEM, iluminación LED, componentes para vehículos eléctricos, frenos, sensores y más. Guangzhou es el hub global — sabemos qué fábricas realmente fabrican.</p>
-      <a href="/es/categorias/autopartes" class="cat-link">Ver Autopartes →</a>
-    </div>
-
-    <div class="cat-card">
-      <span class="cat-icon">⚗️</span>
-      <h3>Químicos Industriales</h3>
-      <p>Agentes de limpieza industrial, H₂O₂, surfactantes, tratamiento de agua y químicos especializados. Sourcing con cumplimiento DG y documentación completa.</p>
-      <a href="/es/categorias/quimicos" class="cat-link">Ver Químicos →</a>
-    </div>
-
-    <div class="cat-card">
       <span class="cat-icon">🎖️</span>
       <h3>Insignias, Medallas y Llaveros</h3>
       <p>Pines de esmalte, monedas conmemorativas, medallas de premiación, llaveros personalizados y otros artículos promocionales de metal. Verificamos la titularidad del molde y la calidad del plateado antes de que se envíe tu pedido.</p>
@@ -170,6 +172,8 @@ nav{position:relative}
     </div>
 
   </div>
+
+  <p class="scope-intro" style="margin-top:2.5rem;margin-bottom:0">¿No está en la lista? Envíanos la fábrica de todos modos — te diremos con honestidad si podemos verificarla.</p>
 </section>
 
 <div class="cta-banner">
