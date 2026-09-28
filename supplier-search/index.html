@@ -270,7 +270,8 @@
       + '<dt>Export markets</dt><dd>'+esc((s.export_markets||[]).join(', ')||'—')+'</dd>'
       + '<dt>Suitable buyer type</dt><dd>'+esc(buyerTypeNames(s.buyer_types))+'</dd>'
       + '<dt>MOQ</dt><dd>'+esc(s.moq||'—')+'</dd>'
-      + (s.verified_on ? '<dt>Last checked</dt><dd>'+esc(s.verified_on)+'</dd>' : '')
+      + (s.verified_on ? '<dt>Verified on</dt><dd>'+esc(s.verified_on)+'</dd>' : '')
+      + (s.last_reviewed ? '<dt>Last reviewed</dt><dd>'+esc(s.last_reviewed)+(s.last_reviewed!==s.verified_on?' <span style="color:var(--muted)">(info refreshed since verification)</span>':'')+'</dd>' : '')
       + '<dt>Notes</dt><dd>'+esc(s.notes||'—')+'</dd>'
       + '</dl>'
       + (s.insight ? '<div class="note" style="margin:1.1rem 0 0"><strong>SourciaVera Insight</strong><br>'+esc(s.insight.replace(/^SourciaVera Insight:\s*/i,''))+'</div>' : '')
