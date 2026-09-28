@@ -15,7 +15,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="p:domain_verify" content="03dc286b3a06111009ae942961208b98"/>
-<title>China Supplier Intelligence &amp; Factory Verification | SourciaVera</title>
+<title>China Supplier Verification &amp; Auto Parts Factory Audit | SourciaVera</title>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -24,7 +24,7 @@
 <link rel="alternate" hreflang="en" href="https://sourciavera.com/">
 <link rel="alternate" hreflang="es" href="https://sourciavera.com/es">
 <link rel="alternate" hreflang="x-default" href="https://sourciavera.com/">
-<meta property="og:title" content="China Supplier Intelligence & Factory Verification | SourciaVera">
+<meta property="og:title" content="China Supplier Verification & Auto Parts Factory Audit | SourciaVera">
 <meta property="og:description" content="Independent third-party verification of your Chinese supplier — we visit the factory in person, film video proof, and negotiate in Chinese. Real information before you send money.">
 <meta property="og:url" content="https://sourciavera.com/">
 <meta property="og:type" content="website">
@@ -135,6 +135,10 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .hero h1{font-size:clamp(2.3rem,4.75vw,3.9rem);line-height:1.1;font-weight:700;color:white;margin-bottom:0.8rem}
 .hero h1 span{color:var(--yellow)}
 .hero p{color:rgba(255,255,255,0.65);font-size:1.1rem;max-width:520px;margin-bottom:2rem;line-height:1.75}
+.hero-search{display:flex;gap:0;max-width:520px;margin-bottom:1.25rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18)}
+.hero-search input{flex:1;background:transparent;border:none;color:white;padding:0.9rem 1.1rem;font-size:0.92rem;font-family:inherit;outline:none}
+.hero-search input::placeholder{color:rgba(255,255,255,0.45)}
+.hero-search button{background:var(--yellow);color:var(--navy);border:none;padding:0.9rem 1.3rem;font-size:0.82rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;font-family:inherit}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
 .btn-main{background:var(--coral);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer}
 .btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;background:transparent}
@@ -197,6 +201,16 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .why-icon{font-size:1.6rem;margin-bottom:1rem}
 .why-card h3{font-size:1rem;font-weight:500;color:white;margin-bottom:0.3rem}
 .why-card p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7}
+.journey-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:1200px;margin:2.5rem auto 0;border:1px solid var(--border)}
+.journey-step{padding:1.75rem 1.5rem;border-right:1px solid var(--border);position:relative}
+.journey-step:last-child{border-right:none}
+.journey-num{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.78rem;color:var(--coral);font-weight:700;letter-spacing:0.05em}
+.journey-step h3{font-size:1.02rem;font-weight:700;color:var(--navy);margin:0.5rem 0 0.5rem}
+.journey-step p{color:var(--muted);font-size:0.85rem;line-height:1.6;margin-bottom:0.9rem}
+.journey-step a{color:var(--coral);font-size:0.8rem;font-weight:600;text-decoration:none}
+.journey-step a:hover{text-decoration:underline}
+@media(max-width:900px){.journey-grid{grid-template-columns:1fr 1fr}.journey-step:nth-child(2){border-right:none}}
+@media(max-width:600px){.journey{padding:2.5rem 1.5rem 1.5rem!important}.journey-grid{grid-template-columns:1fr}.journey-step{border-right:none;border-bottom:1px solid var(--border)}.journey-step:last-child{border-bottom:none}}
 .paths{background:var(--light);padding:5rem 3rem}
 .paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
 .path-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column}
@@ -398,12 +412,16 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <div class="hero-tag" data-en="📍 Guangzhou, China — Worldwide Buyers" data-es="📍 Guangzhou, China — Compradores Globales">📍 Guangzhou, China — Worldwide Buyers</div>
     <h1 data-en='Before you pay a Chinese supplier,<br>know exactly <span>who you\'re dealing with</span>.' data-es='Antes de pagarle a un proveedor chino,<br>sepa exactamente <span>con quién trata</span>.'>Before you pay a Chinese supplier,<br>know exactly <span>who you're dealing with</span>.</h1>
     <p data-en="Found a factory on Alibaba or 1688? An Alibaba &quot;Verified Supplier&quot; badge doesn't confirm the goods, the timeline, or that you're talking to a real manufacturer. We're an independent team on the ground in Guangzhou — auto parts, construction and more — for buyers in the US and Latin America. Search suppliers we've already researched, or send us yours and we go on site, camera in hand, before you send a deposit." data-es="¿Encontraste una fábrica en Alibaba o 1688? La insignia de &quot;Proveedor Verificado&quot; de Alibaba no confirma la mercancía, los plazos, ni que hables con un fabricante real. Somos un equipo independiente en Guangzhou — autopartes, construcción y más — para compradores en EE.UU. y Latinoamérica. Busca proveedores que ya investigamos, o envíanos el tuyo y vamos a la fábrica, cámara en mano, antes de que envíes un depósito.">Found a factory on Alibaba or 1688? An Alibaba "Verified Supplier" badge doesn't confirm the goods, the timeline, or that you're talking to a real manufacturer. We're an independent team on the ground in Guangzhou — auto parts, construction and more — for buyers in the US and Latin America. Search suppliers we've already researched, or send us yours and we go on site, camera in hand, before you send a deposit.</p>
+    <form class="hero-search" onsubmit="event.preventDefault();var v=this.q.value.trim();window.location='/supplier-search'+(v?('?q='+encodeURIComponent(v)):'');">
+      <input name="q" type="search" data-en="Search a supplier or product — e.g. brake pad factory" data-es="Busca un proveedor o producto — ej. fábrica de balatas" placeholder="Search a supplier or product — e.g. brake pad factory">
+      <button type="submit" data-en="Search" data-es="Buscar">Search</button>
+    </form>
     <div class="hero-btns">
       <a class="btn-main" href="/supplier-search" data-en="Search Suppliers" data-es="Buscar Proveedores" style="text-decoration:none;display:inline-block">Search Suppliers</a>
       <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Verify a Factory" data-es="Verificar una Fábrica">Verify a Factory</button>
     </div>
   </div>
-  <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Illustrated shipping route map from Guangzhou, China to Los Angeles, Lázaro Cárdenas, Colón, Callao and Chile, with auto parts cargo" loading="eager"></div>
+  <div class="hero-map reveal-water"><img src="/images/factory-line-wide-view.webp" alt="Real production line inside a Chinese factory, filmed on-site by the SourciaVera verification team" loading="eager"></div>
 </section>
 
 <div class="stats" id="stats-bar">
@@ -412,6 +430,37 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   <div class="stat"><span class="stat-num">EN/ES</span><span class="stat-label" data-en="English & Spanish" data-es="Inglés y Español">English & Spanish</span></div>
   <div class="stat"><span class="stat-num">0%</span><span class="stat-label" data-en="Factory commission" data-es="Comisión de fábrica">Factory commission</span></div>
 </div>
+
+<section class="journey" style="background:var(--white);padding:3.5rem 3rem 2.5rem">
+  <div class="section-tag" style="text-align:center" data-en="How Buyers Use SourciaVera" data-es="Cómo Usan SourciaVera los Compradores">How Buyers Use SourciaVera</div>
+  <h2 class="section-title" style="text-align:center;max-width:720px;margin-left:auto;margin-right:auto" data-en="Four steps from a listing you found to goods you can trust." data-es="Cuatro pasos: de una ficha que encontraste a mercancía en la que puedes confiar.">Four steps from a listing you found to goods you can trust.</h2>
+  <div class="journey-grid">
+    <div class="journey-step">
+      <span class="journey-num">01</span>
+      <h3 data-en="Discover" data-es="Descubre">Discover</h3>
+      <p data-en="Search suppliers we've already researched, or a buyer guide for your product category." data-es="Busca proveedores que ya investigamos, o una guía para tu categoría de producto.">Search suppliers we've already researched, or a buyer guide for your product category.</p>
+      <a href="/supplier-search" data-en="Search Suppliers →" data-es="Buscar Proveedores →">Search Suppliers →</a>
+    </div>
+    <div class="journey-step">
+      <span class="journey-num">02</span>
+      <h3 data-en="Understand" data-es="Entiende">Understand</h3>
+      <p data-en="Read the supplier profile — company type, export markets, MOQ, and our own buyer-side insight." data-es="Lee el perfil del proveedor — tipo de empresa, mercados de exportación, MOQ y nuestra opinión como comprador.">Read the supplier profile — company type, export markets, MOQ, and our own buyer-side insight.</p>
+      <a href="/guides" data-en="Browse Buyer Guides →" data-es="Ver Guías →">Browse Buyer Guides →</a>
+    </div>
+    <div class="journey-step">
+      <span class="journey-num">03</span>
+      <h3 data-en="Verify" data-es="Verifica">Verify</h3>
+      <p data-en="Our team goes on-site in China: business license, production line, product checked against your spec." data-es="Nuestro equipo va a la fábrica en China: licencia comercial, línea de producción, producto contra tu ficha técnica.">Our team goes on-site in China: business license, production line, product checked against your spec.</p>
+      <a href="/factory-verification-report" data-en="See a Sample Report →" data-es="Ver un Informe de Muestra →">See a Sample Report →</a>
+    </div>
+    <div class="journey-step">
+      <span class="journey-num">04</span>
+      <h3 data-en="Source with Confidence" data-es="Compra con Confianza">Source with Confidence</h3>
+      <p data-en="Place the order, or let us negotiate and manage production and shipping as your partner on the ground." data-es="Coloca el pedido, o deja que negociemos y gestionemos producción y envío como tu socio en terreno.">Place the order, or let us negotiate and manage production and shipping as your partner on the ground.</p>
+      <a href="#contact" data-en="Talk to Us →" data-es="Hablemos →">Talk to Us →</a>
+    </div>
+  </div>
+</section>
 
 <div class="cross-link" data-en='Our verification process works for any product. Auto parts is where we go deepest. → <a href="/categories">See what else we verify</a>' data-es='Nuestro proceso de verificación funciona para cualquier producto. En autopartes es donde vamos más a fondo. → <a href="/es/categorias">Ver otros productos</a>'>Our verification process works for any product. Auto parts is where we go deepest. → <a href="/categories">See what else we verify</a></div>
 

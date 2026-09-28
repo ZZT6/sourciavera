@@ -61,8 +61,20 @@ a.card:hover{border-color:var(--coral);box-shadow:0 4px 18px rgba(13,34,64,0.07)
 .chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
 .chip-verified{color:var(--teal)}
 .chip-desk{color:#9A6B00}
+.chip-contacted{color:#2B6CB0}
 .chip-none{color:#6B6B6B}
 .chip-risk{color:var(--coral)}
+
+/* Verification level ladder (1-4) used on supplier profiles */
+.ladder{display:flex;flex-direction:column;gap:0.85rem}
+.ladder-step{display:flex;gap:0.9rem;align-items:flex-start}
+.ladder-step .num{font-family:var(--mono);font-weight:700;font-size:0.8rem;width:1.6rem;height:1.6rem;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ladder-step h4{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.2rem}
+.ladder-step p{font-size:0.86rem;color:var(--muted);margin:0}
+.ladder-step.l1{color:#6B6B6B}
+.ladder-step.l2{color:#2B6CB0}
+.ladder-step.l3{color:#9A6B00}
+.ladder-step.l4{color:var(--teal)}
 
 /* Data fields (supplier profile) */
 .dl{display:grid;grid-template-columns:150px 1fr;border-top:1px solid var(--border)}
