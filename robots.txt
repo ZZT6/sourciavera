@@ -1,20 +1,26 @@
 User-agent: *
 Allow: /
+Disallow: /content/
 
-# AI crawlers — explicitly permitted
+# AI crawlers — explicitly permitted, except the internal fact library
 User-agent: GPTBot
 Allow: /
+Disallow: /content/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /content/
 
 User-agent: Anthropic-AI
 Allow: /
+Disallow: /content/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /content/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /content/
 
 Sitemap: https://sourciavera.com/sitemap.xml
