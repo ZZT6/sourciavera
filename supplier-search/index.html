@@ -277,6 +277,7 @@
       + '<div class="links">'
       + (ev ? '<a href="'+esc(ev)+'">Evidence →</a>' : '')
       + (gd ? '<a href="'+esc(gd)+'">Buyer guide →</a>' : '')
+      + (s.source_links||[]).map(function(l){var u=safeUrl(l&&l.url);return u?'<a href="'+esc(u)+'" target="_blank" rel="noopener nofollow">'+esc(l.label||'Source')+' ↗</a>':'';}).join('')
       + '<a href="#check">Ask us to verify this supplier →</a></div></article>';
   }
 

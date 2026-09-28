@@ -1,5 +1,5 @@
 {
-  "_readme": "Supplier Intelligence research file (manual CMS, no build step, no scraping, no auto-generation). Add one object per supplier to 'suppliers'. Only entries with \"published\": true appear on /supplier-search. Never publish a supplier unless the facts came from our own research, outreach or visit. verification_status is a 4-level ladder describing HOW we know what we know, not a ranking: public_checked (registry / listing reviewed) < supplier_contacted (we reached out, got a reply) < documents_reviewed (license, catalog or spec sheet reviewed) < factory_visited (SourciaVera team physically on-site). buyer_types: pick from small_importer | regional_distributor | amazon_seller | large_wholesaler | oem_buyer. insight is SourciaVera's own buyer-side judgment (a sentence of advice), separate from notes (factual observations). risk_level: low | medium | high | unknown — our read at verified_on, not a permanent rating.",
+  "_readme": "Supplier Intelligence research file (manual CMS, no build step, no scraping, no auto-generation). Add one object per supplier to 'suppliers'. Only entries with \"published\": true appear on /supplier-search. Never publish a supplier unless the facts came from our own research, outreach or visit. verification_status is a 4-level ladder describing HOW we know what we know, not a ranking: public_checked (registry / listing reviewed) < supplier_contacted (we reached out, got a reply) < documents_reviewed (license, catalog or spec sheet reviewed) < factory_visited (SourciaVera team physically on-site). buyer_types: pick from small_importer | regional_distributor | amazon_seller | large_wholesaler | oem_buyer. insight is SourciaVera's own buyer-side judgment (a sentence of advice, our main differentiation from a directory listing) — keep it separate from notes (factual observations). source_links: real, checkable public records for this supplier (business registry entry, Alibaba/1688 listing, official site) — prefer these over our own internal pages so a buyer can verify independently; each item is {label, url}. risk_level: low | medium | high | unknown — our read at verified_on, not a permanent rating.",
   "industries": [
     { "slug": "auto-parts",   "name": "Auto Parts & NEV",               "category_url": "/categories/auto-parts" },
     { "slug": "construction", "name": "Construction & Container Homes", "category_url": "/categories/construction" },
@@ -30,6 +30,10 @@
       "risk_level": "low",
       "insight": "SourciaVera Insight: suitable for buyers needing complete spare wheel kits for Chinese EV models, in small trial batches before scaling. Confirm export experience and current capacity before a large order.",
       "notes": "Registered and production addresses matched; issued a stamped spec sheet before sample order after the first version mixed up offset and center bore.",
+      "source_links": [
+        { "label": "Business registry entry (example — replace with real gsxt.gov.cn or equivalent link)", "url": null },
+        { "label": "Alibaba / 1688 listing (example — replace with real link)", "url": null }
+      ],
       "evidence_url": "/case-studies/byd-seagull-spare-wheel-verification",
       "guide_url": "/guides/china-auto-parts-manufacturers"
     }
