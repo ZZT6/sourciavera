@@ -1,0 +1,10 @@
+{
+  "_readme": "Homepage stats bar. Only fill in REAL numbers. Any item whose value is null or empty is hidden, and if fewer than 2 items have values the bar falls back to the service facts in index.html. 'updated' is shown as 'as of' under the bar.",
+  "updated": null,
+  "items": [
+    { "key": "factories_visited",   "label": "Factories visited in person", "value": null, "suffix": "+" },
+    { "key": "suppliers_analyzed",  "label": "Suppliers analyzed",          "value": null, "suffix": "+" },
+    { "key": "industries_covered",  "label": "Industries covered",          "value": null, "suffix": "" },
+    { "key": "countries_served",    "label": "Buyer countries served",      "value": null, "suffix": "" }
+  ]
+}

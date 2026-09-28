@@ -1,0 +1,28 @@
+{
+  "_readme": "Supplier Intelligence database (manual CMS). Add one object per supplier to 'suppliers'. Only entries with \"published\": true appear on /supplier-search. Never publish a supplier unless the facts come from our own research or visit. verification_status must be one of: verified_onsite | desk_checked | not_verified. risk_level: low | medium | high | unknown.",
+  "industries": [
+    { "slug": "auto-parts",   "name": "Auto Parts & NEV",               "category_url": "/categories/auto-parts" },
+    { "slug": "construction", "name": "Construction & Container Homes", "category_url": "/categories/construction" },
+    { "slug": "badges",       "name": "Badges, Medals & Keychains",     "category_url": "/categories/badges-medals-keychains" }
+  ],
+  "suppliers": [
+    {
+      "id": "example-steel-wheel-sichuan",
+      "published": false,
+      "name": "EXAMPLE — replace with real supplier name",
+      "industry": "auto-parts",
+      "products": ["Steel spare wheels", "Spare wheel kits"],
+      "location": "Sichuan, China",
+      "company_type": "manufacturer",
+      "export_markets": ["Mexico", "Latin America"],
+      "suitable_for": "Buyers needing complete spare wheel kits for Chinese EV models",
+      "moq": "To be confirmed",
+      "verification_status": "verified_onsite",
+      "verified_on": "2026-09-01",
+      "risk_level": "low",
+      "notes": "Registered and production addresses matched; issued a stamped spec sheet before sample order.",
+      "evidence_url": "/blog/case-study-byd-seagull-spare-wheel-offset",
+      "guide_url": null
+    }
+  ]
+}
