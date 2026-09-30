@@ -247,6 +247,15 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--coral)}
 .form-group textarea{resize:vertical;min-height:110px}
 .btn-submit{background:var(--coral);color:white;padding:1rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;width:100%;font-family:inherit}
+.diag-steps{display:flex;justify-content:center;gap:0.6rem;margin-bottom:0.4rem}
+.diag-step-dot{width:1.8rem;height:1.8rem;border-radius:50%;background:var(--light);border:1.5px solid var(--border);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600;flex-shrink:0}
+.diag-step-dot.active{background:var(--coral);border-color:var(--coral);color:white}
+.diag-step-dot.done{background:var(--navy);border-color:var(--navy);color:var(--yellow)}
+.diag-options{display:flex;flex-direction:column;gap:0.6rem}
+.diag-radio{display:flex;align-items:center;gap:0.6rem;background:var(--light);border:1.5px solid var(--border);padding:0.75rem 1rem;cursor:pointer;font-size:0.9rem;color:var(--navy)}
+.diag-radio:has(input:checked){border-color:var(--coral);background:white}
+.diag-radio input{accent-color:var(--coral);flex-shrink:0}
+.btn-back{background:transparent;color:var(--muted);padding:0.75rem 1rem;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:1.5px solid var(--border);cursor:pointer;font-family:inherit;margin-bottom:0.6rem;width:100%}
 .wa-float{position:fixed;bottom:2rem;right:2rem;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:100;text-decoration:none}
 @media(max-width:600px){.wa-float{width:48px;height:48px;font-size:1.3rem;bottom:1.1rem;right:1.1rem}.btn-main{max-width:calc(100% - 70px)}}
 footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6)}
@@ -417,6 +426,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <h3 data-en="Don't have a factory yet? We become your supply chain team." data-es="¿Aún no tienes fábrica? Nos convertimos en tu equipo de cadena de suministro.">Don't have a factory yet? We become your supply chain team.</h3>
       <p data-en="Beyond a one-time inspection, we put our own network in Guangzhou to work for you as an ongoing partner — connecting you with factories we already trust, warehousing your goods, fulfilling orders down to single-unit drop-shipping, and keeping quality control in place at every stage. One accountable partner for the whole chain, not a new vendor for every step." data-es="Más allá de una inspección puntual, ponemos nuestra propia red en Guangzhou a tu servicio como socio permanente — conectándote con fábricas en las que ya confiamos, almacenando tu mercancía, gestionando el cumplimiento de pedidos hasta el dropshipping de unidad por unidad, y manteniendo el control de calidad en cada etapa. Un solo socio responsable para toda la cadena, no un proveedor distinto para cada paso.">Beyond a one-time inspection, we put our own network in Guangzhou to work for you as an ongoing partner — connecting you with factories we already trust, warehousing your goods, fulfilling orders down to single-unit drop-shipping, and keeping quality control in place at every stage. One accountable partner for the whole chain, not a new vendor for every step.</p>
       <p class="path-note" data-en="This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders." data-es="Este camino es selectivo — pensado para compradores listos para crecer en una relación a largo plazo, no pedidos aislados.">This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders.</p>
+      <p class="path-note" data-en="To keep this honest: sourcing, factory vetting, negotiation, and production follow-up are done by our own team in Guangzhou. International freight, customs clearance, and payment processing are handled through partners we coordinate — we manage the relationship, we don't operate that infrastructure ourselves." data-es="Para ser transparentes: la búsqueda de proveedores, verificación de fábrica, negociación y seguimiento de producción las hace nuestro propio equipo en Guangzhou. El flete internacional, el despacho aduanal y el procesamiento de pagos se manejan a través de socios que coordinamos — nosotros gestionamos la relación, no operamos esa infraestructura directamente.">To keep this honest: sourcing, factory vetting, negotiation, and production follow-up are done by our own team in Guangzhou. International freight, customs clearance, and payment processing are handled through partners we coordinate — we manage the relationship, we don't operate that infrastructure ourselves.</p>
       <a href="?service=Procurement%20Partner%20(long-term)#contact" class="path-link" data-en="Talk to us about partnering →" data-es="Hablemos de ser socios →">Talk to us about partnering →</a>
     </div>
   </div>
@@ -783,56 +793,89 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   <div class="contact-right">
     <form id="contact-form" action="https://formspree.io/f/mjgjqpbg" method="POST">
       <input type="hidden" name="_subject" value="New inquiry - SourciaVera">
-      <div class="form-row">
+      <input type="hidden" name="service" id="service-hidden" value="">
+      <input type="hidden" name="category" id="category-hidden" value="">
+
+      <div class="diag-steps" id="diag-steps">
+        <span class="diag-step-dot active" data-dot="1">1</span>
+        <span class="diag-step-dot" data-dot="2">2</span>
+        <span class="diag-step-dot" data-dot="3">3</span>
+        <span class="diag-step-dot" data-dot="4">4</span>
+      </div>
+
+      <div class="diag-panel" data-panel="1">
         <div class="form-group">
-          <label data-en="Your name" data-es="Tu nombre">Your name</label>
-          <input type="text" name="name" placeholder="John Smith" required>
+          <label data-en="What product are you sourcing?" data-es="¿Qué producto buscas?">What product are you sourcing?</label>
+          <textarea name="message" id="textarea-msg" placeholder="What product are you sourcing? Do you have a supplier in mind? Alibaba link if available..." required></textarea>
+        </div>
+        <button type="button" class="btn-submit diag-next" data-next="2" data-en="Next →" data-es="Siguiente →">Next →</button>
+      </div>
+
+      <div class="diag-panel" data-panel="2" style="display:none">
+        <div class="form-group">
+          <label data-en="Where are you in the process?" data-es="¿En qué etapa estás?">Where are you in the process?</label>
+          <div class="diag-options">
+            <label class="diag-radio"><input type="radio" name="stage" value="no_supplier" data-service="Procurement Partner (long-term)"><span data-en="I haven't found a supplier yet" data-es="Todavía no encuentro proveedor">I haven't found a supplier yet</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="untrusted_supplier" data-service="Factory Verification"><span data-en="I found suppliers but don't trust them" data-es="Encontré proveedores pero no confío en ellos">I found suppliers but don't trust them</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="need_negotiation" data-service="Negotiation & Procurement"><span data-en="I need someone to negotiate" data-es="Necesito que alguien negocie por mí">I need someone to negotiate</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="need_inspection" data-service="Pre-Shipment Inspection"><span data-en="I need quality inspection" data-es="Necesito inspección de calidad">I need quality inspection</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="need_logistics" data-service="Logistics Coordination"><span data-en="I need logistics help" data-es="Necesito ayuda con logística">I need logistics help</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="full_handoff" data-service="Procurement Partner (long-term)"><span data-en="I want to hand the whole thing to you" data-es="Quiero dejarles todo el proceso a ustedes">I want to hand the whole thing to you</span></label>
+          </div>
+        </div>
+        <button type="button" class="btn-back diag-back" data-next="1" data-en="← Back" data-es="← Atrás">← Back</button>
+        <button type="button" class="btn-submit diag-next" data-next="3" data-en="Next →" data-es="Siguiente →">Next →</button>
+      </div>
+
+      <div class="diag-panel" data-panel="3" style="display:none">
+        <div class="form-group">
+          <label data-en="Budget range" data-es="Rango de presupuesto">Budget range</label>
+          <div class="diag-options">
+            <label class="diag-radio"><input type="radio" name="budget" value="1k_5k"><span>$1,000–$5,000</span></label>
+            <label class="diag-radio"><input type="radio" name="budget" value="5k_50k"><span>$5,000–$50,000</span></label>
+            <label class="diag-radio"><input type="radio" name="budget" value="50k_plus"><span>$50,000+</span></label>
+          </div>
+        </div>
+        <button type="button" class="btn-back diag-back" data-next="2" data-en="← Back" data-es="← Atrás">← Back</button>
+        <button type="button" class="btn-submit diag-next" data-next="4" data-en="Next →" data-es="Siguiente →">Next →</button>
+      </div>
+
+      <div class="diag-panel" data-panel="4" style="display:none">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="Your name" data-es="Tu nombre">Your name</label>
+            <input type="text" name="name" placeholder="John Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="country-select" data-en="Country" data-es="País">Country</label>
+            <select id="country-select" name="country">
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Australia</option>
+              <option>Canada</option>
+              <option>Germany</option>
+              <option>France</option>
+              <option>Netherlands</option>
+              <option>Mexico</option>
+              <option>Guatemala</option>
+              <option>Panama</option>
+              <option>Colombia</option>
+              <option>Argentina</option>
+              <option>Chile</option>
+              <option>Peru</option>
+              <option>Brazil</option>
+              <option data-en="Other" data-es="Otro">Other</option>
+            </select>
+          </div>
         </div>
         <div class="form-group">
-          <label for="country-select" data-en="Country" data-es="País">Country</label>
-          <select id="country-select" name="country">
-            <option>United States</option>
-            <option>United Kingdom</option>
-            <option>Australia</option>
-            <option>Canada</option>
-            <option>Germany</option>
-            <option>France</option>
-            <option>Netherlands</option>
-            <option>Mexico</option>
-            <option>Guatemala</option>
-            <option>Panama</option>
-            <option>Colombia</option>
-            <option>Argentina</option>
-            <option>Chile</option>
-            <option>Peru</option>
-            <option>Brazil</option>
-            <option data-en="Other" data-es="Otro">Other</option>
-          </select>
+          <label data-en="WhatsApp or Email" data-es="WhatsApp o Email">WhatsApp or Email</label>
+          <input type="text" name="contact" placeholder="+1 555 123 4567 or email@domain.com" required>
         </div>
+        <button type="button" class="btn-back diag-back" data-next="3" data-en="← Back" data-es="← Atrás">← Back</button>
+        <button type="submit" class="btn-submit" id="submit-btn" data-en="Get a Free Detailed Quote →" data-es="Cotización Detallada Gratis →">Get a Free Detailed Quote →</button>
       </div>
-      <div class="form-group">
-        <label data-en="WhatsApp or Email" data-es="WhatsApp o Email">WhatsApp or Email</label>
-        <input type="text" name="contact" placeholder="+1 555 123 4567 or email@domain.com" required>
-      </div>
-      <div class="form-group">
-        <label for="service-select" data-en="What do you need?" data-es="¿Qué necesitas?">What do you need?</label>
-        <select id="service-select" name="service">
-          <option value="" data-en="Select a service" data-es="Selecciona un servicio">Select a service</option>
-          <option data-en="Factory Verification" data-es="Verificación de fábrica">Factory Verification</option>
-          <option data-en="Negotiation & Procurement" data-es="Negociación y compra">Negotiation & Procurement</option>
-          <option data-en="Both services" data-es="Ambos servicios">Both services</option>
-          <option data-en="Procurement Partner (long-term)" data-es="Socio de Compras (largo plazo)">Procurement Partner (long-term)</option>
-          <option value="construction" data-en="Construction Materials" data-es="Materiales de Construcción">Construction Materials</option>
-          <option value="auto-parts" data-en="Auto Parts &amp; NEV" data-es="Autopartes &amp; NEV">Auto Parts &amp; NEV</option>
-          <option value="badges" data-en="Custom Badges, Medals &amp; Keychains" data-es="Insignias, Medallas y Llaveros">Custom Badges, Medals &amp; Keychains</option>
-          <option value="other" data-en="Other product" data-es="Otro producto">Other product</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label data-en="Tell us more" data-es="Cuéntanos más">Tell us more</label>
-        <textarea name="message" id="textarea-msg" placeholder="What product are you sourcing? Do you have a supplier in mind? Alibaba link if available..."></textarea>
-      </div>
-      <button type="submit" class="btn-submit" id="submit-btn" data-en="Get a Free Detailed Quote →" data-es="Cotización Detallada Gratis →">Get a Free Detailed Quote →</button>
+
       <div id="form-success" style="display:none;background:#00897B;color:white;padding:1rem;text-align:center;margin-top:0.5rem;font-size:0.9rem;" data-en="✓ Received — we'll contact you within 24h" data-es="✓ Recibido — te contactamos en menos de 24h">
         ✓ Received — we'll contact you within 24h
       </div>
@@ -916,14 +959,63 @@ document.querySelectorAll('.nav-links a').forEach(function(a){
 (function(){var yr=new Date().getFullYear(),el=document.querySelector('[data-en*="rights reserved"]');if(el){el.dataset.en=el.dataset.en.replace(/\d{4}/,yr);el.dataset.es=el.dataset.es.replace(/\d{4}/,yr);}})();
 setLang(currentLang);
 
+function diagGoto(n){
+  document.querySelectorAll('.diag-panel').forEach(function(p){ p.style.display = (p.dataset.panel === String(n)) ? '' : 'none'; });
+  document.querySelectorAll('.diag-step-dot').forEach(function(d){
+    var dn = parseInt(d.dataset.dot, 10);
+    d.classList.toggle('active', dn === n);
+    d.classList.toggle('done', dn < n);
+  });
+}
+function diagValidate(n){
+  if(n === 1){
+    var msg = document.getElementById('textarea-msg');
+    if(msg && !msg.value.trim()){ msg.focus(); return false; }
+  }
+  if(n === 2 && !document.querySelector('input[name="stage"]:checked')){ return false; }
+  if(n === 3 && !document.querySelector('input[name="budget"]:checked')){ return false; }
+  return true;
+}
+document.querySelectorAll('.diag-next').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var current = parseInt(btn.closest('.diag-panel').dataset.panel, 10);
+    if(!diagValidate(current)) return;
+    diagGoto(parseInt(btn.dataset.next, 10));
+  });
+});
+document.querySelectorAll('.diag-back').forEach(function(btn){
+  btn.addEventListener('click', function(){ diagGoto(parseInt(btn.dataset.next, 10)); });
+});
+document.querySelectorAll('input[name="stage"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('service-hidden').value = r.dataset.service || '';
+  });
+});
+
 (function(){
   var p = new URLSearchParams(window.location.search).get('service');
-  if(p){
-    var sel = document.getElementById('service-select');
-    if(sel){for(var i=0;i<sel.options.length;i++){if(sel.options[i].value===p){sel.selectedIndex=i;break;}}}
-    var el = document.getElementById('contact');
-    if(el) el.scrollIntoView({behavior:'smooth'});
+  if(!p) return;
+  var categoryValues = ['construction','auto-parts','badges','other'];
+  if(categoryValues.indexOf(p) !== -1){
+    document.getElementById('category-hidden').value = p;
+  } else {
+    var stageByService = {
+      'Factory Verification':'untrusted_supplier',
+      'Negotiation & Procurement':'need_negotiation',
+      'Procurement Partner (long-term)':'full_handoff'
+    };
+    var stageVal = stageByService[p];
+    if(stageVal){
+      var radio = document.querySelector('input[name="stage"][value="'+stageVal+'"]');
+      if(radio){
+        radio.checked = true;
+        document.getElementById('service-hidden').value = radio.dataset.service;
+      }
+    }
+    diagGoto(2);
   }
+  var el = document.getElementById('contact');
+  if(el) el.scrollIntoView({behavior:'smooth'});
 })();
 
 const form = document.getElementById('contact-form');
