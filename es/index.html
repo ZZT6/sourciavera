@@ -51,9 +51,9 @@
         "addressCountry": "CN"
       },
       "areaServed": ["MX","CO","AR","CL","PE","BR","US","CA","GB"],
-      "serviceType": ["Verificación de Fábrica","Auditoría de Fábrica","Agente de Importación","Inspección Pre-Envío","Negociación y Compra"],
+      "serviceType": ["Revisión Remota de Proveedor","Verificación de Fábrica","Auditoría de Fábrica","Agente de Importación","Inspección Pre-Envío","Negociación y Compra"],
       "availableLanguage": ["Spanish","English","Chinese"],
-      "priceRange": "$449–$499",
+      "priceRange": "$49–$499",
       "currenciesAccepted": "USD",
       "founder": {"@type": "Person", "name": "Zhang Peng", "jobTitle": "Fundador", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
       "sameAs": [
@@ -68,10 +68,19 @@
       "@type": "FAQPage",
       "mainEntity": [
         {"@type":"Question","name":"¿Cómo sé que el proveedor es una fábrica real y no un intermediario?","acceptedAnswer":{"@type":"Answer","text":"Visitamos las instalaciones en persona en Guangzhou. Verificamos la licencia comercial oficial, recorremos toda la línea de producción en video en vivo y confirmamos la capacidad de fabricación real — no solo una sala de exhibición decorada."}},
-        {"@type":"Question","name":"¿Cuánto cuesta el servicio de verificación de fábrica?","acceptedAnswer":{"@type":"Answer","text":"Visita de Verificación de Fábrica: $449. Inspección Previa al Envío: $399/día-hombre. Auditoría de Fábrica: $499/día-hombre. Abastecimiento y compras: 10% del valor del pedido. Tras una consulta detallada con nuestro equipo, todos los precios publicados tienen un 20% de descuento. La primera consulta siempre es gratuita."}},
+        {"@type":"Question","name":"¿Cuánto cuesta el servicio de verificación de fábrica?","acceptedAnswer":{"@type":"Answer","text":"Revisión Remota de Proveedor: $49. Visita de Verificación de Fábrica: $449. Inspección Previa al Envío: $399/día-hombre. Auditoría de Fábrica: $499/día-hombre. Abastecimiento y compras: 10% del valor del pedido. Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota) tienen un 20% de descuento. La primera consulta siempre es gratuita."}},
         {"@type":"Question","name":"¿Ofrecen atención en español?","acceptedAnswer":{"@type":"Answer","text":"Sí. Toda nuestra comunicación, informes y cotizaciones están disponibles en español. Somos una empresa que habla español y entendemos las necesidades del importador latinoamericano."}},
         {"@type":"Question","name":"¿Pueden verificar cualquier tipo de proveedor en China?","acceptedAnswer":{"@type":"Answer","text":"Verificamos cualquier proveedor en el área de Guangzhou: iluminación LED, autopartes, electrónica, hardware, equipos industriales y más. Si se fabrica en Guangzhou, podemos verificarlo."}}
       ]
+    },
+    {
+      "@type":"Service",
+      "name":"Revisión Remota de Proveedor",
+      "provider":{"@type":"LocalBusiness","name":"SourciaVera"},
+      "description":"Revisión remota de debida diligencia de un proveedor chino: registro de la empresa, si es fabricante o comercializadora, y verificación de dirección y cuenta de pago. Reporte escrito en 48 horas a partir de recibir el pago y los datos del proveedor. No sustituye una visita en sitio. Los $49 se descuentan del costo de una Verificación de Fábrica completa si decide continuar.",
+      "areaServed":"Worldwide",
+      "offers":{"@type":"Offer","price":"49","priceCurrency":"USD"},
+      "serviceOutput":"Reporte escrito de revisión remota de proveedor"
     },
     {
       "@type":"Service",
@@ -304,6 +313,15 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--coral)}
 .form-group textarea{resize:vertical;min-height:110px}
 .btn-submit{background:var(--coral);color:white;padding:1rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;width:100%;font-family:inherit}
+.diag-steps{display:flex;justify-content:center;gap:0.6rem;margin-bottom:0.4rem}
+.diag-step-dot{width:1.8rem;height:1.8rem;border-radius:50%;background:var(--light);border:1.5px solid var(--border);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600;flex-shrink:0}
+.diag-step-dot.active{background:var(--coral);border-color:var(--coral);color:white}
+.diag-step-dot.done{background:var(--navy);border-color:var(--navy);color:var(--yellow)}
+.diag-options{display:flex;flex-direction:column;gap:0.6rem}
+.diag-radio{display:flex;align-items:center;gap:0.6rem;background:var(--light);border:1.5px solid var(--border);padding:0.75rem 1rem;cursor:pointer;font-size:0.9rem;color:var(--navy)}
+.diag-radio:has(input:checked){border-color:var(--coral);background:white}
+.diag-radio input{accent-color:var(--coral);flex-shrink:0}
+.btn-back{background:transparent;color:var(--muted);padding:0.75rem 1rem;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:1.5px solid var(--border);cursor:pointer;font-family:inherit;margin-bottom:0.6rem;width:100%}
 .wa-cta{display:inline-flex;align-items:center;gap:0.6rem;background:#25D366;color:white;padding:0.9rem 1.6rem;font-size:0.85rem;font-weight:500;text-decoration:none;letter-spacing:0.04em;margin-top:1.5rem}
 .wa-cta:hover{opacity:0.9}
 .wa-float{position:fixed;bottom:2rem;right:2rem;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:100;text-decoration:none}
@@ -380,7 +398,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <p>Somos una empresa independiente de verificación de terceros en Guangzhou, especializada en autopartes para importadores de México y Latinoamérica. Envíanos la ficha de la fábrica que encontraste en 1688 o Alibaba — rines, piezas de fibra de carbono, iluminación LED, carrocería o tu proyecto de marca propia — y vamos a la fábrica, cámara en mano, antes de que envíes un depósito.</p>
     <div class="hero-btns">
       <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Consulta Ahora</button>
-      <a class="btn-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener">Ver servicios</a>
+      <a class="btn-wa" href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." target="_blank" rel="noopener">Ver servicios</a>
     </div>
   </div>
   <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Mapa ilustrado de la ruta de envío desde Guangzhou, China hasta Los Ángeles, Lázaro Cárdenas, Colón, Callao y Chile, con carga de autopartes" loading="eager"></div>
@@ -394,6 +412,49 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 </div>
 
 <div class="cross-link">Nuestro proceso de verificación funciona para cualquier producto. En autopartes es donde vamos más a fondo. → <a href="/es/categorias">Ver otros productos</a></div>
+
+<section class="how" id="ladder">
+  <div class="section-tag">Empieza Donde Quieras</div>
+  <h2 class="section-title">Tu equipo de compras en China, desde la primera revisión del proveedor hasta el embarque.</h2>
+  <p style="max-width:760px;margin:-1.5rem auto 0;text-align:center;color:var(--muted)">No necesitas entender la cadena de suministro china — para eso estamos aquí. Empieza donde estés; no todos los compradores necesitan los cinco pasos.</p>
+  <div class="how-flow-5" style="margin-top:2.5rem">
+    <div class="how-step-v2">
+      <div class="how-num-v2">01</div>
+      <h3>Revisión Remota de Proveedor</h3>
+      <p>¿Ya tienes un proveedor? Una revisión remota rápida — registro de la empresa, fabricante o comercializadora, coincidencia de cuenta de pago. $49, 48 horas.</p>
+      <div class="trust-line">La forma de empezar con menor compromiso — sin necesidad de visita presencial.</div>
+      <a href="#remote-check" class="path-link" style="display:inline-block;margin-top:0.6rem">Empieza aquí — $49 →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">02</div>
+      <h3>Verificación de Fábrica en Sitio</h3>
+      <p>Vamos en persona — licencia comercial, línea de producción, tu producto contra la ficha técnica. Desde $449.</p>
+      <div class="trust-line">La revisión remota de $49 se descuenta de este costo si ya la hiciste.</div>
+      <a href="#services" class="path-link" style="display:inline-block;margin-top:0.6rem">Ver precios de verificación →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">03</div>
+      <h3>Seguimiento de Producción e Inspección Final</h3>
+      <p>Presencial, hito por hito, hasta una inspección final de $399 antes de que tu mercancía salga de China.</p>
+      <div class="trust-line">Nos quedamos hasta que tu pedido salga bien — no solo una visita y adiós.</div>
+      <a href="#services" class="path-link" style="display:inline-block;margin-top:0.6rem">Ver precios de inspección →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">04</div>
+      <h3>Socio de Compras</h3>
+      <p>¿Aún no tienes proveedor? Buscamos, negociamos y almacenamos en Guangzhou — inventario, consolidación, empaque, control de calidad — como tu equipo permanente.</p>
+      <div class="trust-line">Selectivo — pensado para compradores listos para una relación a largo plazo, no pedidos aislados.</div>
+      <a href="?service=Procurement%20Partner%20(long-term)#contacto" class="path-link" style="display:inline-block;margin-top:0.6rem">Hablemos de ser socios →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">05</div>
+      <h3>Flete, Aduana y Pagos</h3>
+      <p>El flete internacional, el despacho aduanal y los pagos se gestionan a través de socios que coordinamos — no los realizamos directamente nosotros.</p>
+      <div class="trust-line">Pregúntanos cómo funciona esto para tu embarque específico.</div>
+      <a href="#contacto" class="path-link" style="display:inline-block;margin-top:0.6rem">Pregunta cómo funciona →</a>
+    </div>
+  </div>
+</section>
 
 <section class="paths" id="paths">
   <div class="section-tag">Dos Formas de Trabajar con Nosotros</div>
@@ -412,6 +473,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <h3>¿Aún no tienes fábrica? Nos convertimos en tu equipo de cadena de suministro.</h3>
       <p>Más allá de una inspección puntual, ponemos nuestra propia red en Guangzhou a tu servicio como socio permanente — conectándote con fábricas en las que ya confiamos, almacenando tu mercancía, gestionando el cumplimiento de pedidos hasta el dropshipping de unidad por unidad, y manteniendo el control de calidad en cada etapa. Un solo socio responsable para toda la cadena, no un proveedor distinto para cada paso.</p>
       <p class="path-note">Este camino es selectivo — pensado para compradores listos para crecer en una relación a largo plazo, no pedidos aislados.</p>
+      <p class="path-note">Nuestro propio equipo en Guangzhou se encarga de la búsqueda de proveedores, la verificación de fábricas, la negociación, el seguimiento de producción y el almacenamiento (inventario, consolidación, empaque y control de calidad). El flete internacional, el despacho aduanal y los pagos se gestionan a través de socios que coordinamos.</p>
       <a href="?service=Socio%20de%20Compras%20(largo%20plazo)#contacto" class="path-link">Hablemos de ser socios →</a>
     </div>
   </div>
@@ -421,6 +483,12 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   <div class="section-tag">Nuestros Servicios</div>
   <h2 class="section-title">Todo lo que necesitas para importar desde China — con seguridad.</h2>
   <div class="services-grid-8">
+    <div class="svc-card">
+      <div class="svc-icon">🔍</div>
+      <div class="svc-price-tag">$49</div>
+      <h3>Revisión Remota de Proveedor</h3>
+      <p>Un filtro remoto rápido antes de comprometerte más — registro de la empresa, fabricante o comercializadora, dirección y cuenta de pago. Reporte escrito en 48 horas. No sustituye una visita en sitio, pero te dice si la necesitas.</p>
+    </div>
     <div class="svc-card">
       <div class="svc-icon">🏭</div>
       <span class="sv-off"><b>-20%</b><i>tras una consulta detallada</i></span><div class="svc-price-tag">Desde $449</div>
@@ -652,7 +720,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <span class="faq-q-text">¿Cuánto cuesta su servicio?</span>
         <span class="faq-toggle">+</span>
       </button>
-      <div class="faq-a"><div class="faq-a-inner">Nuestras tarifas estándar: Visita de Verificación de Fábrica — <strong>$449</strong>. Inspección Previa al Envío — <strong>$399/día-hombre</strong>. Auditoría de Fábrica — <strong>$499/día-hombre</strong>. Abastecimiento y compras — <strong>10% del valor del pedido</strong>. La primera consulta siempre es gratuita.</div> <strong style="color:#D62828">Tras una consulta detallada con nuestro equipo, todos los precios publicados tienen un 20% de descuento.</strong></div>
+      <div class="faq-a"><div class="faq-a-inner">Nuestras tarifas estándar: Revisión Remota de Proveedor — <strong>$49</strong> (se descuenta del costo si luego continúa con la verificación completa). Visita de Verificación de Fábrica — <strong>$449</strong>. Inspección Previa al Envío — <strong>$399/día-hombre</strong>. Auditoría de Fábrica — <strong>$499/día-hombre</strong>. Abastecimiento y compras — <strong>10% del valor del pedido</strong>. La primera consulta siempre es gratuita.</div> <strong style="color:#D62828">Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota) tienen un 20% de descuento.</strong></div>
     </div>
 
     <div class="faq-item">
@@ -691,66 +759,145 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   </div>
 </section>
 
+<section class="remote-check" id="remote-check" style="background:var(--light);padding:4rem 3rem;">
+  <div style="max-width:720px;margin:0 auto;text-align:center">
+    <div class="section-tag">Empieza Aquí</div>
+    <h2 class="section-title">¿No Está Seguro Todavía? Empiece con una Revisión Remota de $49</h2>
+    <p>Antes de comprometerse con una verificación completa en sitio, revisamos lo básico de forma remota: registro de la empresa, si es fabricante o comercializadora, dirección, y si la cuenta de pago coincide con el nombre de la empresa. Entrega del reporte en 48 horas a partir de recibir el pago y los datos del proveedor.</p>
+    <p style="font-size:0.85rem;color:var(--muted)">Esto es una revisión remota, no una visita a la fábrica — el resultado es "riesgo más bajo" o "recomendamos verificación en sitio." Los $49 se descuentan del costo si luego continúa con la Verificación de Fábrica completa.</p>
+    <p style="font-size:0.85rem;color:var(--muted)">Atendemos un número limitado de revisiones por semana. Si el cupo de esta semana está lleno, te confirmamos la fecha disponible.</p>
+  </div>
+  <form id="remote-check-form" action="https://formspree.io/f/mjgjqpbg" method="POST" enctype="multipart/form-data" style="max-width:560px;margin:2rem auto 0">
+    <input type="hidden" name="_subject" value="Solicitud de Revisión Remota de Proveedor - SourciaVera">
+    <input type="hidden" name="service" value="Revisión Remota de Proveedor ($49)">
+    <div class="form-group">
+      <label>Enlace del proveedor (Alibaba, 1688 o sitio web)</label>
+      <input type="url" name="supplier_link" placeholder="https://..." required>
+    </div>
+    <div class="form-group">
+      <label>¿Qué producto?</label>
+      <input type="text" name="product" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Monto estimado del pedido</label>
+        <select name="order_value">
+          <option>Menos de $5,000</option>
+          <option>$5,000–$20,000</option>
+          <option>$20,000+</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Tu nombre</label>
+        <input type="text" name="name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Correo o WhatsApp</label>
+      <input type="text" name="contact" required>
+    </div>
+    <div class="form-group">
+      <label>Cotización o PI (opcional — necesaria para revisar la cuenta de pago)</label>
+      <input type="file" name="attachment">
+    </div>
+    <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem">Aceptamos pagos por PayPal y Wise. Después de enviar el formulario, te enviamos el enlace de pago por WhatsApp o correo.</p>
+    <button type="submit" class="btn-submit" id="remote-check-submit-btn">Solicitar esta Revisión — $49</button>
+    <p id="remote-check-success" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem">✓ Recibido — te contactamos en menos de 24h para coordinar el pago</p>
+  </form>
+</section>
+
 <section class="contact" id="contacto">
   <div class="contact-left">
     <div class="section-tag">Contacto</div>
     <h2 class="section-title">Hablemos sobre tu proveedor</h2>
     <p>Cuéntanos qué necesitas. Te respondemos en menos de 24 horas, en español o inglés, sin compromiso.</p>
     <p>💡 Un consejo: déjanos tu WhatsApp y pon tus necesidades por escrito — un mensaje o un documento, no solo una llamada. Los humanos olvidamos. Los mensajes de texto, por suerte, no.</p>
-    <a href="https://wa.me/8613688057230?text=Hola%2C%20me%20interesa%20verificar%20un%20proveedor%20de%20Alibaba" class="wa-cta" target="_blank" rel="noopener">
+    <a href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." class="wa-cta" target="_blank" rel="noopener">
       💬 Escribir por WhatsApp
     </a>
   </div>
   <div class="contact-right">
     <form id="contact-form" action="https://formspree.io/f/mjgjqpbg" method="POST">
       <input type="hidden" name="_subject" value="Nueva consulta — SourciaVera (ES)">
-      <div class="form-row">
+      <input type="hidden" name="service" id="service-hidden" value="">
+      <input type="hidden" name="category" id="category-hidden" value="">
+
+      <div class="diag-steps" id="diag-steps">
+        <span class="diag-step-dot active" data-dot="1">1</span>
+        <span class="diag-step-dot" data-dot="2">2</span>
+        <span class="diag-step-dot" data-dot="3">3</span>
+        <span class="diag-step-dot" data-dot="4">4</span>
+      </div>
+
+      <div class="diag-panel" data-panel="1">
         <div class="form-group">
-          <label>Tu nombre</label>
-          <input type="text" name="name" placeholder="María García" required>
+          <label>¿Qué producto buscas?</label>
+          <textarea name="message" id="textarea-msg" placeholder="¿Qué producto buscas? ¿Tienes ya un proveedor en mente? Link de Alibaba si tienes..." required></textarea>
+        </div>
+        <button type="button" class="btn-submit diag-next" data-next="2">Siguiente →</button>
+      </div>
+
+      <div class="diag-panel" data-panel="2" style="display:none">
+        <div class="form-group">
+          <label>¿En qué etapa estás?</label>
+          <div class="diag-options">
+            <label class="diag-radio"><input type="radio" name="stage" value="no_supplier" data-service="Socio de Compras (largo plazo)"><span>Todavía no encuentro proveedor</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="untrusted_supplier" data-service="Verificación de fábrica"><span>Encontré proveedores pero no confío en ellos</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="need_negotiation" data-service="Negociación y compra"><span>Necesito que alguien negocie por mí</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="need_inspection" data-service="Inspección Previa al Envío"><span>Necesito inspección de calidad</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="need_logistics" data-service="Coordinación de Logística"><span>Necesito ayuda con logística</span></label>
+            <label class="diag-radio"><input type="radio" name="stage" value="full_handoff" data-service="Socio de Compras (largo plazo)"><span>Quiero dejarles todo el proceso a ustedes</span></label>
+          </div>
+        </div>
+        <button type="button" class="btn-back diag-back" data-next="1">← Atrás</button>
+        <button type="button" class="btn-submit diag-next" data-next="3">Siguiente →</button>
+      </div>
+
+      <div class="diag-panel" data-panel="3" style="display:none">
+        <div class="form-group">
+          <label>Rango de presupuesto</label>
+          <div class="diag-options">
+            <label class="diag-radio"><input type="radio" name="budget" value="1k_5k"><span>$1,000–$5,000</span></label>
+            <label class="diag-radio"><input type="radio" name="budget" value="5k_50k"><span>$5,000–$50,000</span></label>
+            <label class="diag-radio"><input type="radio" name="budget" value="50k_plus"><span>$50,000+</span></label>
+          </div>
+        </div>
+        <button type="button" class="btn-back diag-back" data-next="2">← Atrás</button>
+        <button type="button" class="btn-submit diag-next" data-next="4">Siguiente →</button>
+      </div>
+
+      <div class="diag-panel" data-panel="4" style="display:none">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tu nombre</label>
+            <input type="text" name="name" placeholder="María García" required>
+          </div>
+          <div class="form-group">
+            <label for="country-select">País</label>
+            <select id="country-select" name="country">
+              <option>México</option>
+              <option>Guatemala</option>
+              <option>Panamá</option>
+              <option>Colombia</option>
+              <option>Argentina</option>
+              <option>Chile</option>
+              <option>Perú</option>
+              <option>Brasil</option>
+              <option>Estados Unidos</option>
+              <option>Canadá</option>
+              <option>Reino Unido</option>
+              <option>España</option>
+              <option>Otro</option>
+            </select>
+          </div>
         </div>
         <div class="form-group">
-          <label for="country-select">País</label>
-          <select id="country-select" name="country">
-            <option>México</option>
-            <option>Guatemala</option>
-            <option>Panamá</option>
-            <option>Colombia</option>
-            <option>Argentina</option>
-            <option>Chile</option>
-            <option>Perú</option>
-            <option>Brasil</option>
-            <option>Estados Unidos</option>
-            <option>Canadá</option>
-            <option>Reino Unido</option>
-            <option>España</option>
-            <option>Otro</option>
-          </select>
+          <label>WhatsApp o Email</label>
+          <input type="text" name="contact" placeholder="+52 55 1234 5678 o email@dominio.com" required>
         </div>
+        <button type="button" class="btn-back diag-back" data-next="3">← Atrás</button>
+        <button type="submit" class="btn-submit" id="submit-btn">Enviar consulta →</button>
       </div>
-      <div class="form-group">
-        <label>WhatsApp o Email</label>
-        <input type="text" name="contact" placeholder="+52 55 1234 5678 o email@dominio.com" required>
-      </div>
-      <div class="form-group">
-        <label for="service-select">¿Qué necesitas?</label>
-        <select id="service-select" name="service">
-          <option value="">Selecciona un servicio</option>
-          <option value="Verificación de fábrica">Verificación de Fábrica</option>
-          <option value="Negociación y compra">Negociación y Compra</option>
-          <option value="Ambos servicios">Ambos servicios</option>
-          <option value="Socio de Compras (largo plazo)">Socio de Compras (largo plazo)</option>
-          <option value="construccion">Materiales de Construcción</option>
-          <option value="autopartes">Autopartes &amp; NEV</option>
-          <option value="insignias">Insignias, Medallas y Llaveros</option>
-          <option value="otro">Otro producto</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Cuéntanos más</label>
-        <textarea name="message" placeholder="¿Qué producto buscas? ¿Tienes ya un proveedor en mente? Link de Alibaba si tienes..."></textarea>
-      </div>
-      <button type="submit" class="btn-submit" id="submit-btn">Enviar consulta →</button>
       <div id="form-success" style="display:none;background:#00897B;color:white;padding:1rem;text-align:center;margin-top:0.5rem;font-size:0.9rem;">
         ✓ Recibido — te contactamos en menos de 24h
       </div>
@@ -774,7 +921,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   <div>© <script>document.write(new Date().getFullYear())</script> SourciaVera · Guangzhou, China · Todos los derechos reservados</div>
 </footer>
 
-<a href="https://wa.me/8613688057230?text=Hola%2C%20me%20interesa%20verificar%20un%20proveedor%20de%20Alibaba" class="wa-float" title="WhatsApp" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+<a href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." class="wa-float" title="WhatsApp" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
 
 <script>
 function toggleFaq(btn) {
@@ -782,6 +929,34 @@ function toggleFaq(btn) {
 }
 document.querySelectorAll('.nav-links a').forEach(function(a){
   a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});
+});
+
+const rcForm = document.getElementById('remote-check-form');
+const rcBtn = document.getElementById('remote-check-submit-btn');
+rcForm.addEventListener('submit', async e => {
+  e.preventDefault();
+  rcBtn.textContent = 'Enviando...';
+  rcBtn.disabled = true;
+  try {
+    const res = await fetch(rcForm.action, {method:'POST',body:new FormData(rcForm),headers:{Accept:'application/json'}});
+    if (res.ok) {
+      const rcSuccess = document.getElementById('remote-check-success');
+      rcForm.reset();
+      rcSuccess.style.display = 'block';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18086408472/h2DFCLiqsekcEJjiorBD'
+        });
+      }
+      rcBtn.style.display = 'none';
+    } else {
+      rcBtn.textContent = 'Error — intenta de nuevo';
+      rcBtn.disabled = false;
+    }
+  } catch(err) {
+    rcBtn.textContent = 'Error — intenta de nuevo';
+    rcBtn.disabled = false;
+  }
 });
 
 const form = document.getElementById('contact-form');
@@ -815,14 +990,63 @@ form.addEventListener('submit', async e => {
   }
 });
 
+function diagGoto(n){
+  document.querySelectorAll('.diag-panel').forEach(function(p){ p.style.display = (p.dataset.panel === String(n)) ? '' : 'none'; });
+  document.querySelectorAll('.diag-step-dot').forEach(function(d){
+    var dn = parseInt(d.dataset.dot, 10);
+    d.classList.toggle('active', dn === n);
+    d.classList.toggle('done', dn < n);
+  });
+}
+function diagValidate(n){
+  if(n === 1){
+    var msg = document.getElementById('textarea-msg');
+    if(msg && !msg.value.trim()){ msg.focus(); return false; }
+  }
+  if(n === 2 && !document.querySelector('input[name="stage"]:checked')){ return false; }
+  if(n === 3 && !document.querySelector('input[name="budget"]:checked')){ return false; }
+  return true;
+}
+document.querySelectorAll('.diag-next').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var current = parseInt(btn.closest('.diag-panel').dataset.panel, 10);
+    if(!diagValidate(current)) return;
+    diagGoto(parseInt(btn.dataset.next, 10));
+  });
+});
+document.querySelectorAll('.diag-back').forEach(function(btn){
+  btn.addEventListener('click', function(){ diagGoto(parseInt(btn.dataset.next, 10)); });
+});
+document.querySelectorAll('input[name="stage"]').forEach(function(r){
+  r.addEventListener('change', function(){
+    document.getElementById('service-hidden').value = r.dataset.service || '';
+  });
+});
+
 (function(){
   var p = new URLSearchParams(window.location.search).get('service');
-  if(p){
-    var sel = document.getElementById('service-select');
-    if(sel){for(var i=0;i<sel.options.length;i++){if(sel.options[i].value===p){sel.selectedIndex=i;break;}}}
-    var el = document.getElementById('contacto');
-    if(el) el.scrollIntoView({behavior:'smooth'});
+  if(!p) return;
+  var categoryValues = ['construccion','autopartes','insignias','otro'];
+  if(categoryValues.indexOf(p) !== -1){
+    document.getElementById('category-hidden').value = p;
+  } else {
+    var stageByService = {
+      'Verificación de fábrica':'untrusted_supplier',
+      'Negociación y compra':'need_negotiation',
+      'Socio de Compras (largo plazo)':'full_handoff'
+    };
+    var stageVal = stageByService[p];
+    if(stageVal){
+      var radio = document.querySelector('input[name="stage"][value="'+stageVal+'"]');
+      if(radio){
+        radio.checked = true;
+        document.getElementById('service-hidden').value = radio.dataset.service;
+      }
+    }
+    diagGoto(2);
   }
+  var el = document.getElementById('contacto');
+  if(el) el.scrollIntoView({behavior:'smooth'});
 })();
 
 (function() {
