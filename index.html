@@ -52,8 +52,8 @@
         "addressCountry": "CN"
       },
       "areaServed": ["US","CA","MX","CO","AR","CL","PE","BR","GB","AU"],
-      "serviceType": ["Factory Verification","Supplier Audit","Sourcing Agent","Procurement","Quality Inspection"],
-      "priceRange": "$449–$499",
+      "serviceType": ["Remote Supplier Check","Factory Verification","Supplier Audit","Sourcing Agent","Procurement","Quality Inspection"],
+      "priceRange": "$49–$499",
       "currenciesAccepted": "USD",
       "availableLanguage": ["English","Spanish","Chinese"],
       "founder": {"@type": "Person", "name": "Zhang Peng", "jobTitle": "Founder", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
@@ -73,11 +73,20 @@
         {"@type":"Question","name":"Can I start with a small order to test quality?","acceptedAnswer":{"@type":"Answer","text":"Yes — we specialize in small batches from 50 units. Start small, verify quality with us, then scale with confidence."}},
         {"@type":"Question","name":"Can you accompany me to a factory if I visit Guangzhou?","acceptedAnswer":{"@type":"Answer","text":"Yes — we assign a dedicated team member for factory accompaniment, translation, and negotiation support. Tell us your travel dates and we handle the rest."}},
         {"@type":"Question","name":"I've been burned by a bad Alibaba supplier. Can you help?","acceptedAnswer":{"@type":"Answer","text":"That's exactly why we exist. Alibaba's Verified badge does not guarantee product quality or delivery timelines. We go on the ground so you don't have to trust a badge."}},
-        {"@type":"Question","name":"How much does your service cost?","acceptedAnswer":{"@type":"Answer","text":"Factory Verification Visit: $449. Pre-Shipment Inspection: $399/man-day. Factory Audit: $499/man-day. Sourcing commission: 10% of order value. After a detailed consultation with our team, all listed prices are 20% off. Consult us now."}},
+        {"@type":"Question","name":"How much does your service cost?","acceptedAnswer":{"@type":"Answer","text":"Remote Supplier Check: $49. Factory Verification Visit: $449. Pre-Shipment Inspection: $399/man-day. Factory Audit: $499/man-day. Sourcing commission: 10% of order value. After a detailed consultation with our team, all listed prices (except the Remote Supplier Check) are 20% off. Consult us now."}},
         {"@type":"Question","name":"What's the difference between factory verification, factory audit, and supervision?","acceptedAnswer":{"@type":"Answer","text":"Factory Verification (Verificación de proveedores) confirms a supplier is real, registered, and operating as claimed — a basic trust check before you commit. Factory Audit (Auditoría de fábrica) is a deeper review of production capability, quality systems, and compliance, typically done before a large or first-time order. Supervision (Supervisión) is ongoing, hands-on monitoring during production or container loading to ensure your order is made and shipped correctly."}},
         {"@type":"Question","name":"Do you offer factory verification for Spanish-speaking clients?","acceptedAnswer":{"@type":"Answer","text":"Yes. All our reports, quotes, and communication — from initial verificación de proveedores through a full auditoría de fábrica — are available in both English and Spanish."}},
         {"@type":"Question","name":"Can you supervise my supplier in China?","acceptedAnswer":{"@type":"Answer","text":"Yes — this is exactly what our in-production supervision and container loading supervision services cover. We can also combine this with a one-time factory audit if you are working with a new supplier for the first time."}}
       ]
+    },
+    {
+      "@type":"Service",
+      "name":"Remote Supplier Check",
+      "provider":{"@type":"LocalBusiness","name":"SourciaVera"},
+      "description":"Remote due-diligence check on a Chinese supplier: business registration, manufacturer-vs-trader status, address and payment-account verification. Written report within 48 hours of receiving payment and the supplier details. Not a substitute for an on-site visit. The $49 fee is credited toward a full Factory Verification if you upgrade.",
+      "areaServed":"Worldwide",
+      "offers":{"@type":"Offer","price":"49","priceCurrency":"USD"},
+      "serviceOutput":"Written remote supplier check report"
     },
     {
       "@type":"Service",
@@ -394,7 +403,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <p data-en="We're an independent third-party verification company in Guangzhou, focused on auto parts for importers in Mexico and Latin America. Send us the factory listing you found on 1688 or Alibaba — wheels, carbon fiber parts, LED lighting, body parts or your own private-label project — and we go on site, camera in hand, before you send a deposit." data-es="Somos una empresa independiente de verificación de terceros en Guangzhou, especializada en autopartes para importadores de México y Latinoamérica. Envíanos la ficha de la fábrica que encontraste en 1688 o Alibaba — rines, piezas de fibra de carbono, iluminación LED, carrocería o tu proyecto de marca propia — y vamos a la fábrica, cámara en mano, antes de que envíes un depósito.">We're an independent third-party verification company in Guangzhou, focused on auto parts for importers in Mexico and Latin America. Send us the factory listing you found on 1688 or Alibaba — wheels, carbon fiber parts, LED lighting, body parts or your own private-label project — and we go on site, camera in hand, before you send a deposit.</p>
     <div class="hero-btns">
       <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Get a Free Detailed Quote" data-es="Cotización Detallada Gratis">Get a Free Detailed Quote</button>
-      <a class="btn-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-en="See Services" data-es="Ver servicios">See Services</a>
+      <a class="btn-wa" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" data-en="See Services" data-es="Ver servicios">See Services</a>
     </div>
   </div>
   <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Illustrated shipping route map from Guangzhou, China to Los Angeles, Lázaro Cárdenas, Colón, Callao and Chile, with auto parts cargo" loading="eager"></div>
@@ -408,6 +417,49 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 </div>
 
 <div class="cross-link" data-en='Our verification process works for any product. Auto parts is where we go deepest. → <a href="/categories">See what else we verify</a>' data-es='Nuestro proceso de verificación funciona para cualquier producto. En autopartes es donde vamos más a fondo. → <a href="/es/categorias">Ver otros productos</a>'>Our verification process works for any product. Auto parts is where we go deepest. → <a href="/categories">See what else we verify</a></div>
+
+<section class="how" id="ladder" style="background:var(--light)">
+  <div class="section-tag" data-en="Start Anywhere" data-es="Empieza Donde Quieras">Start Anywhere</div>
+  <h2 class="section-title" data-en="Your procurement team in China, from the first supplier check to shipment." data-es="Tu equipo de compras en China, desde la primera revisión del proveedor hasta el embarque.">Your procurement team in China, from the first supplier check to shipment.</h2>
+  <p style="max-width:760px;margin:-1.5rem auto 0;text-align:center;color:var(--muted)" data-en="You don't need to understand China's supply chain — that's what we're here for. Start wherever you are; not every buyer needs all five steps." data-es="No necesitas entender la cadena de suministro china — para eso estamos aquí. Empieza donde estés; no todos los compradores necesitan los cinco pasos.">You don't need to understand China's supply chain — that's what we're here for. Start wherever you are; not every buyer needs all five steps.</p>
+  <div class="how-flow-5" style="margin-top:2.5rem">
+    <div class="how-step-v2">
+      <div class="how-num-v2">01</div>
+      <h3 data-en="Remote Supplier Check" data-es="Revisión Remota de Proveedor">Remote Supplier Check</h3>
+      <p data-en="Already have a supplier? A fast remote check — company registration, manufacturer vs. trader, payment-account match. $49, 48 hours." data-es="¿Ya tienes un proveedor? Una revisión remota rápida — registro de la empresa, fabricante o comercializadora, coincidencia de cuenta de pago. $49, 48 horas.">Already have a supplier? A fast remote check — company registration, manufacturer vs. trader, payment-account match. $49, 48 hours.</p>
+      <div class="trust-line" data-en="The lowest-commitment way to start — no on-site visit required." data-es="La forma de empezar con menor compromiso — sin necesidad de visita presencial.">The lowest-commitment way to start — no on-site visit required.</div>
+      <a href="#remote-check" class="path-link" data-en="Start here — $49 →" data-es="Empieza aquí — $49 →" style="display:inline-block;margin-top:0.6rem">Start here — $49 →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">02</div>
+      <h3 data-en="On-Site Factory Verification" data-es="Verificación de Fábrica en Sitio">On-Site Factory Verification</h3>
+      <p data-en="We go in person — business license, production line, your product checked against spec. From $449." data-es="Vamos en persona — licencia comercial, línea de producción, tu producto contra la ficha técnica. Desde $449.">We go in person — business license, production line, your product checked against spec. From $449.</p>
+      <div class="trust-line" data-en="The $49 remote check is credited toward this if you've already done one." data-es="La revisión remota de $49 se descuenta de este costo si ya la hiciste.">The $49 remote check is credited toward this if you've already done one.</div>
+      <a href="#services" class="path-link" data-en="See verification pricing →" data-es="Ver precios de verificación →" style="display:inline-block;margin-top:0.6rem">See verification pricing →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">03</div>
+      <h3 data-en="Production Follow-Up &amp; Pre-Shipment Inspection" data-es="Seguimiento de Producción e Inspección Final">Production Follow-Up &amp; Pre-Shipment Inspection</h3>
+      <p data-en="On-site, milestone by milestone, through to a $399 pre-shipment inspection before your goods leave China." data-es="Presencial, hito por hito, hasta una inspección final de $399 antes de que tu mercancía salga de China.">On-site, milestone by milestone, through to a $399 pre-shipment inspection before your goods leave China.</p>
+      <div class="trust-line" data-en="We stay until your order ships correctly — not just one visit and walk away." data-es="Nos quedamos hasta que tu pedido salga bien — no solo una visita y adiós.">We stay until your order ships correctly — not just one visit and walk away.</div>
+      <a href="#services" class="path-link" data-en="See inspection pricing →" data-es="Ver precios de inspección →" style="display:inline-block;margin-top:0.6rem">See inspection pricing →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">04</div>
+      <h3 data-en="Procurement Partner" data-es="Socio de Compras">Procurement Partner</h3>
+      <p data-en="Don't have a supplier yet? We source, negotiate, and warehouse in Guangzhou — storage, consolidation, packing, quality checks — as your ongoing team." data-es="¿Aún no tienes proveedor? Buscamos, negociamos y almacenamos en Guangzhou — inventario, consolidación, empaque, control de calidad — como tu equipo permanente.">Don't have a supplier yet? We source, negotiate, and warehouse in Guangzhou — storage, consolidation, packing, quality checks — as your ongoing team.</p>
+      <div class="trust-line" data-en="Selective — built for buyers ready for a long-term relationship, not one-off orders." data-es="Selectivo — pensado para compradores listos para una relación a largo plazo, no pedidos aislados.">Selective — built for buyers ready for a long-term relationship, not one-off orders.</div>
+      <a href="?service=Procurement%20Partner%20(long-term)#contact" class="path-link" data-en="Talk to us about partnering →" data-es="Hablemos de ser socios →" style="display:inline-block;margin-top:0.6rem">Talk to us about partnering →</a>
+    </div>
+    <div class="how-step-v2">
+      <div class="how-num-v2">05</div>
+      <h3 data-en="Freight, Customs &amp; Payment" data-es="Flete, Aduana y Pagos">Freight, Customs &amp; Payment</h3>
+      <p data-en="International shipping, customs clearance and payment are handled through partners we coordinate — not performed by us directly." data-es="El flete internacional, el despacho aduanal y los pagos se gestionan a través de socios que coordinamos — no los realizamos directamente nosotros.">International shipping, customs clearance and payment are handled through partners we coordinate — not performed by us directly.</p>
+      <div class="trust-line" data-en="Ask us how this works for your specific shipment." data-es="Pregúntanos cómo funciona esto para tu embarque específico.">Ask us how this works for your specific shipment.</div>
+      <a href="#contact" class="path-link" data-en="Ask how this works →" data-es="Pregunta cómo funciona →" style="display:inline-block;margin-top:0.6rem">Ask how this works →</a>
+    </div>
+  </div>
+</section>
 
 <section class="paths" id="paths">
   <div class="section-tag" data-en="Two Ways to Work With Us" data-es="Dos Formas de Trabajar con Nosotros">Two Ways to Work With Us</div>
@@ -436,6 +488,12 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   <div class="section-tag" data-en="Our Services" data-es="Nuestros Servicios">Our Services</div>
   <h2 class="section-title" data-en="Everything you need to source from China — safely." data-es="Todo lo que necesitas para importar desde China — con seguridad.">Everything you need to source from China — safely.</h2>
   <div class="services-grid-8">
+    <div class="svc-card">
+      <div class="svc-icon">🔍</div>
+      <div class="svc-price-tag" data-en="$49" data-es="$49">$49</div>
+      <h3 data-en="Remote Supplier Check" data-es="Revisión Remota de Proveedor">Remote Supplier Check</h3>
+      <p data-en="A fast remote check before you commit further — company registration, manufacturer vs. trader, address and payment-account match. Written report within 48 hours. Not a substitute for an on-site visit, but it tells you if you need one." data-es="Un filtro remoto rápido antes de comprometerte más — registro de la empresa, fabricante o comercializadora, dirección y cuenta de pago. Reporte escrito en 48 horas. No sustituye una visita en sitio, pero te dice si la necesitas.">A fast remote check before you commit further — company registration, manufacturer vs. trader, address and payment-account match. Written report within 48 hours. Not a substitute for an on-site visit, but it tells you if you need one.</p>
+    </div>
     <div class="svc-card">
       <div class="svc-icon">🏭</div>
       <span class="sv-off"><b>-20%</b><i data-en="after a detailed consultation" data-es="tras una consulta detallada">after a detailed consultation</i></span><div class="svc-price-tag" data-en="From $449" data-es="Desde $449">From $449</div>
@@ -700,8 +758,8 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           <span class="faq-toggle">+</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner lang-en">Our standard rates: Factory Verification Visit — <strong>$449</strong>. Pre-Shipment Inspection — <strong>$399/man-day</strong>. Factory Audit — <strong>$499/man-day</strong>. Sourcing &amp; procurement — <strong>10% of order value</strong>. Consult us now — no commitment required. <strong style="color:#D62828">After a detailed consultation with our team, all listed prices are 20% off.</strong></div>
-          <div class="faq-a-inner lang-es">Nuestras tarifas estándar: Visita de Verificación de Fábrica — <strong>$449</strong>. Inspección Previa al Envío — <strong>$399/día-hombre</strong>. Auditoría de Fábrica — <strong>$499/día-hombre</strong>. Abastecimiento y compras — <strong>10% del valor del pedido</strong>. La primera consulta siempre es gratuita. <strong style="color:#D62828">Tras una consulta detallada con nuestro equipo, todos los precios publicados tienen un 20% de descuento.</strong></div>
+          <div class="faq-a-inner lang-en">Our standard rates: Remote Supplier Check — <strong>$49</strong> (credited toward a full verification if you upgrade). Factory Verification Visit — <strong>$449</strong>. Pre-Shipment Inspection — <strong>$399/man-day</strong>. Factory Audit — <strong>$499/man-day</strong>. Sourcing &amp; procurement — <strong>10% of order value</strong>. Consult us now — no commitment required. <strong style="color:#D62828">After a detailed consultation with our team, all listed prices (except the Remote Supplier Check) are 20% off.</strong></div>
+          <div class="faq-a-inner lang-es">Nuestras tarifas estándar: Revisión Remota de Proveedor — <strong>$49</strong> (se descuenta del costo si luego continúa con la verificación completa). Visita de Verificación de Fábrica — <strong>$449</strong>. Inspección Previa al Envío — <strong>$399/día-hombre</strong>. Auditoría de Fábrica — <strong>$499/día-hombre</strong>. Abastecimiento y compras — <strong>10% del valor del pedido</strong>. La primera consulta siempre es gratuita. <strong style="color:#D62828">Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota) tienen un 20% de descuento.</strong></div>
         </div>
       </div>
 
@@ -781,6 +839,53 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       </div>
 
   </div>
+</section>
+
+<section class="remote-check" id="remote-check" style="background:var(--light);padding:4rem 3rem;">
+  <div style="max-width:720px;margin:0 auto;text-align:center">
+    <div class="section-tag" data-en="Start Here" data-es="Empieza Aquí">Start Here</div>
+    <h2 class="section-title" data-en="Not Sure Yet? Start With a $49 Remote Check" data-es="¿No Está Seguro Todavía? Empiece con una Revisión Remota de $49">Not Sure Yet? Start With a $49 Remote Check</h2>
+    <p data-en="Before committing to a full on-site verification, we check the basics remotely: company registration, manufacturer vs. trader, address, and whether the payment account matches the company name. Report delivered within 48 hours after we receive payment and the supplier details." data-es="Antes de comprometerse con una verificación completa en sitio, revisamos lo básico de forma remota: registro de la empresa, si es fabricante o comercializadora, dirección, y si la cuenta de pago coincide con el nombre de la empresa. Entrega del reporte en 48 horas a partir de recibir el pago y los datos del proveedor.">Before committing to a full on-site verification, we check the basics remotely: company registration, manufacturer vs. trader, address, and whether the payment account matches the company name. Report delivered within 48 hours after we receive payment and the supplier details.</p>
+    <p style="font-size:0.85rem;color:var(--muted)" data-en="This is a remote check, not an on-site factory visit — the result is either &quot;lower risk&quot; or &quot;we recommend an on-site verification.&quot; The $49 is credited toward a full Factory Verification if you continue." data-es="Esto es una revisión remota, no una visita a la fábrica — el resultado es &quot;riesgo más bajo&quot; o &quot;recomendamos verificación en sitio.&quot; Los $49 se descuentan del costo si luego continúa con la Verificación de Fábrica completa.">This is a remote check, not an on-site factory visit — the result is either "lower risk" or "we recommend an on-site verification." The $49 is credited toward a full Factory Verification if you continue.</p>
+    <p style="font-size:0.85rem;color:var(--muted)" data-en="We take a limited number of checks each week. If this week is full, we'll confirm the next available date." data-es="Atendemos un número limitado de revisiones por semana. Si el cupo de esta semana está lleno, te confirmamos la fecha disponible.">We take a limited number of checks each week. If this week is full, we'll confirm the next available date.</p>
+  </div>
+  <form id="remote-check-form" action="https://formspree.io/f/mjgjqpbg" method="POST" enctype="multipart/form-data" style="max-width:560px;margin:2rem auto 0">
+    <input type="hidden" name="_subject" value="Remote Supplier Check request - SourciaVera">
+    <input type="hidden" name="service" value="Remote Supplier Check ($49)">
+    <div class="form-group">
+      <label data-en="Supplier link (Alibaba, 1688, or website)" data-es="Enlace del proveedor (Alibaba, 1688 o sitio web)">Supplier link (Alibaba, 1688, or website)</label>
+      <input type="url" name="supplier_link" placeholder="https://..." required>
+    </div>
+    <div class="form-group">
+      <label data-en="What product?" data-es="¿Qué producto?">What product?</label>
+      <input type="text" name="product" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label data-en="Estimated order value" data-es="Monto estimado del pedido">Estimated order value</label>
+        <select name="order_value">
+          <option>Under $5,000</option>
+          <option>$5,000–$20,000</option>
+          <option>$20,000+</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label data-en="Your name" data-es="Tu nombre">Your name</label>
+        <input type="text" name="name" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label data-en="Email or WhatsApp" data-es="Correo o WhatsApp">Email or WhatsApp</label>
+      <input type="text" name="contact" required>
+    </div>
+    <div class="form-group">
+      <label data-en="Quote or PI (optional — needed to check the payment account)" data-es="Cotización o PI (opcional — necesaria para revisar la cuenta de pago)">Quote or PI (optional — needed to check the payment account)</label>
+      <input type="file" name="attachment">
+    </div>
+    <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem" data-en="We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email." data-es="Aceptamos pagos por PayPal y Wise. Después de enviar el formulario, te enviamos el enlace de pago por WhatsApp o correo.">We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email.</p>
+    <button type="submit" class="btn-submit" id="remote-check-submit-btn" data-en="Request This Check — $49" data-es="Solicitar esta Revisión — $49">Request This Check — $49</button>
+    <p id="remote-check-success" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem"></p>
+  </form>
 </section>
 
 <section class="contact" id="contact">
@@ -900,7 +1005,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   <div data-en="© 2025 SourciaVera · Guangzhou, China · All rights reserved" data-es="© 2025 SourciaVera · Guangzhou, China · Todos los derechos reservados">© 2025 SourciaVera · Guangzhou, China · All rights reserved</div>
 </footer>
 
-<a href="https://wa.me/8613688057230" class="wa-float" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+<a href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." class="wa-float" title="WhatsApp" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
 
 <script>
 function detectLang() {
@@ -1017,6 +1122,37 @@ document.querySelectorAll('input[name="stage"]').forEach(function(r){
   var el = document.getElementById('contact');
   if(el) el.scrollIntoView({behavior:'smooth'});
 })();
+
+const rcForm = document.getElementById('remote-check-form');
+const rcBtn = document.getElementById('remote-check-submit-btn');
+const rcSuccess = document.getElementById('remote-check-success');
+rcForm.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  rcBtn.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
+  rcBtn.disabled = true;
+  try {
+    const res = await fetch(rcForm.action, {method:'POST', body:new FormData(rcForm), headers:{Accept:'application/json'}});
+    if (res.ok) {
+      rcForm.reset();
+      rcBtn.style.display = 'none';
+      rcSuccess.style.display = 'block';
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18086408472/h2DFCLiqsekcEJjiorBD'
+        });
+      }
+      rcSuccess.textContent = currentLang === 'es'
+        ? '✓ Recibido — te contactamos en menos de 24h para coordinar el pago'
+        : '✓ Received — we\'ll contact you within 24h to arrange payment';
+    } else {
+      rcBtn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
+      rcBtn.disabled = false;
+    }
+  } catch(err) {
+    rcBtn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
+    rcBtn.disabled = false;
+  }
+});
 
 const form = document.getElementById('contact-form');
 const btn = document.getElementById('submit-btn');
