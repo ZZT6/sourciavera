@@ -62,6 +62,7 @@
 - [5 Things a Video Call Reveals That Photos Can't](https://sourciavera.com/blog/video-call-vs-factory-photos): How to use a live walkthrough to catch fake factories
 - [6 Quality Checks for Auto Parts Buyers Before Shipping](https://sourciavera.com/blog/auto-parts-quality-checks-before-shipping): Fitment, coating, and AQL checks for auto parts orders
 - [6 Signs Your Factory Is a Trading Company](https://sourciavera.com/blog/signs-your-factory-is-a-trading-company): Cutting out a middleman typically saves 10-30%
+- [When a Chinese Supplier Says "No Problem" — What That Actually Means](https://sourciavera.com/blog/when-chinese-supplier-says-no-problem): Why suppliers say méiwèntí, how it gets misread in both directions, and how to get a real confirmation instead
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
@@ -82,3 +83,4 @@
 - [Sourcing Transparente: Alibaba o SourciaVera](https://sourciavera.com/blog/es/sourcing-transparente-alibaba-o-sourciavera): Comparativa directa
 - [Caso Real: Verificación del Rin de Refacción BYD Seagull](https://sourciavera.com/blog/es/caso-verificacion-llanta-refaccion-byd-seagull): Detectando una ficha técnica que confundió el offset (ET 30) con el buje central (54.1 mm)
 - [6 Señales de que tu Fábrica es una Empresa Comercializadora](https://sourciavera.com/blog/es/senales-fabrica-trading-company): Prescindir del intermediario ahorra 10-30%
+- [Cuando un Proveedor Chino Dice "No Hay Problema": Qué Significa Realmente](https://sourciavera.com/blog/es/cuando-proveedor-chino-dice-no-hay-problema): Por qué los proveedores dicen méiwèntí, cómo se malinterpreta en ambas direcciones, y cómo pedir una confirmación real
