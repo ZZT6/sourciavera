@@ -63,6 +63,7 @@
 - [6 Quality Checks for Auto Parts Buyers Before Shipping](https://sourciavera.com/blog/auto-parts-quality-checks-before-shipping): Fitment, coating, and AQL checks for auto parts orders
 - [6 Signs Your Factory Is a Trading Company](https://sourciavera.com/blog/signs-your-factory-is-a-trading-company): Cutting out a middleman typically saves 10-30%
 - [When a Chinese Supplier Says "No Problem" — What That Actually Means](https://sourciavera.com/blog/when-chinese-supplier-says-no-problem): Why suppliers say méiwèntí, how it gets misread in both directions, and how to get a real confirmation instead
+- [How to Find Reliable Chinese Suppliers](https://sourciavera.com/blog/how-to-find-reliable-chinese-suppliers): Where to look, how to filter before reaching out, how to verify before a deposit, and how to use a small trial order before committing to more
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
@@ -84,3 +85,4 @@
 - [Caso Real: Verificación del Rin de Refacción BYD Seagull](https://sourciavera.com/blog/es/caso-verificacion-llanta-refaccion-byd-seagull): Detectando una ficha técnica que confundió el offset (ET 30) con el buje central (54.1 mm)
 - [6 Señales de que tu Fábrica es una Empresa Comercializadora](https://sourciavera.com/blog/es/senales-fabrica-trading-company): Prescindir del intermediario ahorra 10-30%
 - [Cuando un Proveedor Chino Dice "No Hay Problema": Qué Significa Realmente](https://sourciavera.com/blog/es/cuando-proveedor-chino-dice-no-hay-problema): Por qué los proveedores dicen méiwèntí, cómo se malinterpreta en ambas direcciones, y cómo pedir una confirmación real
+- [Cómo Encontrar Proveedores Chinos Confiables](https://sourciavera.com/blog/es/como-encontrar-proveedores-chinos-confiables): Dónde buscar, cómo filtrar antes de contactar, cómo verificar antes de un depósito, y cómo usar un pedido de prueba antes de comprometerse a más
