@@ -22,6 +22,7 @@
 
 ## Auto Parts Guides (English)
 
+- [How to Import Auto Parts from China to Mexico](https://sourciavera.com/blog/how-to-import-auto-parts-from-china-to-mexico): The import process for China auto parts, the spec and certification risks, what the real cost includes, and what to confirm with your customs broker
 - [8 Things to Check Before Ordering Custom Carbon Fiber Auto Parts from China](https://sourciavera.com/blog/carbon-fiber-auto-parts-sourcing-checklist): Carbon fiber sourcing checklist for buyers
 - [Real Case: BYD Seagull Spare Wheel Offset Verification](https://sourciavera.com/blog/case-study-byd-seagull-spare-wheel-offset): Catching a factory spec sheet that mixed up offset (ET 30) with center bore (54.1 mm)
 - [OEM vs ODM Auto Parts: Launch a Private-Label Brand from China](https://sourciavera.com/blog/oem-vs-odm-auto-parts-private-label-china): Choosing between OEM and ODM for a private-label auto parts line
@@ -32,6 +33,7 @@
 
 ## Auto Parts Guides (Español)
 
+- [Cómo Importar Autopartes de China a México](https://sourciavera.com/blog/es/como-importar-autopartes-de-china-a-mexico): El proceso de importación de autopartes China, los riesgos de especificación y certificación, qué incluye el costo real y qué confirmar con su agente aduanal
 - [Autopartes de Fibra de Carbono en China: 8 Cosas que Verificar Antes de Pedir](https://sourciavera.com/blog/es/lista-verificacion-piezas-fibra-carbono-china): Checklist de sourcing de piezas de fibra de carbono
 - [Caso Real: Verificación del Rin de Refacción BYD Seagull](https://sourciavera.com/blog/es/caso-verificacion-llanta-refaccion-byd-seagull): Detectando una ficha técnica que confundió el offset (ET 30) con el buje central (54.1 mm)
 - [OEM vs ODM Autopartes: Lanza tu Marca Propia desde China](https://sourciavera.com/blog/es/oem-vs-odm-autopartes-marca-propia-china): Cómo elegir entre OEM y ODM para una línea de marca propia
