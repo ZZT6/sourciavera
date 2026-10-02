@@ -302,7 +302,7 @@ nav{position:relative}
 .nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75);transition:background 0.2s}
 .nav-hamburger:hover span{background:white}
 @media(max-width:768px){
-html,body{overflow-x:hidden;max-width:100%}
+html,body{overflow-x:clip;max-width:100%}
 nav{padding:1rem 1.5rem}
 .nav-hamburger{display:flex}
 .nav-links{display:none}
@@ -323,7 +323,7 @@ nav.nav-open .nav-links a:last-child{border-bottom:none}
 .form-row{grid-template-columns:1fr}
 
 footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
-.footer-links{gap:1rem}
+.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
 .faq{padding:3rem 1.5rem}
 .faq-layout{grid-template-columns:1fr;gap:2rem}
 .faq-side-card{position:static}
@@ -854,7 +854,8 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <input type="hidden" name="service" value="Remote Supplier Check ($49)">
     <div class="form-group">
       <label data-en="Supplier link (Alibaba, 1688, or website)" data-es="Enlace del proveedor (Alibaba, 1688 o sitio web)">Supplier link (Alibaba, 1688, or website)</label>
-      <input type="url" name="supplier_link" placeholder="https://..." required>
+      <input type="text" inputmode="url" name="supplier_link" placeholder="https://..." required>
+      <p style="font-size:0.78rem;color:var(--muted);margin:0" data-en="Paste the link, or the text you copied from the Alibaba or 1688 app." data-es="Pega el enlace o el texto que copiaste de la app de Alibaba o 1688.">Paste the link, or the text you copied from the Alibaba or 1688 app.</p>
     </div>
     <div class="form-group">
       <label data-en="What product?" data-es="¿Qué producto?">What product?</label>
@@ -912,6 +913,15 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <div class="form-group">
           <label data-en="What product are you sourcing?" data-es="¿Qué producto buscas?">What product are you sourcing?</label>
           <textarea name="message" id="textarea-msg" placeholder="What product are you sourcing? Do you have a supplier in mind? Alibaba link if available..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="diag-radio">
+            <input type="checkbox" id="has-part-list-check" name="has_part_list" value="yes">
+            <span data-en="I have a list of part numbers (OEM / FMSI / DPI)" data-es="Tengo una lista de números de parte (OEM / FMSI / DPI)">I have a list of part numbers (OEM / FMSI / DPI)</span>
+          </label>
+          <div id="part-list-box" style="display:none;margin-top:0.6rem">
+            <textarea name="part_list" data-en="Paste your part numbers here, one per line..." data-es="Pega aquí tus números de parte, uno por línea..." placeholder="Paste your part numbers here, one per line..."></textarea>
+          </div>
         </div>
         <button type="button" class="btn-submit diag-next" data-next="2" data-en="Next →" data-es="Siguiente →">Next →</button>
       </div>
@@ -1070,6 +1080,12 @@ function diagGoto(n){
     var dn = parseInt(d.dataset.dot, 10);
     d.classList.toggle('active', dn === n);
     d.classList.toggle('done', dn < n);
+  });
+}
+var hasPartListCheck = document.getElementById('has-part-list-check');
+if (hasPartListCheck) {
+  hasPartListCheck.addEventListener('change', function(){
+    document.getElementById('part-list-box').style.display = this.checked ? 'block' : 'none';
   });
 }
 function diagValidate(n){
