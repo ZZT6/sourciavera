@@ -51,12 +51,12 @@
         "addressRegion": "Guangdong",
         "addressCountry": "CN"
       },
-      "areaServed": ["US","CA","MX","CO","AR","CL","PE","BR","GB","AU"],
+      "areaServed": ["MX","CO","AR","CL","PE","BR"],
       "serviceType": ["Remote Supplier Check","Factory Verification","Supplier Audit","Sourcing Agent","Procurement","Quality Inspection"],
       "priceRange": "$49–$499",
       "currenciesAccepted": "USD",
       "availableLanguage": ["English","Spanish","Chinese"],
-      "founder": {"@type": "Person", "name": "Zhang Peng", "jobTitle": "Founder", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+      "founder": {"@type": "Person", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
       "sameAs": [
         "https://wa.me/8613688057230",
         "https://www.youtube.com/@sourciavera",
@@ -224,6 +224,14 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-cards-single{grid-template-columns:1fr}
 .who-card-wide{text-align:center}
 .who-card-wide .who-icon{margin:0 auto 1rem}
+.cases-section{padding:5rem 3rem;background:var(--white)}
+.case-grid{max-width:900px;margin:0 auto;display:grid;gap:1.5rem}
+.case-card{display:grid;grid-template-columns:190px 1fr;gap:1.75rem;align-items:center;background:var(--light);border:1px solid var(--border);border-radius:8px;padding:1.5rem}
+.case-card img{width:100%;height:auto;border-radius:6px;display:block}
+.case-tag{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.case-card h3{font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem;line-height:1.3}
+.case-card p{color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:0.9rem}
+@media(max-width:700px){.cases-section{padding:3rem 1.5rem}.case-card{grid-template-columns:1fr;padding:1.25rem}.case-card img{max-width:220px;margin:0 auto}}
 .testimonials-wrap{max-width:1120px;margin:0 auto 3rem}
 .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,340px));gap:2rem;justify-content:center}
 .testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-align:center}
@@ -403,7 +411,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <p data-en="We're an independent third-party verification company in Guangzhou, focused on auto parts for importers in Mexico and Latin America. Send us the factory listing you found on 1688 or Alibaba — wheels, carbon fiber parts, LED lighting, body parts or your own private-label project — and we go on site, camera in hand, before you send a deposit." data-es="Somos una empresa independiente de verificación de terceros en Guangzhou, especializada en autopartes para importadores de México y Latinoamérica. Envíanos la ficha de la fábrica que encontraste en 1688 o Alibaba — rines, piezas de fibra de carbono, iluminación LED, carrocería o tu proyecto de marca propia — y vamos a la fábrica, cámara en mano, antes de que envíes un depósito.">We're an independent third-party verification company in Guangzhou, focused on auto parts for importers in Mexico and Latin America. Send us the factory listing you found on 1688 or Alibaba — wheels, carbon fiber parts, LED lighting, body parts or your own private-label project — and we go on site, camera in hand, before you send a deposit.</p>
     <div class="hero-btns">
       <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Get a Free Detailed Quote" data-es="Cotización Detallada Gratis">Get a Free Detailed Quote</button>
-      <a class="btn-wa" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" data-en="See Services" data-es="Ver servicios">See Services</a>
+      <a class="btn-wa" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" data-en="Chat on WhatsApp" data-es="Hablar por WhatsApp">Chat on WhatsApp</a>
     </div>
   </div>
   <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Illustrated shipping route map from Guangzhou, China to Los Angeles, Lázaro Cárdenas, Colón, Callao and Chile, with auto parts cargo" loading="eager"></div>
@@ -416,7 +424,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   <div class="stat"><span class="stat-num">0%</span><span class="stat-label" data-en="Factory commission" data-es="Comisión de fábrica">Factory commission</span></div>
 </div>
 
-<div class="cross-link" data-en='Our verification process works for any product. Auto parts is where we go deepest. → <a href="/categories">See what else we verify</a>' data-es='Nuestro proceso de verificación funciona para cualquier producto. En autopartes es donde vamos más a fondo. → <a href="/es/categorias">Ver otros productos</a>'>Our verification process works for any product. Auto parts is where we go deepest. → <a href="/categories">See what else we verify</a></div>
+<div class="cross-link" data-en='Auto parts is where we specialize most. You can also ask us about other categories. → <a href="/categories">See other categories</a>' data-es='Las autopartes son nuestra mayor especialidad. También puedes consultarnos sobre otras categorías. → <a href="/es/categorias">Ver otras categorías</a>'>Auto parts is where we specialize most. You can also ask us about other categories. → <a href="/categories">See other categories</a></div>
 
 <section class="how" id="ladder" style="background:var(--light)">
   <div class="section-tag" data-en="Start Anywhere" data-es="Empieza Donde Quieras">Start Anywhere</div>
@@ -545,18 +553,18 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 
 <section class="who-section" id="who">
   <div class="section-tag" data-en="Who We Work With" data-es="Con Quién Trabajamos">Who We Work With</div>
-  <h2 class="section-title" data-en="Built for U.S. bulk buyers." data-es="Hecho para los grandes compradores de Latinoamérica.">Built for U.S. bulk buyers.</h2>
+  <h2 class="section-title" data-en="Built for importers in Mexico and Latin America." data-es="Pensado para importadores de México y Latinoamérica.">Built for importers in Mexico and Latin America.</h2>
   <div class="who-cards who-cards-single">
     <div class="who-card who-card-wide">
       <div class="who-icon">🌎</div>
-      <h3 data-en="Bulk Sourcing for U.S. Buyers" data-es="Abastecimiento a Gran Escala en Latinoamérica">Bulk Sourcing for U.S. Buyers</h3>
-      <p data-en="Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for U.S. buyers — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, custom badges, medals &amp; keychains, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to." data-es="Ya sea que compres directamente o representes a clientes en el extranjero, nos especializamos en compras de gran volumen para compradores en México, Chile y el resto de Latinoamérica — acero y materiales de construcción, autopartes, iluminación LED personalizada, componentes de fibra de carbono, insignias, medallas y llaveros personalizados, y casas contenedoras expandibles. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores en Guangzhou, para que tú no tengas que hacerlo.">Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for U.S. buyers — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, custom badges, medals &amp; keychains, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to.</p>
+      <h3 data-en="Auto Parts Sourcing in China" data-es="Abastecimiento de Autopartes en China">Auto Parts Sourcing in China</h3>
+      <p data-en="Whether you buy directly or represent clients overseas, we specialize in auto parts sourcing for importers in Mexico and Latin America — wheels, carbon fiber parts, LED lighting, body parts and private-label projects. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to. Auto parts is where we specialize most. You can also ask us about other categories — steel and construction materials, custom badges, medals &amp; keychains, and expandable container homes." data-es="Ya sea que compres directamente o representes a clientes en el extranjero, nos especializamos en el abastecimiento de autopartes para importadores de México y Latinoamérica — rines, piezas de fibra de carbono, iluminación LED, carrocería y proyectos de marca propia. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores en Guangzhou, para que tú no tengas que hacerlo. Las autopartes son nuestra mayor especialidad. También puedes consultarnos sobre otras categorías — acero y materiales de construcción, insignias, medallas y llaveros personalizados, y casas contenedoras expandibles.">Whether you buy directly or represent clients overseas, we specialize in auto parts sourcing for importers in Mexico and Latin America — wheels, carbon fiber parts, LED lighting, body parts and private-label projects. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to. Auto parts is where we specialize most. You can also ask us about other categories — steel and construction materials, custom badges, medals &amp; keychains, and expandable container homes.</p>
     </div>
   </div>
 
   <div class="who-footer who-founder-quote">
     <p class="who-founder-text" data-en="“Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company.”" data-es="“Una vez que confirmas la fábrica, seguimos como tu tercero independiente en planta — supervisando la producción para proteger la calidad y la fecha de entrega. Tú solo esperas en WhatsApp los videos e información que te envío. Que el cliente tenga el control de cada cambio, en todo momento, es la razón por la que fundé esta empresa.”">"Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company."</p>
-    <p class="who-founder-name" data-en="— Zhang Peng, Founder" data-es="— Zhang Peng, Fundador">— Zhang Peng, Founder</p>
+    <p class="who-founder-name" data-en="— Zhang Peng (Miguel Lopez), Founder" data-es="— Zhang Peng (Miguel Lopez), Fundador">— Zhang Peng (Miguel Lopez), Founder</p>
     <a href="#contact" class="who-cta" data-en="Get in Touch →" data-es="Contáctanos →">Get in Touch →</a>
     <div class="rating-widget" id="ratingWidget">
       <div class="rating-stars" id="ratingStars">
@@ -613,7 +621,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <div class="how-num-v2">03</div>
       <h3 data-en="Verification &amp; Audit" data-es="Verificación y Auditoría">Verification &amp; Audit</h3>
       <p data-en="Transparent pricing from $449. On-site visit with unedited video — what you see is what exists." data-es="Precios transparentes desde $449. Visita presencial con video sin editar — lo que ves es lo que existe.">Transparent pricing from $449. On-site visit with unedited video — what you see is what exists.</p>
-      <div class="trust-line" data-en="Seeing is believing. We eliminate the 'photo factory' scam — every time." data-es="Ver para creer. Eliminamos la estafa de la 'fábrica foto' — siempre.">Seeing is believing. We eliminate the 'photo factory' scam — every time.</div>
+      <div class="trust-line" data-en="Seeing is believing. We film every factory visit, so you see what actually exists." data-es="Ver para creer. Grabamos cada visita a la fábrica, para que usted vea lo que realmente existe.">Seeing is believing. We film every factory visit, so you see what actually exists.</div>
     </div>
     <div class="how-step-v2 step-featured reveal-water">
       <div class="step-vs-badge" data-en="vs. one-time inspection" data-es="vs. inspección única">vs. one-time inspection</div>
@@ -626,8 +634,27 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <div class="how-num-v2">05</div>
       <h3 data-en="QC &amp; Shipment" data-es="QC y Despacho">QC &amp; Shipment</h3>
       <p data-en="Pre-shipment inspection, document coordination, and risk backup — everything in order before goods leave China." data-es="Inspección final, coordinación de documentos y respaldo ante riesgos — todo en orden antes de que salga.">Pre-shipment inspection, document coordination, and risk backup — everything in order before goods leave China.</p>
-      <div class="trust-line" data-en="What you paid for is what arrives. Every time." data-es="Lo que pagaste es lo que llega. Siempre.">What you paid for is what arrives. Every time.</div>
+      <div class="trust-line" data-en="Before your goods leave China, you see the inspection results and decide." data-es="Antes de que la mercancía salga de China, usted ve los resultados de la inspección y decide.">Before your goods leave China, you see the inspection results and decide.</div>
     </div>
+  </div>
+</section>
+
+<section class="cases-section" id="cases">
+  <div class="section-tag" data-en="Real Cases" data-es="Casos Reales">Real Cases</div>
+  <h2 class="section-title" data-en="What a verification looks like in practice." data-es="Cómo se ve una verificación en la práctica.">What a verification looks like in practice.</h2>
+  <div class="case-grid">
+    <div class="case-card">
+      <img src="/images/auto-parts-byd-wheel-rim.webp" alt="BYD Dolphin Mini (Seagull) spare wheel and tire from the verified order" width="393" height="630" loading="lazy">
+      <div class="case-body">
+        <div class="case-tag" data-en="Wheel verification · Latin American buyer" data-es="Verificación de rines · Comprador latinoamericano">Wheel verification · Latin American buyer</div>
+        <h3 data-en="BYD Dolphin Mini (Seagull) spare wheel" data-es="Rin de refacción BYD Dolphin Mini (Seagull)">BYD Dolphin Mini (Seagull) spare wheel</h3>
+        <p data-en="The supplier's first spec sheet listed the offset as ET 54.1 — which is actually the center bore. We asked for a formal, stamped spec sheet, and the supplier corrected it to the real offset: ET 30." data-es="La primera ficha técnica del proveedor indicaba el offset como ET 54.1, que en realidad es el buje central (CB). Exigimos una ficha técnica sellada por el proveedor y la fábrica lo corrigió al offset real: ET 30.">The supplier's first spec sheet listed the offset as ET 54.1 — which is actually the center bore. We asked for a formal, stamped spec sheet, and the supplier corrected it to the real offset: ET 30.</p>
+        <a class="path-link lang-en" href="/blog/case-study-byd-seagull-spare-wheel-offset">Read the full case →</a>
+        <a class="path-link lang-es" href="/blog/es/caso-verificacion-llanta-refaccion-byd-seagull">Leer el caso completo →</a>
+      </div>
+    </div>
+    <!-- TODO (owner): sample factory-verification report card -- add here once the report page is published -->
+    <!-- TODO (owner): factory verification video card -- add here once a YouTube link is provided; no illustrations or stock images -->
   </div>
 </section>
 
@@ -743,8 +770,8 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           <span class="faq-toggle">+</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner lang-en">No. We verify suppliers across the Guangzhou area in many categories, including LED lighting, auto parts, electronics, hardware and industrial equipment. If you're unsure we cover your product, ask us.</div>
-          <div class="faq-a-inner lang-es">No. Verificamos proveedores del área de Guangzhou en muchas categorías, incluidas iluminación LED, autopartes, electrónica, hardware y equipos industriales. Si no está seguro de que cubramos su producto, pregúntenos.</div>
+          <div class="faq-a-inner lang-en">No. Auto parts is where we specialize most, and you can also ask us about other categories.</div>
+          <div class="faq-a-inner lang-es">No. Las autopartes son nuestra mayor especialidad, y también puede consultarnos sobre otras categorías.</div>
         </div>
       </div>
 
@@ -964,13 +991,6 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           <div class="form-group">
             <label for="country-select" data-en="Country" data-es="País">Country</label>
             <select id="country-select" name="country">
-              <option>United States</option>
-              <option>United Kingdom</option>
-              <option>Australia</option>
-              <option>Canada</option>
-              <option>Germany</option>
-              <option>France</option>
-              <option>Netherlands</option>
               <option>Mexico</option>
               <option>Guatemala</option>
               <option>Panama</option>
@@ -979,6 +999,13 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
               <option>Chile</option>
               <option>Peru</option>
               <option>Brazil</option>
+              <option>United States</option>
+              <option>United Kingdom</option>
+              <option>Australia</option>
+              <option>Canada</option>
+              <option>Germany</option>
+              <option>France</option>
+              <option>Netherlands</option>
               <option data-en="Other" data-es="Otro">Other</option>
             </select>
           </div>
@@ -1012,7 +1039,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <a href="/privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a>
     <a href="/terms" data-en="Terms of Service" data-es="Términos de Servicio">Terms of Service</a>
   </div>
-  <div data-en="© 2025 SourciaVera · Guangzhou, China · All rights reserved" data-es="© 2025 SourciaVera · Guangzhou, China · Todos los derechos reservados">© 2025 SourciaVera · Guangzhou, China · All rights reserved</div>
+  <div data-en="© 2026 SourciaVera · Guangzhou, China · All rights reserved" data-es="© 2026 SourciaVera · Guangzhou, China · Todos los derechos reservados">© 2026 SourciaVera · Guangzhou, China · All rights reserved</div>
 </footer>
 
 <a href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." class="wa-float" title="WhatsApp" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" fill="currentColor" aria-hidden="true" style="vertical-align:-0.125em"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
@@ -1249,10 +1276,15 @@ form.addEventListener('submit', async function(e) {
 
   function lang() { return document.documentElement.lang === 'es' ? 'es' : 'en'; }
 
+  // Real votes only: the average is shown once there are at least MIN_VOTES votes; below that, no stars/average are displayed.
+  var MIN_VOTES = 5;
   function summaryText() {
     var total = lastData.total || 0;
     var average = lastData.average || 0;
-    if (total === 0) return lang() === 'es' ? 'Sé el primero en calificar' : 'Be the first to rate';
+    if (total < MIN_VOTES) {
+      if (widget.classList.contains('rated')) return lang() === 'es' ? 'Gracias por tu calificación' : 'Thanks for rating';
+      return lang() === 'es' ? 'Toca una estrella para calificar' : 'Tap a star to rate';
+    }
     var word = lang() === 'es' ? (total === 1 ? 'calificación' : 'calificaciones') : (total === 1 ? 'rating' : 'ratings');
     return '★ ' + average.toFixed(1) + ' · ' + total + ' ' + word;
   }
@@ -1288,8 +1320,8 @@ form.addEventListener('submit', async function(e) {
         stars.forEach(function(s2) { s2.disabled = true; });
         fetch('/api/rating?star=' + v, { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
           lastData = d;
-          renderSummary();
           widget.classList.add('rated');
+          renderSummary();
           paintSelected(v);
           localStorage.setItem(VOTED_KEY, String(v));
         }).catch(function() {
