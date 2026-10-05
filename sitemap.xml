@@ -31,8 +31,8 @@
   <url><loc>https://sourciavera.com/es/verificacion-fabricas/guatemala</loc><lastmod>2026-08-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- Blog index -->
-  <url><loc>https://sourciavera.com/blog</loc><lastmod>2026-10-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://sourciavera.com/blog/es</loc><lastmod>2026-10-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sourciavera.com/blog</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://sourciavera.com/blog/es</loc><lastmod>2026-10-06</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 
   <!-- EN blog posts — clean URLs, no .html -->
   <url><loc>https://sourciavera.com/blog/real-factory-vs-trading-company-china</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -150,4 +150,6 @@
   <url><loc>https://sourciavera.com/blog/es/se-puede-hacer-dropshipping-con-alibaba</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sourciavera.com/blog/best-dropshipping-platforms</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sourciavera.com/blog/es/mejores-plataformas-de-dropshipping</loc><lastmod>2026-10-05</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sourciavera.com/blog/minimum-order-quantity-importing-from-china</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sourciavera.com/blog/es/cantidad-minima-de-pedido-importar-de-china</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
