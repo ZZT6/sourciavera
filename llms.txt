@@ -44,6 +44,7 @@
 
 ## Blog — China Sourcing Guides (English)
 
+- [What's the distinction between "set" versus "piece" for MOQ from Alibaba.com?](https://sourciavera.com/blog/set-vs-piece-moq-alibaba): How the unit (set or piece) changes the MOQ and the price, with auto parts examples and what to confirm
 - [While importing from China what is the minimum order quantity?](https://sourciavera.com/blog/minimum-order-quantity-importing-from-china): Who sets the MOQ, why it differs, how to check it before you pay and how to negotiate it
 - [Best Dropshipping Platforms in 2026: How to Choose One and What They Don't Check for You](https://sourciavera.com/blog/best-dropshipping-platforms): The main types of dropshipping platforms, how to choose one, and what platforms don't verify
 - [Can You Dropship With Alibaba? Everything You Need to Know Before Starting](https://sourciavera.com/blog/can-you-dropship-with-alibaba): How Alibaba dropshipping works, the steps to start, and how to verify the supplier first
@@ -72,6 +73,7 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [¿Cuál Es la Diferencia entre "Set" y "Pieza" en el MOQ de Alibaba.com?](https://sourciavera.com/blog/es/diferencia-set-pieza-moq-alibaba): Cómo la unidad (set o pieza) cambia el MOQ y el precio, con ejemplos de autopartes y qué confirmar
 - [Al Importar de China, ¿Cuál Es la Cantidad Mínima de Pedido?](https://sourciavera.com/blog/es/cantidad-minima-de-pedido-importar-de-china): Quién fija el MOQ, por qué varía, cómo verificarlo antes de pagar y cómo negociarlo
 - [Mejores Plataformas de Dropshipping en 2026](https://sourciavera.com/blog/es/mejores-plataformas-de-dropshipping): Los tipos de plataformas de dropshipping, cómo elegir una y qué no verifican las plataformas
 - [¿Se Puede Hacer Dropshipping con Alibaba?](https://sourciavera.com/blog/es/se-puede-hacer-dropshipping-con-alibaba): Cómo funciona, los pasos para empezar y cómo verificar al proveedor primero
