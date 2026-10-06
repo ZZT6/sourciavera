@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "buildCommand": "node scripts/generate-sitemap.mjs --ci",
+  "outputDirectory": ".",
   "redirects": [
     {
       "source": "/(.*)",
