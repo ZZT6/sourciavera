@@ -1,6 +1,7 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "buildCommand": "node scripts/generate-sitemap.mjs --ci",
   "redirects": [
     {
       "source": "/(.*)",
@@ -35,7 +36,7 @@
     },
     {
       "source": "/how-to-verify-alibaba-supplier",
-      "destination": "/blog/how-to-verify-alibaba-supplier",
+      "destination": "/blog/alibaba-supplier-red-flags",
       "permanent": true
     },
     {
