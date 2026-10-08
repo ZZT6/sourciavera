@@ -44,6 +44,8 @@
 
 ## Blog — China Sourcing Guides (English)
 
+- [Can you order from Alibaba in the US?](https://sourciavera.com/blog/can-you-order-from-alibaba-in-the-us): Whether and how a US buyer can order from Alibaba.com, delivery terms, customs entry and duties, what changed for small shipments, and a section for Mexico and Latin America
+- [Why are some products on Amazon FBA less than Alibaba?](https://sourciavera.com/blog/why-amazon-fba-cheaper-than-alibaba): Six common reasons an Amazon price can be below an Alibaba listing price, the seller-fee arithmetic, and how to compare landed cost
 - [What would be the minimum amount of product that should be purchased from AliExpress?](https://sourciavera.com/blog/minimum-order-aliexpress): Whether AliExpress has a minimum order, how to check a listing, how it differs from Alibaba.com, Buyer Protection and how many to buy
 - [Has anyone purchased just one item (as retail) from wholesaler website Alibaba.com before?](https://sourciavera.com/blog/buying-one-item-retail-alibaba-what-happens): What buying a single item on Alibaba.com involves, how to read supplier replies, a message template and what can go wrong
 - [How do I buy a single product from the Alibaba website for my personal use?](https://sourciavera.com/blog/buy-single-product-alibaba-personal-use): Whether and how an individual can buy one unit on Alibaba.com, what it really costs, how Trade Assurance applies, and the alternatives
@@ -77,6 +79,8 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [¿Se Puede Pedir en Alibaba desde Estados Unidos?](https://sourciavera.com/blog/es/se-puede-comprar-en-alibaba-desde-estados-unidos): Si y cómo un comprador en Estados Unidos puede pedir en Alibaba.com, términos de entrega, entrada en aduana y aranceles, qué cambió para envíos pequeños y una sección para México y Latinoamérica
+- [¿Por Qué Algunos Productos en Amazon FBA Cuestan Menos que en Alibaba?](https://sourciavera.com/blog/es/por-que-amazon-fba-mas-barato-que-alibaba): Seis razones comunes por las que un precio de Amazon puede ser menor que el de un anuncio de Alibaba, la aritmética de los cargos del vendedor y cómo comparar el costo puesto en destino
 - [¿Cuál Sería la Cantidad Mínima de Producto que se Debe Comprar en AliExpress?](https://sourciavera.com/blog/es/pedido-minimo-aliexpress): Si AliExpress tiene un pedido mínimo, cómo revisar un anuncio, en qué se diferencia de Alibaba.com, la Protección al Comprador y cuántas unidades comprar
 - [¿Alguien Ha Comprado Solo Una Pieza (al Menudeo) en el Sitio de Mayoreo Alibaba.com?](https://sourciavera.com/blog/es/comprar-una-pieza-alibaba-como-minorista-que-pasa): Qué implica comprar un solo artículo en Alibaba.com, cómo leer las respuestas del proveedor, una plantilla de mensaje y qué puede salir mal
 - [¿Cómo Compro un Solo Producto en Alibaba para Mi Uso Personal?](https://sourciavera.com/blog/es/comprar-un-solo-producto-alibaba-uso-personal): Si un particular puede comprar una unidad en Alibaba.com y cómo, cuánto cuesta realmente, cómo aplica Trade Assurance y las alternativas
