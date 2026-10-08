@@ -44,6 +44,8 @@
 
 ## Blog — China Sourcing Guides (English)
 
+- [What would be the minimum amount of product that should be purchased from AliExpress?](https://sourciavera.com/blog/minimum-order-aliexpress): Whether AliExpress has a minimum order, how to check a listing, how it differs from Alibaba.com, Buyer Protection and how many to buy
+- [Has anyone purchased just one item (as retail) from wholesaler website Alibaba.com before?](https://sourciavera.com/blog/buying-one-item-retail-alibaba-what-happens): What buying a single item on Alibaba.com involves, how to read supplier replies, a message template and what can go wrong
 - [How do I buy a single product from the Alibaba website for my personal use?](https://sourciavera.com/blog/buy-single-product-alibaba-personal-use): Whether and how an individual can buy one unit on Alibaba.com, what it really costs, how Trade Assurance applies, and the alternatives
 - [How does the minimum order quantity affect small businesses?](https://sourciavera.com/blog/how-minimum-order-quantity-affects-small-businesses): How MOQ affects a small business's cash, stock and unit price, how to size it in months of stock, and what to try when it is too high
 - [What's the distinction between "set" versus "piece" for MOQ from Alibaba.com?](https://sourciavera.com/blog/set-vs-piece-moq-alibaba): How the unit (set or piece) changes the MOQ and the price, with auto parts examples and what to confirm
@@ -75,6 +77,8 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [¿Cuál Sería la Cantidad Mínima de Producto que se Debe Comprar en AliExpress?](https://sourciavera.com/blog/es/pedido-minimo-aliexpress): Si AliExpress tiene un pedido mínimo, cómo revisar un anuncio, en qué se diferencia de Alibaba.com, la Protección al Comprador y cuántas unidades comprar
+- [¿Alguien Ha Comprado Solo Una Pieza (al Menudeo) en el Sitio de Mayoreo Alibaba.com?](https://sourciavera.com/blog/es/comprar-una-pieza-alibaba-como-minorista-que-pasa): Qué implica comprar un solo artículo en Alibaba.com, cómo leer las respuestas del proveedor, una plantilla de mensaje y qué puede salir mal
 - [¿Cómo Compro un Solo Producto en Alibaba para Mi Uso Personal?](https://sourciavera.com/blog/es/comprar-un-solo-producto-alibaba-uso-personal): Si un particular puede comprar una unidad en Alibaba.com y cómo, cuánto cuesta realmente, cómo aplica Trade Assurance y las alternativas
 - [¿Cómo Afecta la Cantidad Mínima de Pedido a los Pequeños Negocios?](https://sourciavera.com/blog/es/como-afecta-moq-a-pequenos-negocios): Cómo el MOQ afecta el dinero, el inventario y el precio unitario de un pequeño negocio, cómo medirlo en meses de inventario y qué hacer si es muy alto
 - [¿Cuál Es la Diferencia entre "Set" y "Pieza" en el MOQ de Alibaba.com?](https://sourciavera.com/blog/es/diferencia-set-pieza-moq-alibaba): Cómo la unidad (set o pieza) cambia el MOQ y el precio, con ejemplos de autopartes y qué confirmar
