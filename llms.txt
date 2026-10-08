@@ -44,6 +44,12 @@
 
 ## Blog — China Sourcing Guides (English)
 
+- [What would be the minimum amount of product that should be purchased from AliExpress?](https://sourciavera.com/blog/minimum-order-aliexpress): Whether AliExpress has a minimum order, how to check a listing, how it differs from Alibaba.com, Buyer Protection and how many to buy
+- [Has anyone purchased just one item (as retail) from wholesaler website Alibaba.com before?](https://sourciavera.com/blog/buying-one-item-retail-alibaba-what-happens): What buying a single item on Alibaba.com involves, how to read supplier replies, a message template and what can go wrong
+- [How do I buy a single product from the Alibaba website for my personal use?](https://sourciavera.com/blog/buy-single-product-alibaba-personal-use): Whether and how an individual can buy one unit on Alibaba.com, what it really costs, how Trade Assurance applies, and the alternatives
+- [How does the minimum order quantity affect small businesses?](https://sourciavera.com/blog/how-minimum-order-quantity-affects-small-businesses): How MOQ affects a small business's cash, stock and unit price, how to size it in months of stock, and what to try when it is too high
+- [What's the distinction between "set" versus "piece" for MOQ from Alibaba.com?](https://sourciavera.com/blog/set-vs-piece-moq-alibaba): How the unit (set or piece) changes the MOQ and the price, with auto parts examples and what to confirm
+- [While importing from China what is the minimum order quantity?](https://sourciavera.com/blog/minimum-order-quantity-importing-from-china): Who sets the MOQ, why it differs, how to check it before you pay and how to negotiate it
 - [Best Dropshipping Platforms in 2026: How to Choose One and What They Don't Check for You](https://sourciavera.com/blog/best-dropshipping-platforms): The main types of dropshipping platforms, how to choose one, and what platforms don't verify
 - [Can You Dropship With Alibaba? Everything You Need to Know Before Starting](https://sourciavera.com/blog/can-you-dropship-with-alibaba): How Alibaba dropshipping works, the steps to start, and how to verify the supplier first
 - [9 Alibaba Supplier Red Flags](https://sourciavera.com/blog/alibaba-supplier-red-flags): Warning signs before sending money
@@ -71,6 +77,12 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [¿Cuál Sería la Cantidad Mínima de Producto que se Debe Comprar en AliExpress?](https://sourciavera.com/blog/es/pedido-minimo-aliexpress): Si AliExpress tiene un pedido mínimo, cómo revisar un anuncio, en qué se diferencia de Alibaba.com, la Protección al Comprador y cuántas unidades comprar
+- [¿Alguien Ha Comprado Solo Una Pieza (al Menudeo) en el Sitio de Mayoreo Alibaba.com?](https://sourciavera.com/blog/es/comprar-una-pieza-alibaba-como-minorista-que-pasa): Qué implica comprar un solo artículo en Alibaba.com, cómo leer las respuestas del proveedor, una plantilla de mensaje y qué puede salir mal
+- [¿Cómo Compro un Solo Producto en Alibaba para Mi Uso Personal?](https://sourciavera.com/blog/es/comprar-un-solo-producto-alibaba-uso-personal): Si un particular puede comprar una unidad en Alibaba.com y cómo, cuánto cuesta realmente, cómo aplica Trade Assurance y las alternativas
+- [¿Cómo Afecta la Cantidad Mínima de Pedido a los Pequeños Negocios?](https://sourciavera.com/blog/es/como-afecta-moq-a-pequenos-negocios): Cómo el MOQ afecta el dinero, el inventario y el precio unitario de un pequeño negocio, cómo medirlo en meses de inventario y qué hacer si es muy alto
+- [¿Cuál Es la Diferencia entre "Set" y "Pieza" en el MOQ de Alibaba.com?](https://sourciavera.com/blog/es/diferencia-set-pieza-moq-alibaba): Cómo la unidad (set o pieza) cambia el MOQ y el precio, con ejemplos de autopartes y qué confirmar
+- [Al Importar de China, ¿Cuál Es la Cantidad Mínima de Pedido?](https://sourciavera.com/blog/es/cantidad-minima-de-pedido-importar-de-china): Quién fija el MOQ, por qué varía, cómo verificarlo antes de pagar y cómo negociarlo
 - [Mejores Plataformas de Dropshipping en 2026](https://sourciavera.com/blog/es/mejores-plataformas-de-dropshipping): Los tipos de plataformas de dropshipping, cómo elegir una y qué no verifican las plataformas
 - [¿Se Puede Hacer Dropshipping con Alibaba?](https://sourciavera.com/blog/es/se-puede-hacer-dropshipping-con-alibaba): Cómo funciona, los pasos para empezar y cómo verificar al proveedor primero
 - [Qué Importa México de China — y Qué se Fabrica Realmente en Guangzhou](https://sourciavera.com/blog/es/productos-mas-importados-china-mexico-guangzhou): Datos reales de comercio bilateral, categorías fabricadas en Guangzhou, y Alibaba vs 1688
