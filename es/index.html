@@ -55,7 +55,7 @@
       "availableLanguage": ["Spanish","English","Chinese"],
       "priceRange": "$49–$499",
       "currenciesAccepted": "USD",
-      "founder": {"@type": "Person", "name": "Zhang Peng", "jobTitle": "Fundador", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+      "founder": {"@type": "Person", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Fundador", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
       "sameAs": [
         "https://wa.me/8613688057230",
         "https://www.youtube.com/@sourciavera",
@@ -70,7 +70,7 @@
         {"@type":"Question","name":"¿Cómo sé que el proveedor es una fábrica real y no un intermediario?","acceptedAnswer":{"@type":"Answer","text":"Visitamos las instalaciones en persona en Guangzhou. Verificamos la licencia comercial oficial, recorremos toda la línea de producción en video en vivo y confirmamos la capacidad de fabricación real — no solo una sala de exhibición decorada."}},
         {"@type":"Question","name":"¿Cuánto cuesta el servicio de verificación de fábrica?","acceptedAnswer":{"@type":"Answer","text":"Revisión Remota de Proveedor: $49. Visita de Verificación de Fábrica: $449. Inspección Previa al Envío: $399/día-hombre. Auditoría de Fábrica: $499/día-hombre. Abastecimiento y compras: 10% del valor del pedido. Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota) tienen un 20% de descuento. La primera consulta siempre es gratuita."}},
         {"@type":"Question","name":"¿Ofrecen atención en español?","acceptedAnswer":{"@type":"Answer","text":"Sí. Toda nuestra comunicación, informes y cotizaciones están disponibles en español. Somos una empresa que habla español y entendemos las necesidades del importador latinoamericano."}},
-        {"@type":"Question","name":"¿Pueden verificar cualquier tipo de proveedor en China?","acceptedAnswer":{"@type":"Answer","text":"Verificamos cualquier proveedor en el área de Guangzhou: iluminación LED, electrónica, hardware, equipos industriales, autopartes y más. Si se fabrica en Guangzhou, podemos verificarlo."}}
+        {"@type":"Question","name":"¿Solo verifican un tipo de producto?","acceptedAnswer":{"@type":"Answer","text":"No. Verificamos proveedores del área de Guangzhou en muchas categorías, incluidas iluminación LED, electrónica, hardware, equipos industriales y autopartes. Si no está seguro de que cubramos su producto, pregúntenos."}}
       ]
     },
     {
@@ -208,6 +208,14 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .who-cards-single{grid-template-columns:1fr;max-width:760px;margin-left:auto;margin-right:auto}
 .who-card-wide{text-align:center}
 .who-card-wide .who-icon{margin:0 auto 1rem}
+.cases-section{padding:5rem 3rem;background:var(--white)}
+.case-grid{max-width:900px;margin:0 auto;display:grid;gap:1.5rem}
+.case-card{display:grid;grid-template-columns:190px 1fr;gap:1.75rem;align-items:center;background:var(--light);border:1px solid var(--border);border-radius:8px;padding:1.5rem}
+.case-card img{width:100%;height:auto;border-radius:6px;display:block}
+.case-tag{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.case-card h3{font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem;line-height:1.3}
+.case-card p{color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:0.9rem}
+@media(max-width:700px){.cases-section{padding:3rem 1.5rem}.case-card{grid-template-columns:1fr;padding:1.25rem}.case-card img{max-width:220px;margin:0 auto}}
 .testimonials-wrap{max-width:1120px;margin:0 auto 3rem}
 .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,340px));gap:2rem;justify-content:center}
 .testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-align:center}
@@ -398,7 +406,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <p>Somos una empresa independiente de verificación de terceros en Guangzhou, al servicio de importadores de todo el mundo. Envíanos la ficha de la fábrica que encontraste en 1688 o Alibaba — iluminación LED, hardware, electrónica, piezas de fibra de carbono, rines o tu proyecto de marca propia — y vamos a la fábrica, cámara en mano, antes de que envíes un depósito.</p>
     <div class="hero-btns">
       <button class="btn-main" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Consulta Ahora</button>
-      <a class="btn-wa" href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." target="_blank" rel="noopener">Ver servicios</a>
+      <a class="btn-wa" href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." target="_blank" rel="noopener">Hablar por WhatsApp</a>
     </div>
   </div>
   <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Mapa ilustrado de la ruta de envío desde Guangzhou, China hasta Los Ángeles, Lázaro Cárdenas, Colón, Callao y Chile, con carga de autopartes" loading="eager"></div>
@@ -551,7 +559,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 
   <div class="who-footer who-founder-quote">
     <p class="who-founder-text">"Una vez que confirmas la fábrica, seguimos como tu tercero independiente en planta — supervisando la producción para proteger la calidad y la fecha de entrega. Tú solo esperas en WhatsApp los videos e información que te envío. Que el cliente tenga el control de cada cambio, en todo momento, es la razón por la que fundé esta empresa."</p>
-    <p class="who-founder-name">— Zhang Peng, Fundador</p>
+    <p class="who-founder-name">— Zhang Peng (Miguel Lopez), Fundador</p>
     <a href="#contacto" class="who-cta">Contáctanos →</a>
     <div class="rating-widget" id="ratingWidget">
       <div class="rating-stars" id="ratingStars">
@@ -573,7 +581,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <div class="why-card">
       <div class="why-icon">📍</div>
       <h3>Con base en Guangzhou</h3>
-      <p>En el corazón del mayor hub manufacturero de China. Podemos llegar a cualquier fábrica en Guangdong el mismo día.</p>
+      <p>En el corazón del mayor hub manufacturero de China. Podemos llegar a la mayoría de las fábricas en Guangdong el mismo día.</p>
     </div>
     <div class="why-card">
       <div class="why-icon">🗣️</div>
@@ -608,7 +616,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <div class="how-num-v2">03</div>
       <h3>Verificación y Auditoría</h3>
       <p>Precios transparentes desde $449. Visita presencial con video sin editar — lo que ves es lo que existe.</p>
-      <div class="trust-line">Ver para creer. Eliminamos la estafa de la "fábrica foto" — siempre.</div>
+      <div class="trust-line">Ver para creer. Grabamos cada visita a la fábrica, para que usted vea lo que realmente existe.</div>
     </div>
     <div class="how-step-v2 step-featured reveal-water">
       <div class="step-vs-badge">vs. inspección única</div>
@@ -621,8 +629,26 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <div class="how-num-v2">05</div>
       <h3>QC y Despacho</h3>
       <p>Inspección final, coordinación de documentos y respaldo ante riesgos — todo en orden antes de que salga de China.</p>
-      <div class="trust-line">Lo que pagaste es lo que llega. Siempre.</div>
+      <div class="trust-line">Antes de que la mercancía salga de China, usted ve los resultados de la inspección y decide.</div>
     </div>
+  </div>
+</section>
+
+<section class="cases-section" id="casos">
+  <div class="section-tag">Casos Reales</div>
+  <h2 class="section-title">Cómo se ve una verificación en la práctica.</h2>
+  <div class="case-grid">
+    <div class="case-card">
+      <img src="/images/auto-parts-byd-wheel-rim.webp" alt="Rin de refacción y llanta del BYD Dolphin Mini (Seagull) del pedido verificado" width="393" height="630" loading="lazy">
+      <div class="case-body">
+        <div class="case-tag">Verificación de rines · Comprador latinoamericano</div>
+        <h3>Rin de refacción BYD Dolphin Mini (Seagull)</h3>
+        <p>La primera ficha técnica del proveedor indicaba el offset como ET 54.1, que en realidad es el buje central (CB). Exigimos una ficha técnica sellada por el proveedor y la fábrica lo corrigió al offset real: ET 30.</p>
+        <a class="path-link" href="/blog/es/caso-verificacion-llanta-refaccion-byd-seagull">Leer el caso completo →</a>
+      </div>
+    </div>
+    <!-- TODO (owner): sample factory-verification report card -- add here once the report page is published -->
+    <!-- TODO (owner): factory verification video card -- add here once a YouTube link is provided; no illustrations or stock images -->
   </div>
 </section>
 
@@ -712,7 +738,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <span class="faq-q-text">¿Solo verifican un tipo de producto?</span>
         <span class="faq-toggle">+</span>
       </button>
-      <div class="faq-a"><div class="faq-a-inner">No — verificamos cualquier proveedor en el área de Guangzhou: iluminación LED, electrónica, hardware, equipos industriales, autopartes y más. Si se fabrica en Guangzhou, podemos verificarlo.</div></div>
+      <div class="faq-a"><div class="faq-a-inner">No. Verificamos proveedores del área de Guangzhou en muchas categorías, incluidas iluminación LED, electrónica, hardware, equipos industriales y autopartes. Si no está seguro de que cubramos su producto, pregúntenos.</div></div>
     </div>
 
     <div class="faq-item">
@@ -1108,8 +1134,10 @@ document.querySelectorAll('input[name="stage"]').forEach(function(r){
   var stars = starsWrap.querySelectorAll('.star-btn');
   var VOTED_KEY = 'sv-rating-voted';
 
+  // Solo votos reales: el promedio se muestra cuando hay al menos MIN_VOTES votos; antes no se muestran estrellas ni promedio.
+  var MIN_VOTES = 5;
   function summaryText(average, total) {
-    if (total === 0) return 'Sé el primero en calificar';
+    if (total < MIN_VOTES) return widget.classList.contains('rated') ? 'Gracias por tu calificación' : 'Toca una estrella para calificar';
     var word = total === 1 ? 'calificación' : 'calificaciones';
     return '★ ' + average.toFixed(1) + ' · ' + total + ' ' + word;
   }
@@ -1143,8 +1171,8 @@ document.querySelectorAll('input[name="stage"]').forEach(function(r){
         var v = parseInt(s.getAttribute('data-star'), 10);
         stars.forEach(function(s2) { s2.disabled = true; });
         fetch('/api/rating?star=' + v, { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
-          summaryEl.textContent = summaryText(d.average || 0, d.total || 0);
           widget.classList.add('rated');
+          summaryEl.textContent = summaryText(d.average || 0, d.total || 0);
           paintSelected(v);
           localStorage.setItem(VOTED_KEY, String(v));
         }).catch(function() {
