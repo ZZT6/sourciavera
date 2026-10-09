@@ -44,6 +44,7 @@
 
 ## Blog — China Sourcing Guides (English)
 
+- [How Many Suppliers Should I Contact in China, and How Do I Compare Them?](https://sourciavera.com/blog/how-many-suppliers-contact-china-compare): A working rule for how many Chinese suppliers to contact, one message to send to all of them, a comparison sheet, how to read the replies and when to start verifying
 - [China Supplier Verification Checklist: What to Check Before You Pay a Deposit (Free PDF)](https://sourciavera.com/blog/china-supplier-verification-checklist): Free printable PDF checklist: 46 checks in six stages to verify a Chinese supplier before paying a deposit, with what to look for at each stage and how to cite it
 - [Can you order from Alibaba in the US?](https://sourciavera.com/blog/can-you-order-from-alibaba-in-the-us): Whether and how a US buyer can order from Alibaba.com, delivery terms, customs entry and duties, what changed for small shipments, and a section for Mexico and Latin America
 - [Why are some products on Amazon FBA less than Alibaba?](https://sourciavera.com/blog/why-amazon-fba-cheaper-than-alibaba): Six common reasons an Amazon price can be below an Alibaba listing price, the seller-fee arithmetic, and how to compare landed cost
@@ -80,6 +81,7 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [¿A Cuántos Proveedores Debo Contactar en China y Cómo los Comparo?](https://sourciavera.com/blog/es/cuantos-proveedores-contactar-china-comparar): Una regla de trabajo sobre a cuántos proveedores chinos contactar, un mensaje para enviar a todos, una hoja de comparación, cómo leer las respuestas y cuándo empezar a verificar
 - [Lista de Verificación de Proveedores Chinos: Qué Revisar Antes de Pagar un Anticipo (PDF Gratis)](https://sourciavera.com/blog/es/lista-verificacion-proveedores-china): Lista gratuita en PDF: 46 revisiones en seis etapas para verificar a un proveedor chino antes de pagar un anticipo, con qué buscar en cada etapa y cómo citarla
 - [¿Se Puede Pedir en Alibaba desde Estados Unidos?](https://sourciavera.com/blog/es/se-puede-comprar-en-alibaba-desde-estados-unidos): Si y cómo un comprador en Estados Unidos puede pedir en Alibaba.com, términos de entrega, entrada en aduana y aranceles, qué cambió para envíos pequeños y una sección para México y Latinoamérica
 - [¿Por Qué Algunos Productos en Amazon FBA Cuestan Menos que en Alibaba?](https://sourciavera.com/blog/es/por-que-amazon-fba-mas-barato-que-alibaba): Seis razones comunes por las que un precio de Amazon puede ser menor que el de un anuncio de Alibaba, la aritmética de los cargos del vendedor y cómo comparar el costo puesto en destino
