@@ -44,6 +44,7 @@
 
 ## Blog — China Sourcing Guides (English)
 
+- [How Do I Reduce the Risk of Buying From China? Match the Checks to the Order](https://sourciavera.com/blog/how-to-reduce-risk-buying-from-china): Where an order can go wrong at each stage, the first check for each and what it cannot tell you, what Alibaba says Trade Assurance covers, and a rule of thumb for how much checking an order deserves
 - [How Many Suppliers Should I Contact in China, and How Do I Compare Them?](https://sourciavera.com/blog/how-many-suppliers-contact-china-compare): A working rule for how many Chinese suppliers to contact, one message to send to all of them, a comparison sheet, how to read the replies and when to start verifying
 - [China Supplier Verification Checklist: What to Check Before You Pay a Deposit (Free PDF)](https://sourciavera.com/blog/china-supplier-verification-checklist): Free printable PDF checklist: 46 checks in six stages to verify a Chinese supplier before paying a deposit, with what to look for at each stage and how to cite it
 - [Can you order from Alibaba in the US?](https://sourciavera.com/blog/can-you-order-from-alibaba-in-the-us): Whether and how a US buyer can order from Alibaba.com, delivery terms, customs entry and duties, what changed for small shipments, and a section for Mexico and Latin America
@@ -81,6 +82,7 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [¿Cómo Reducir el Riesgo al Comprar en China? Ajuste las Revisiones al Pedido](https://sourciavera.com/blog/es/como-reducir-riesgo-comprar-en-china): Dónde puede fallar un pedido en cada etapa, la primera revisión de cada una y lo que no puede decirle, qué dice Alibaba que cubre Trade Assurance y una regla práctica de cuánta revisión merece un pedido
 - [¿A Cuántos Proveedores Debo Contactar en China y Cómo los Comparo?](https://sourciavera.com/blog/es/cuantos-proveedores-contactar-china-comparar): Una regla de trabajo sobre a cuántos proveedores chinos contactar, un mensaje para enviar a todos, una hoja de comparación, cómo leer las respuestas y cuándo empezar a verificar
 - [Lista de Verificación de Proveedores Chinos: Qué Revisar Antes de Pagar un Anticipo (PDF Gratis)](https://sourciavera.com/blog/es/lista-verificacion-proveedores-china): Lista gratuita en PDF: 46 revisiones en seis etapas para verificar a un proveedor chino antes de pagar un anticipo, con qué buscar en cada etapa y cómo citarla
 - [¿Se Puede Pedir en Alibaba desde Estados Unidos?](https://sourciavera.com/blog/es/se-puede-comprar-en-alibaba-desde-estados-unidos): Si y cómo un comprador en Estados Unidos puede pedir en Alibaba.com, términos de entrega, entrada en aduana y aranceles, qué cambió para envíos pequeños y una sección para México y Latinoamérica
