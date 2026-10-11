@@ -142,6 +142,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .hero-left{display:flex;flex-direction:column;justify-content:flex-start}
 .hero-map{display:flex;align-items:flex-start;align-self:flex-start;position:relative}
 .hero-map img{width:100%;height:auto;display:block}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
 .hero-map::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 100% 100% at center, transparent 65%, rgba(13,34,64,0.4) 85%, var(--navy) 105%);pointer-events:none}
 .reveal-water{filter:blur(16px);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 3s cubic-bezier(.22,.68,.36,1),opacity 3s ease,transform 3s cubic-bezier(.22,.68,.36,1),clip-path 3s cubic-bezier(.22,.68,.36,1)}
 .reveal-water.is-visible{filter:blur(0);opacity:1;transform:scale(1);clip-path:circle(150% at 50% 50%)}
@@ -182,7 +183,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .step-text span{color:var(--muted);font-size:0.82rem;display:block}
 .service-highlight{background:var(--light);border-left:3px solid var(--coral);padding:0.75rem 1rem;font-size:0.85rem;color:var(--navy);font-style:italic;margin-top:0.5rem}
 .service-card:nth-child(2) .service-highlight{border-color:var(--teal)}
-.why{background:linear-gradient(rgba(13,34,64,0.88),rgba(13,34,64,0.88)),url('/images/factory-floor-verification.webp') center/cover no-repeat;padding:5rem 3rem}
+.why{background:var(--navy);padding:5rem 3rem}
 .why .section-tag{color:var(--yellow)}
 .why .section-title{color:white}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
@@ -417,7 +418,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <a class="btn-wa" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" data-en="Chat on WhatsApp" data-es="Hablar por WhatsApp">Chat on WhatsApp</a>
     </div>
   </div>
-  <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Illustrated shipping route map from Guangzhou, China to Los Angeles, Lázaro Cárdenas, Colón, Callao and Chile, with auto parts cargo" loading="eager"></div>
+  <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Illustrated shipping route map from Guangzhou, China to Los Angeles, Lázaro Cárdenas, Colón, Callao and Chile, with auto parts cargo" loading="eager"><span class="ill-tag" data-en="Illustrative image" data-es="Imagen ilustrativa">Illustrative image</span></div>
 </section>
 
 <div class="stats">

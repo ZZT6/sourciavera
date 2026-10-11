@@ -67,6 +67,8 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase}
 .article-hero-img{width:100%;overflow:hidden}
 .article-hero-img img{width:100%;height:auto;display:block}
+.case-fig{max-width:320px;margin:0 auto 2rem}.case-fig img{width:100%;height:auto;display:block;border:1.5px solid var(--border)}.case-fig figcaption{font-size:0.82rem;color:var(--muted);margin-top:0.5rem;text-align:center}
+.article-hero.article-hero-noimg{margin-top:0;padding-top:2.5rem}
 .article-hero{position:relative;background:linear-gradient(to top,rgba(13,34,64,0.98) 30%,rgba(13,34,64,0.55) 75%,rgba(13,34,64,0) 100%);padding:6rem 3rem 2rem;max-width:1040px;margin:-180px auto 0}
 .article-tag{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:1rem;font-weight:500}
 .article-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;font-weight:700;color:white;margin-bottom:1rem}
@@ -130,8 +132,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 <main>
 
 <div style="background:var(--navy);">
-  <div class="article-hero-img"><img src="/images/auto-parts-wheel-rims-warehouse.webp" alt="Verifying the Correct Offset (ET&nbsp;30) for a BYD Dolphin Mini (Seagull) Spare Wheel" loading="eager"></div>
-<div class="article-hero">
+  <div class="article-hero article-hero-noimg">
     <span class="article-tag">&#x1F697; Case Study &middot; Auto Parts &mdash; Spare Wheels for Chinese Vehicles</span>
       <h1>Verifying the Correct Offset (ET&nbsp;30) for a BYD Dolphin Mini (Seagull) Spare Wheel</h1>
       <div class="article-meta">Sep 24, 2026 &middot; Updated Oct 10, 2026 &middot; 5 min read &middot; Zhang Peng (Miguel Lopez), Founder</div>
@@ -140,6 +141,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
 <div class="article-body">
     <a href="/blog" class="back-link">Back to Blog</a>
+    <figure class="case-fig"><img src="/images/auto-parts-byd-wheel-rim.webp" alt="Spare wheel and tire from the verified BYD Dolphin Mini (Seagull) order" width="393" height="630" loading="lazy"><figcaption>The spare wheel and tire from this order.</figcaption></figure>
 
     <p>Most buyers treat a factory's spec sheet as paperwork to file, not to check. I think that's backwards. A spare wheel is not the place to guess: the offset (ET), the center bore (CB), and the bolt pattern (PCD) all have to match the vehicle exactly &mdash; and on this order, the supplier's own first spec sheet had two of those numbers mixed up with each other.</p>
 
