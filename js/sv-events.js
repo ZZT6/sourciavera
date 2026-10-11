@@ -12,9 +12,11 @@
 (function () {
   'use strict';
   var PROD_HOST = 'sourciavera.com';
+  var GA4_ID = 'G-X40LT2MS4X';
 
   function send(name, params) {
     if (location.hostname !== PROD_HOST || typeof window.gtag !== 'function') return;
+    params.send_to = GA4_ID;   // GA4 only: do not forward these events to the Google Ads tag that shares gtag.js
     try { window.gtag('event', name, params); } catch (e) { /* analytics must never break the page */ }
   }
 
