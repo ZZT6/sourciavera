@@ -1,0 +1,2 @@
+# Commits that changed pages for tracking/tag plumbing only (no content change): skipped when scripts/generate-sitemap.mjs picks lastmod.
+22bc2b3ce129  # GA4 hostname gate + key events (2026-10-10)

@@ -18,7 +18,9 @@
  * lastmod
  *   The date of the last Git commit that touched the page file (git log -1 --format=%cs). A page with
  *   uncommitted changes (or a new, untracked page) gets today's date, so running the script before a commit
- *   is already accurate. When Git history is unavailable or shallow (a Vercel build), the lastmod already
+ *   is already accurate. Commits listed in scripts/lastmod-ignore.txt (SHA or SHA prefix per line, # comments)
+ *   changed many pages only for tracking/tag plumbing, not content, and are skipped when picking the date.
+ *   When Git history is unavailable or shallow (a Vercel build), the lastmod already
  *   stored in the committed sitemap.xml is kept for existing URLs, and only new URLs get today's date, so a
  *   build can never overwrite real dates with checkout dates.
  *
@@ -81,6 +83,22 @@ function git(args) {
   } catch {
     return null;
   }
+}
+
+// Commits that touched pages only for tracking/tag plumbing (no content change) are listed in
+// scripts/lastmod-ignore.txt, one SHA (or SHA prefix, 7+ chars) per line, '#' starts a comment.
+const IGNORE_FILE = path.join(ROOT, 'scripts', 'lastmod-ignore.txt');
+const IGNORED_COMMITS = fs.existsSync(IGNORE_FILE)
+  ? fs.readFileSync(IGNORE_FILE, 'utf8').split(/\r?\n/).map((l) => l.replace(/#.*/, '').trim().toLowerCase()).filter((l) => /^[0-9a-f]{7,40}$/.test(l))
+  : [];
+
+function lastContentCommitDate(rel) {
+  const out = git(['log', '-n', '40', '--format=%H %cs', '--', rel]) || '';
+  for (const line of out.split('\n')) {
+    const [sha, date] = line.trim().split(' ');
+    if (sha && !IGNORED_COMMITS.some((pre) => sha.startsWith(pre))) return date;
+  }
+  return null;
 }
 
 function today() {
@@ -185,7 +203,7 @@ function build() {
     let lastmod = null;
     if (useGitDates) {
       if (dirty.has(rel)) lastmod = today();
-      else lastmod = (git(['log', '-1', '--format=%cs', '--', rel]) || '').trim() || null;
+      else lastmod = lastContentCommitDate(rel);
     }
     if (!lastmod) lastmod = (old.get(loc) && old.get(loc).lastmod) || today();
     const [changefreq, priority] = ruleFor(url);
