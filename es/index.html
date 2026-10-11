@@ -42,6 +42,7 @@
   "@graph": [
     {
       "@type": "LocalBusiness",
+      "@id": "https://sourciavera.com/#organization",
       "name": "SourciaVera",
       "description": "Agencia de verificación de fábricas y abastecimiento desde China con base en Guangzhou. Visitamos proveedores de Alibaba en persona, filmamos en video y negociamos directamente en chino en nombre de compradores internacionales. Atención completa en español.",
       "url": "https://sourciavera.com/es/",
@@ -58,7 +59,7 @@
       "availableLanguage": ["Spanish","English","Chinese"],
       "priceRange": "$49–$499",
       "currenciesAccepted": "USD",
-      "founder": {"@type": "Person", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Fundador", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+      "founder": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Fundador", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
       "sameAs": [
         "https://wa.me/8613688057230",
         "https://www.youtube.com/@sourciavera",
@@ -79,7 +80,7 @@
     {
       "@type":"Service",
       "name":"Revisión Remota de Proveedor",
-      "provider":{"@type":"LocalBusiness","name":"SourciaVera"},
+      "provider":{"@type":"LocalBusiness","@id":"https://sourciavera.com/#organization","name":"SourciaVera"},
       "description":"Revisión remota de debida diligencia de un proveedor chino: registro de la empresa, si es fabricante o comercializadora, y verificación de dirección y cuenta de pago. Reporte escrito en 48 horas a partir de recibir el pago y los datos del proveedor. No sustituye una visita en sitio. Los $49 se descuentan del costo de una Verificación de Fábrica completa si decide continuar.",
       "areaServed":"Worldwide",
       "offers":{"@type":"Offer","price":"49","priceCurrency":"USD"},
@@ -88,7 +89,7 @@
     {
       "@type":"Service",
       "name":"Verificación de Fábrica",
-      "provider":{"@type":"LocalBusiness","name":"SourciaVera"},
+      "provider":{"@type":"LocalBusiness","@id":"https://sourciavera.com/#organization","name":"SourciaVera"},
       "description":"Investigación presencial de la fábrica en Guangzhou. Visitamos como compradores locales chinos, verificamos la licencia comercial, filmamos la línea de producción y entregamos un informe completo en español e inglés en 48 horas.",
       "areaServed":"Worldwide",
       "serviceOutput":"Informe de verificación de fábrica con video sin editar"
@@ -96,7 +97,7 @@
     {
       "@type":"Service",
       "name":"Negociación y Compra",
-      "provider":{"@type":"LocalBusiness","name":"SourciaVera"},
+      "provider":{"@type":"LocalBusiness","@id":"https://sourciavera.com/#organization","name":"SourciaVera"},
       "description":"Servicio completo de abastecimiento que incluye negociación directa en chino, especialista de sourcing dedicado, cotización profesional de flete y un informe final de precio todo incluido.",
       "areaServed":"Worldwide",
       "serviceOutput":"Informe de compra todo incluido: producto + flete + seguro"
