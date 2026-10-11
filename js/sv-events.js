@@ -15,7 +15,6 @@
 
   function send(name, params) {
     if (location.hostname !== PROD_HOST || typeof window.gtag !== 'function') return;
-    params.transport_type = 'beacon';
     try { window.gtag('event', name, params); } catch (e) { /* analytics must never break the page */ }
   }
 
