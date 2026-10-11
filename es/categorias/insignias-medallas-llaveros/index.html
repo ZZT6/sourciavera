@@ -2,13 +2,20 @@
 <html lang="es">
 <head>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X"></script>
-<script>
-  window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-  gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});
-  gtag('js',new Date());gtag('config','G-X40LT2MS4X');gtag('config','AW-18086408472');
-</script>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (location.hostname === 'sourciavera.com') {
+    gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
+    gtag('js', new Date());
+    gtag('config', 'G-X40LT2MS4X');
+    gtag('config', 'AW-18086408472');
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+  }
+</script>
+<script src="/js/sv-events.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Insignias, Medallas y Llaveros desde China | Verificados</title>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
