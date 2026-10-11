@@ -40,15 +40,28 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
+  "@id": "https://sourciavera.com/blog/es/antes-fabricar-hardware-en-china#article",
   "headline": "Antes de Fabricar un Producto de Hardware en China, Verifique Si Ya Existe",
   "description": "¿Deberían las startups fabricar hardware en China? Usualmente la pregunta real es otra: si ya existe un ecosistema de proveedores para su producto, y si lo ha verificado antes de comprometerse con su propia línea de producción.",
-  "author": {"@type": "Person", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
-  "publisher": {"@type": "Organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "inLanguage": "es",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Fundador", "url": "https://sourciavera.com/es/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
   "image": "https://sourciavera.com/og-image-es.png",
   "datePublished": "2026-09-09",
-  "dateModified": "2026-10-10",
+  "dateModified": "2026-10-11",
   "mainEntityOfPage": "https://sourciavera.com/blog/es/antes-fabricar-hardware-en-china",
   "keywords": "startups deberían fabricar en china, manufactura hardware china startup, encontrar proveedor china producto hardware"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sourciavera.com/es/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog/es"},
+    {"@type": "ListItem", "position": 3, "name": "Antes de Fabricar un Producto de Hardware en China, Verifique Si Ya Existe", "item": "https://sourciavera.com/blog/es/antes-fabricar-hardware-en-china"}
+  ]
 }
 </script>
 <style>
@@ -63,6 +76,9 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase}
 .article-hero-img{width:100%;overflow:hidden}
 .article-hero-img img{width:100%;height:auto;display:block}
+.article-hero-img{position:relative}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
+.article-hero.article-hero-noimg{margin-top:0;padding-top:2.5rem}
 .article-hero{position:relative;background:linear-gradient(to top,rgba(13,34,64,0.98) 30%,rgba(13,34,64,0.55) 75%,rgba(13,34,64,0) 100%);padding:6rem 3rem 2rem;max-width:1040px;margin:-180px auto 0}
 .article-tag{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:1rem;font-weight:500}
 .article-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;font-weight:700;color:white;margin-bottom:1rem}
@@ -117,11 +133,10 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 <main>
 
   <div style="background:var(--navy);">
-    <div class="article-hero-img"><img src="/images/factory-tour-08.webp" alt="Antes de Fabricar un Producto de Hardware en China, Verifique Si Ya Existe" loading="eager"></div>
-<div class="article-hero">
+    <div class="article-hero article-hero-noimg">
       <span class="article-tag">Estrategia de Sourcing</span>
       <h1>Antes de Fabricar un Producto de Hardware en China, Verifique Si Ya Existe</h1>
-      <div class="article-meta">9 de septiembre de 2026 &middot; Actualizado 10 oct 2026 &middot; 7 min de lectura &middot; Zhang Peng (Miguel Lopez), Fundador</div>
+      <div class="article-meta">9 de septiembre de 2026 &middot; Actualizado 11 oct 2026 &middot; 7 min de lectura &middot; Zhang Peng (Miguel Lopez), Fundador</div>
     </div>
   </div>
 
@@ -139,14 +154,9 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <p>Si su producto lleva tarjeta electrónica, la cadena completa suele estar entre Shenzhen y Dongguan. Yiwu es otra historia: es sobre todo un mercado mayorista de artículos pequeños, útil para mercancía genérica, no para desarrollar un producto propio.</p>
     <p>Los fundadores que se saltan este paso terminan cotizando moldes personalizados y costos de NRE en una categoría donde tres fábricas ya tienen el molde en un estante y con gusto le pondrían su logo.</p>
 
-    <h2>Un Caso Típico: "Nadie Fabrica un Producto Como el Mío"</h2>
+    <h2>Por Qué "Nadie Fabrica un Producto Como el Mío" Casi Siempre Es Falso</h2>
     <p>Esto se ve con más claridad en categorías con cadenas de suministro maduras y estandarizadas: cables de carga y power banks, módulos de bocinas Bluetooth, drivers de iluminación LED, carcasas moldeadas por inyección en tamaños estándar, diseños de referencia de PCBA para combinaciones comunes de sensores.</p>
-    <ul>
-      <li><strong>El problema:</strong> nos llegan fundadores completamente seguros de que necesitan una línea de producción propia para, por ejemplo, un rastreador GPS para mascotas, convencidos de que nadie hace nada parecido.</li>
-      <li><strong>Lo que revisamos:</strong> unas cuantas búsquedas por componente, no por producto terminado. En ese caso del rastreador, aparecieron cuatro fábricas en Shenzhen que ya operaban líneas de PCBA para rastreadores GPS a volumen.</li>
-      <li><strong>El resultado:</strong> lo único que necesitaban del fundador era el firmware, un diseño de carcasa y un logo. Ninguna línea nueva.</li>
-      <li><strong>La lección:</strong> el riesgo de manufactura nunca fue "¿se puede construir?". Era cuál de esas cuatro fábricas era buena de verdad, y si la que tenía las fotos más pulidas en Alibaba seguiría contestando mensajes después de la tercera corrida de producción. En mi experiencia, casi nunca es la misma.</li>
-    </ul>
+    <p>En estas categorías, unas cuantas búsquedas por componente, no por producto terminado, suelen mostrar varias fábricas que ya operan a volumen las líneas de PCBA correspondientes. Lo que todavía tiene que aportar el fundador es el firmware, un diseño de carcasa y un logo, no una línea de producción nueva. El riesgo de manufactura ya no es "¿se puede construir?", sino cuál de esas fábricas es buena de verdad, y si la que tiene las fotos más pulidas en Alibaba seguirá contestando mensajes después de la tercera corrida de producción.</p>
 
     <h2>¿Cuándo Necesita de Verdad una Startup de Hardware Manufactura Personalizada?</h2>
     <p>Algunos productos sí son lo bastante novedosos como para que ninguna cadena de suministro existente los cubra: un nuevo mecanismo de accionamiento, una combinación de materiales para la que nadie tiene herramental, una forma que no cabe en ningún molde estándar. Si ese es su caso, las cuentas cambian:</p>
@@ -155,7 +165,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       <li>Cuente con esperar más antes de tener su primera unidad vendible.</li>
       <li>Cuente con necesitar una relación mucho más cercana con la fábrica, porque le está pidiendo que desarrolle capacidad solo para usted en lugar de adaptar algo que ya produce.</li>
     </ul>
-    <p>En mi experiencia, solo una pequeña minoría de los fundadores que nos llegan convencidos de estar en ese grupo lo están de verdad. La mayoría trae un rastreador para mascotas, una botella de agua inteligente o una banda deportiva. Esas cadenas de suministro existen desde hace tanto que medio Shenzhen podría cotizarlas de memoria.</p>
+    <p>Solo una pequeña minoría de los fundadores convencidos de estar en ese grupo lo están de verdad. La mayoría desarrolla algo como un rastreador, una botella de agua inteligente o una banda deportiva. Esas cadenas de suministro existen desde hace tanto que medio Shenzhen podría cotizarlas de memoria.</p>
 
     <h2>¿Qué Errores Vemos en Emprendedores Mexicanos que Quieren Maquilar en China?</h2>
     <p>Cuando un emprendedor de México nos busca para fabricar su propio producto, los problemas se repiten bastante:</p>
@@ -183,7 +193,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     </ul>
 
     <h2>Lo Que He Aprendido Viendo a los Fundadores Hacer Esto</h2>
-    <p>Como fundador, paso mucho tiempo en las plantas de producción, junto con nuestro equipo en Guangzhou. Los fundadores que he visto saltarse la pregunta de si el producto ya existe no son flojos. Van rápido, que es el instinto correcto en casi todo menos aquí.</p>
+    <p>Nuestro equipo visita las fábricas en persona, y el fundador sigue acompañando muchas de las visitas. Los fundadores que se saltan la pregunta de si el producto ya existe no son flojos. Van rápido, que es el instinto correcto en casi todo menos aquí.</p>
     <p>Los que buscan primero suelen terminar comprando en Shenzhen o Dongguan, en lugar de pagar un molde en una ciudad de tercer nivel cualquiera solo porque de ahí llegó la primera cotización. Mismo producto, a veces hasta el mismo precio. Pero un proveedor ya fabricó esa pieza exacta 40,000 veces, y el otro está aprendiendo sus tolerancias sobre la marcha, en su corrida de producción.</p>
     <p>Si pudiera darle un solo hábito a un fundador de hardware, sería este: dedique una semana a comprobar que su producto no existe ya, antes de dedicar meses a construirlo.</p>
 

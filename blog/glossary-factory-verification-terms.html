@@ -40,15 +40,28 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
+  "@id": "https://sourciavera.com/blog/glossary-factory-verification-terms#article",
   "headline": "Glossary: Factory Verification, Audit, Inspection and Supervision",
   "description": "Clear definitions of factory verification, audit, pre-shipment inspection, production supervision and sourcing agent for international buyers sourcing from China.",
-  "author": {"@type": "Person", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
-  "publisher": {"@type": "Organization", "name": "SourciaVera", "url": "https://sourciavera.com"},
+  "inLanguage": "en",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "url": "https://sourciavera.com/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/og-image.png",
   "datePublished": "2026-06-26",
-  "dateModified": "2026-10-10",
+  "dateModified": "2026-10-11",
   "mainEntityOfPage": "https://sourciavera.com/blog/glossary-factory-verification-terms",
-  "keywords": "factory verification, factory audit, pre-shipment inspection, production supervision, sourcing agent, trading company",
-  "inLanguage": "en"
+  "keywords": "factory verification, factory audit, pre-shipment inspection, production supervision, sourcing agent, trading company"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sourciavera.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog"},
+    {"@type": "ListItem", "position": 3, "name": "Glossary: Factory Verification, Audit, Inspection and Supervision", "item": "https://sourciavera.com/blog/glossary-factory-verification-terms"}
+  ]
 }
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
@@ -65,6 +78,9 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase}
 .article-hero-img{width:100%;overflow:hidden}
 .article-hero-img img{width:100%;height:auto;display:block}
+.article-hero-img{position:relative}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
+.article-hero.article-hero-noimg{margin-top:0;padding-top:2.5rem}
 .article-hero{position:relative;background:linear-gradient(to top,rgba(13,34,64,0.98) 30%,rgba(13,34,64,0.55) 75%,rgba(13,34,64,0) 100%);padding:6rem 3rem 2rem;max-width:1040px;margin:-180px auto 0}
 .article-tag{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:1rem;font-weight:500}
 .article-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;font-weight:700;color:white;margin-bottom:1rem}
@@ -139,11 +155,10 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 <main>
 
 <div style="background:var(--navy);">
-  <div class="article-hero-img"><img src="/images/factory-line-walkthrough-a.webp" alt="Glossary: Factory Verification, Audit, Inspection & Supervision" loading="eager"></div>
-<div class="article-hero">
+  <div class="article-hero article-hero-noimg">
     <span class="article-tag">Glossary</span>
     <h1>Glossary: Factory Verification, Audit, Inspection &amp; Supervision</h1>
-    <div class="article-meta">Jun 26, 2026 &middot; Updated Oct 10, 2026 &middot; 8 min read &middot; Zhang Peng (Miguel Lopez), Founder</div>
+    <div class="article-meta">Jun 26, 2026 &middot; Updated Oct 11, 2026 &middot; 8 min read &middot; Zhang Peng (Miguel Lopez), Founder</div>
   </div>
 </div>
 
@@ -246,7 +261,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <p class="short">A middleman that buys from factories and resells to international buyers — without owning or operating production itself.</p>
     <p>A trading company (TC) maintains a product catalog sourced from multiple factories and handles export documentation and logistics. On Alibaba, many TCs present themselves as manufacturers — sometimes truthfully (some TCs are affiliated with factories), often misleadingly. The practical implications:</p>
     <ul>
-      <li><strong>Price:</strong> TCs add a margin of 15–30% on top of ex-factory price</li>
+      <li><strong>Price:</strong> TCs add a margin on top of the ex-factory price; how much varies by product and supplier</li>
       <li><strong>Quality control:</strong> TCs have less direct control over production quality — problems must be escalated through the TC to the factory</li>
       <li><strong>Customization:</strong> TCs typically can't offer the same level of product customization as dealing directly with the manufacturer</li>
       <li><strong>Accountability:</strong> When production defects occur, TCs have an inherent conflict of interest in representing your complaint to their supplier</li>
@@ -267,8 +282,8 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <div class="term-label">Term 06</div>
     <h2>Sourcing Agent</h2>
     <p class="short">A person or firm in China who finds suppliers, negotiates prices, and manages order logistics on behalf of a foreign buyer.</p>
-    <p>A sourcing agent works on your behalf in-country: identifying factories, comparing quotes, negotiating in Chinese, coordinating samples, and overseeing production and shipping. They typically charge a commission (8–15% of order value) or a flat service fee.</p>
-    <p>The critical distinction from an inspection company: a sourcing agent is <strong>involved in finding and managing suppliers</strong>, while an inspection company is a neutral third party that evaluates them independently. I offer both — supplier sourcing (10% commission) and independent verification/inspection ($449–$499) — which is exactly why I keep these services explicitly separate in how I quote them: a sourcing agent who also "verifies" their own supplier recommendations has an obvious conflict of interest, even when they mean well.</p>
+    <p>A sourcing agent works on your behalf in-country: identifying factories, comparing quotes, negotiating in Chinese, coordinating samples, and overseeing production and shipping. They typically charge a commission on the order value or a flat service fee; the percentage varies by agent.</p>
+    <p>The critical distinction from an inspection company: a sourcing agent is <strong>involved in finding and managing suppliers</strong>, while an inspection company is a neutral third party that evaluates them independently. I offer both — supplier sourcing (10% commission) and independent verification, inspection and audits (priced per visit or per man-day, from $399) — which is exactly why I keep these services explicitly separate in how I quote them: a sourcing agent who also "verifies" their own supplier recommendations has an obvious conflict of interest, even when they mean well.</p>
     <div class="when-box">
       <div class="when-label">When you need it</div>
       <p>When you don't have established supplier relationships in China. When the language barrier or time zone difference makes direct negotiation impractical. When order volumes justify paying for dedicated in-country management.</p>

@@ -49,7 +49,7 @@
       "name":"Custom Badges, Medals & Keychains Supplier Verification — China",
       "description":"Independent on-site verification of custom badge, medal, coin, and keychain manufacturers in China. Covers enamel pins, challenge coins, award medals, keychains, and related promotional metal goods.",
       "areaServed":{"@type":"Place","name":"Latin America"},
-      "provider":{"@type":"Organization","name":"SourciaVera","url":"https://sourciavera.com"},
+      "provider":{"@type":"Organization","@id":"https://sourciavera.com/#organization","name":"SourciaVera","url":"https://sourciavera.com"},
       "hasOfferCatalog":{
         "@type":"OfferCatalog",
         "name":"Verification Services",
@@ -116,6 +116,8 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .feature-row{display:grid;grid-template-columns:360px 1fr;gap:2.5rem;align-items:center;padding:2rem 0;border-bottom:1px solid var(--border)}
 .feature-row:last-child{border-bottom:none}
 .feature-row img{width:100%;height:auto;object-fit:contain;border:1.5px solid var(--border);cursor:zoom-in}
+.ill-wrap{position:relative}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
 .feature-row-body{flex:1}
 .lightbox{display:none;position:fixed;inset:0;background:rgba(13,34,64,0.92);z-index:999;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}
 .lightbox.active{display:flex}
@@ -215,7 +217,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <div class="section-title">What buyers in this category actually order</div>
 
     <div class="feature-row">
-      <img src="/images/badges-custom-award-medal.webp" alt="Custom gold enamel award medal with ribbon">
+      <div class="ill-wrap"><img src="/images/badges-custom-award-medal.webp" alt="Custom gold enamel award medal with ribbon"><span class="ill-tag">Illustrative image</span></div>
       <div class="feature-row-body">
         <div class="feature-row-tag">Award Medals</div>
         <div class="feature-row-title">Custom Sports &amp; Award Medals</div>
@@ -225,7 +227,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     </div>
 
     <div class="feature-row">
-      <img src="/images/badges-nfc-metal-card.webp" alt="Gold metal NFC membership card, engraved finish">
+      <div class="ill-wrap"><img src="/images/badges-nfc-metal-card.webp" alt="Gold metal NFC membership card, engraved finish"><span class="ill-tag">Illustrative image</span></div>
       <div class="feature-row-body">
         <div class="feature-row-tag">NFC / Smart Tech</div>
         <div class="feature-row-title">NFC-Enabled Coins &amp; Cards</div>
@@ -235,7 +237,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     </div>
 
     <div class="feature-row">
-      <img src="/images/badges-enamel-pin-techniques.webp" alt="Hard enamel craft pin — smooth, artistic-level enamel texture">
+      <div class="ill-wrap"><img src="/images/badges-enamel-pin-techniques.webp" alt="Hard enamel craft pin — smooth, artistic-level enamel texture"><span class="ill-tag">Illustrative image</span></div>
       <div class="feature-row-body">
         <div class="feature-row-tag">Enamel &amp; Finish</div>
         <div class="feature-row-title">Hard Enamel, Soft Enamel &amp; Printed Pins</div>
