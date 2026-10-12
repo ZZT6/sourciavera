@@ -11,7 +11,6 @@
     gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', wait_for_update: 500 });
     gtag('js', new Date());
     gtag('config', 'G-X40LT2MS4X');
-    gtag('config', 'AW-18086408472');
     document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
   }
 </script>
@@ -962,11 +961,6 @@ rcForm.addEventListener('submit', async e => {
       const rcSuccess = document.getElementById('remote-check-success');
       rcForm.reset();
       rcSuccess.style.display = 'block';
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-18086408472/h2DFCLiqsekcEJjiorBD'
-        });
-      }
       rcBtn.style.display = 'none';
     } else {
       rcBtn.textContent = 'Error — intenta de nuevo';
@@ -991,11 +985,6 @@ form.addEventListener('submit', async e => {
       const success = document.getElementById('form-success');
       form.reset();
       success.style.display = 'block';
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-18086408472/h2DFCLiqsekcEJjiorBD'
-        });
-      }
       btn.style.display = 'none';
       setTimeout(function() {
         window.location.href = '/blog/es';
