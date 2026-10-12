@@ -1,3 +1,4 @@
 # Commits that changed pages for tracking/tag plumbing only (no content change): skipped when scripts/generate-sitemap.mjs picks lastmod.
 22bc2b3ce129  # GA4 hostname gate + key events (2026-10-10)
 7083c61  # structured data plumbing (@id, BreadcrumbList, WebSite) + pair re-dating (2026-10-11)
+ef30c0da01e9  # removal of the former company's Google Ads tag AW-18086408472 from every page (2026-10-11)
