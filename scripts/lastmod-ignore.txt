@@ -4,3 +4,4 @@
 ef30c0da01e9  # removal of the former company's Google Ads tag AW-18086408472 from every page (2026-10-11)
 
 eceee3d  # Consent Mode by region + footer WhatsApp icon on every page (2026-10-16)
+342e595  # BR region + footer Cookie Settings link + footer icon row (2026-10-16)
