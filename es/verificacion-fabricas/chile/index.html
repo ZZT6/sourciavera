@@ -72,8 +72,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .price-item{text-align:center;padding:1.5rem 2rem;border:1.5px solid var(--border)}
 .price-val{font-size:1.4rem;font-weight:700;color:var(--coral);display:block;margin-bottom:0.3rem}
 .price-name{font-size:0.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em}
-.wa-float{position:fixed;bottom:2rem;right:2rem;background:#25D366;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:100}
-@media(max-width:600px){.wa-float{width:48px;height:48px;font-size:1.3rem;bottom:1.1rem;right:1.1rem}}
+
 footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
 .footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
 .footer-links{display:flex;gap:1.5rem}
@@ -147,7 +146,6 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   </div>
   <div>© <script>document.write(new Date().getFullYear())</script> SourciaVera · Guangzhou, China · Todos los derechos reservados</div>
 </footer>
-<a href="https://wa.me/8613688057230?text=Hola%2C%20soy%20importador%20chileno%20y%20me%20interesa%20verificar%20un%20proveedor" class="wa-float" title="WhatsApp" target="_blank" rel="noopener">💬</a>
 <script type="module">
 import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
 CookieConsent.run({guiOptions:{consentModal:{layout:'bar',position:'bottom'}},onConsent:()=>{if(typeof gtag!=='undefined')gtag('consent','update',{analytics_storage:CookieConsent.acceptedCategory('analytics')?'granted':'denied'});},onChange:()=>{if(typeof gtag!=='undefined')gtag('consent','update',{analytics_storage:CookieConsent.acceptedCategory('analytics')?'granted':'denied'});},categories:{necessary:{enabled:true,readOnly:true},analytics:{autoClear:{cookies:[{name:/^(_ga|_gid)/}]}}},language:{default:'es',translations:{es:{consentModal:{title:'Usamos cookies',description:'Usamos cookies para analizar el tráfico.',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',showPreferencesBtn:'Preferencias'},preferencesModal:{title:'Preferencias',acceptAllBtn:'Aceptar todo',acceptNecessaryBtn:'Solo necesarias',savePreferencesBtn:'Guardar',sections:[{title:'Necesarias',linkedCategory:'necessary'},{title:'Análisis',linkedCategory:'analytics'}]}}}}});
