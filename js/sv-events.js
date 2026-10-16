@@ -59,6 +59,23 @@
   document.addEventListener('click', onLinkClick, true);
   document.addEventListener('auxclick', function (e) { if (e.button === 1) onLinkClick(e); }, true);
 
+  /* ------------------------------------------------------------ cookie banner answers -> GA4
+   * The head block of every page sets Consent Mode by region (EEA/UK/CH start denied, the rest granted).
+   * Here the banner's answers are applied at once: Reject All (or analytics switched off in Manage Preferences)
+   * turns collection off completely (ga-disable flag + consent denied); Accept turns it on. Ads stay denied. */
+  function applyConsent(detail) {
+    var cats = [];
+    try { cats = (detail && detail.cookie && detail.cookie.categories) || []; } catch (e) { /* ignore */ }
+    var ok = cats.indexOf('analytics') > -1;
+    window['ga-disable-' + GA4_ID] = !ok;
+    if (location.hostname === PROD_HOST && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { analytics_storage: ok ? 'granted' : 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+    }
+  }
+  ['cc:onFirstConsent', 'cc:onConsent', 'cc:onChange'].forEach(function (name) {
+    window.addEventListener(name, function (e) { var d = e.detail; window.setTimeout(function () { applyConsent(d); }, 0); });
+  });
+
   /* ------------------------------------------------------------ floating WhatsApp button */
   var ES = /^es/i.test(document.documentElement.lang || '') || /^\/es(\/|$)/.test(location.pathname);
   var LABEL = ES ? 'Escríbanos por WhatsApp' : 'Chat on WhatsApp';
@@ -138,6 +155,8 @@
     btn.innerHTML = ICON;
     refreshHref();
     btn.addEventListener('click', refreshHref, true);          // title may have changed since load
+    var fl = document.querySelectorAll('a[data-wa-location="footer"]');   // footer WhatsApp links carry the page title too
+    for (var k = 0; k < fl.length; k++) fl[k].href = btn.href;
     document.body.appendChild(btn);
     covered = Array.prototype.slice.call(document.querySelectorAll(COVER));
     window.addEventListener('scroll', schedule, { passive: true });
