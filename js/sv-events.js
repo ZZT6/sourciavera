@@ -88,8 +88,12 @@
     '.sv-wa.sv-wa-off{opacity:0;transform:translateY(10px) scale(.9);pointer-events:none}' +
     '@media(min-width:768px){.sv-wa{width:44px;height:44px;right:max(24px,env(safe-area-inset-right));bottom:calc(var(--sv-wa-lift,0px) + 24px + env(safe-area-inset-bottom))}.sv-wa svg{width:24px;height:24px}}' +
     '@media(prefers-reduced-motion:reduce){.sv-wa{transition:none}}' +
-    '@media print{.sv-wa{display:none}}';
-  var COVER = 'a[class*="btn"], button, input, select, textarea, footer a, .cm a';   // things the button must never sit on
+    '@media print{.sv-wa{display:none}}' +
+    /* footer icon row: one row on phones (smaller icons), the text links (Privacy, Terms, Cookie Settings) on the row below */
+    '.sv-fbr{display:none}' +
+    '@media(max-width:600px){.footer-links{column-gap:.5rem!important;row-gap:.6rem!important}.footer-links a svg{width:1.9em!important;height:1.9em!important}' +
+    '.sv-fbr{display:block;flex-basis:100%;height:0}.footer-links a:not(:has(svg)){margin:0 .4rem}}';
+  var COVER = 'a[class*="btn"], button, input, select, textarea, footer a, footer div, .cm a';   // things the button must never sit on
   var btn, covered = [], raf = 0;
 
   function pageTitle() {
