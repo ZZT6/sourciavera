@@ -1318,7 +1318,15 @@ form.addEventListener('submit', async function(e) {
     stars.forEach(function(s) { s.disabled = true; });
   }
 
-  fetch('/api/rating').then(function(r) { return r.json(); }).then(function(d) { lastData = d; renderSummary(); }).catch(function() {});
+    function markVoted(v) {
+    widget.classList.add('rated');
+    paintSelected(v);
+    stars.forEach(function(s) { s.disabled = true; });
+    try { localStorage.setItem(VOTED_KEY, String(v)); } catch (e) {}
+    hasVoted = true;
+  }
+
+  fetch('/api/rating').then(function(r) { return r.json(); }).then(function(d) { lastData = d; if (d.myStar && !hasVoted) { markVoted(d.myStar); } renderSummary(); }).catch(function() {});
 
   new MutationObserver(renderSummary).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
 
@@ -1335,12 +1343,12 @@ form.addEventListener('submit', async function(e) {
         if (localStorage.getItem(VOTED_KEY)) return;
         var v = parseInt(s.getAttribute('data-star'), 10);
         stars.forEach(function(s2) { s2.disabled = true; });
-        fetch('/api/rating?star=' + v, { method: 'POST' }).then(function(r) { return r.json(); }).then(function(d) {
-          lastData = d;
-          widget.classList.add('rated');
+        fetch('/api/rating?star=' + v, { method: 'POST' }).then(function(r) { return r.json().then(function(d) { return { status: r.status, d: d }; }); }).then(function(x) {
+          var d = x.d || {};
+          if (d.total !== undefined) { lastData = d; }
+          if (x.status === 200 || x.status === 409) { markVoted(d.myStar || v); }   // 409: this browser had already voted
+          else { stars.forEach(function(s2) { s2.disabled = false; }); }               // 429 or an error: nothing was counted
           renderSummary();
-          paintSelected(v);
-          localStorage.setItem(VOTED_KEY, String(v));
         }).catch(function() {
           stars.forEach(function(s2) { s2.disabled = false; });
         });
