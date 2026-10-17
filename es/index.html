@@ -233,6 +233,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .testimonials-wrap{max-width:1120px;margin:0 auto 3rem}
 .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,340px));gap:2rem;justify-content:center}
 .testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:2rem;box-shadow:0 2px 12px rgba(0,0,0,0.06);text-align:center}
+.testimonial-avatar{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:1.15rem;letter-spacing:0.04em;margin:0 auto 1rem}
 .testimonial-photo{width:64px;height:64px;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block}
 .testimonial-text{color:var(--navy);font-size:0.92rem;font-style:italic;margin:0 auto 1rem}
 .testimonial-name{font-weight:700;margin:0;color:var(--navy)}
@@ -664,6 +665,31 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <!-- TODO (owner): factory verification video card -- add here once a YouTube link is provided; no illustrations or stock images -->
   </div>
 </section>
+
+<div class="testimonials-wrap">
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <p class="testimonial-name">Carlos Mendoza <svg class="flag-icon" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="México"><rect width="1" height="2" fill="#006847"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE1126"/></svg></p>
+      <p class="testimonial-role">Comprador de Casa Contenedora Plegable</p>
+      <span class="testimonial-avatar" role="img" aria-label="Carlos Mendoza">CM</span>
+      <p class="testimonial-text">"¡Hola! Quiero agradecerte por todo el apoyo con la auditoría de la fábrica. La verdad tenía dudas por ser un proveedor con precios más bajos, pero con los videos e imágenes en vivo que me mandaste por WhatsApp pude ver claramente la calidad del perfil de acero y los acabados de las casas plegables.<br><br>Tu respuesta fue superrápida desde el primer contacto y la atención fue de primera. Nos diste la seguridad que necesitábamos para cerrar la compra desde México. ¡Seguiremos trabajando juntos en el próximo contenedor!"</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-name">Camila Silva <svg class="flag-icon" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Brasil"><rect width="3" height="2" fill="#009C3B"/><polygon points="1.5,0.25 2.7,1 1.5,1.75 0.3,1" fill="#FFDF00"/><circle cx="1.5" cy="1" r="0.4" fill="#002776"/></svg></p>
+      <p class="testimonial-role">Directora de Compras, Lumina Joias e Medalhas (São Paulo, Brasil)</p>
+      <span class="testimonial-avatar" role="img" aria-label="Camila Silva">CS</span>
+      <p class="testimonial-text">"<strong>Auditoría transparente, excelente atención y respuesta en tiempo real.</strong><br><br>Para nuestro negocio de medallas de alta calidad y artículos chapados en oro, la verificación de fábrica era un paso crítico. SourciaVera nos brindó una experiencia impecable: nos compartieron videos y fotos detalladas por WhatsApp directamente desde la planta en China, evaluando los acabados, la línea de galvanoplastia y los estándares de calidad.<br><br>Lo que más destacó fue su velocidad de respuesta y la proactividad para resolver dudas al instante. Gracias a su auditoría en sitio, logramos validar a un proveedor con costos muy competitivos y máxima garantía. Un aliado estratégico indispensable para importadores en Latinoamérica."</p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-name">Jorge Garza <svg class="flag-icon" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="México"><rect width="1" height="2" fill="#006847"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE1126"/></svg></p>
+      <p class="testimonial-role">Importador de Rines, Guadalajara</p>
+      <span class="testimonial-avatar" role="img" aria-label="Jorge Garza">JG</span>
+      <p class="testimonial-text">"¡Qué tal, amigo! Quería agradecerte por la excelente inspección de los rines. Teníamos dudas con este nuevo proveedor por tener precios más bajos, pero con los videos en vivo por WhatsApp probando el balanceo y el acabado del barniz, nos diste un 100% de confianza.<br><br>Tu respuesta rápida y la comunicación tan directa marcaron toda la diferencia. Ya aprobamos la producción para el contenedor hacia Manzanillo. ¡Seguimos en contacto para el próximo envío!"</p>
+    </div>
+    <!-- Agregar más bloques .testimonial-card aquí cuando lleguen nuevas reseñas de clientes -->
+  </div>
+</div>
+
 
 <section class="faq-section" id="faq">
   <div class="faq-inner">
@@ -1116,10 +1142,10 @@ document.querySelectorAll('input[name="stage"]').forEach(function(r){
   var stars = starsWrap.querySelectorAll('.star-btn');
   var VOTED_KEY = 'sv-rating-voted';
 
-  // Solo votos reales: el promedio se muestra cuando hay al menos MIN_VOTES votos; antes no se muestran estrellas ni promedio.
-  var MIN_VOTES = 5;
+  // Real votes only (server-side, one per visitor): the average is shown from the first vote; with no votes yet, 'Be the first to rate'.
+  var MIN_VOTES = 1;
   function summaryText(average, total) {
-    if (total < MIN_VOTES) return widget.classList.contains('rated') ? 'Gracias por su calificación' : 'Toque una estrella para calificar';
+    if (total < MIN_VOTES) return widget.classList.contains('rated') ? 'Gracias por su calificación' : 'Sea el primero en calificar';
     var word = total === 1 ? 'calificación' : 'calificaciones';
     return '★ ' + average.toFixed(1) + ' · ' + total + ' ' + word;
   }
