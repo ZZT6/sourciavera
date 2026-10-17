@@ -51,6 +51,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .lang-btn{background:transparent;border:none;color:rgba(255,255,255,0.5);padding:0.35rem 0.75rem;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;cursor:pointer;transition:all 0.2s}
 .lang-btn.active{background:var(--yellow);color:var(--navy)}
 .lang-btn:hover:not(.active){color:white}
+a.lang-btn,span.lang-btn{text-decoration:none;display:inline-block}
 .nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase}
 .blog-header{background:var(--navy);padding:4rem 3rem 3rem}
 .blog-header-inner{max-width:2200px;display:flex;align-items:center;justify-content:space-between;gap:3rem}
@@ -144,8 +145,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   </div>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('es')">ES</button>
+      <span class="lang-btn active" aria-current="true">EN</span>
+      <a class="lang-btn" href="/blog/es" hreflang="es" lang="es">ES</a>
     </div>
     <a href="../index.html#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a>
   </div>
@@ -730,24 +731,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 </footer>
 
 <script>
-function detectLang() {
-  try { const saved = localStorage.getItem('sv-lang'); if (saved) return saved; } catch(e) {}
-  const langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
-  return langs.some(l => l.toLowerCase().startsWith('es')) ? 'es' : 'en';
-}
-let currentLang = detectLang();
-function setLang(lang) {
-  currentLang = lang;
-  try { localStorage.setItem('sv-lang', lang); } catch(e) {}
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = lang === 'en' ? el.dataset.en : el.dataset.es;
-  });
-  document.querySelectorAll('.lang-en').forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
-  document.querySelectorAll('.lang-es').forEach(el => el.style.display = lang === 'es' ? 'block' : 'none');
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.toggle('active', btn.textContent === lang.toUpperCase()));
-  document.documentElement.lang = lang;
-}
-setLang(currentLang);
+// This page is the English blog index: its language comes from the URL, never from the browser or a stored choice (the Spanish index is /blog/es).
+document.documentElement.lang = 'en';
 </script>
 <script type="module">
 import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
