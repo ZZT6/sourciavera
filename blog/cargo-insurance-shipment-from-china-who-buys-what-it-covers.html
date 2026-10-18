@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (location.hostname === 'sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-X40LT2MS4X');
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+  }
+</script>
+<script src="/js/sv-events.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cargo Insurance on a Shipment From China: Who Has to Buy It, What It Covers and What to Do When Goods Arrive Damaged</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Who has to insure cargo from China under FOB, EXW, CIF and CIP, what the A, B and C clauses mean, what is excluded and what to do if goods arrive damaged.">
+<link rel="canonical" href="https://sourciavera.com/blog/cargo-insurance-shipment-from-china-who-buys-what-it-covers">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/blog/cargo-insurance-shipment-from-china-who-buys-what-it-covers">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/blog/es/seguro-de-carga-embarque-china-quien-contrata-que-cubre">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/cargo-insurance-shipment-from-china-who-buys-what-it-covers">
+<meta property="og:title" content="Cargo Insurance on a Shipment From China: Who Has to Buy It, What It Covers and What to Do When Goods Arrive Damaged">
+<meta property="og:description" content="Who has to insure cargo from China under FOB, EXW, CIF and CIP, what the A, B and C clauses mean, what is excluded and what to do if goods arrive damaged.">
+<meta property="og:url" content="https://sourciavera.com/blog/cargo-insurance-shipment-from-china-who-buys-what-it-covers">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/cargo-insurance-shipment-from-china-who-buys-what-it-covers-photo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/cargo-insurance-shipment-from-china-who-buys-what-it-covers-photo.webp">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/cargo-insurance-shipment-from-china-who-buys-what-it-covers#article",
+  "headline": "Cargo Insurance on a Shipment From China: Who Has to Buy It, What It Covers and What to Do When Goods Arrive Damaged",
+  "description": "Who has to insure cargo from China under FOB, EXW, CIF and CIP, what the A, B and C clauses mean, what is excluded and what to do if goods arrive damaged.",
+  "inLanguage": "en",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "url": "https://sourciavera.com/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/cargo-insurance-shipment-from-china-who-buys-what-it-covers-photo.webp",
+  "datePublished": "2026-10-18",
+  "dateModified": "2026-10-18",
+  "mainEntityOfPage": "https://sourciavera.com/blog/cargo-insurance-shipment-from-china-who-buys-what-it-covers",
+  "keywords": "cargo insurance shipment from China, marine cargo insurance importer, Institute Cargo Clauses A B C, CIF insurance Clauses C, FOB who pays insurance, goods damaged container China claim"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sourciavera.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog"},
+    {"@type": "ListItem", "position": 3, "name": "Cargo Insurance on a Shipment From China: Who Has to Buy It, What It Covers and What to Do When Goods Arrive Damaged", "item": "https://sourciavera.com/blog/cargo-insurance-shipment-from-china-who-buys-what-it-covers"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need cargo insurance if my supplier quotes FOB?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Incoterms 2020 text for FOB says neither side has an obligation to the other to make an insurance contract, so it is your decision. If you do nothing, the goods are uninsured. Ask your forwarder or an insurer for a written offer before the goods ship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the insurance under a CIF quote cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under CIF the seller must buy cover under Clauses (C) of the Institute Cargo Clauses, the minimum, unless you agree otherwise. The sum insured is at least the contract price plus 10%, and the cover runs to at least the named port of destination. War and strikes cover can be added at your request and cost, if available."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is all-risks cover really all risks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clauses (A) are called all risks, but they carry exclusions. An insurer's guide lists insufficient packing, inherent vice and delay among them. Read the exclusions in the wording, and do not treat the name as a promise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the carrier's liability replace insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The carrier's liability is set by the transport contract and the applicable law, and the insurance is a separate contract between you and an insurer. As general advice, read the carrier's terms on the bill of lading and ask your insurer how the two fit together."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do first if I find damage when the container arrives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photograph the container before it is unloaded, keep the seal, write the damage on the delivery receipt instead of signing it clean, and tell the insurer or surveyor named on your certificate. Then send the carrier a written notice quickly, because the deadline can be only a few days."
+      }
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+a{text-decoration:none}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem;flex-wrap:wrap}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic}
+.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a{color:rgba(255,255,255,0.6)}.nav-links a:hover{color:var(--yellow)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
+.article-hero-img{width:100%;overflow:hidden}
+.article-hero-img img{width:100%;height:auto;display:block}
+.article-hero-img{position:relative}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
+.article-hero.article-hero-noimg{margin-top:0;padding-top:2.5rem}
+.article-hero{position:relative;background:linear-gradient(to top,rgba(13,34,64,0.98) 30%,rgba(13,34,64,0.55) 75%,rgba(13,34,64,0) 100%);padding:6rem 3rem 2rem;max-width:1040px;margin:-180px auto 0}
+.article-tag{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:1rem;font-weight:500}
+.article-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;font-weight:700;color:white;margin-bottom:1rem}
+.article-meta{font-size:0.82rem;color:rgba(255,255,255,0.45)}
+.article-body{max-width:1040px;margin:0 auto;padding:3rem}
+.article-body h2{font-size:1.4rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;padding-left:1rem;border-left:4px solid var(--coral)}
+.article-body h3{font-size:1.05rem;font-weight:600;color:var(--navy);margin:1.8rem 0 0.6rem}
+.article-body p{color:#333;margin-bottom:1.2rem;font-size:0.97rem;line-height:1.85}
+.article-body ul,.article-body ol{margin:0.8rem 0 1.2rem 1.5rem;color:#333;font-size:0.97rem;line-height:1.85}
+.article-body li{margin-bottom:0.5rem}
+.article-body strong{color:var(--navy);font-weight:600}
+.article-body a:not(.cta-btn){color:var(--coral);font-weight:600}
+.article-body table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem}
+.article-body th{background:var(--navy);color:white;padding:0.75rem 1rem;text-align:left;font-weight:500;font-size:0.82rem;letter-spacing:0.05em}
+.article-body td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top}
+.article-body tr:nth-child(even) td{background:var(--light)}
+.cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
+.cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
+.real-case{background:var(--light);border-left:4px solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
+.real-case strong{color:var(--teal);display:block;margin-bottom:0.5rem;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase}
+.warn-box{background:#FFF4E5;border-left:4px solid #E8A23C;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:0.92rem;color:#5c4620}
+.back-link{display:inline-block;color:rgba(255,255,255,0.5);font-size:0.85rem;margin-bottom:1rem;letter-spacing:0.05em}
+.back-link::before{content:'← '}
+.lang-alt{display:inline-block;color:rgba(255,255,255,0.55);font-size:0.78rem;margin-bottom:1rem;margin-left:1rem;letter-spacing:0.08em;border:1px solid rgba(255,255,255,0.2);padding:0.18rem 0.55rem;text-transform:uppercase;font-weight:600}
+.lang-alt:hover{color:white;border-color:rgba(255,255,255,0.5)}
+.related{background:var(--light);padding:3rem;max-width:1040px;margin:0 auto}
+.related h3{font-size:0.78rem;font-weight:600;color:var(--navy);margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.08em}
+.related-links{display:flex;flex-direction:column;gap:0.6rem}
+.related-links a{color:var(--coral);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:0.6rem}
+.related-links a:hover{color:var(--navy)}
+.article-footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:2rem 3rem;font-size:0.82rem}
+.article-footer a{color:var(--yellow)}
+nav{position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
+.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger:hover span{background:white}
+@media(max-width:768px){footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
+html,body{overflow-x:clip;max-width:100%}
+nav{padding:1rem 1.5rem}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}
+nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}
+nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}
+nav.nav-open .nav-links a:last-child{border-bottom:none}
+.article-hero{padding:3rem 1.5rem 2rem}
+.article-body{padding:2rem 1.5rem}
+.related{padding:2rem 1.5rem}
+.cta-btns{flex-direction:column;align-items:center}
+}
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+.footer-links{display:flex;gap:1.5rem;align-items:center}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--yellow)}
+@media(max-width:768px){.article-hero{margin-top:-90px;padding-top:4rem}}
+@media(max-width:768px){table th,table td{overflow-wrap:anywhere}}
+.body-fig{margin:2rem 0}.body-fig img{width:100%;height:auto;display:block;border:1.5px solid var(--border)}.body-fig figcaption{font-size:0.82rem;color:var(--muted);margin-top:0.5rem;line-height:1.45}
+.article-hero.hero-diagram{margin-top:0;padding-top:1.75rem;background:var(--navy);max-width:none;padding-left:max(1.5rem,calc(50% - 520px + 3rem));padding-right:max(1.5rem,calc(50% - 520px + 3rem))}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">SourciaVera</a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/blog" class="active">Blog</a>
+    <a href="/about">About</a>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/#contact" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+
+<div class="article-hero-img"><img src="/images/cargo-insurance-shipment-from-china-who-buys-what-it-covers-photo.webp" alt="Wooden crates inside an open shipping container on a truck at a loading dock" width="1200" height="630" loading="eager"></div>
+    <div class="article-hero">
+  <a href="/blog" class="back-link">Back to Blog</a><a href="/blog/es/seguro-de-carga-embarque-china-quien-contrata-que-cubre" class="lang-alt">ES</a>
+  <div class="article-tag">Buyer's Guide</div>
+  <h1>Cargo Insurance on a Shipment From China: Who Has to Buy It, What It Covers and What to Do When Goods Arrive Damaged</h1>
+  <div class="article-meta">By Zhang Peng (Miguel Lopez), Founder · Oct 18, 2026 · 11 min read</div>
+</div>
+
+<div class="article-body">
+
+  <p><strong>The short answer:</strong> under most price terms nobody is required to insure your cargo. Only CIF and CIP oblige the seller to buy insurance, and CIF asks for the minimum level only. Under EXW and FOB the Incoterms rules do not require either side to make an insurance contract, so if you do not buy cover, there is none. Before you pay the balance, ask in writing who insures, at what level, for what value and until where, and get a copy of the certificate.</p>
+
+  <p>If your supplier quoted FOB or EXW and the forwarder's offer lists insurance as an optional line, this article explains what that line should say and what to do if goods arrive damaged. It is general information, not insurance or legal advice: the wording of the policy decides.</p>
+
+  <h2>Why Does Cargo Insurance Matter on a Shipment From China?</h2>
+
+  <p>Three reasons:</p>
+
+  <ul>
+    <li><strong>The risk moves to you before the goods arrive.</strong> ICC Academy explains that under CIF the risk passes to the buyer when the goods are loaded on board, and under CIP when they are handed to the carrier, even though the seller pays the main freight. Do not assume that the seller paying for the freight means the seller carries the transit risk (<a href="https://academy.iccwbo.org/incoterms/article/incoterms-2020-cip-or-cif/" target="_blank" rel="noopener">ICC Academy</a>).</li>
+    <li><strong>Under most terms nobody has to insure.</strong> In the Incoterms 2020 text, the seller under EXW and FOB has no obligation to the buyer to make a contract of insurance, and the buyer has no obligation to the seller to make one either (<a href="https://library.iccwbo.org/content/tfb/BOOKS/BK_0049/BK_0049_05_RulesSea.htm" target="_blank" rel="noopener">ICC Digital Library</a>). Insurance is then a commercial decision, not a rule.</li>
+    <li><strong>Where the seller must insure, the default is the minimum.</strong> Under CIF the seller must buy only Clauses (C) of the Institute Cargo Clauses, the more limited cover, unless the parties agree otherwise.</li>
+  </ul>
+
+  <h2>Who Has to Insure Under Each Price Term?</h2>
+
+  <p>The table is a simplified summary of the insurance articles (A5 and B5) of the Incoterms 2020 text for four of the rules, plus the ICC Academy comparison of CIF and CIP. For DDP, FCA and the other rules, read the rule itself or ask your forwarder. The rules apply only if the contract or the quotation names them, as in "<a href="/blog/fob-exw-cif-ddp-chinese-supplier-quote">which price term to ask a Chinese supplier to quote</a>".</p>
+
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+  <table style="min-width:760px">
+    <tr><th>Term</th><th>Must the seller insure?</th><th>Cover level</th><th>Sum insured and until where</th></tr>
+    <tr><td>EXW</td><td>No. The seller gives you insurance information on request, at your risk and cost</td><td>Whatever you arrange</td><td>Whatever you arrange</td></tr>
+    <tr><td>FOB</td><td>No. Same: information on request, at your risk and cost</td><td>Whatever you arrange</td><td>Whatever you arrange</td></tr>
+    <tr><td>CIF (sea only)</td><td>Yes, at its own cost</td><td>Clauses (C), the minimum, unless agreed or customary otherwise</td><td>At least the contract price plus 10%, to at least the named port of destination; the buyer can claim directly from the insurer</td></tr>
+    <tr><td>CIP (any transport mode)</td><td>Yes, at its own cost</td><td>Clauses (A), the broadest, unless agreed otherwise</td><td>At least the contract price plus 10%, to at least the named place of destination; the buyer can claim directly from the insurer</td></tr>
+  </table>
+  </div>
+
+  <p>Under CIF and CIP the seller must also give you the policy, a certificate or other evidence of the insurance, and can add war and strikes cover at your request and cost if it is available (<a href="https://library.iccwbo.org/content/tfb/BOOKS/BK_0049/BK_0049_05_RulesSea.htm" target="_blank" rel="noopener">CIF</a>, <a href="https://library.iccwbo.org/content/tfb/BOOKS/BK_0049/BK_0049_04_RulesAny.htm" target="_blank" rel="noopener">CIP</a>). Here is an illustration with made-up numbers, not a quote: if the contract price is $20,000, the cover under CIF or CIP must be at least $22,000.</p>
+
+  <h2>What Do Clauses (A), (B) and (C) Mean in Plain Terms?</h2>
+
+  <p>The Institute Cargo Clauses are standard wordings published by the Lloyd's Market Association and the International Underwriting Association. Clauses (A) are often called "all risks" cover and the broadest option, and Clauses (C) are the minimum, according to ICC Academy. Clauses (B) sit in between. As a general overview, (A) covers physical loss or damage unless an exclusion applies, while (B) and (C) name the events they cover, and (C) names the fewest. Before you accept a policy, ask which events are named, and check that the damage you worry about most, such as rain water, rough handling or theft, is on the list.</p>
+
+  <h2>What Does a CIF Policy Not Have to Give You?</h2>
+
+  <p>An insurer's published guide to marine cargo insurance (The New India Assurance, 2013) makes three points that matter to a buyer of a CIF quote:</p>
+
+  <ul>
+    <li><strong>No all-risks cover.</strong> The CIF seller must provide only the minimum, not Clauses (A), and need not provide war and strikes cover.</li>
+    <li><strong>No door-to-door cover.</strong> The policy need not run warehouse to warehouse; it needs to run only until the goods arrive at the port of discharge.</li>
+    <li><strong>The cover has to fit your payment terms.</strong> If your payment arrangement, such as a letter of credit, requires warehouse-to-warehouse cover, the seller's minimum cover may not meet it.</li>
+  </ul>
+
+  <p>If you want more than the minimum, ask for it in the quotation and in the PI before you accept the term. See <a href="/blog/proforma-invoice-chinese-supplier-what-to-check">the proforma invoice article</a> for where to write it down.</p>
+
+      <figure class="body-fig" data-fig="cargo-insurance-shipment-from-china-who-buys-what-it-covers-fig3">
+  <img src="/images/cargo-insurance-shipment-from-china-who-buys-what-it-covers-hero-en.webp" alt="Diagram: Table showing that under EXW and FOB the seller does not have to insure the cargo, under CIF it must buy minimum cover and under CIP broad cover" width="1200" height="630" loading="lazy">
+  <figcaption>Diagram: Table showing that under EXW and FOB the seller does not have to insure the cargo, under CIF it must buy minimum cover and under CIP broad cover</figcaption>
+</figure>
+
+  <h2>What Is Usually Not Covered?</h2>
+
+  <p>The same guide lists the exclusions in Clauses (A), which also appear in (B) and (C) with additions. The ones that matter most to an importer:</p>
+
+  <ul>
+    <li><strong>Insufficient or unsuitable packing,</strong> including stowage in a container done before the insurance attached by the insured party or its staff. Poor packing can therefore leave you without a claim.</li>
+    <li><strong>Inherent vice,</strong> meaning damage caused by the nature of the goods themselves.</li>
+    <li><strong>Delay,</strong> even when the delay is caused by an insured risk.</li>
+    <li><strong>War and strikes,</strong> which are excluded from the main clauses and covered, if at all, under separate clauses.</li>
+  </ul>
+
+  <p>As general advice: cargo insurance pays for physical loss or damage in transit. It does not tell you that the supplier is real, that the goods match the sample or that the order is complete, and it will not make good a late delivery. Those are the questions for the <a href="/blog/china-supplier-verification-checklist">China Supplier Verification Checklist</a> before the deposit, and for an inspection before the balance (<a href="/blog/product-inspection-cost-before-shipment">what a pre-shipment inspection costs</a>; the packing check is #5 in <a href="/blog/auto-parts-quality-checks-before-shipping">6 quality checks before shipping auto parts</a>).</p>
+
+  <h2>What Should You Ask the Supplier or the Forwarder?</h2>
+
+  <p>This list is general advice, built from the sources above:</p>
+
+  <ol>
+    <li><strong>Who insures, and is it written in the quotation?</strong> Under FOB and EXW the answer is usually you, unless you ask the forwarder to arrange it.</li>
+    <li><strong>Which clauses: (A), (B) or (C)?</strong> Ask for the wording, not only the letter, and whether war and strikes cover is included.</li>
+    <li><strong>For what value?</strong> Under CIF and CIP the floor is the contract price plus 10%. Under other terms, decide the amount yourself.</li>
+    <li><strong>Who can claim?</strong> The rule text expects a policy that lets the buyer claim directly from the insurer; ask for your name on the certificate.</li>
+    <li><strong>Where does the cover start and end?</strong> Port to port or door to door, and what happens to goods waiting at the port.</li>
+    <li><strong>Can you see the certificate before you pay the balance,</strong> with the insurer's claims or surveyor contact printed on it?</li>
+    <li><strong>What are the exclusions and conditions,</strong> in writing?</li>
+  </ol>
+
+      <figure class="body-fig" data-fig="cargo-insurance-shipment-from-china-who-buys-what-it-covers-fig1">
+      <img src="/images/cargo-insurance-shipment-from-china-who-buys-what-it-covers-fig1-en.webp" alt="Checklist of five questions to ask about cargo insurance before paying the balance" width="800" height="680" loading="lazy">
+      <figcaption>Diagram: Five of the seven questions, as general advice.</figcaption>
+    </figure>
+
+  <h2>What Should You Do If the Goods Arrive Damaged?</h2>
+
+  <p>The steps below follow the claims chapter of the same insurer's guide. They are one insurer's general practice, not a rule for every policy, so read your own certificate first and follow what it says:</p>
+
+  <ol>
+    <li><strong>Photograph the container before it is unloaded,</strong> and keep both parts of the seal in a bag after you cut it.</li>
+    <li><strong>Do not sign a clean delivery receipt.</strong> Write the number of damaged or missing packages and the type of damage on the receipt, with the date and your signature, and have the carrier countersign it.</li>
+    <li><strong>Tell the insurer or the surveyor named on the certificate,</strong> and do not bring in a surveyor the insurer has not approved.</li>
+    <li><strong>Send the carrier a written notice quickly.</strong> The guide warns that carriers may refuse a claim if they were not told in time, and gives about 3 days after arrival for sea cargo and 14 days for air freight as usual windows. Your documents may say otherwise.</li>
+    <li><strong>Collect the papers:</strong> the certificate of insurance, the commercial invoice, the packing list, the bill of lading (see <a href="/blog/bill-of-lading-sea-waybill-chinese-supplier-before-paying-balance">what to check on the bill of lading before you pay the balance</a>) and the photographs and survey report.</li>
+  </ol>
+
+      <figure class="body-fig" data-fig="cargo-insurance-shipment-from-china-who-buys-what-it-covers-fig2">
+      <img src="/images/cargo-insurance-shipment-from-china-who-buys-what-it-covers-fig2-en.webp" alt="Numbered list of five steps to take when cargo arrives damaged" width="800" height="756" loading="lazy">
+      <figcaption>Diagram: The steps in one insurer&#x27;s published guide; your certificate comes first.</figcaption>
+    </figure>
+
+  <h2>What Should You Do Next?</h2>
+
+  <ol>
+    <li><strong>Check which price term your quotation uses</strong> (see <a href="/blog/fob-exw-cif-ddp-chinese-supplier-quote">which price term to ask a Chinese supplier to quote</a>) and who has to insure under it.</li>
+    <li><strong>Decide the cover level and the value yourself</strong> if the term is FOB or EXW, and ask the forwarder for a written offer.</li>
+    <li><strong>If the quotation is CIF,</strong> ask in writing whether you want more than Clauses (C), such as Clauses (A) and war and strikes cover.</li>
+    <li><strong>Get the certificate before you pay the balance,</strong> and keep it with the shipping documents.</li>
+    <li><strong>Arrange an inspection of the goods and the packing before shipment,</strong> because the insurance will not cover poor packing or a quality mismatch.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Do I need cargo insurance if my supplier quotes FOB?</h3>
+  <p>The Incoterms 2020 text for FOB says neither side has an obligation to the other to make an insurance contract, so it is your decision. If you do nothing, the goods are uninsured. Ask your forwarder or an insurer for a written offer before the goods ship.</p>
+
+  <h3>What does the insurance under a CIF quote cover?</h3>
+  <p>Under CIF the seller must buy cover under Clauses (C) of the Institute Cargo Clauses, the minimum, unless you agree otherwise. The sum insured is at least the contract price plus 10%, and the cover runs to at least the named port of destination. War and strikes cover can be added at your request and cost, if available.</p>
+
+  <h3>Is all-risks cover really all risks?</h3>
+  <p>Clauses (A) are called all risks, but they carry exclusions. An insurer's guide lists insufficient packing, inherent vice and delay among them. Read the exclusions in the wording, and do not treat the name as a promise.</p>
+
+  <h3>Does the carrier's liability replace insurance?</h3>
+  <p>No. The carrier's liability is set by the transport contract and the applicable law, and the insurance is a separate contract between you and an insurer. As general advice, read the carrier's terms on the bill of lading and ask your insurer how the two fit together.</p>
+
+  <h3>What should I do first if I find damage when the container arrives?</h3>
+  <p>Photograph the container before it is unloaded, keep the seal, write the damage on the delivery receipt instead of signing it clean, and tell the insurer or surveyor named on your certificate. Then send the carrier a written notice quickly, because the deadline can be only a few days.</p>
+  <h2>Summary and Next Step</h2>
+
+  <p>Cargo insurance is not automatic. Under FOB and EXW it exists only if someone buys it, and under CIF the seller buys the minimum. The questions that protect you are simple: who insures, at what level, for what value, until where, and can you hold a copy of the certificate before you pay the balance.</p>
+
+  <p>If you skip them, the realistic outcome is a damaged container with no policy behind it, or a policy that excludes the packing or the event that caused the damage, with cash tied up and your next order delayed. A $49 remote check looks at who is behind the supplier and whether the payment account matches the company, and you can tell us about your order if you want help checking the shipping documents or arranging an inspection before shipment.</p>
+
+  <p>If you would rather have someone check the basics before the goods ship, understanding who is behind each quote before investing money can reduce unnecessary risks. SourciaVera helps international buyers verify Chinese suppliers, understand manufacturing capabilities, and make safer sourcing decisions. I provide supplier verification services, so you should treat my recommendation accordingly. The <a href="/#remote-check">$49 Remote Check</a> looks at the basics, such as company registration, manufacturer vs. trader, address, and whether the payment account matches the company name, before you place an order.</p>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/?service=Procurement%20Partner%20(long-term)#contact" class="cta-btn">Talk to us about inspection and procurement</a>
+      <a href="/#remote-check" class="cta-btn">Start with a $49 Remote Supplier Check</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#128C7E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Chat on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<div class="related">
+  <h3>Related articles</h3>
+  <div class="related-links">
+    <a href="/blog/fob-exw-cif-ddp-chinese-supplier-quote">FOB, EXW, CIF or DDP: Which Price Term Should You Ask a Chinese Supplier to Quote? →</a>
+    <a href="/blog/bill-of-lading-sea-waybill-chinese-supplier-before-paying-balance">Bill of Lading, Sea Waybill or Telex Release: What to Check Before You Pay a Chinese Supplier the Balance →</a>
+    <a href="/blog/product-inspection-cost-before-shipment">Product Inspection Cost Before Shipment: What Actually Determines the Real Price →</a>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">SourciaVera</div>
+  <div class="footer-links">
+    <a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="3.3em" height="3.3em" fill="#FF0000" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+    <a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" aria-hidden="true"><defs><linearGradient id="igGradFooter" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#igGradFooter)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="3.3em" height="3.3em" fill="#1877F2" aria-hidden="true"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+    <a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#B92B27" aria-hidden="true"><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a>
+    <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#0A66C2" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+    <a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="3.3em" height="3.3em" fill="#E60023" aria-hidden="true"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a>
+    <a href="https://wa.me/8613688057230" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" data-wa-location="footer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#25D366" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><span class="sv-fbr" aria-hidden="true"></span>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a>
+  </div>
+  <div>© <script>document.write(new Date().getFullYear())</script> SourciaVera · Guangzhou, China · All rights reserved</div>
+</footer>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
+</body>
+</html>
