@@ -7,3 +7,4 @@ eceee3d  # Consent Mode by region + footer WhatsApp icon on every page (2026-10-
 342e595  # BR region + footer Cookie Settings link + footer icon row (2026-10-16)
 883cf66  # redirect cleanup: internal links to final URLs, no content change (2026-10-19)
 26eb821  # vercel.json revert only, no page change (2026-10-19)
+6ea4266  # blog title rewrite: metadata only (title/og:title/headline), no body change (2026-10-20)
