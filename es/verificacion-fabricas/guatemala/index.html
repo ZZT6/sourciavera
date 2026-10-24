@@ -210,6 +210,18 @@ nav{position:relative}
 span.sv-off{display:inline-flex;align-items:center;gap:0.4rem;background:#D62828;color:#fff;font-size:0.68rem;font-weight:600;line-height:1.2;padding:0.2rem 0.55rem;margin:0 0.45rem 0.4rem 0;border-radius:3px;letter-spacing:0.02em;vertical-align:middle;white-space:normal;text-transform:none;text-align:left}
 span.sv-off b{color:#fff;font-size:0.85rem;font-weight:800;letter-spacing:0}
 span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
+
+.loc{background:var(--white);padding:4.5rem 3rem}.loc-in{max-width:960px;margin:0 auto}
+.loc-tag{display:inline-block;background:var(--navy);color:#fff;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1rem;font-weight:500}
+.loc h2{font-size:1.7rem;font-weight:700;color:var(--navy);margin:0 0 1rem;line-height:1.2}
+.loc h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin:2rem 0 0.5rem}
+.loc p{color:var(--muted);font-size:0.95rem;line-height:1.85;margin:0 0 1rem}.loc a{color:var(--coral);text-decoration:underline}
+.loc-trap{background:var(--light);border-left:4px solid var(--coral);padding:1rem 1.2rem;margin:1rem 0 1.5rem}.loc-trap p{margin:0;color:var(--navy)}
+.loc-q{border-left:4px solid var(--teal);background:var(--light);padding:1rem 1.2rem;margin:0.8rem 0 1.2rem;color:var(--navy);font-size:0.97rem;line-height:1.75}.loc-q cite{display:block;margin-top:0.6rem;font-style:normal;color:var(--muted);font-size:0.85rem}
+.loc .tbl{width:100%;border-collapse:collapse;margin:0.8rem 0 1.4rem;font-size:0.88rem}.loc .tbl th{background:var(--navy);color:#fff;text-align:left;padding:0.65rem 0.75rem;font-size:0.78rem;letter-spacing:0.03em}
+.loc .tbl td{padding:0.6rem 0.75rem;border-bottom:1px solid var(--border);color:var(--muted);vertical-align:top}.loc .tbl td:first-child{color:var(--navy);font-weight:600}.loc .tbl tr:nth-child(even) td{background:var(--light)}
+.loc-links{display:flex;flex-wrap:wrap;gap:0.6rem 1.4rem;margin:0.5rem 0 0}.loc-links a{font-size:0.92rem}
+@media(max-width:700px){.loc{padding:3rem 1.5rem}.loc .tbl th,.loc .tbl td{padding:0.5rem 0.4rem;font-size:0.76rem}.loc .tbl td:first-child{white-space:normal}}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -388,6 +400,23 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
   </div>
 </section>
 
+<section class="loc" id="local"><div class="loc-in">
+<div class="loc-tag">Para importadores de Guatemala</div>
+<h2>Qué cambia cuando importa a Guatemala</h2>
+<h3>Palabras que cambian de un país a otro</h3>
+<div class="loc-trap"><p>En Guatemala, las ruedas de aleación suelen llamarse <strong>aros</strong>, los neumáticos <strong>llantas</strong> y las piezas <strong>repuestos</strong>. En México esas ruedas son <em>rines</em>, y en Chile <em>llantas</em> significa las ruedas. Escriba siempre el nombre en inglés y el término local en su especificación.</p></div>
+<table class="tbl rt"><thead><tr><th>En inglés (como en Alibaba)</th><th>Término usual en Guatemala</th><th>También se oye</th></tr></thead><tbody><tr><td data-label="En inglés (como en Alibaba)">Brake pads</td><td data-label="Término usual en Guatemala">pastillas de freno</td><td data-label="También se oye">—</td></tr><tr><td data-label="En inglés (como en Alibaba)">Alloy wheels</td><td data-label="Término usual en Guatemala">aros</td><td data-label="También se oye">rines</td></tr><tr><td data-label="En inglés (como en Alibaba)">Tires</td><td data-label="Término usual en Guatemala">llantas</td><td data-label="También se oye">neumáticos</td></tr><tr><td data-label="En inglés (como en Alibaba)">Auto parts / spare parts</td><td data-label="Término usual en Guatemala">repuestos</td><td data-label="También se oye">—</td></tr><tr><td data-label="En inglés (como en Alibaba)">Bumper</td><td data-label="Término usual en Guatemala">defensa</td><td data-label="También se oye">parachoques</td></tr><tr><td data-label="En inglés (como en Alibaba)">Hood</td><td data-label="Término usual en Guatemala">capó</td><td data-label="También se oye">cofre</td></tr><tr><td data-label="En inglés (como en Alibaba)">Trunk</td><td data-label="Término usual en Guatemala">baúl</td><td data-label="También se oye">maleta</td></tr><tr><td data-label="En inglés (como en Alibaba)">Taillight</td><td data-label="Término usual en Guatemala">luz trasera</td><td data-label="También se oye">calavera</td></tr><tr><td data-label="En inglés (como en Alibaba)">License plate</td><td data-label="Término usual en Guatemala">placa</td><td data-label="También se oye">placas</td></tr></tbody></table>
+<p>Son los términos que los compradores de Guatemala usan con más frecuencia; el uso puede variar por región dentro de un país. Envíe siempre el nombre en inglés junto con su especificación.</p>
+<h3>Zona horaria y cómo nos comunicamos</h3>
+<p>Guatemala está en UTC−6 todo el año, sin horario de verano, así que Guangzhou (UTC+8) va 14 horas adelante. Una visita que empieza a las 9:00 en Guangzhou empieza a las 19:00 de la noche anterior en la Ciudad de Guatemala. Los informes llegan en español o en inglés, y durante una visita podemos compartir video en vivo por WhatsApp.</p>
+<h3>Qué importan los compradores de Guatemala</h3>
+<p>Los productos de construcción son la categoría mejor documentada para Guatemala en este sitio: vea el caso real de abajo sobre casas contenedor expandibles y nuestra <a href="/es/categorias/construccion">categoría de construcción</a>. Las autopartes, nuestra categoría principal, están en la <a href="/es/categorias/autopartes">categoría de autopartes</a>.</p>
+<h3>Un caso real: casas contenedor expandibles</h3><p>Un comprador guatemalteco nos pidió verificar una fábrica de casas contenedor expandibles antes de comprometer un pedido. Se quitaron los nombres y los datos de la fábrica. Lea la historia más arriba en esta página, o el <a href="/blog/es/caso-casas-expandibles-guatemala">caso completo de Guatemala</a> con fotos y video de la visita a la fábrica.</p>
+<h3>Puertos y aduana</h3>
+<p>La carga puede llegar por Puerto Quetzal, en el Pacífico, o por Santo Tomás de Castilla y Puerto Barrios, del lado del Atlántico. Su agente de carga le cotiza la ruta. Las reglas de importación, los aranceles y los impuestos cambian de un país a otro y con el tiempo. Confírmelos con su agente aduanero. SourciaVera no es agente aduanal.</p>
+<h3>Siguientes pasos</h3>
+<div class="loc-links"><a href="/es/normas-de-inspeccion">Normas de inspección</a><a href="/es/informe-de-ejemplo">Informe de ejemplo</a><a href="/es/imparcialidad">Declaración de imparcialidad</a><a href="/es/como-elegir">Cómo elegir un proveedor</a></div>
+</div></section>
 <section class="contact" id="contacto">
   <div class="contact-left">
     <div class="section-tag">Contacto</div>
