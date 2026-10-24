@@ -10,6 +10,14 @@
 - [Verification Services by Country](https://sourciavera.com/verification-services/): Country-specific service pages
 - [Mexico Factory Verification](https://sourciavera.com/verification-services/mexico/): Services for Mexican importers
 - [Small Batch Manufacturing](https://sourciavera.com/small-batch): Small order sourcing and custom manufacturing
+- [Inspection Standards](https://sourciavera.com/inspection-standards): AQL sampling under ISO 2859-1, defect classes, a sample table and what we check on auto parts
+- [Normas de Inspección](https://sourciavera.com/es/normas-de-inspeccion): Muestreo AQL, clases de defecto y revisión de autopartes
+- [Sample Factory Verification Report](https://sourciavera.com/sample-report): Structure of the report received after an on-site verification, with clearly marked example entries
+- [Informe de Ejemplo](https://sourciavera.com/es/informe-de-ejemplo): Estructura del informe de verificación de fábrica, con ejemplos marcados
+- [Impartiality Statement](https://sourciavera.com/impartiality): How SourciaVera is paid: no factory commissions, fixed prices, real video of every on-site verification
+- [Declaración de Imparcialidad](https://sourciavera.com/es/imparcialidad): Cómo cobra SourciaVera, sin comisiones de fábricas y con precios fijos
+- [How to Choose a Verification Provider](https://sourciavera.com/how-to-choose): Three types of China verification and inspection providers compared, with questions to ask
+- [Cómo Elegir un Proveedor de Verificación](https://sourciavera.com/es/como-elegir): Comparación de tres tipos de proveedores de verificación e inspección en China
 
 ## Categories
 

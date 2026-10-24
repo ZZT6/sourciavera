@@ -8,3 +8,5 @@ eceee3d  # Consent Mode by region + footer WhatsApp icon on every page (2026-10-
 883cf66  # redirect cleanup: internal links to final URLs, no content change (2026-10-19)
 26eb821  # vercel.json revert only, no page change (2026-10-19)
 6ea4266  # blog title rewrite: metadata only (title/og:title/headline), no body change (2026-10-20)
+cc6e30d677e283e910e7d49af17da0a3bd974fa8  # trust pages task 2026-10-24: author box, contextual links, nav dropdown, footer link on every page: site-wide plumbing, no per-page content change
+fb8e64ab2d01359338647eddd7c2dc9b15f61409  # trust pages task 2026-10-24: author box CSS tweak on every blog article, no content change
