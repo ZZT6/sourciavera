@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (location.hostname === 'sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-X40LT2MS4X');
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+  }
+</script>
+<script src="/js/sv-events.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo Elegir Proveedor de Verificación de Fábricas en China</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Compare empresas internacionales de inspección, empresas locales chinas y agentes de compras: idioma, precio, comisiones, video, seguimiento y pedidos pequeños.">
+<link rel="canonical" href="https://sourciavera.com/es/como-elegir">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem;position:relative}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic;flex-shrink:0;text-decoration:none}
+.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none}
+.nav-links a:hover,.nav-links a.active{color:var(--yellow)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
+.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger:hover span{background:white}
+.page-header{background:var(--navy);padding:3.5rem 3rem 3rem;border-bottom:3px solid var(--coral)}
+.page-header .tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1rem;font-weight:500}
+.page-header h1{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;color:white;margin-bottom:0.6rem;line-height:1.15}
+.page-header p{color:rgba(255,255,255,0.5);font-size:0.92rem;max-width:560px}
+.content{max-width:1280px;margin:0 auto;padding:4rem 3rem}
+.section{margin-bottom:3.5rem}
+.two-col{display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:start;margin-bottom:3.5rem}
+.two-col .section{margin-bottom:0}
+.section-label{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
+.section h2{font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:1.25rem;line-height:1.2}
+.prose p{color:var(--muted);font-size:0.95rem;line-height:1.9;margin-bottom:1.1rem}
+.prose p:last-child{margin-bottom:0}
+.prose a{color:var(--coral);text-decoration:underline}
+.prose a:hover{color:var(--navy)}
+.mission-block{background:var(--navy);border-left:4px solid var(--coral);padding:2rem 2.25rem;margin:0}
+.mission-block p{color:rgba(255,255,255,0.85);font-size:1.05rem;line-height:1.85;font-weight:300}
+.values-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin-top:0.5rem}
+.value-item{border-left:3px solid var(--coral);padding:1rem 1.25rem;background:var(--light)}
+.value-item:nth-child(2){border-color:var(--teal)}
+.value-item:nth-child(3){border-color:var(--yellow)}
+.value-item:nth-child(4){border-color:var(--navy);background:var(--white);border:1.5px solid var(--border);border-left:3px solid var(--navy)}
+.value-item strong{display:block;font-size:0.92rem;font-weight:700;color:var(--navy);margin-bottom:0.3rem}
+.value-item p{color:var(--muted);font-size:0.88rem;line-height:1.75;margin:0}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:0.5rem}
+.team-card{border:1px solid var(--border);padding:1.5rem}
+.team-card-role{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.team-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
+.team-card p{color:var(--muted);font-size:0.85rem;line-height:1.7}
+.pain-list{display:flex;flex-direction:column;gap:0.75rem;margin:1.25rem 0}
+.pain-item{display:flex;align-items:flex-start;gap:0.75rem;font-size:0.92rem;color:var(--muted);line-height:1.6}
+.pain-dot{width:8px;height:8px;min-width:8px;background:var(--coral);margin-top:0.5rem}
+@media(max-width:768px){.team-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.two-col{grid-template-columns:1fr;gap:0}.two-col .section{margin-bottom:3.5rem}.two-col .section:last-child{margin-bottom:0}.values-list{grid-template-columns:1fr}}
+.divider{border:none;border-top:1px solid var(--border);margin:0 0 3.5rem}
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.4)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+.footer-links{display:flex;gap:1.5rem}
+.footer-links a{color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--yellow)}
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem}
+  .page-header{padding:2rem 1.5rem}
+  .content{padding:2.5rem 1.5rem}
+  footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}
+  .footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
+}
+@media(max-width:768px){html,body{overflow-x:clip;max-width:100%}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
+
+.page-header .tag{background:var(--coral)}
+.crumbs{font-size:0.8rem;color:var(--muted);margin-bottom:1.75rem}.crumbs a{color:var(--muted);text-decoration:none}.crumbs a:hover{color:var(--coral)}.crumbs span{margin:0 0.4rem}
+.wrap{max-width:900px;margin:0 auto}
+.prose h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.5rem}
+.prose p,.prose li{color:var(--muted);font-size:0.95rem;line-height:1.85}
+.prose ul,.prose ol{margin:0 0 1.1rem 1.2rem}.prose li{margin-bottom:0.45rem}
+.prose strong{color:var(--navy);font-weight:600}
+.lead-box{background:var(--navy);border-left:4px solid var(--coral);padding:1.5rem 1.8rem;margin:0 0 3rem}
+.lead-box h2{color:var(--yellow);font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;margin:0 0 0.8rem}
+.lead-box p,.lead-box li{color:rgba(255,255,255,0.9);font-size:0.97rem;line-height:1.8}
+.lead-box ul{margin:0 0 0 1.1rem}.lead-box li{margin-bottom:0.4rem}.lead-box a{color:var(--yellow)}
+.ex-banner{background:var(--yellow);color:var(--navy);padding:0.9rem 1.2rem;font-size:0.9rem;font-weight:600;line-height:1.55;margin:0 0 2.5rem;border:2px solid var(--navy)}
+.ex-pill{display:inline-block;background:var(--coral);color:#fff;font-size:0.66rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;padding:0.18rem 0.55rem;margin-right:0.5rem;vertical-align:middle}
+.tbl{width:100%;border-collapse:collapse;margin:1rem 0 1.5rem;font-size:0.88rem}
+.tbl th{background:var(--navy);color:#fff;text-align:left;padding:0.7rem 0.8rem;font-weight:600;font-size:0.8rem;letter-spacing:0.03em;vertical-align:bottom}
+.tbl td{padding:0.7rem 0.8rem;border-bottom:1px solid var(--border);color:var(--muted);line-height:1.6;vertical-align:top}
+.tbl td:first-child{color:var(--navy);font-weight:600}
+.tbl tr:nth-child(even) td{background:var(--light)}
+.tbl-note{font-size:0.82rem;color:var(--muted);line-height:1.7;margin:-0.6rem 0 1.5rem}
+@media(max-width:700px){.rt thead{display:none}.rt,.rt tbody,.rt tr,.rt td{display:block;width:100%}.rt tr{border:1px solid var(--border);margin-bottom:1rem;background:#fff}.rt td{border-bottom:1px solid var(--border);padding:0.6rem 0.8rem}.rt td:last-child{border-bottom:none}.rt td::before{content:attr(data-label);display:block;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);font-weight:700;margin-bottom:0.2rem}.rt td:first-child{background:var(--light)}.rt tr:nth-child(even) td{background:transparent}.rt td:first-child{background:var(--light)!important}}
+@media(max-width:700px){.tbl:not(.rt) th,.tbl:not(.rt) td{padding:0.5rem 0.35rem;font-size:0.76rem}.tbl:not(.rt) td:first-child{white-space:nowrap}}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem;margin:1rem 0 1.5rem}
+.card-i{border:1px solid var(--border);border-left:4px solid var(--coral);padding:1.1rem 1.25rem;background:#fff}
+.card-i:nth-child(2){border-left-color:var(--teal)}.card-i:nth-child(3){border-left-color:var(--yellow)}.card-i:nth-child(4){border-left-color:var(--navy)}
+.card-i h3{font-size:0.98rem;font-weight:700;color:var(--navy);margin:0 0 0.4rem}.card-i p{color:var(--muted);font-size:0.9rem;line-height:1.75;margin:0}
+.card-i .num{display:inline-block;background:var(--navy);color:#fff;font-weight:700;font-size:0.8rem;width:1.5rem;height:1.5rem;line-height:1.5rem;text-align:center;margin-right:0.5rem}
+.rep{border:1.5px solid var(--border);margin:0 0 1.2rem;background:#fff}
+.rep-h{background:var(--light);padding:0.8rem 1.1rem;font-weight:700;color:var(--navy);font-size:0.97rem;border-bottom:1px solid var(--border)}
+.rep-b{padding:1rem 1.1rem}.rep-b p{color:var(--muted);font-size:0.9rem;line-height:1.75;margin:0 0 0.6rem}.rep-b p:last-child{margin-bottom:0}
+.rep-ex{background:#FBF6EA;border-left:3px solid var(--yellow);padding:0.7rem 0.9rem;font-size:0.88rem;line-height:1.7;color:var(--navy);margin-top:0.5rem}
+.rep-ex b{color:var(--coral)}
+.still{display:grid;grid-template-columns:repeat(3,1fr);gap:0.7rem;margin:0.8rem 0}
+.still div{background:var(--navy);color:rgba(255,255,255,0.75);font-size:0.74rem;letter-spacing:0.08em;text-transform:uppercase;text-align:center;padding:2.2rem 0.5rem;border:1px dashed rgba(255,255,255,0.35)}
+.sev{display:inline-block;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;padding:0.12rem 0.5rem;color:#fff}.sev-h{background:var(--coral)}.sev-m{background:#B7791F}.sev-l{background:var(--teal)}
+.cta-panel{background:var(--navy);padding:2.2rem 2rem;margin:3rem 0 0;text-align:center}
+.cta-panel h2{color:#fff;font-size:1.35rem;margin:0 0 0.6rem}.cta-panel p{color:rgba(255,255,255,0.75);font-size:0.95rem;max-width:620px;margin:0 auto 1.4rem;line-height:1.75}
+.cta-btns{display:flex;gap:0.9rem;justify-content:center;flex-wrap:wrap}
+.btn-c{display:inline-block;background:var(--coral);color:#fff;padding:0.8rem 1.6rem;font-size:0.84rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none}
+.btn-c:hover{background:#c93a1f}.btn-o{display:inline-block;border:2px solid rgba(255,255,255,0.7);color:#fff;padding:calc(0.8rem - 2px) calc(1.6rem - 2px);font-size:0.84rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none}
+.btn-o:hover{border-color:var(--yellow);color:var(--yellow)}
+.faq-i{border-bottom:1px solid var(--border);padding:1rem 0}.faq-i h3{font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.4rem}.faq-i p{color:var(--muted);font-size:0.93rem;line-height:1.8;margin:0}
+.rel{display:flex;flex-direction:column;gap:0.5rem;margin:0.8rem 0 0}.rel a{color:var(--coral);font-size:0.93rem;text-decoration:underline}
+@media(max-width:640px){.cards{grid-template-columns:1fr}.still{grid-template-columns:1fr}.lead-box{padding:1.25rem 1.2rem}.cta-panel{padding:1.8rem 1.25rem}.btn-c,.btn-o{width:100%;text-align:center}}
+</style>
+<meta property="og:title" content="Cómo Elegir Proveedor de Verificación de Fábricas en China">
+<meta property="og:description" content="Compare empresas internacionales de inspección, empresas locales chinas y agentes de compras: idioma, precio, comisiones, video, seguimiento y pedidos pequeños.">
+<meta property="og:url" content="https://sourciavera.com/es/como-elegir">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sourciavera.com/og-image-es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/og-image-es.png">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/how-to-choose">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/es/como-elegir">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/how-to-choose">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://sourciavera.com/es/como-elegir#webpage",
+  "url": "https://sourciavera.com/es/como-elegir",
+  "name": "Cómo Elegir Proveedor de Verificación de Fábricas en China",
+  "description": "Compare empresas internacionales de inspección, empresas locales chinas y agentes de compras: idioma, precio, comisiones, video, seguimiento y pedidos pequeños.",
+  "inLanguage": "es",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "SourciaVera",
+    "url": "https://sourciavera.com"
+  },
+  "publisher": {
+    "@id": "https://sourciavera.com/#organization"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://sourciavera.com/es"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cómo elegir",
+      "item": "https://sourciavera.com/es/como-elegir"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los tipos principales de proveedores de verificación e inspección en China?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hay tres comunes: grandes empresas internacionales de inspección, empresas locales chinas de inspección, y agentes de compras o intermediarios individuales. Cambian en idioma de atención, transparencia de precios, forma de cobrar, si usted recibe video, seguimiento continuo y qué tan bien atienden pedidos pequeños."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuándo conviene más una gran empresa internacional de inspección?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cuando necesita informes acreditados, pruebas de laboratorio, certificación de producto o una auditoría contra un esquema reconocido, o cuando su propio cliente exige una empresa global con nombre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la pregunta más importante para cualquier proveedor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "¿Cómo cobra y quién le paga? Si el proveedor recibe algo de la fábrica, o gana más cuando se cierra su pedido, pregunte cómo se mantiene separado de la recomendación que le da."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Debo pedir video y no solo fotos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Las fotos de un informe se pueden seleccionar y reutilizar. Pregunte si recibe el video sin editar que se grabó durante la visita."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué casos SourciaVera no es la mejor opción?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si necesita pruebas de laboratorio, certificados internacionales o un informe de inspección acreditado, una gran empresa de inspección o un laboratorio es una mejor opción."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav>
+  <a href="/es" class="logo">SourciaVera</a>
+  <div class="nav-links">
+    <a href="/es">Inicio</a>
+    <a href="/es/categorias">Categorías</a>
+    <a href="/es#faq-shows">FAQ</a>
+    <a href="/blog/es">Blog</a>
+    <a href="/es/about">Nosotros</a>
+    <a href="/es#contacto">Contacto</a>
+  </div>
+  <div class="nav-right">
+    <a href="/es#contacto" class="nav-cta">Consulte Ahora</a>
+  </div>
+<button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <div class="tag">Cómo Elegir</div>
+  <h1>Cómo elegir un proveedor de verificación<br>o inspección en China</h1>
+  <p>Tres tipos de proveedor comparados en idioma, transparencia de precios, comisiones de las fábricas, video, seguimiento y pedidos pequeños, con las preguntas que debe hacer a cualquiera.</p>
+</div>
+
+<div class="content">
+<div class="wrap">
+<div class="crumbs"><a href="/es">Inicio</a><span>›</span>Cómo elegir</div>
+
+<div class="lead-box"><h2>La respuesta corta</h2>
+<p>No hay un mejor proveedor para todos. La elección correcta depende de lo que necesite: informes acreditados y pruebas de laboratorio, un equipo local que trabaja en chino, o alguien que lleve toda la compra. Compare a los proveedores por <strong>cómo cobran</strong>, si le dan el <strong>video sin editar</strong>, qué tan claro es el <strong>precio</strong> y si atienden <strong>pedidos pequeños</strong>. Esta guía compara tres tipos de proveedor. No nombra a ninguna empresa.</p></div>
+
+<div class="section prose"><div class="section-label">Tres tipos</div><h2>Grandes empresas internacionales, empresas locales y agentes de compras</h2>
+<p>La tabla es una comparación general de tipos, no una calificación de ninguna empresa. Cada empresa es distinta, así que úsela para decidir qué preguntar, no qué suponer.</p>
+<table class="tbl rt"><thead><tr><th></th><th>Gran empresa internacional de inspección</th><th>Empresa local china de inspección</th><th>Agente de compras o intermediario individual</th></tr></thead><tbody><tr><td data-label="">Idioma y comunicación</td><td data-label="Gran empresa internacional de inspección">Los informes suelen estar en inglés; la atención en español cambia según la empresa. Pregunte quién responde sus dudas.</td><td data-label="Empresa local china de inspección">Primero en chino; el inglés varía. El español es raro.</td><td data-label="Agente de compras o intermediario individual">Depende de la persona. A menudo por chat y en inglés.</td></tr><tr><td data-label="">Transparencia de precios</td><td data-label="Gran empresa internacional de inspección">Normalmente una tarifa publicada o una cotización en línea. Revise qué incluye: viaje, informe, reinspección.</td><td data-label="Empresa local china de inspección">Se cotiza por proyecto y puede variar mucho. Pida el precio completo por escrito.</td><td data-label="Agente de compras o intermediario individual">A menudo un porcentaje del pedido o un precio todo incluido, más difícil de comparar.</td></tr><tr><td data-label="">Comisiones de las fábricas</td><td data-label="Gran empresa internacional de inspección">Las empresas grandes suelen publicar políticas de imparcialidad. Pida verlas y pregunte qué acreditaciones aplican a su producto.</td><td data-label="Empresa local china de inspección">Varía. Pregunte directamente.</td><td data-label="Agente de compras o intermediario individual">Algunos agentes cobran comisión a la fábrica o ganan un margen sobre el pedido. Pregunte cómo cobran.</td></tr><tr><td data-label="">Video de la visita</td><td data-label="Gran empresa internacional de inspección">Lo normal son informes con fotos. El video sin editar no siempre se incluye.</td><td data-label="Empresa local china de inspección">Varía. Pregunte antes de contratar.</td><td data-label="Agente de compras o intermediario individual">Varía. Pida video sin editar, no solo fotos.</td></tr><tr><td data-label="">Seguimiento continuo</td><td data-label="Gran empresa internacional de inspección">Normalmente proyecto por proyecto.</td><td data-label="Empresa local china de inspección">Proyecto por proyecto; algunas ofrecen contratos de control de calidad continuo.</td><td data-label="Agente de compras o intermediario individual">La relación continua es el centro del servicio.</td></tr><tr><td data-label="">Pedidos pequeños</td><td data-label="Gran empresa internacional de inspección">Pensadas para programas más grandes. Las tarifas mínimas pueden ser difíciles de justificar en un pedido pequeño.</td><td data-label="Empresa local china de inspección">Más flexibles, según la empresa.</td><td data-label="Agente de compras o intermediario individual">Flexibles, pero el modelo de comisión puede favorecer pedidos más grandes.</td></tr></tbody></table></div>
+
+<div class="section prose"><div class="section-label">Para quién sirve cada una</div><h2>El comprador ideal de cada tipo</h2>
+<h3>Grandes empresas internacionales de inspección</h3>
+<p><strong>Ideal para:</strong> compradores que necesitan informes acreditados, pruebas de laboratorio, certificación de producto o auditorías contra esquemas reconocidos, o cuyo propio cliente exige una empresa global con nombre. También sirven para programas grandes y regulares en muchas fábricas.</p>
+<h3>Empresas locales chinas de inspección</h3>
+<p><strong>Ideal para:</strong> compradores con volumen regular en una región, que tienen un equipo o un contacto que habla chino y pueden manejar la relación por su cuenta.</p>
+<h3>Agentes de compras e intermediarios individuales</h3>
+<p><strong>Ideal para:</strong> compradores que quieren que alguien lleve toda la compra, desde encontrar la fábrica hasta el envío, y que aceptan que quien los asesora también puede ganar con el pedido. Pregunte cómo cobra antes de apoyarse en su consejo.</p></div>
+
+<div class="section prose"><div class="section-label">Dónde encaja SourciaVera</div><h2>Lo que hacemos bien y dónde no somos la mejor opción</h2>
+<p><strong>Buen ajuste:</strong> un equipo independiente de verificación de fábrica e inspección previa al embarque en Guangzhou, que trabaja en español y en inglés, con precios fijos, sin comisión de las fábricas (vea nuestra <a href="/es/imparcialidad">declaración de imparcialidad</a>) y con video real de cada verificación en sitio. Sirve para pedidos pequeños y medianos y para importadores de Latinoamérica que no leen chino. Podemos continuar con las compras si usted lo quiere.</p>
+<p><strong>No es la mejor opción:</strong> si necesita <strong>pruebas de laboratorio, certificados internacionales o un informe de inspección acreditado</strong>, una gran empresa de inspección o un laboratorio acreditado es una mejor opción. No somos un laboratorio de pruebas.</p>
+<p>Si quiere una comparación con nombres de empresas de inspección, lea nuestra <a href="/blog/es/empresas-inspeccion-china-comparativa-latinoamerica">comparativa de 10 empresas de inspección en China para Latinoamérica</a>.</p></div>
+
+<div class="section prose"><div class="section-label">Preguntas</div><h2>Ocho preguntas para cualquier proveedor, incluidos nosotros</h2>
+<ol>
+<li>¿Cómo cobran y quién les paga?</li>
+<li>¿Reciben algo de la fábrica, de cualquier forma?</li>
+<li>¿El precio es el mismo si la fábrica pasa o no pasa?</li>
+<li>¿Recibiré el video sin editar o solo fotos?</li>
+<li>¿Quién va a la fábrica: un empleado suyo o alguien externo?</li>
+<li>¿En qué idioma es el informe y quién responde mis dudas?</li>
+<li>¿Qué no cubren, por ejemplo pruebas de laboratorio o certificados?</li>
+<li>¿Puedo ver un informe de ejemplo antes de pagar? (El nuestro: <a href="/es/informe-de-ejemplo">informe de ejemplo</a>.)</li>
+</ol></div>
+
+<div class="section"><div class="section-label">FAQ</div><h2>Preguntas frecuentes</h2>
+<div class="faq-i"><h3>¿Cuáles son los tipos principales de proveedores de verificación e inspección en China?</h3><p>Hay tres comunes: grandes empresas internacionales de inspección, empresas locales chinas de inspección, y agentes de compras o intermediarios individuales. Cambian en idioma de atención, transparencia de precios, forma de cobrar, si usted recibe video, seguimiento continuo y qué tan bien atienden pedidos pequeños.</p></div>
+<div class="faq-i"><h3>¿Cuándo conviene más una gran empresa internacional de inspección?</h3><p>Cuando necesita informes acreditados, pruebas de laboratorio, certificación de producto o una auditoría contra un esquema reconocido, o cuando su propio cliente exige una empresa global con nombre.</p></div>
+<div class="faq-i"><h3>¿Cuál es la pregunta más importante para cualquier proveedor?</h3><p>¿Cómo cobra y quién le paga? Si el proveedor recibe algo de la fábrica, o gana más cuando se cierra su pedido, pregunte cómo se mantiene separado de la recomendación que le da.</p></div>
+<div class="faq-i"><h3>¿Debo pedir video y no solo fotos?</h3><p>Sí. Las fotos de un informe se pueden seleccionar y reutilizar. Pregunte si recibe el video sin editar que se grabó durante la visita.</p></div>
+<div class="faq-i"><h3>¿En qué casos SourciaVera no es la mejor opción?</h3><p>Si necesita pruebas de laboratorio, certificados internacionales o un informe de inspección acreditado, una gran empresa de inspección o un laboratorio es una mejor opción.</p></div></div>
+
+<div class="cta-panel"><h2>Empiece con poco y profundice si lo necesita</h2>
+<p>Una revisión remota de proveedor de $49 mira primero lo básico. Si el proveedor parece real y el pedido es lo bastante grande, una verificación de fábrica en sitio (desde $449) va a la fábrica y la filma.</p>
+<div class="cta-btns"><a href="/es#remote-check" class="btn-c">Empiece con una Revisión Remota de $49</a><a href="/es/verificacion-fabricas" class="btn-o">Verificación de fábrica en sitio</a></div></div>
+
+</div>
+</div>
+
+<footer>
+  <div class="footer-logo">SourciaVera</div>
+  <div class="footer-links">
+    <a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="3.3em" height="3.3em" fill="#FF0000" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+    <a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" aria-hidden="true"><defs><linearGradient id="igGradFooterEs" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#igGradFooterEs)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="3.3em" height="3.3em" fill="#1877F2" aria-hidden="true"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+    <a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#B92B27" aria-hidden="true"><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a>
+    <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#0A66C2" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+    <a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="3.3em" height="3.3em" fill="#E60023" aria-hidden="true"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a>
+    <a href="https://wa.me/8613688057230" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp" title="Escríbanos por WhatsApp" data-wa-location="footer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#25D366" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><span class="sv-fbr" aria-hidden="true"></span>
+    <a href="/es/privacy">Política de privacidad</a>
+    <a href="/es/terms">Términos de servicio</a>
+    <a href="#" role="button" data-cc="show-preferencesModal">Configuración de cookies</a>
+  </div>
+  <div>© <script>document.write(new Date().getFullYear())</script> SourciaVera · Guangzhou, China · Todos los derechos reservados</div>
+</footer>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: {}
+  },
+  language: {
+    default: 'es',
+    translations: {
+      es: {
+        consentModal: {
+          title: 'Usamos cookies',
+          description: 'Usamos cookies para analizar el tráfico del sitio y mejorar su experiencia.',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          showPreferencesBtn: 'Gestionar Preferencias'
+        },
+        preferencesModal: {
+          title: 'Preferencias de Cookies',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          savePreferencesBtn: 'Guardar Preferencias',
+          closeIconLabel: 'Cerrar',
+          sections: [
+            { title: 'Cookies Necesarias', description: 'Requeridas para el correcto funcionamiento del sitio web.', linkedCategory: 'necessary' },
+            { title: 'Cookies de Análisis', description: 'Nos ayudan a entender cómo los visitantes usan nuestro sitio. Todos los datos son anonimizados.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
+</body>
+</html>
