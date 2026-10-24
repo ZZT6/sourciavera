@@ -115,6 +115,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 @media(max-width:768px){.article-hero{margin-top:-90px;padding-top:4rem}}
 .body-fig{margin:2rem 0}.body-fig img{width:100%;height:auto;display:block;border:1.5px solid var(--border)}.body-fig figcaption{font-size:0.82rem;color:var(--muted);margin-top:0.5rem;line-height:1.45}
 .article-hero.hero-diagram{margin-top:0;padding-top:1.75rem;background:var(--navy);max-width:none;padding-left:max(1.5rem,calc(50% - 520px + 3rem));padding-right:max(1.5rem,calc(50% - 520px + 3rem))}
+/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:4px solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:250px;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
+/*ab2*/.author-box{margin:2.5rem 0 2rem;padding:1.25rem 1.4rem;background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--teal)}.author-box-head{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.8rem}.author-avatar{flex:0 0 auto;width:3.1rem;height:3.1rem;border-radius:50%;background:var(--navy);color:var(--yellow);font-weight:700;font-size:1.05rem;letter-spacing:0.04em;display:flex;align-items:center;justify-content:center}.author-box-name{font-weight:700;color:var(--navy);font-size:1.02rem;line-height:1.3}.author-box-role{font-size:0.85rem;color:var(--muted)}.author-box-list{list-style:none;margin:0 0 0.7rem;padding:0}.author-box-list li{position:relative;padding-left:1.1rem;margin:0.3rem 0;font-size:0.92rem;line-height:1.55;color:var(--navy)}.author-box-list li::before{content:'';position:absolute;left:0;top:0.62em;width:0.45rem;height:0.45rem;background:var(--coral)}.author-box-links{margin:0;font-size:0.9rem}.author-box-links a{color:var(--coral);text-decoration:underline}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -130,6 +132,23 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 <link rel="alternate" hreflang="en" href="https://sourciavera.com/blog/china-factory-inspection-cost">
 <link rel="alternate" hreflang="es" href="https://sourciavera.com/blog/es/costo-inspeccion-fabrica-china">
 <link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/china-factory-inspection-cost">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Founder",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -140,6 +159,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <a href="/categories" data-en="Categories" data-es="Categorías">Categories</a>
     <a href="/#faq" data-en="FAQ" data-es="FAQ">FAQ</a>
     <a href="/blog" data-en="Blog" data-es="Blog">Blog</a>
+    <div class="nav-dd"><a href="/how-to-choose" class="nav-dd-t" aria-haspopup="true">Resources</a><div class="nav-dd-menu"><a href="/inspection-standards">Inspection standards</a><a href="/sample-report">Sample report</a><a href="/impartiality">Impartiality</a><a href="/how-to-choose">How to choose a provider</a></div></div>
     <a href="/#contact" data-en="Contact" data-es="Contacto">Contact</a>
   </div>
   <div class="nav-right">
@@ -259,6 +279,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <h2>How Our Team Inspects in Guangzhou</h2>
     <p>Instead of a generic third-party lab report, our team does local on-site inspection in Guangzhou, in English or Spanish, with a full video record of the check — so you see every unit reviewed, not just a statistical sampling summary. Pre-shipment inspection: <strong>$399/man-day</strong>. Factory audit: <strong>$499/man-day</strong>. Factory verification visit: <strong>$449</strong>.</p>
 
+  <p>If you plan to inspect before shipment, our <a href="/inspection-standards">inspection standards</a> explain sampling, defect classes and limits, and the <a href="/sample-report">sample report</a> shows how the findings are presented.</p>
+
     <h2>Summary: A Few Hundred Dollars Buys You the Chance to Say "Fix It First"</h2>
     <p>Many buyers cut inspection first when a budget gets tight. But the problems that hurt most are the ones nobody looked for, and once the container is on the water you're negotiating from a weak position. A few hundred dollars before shipment buys the one thing you can't buy afterward: the chance to say "fix it first."</p>
     <p>To sum up, for almost any order worth importing, inspection is the cheapest line in the budget. If you cut it, the realistic outcome is a shipment that fails once it has left China, with cash tied up and the next order delayed. Our team inspects in Guangzhou in English or Spanish with a full video record, per man-day or as part of our procurement service.</p>
@@ -275,7 +297,13 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   </div>
 
 
-<div class="cta-box" style="text-align:left">
+  <aside class="author-box" aria-label="About the author">
+    <div class="author-box-head"><span class="author-avatar" aria-hidden="true">ZP</span><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Founder, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>From Guangzhou, with long hands-on experience in factories across Guangdong and neighbouring provinces</li><li>Years of experience in foreign trade and international advertising</li><li>Works with a team that covers procurement, transport and logistics, and foreign trade</li><li>Films every on-site factory verification and gives the real video to the client</li></ul>
+    <p class="author-box-links"><a href="/about">About the author</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box" style="text-align:left">
   <h3 style="text-align:center">Not sure if your supplier is who they claim to be?</h3>
   <p>SourciaVera verifies Chinese factories on the ground — no stock photos, no self-reported claims. We visit in person, check business licenses, and confirm production capability before you ever send a deposit.</p>
   <p>Whether you need a one-time factory verification, a full audit, or ongoing supervision during production, we handle it in English and Spanish — so nothing gets lost in translation.</p>
@@ -328,6 +356,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#0A66C2" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
     <a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="3.3em" height="3.3em" fill="#E60023" aria-hidden="true"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a>
     <a href="https://wa.me/8613688057230" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" data-wa-location="footer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#25D366" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><span class="sv-fbr" aria-hidden="true"></span>
+    <a href="/impartiality">Impartiality</a>
     <a href="/privacy">Privacy Policy</a>
     <a href="/terms">Terms of Service</a>
     <a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a>
