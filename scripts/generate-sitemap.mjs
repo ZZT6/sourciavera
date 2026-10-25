@@ -97,10 +97,25 @@ function lastContentCommitDate(rel) {
   const out = git(['log', '-n', '40', '--format=%H %cs', '--', rel]) || '';
   for (const line of out.split('\n')) {
     const [sha, date] = line.trim().split(' ');
-    if (sha && !IGNORED_COMMITS.some((pre) => sha.startsWith(pre))) return date;
+    if (!sha || IGNORED_COMMITS.some((pre) => sha.startsWith(pre))) continue;
+    if (IGNORED_PAGE_COMMITS.has(sha.slice(0, 7) + ' ' + rel)) continue;
+    return date;
   }
   return null;
 }
+
+// A commit that was a content change for some pages and plumbing for others (for example one commit that rewrote the opening
+// answer of 59 pages and only changed a closing template or link text on 41 more) is skipped for the second group only:
+// scripts/lastmod-ignore-pages.txt, one "SHA-prefix path/relative/to/repo.html" per line, '#' starts a comment.
+const IGNORE_PAGES_FILE = path.join(ROOT, 'scripts', 'lastmod-ignore-pages.txt');
+const IGNORED_PAGE_COMMITS = new Set(
+  fs.existsSync(IGNORE_PAGES_FILE)
+    ? fs.readFileSync(IGNORE_PAGES_FILE, 'utf8').split(/\r?\n/).map((l) => l.replace(/#.*/, '').trim()).filter(Boolean).map((l) => {
+        const [sha, ...rest] = l.split(/\s+/);
+        return sha.toLowerCase().slice(0, 7) + ' ' + rest.join(' ');
+      })
+    : [],
+);
 
 function today() {
   const d = new Date();

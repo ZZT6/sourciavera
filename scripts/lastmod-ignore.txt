@@ -15,3 +15,5 @@ b644aec  # author box avatar + Person image, site-wide chrome (not a content cha
 
 555f87ac58aa36002320541b123c56806dff3494  # batch 3 plumbing 2026-10-24: author box spelling and avatar alt, no content change
 f5a7ecbc7ff34941fead9d371119d2a1a115424f  # batch 4 2026-10-24: review_by HTML comments only, no reader-visible change
+3bf7cd38f7398174577ff26c002fd7bdba32899d  # follow-up 2026-10-25: AQL/man-day glossary links and MVE verified-note wording, no substantive change
+f48af6b866c83dc1fe3492f99e2725b027121272  # follow-up 2026-10-25: date label alignment for pages already dated Oct 24 by their batch 2 content commit
