@@ -43,6 +43,10 @@
 - [Informe de Ejemplo](https://sourciavera.com/es/informe-de-ejemplo): Estructura del informe de verificación de fábrica, con ejemplos marcados
 - [Impartiality Statement](https://sourciavera.com/impartiality): How SourciaVera is paid: no factory commissions, fixed prices, real video of every on-site verification
 - [Declaración de Imparcialidad](https://sourciavera.com/es/imparcialidad): Cómo cobra SourciaVera, sin comisiones de fábricas y con precios fijos
+- [Press centre](https://sourciavera.com/press): Data briefs with citable figures, downloadable charts, spokesperson profile and press contact
+- [Centro de prensa](https://sourciavera.com/es/prensa): Informes de datos con cifras citables, gráficas descargables, perfil del vocero y contacto de prensa
+- [Auto parts from China to Mexico: the monthly flow held from February to July 2026](https://sourciavera.com/data/mexico-auto-parts-imports-china-tariff-reform-2026): Data brief on Mexico's HS 8708 imports from China (UN Comtrade), the December-January spike and what the data does not say
+- [Autopartes de China a México: el flujo mensual se mantuvo de febrero a julio de 2026](https://sourciavera.com/es/datos/autopartes-china-mexico-importaciones-reforma-arancelaria-2026): Informe de datos sobre las importaciones mexicanas de la partida 8708 desde China (UN Comtrade), el pico de diciembre y enero y lo que los datos no dicen
 - [Import Glossary: Mexican and US Customs Terms](https://sourciavera.com/import-glossary): Definitions of pedimento, MVE, VUTCE, E15, antidumping duties, de minimis and Entry Types 11, 13 and 86, each with its official source
 - [Glosario de Importación: Aduana en México y EE. UU.](https://sourciavera.com/es/glosario-importacion): Definiciones de pedimento, MVE, VUTCE, E15, cuotas compensatorias, de minimis y Entry Types 11, 13 y 86, cada una con su fuente oficial
 - [How to Choose a Verification Provider](https://sourciavera.com/how-to-choose): Three types of China verification and inspection providers compared, with questions to ask

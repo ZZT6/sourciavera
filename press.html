@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (location.hostname === 'sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-X40LT2MS4X');
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+  }
+</script>
+<script src="/js/sv-events.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SourciaVera Press Centre: Data and Contact</title>
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Open data on China-to-Mexico imports, downloadable charts, spokesperson profile and press contact for SourciaVera. You may cite the data with attribution.">
+<link rel="canonical" href="https://sourciavera.com/press">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/press">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/es/prensa">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/press">
+<meta property="og:title" content="SourciaVera Press Centre: Data and Contact">
+<meta property="og:description" content="Open data on China-to-Mexico imports, downloadable charts, spokesperson profile and press contact for SourciaVera. You may cite the data with attribution.">
+<meta property="og:url" content="https://sourciavera.com/press">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sourciavera.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://sourciavera.com/press#page",
+  "name": "Press centre",
+  "description": "Open data on China-to-Mexico imports, downloadable charts, spokesperson profile and press contact for SourciaVera. You may cite the data with attribution.",
+  "inLanguage": "en",
+  "url": "https://sourciavera.com/press",
+  "publisher": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "hasPart": [
+    {
+      "@type": "Dataset",
+      "@id": "https://sourciavera.com/data/mexico-auto-parts-imports-china-tariff-reform-2026#dataset"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sourciavera.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Press centre",
+      "item": "https://sourciavera.com/press"
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+a{text-decoration:none}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem;flex-wrap:wrap}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic}
+.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a{color:rgba(255,255,255,0.6)}.nav-links a:hover{color:var(--yellow)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
+.article-hero-img{width:100%;overflow:hidden}
+.article-hero-img img{width:100%;height:auto;display:block}
+.article-hero-img{position:relative}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
+.article-hero.article-hero-noimg{margin-top:0;padding-top:2.5rem}
+.article-hero{position:relative;background:linear-gradient(to top,rgba(13,34,64,0.98) 30%,rgba(13,34,64,0.55) 75%,rgba(13,34,64,0) 100%);padding:6rem 3rem 2rem;max-width:1040px;margin:-180px auto 0}
+.article-tag{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:1rem;font-weight:500}
+.article-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;font-weight:700;color:white;margin-bottom:1rem}
+.article-meta{font-size:0.82rem;color:rgba(255,255,255,0.45)}
+.article-body{max-width:1040px;margin:0 auto;padding:3rem}
+.article-body h2{font-size:1.4rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;padding-left:1rem;border-left:4px solid var(--coral)}
+.article-body h3{font-size:1.05rem;font-weight:600;color:var(--navy);margin:1.8rem 0 0.6rem}
+.article-body p{color:#333;margin-bottom:1.2rem;font-size:0.97rem;line-height:1.85}
+.article-body ul,.article-body ol{margin:0.8rem 0 1.2rem 1.5rem;color:#333;font-size:0.97rem;line-height:1.85}
+.article-body li{margin-bottom:0.5rem}
+.article-body strong{color:var(--navy);font-weight:600}
+.article-body a:not(.cta-btn){color:var(--coral);font-weight:600}
+.article-body .fine-print{font-size:0.78rem;color:var(--muted);margin-top:1.4rem}
+.article-body .verified-note{font-size:0.88rem;color:var(--muted);margin:-0.4rem 0 1.4rem}
+.article-body table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem}
+.article-body th{background:var(--navy);color:white;padding:0.75rem 1rem;text-align:left;font-weight:500;font-size:0.82rem;letter-spacing:0.05em}
+.article-body td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top}
+.article-body tr:nth-child(even) td{background:var(--light)}
+.cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
+.cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
+.real-case{background:var(--light);border-left:4px solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
+.real-case strong{color:var(--teal);display:block;margin-bottom:0.5rem;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase}
+.warn-box{background:#FFF4E5;border-left:4px solid #E8A23C;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:0.92rem;color:#5c4620}
+.back-link{display:inline-block;color:rgba(255,255,255,0.5);font-size:0.85rem;margin-bottom:1rem;letter-spacing:0.05em}
+.back-link::before{content:'← '}
+.lang-alt{display:inline-block;color:rgba(255,255,255,0.55);font-size:0.78rem;margin-bottom:1rem;margin-left:1rem;letter-spacing:0.08em;border:1px solid rgba(255,255,255,0.2);padding:0.18rem 0.55rem;text-transform:uppercase;font-weight:600}
+.lang-alt:hover{color:white;border-color:rgba(255,255,255,0.5)}
+.related{background:var(--light);padding:3rem;max-width:1040px;margin:0 auto}
+.related h3{font-size:0.78rem;font-weight:600;color:var(--navy);margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.08em}
+.related-links{display:flex;flex-direction:column;gap:0.6rem}
+.related-links a{color:var(--coral);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:0.6rem}
+.related-links a:hover{color:var(--navy)}
+.article-footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:2rem 3rem;font-size:0.82rem}
+.article-footer a{color:var(--yellow)}
+nav{position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
+.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger:hover span{background:white}
+@media(max-width:768px){footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
+html,body{overflow-x:clip;max-width:100%}
+nav{padding:1rem 1.5rem}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}
+nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}
+nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}
+nav.nav-open .nav-links a:last-child{border-bottom:none}
+.article-hero{padding:3rem 1.5rem 2rem}
+.article-body{padding:2rem 1.5rem}
+.related{padding:2rem 1.5rem}
+.cta-btns{flex-direction:column;align-items:center}
+}
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+.footer-links{display:flex;gap:1.5rem;align-items:center}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--yellow)}
+@media(max-width:768px){.article-hero{margin-top:-90px;padding-top:4rem}}
+@media(max-width:768px){table th,table td{overflow-wrap:anywhere}}
+.body-fig{margin:2rem 0}.body-fig img{width:100%;height:auto;display:block;border:1.5px solid var(--border)}.body-fig figcaption{font-size:0.82rem;color:var(--muted);margin-top:0.5rem;line-height:1.45}
+.article-hero.hero-diagram{margin-top:0;padding-top:1.75rem;background:var(--navy);max-width:none;padding-left:max(1.5rem,calc(50% - 520px + 3rem));padding-right:max(1.5rem,calc(50% - 520px + 3rem))}
+/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:4px solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:250px;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
+/*ab2*/.author-box{margin:2.5rem 0 2rem;padding:1.25rem 1.4rem;background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--teal)}.author-box-head{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.8rem}.author-avatar{flex:0 0 auto;width:3.1rem;height:3.1rem;border-radius:50%;object-fit:cover;background:var(--navy);display:block}.author-box-name{font-weight:700;color:var(--navy);font-size:1.02rem;line-height:1.3}.author-box-role{font-size:0.85rem;color:var(--muted)}.author-box .author-box-list{list-style:none;margin:0 0 0.7rem;padding:0}.author-box .author-box-list li{position:relative;padding-left:1.1rem;margin:0.3rem 0;font-size:0.92rem;line-height:1.55;color:var(--navy)}.author-box .author-box-list li::before{content:'';position:absolute;left:0;top:0.62em;width:0.45rem;height:0.45rem;background:var(--coral)}.author-box-links{margin:0;font-size:0.9rem}.author-box-links a{color:var(--coral);text-decoration:underline}
+.article-body .series-box{background:var(--light);border-left:3px solid var(--navy);padding:1rem 1.3rem;margin:2rem 0}.article-body .series-box h3{font-size:0.8rem;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.6rem}.article-body .series-box ul{margin:0;padding-left:1.1rem}.article-body .series-box li{margin:0.3rem 0;font-size:0.95rem}
+.dbrief code,.dbrief td,.dbrief th,.dbrief li,.dbrief .cite-box{overflow-wrap:anywhere}.dbrief table.mt{table-layout:fixed}.dbrief .data-meta{font-size:0.9rem;color:var(--muted);margin:0 0 1.2rem}.dbrief ol.kfind{list-style:none;counter-reset:k;margin:1.2rem 0 2rem;padding:0}.dbrief ol.kfind>li{counter-increment:k;position:relative;padding:1rem 1rem 1rem 3.4rem;margin:0 0 0.9rem;background:var(--light);border-left:4px solid var(--coral)}.dbrief ol.kfind>li:before{content:counter(k);position:absolute;left:1rem;top:0.9rem;width:1.7rem;height:1.7rem;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:0.95rem;text-align:center;line-height:1.7rem}.dbrief ol.kfind .big{display:block;font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:0.25rem}.dbrief ol.kfind .src{display:block;font-size:0.82rem;color:var(--muted);margin-top:0.4rem}.dbrief figure.dfig{margin:2rem 0}.dbrief figure.dfig img{width:100%;height:auto;display:block;border:1.5px solid var(--border);background:#fff}.dbrief figure.dfig figcaption{font-size:0.84rem;color:var(--muted);margin-top:0.5rem;line-height:1.5}.dbrief .cite-box{background:var(--light);border:1.5px solid var(--border);padding:1.2rem 1.4rem;margin:2rem 0}.dbrief .cite-box h2{margin-top:0}.dbrief .cite-box code{display:block;white-space:normal;font-size:0.88rem;background:#fff;padding:0.7rem 0.9rem;border:1px solid var(--border);margin:0.6rem 0}.dbrief .dl-list{list-style:none;padding:0;margin:0.6rem 0 0}.dbrief .dl-list li{margin:0.35rem 0}.dbrief blockquote.pq{border-left:4px solid var(--teal);margin:1.8rem 0;padding:0.4rem 0 0.4rem 1.2rem;font-size:1.08rem;color:var(--navy)}.dbrief blockquote.pq cite{display:block;font-size:0.88rem;color:var(--muted);margin-top:0.5rem;font-style:normal}.dbrief table.mt{border-collapse:collapse;width:100%;margin:1rem 0;font-size:0.93rem}.dbrief table.mt th,.dbrief table.mt td{border:1px solid var(--border);padding:0.5rem 0.7rem;text-align:left;vertical-align:top}.dbrief table.mt th{background:var(--light);width:28%}.press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1rem 0 2rem}.press-grid a{display:block;border:1.5px solid var(--border);padding:0.9rem;text-decoration:none;color:var(--navy);background:#fff}.press-grid img{width:100%;height:auto;display:block;margin-bottom:0.5rem}.press-grid span{font-size:0.85rem;color:var(--muted);display:block}
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Founder",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+</head>
+<body>
+<nav>
+  <a class="logo" href="/">SourciaVera</a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/blog" class="active">Blog</a>
+    <a href="/about">About</a>
+    <div class="nav-dd"><a href="/how-to-choose" class="nav-dd-t" aria-haspopup="true">Resources</a><div class="nav-dd-menu"><a href="/inspection-standards">Inspection standards</a><a href="/sample-report">Sample report</a><a href="/impartiality">Impartiality</a><a href="/how-to-choose">How to choose a provider</a></div></div>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/#contact" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+
+<div class="article-hero hero-diagram">
+  <a href="/blog" class="back-link">Back to Blog</a><a href="/es/prensa" class="lang-alt">ES</a>
+  <div class="article-tag">Press</div>
+  <h1>Press centre</h1>
+</div>
+
+<div class="article-body dbrief">
+
+  <p><strong>For journalists:</strong> here are SourciaVera's data briefs, with figures you can cite, downloadable charts and a direct contact. <strong>You may cite this data by naming SourciaVera as the source.</strong></p>
+
+  <h2>Data briefs</h2>
+  <ul>
+    <li><a href="/data/mexico-auto-parts-imports-china-tariff-reform-2026"><strong>Heading 8708 (auto parts) from China to Mexico: −0.8% from February to July 2026</strong></a> <span class="data-meta">Oct 25, 2026</span><br>US$2,449 million from February to July 2026, heading 8708, source UN Comtrade; the December–January spike and what the data does not say.</li>
+    </ul>
+
+  <h2>Press releases</h2>
+  <ul>
+    <li><strong>Heading 8708 from China to Mexico: six months after the tariff reform, imports have not fallen</strong> <span class="data-meta">Oct 25, 2026</span><br>Summary: from February to July 2026 Mexico imported US$2,449 million of auto parts from China, −0.8% against 2025. The December 2025–January 2026 spike (US$2,103 million) is concentrated in two subheadings. Full text of the release: on request, by writing to info@sourciavera.com.</li>
+    </ul>
+
+  <h2>Charts and data to download</h2>
+  <div class="press-grid"><a href="/assets/press/mexico-auto-parts-china-fig1-en.png" download><img src="/assets/press/mexico-auto-parts-china-fig1-en.png" alt="" width="1155" height="616" loading="lazy"><span>Chart 1 (PNG)</span></a><a href="/assets/press/mexico-auto-parts-china-fig2-en.png" download><img src="/assets/press/mexico-auto-parts-china-fig2-en.png" alt="" width="1155" height="616" loading="lazy"><span>Chart 2 (PNG)</span></a><a href="/assets/press/mexico-auto-parts-china-fig3-en.png" download><img src="/assets/press/mexico-auto-parts-china-fig3-en.png" alt="" width="1155" height="616" loading="lazy"><span>Chart 3 (PNG)</span></a></div>
+  <ul class="dl-list"><li><a href="/assets/press/mexico-8708-imports-from-china-monthly-2024-2026.csv" download>Full monthly series, auto parts (CSV)</a></li></ul>
+
+  <h2>Spokesperson</h2>
+  <p><strong>Zhang Peng (Miguel Lopez), founder of SourciaVera.</strong> From Guangzhou, with long hands-on factory experience in Guangdong and the neighboring provinces. Years of experience in foreign trade and international advertising. Records every on-site factory verification and delivers the real video to the client. <a href="/about">About the author</a> · <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+
+  <h2>Logo and images</h2>
+  <p>SourciaVera uses its name as its logo. Available files: <a href="/favicon-192x192.png" download>192×192 icon (PNG)</a> · <a href="/og-image.png" download>brand image 1200×630 (PNG)</a> · <a href="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" download>spokesperson photo (WebP)</a>.</p>
+
+  <h2>Contact and use of the data</h2>
+  <p><a href="mailto:info@sourciavera.com">info@sourciavera.com</a> · <a href="https://wa.me/8613688057230">WhatsApp +86 136 8805 7230</a>. We answer requests for the full data and for interviews. If you would rather not receive emails from SourciaVera, just reply and we won't write again.</p><p>Each brief states its sources and its limits. The figures are not a substitute for advice from a customs broker.</p>
+</div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">SourciaVera</div>
+  <div class="footer-links">
+    <a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="3.3em" height="3.3em" fill="#FF0000" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+    <a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" aria-hidden="true"><defs><linearGradient id="igGradFooter" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#igGradFooter)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="3.3em" height="3.3em" fill="#1877F2" aria-hidden="true"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+    <a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#B92B27" aria-hidden="true"><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a>
+    <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#0A66C2" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+    <a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="3.3em" height="3.3em" fill="#E60023" aria-hidden="true"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a>
+    <a href="https://wa.me/8613688057230" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" data-wa-location="footer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#25D366" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><span class="sv-fbr" aria-hidden="true"></span>
+    <a href="/press">Press</a>
+    <a href="/impartiality">Impartiality</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a>
+  </div>
+  <div>© <script>document.write(new Date().getFullYear())</script> SourciaVera · Guangzhou, China · All rights reserved</div>
+</footer>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
+</body>
+</html>

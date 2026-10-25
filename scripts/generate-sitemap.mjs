@@ -62,6 +62,8 @@ const RULES = [
   [/^\/(es\/)?(inspection-standards|normas-de-inspeccion|sample-report|informe-de-ejemplo|impartiality|imparcialidad|how-to-choose|como-elegir)$/, 'monthly', '0.8'],
   [/^\/(es\/)?(supply-chain-supervision-china|supervision-fabricas-china)$/, 'monthly', '0.8'],
   [/^\/blog\/(es\/)?(glossary-factory-verification-terms|glosario-terminos-verificacion)$/, 'monthly', '0.7'],
+  [/^\/(es\/)?(press|prensa)$/, 'monthly', '0.7'],
+  [/^\/(data|es\/datos)\/[^/]+$/, 'monthly', '0.8'],
   [/^\/blog\/(es\/)?[^/]+$/, 'monthly', '0.8'],
 ];
 const DEFAULT_RULE = ['monthly', '0.5'];
