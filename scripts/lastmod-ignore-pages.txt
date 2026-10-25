@@ -41,3 +41,33 @@
 4a310da blog/mexican-auto-parts-terminology-guide.html
 4a310da blog/oem-vs-odm-auto-parts-private-label-china.html
 4a310da blog/things-to-check-before-paying-supplier-deposit.html
+
+# image / alt / layout / footer-link only commits (checked on the diff), so lastmod follows dateModified (2026-10-25)
+26d3062 blog/alibaba-sample-different-from-bulk-order.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/avoid-alibaba-scams-mexican-buyer.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/carbon-fiber-auto-parts-sourcing-checklist.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/case-study-byd-seagull-spare-wheel-offset.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/chinese-factory-visitor-playbook.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+8425547 blog/direct-alibaba-or-sourciavera-transparent-sourcing.html  # 2026-10-18 New pair (2026-10-18): cargo insurance on a shipment from China - who 
+26d3062 blog/es/5-cosas-videollamada-revela-fotos-no.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/agente-independiente-vs-empresa-sourcing.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/caso-verificacion-llanta-refaccion-byd-seagull.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/como-reciben-fabricas-chinas-a-compradores.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/estafa-alibaba.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/evitar-estafas-alibaba-comprador-mexicano.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/importar-autopartes-led-china-guia.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/lista-verificacion-piezas-fibra-carbono-china.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/es/muestra-perfecta-pedido-masivo-defectuoso.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+8425547 blog/es/sourcing-transparente-alibaba-o-sourciavera.html  # 2026-10-18 New pair (2026-10-18): cargo insurance on a shipment from China - who 
+26d3062 blog/es/trading-company-vs-fabrica.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+4979dc4 blog/es/una-persona-en-china-decisiones-de-importacion.html  # 2026-10-16 Fix empty /blog for Spanish-language browsers: the English blog index 
+136ff71 blog/es/una-persona-en-china-decisiones-de-importacion.html  # 2026-10-16 Photo heroes from owner-provided photos (11 articles, EN+ES; featured 
+ef7be12 blog/es/una-persona-en-china-decisiones-de-importacion.html  # 2026-10-16 Blog action area: add a secondary WhatsApp button (outline style) to e
+33832c5 blog/es/una-persona-en-china-decisiones-de-importacion.html  # 2026-10-16 Blog structure batch B: summary + topical buttons, why sections (10 EN
+26d3062 blog/got-scammed-on-alibaba.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/independent-agent-vs-sourcing-company.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+136ff71 blog/one-person-on-the-ground-in-china-import-decisions.html  # 2026-10-16 Photo heroes from owner-provided photos (11 articles, EN+ES; featured 
+ef7be12 blog/one-person-on-the-ground-in-china-import-decisions.html  # 2026-10-16 Blog action area: add a secondary WhatsApp button (outline style) to e
+26d3062 blog/sourcing-led-auto-parts-from-china.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/trading-company-vs-factory.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+26d3062 blog/video-call-vs-factory-photos.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
