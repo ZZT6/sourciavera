@@ -22,9 +22,9 @@ function walk(dir, out) {
 function build(lang) {
   const l = cfg[lang];
   const founder = { ...cfg.founder, jobTitle: l.jobTitle };
-  const { '@context': ctx, '@type': type, '@id': id, name, url, logo, address, areaServed, knowsLanguage, email, telephone, priceRange, currenciesAccepted, sameAs } = cfg.common;
+  const { '@context': ctx, '@type': type, '@id': id, name, foundingDate, url, logo, address, areaServed, knowsLanguage, email, telephone, priceRange, currenciesAccepted, sameAs } = cfg.common;
   return {
-    '@context': ctx, '@type': type, '@id': id, name, url, logo, description: l.description, address, areaServed,
+    '@context': ctx, '@type': type, '@id': id, name, foundingDate, url, logo, description: l.description, address, areaServed,
     availableLanguage: l.availableLanguage, knowsLanguage, email, telephone, priceRange, currenciesAccepted,
     serviceType: l.serviceType, founder, sameAs,
   };
