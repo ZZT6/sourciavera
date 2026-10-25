@@ -18,3 +18,5 @@ f5a7ecbc7ff34941fead9d371119d2a1a115424f  # batch 4 2026-10-24: review_by HTML c
 3bf7cd38f7398174577ff26c002fd7bdba32899d  # follow-up 2026-10-25: AQL/man-day glossary links and MVE verified-note wording, no substantive change
 f48af6b866c83dc1fe3492f99e2725b027121272  # follow-up 2026-10-25: date label alignment for pages already dated Oct 24 by their batch 2 content commit
 ae286204402edb7e6af35d1c9201b1382c3bb45d  # follow-up 2026-10-25: date label for the 2026-10-15 creation date on the one-person pair, lastmod stays 2026-10-15
+
+10de96a  # 2026-10-25: small-buyer CTA cards, service-page links, title/meta rewrite on 4 pages, Organization sameAs and home footer links: no change to article facts
