@@ -85,6 +85,7 @@
 
 ## Blog — China Sourcing Guides (English)
 
+- [Paid IEEPA Tariffs? How U.S. Importers Claim Refunds](https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check): What CBP's IEEPA Duty Refunds page and two law-firm notes say about CAPE refund claims, the three phases, the importer of record and the Court of International Trade litigation, and what a US buyer from China should check
 - [10 China Inspection Companies Compared for Latin America](https://sourciavera.com/blog/china-inspection-companies-compared-latin-america): Comparison of ten inspection and verification companies in China for Latin American importers, with published prices, language, accreditations, limitations and who each is best for
 - [The $480,000 Order That Nearly Bankrupted an Exporter](https://sourciavera.com/blog/big-order-supplier-capacity-risk-china): A true story of an exporter who accepted an order ten times his usual size, with the numbers, and five checks a buyer can make on price, capacity, subcontracting, inspections and payments
 - [China–US Freight, October 2026: Ocean Flat, Air Rising](https://sourciavera.com/blog/china-us-freight-late-october-2026-ocean-flat-air-rising-how-to-book): What Xeneta and Flexport report about China-to-US ocean spot rates, blank sailings and air freight at the start of peak season in October 2026, and what a US buyer should confirm with the supplier and forwarder
@@ -154,6 +155,7 @@
 
 ## Blog — Guías de Abastecimiento desde China (Español)
 
+- [Baterías de China: Termina el Reembolso de IVA en 2027](https://sourciavera.com/blog/es/china-baterias-reembolso-iva-exportacion-6-por-ciento-cero-enero-2027-compradores): Lo que dicen el Anuncio No. 2 de 2026 del Ministerio de Finanzas de China y una nota de KPMG sobre el reembolso de IVA a la exportación de baterías (6% hasta el 31 de diciembre de 2026, cero desde el 1 de enero de 2027) y qué debe pedir el comprador
 - [10 Empresas de Inspección en China Comparadas (2026)](https://sourciavera.com/blog/es/empresas-inspeccion-china-comparativa-latinoamerica): Comparativa de diez empresas de inspección y verificación en China para importadores de Latinoamérica, con precios publicados, idioma, acreditaciones, límites y para quién es mejor cada una
 - [El Pedido de 480,000 USD Que Casi Quiebra a un Exportador](https://sourciavera.com/blog/es/pedido-grande-capacidad-real-proveedor-china): Historia real de un exportador que aceptó un pedido diez veces mayor al habitual, con los números, y cinco revisiones que el comprador puede hacer sobre precio, capacidad, subcontratación, inspecciones y pagos
 - [Cuotas a Cerámica China en México: Qué Hacer en la Revisión](https://sourciavera.com/blog/es/mexico-revision-cuotas-antidumping-ceramica-china-que-hacer-importadores): Lo que reportan El CEO e IDC Online sobre el inicio del examen de vigencia de las cuotas compensatorias a los recubrimientos cerámicos de China en México, qué se sabe y qué debe pedir el comprador al proveedor

@@ -71,3 +71,6 @@ ef7be12 blog/one-person-on-the-ground-in-china-import-decisions.html  # 2026-10-
 26d3062 blog/sourcing-led-auto-parts-from-china.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
 26d3062 blog/trading-company-vs-factory.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
 26d3062 blog/video-call-vs-factory-photos.html  # 2026-10-17 Photo heroes for 30 more articles so every page of the blog index has 
+5a13070 blog/can-you-order-from-alibaba-in-the-us.html  # 2026-10-25 link-only: link to the IEEPA refunds article
+5a13070 blog/us-cbp-proposed-rule-low-value-imports-arrival-filing-bond-china-suppliers.html  # 2026-10-25 link-only: link to the IEEPA refunds article
+5a13070 blog/es/china-reembolso-iva-exportacion-vehiculos-electricos-9-por-ciento-abril-2027.html  # 2026-10-25 link-only: link to the battery rebate article

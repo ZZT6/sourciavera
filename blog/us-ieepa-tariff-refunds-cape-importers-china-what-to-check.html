@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  if (location.hostname === 'sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-X40LT2MS4X');
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+  }
+</script>
+<script src="/js/sv-events.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paid IEEPA Tariffs? How U.S. Importers Claim Refunds</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="CBP's CAPE tool processes IEEPA duty refunds for importers of record. Which entries qualify, who gets paid and what to ask suppliers and forwarders.">
+<link rel="canonical" href="https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check">
+<meta property="og:title" content="Paid IEEPA Tariffs? How U.S. Importers Claim Refunds">
+<meta property="og:description" content="CBP's CAPE tool processes IEEPA duty refunds for importers of record. Which entries qualify, who gets paid and what to ask suppliers and forwarders.">
+<meta property="og:url" content="https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/us-ieepa-tariff-refunds-cape-importers-china-what-to-check-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/us-ieepa-tariff-refunds-cape-importers-china-what-to-check-photo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check#article",
+  "headline": "Paid IEEPA Tariffs? How U.S. Importers Claim Refunds",
+  "description": "CBP's CAPE tool processes IEEPA duty refunds for importers of record. Which entries qualify, who gets paid and what to ask suppliers and forwarders.",
+  "inLanguage": "en",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "url": "https://sourciavera.com/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/us-ieepa-tariff-refunds-cape-importers-china-what-to-check-photo.webp",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "mainEntityOfPage": "https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check",
+  "keywords": "IEEPA tariff refunds CAPE, CBP CAPE declaration importer of record, IEEPA refund Phase 3 Court of International Trade, importing from China refund tariffs, CBP Form 4811 refund, ACE portal refund bank information"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sourciavera.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog"},
+    {"@type": "ListItem", "position": 3, "name": "Paid IEEPA Tariffs? How U.S. Importers Claim Refunds", "item": "https://sourciavera.com/blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is CAPE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CAPE is the function in CBP's ACE system through which importers of record and brokers request refunds of IEEPA duties, consolidated rather than entry by entry. CBP is adding it in phases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who can file a CAPE declaration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only the importer of record or the licensed customs broker who filed the entries, according to CBP's fact sheet. Refunds are paid by ACH to the importer of record or the party it designated on CBP Form 4811."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a refund take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBP says valid refunds are generally issued within 60 to 90 days after a declaration is accepted, unless a compliance concern requires more review. Some entries, such as suspended or extended ones, are refunded at liquidation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I claim a refund if I only bought the goods from a Chinese supplier?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you were the importer of record or you can arrange with the importer of record to claim. Check who was named on your entries; with delivered terms or a forwarder acting as importer it may not have been you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to sue at the Court of International Trade?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CBP says you do not need a case for Phase 1 entries and gives no legal guidance for other entries. For Phase 3, law-firm summaries say CBP limited access to plaintiffs. Ask your attorney."
+      }
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#E8472A;--yellow:#F5C842;--teal:#00897B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+a{text-decoration:none}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem;flex-wrap:wrap}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic}
+.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a{color:rgba(255,255,255,0.6)}.nav-links a:hover{color:var(--yellow)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
+.article-hero-img{width:100%;overflow:hidden}
+.article-hero-img img{width:100%;height:auto;display:block}
+.article-hero-img{position:relative}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
+.article-hero.article-hero-noimg{margin-top:0;padding-top:2.5rem}
+.article-hero{position:relative;background:linear-gradient(to top,rgba(13,34,64,0.98) 30%,rgba(13,34,64,0.55) 75%,rgba(13,34,64,0) 100%);padding:6rem 3rem 2rem;max-width:1040px;margin:-180px auto 0}
+.article-tag{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:1rem;font-weight:500}
+.article-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;font-weight:700;color:white;margin-bottom:1rem}
+.article-meta{font-size:0.82rem;color:rgba(255,255,255,0.45)}
+.article-body{max-width:1040px;margin:0 auto;padding:3rem}
+.article-body h2{font-size:1.4rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;padding-left:1rem;border-left:4px solid var(--coral)}
+.article-body h3{font-size:1.05rem;font-weight:600;color:var(--navy);margin:1.8rem 0 0.6rem}
+.article-body p{color:#333;margin-bottom:1.2rem;font-size:0.97rem;line-height:1.85}
+.article-body ul,.article-body ol{margin:0.8rem 0 1.2rem 1.5rem;color:#333;font-size:0.97rem;line-height:1.85}
+.article-body li{margin-bottom:0.5rem}
+.article-body strong{color:var(--navy);font-weight:600}
+.article-body a:not(.cta-btn){color:var(--coral);font-weight:600}
+.article-body table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem}
+.article-body th{background:var(--navy);color:white;padding:0.75rem 1rem;text-align:left;font-weight:500;font-size:0.82rem;letter-spacing:0.05em}
+.article-body td{padding:0.75rem 1rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top}
+.article-body tr:nth-child(even) td{background:var(--light)}
+.cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
+.cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
+.real-case{background:var(--light);border-left:4px solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
+.real-case strong{color:var(--teal);display:block;margin-bottom:0.5rem;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase}
+.warn-box{background:#FFF4E5;border-left:4px solid #E8A23C;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:0.92rem;color:#5c4620}
+.back-link{display:inline-block;color:rgba(255,255,255,0.5);font-size:0.85rem;margin-bottom:1rem;letter-spacing:0.05em}
+.back-link::before{content:'← '}
+.lang-alt{display:inline-block;color:rgba(255,255,255,0.55);font-size:0.78rem;margin-bottom:1rem;margin-left:1rem;letter-spacing:0.08em;border:1px solid rgba(255,255,255,0.2);padding:0.18rem 0.55rem;text-transform:uppercase;font-weight:600}
+.lang-alt:hover{color:white;border-color:rgba(255,255,255,0.5)}
+.related{background:var(--light);padding:3rem;max-width:1040px;margin:0 auto}
+.related h3{font-size:0.78rem;font-weight:600;color:var(--navy);margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.08em}
+.related-links{display:flex;flex-direction:column;gap:0.6rem}
+.related-links a{color:var(--coral);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:0.6rem}
+.related-links a:hover{color:var(--navy)}
+.article-footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:2rem 3rem;font-size:0.82rem}
+.article-footer a{color:var(--yellow)}
+nav{position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
+.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger:hover span{background:white}
+@media(max-width:768px){footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
+html,body{overflow-x:clip;max-width:100%}
+nav{padding:1rem 1.5rem}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}
+nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}
+nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}
+nav.nav-open .nav-links a:last-child{border-bottom:none}
+.article-hero{padding:3rem 1.5rem 2rem}
+.article-body{padding:2rem 1.5rem}
+.related{padding:2rem 1.5rem}
+.cta-btns{flex-direction:column;align-items:center}
+}
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+.footer-links{display:flex;gap:1.5rem;align-items:center}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--yellow)}
+@media(max-width:768px){.article-hero{margin-top:-90px;padding-top:4rem}}
+@media(max-width:768px){table th,table td{overflow-wrap:anywhere}}
+.body-fig{margin:2rem 0}.body-fig img{width:100%;height:auto;display:block;border:1.5px solid var(--border)}.body-fig figcaption{font-size:0.82rem;color:var(--muted);margin-top:0.5rem;line-height:1.45}
+.article-hero.hero-diagram{margin-top:0;padding-top:1.75rem;background:var(--navy);max-width:none;padding-left:max(1.5rem,calc(50% - 520px + 3rem));padding-right:max(1.5rem,calc(50% - 520px + 3rem))}
+/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:4px solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:250px;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
+/*ab2*/.author-box{margin:2.5rem 0 2rem;padding:1.25rem 1.4rem;background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--teal)}.author-box-head{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.8rem}.author-avatar{flex:0 0 auto;width:3.1rem;height:3.1rem;border-radius:50%;object-fit:cover;background:var(--navy);display:block}.author-box-name{font-weight:700;color:var(--navy);font-size:1.02rem;line-height:1.3}.author-box-role{font-size:0.85rem;color:var(--muted)}.author-box .author-box-list{list-style:none;margin:0 0 0.7rem;padding:0}.author-box .author-box-list li{position:relative;padding-left:1.1rem;margin:0.3rem 0;font-size:0.92rem;line-height:1.55;color:var(--navy)}.author-box .author-box-list li::before{content:'';position:absolute;left:0;top:0.62em;width:0.45rem;height:0.45rem;background:var(--coral)}.author-box-links{margin:0;font-size:0.9rem}.author-box-links a{color:var(--coral);text-decoration:underline}
+.verified-note{font-size:0.88rem;color:var(--muted);margin:-0.4rem 0 1.4rem}
+.fine-print{font-size:0.78rem;color:var(--muted);margin-top:1.4rem}
+.series-box{background:var(--light);border-left:3px solid var(--navy);padding:1rem 1.3rem;margin:2rem 0}.series-box h3{font-size:0.8rem;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.6rem}.series-box ul{margin:0;padding-left:1.1rem}.series-box li{margin:0.3rem 0;font-size:0.95rem}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Founder",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">SourciaVera</a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/blog" class="active">Blog</a>
+    <a href="/about">About</a>
+    <div class="nav-dd"><a href="/how-to-choose" class="nav-dd-t" aria-haspopup="true">Resources</a><div class="nav-dd-menu"><a href="/inspection-standards">Inspection standards</a><a href="/sample-report">Sample report</a><a href="/impartiality">Impartiality</a><a href="/how-to-choose">How to choose a provider</a></div></div>
+    <a href="/#contact">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="/#contact" class="nav-cta">Get a Quote</a>
+  </div>
+  <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<main>
+
+<div class="article-hero-img"><img src="/images/us-ieepa-tariff-refunds-cape-importers-china-what-to-check-photo.webp" alt="Binders and papers on a worktable beside a laptop in a factory workshop" width="1200" height="630" loading="eager"></div>
+    <div class="article-hero">
+  <a href="/blog" class="back-link">Back to Blog</a>
+  <div class="article-tag">Market News</div>
+  <h1>Paid IEEPA Tariffs? How U.S. Importers Claim Refunds</h1>
+  <div class="article-meta">By Zhang Peng (Miguel Lopez), Founder · Oct 25, 2026 · 9 min read</div>
+</div>
+
+<!-- review_by: 2026-11-15 (CAPE phases and the Court of International Trade litigation change often) -->
+<div class="article-body">
+
+  <p><strong>The short answer:</strong> if you paid IEEPA tariffs on goods from China, CBP's <a href="/import-glossary#cape">CAPE</a> tool lets the <a href="/import-glossary#ior">importer of record</a> request a refund, with interest. Which entries qualify depends on their status, and the refund goes to the importer of record, who may not be you. Check both before you act.</p>
+
+  <p class="verified-note"><strong>Verified as of October 25, 2026</strong> against <a href="https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds" target="_blank" rel="noopener">CBP's IEEPA Duty Refunds page</a> and its <a href="https://www.cbp.gov/sites/default/files/2026-04/ieepa_refunds_factsheet.pdf" target="_blank" rel="noopener">April 2026 fact sheet</a>. The Phase 3 details come from two law-firm summaries of a CBP court filing, which we did not open.</p>
+
+  <p>This article covers what CBP says, which entries are open for claims, what is still unsettled and what to ask your supplier and forwarder. It is based on CBP's own pages, two law-firm notes and general good practice, not on any first-hand experience of these claims. Your customs broker or trade attorney decides how it applies to your entries.</p>
+
+  <h2>Why Does It Matter to a U.S. Buyer?</h2>
+
+  <ul>
+    <li><strong>It is money already paid.</strong> CBP says CAPE consolidates refunds of IEEPA duties, including interest, instead of processing them entry by entry (<a href="https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds" target="_blank" rel="noopener">CBP</a>).</li>
+    <li><strong>The refund does not go to whoever ordered the goods.</strong> It goes to the importer of record, or to the party that importer designated on CBP Form 4811, and only that importer or the licensed broker who filed the entries can file the claim (<a href="https://www.cbp.gov/sites/default/files/2026-04/ieepa_refunds_factsheet.pdf" target="_blank" rel="noopener">CBP fact sheet</a>). CBP defines the importer of record as the owner or purchaser of the goods or, when designated, a licensed customs broker (<a href="https://www.cbp.gov/sites/default/files/documents/3530-002a_3.pdf" target="_blank" rel="noopener">CBP Directive 3530-002A</a>). If a broker or forwarder was named on your entries, as we read it, the claim runs through them.</li>
+    <li><strong>Scammers are already involved.</strong> CBP's page warns that fraudsters use emails, notices and social media to solicit company and personal information from importers and interfere with the refund process.</li>
+  </ul>
+
+  <h2>What Does CBP Say About the Refund Process?</h2>
+
+  <p>CBP launched CAPE in its ACE system to process valid refund requests for duties imposed under the International Emergency Economic Powers Act (IEEPA), "as authorized by court order or applicable law". To use it, the importer of record or the broker needs an ACE Secure Data Portal account with bank account information for refunds, which is separate from the bank information used for payments, and submits a CAPE Declaration by uploading a CSV file of entry numbers. Refunds are paid by ACH (<a href="https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds" target="_blank" rel="noopener">CBP</a>; <a href="https://www.cbp.gov/sites/default/files/2026-04/ieepa_refunds_factsheet.pdf" target="_blank" rel="noopener">fact sheet</a>).</p>
+
+  <p>CBP says valid refunds are generally issued within 60 to 90 days after a declaration is accepted, unless a compliance concern needs more review. Refunds are subject to the rules on liquidation and reliquidation (the point at which CBP finalizes the duties on an entry), including netting of overpayments and underpayments across the whole entry, and CBP may divert a refund to offset an importer's undisputed unpaid debts to the United States. Once a declaration is filed, entries cannot be removed from it, and each entry can appear on only one accepted declaration (<a href="https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds" target="_blank" rel="noopener">CBP</a>).</p>
+
+      <figure class="body-fig" data-fig="us-ieepa-tariff-refunds-cape-importers-china-what-to-check-fig3">
+  <img src="/images/us-ieepa-tariff-refunds-cape-importers-china-what-to-check-hero-en.webp" alt="Diagram: Table of the three CAPE phases for IEEPA duty refunds, who can file and the usual refund timing" width="1200" height="630" loading="lazy">
+  <figcaption>Diagram: Table of the three CAPE phases for IEEPA duty refunds, who can file and the usual refund timing</figcaption>
+</figure>
+
+  <h2>Which Entries Can Be Claimed, and When?</h2>
+
+  <ul>
+    <li><strong>Phase 1, launched April 20, 2026:</strong> certain unliquidated entries and certain entries within 80 days of liquidation (<a href="https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds" target="_blank" rel="noopener">CBP</a>; launch date per <a href="https://www.thompsonhinesmartrade.com/2026/09/cbp-confirms-october-6-2026-launch-of-phase-3-of-the-ieepa-tariff-refund-process/" target="_blank" rel="noopener">Thompson Hine</a>).</li>
+    <li><strong>Phase 2, launched June 29, 2026:</strong> entries flagged for reconciliation where the reconciliation entry is not yet on file (<a href="https://www.cbp.gov/trade/programs-administration/trade-remedies/ieepa-duty-refunds" target="_blank" rel="noopener">CBP</a>; launch date per <a href="https://www.thompsonhinesmartrade.com/2026/09/cbp-confirms-october-6-2026-launch-of-phase-3-of-the-ieepa-tariff-refund-process/" target="_blank" rel="noopener">Thompson Hine</a>).</li>
+    <li><strong>Phase 3, launched October 6, 2026:</strong> finally liquidated entries, but according to two law-firm summaries of a CBP declaration filed with the Court of International Trade on September 15, 2026, only for importers of record that are plaintiffs in a pending case where the court ordered reliquidation, and that gave CBP their importer of record number by July 30, 2026 (<a href="https://www.thompsonhinesmartrade.com/2026/09/cbp-confirms-october-6-2026-launch-of-phase-3-of-the-ieepa-tariff-refund-process/" target="_blank" rel="noopener">Thompson Hine</a>; <a href="https://www.wnj.com/updates/ieepa-tariff-refunds-cbp-clarifies-cape-phase-3-refund-process-for-liquidated-entries/" target="_blank" rel="noopener">Warner Norcross &amp; Judd</a>).</li>
+  </ul>
+
+  <p>CBP's page also says that for Phase 1 you do not need to file a case at the Court of International Trade to receive a refund, and that CBP offers no legal guidance on whether a case is needed for any other entries.</p>
+
+  <h2>What Is Still Unknown?</h2>
+
+  <p>Whether importers who are not plaintiffs will get access to Phase 3: Thompson Hine reports that this CBP position is subject to ongoing litigation and that the government appealed the part of the court's order requiring refunds to non-litigating importers on entries liquidated more than 80 days ago. It is also unclear what instructions CBP will give to plaintiffs who sent their importer of record number after July 30. The CBP page we read lists Phases 1 and 2 only, and we did not open the CBP declaration or the court order. Ask your broker or attorney which phase your entries fall into.</p>
+
+  <h2>What Should a Buyer Ask the Supplier and the Forwarder For?</h2>
+
+  <p>This section is general advice, not a rule from CBP.</p>
+
+  <ul>
+    <li><strong>Who was the importer of record on each entry,</strong> and the entry numbers. Under delivered terms such as DDP, or with a forwarder acting as importer, it may not have been you (see <a href="/blog/fob-exw-cif-ddp-chinese-supplier-quote">FOB, EXW, CIF or DDP price terms</a>).</li>
+    <li><strong>The entry summaries and invoices</strong> that show the duties paid, matched to the supplier's invoice and your payment (see <a href="/blog/proforma-invoice-chinese-supplier-what-to-check">proforma invoice for a Chinese supplier</a>).</li>
+    <li><strong>Who will claim and who will pass the money on.</strong> If your forwarder or seller is the importer of record, ask in writing whether it will file and how a refund will reach you.</li>
+    <li><strong>The product description and tariff code</strong> used on each entry, so your broker can match the entries to the claim (see <a href="/blog/hs-code-tariff-classification-chinese-supplier-mexico-what-to-ask">how HS codes work</a> and <a href="/blog/documents-to-request-chinese-manufacturer">documents to request from a Chinese manufacturer</a>).</li>
+    <li><strong>Who is contacting you.</strong> Use CBP's own pages and your broker, not an unsolicited email.</li>
+  </ul>
+
+      <figure class="body-fig" data-fig="us-ieepa-tariff-refunds-cape-importers-china-what-to-check-fig1">
+      <img src="/images/us-ieepa-tariff-refunds-cape-importers-china-what-to-check-fig1-en.webp" alt="Checklist of five things to find out before claiming or asking for an IEEPA duty refund" width="800" height="720" loading="lazy">
+      <figcaption>Diagram: General advice, not a rule from CBP.</figcaption>
+    </figure>
+
+  <h2>Where Does a Third-Party Check Help?</h2>
+
+  <p>It cannot file a refund claim or tell you whether your entries qualify. What it can do is check the supplier side of your records: that the company on your invoices is a real manufacturer or trader, that the payment account matches the company, and that the goods and descriptions match the paperwork your broker will rely on. It can also help you check that a company offering to recover refunds exists before you give it any information.</p>
+
+  <h2>What Do CBP's Pages Not Tell You?</h2>
+
+  <p>They do not tell you whether your entries qualify, how much you will receive or how long the litigation will take. They do not name any company that is entitled to a refund.</p>
+
+  <h2>What Should You Do Next?</h2>
+
+  <ol>
+    <li><strong>Ask your customs broker</strong> for a list of your entries with IEEPA duties and who the importer of record was.</li>
+    <li><strong>Check that the importer of record has an ACE Portal account</strong> with refund bank details, if that is you.</li>
+    <li><strong>Ask your forwarder or seller in writing</strong> whether it will file claims on entries where it was the importer.</li>
+    <li><strong>Keep supplier invoices, payment records and descriptions</strong> in one folder with the entry numbers.</li>
+    <li><strong>Ignore unsolicited refund offers</strong> and confirm any message through CBP or your broker.</li>
+  </ol>
+
+      <figure class="body-fig" data-fig="us-ieepa-tariff-refunds-cape-importers-china-what-to-check-fig2">
+      <img src="/images/us-ieepa-tariff-refunds-cape-importers-china-what-to-check-fig2-en.webp" alt="Numbered list of four questions to ask a customs broker about IEEPA duty refunds" width="800" height="634" loading="lazy">
+      <figcaption>Diagram: Four questions, as general advice.</figcaption>
+    </figure>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>What is CAPE?</h3>
+  <p>CAPE is the function in CBP's ACE system through which importers of record and brokers request refunds of IEEPA duties, consolidated rather than entry by entry. CBP is adding it in phases.</p>
+
+  <h3>Who can file a CAPE declaration?</h3>
+  <p>Only the importer of record or the licensed customs broker who filed the entries, according to CBP's fact sheet. Refunds are paid by ACH to the importer of record or the party it designated on CBP Form 4811.</p>
+
+  <h3>How long does a refund take?</h3>
+  <p>CBP says valid refunds are generally issued within 60 to 90 days after a declaration is accepted, unless a compliance concern requires more review. Some entries, such as suspended or extended ones, are refunded at liquidation.</p>
+
+  <h3>Can I claim a refund if I only bought the goods from a Chinese supplier?</h3>
+  <p>Only if you were the importer of record or you can arrange with the importer of record to claim. Check who was named on your entries; with delivered terms or a forwarder acting as importer it may not have been you.</p>
+
+  <h3>Do I need to sue at the Court of International Trade?</h3>
+  <p>CBP says you do not need a case for Phase 1 entries and gives no legal guidance for other entries. For Phase 3, law-firm summaries say CBP limited access to plaintiffs. Ask your attorney.</p>
+  <h2>Summary and Next Step</h2>
+
+  <p>CBP's CAPE tool lets importers of record and brokers claim IEEPA refunds with interest. Phases 1 and 2 cover entries that are unliquidated, recently liquidated or flagged for reconciliation; Phase 3, per law-firm summaries, is limited to court plaintiffs. The first question is not "how do I claim", it is "who was the importer of record on my entries".</p>
+
+  <div class="series-box">
+    <h3>More on importing from China to the U.S.</h3>
+    <ul><li><a href="/blog/us-cbp-proposed-rule-low-value-imports-arrival-filing-bond-china-suppliers">CBP's proposed rule on low-value imports</a></li><li><a href="/blog/china-us-freight-late-october-2026-ocean-flat-air-rising-how-to-book">China-US ocean and air freight in October 2026</a></li><li><a href="/blog/can-you-order-from-alibaba-in-the-us">ordering from Alibaba as a US buyer</a></li></ul>
+  </div>
+
+  <p>In short, find your entries and your importer of record before anything else. Tell us about your order if you want help preparing the questions for your supplier and forwarder.</p>
+
+  <p class="fine-print">I provide supplier verification services, so you should treat my recommendation accordingly. SourciaVera is not a customs broker or a law firm, and nothing here is customs or legal advice.</p>
+
+  <aside class="author-box" aria-label="About the author">
+    <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), founder of SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Founder, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>From Guangzhou, with long hands-on experience in factories across Guangdong and neighboring provinces</li><li>Years of experience in foreign trade and international advertising</li><li>Works with a team that covers procurement, transport and logistics, and foreign trade</li><li>Films every on-site factory verification and gives the real video to the client</li></ul>
+    <p class="author-box-links"><a href="/about">About the author</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/#remote-check" class="cta-btn">Start with a $49 Remote Supplier Check</a>
+      <a href="/#contact" class="cta-btn">Talk to us about your order</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#128C7E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Chat on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<div class="related">
+  <h3>Related articles</h3>
+  <div class="related-links">
+    <a href="/blog/us-cbp-proposed-rule-low-value-imports-arrival-filing-bond-china-suppliers">CBP Wants Low-Value Imports Filed at Arrival, With a Bond →</a>
+    <a href="/blog/can-you-order-from-alibaba-in-the-us">Can you order from Alibaba in the US? →</a>
+    <a href="/blog/proforma-invoice-chinese-supplier-what-to-check">What Should a Proforma Invoice From a Chinese Supplier Say? What to Check Before You Pay →</a>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">SourciaVera</div>
+  <div class="footer-links">
+    <a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="3.3em" height="3.3em" fill="#FF0000" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+    <a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" aria-hidden="true"><defs><linearGradient id="igGradFooter" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#igGradFooter)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="3.3em" height="3.3em" fill="#1877F2" aria-hidden="true"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+    <a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#B92B27" aria-hidden="true"><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a>
+    <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#0A66C2" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+    <a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="3.3em" height="3.3em" fill="#E60023" aria-hidden="true"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a>
+    <a href="https://wa.me/8613688057230" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" data-wa-location="footer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#25D366" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><span class="sv-fbr" aria-hidden="true"></span>
+    <a href="/press">Press</a>
+    <a href="/impartiality">Impartiality</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a>
+  </div>
+  <div>© <script>document.write(new Date().getFullYear())</script> SourciaVera · Guangzhou, China · All rights reserved</div>
+</footer>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
+</body>
+</html>
