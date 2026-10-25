@@ -22,3 +22,4 @@ ae286204402edb7e6af35d1c9201b1382c3bb45d  # follow-up 2026-10-25: date label for
 10de96a  # 2026-10-25: small-buyer CTA cards, service-page links, title/meta rewrite on 4 pages, Organization sameAs and home footer links: no change to article facts
 7a8d5b3  # 2026-10-25: small-buyer CTA wording (50 pieces policy), no change to article facts
 41743b8  # 2026-10-25 round 2: CTA wording, Organization sameAs/foundingDate, estafa FAQ question in usted: no change to article facts
+5a4729f646d08f5f1af683819c8e24c22719b3be  # data brief task 2026-10-25: Press/Prensa footer link on every page, site-wide chrome, no content change
