@@ -139,6 +139,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-body li{margin-bottom:0.5rem}
 .article-body strong{color:var(--navy);font-weight:600}
 .article-body a:not(.cta-btn){color:var(--coral);font-weight:600}
+.article-body .fine-print{font-size:0.78rem;color:var(--muted);margin-top:1.4rem}
 .article-body .verified-note{font-size:0.88rem;color:var(--muted);margin:-0.4rem 0 1.4rem}
 .article-body table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.9rem}
 .article-body th{background:var(--navy);color:white;padding:0.75rem 1rem;text-align:left;font-weight:500;font-size:0.82rem;letter-spacing:0.05em}
@@ -189,6 +190,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .article-hero.hero-diagram{margin-top:0;padding-top:1.75rem;background:var(--navy);max-width:none;padding-left:max(1.5rem,calc(50% - 520px + 3rem));padding-right:max(1.5rem,calc(50% - 520px + 3rem))}
 /*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:4px solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:250px;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
 /*ab2*/.author-box{margin:2.5rem 0 2rem;padding:1.25rem 1.4rem;background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--teal)}.author-box-head{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.8rem}.author-avatar{flex:0 0 auto;width:3.1rem;height:3.1rem;border-radius:50%;object-fit:cover;background:var(--navy);display:block}.author-box-name{font-weight:700;color:var(--navy);font-size:1.02rem;line-height:1.3}.author-box-role{font-size:0.85rem;color:var(--muted)}.author-box .author-box-list{list-style:none;margin:0 0 0.7rem;padding:0}.author-box .author-box-list li{position:relative;padding-left:1.1rem;margin:0.3rem 0;font-size:0.92rem;line-height:1.55;color:var(--navy)}.author-box .author-box-list li::before{content:'';position:absolute;left:0;top:0.62em;width:0.45rem;height:0.45rem;background:var(--coral)}.author-box-links{margin:0;font-size:0.9rem}.author-box-links a{color:var(--coral);text-decoration:underline}
+.article-body .series-box{background:var(--light);border-left:3px solid var(--navy);padding:1rem 1.3rem;margin:2rem 0}.article-body .series-box h3{font-size:0.8rem;font-weight:600;color:var(--navy);text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.6rem}.article-body .series-box ul{margin:0;padding-left:1.1rem}.article-body .series-box li{margin:0.3rem 0;font-size:0.95rem}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -242,7 +244,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p class="verified-note"><strong>Verified as of October 24, 2026.</strong> The statements come from two press reports (<a href="https://eltiempomx.com/noticia/2026/mexico-retira-mas-de-mil-proveedores-asiaticos-de-acero.html" target="_blank" rel="noopener">El Tiempo de Monclova</a>, October 19; Reforma, through <a href="https://planoinformativo.com/1176889/aprietan-compras-de-acero-asiatico" target="_blank" rel="noopener">Plano Informativo</a>, October 20). We looked in the Diario Oficial and found no official text about the removals, so read the figures as what was said at a press conference.</p>
 
-  <p>This article covers what was reported, what is still unknown and what to ask your supplier to put in writing. It is based on two Mexican press reports and general good practice, not on any first-hand experience of these checks. It is not customs or legal advice.</p>
+  <p>This article covers what was reported, what is still unknown and what to ask your supplier to put in writing. It is based on two Mexican press reports and general good practice, not on any first-hand experience of these checks.</p>
 
   <h2>Why Does It Matter to a Buyer, Even Outside Steel?</h2>
 
@@ -296,7 +298,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <h2>What Do the Reports Not Tell You?</h2>
 
-  <p>They do not tell you that your supplier is on a removed list, that your goods are affected or that any penalty applies to a buyer. They do not name a single plant or company. They are the statements of one official at a press conference, reported by two outlets. This is general information, not customs or legal advice.</p>
+  <p>They do not tell you that your supplier is on a removed list, that your goods are affected or that any penalty applies to a buyer. They do not name a single plant or company. They are the statements of one official at a press conference, reported by two outlets.</p>
 
   <h2>What Should You Do Next?</h2>
 
@@ -326,9 +328,14 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p>Mexico says it went to Asia, could not find many of the plants named in steel origin certificates and removed more than 1,000 registrations. For a buyer, the practical answer is to know the plant behind the certificate: its name, its address, its registration and whether it makes your material. A supplier who cannot name it, or does not want it checked, is the one to slow down with.</p>
 
-  <p>In short, ask for the mill's name and let someone verify it before the cargo ships. A third-party check looks at who is behind the supplier and whether the plant and the markings match the paper, and you can tell us about your order if you want help preparing the questions for your supplier.</p>
+  <div class="series-box">
+    <h3>More Mexican customs changes in 2026</h3>
+    <ul><li><a href="/blog/mexico-mve-electronic-value-declaration-deadlines-importers-china">Mexico&#x27;s MVE Customs Value Filing: Dates and What to Fix</a></li><li><a href="/blog/mexico-customs-law-reform-undervalued-goods-seizure-importers">Mexico&#x27;s Customs Law Reform: Goods Declared Below Their Value Can Be Seized. What Importers From China Should Do Now</a></li><li><a href="/blog/mexico-customs-steel-mill-certificates-signatures-stamps-importers">Mexican Customs and Steel Mill Certificates: Why Signatures and Stamps Are Holding Up Cargo, and What Buyers Should Ask For</a></li></ul>
+  </div>
 
-  <p>If you would rather have someone check the basics before you accept a quote or pay a deposit, understanding who is behind each quote before investing money can reduce unnecessary risks. SourciaVera helps international buyers verify Chinese suppliers, understand manufacturing capabilities, and make safer sourcing decisions. I provide supplier verification services, so you should treat my recommendation accordingly. The <a href="/#remote-check">$49 Remote Check</a> looks at the basics &mdash; company registration, manufacturer vs. trader, address, and whether the payment account matches the company name &mdash; before you place an order. SourciaVera is not a customs broker, and nothing here is customs or legal advice.</p>
+  <p>In short, ask for the mill's name and let someone verify it before the cargo ships. Tell us about your order if you want help preparing the questions for your supplier.</p>
+
+  <p class="fine-print">I provide supplier verification services, so you should treat my recommendation accordingly. SourciaVera is not a customs broker, and nothing here is customs or legal advice.</p>
 
   <aside class="author-box" aria-label="About the author">
     <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), founder of SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Founder, SourciaVera</div></div></div>
