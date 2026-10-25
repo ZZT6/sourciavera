@@ -6,6 +6,8 @@
  *                     floating     the floating button added below
  *                     article_cta  inside a .cta-box / .cta-btns block (article action area, other CTA boxes)
  *                     footer       inside <footer>
+ *                     small_buyer_cta_top / small_buyer_cta_bottom   the two small-quantity catalog cards in the small-buyer articles
+ *                                (set with data-wa-location on the link; any link may set its own value the same way)
  *                     other        any other wa.me link on a page (home page sections etc.)
  *   email_click     a click on a mailto: link
  *   generate_lead   svTrackLead(formId), called by the page's form handler only after Formspree

@@ -1,0 +1,53 @@
+{
+  "_note": "Single source of truth for the Organization JSON-LD block. Run `node scripts/sync-org-schema.mjs` to rewrite it on every page that carries one (about, home, small-batch, why-sourciavera, supervision, privacy, terms, EN and ES). Only description, serviceType and the founder's jobTitle differ by language.",
+  "common": {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://sourciavera.com/#organization",
+    "name": "SourciaVera",
+    "url": "https://sourciavera.com",
+    "logo": "https://sourciavera.com/og-image.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Guangzhou",
+      "addressRegion": "Guangdong",
+      "addressCountry": "CN"
+    },
+    "areaServed": ["US", "CA", "MX", "CO", "AR", "CL", "PE", "BR", "GT", "PA", "GB", "AU"],
+    "knowsLanguage": ["en", "es", "zh"],
+    "email": "info@sourciavera.com",
+    "telephone": "+8613688057230",
+    "priceRange": "$49–$499",
+    "currenciesAccepted": "USD",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61573330655140",
+      "https://www.instagram.com/sourciavera/",
+      "https://www.youtube.com/@sourciavera",
+      "https://www.quora.com/profile/Miguel-Lopez-2706",
+      "https://www.pinterest.com/sourciavera/",
+      "https://www.trustpilot.com/review/sourciavera.com",
+      "https://clutch.co/profile/sourciavera",
+      "https://themanifest.com/company/sourciavera"
+    ]
+  },
+  "founder": {
+    "@id": "https://sourciavera.com/#founder",
+    "@type": "Person",
+    "name": "Zhang Peng",
+    "alternateName": "Miguel Lopez",
+    "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+    "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  },
+  "en": {
+    "description": "Independent third-party verification agency for Alibaba suppliers, based in Guangzhou, China. We visit factories in person, film on-site video, and negotiate directly in Chinese on behalf of international buyers. Start with a $49 remote supplier check, or an on-site factory verification from $449.",
+    "serviceType": ["Remote Supplier Check", "Factory Verification", "Supplier Audit", "Pre-Shipment Inspection", "Sourcing Agent", "Procurement"],
+    "availableLanguage": ["English", "Spanish", "Chinese"],
+    "jobTitle": "Founder"
+  },
+  "es": {
+    "description": "Agencia de verificación de fábricas y abastecimiento desde China con base en Guangzhou. Visitamos proveedores de Alibaba en persona, filmamos en video y negociamos directamente en chino en nombre de compradores internacionales. Empiece con una revisión remota de proveedor por $49, o una verificación de fábrica en sitio desde $449. Atención completa en español.",
+    "serviceType": ["Revisión Remota de Proveedor", "Verificación de Fábrica", "Auditoría de Fábrica", "Inspección Previa al Embarque", "Agente de Compras en China", "Negociación y Compra"],
+    "availableLanguage": ["Spanish", "English", "Chinese"],
+    "jobTitle": "Fundador"
+  }
+}
