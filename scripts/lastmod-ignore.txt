@@ -14,3 +14,4 @@ fb8e64ab2d01359338647eddd7c2dc9b15f61409  # trust pages task 2026-10-24: author 
 b644aec  # author box avatar + Person image, site-wide chrome (not a content change)
 
 555f87ac58aa36002320541b123c56806dff3494  # batch 3 plumbing 2026-10-24: author box spelling and avatar alt, no content change
+f5a7ecbc7ff34941fead9d371119d2a1a115424f  # batch 4 2026-10-24: review_by HTML comments only, no reader-visible change
