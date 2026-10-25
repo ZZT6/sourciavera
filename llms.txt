@@ -1,6 +1,33 @@
 # SourciaVera
 
-> Independent third-party factory verification and sourcing for importers worldwide. Based in Guangzhou, China. We verify factories for wheels, carbon fiber parts, LED lighting, OEM/ODM private-label products and more before you pay — and the same verification process covers any product category. Entry point: a $49 Remote Supplier Check (company registration, manufacturer-vs-trader, address and payment-account consistency; written report within 48 hours of receiving payment and the supplier details; not a substitute for an on-site visit — the $49 is credited toward a full on-site verification if you continue). Full on-site factory verification starts at $449 per visit ($399/man-day pre-shipment inspection, $499/man-day factory audit), reports delivered within 48 hours. Zero factory commissions — we work for buyers only.
+> SourciaVera is an independent third-party factory verification and sourcing service based in Guangzhou, China. It is run by a technology company registered in China (business license obtained in October 2026). Before a buyer pays, our team checks Chinese suppliers on the ground: we visit the factory in person, film on-site video and report in English or Spanish. We work for buyers only and take no commission from factories.
+
+## Facts
+
+- **What we do:** remote supplier checks, on-site factory verification, pre-shipment inspection, factory audits, and optional sourcing and procurement for importers buying from China.
+- **Who we serve:** importers in Latin America and the US. Dedicated pages exist for Mexico, Colombia, Chile, Guatemala and Panama; we also work with buyers in the US, Canada, Argentina, Peru, Brazil, the UK and Australia. Languages: English, Spanish, Chinese.
+- **Public prices (USD):** Remote Supplier Check $49 (company registration, manufacturer vs trader, address and payment-account consistency; written report within 48 hours of receiving payment and the supplier details; credited toward an on-site verification if you continue). Factory Verification from $449 per visit. Pre-Shipment Inspection $399 per man-day. Full Factory Audit $499 per man-day. Sourcing commission 10% of order value (optional, only when we negotiate and buy for you). A 20% discount applies to the three on-site services after a detailed consultation.
+- **Small orders:** catalog products can be bought from 1 piece with no minimum order (message us on WhatsApp for the catalog). Custom small-batch manufacturing starts at 50 units, with a sample approved before bulk production; most small-batch orders ship within 15 to 25 days of sample approval.
+- **Contact:** info@sourciavera.com, WhatsApp +86 13688057230 (https://wa.me/8613688057230). Office: Guangzhou, Guangdong, China. Replies within 24 hours.
+- **Public profiles:** [Trustpilot](https://www.trustpilot.com/review/sourciavera.com), [Clutch](https://clutch.co/profile/sourciavera), [The Manifest](https://themanifest.com/company/sourciavera), [YouTube](https://www.youtube.com/@sourciavera), [Instagram](https://www.instagram.com/sourciavera/), [Facebook](https://www.facebook.com/profile.php?id=61573330655140).
+
+## Key Pages
+
+- [Home](https://sourciavera.com/): services, public pricing and contact form
+- [Inicio (Español)](https://sourciavera.com/es/): the same service in Spanish
+- [Verification Services by Country](https://sourciavera.com/verification-services/): country pages for Mexico, Colombia, Chile, Guatemala and Panama
+- [Mexico Factory Verification](https://sourciavera.com/verification-services/mexico): services for Mexican importers
+- [Verificación de Fábricas en México](https://sourciavera.com/es/verificacion-fabricas/mexico): the Mexico page in Spanish
+- [Small Batch Manufacturing](https://sourciavera.com/small-batch): custom small orders from 50 units
+- [About SourciaVera](https://sourciavera.com/about): company details, team and methodology
+- [Why SourciaVera](https://sourciavera.com/why-sourciavera): how we differ from larger inspection companies
+- [Sample Verification Report](https://sourciavera.com/sample-report): what an on-site report contains
+- [Inspection Standards](https://sourciavera.com/inspection-standards): AQL sampling under ISO 2859-1 and defect classes
+- [How to Choose a Verification Provider](https://sourciavera.com/how-to-choose): three types of China verification and inspection providers compared
+- [Impartiality](https://sourciavera.com/impartiality): how SourciaVera is paid and why findings are not influenced by the factory
+- [Import Glossary](https://sourciavera.com/import-glossary): customs and import terms with official sources
+- [China Supplier Verification Checklist](https://sourciavera.com/blog/china-supplier-verification-checklist): what to check before paying a supplier
+- [9 Alibaba Supplier Red Flags](https://sourciavera.com/blog/alibaba-supplier-red-flags): warning signs and how to verify a supplier
 
 ## Core Service Pages
 
