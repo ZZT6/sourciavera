@@ -21,17 +21,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/case-study-byd-seagull-wheel-offset-et541.html",
-      "destination": "/blog/case-study-byd-seagull-spare-wheel-offset",
-      "permanent": true
-    },
-    {
       "source": "/blog/how-to-verify-alibaba-supplier",
-      "destination": "/blog/alibaba-supplier-red-flags",
-      "permanent": true
-    },
-    {
-      "source": "/blog/how-to-verify-alibaba-supplier.html",
       "destination": "/blog/alibaba-supplier-red-flags",
       "permanent": true
     },
@@ -41,17 +31,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/how-to-avoid-alibaba-scam.html",
-      "destination": "/blog/alibaba-supplier-red-flags",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541",
-      "destination": "/blog/es/caso-verificacion-llanta-refaccion-byd-seagull",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/caso-verificacion-llantas-byd-seagull-offset-et541.html",
       "destination": "/blog/es/caso-verificacion-llanta-refaccion-byd-seagull",
       "permanent": true
     },
@@ -61,17 +41,7 @@
       "permanent": true
     },
     {
-      "source": "/how-to-verify-alibaba-supplier.html",
-      "destination": "/blog/alibaba-supplier-red-flags",
-      "permanent": true
-    },
-    {
       "source": "/china-factory-inspection-cost",
-      "destination": "/blog/china-factory-inspection-cost",
-      "permanent": true
-    },
-    {
-      "source": "/china-factory-inspection-cost.html",
       "destination": "/blog/china-factory-inspection-cost",
       "permanent": true
     },
@@ -81,17 +51,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/how-to-verify-custom-medal-factory-china.html",
-      "destination": "/categories/badges-medals-keychains",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/como-verificar-fabrica-medallas-personalizadas-china",
-      "destination": "/es/categorias/insignias-medallas-llaveros",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/como-verificar-fabrica-medallas-personalizadas-china.html",
       "destination": "/es/categorias/insignias-medallas-llaveros",
       "permanent": true
     },
@@ -101,17 +61,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/case-study-container-home-factory-audit.html",
-      "destination": "/categories/construction",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/caso-auditoria-casas-contenedor",
-      "destination": "/es/categorias/construccion",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/caso-auditoria-casas-contenedor.html",
       "destination": "/es/categorias/construccion",
       "permanent": true
     },
@@ -121,17 +71,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/case-study-h2o2-surabaya-supplier-verification.html",
-      "destination": "/categories",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/verificar-proveedor-peroxido-hidrogeno-surabaya",
-      "destination": "/es/categorias",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/verificar-proveedor-peroxido-hidrogeno-surabaya.html",
       "destination": "/es/categorias",
       "permanent": true
     },
@@ -141,17 +81,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/case-study-h2o2-trading-company.html",
-      "destination": "/categories",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/caso-comerciante-disfrazado",
-      "destination": "/es/categorias",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/caso-comerciante-disfrazado.html",
       "destination": "/es/categorias",
       "permanent": true
     },
@@ -161,17 +91,7 @@
       "permanent": true
     },
     {
-      "source": "/categories/chemicals.html",
-      "destination": "/categories",
-      "permanent": true
-    },
-    {
       "source": "/es/categorias/quimicos",
-      "destination": "/es/categorias",
-      "permanent": true
-    },
-    {
-      "source": "/es/categorias/quimicos.html",
       "destination": "/es/categorias",
       "permanent": true
     },
@@ -181,17 +101,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/container-house-factory-audit-checklist.html",
-      "destination": "/categories/construction",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/checklist-auditoria-fabrica-casas-contenedor",
-      "destination": "/es/categorias/construccion",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/checklist-auditoria-fabrica-casas-contenedor.html",
       "destination": "/es/categorias/construccion",
       "permanent": true
     },
@@ -201,17 +111,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/container-house-vs-traditional-construction-cost.html",
-      "destination": "/categories/construction",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/casas-contenedor-vs-construccion-tradicional-costo",
-      "destination": "/es/categorias/construccion",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/casas-contenedor-vs-construccion-tradicional-costo.html",
       "destination": "/es/categorias/construccion",
       "permanent": true
     },
@@ -221,17 +121,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/expandable-container-house-china-import-guide.html",
-      "destination": "/categories/construction",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/guia-importar-casas-contenedor-expandibles-china",
-      "destination": "/es/categorias/construccion",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/guia-importar-casas-contenedor-expandibles-china.html",
       "destination": "/es/categorias/construccion",
       "permanent": true
     },
@@ -241,17 +131,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/hidden-risks-importing-container-houses-china.html",
-      "destination": "/categories/construction",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/riesgos-ocultos-importar-casas-contenedor-china",
-      "destination": "/es/categorias/construccion",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/riesgos-ocultos-importar-casas-contenedor-china.html",
       "destination": "/es/categorias/construccion",
       "permanent": true
     },
@@ -261,17 +141,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/how-to-verify-container-house-factory-china.html",
-      "destination": "/categories/construction",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/como-verificar-fabrica-casas-contenedor-china",
-      "destination": "/es/categorias/construccion",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/como-verificar-fabrica-casas-contenedor-china.html",
       "destination": "/es/categorias/construccion",
       "permanent": true
     },
@@ -281,17 +151,7 @@
       "permanent": true
     },
     {
-      "source": "/blog/quality-control-by-destination-climate.html",
-      "destination": "/categories/construction",
-      "permanent": true
-    },
-    {
       "source": "/blog/es/control-calidad-segun-clima-destino",
-      "destination": "/es/categorias/construccion",
-      "permanent": true
-    },
-    {
-      "source": "/blog/es/control-calidad-segun-clima-destino.html",
       "destination": "/es/categorias/construccion",
       "permanent": true
     }
