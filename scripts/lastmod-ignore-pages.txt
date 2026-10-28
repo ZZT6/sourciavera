@@ -77,3 +77,6 @@ ef7be12 blog/one-person-on-the-ground-in-china-import-decisions.html  # 2026-10-
 b49b188 blog/es/mexico-reforma-ley-aduanera-embargo-mercancia-subvaluada-importadores.html  # 2026-10-28 link-only: inbound link to the new price-proof article
 7e6f9c6 blog/us-cbp-proposed-rule-low-value-imports-arrival-filing-bond-china-suppliers.html  # 2026-10-28 link-only edit (inbound link to the trailer duties article)
 7e6f9c6 blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check.html  # 2026-10-28 link-only edit (inbound link to the trailer duties article)
+41a6e67 blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores.html  # 2026-10-28 source note only (official PDF instead of mLey)
+41a6e67 es/glosario-importacion.html  # 2026-10-28 source note only (official PDF instead of mLey)
+41a6e67 import-glossary.html  # 2026-10-28 source note only (official PDF instead of mLey)
