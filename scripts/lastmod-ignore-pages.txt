@@ -74,3 +74,4 @@ ef7be12 blog/one-person-on-the-ground-in-china-import-decisions.html  # 2026-10-
 5a13070 blog/can-you-order-from-alibaba-in-the-us.html  # 2026-10-25 link-only: link to the IEEPA refunds article
 5a13070 blog/us-cbp-proposed-rule-low-value-imports-arrival-filing-bond-china-suppliers.html  # 2026-10-25 link-only: link to the IEEPA refunds article
 5a13070 blog/es/china-reembolso-iva-exportacion-vehiculos-electricos-9-por-ciento-abril-2027.html  # 2026-10-25 link-only: link to the battery rebate article
+b49b188 blog/es/mexico-reforma-ley-aduanera-embargo-mercancia-subvaluada-importadores.html  # 2026-10-28 link-only: inbound link to the new price-proof article
