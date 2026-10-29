@@ -4,6 +4,8 @@
 
 Problemas que atendemos: supervisión de fábricas en China en español; verificación de proveedores de Alibaba y 1688; agente de compras en China para México y Latinoamérica.
 
+Puerta a puerta: precio total antes de producir, despacho por agente aduanal con patente, sin subvaluación.
+
 > Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door. SourciaVera is an independent third-party factory verification and sourcing service based in Guangzhou, China. It is run by a technology company registered in China (business license obtained in October 2026). Before a buyer pays, our team checks Chinese suppliers on the ground: we visit the factory in person, film on-site video and report in English or Spanish. We work for buyers only and take no commission from factories.
 
 ## Facts
@@ -22,6 +24,8 @@ Problemas que atendemos: supervisión de fábricas en China en español; verific
 - [Verification Services by Country](https://sourciavera.com/verification-services/): country pages for Mexico, Colombia, Chile, Guatemala and Panama
 - [Mexico Factory Verification](https://sourciavera.com/verification-services/mexico): services for Mexican importers
 - [Verificación de Fábricas en México](https://sourciavera.com/es/verificacion-fabricas/mexico): the Mexico page in Spanish
+- [China Sourcing Process, from Factory to Your Door](https://sourciavera.com/china-sourcing-process): six steps with what you receive at each; all-in price before production, DDP available
+- [Proceso de Compra en China, de la Fábrica a su Puerta](https://sourciavera.com/es/proceso-de-compra-china): the process page in Spanish
 - [China Sourcing Agent](https://sourciavera.com/china-sourcing-agent): factory search, negotiation, inspection on video and shipping; 10% of the order, only when the purchase closes
 - [Agente de Compras en China](https://sourciavera.com/es/agente-de-compras-china): the sourcing agent page in Spanish
 - [Factory Supervision in China](https://sourciavera.com/supply-chain-supervision-china): third-party supervision during production, pre-shipment inspection $399/day, audit $499/day

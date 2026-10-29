@@ -75,6 +75,8 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:0.5rem}
 .team-card{border:1px solid var(--border);padding:1.5rem}
 .team-card-role{font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.founder-card{display:grid;grid-template-columns:minmax(0,18rem) 1fr;gap:1.5rem;align-items:center;border:1px solid var(--border);padding:1.5rem;margin:0.5rem 0 1.5rem}.founder-card img{width:100%;height:auto;display:block}.founder-card h3{font-size:1.15rem;color:var(--navy);margin:0 0 0.3rem}.founder-card p{color:var(--muted);font-size:0.95rem;line-height:1.8;margin:0.6rem 0 0}.founder-card figcaption{font-size:0.8rem;color:var(--muted);margin-top:0.35rem;line-height:1.4}@media(max-width:768px){.founder-card{grid-template-columns:1fr}}
+
 .team-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem}
 .team-card p{color:var(--muted);font-size:0.85rem;line-height:1.7}
 .pain-list{display:flex;flex-direction:column;gap:0.75rem;margin:1.25rem 0}
@@ -272,6 +274,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <div class="prose">
       <p>Fundada en 2025, SourciaVera es una empresa independiente de verificación de terceros creada para un solo propósito: poner personas reales en el terreno en Guangzhou para investigar si un proveedor realmente es quien dice ser — antes de que envíe un depósito. La empresa fue fundada por <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">Zhang Peng (Miguel Lopez)</a>, quien sigue liderando directamente la estrategia de verificación y las relaciones con los clientes en cada encargo, no un gerente de cuenta rotativo. Sin embargo, la ejecución no depende de una sola persona haciendo de todo: el equipo trabaja en tres grupos: compras, transporte y logística, y comercio exterior. Las visitas a fábrica, los recorridos en video y el seguimiento de producción los realiza nuestro equipo en Guangzhou.</p>
     </div>
+    <figure class="founder-card" style="margin-left:0;margin-right:0"><div><img src="/assets/blog/visita-fabrica-casas-contenedor/fundador-en-unidad-terminada.webp" alt="Zhang Peng (Miguel Lopez), fundador de SourciaVera, dentro de una unidad terminada durante una visita a fábrica" width="1080" height="810" loading="lazy"><figcaption>Zhang Peng durante una visita a fábrica; los datos de la fábrica están ocultos.</figcaption></div><div><div class="team-card-role">Fundador</div><h3>Zhang Peng (Miguel Lopez)</h3><p>Zhang Peng dirige personalmente la estrategia de verificación y la relación con los clientes en cada encargo.</p></div></figure>
     <div class="team-grid">
       <div class="team-card">
         <div class="team-card-role">Compras</div>
@@ -289,6 +292,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
         <p>Nuestro personal de comercio exterior se encarga de la coordinación con los clientes.</p>
       </div>
     </div>
+    <div class="prose" style="margin-top:1.5rem"><p>Somos unas 30 personas en estos tres grupos. Las personas que ve en nuestros videos de inspección son de este equipo.</p></div>
   </div>
 
   <hr class="divider">
