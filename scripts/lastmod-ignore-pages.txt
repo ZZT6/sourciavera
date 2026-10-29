@@ -84,3 +84,7 @@ cf431a8 blog/product-inspection-cost-before-shipment.html
 cf431a8 blog/proforma-invoice-chinese-supplier-what-to-check.html
 cf431a8 blog/es/costo-inspeccion-producto-antes-embarque.html
 cf431a8 blog/es/factura-proforma-proveedor-chino-que-revisar.html
+010f6f5 blog/product-inspection-cost-before-shipment.html  # 2026-10-28 merge of the wide-layout block (presentation only)
+010f6f5 blog/proforma-invoice-chinese-supplier-what-to-check.html  # 2026-10-28 merge of the wide-layout block (presentation only)
+010f6f5 blog/es/costo-inspeccion-producto-antes-embarque.html  # 2026-10-28 merge of the wide-layout block (presentation only)
+010f6f5 blog/es/factura-proforma-proveedor-chino-que-revisar.html  # 2026-10-28 merge of the wide-layout block (presentation only)
