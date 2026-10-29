@@ -7,8 +7,8 @@
   "updated": "2026-10-29",
   "note": "Questions and answers copied from the FAQPage markup of the site's non-blog pages. Blog articles carry their own FAQ sections.",
   "counts": {
-    "en": 59,
-    "es": 54
+    "en": 64,
+    "es": 59
   },
   "faq": {
     "en": [
@@ -164,7 +164,7 @@
       },
       {
         "question": "How much does your service cost?",
-        "answer": "Remote Supplier Check: $49. Factory Verification Visit: $449. Pre-Shipment Inspection: $399/man-day. Factory Audit: $499/man-day. Sourcing commission: 10% of order value. After a detailed consultation with our team, all listed prices (except the Remote Supplier Check) are 20% off. Consult us now.",
+        "answer": "Remote Supplier Check: $49. Factory Verification Visit: $449. Pre-Shipment Inspection: $399/man-day. Factory Audit: $499/man-day. Live Video Factory Verification: $120/hour (one-hour minimum). Sourcing commission: 10% of order value. After a detailed consultation with our team, all listed prices (except the Remote Supplier Check and Live Video Factory Verification) are 20% off. Consult us now.",
         "source": "https://sourciavera.com/"
       },
       {
@@ -211,6 +211,31 @@
         "question": "Does a passed AQL inspection mean the whole lot is defect-free?",
         "answer": "No. AQL sampling is a statistical check. A lot can pass and still contain some defective units; the AQL describes the level of risk you have agreed to accept.",
         "source": "https://sourciavera.com/inspection-standards"
+      },
+      {
+        "question": "How much does a live video call from a factory in China cost?",
+        "answer": "It costs $120 per hour, with a one-hour minimum, and time beyond the first hour is billed in half-hour steps. Guangzhou and the surrounding area are included in the price; for other regions we quote travel costs separately. The 20% consultation discount does not apply to this service.",
+        "source": "https://sourciavera.com/live-video-factory-verification"
+      },
+      {
+        "question": "Will I get a recording of the live video call?",
+        "answer": "Yes. We send you the recording of the call afterward. A written report is not included; if you need one, the on-site factory verification, from $449 per visit, comes with a written report and unedited video.",
+        "source": "https://sourciavera.com/live-video-factory-verification"
+      },
+      {
+        "question": "Can I ask you to show a specific machine or warehouse during the call?",
+        "answer": "Yes. You choose during the call which machine, warehouse area or certificate to look at, and we show it live. The factory decides which areas we may enter, so if something cannot be shown we tell you during the call.",
+        "source": "https://sourciavera.com/live-video-factory-verification"
+      },
+      {
+        "question": "In which languages is the live video call held?",
+        "answer": "The call is held in English or Spanish, as you prefer. You book it in advance, so we can agree the date, the time and the list of things you want to see before the call starts.",
+        "source": "https://sourciavera.com/live-video-factory-verification"
+      },
+      {
+        "question": "Is a live video call enough to verify a factory before I pay a deposit?",
+        "answer": "Not by itself. A video call shows only what the camera covers at that moment, and it does not replace a sampling inspection or a written audit. For those, choose the on-site factory verification from $449 or a pre-shipment inspection at $399 per man-day.",
+        "source": "https://sourciavera.com/live-video-factory-verification"
       },
       {
         "question": "Is this a real report?",
@@ -421,7 +446,7 @@
       },
       {
         "question": "¿Cuánto cuesta el servicio de verificación de fábrica?",
-        "answer": "Revisión Remota de Proveedor: $49. Visita de Verificación de Fábrica: $449. Inspección Previa al Envío: $399/día-hombre. Auditoría de Fábrica: $499/día-hombre. Abastecimiento y compras: 10% del valor del pedido. Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota) tienen un 20% de descuento. La primera consulta siempre es gratuita.",
+        "answer": "Revisión Remota de Proveedor: $49. Visita de Verificación de Fábrica: $449. Inspección Previa al Envío: $399/día-hombre. Auditoría de Fábrica: $499/día-hombre. Verificación de Fábrica por Videollamada en Vivo: $120/hora (mínimo una hora). Abastecimiento y compras: 10% del valor del pedido. Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota y la Verificación de Fábrica por Videollamada en Vivo) tienen un 20% de descuento. La primera consulta siempre es gratuita.",
         "source": "https://sourciavera.com/es"
       },
       {
@@ -558,6 +583,31 @@
         "question": "¿Me envían el video de la supervisión por WhatsApp?",
         "answer": "Sí. Durante una visita podemos compartir video en vivo por WhatsApp. El video sin editar que grabamos en la fábrica le llega después de la visita, junto con el informe escrito en español.",
         "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Cuánto cuesta una videollamada en vivo desde una fábrica en China?",
+        "answer": "Cuesta $120 por hora, con mínimo de una hora, y el tiempo posterior a la primera hora se cobra por medias horas. Guangzhou y sus alrededores están incluidos en el precio; para otras regiones cotizamos aparte el traslado. El descuento de 20% por consulta no aplica a este servicio.",
+        "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
+      },
+      {
+        "question": "¿Me envían la grabación de la videollamada?",
+        "answer": "Sí. Le enviamos la grabación de la llamada después. No se incluye informe escrito; si usted lo necesita, la verificación de fábrica en sitio, desde $449 por visita, incluye informe escrito y video sin editar.",
+        "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
+      },
+      {
+        "question": "¿Puedo pedir que muestren una máquina o un almacén específico durante la llamada?",
+        "answer": "Sí. Durante la llamada usted elige qué máquina, área de almacén o certificado quiere ver, y lo mostramos en vivo. La fábrica decide a qué áreas podemos entrar; si algo no se puede mostrar, se lo decimos durante la llamada.",
+        "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
+      },
+      {
+        "question": "¿En qué idiomas se realiza la videollamada en vivo?",
+        "answer": "La llamada se realiza en español o en inglés, según su preferencia. Usted la reserva con anticipación, de modo que podemos acordar fecha, hora y la lista de lo que desea ver antes de que empiece.",
+        "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
+      },
+      {
+        "question": "¿Basta una videollamada en vivo para verificar una fábrica antes de pagar un anticipo?",
+        "answer": "Por sí sola, no. Una videollamada muestra solo lo que cubre la cámara en ese momento y no sustituye una inspección por muestreo ni una auditoría por escrito. Para eso, elija la verificación en sitio desde $449 o una inspección previa al embarque de $399 por día-hombre.",
+        "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
       },
       {
         "question": "¿Pago el arancel de 6% por mercancías de China?",
