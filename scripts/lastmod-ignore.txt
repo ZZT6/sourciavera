@@ -32,3 +32,4 @@ aaa698f  # 2026-10-28 wide-screen block on four newly merged guides (presentatio
 3012ab5b44d94ba15e504c12bbb76de9a6761c2f  # 2026-10-29 nav breakpoint 1000->1150px in every page CSS + home why-link colour + sitemap rules: site-wide plumbing, no content change
 59b1c3e750a72abc0dea3501cb0938e97bbcb5de  # 2026-10-29 nav/footer entry for the process pages on every page: site-wide plumbing, no content change
 d1a3aa7c5dfeb20282e64fd657a3fdafb6d76a11  # 2026-10-29 GEO plumbing: RSS link, og:site_name, og:title brand suffix on every page, 5 title suffixes; metadata only, no content change
+33f639ecf81a8fddbf55753ce9e429fe8a6069f6  # 2026-10-29 alt text on 18 images + sitemap noindex guard: accessibility metadata only, no content change
