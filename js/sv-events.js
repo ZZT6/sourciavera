@@ -59,6 +59,20 @@
   }
 
   document.addEventListener('click', onLinkClick, true);
+
+  /* CTA links no longer carry ?service= in the URL. They carry data-service="..." instead: a click either preselects the
+   * contact form straight away (home pages define window.svApplyService) or leaves the choice for the home page to pick up
+   * (localStorage 'sv-service', valid 15 minutes). */
+  function onServiceClick(e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[data-service]') : null;
+    if (!a) return;
+    var v = a.getAttribute('data-service');
+    if (!v) return;
+    if (typeof window.svApplyService === 'function') { window.svApplyService(v); return; }
+    try { localStorage.setItem('sv-service', JSON.stringify({ v: v, t: Date.now() })); } catch (err) { /* storage blocked: the form simply opens without a preselection */ }
+  }
+  document.addEventListener('click', onServiceClick, true);
+  document.addEventListener('auxclick', function (e) { if (e.button === 1) onServiceClick(e); }, true);
   document.addEventListener('auxclick', function (e) { if (e.button === 1) onLinkClick(e); }, true);
 
   /* ------------------------------------------------------------ cookie banner answers -> GA4

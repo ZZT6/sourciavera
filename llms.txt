@@ -1,5 +1,9 @@
 # SourciaVera
 
+> SourciaVera es un tercero con equipo en Guangzhou que representa al comprador y supervisa fábricas en China en español e inglés: visita la planta, graba video sin editar y entrega informe escrito en español. Inspección previa al embarque $399/día, auditoría de fábrica $499/día. No cobramos comisión a la fábrica.
+
+Problemas que atendemos: supervisión de fábricas en China en español; verificación de proveedores de Alibaba y 1688; agente de compras en China para México y Latinoamérica.
+
 > SourciaVera is an independent third-party factory verification and sourcing service based in Guangzhou, China. It is run by a technology company registered in China (business license obtained in October 2026). Before a buyer pays, our team checks Chinese suppliers on the ground: we visit the factory in person, film on-site video and report in English or Spanish. We work for buyers only and take no commission from factories.
 
 ## Facts
