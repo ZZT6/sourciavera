@@ -284,6 +284,51 @@ footer{
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sourciavera.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Small batch manufacturing",
+          "item": "https://sourciavera.com/small-batch"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://sourciavera.com/small-batch#service",
+      "name": "Small batch manufacturing from China",
+      "serviceType": "Small batch manufacturing",
+      "description": "Custom small batch orders from China, 50–500 units. Real factory prices, no middlemen, inspected before shipping.",
+      "url": "https://sourciavera.com/small-batch",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://sourciavera.com/#organization",
+        "name": "SourciaVera",
+        "url": "https://sourciavera.com"
+      }
+    }
+  ]
+}
+</script>
 <style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}</style>
 </head>
 <body>

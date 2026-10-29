@@ -54,6 +54,63 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://sourciavera.com/es/verificacion-fabricas/chile#service",
+      "name": "Verificación de fábricas en China para importadores chilenos",
+      "description": "Servicios independientes de verificación de fábricas y auditoría de proveedores para importadores chilenos que compran en China.",
+      "url": "https://sourciavera.com/es/verificacion-fabricas/chile",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Chile"
+      },
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://sourciavera.com/#organization",
+        "name": "SourciaVera",
+        "url": "https://sourciavera.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de verificación",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Verificación de fábrica"
+            },
+            "price": "449",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Inspección previa al embarque"
+            },
+            "price": "399",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Auditoría de fábrica"
+            },
+            "price": "499",
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
