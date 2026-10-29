@@ -441,3 +441,19 @@ d5dff9d why-sourciavera.html
 702019f blog/product-inspection-cost-before-shipment.html
 702019f blog/es/empresas-inspeccion-china-comparativa-latinoamerica.html
 702019f blog/es/costo-inspeccion-producto-antes-embarque.html
+
+# 2026-10-29 positioning-line commit: Organization/ProfessionalService description sync only on these pages (no visible content change)
+ebd6759 blog/es/index.html
+ebd6759 blog/index.html
+ebd6759 china-sourcing-agent.html
+ebd6759 es/agente-de-compras-china.html
+ebd6759 es/lotes-pequenos.html
+ebd6759 es/por-que-sourciavera.html
+ebd6759 es/privacy.html
+ebd6759 es/supervision-fabricas-china.html
+ebd6759 es/terms.html
+ebd6759 privacy.html
+ebd6759 small-batch.html
+ebd6759 supply-chain-supervision-china.html
+ebd6759 terms.html
+ebd6759 why-sourciavera.html

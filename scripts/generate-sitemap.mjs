@@ -59,7 +59,7 @@ const RULES = [
   [/^\/(es\/)?about$/, 'yearly', '0.7'],
   [/^\/(why-sourciavera|es\/why-sourciavera|es\/por-que-sourciavera)$/, 'yearly', '0.8'],
   [/^\/(small-batch|es\/small-batch|es\/lotes-pequenos)$/, 'monthly', '0.7'],
-  [/^\/(china-sourcing-agent|es\/agente-de-compras-china)$/, 'monthly', '0.9'],
+  [/^\/(china-sourcing-agent|es\/agente-de-compras-china|china-sourcing-process|es\/proceso-de-compra-china)$/, 'monthly', '0.9'],
   [/^\/(es\/)?(inspection-standards|normas-de-inspeccion|sample-report|informe-de-ejemplo|impartiality|imparcialidad|how-to-choose|como-elegir)$/, 'monthly', '0.8'],
   [/^\/(es\/)?(supply-chain-supervision-china|supervision-fabricas-china)$/, 'monthly', '0.8'],
   [/^\/blog\/(es\/)?(glossary-factory-verification-terms|glosario-terminos-verificacion)$/, 'monthly', '0.7'],
