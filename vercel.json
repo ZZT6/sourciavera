@@ -16,6 +16,16 @@
       "permanent": true
     },
     {
+      "source": "/es/small-batch",
+      "destination": "/es/lotes-pequenos",
+      "permanent": true
+    },
+    {
+      "source": "/es/why-sourciavera",
+      "destination": "/es/por-que-sourciavera",
+      "permanent": true
+    },
+    {
       "source": "/blog/case-study-byd-seagull-wheel-offset-et541",
       "destination": "/blog/case-study-byd-seagull-spare-wheel-offset",
       "permanent": true

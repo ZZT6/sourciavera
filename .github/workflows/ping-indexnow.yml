@@ -12,19 +12,32 @@ jobs:
       github.event.deployment_status.state == 'success' &&
       contains(github.event.deployment.environment, 'roduction')
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
 
     steps:
       - name: Checkout deployed commit
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.deployment.sha }}
-          fetch-depth: 2          # need HEAD~1 for diff
+          fetch-depth: 0          # full history: the diff base can be several commits back (see below)
 
       - name: Detect changed page URLs
         id: urls
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          # Diff base = the commit of the last successful ping run, so pages changed in commits whose own
+          # Vercel deployment was superseded (several pushes in a row) are still submitted.
+          # Falls back to the parent commit when there is no earlier run or it is not an ancestor.
+          base=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow ping-indexnow.yml --status success --limit 1 --json headSha --jq '.[0].headSha' 2>/dev/null || true)
+          if [ -z "$base" ] || ! git cat-file -e "$base^{commit}" 2>/dev/null || ! git merge-base --is-ancestor "$base" HEAD 2>/dev/null || [ "$base" = "$(git rev-parse HEAD)" ]; then
+            base=HEAD~1
+          fi
+          echo "Diff base: $base"
           # Map every changed .html file to its public URL
-          changed=$(git diff --name-only HEAD~1 HEAD -- '*.html' 2>/dev/null || true)
+          changed=$(git diff --name-only "$base" HEAD -- '*.html' 2>/dev/null || true)
           urls=""
           while IFS= read -r f; do
             [ -z "$f" ] && continue
@@ -41,7 +54,7 @@ jobs:
           done <<< "$changed"
 
           # Always include homepage when sitemap or index changes
-          if git diff --name-only HEAD~1 HEAD | grep -qE '(sitemap\.xml|index\.html)'; then
+          if git diff --name-only "$base" HEAD | grep -qE '(sitemap\.xml|index\.html)'; then
             urls="$urls https://sourciavera.com/"
           fi
 
