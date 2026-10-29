@@ -68,6 +68,14 @@
       }
     },
     {
+      "id": "live-video-factory-verification",
+      "name": "Live Video Factory Verification",
+      "url": {
+        "en": "https://sourciavera.com/live-video-factory-verification",
+        "es": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
+      }
+    },
+    {
       "id": "factory-verification",
       "name": "Factory Verification (on-site visit)",
       "url": {

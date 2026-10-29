@@ -26,6 +26,24 @@
       }
     },
     {
+      "id": "live-video-factory-verification",
+      "name": "Live Video Factory Verification",
+      "price": {
+        "amount": 120,
+        "currency": "USD",
+        "unit": "per hour"
+      },
+      "price_type": "fixed",
+      "minimum": "1 hour; time beyond the first hour is billed in half-hour steps",
+      "description": "A SourciaVera team member walks the factory on live HD video while the client directs the call, in English or Spanish; the client can ask to see specific machines, warehouse areas and documents.",
+      "delivery": "Booked in advance; the recording of the call is sent afterward. No written report (for a written report, choose the on-site Factory Verification).",
+      "notes": "Guangzhou and surrounding area included; other regions quoted separately for travel. Not part of the 20% consultation discount.",
+      "url": {
+        "en": "https://sourciavera.com/live-video-factory-verification",
+        "es": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
+      }
+    },
+    {
       "id": "factory-verification",
       "name": "Factory Verification (on-site visit)",
       "price": {
