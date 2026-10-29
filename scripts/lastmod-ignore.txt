@@ -26,3 +26,4 @@ ae286204402edb7e6af35d1c9201b1382c3bb45d  # follow-up 2026-10-25: date label for
 727edde920f5147de5539e266559bf6ef358495d  # 2026-10-25 footer flex-wrap and AA contrast CSS on a few tables: presentation only, no content change
 a2e062cb386660d23bb20dc6deafe8084231c758  # 2026-10-25 axe-core audit fixes: colours, hero, nav, footer wrap; presentation only, no content change
 cb90af6  # 2026-10-28: contextual internal links in 38 articles (country pages, small-batch, trust pages, Mexico): no change to article facts
+7da7ea6  # 2026-10-28 wide-screen hero/typography/TOC block on all article and data pages (presentation only)
