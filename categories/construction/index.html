@@ -77,6 +77,22 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "VideoObject",
+      "name": "Visit to an expandable container house factory (excerpt without audio)",
+      "description": "Excerpt without audio (16 s) from the video of a verification visit to an expandable container house factory; the factory's details are hidden.",
+      "thumbnailUrl": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/poster.webp",
+      "contentUrl": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/visita-fabrica-paneles.mp4",
+      "duration": "PT16S",
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
       "@type": "Product",
       "name": "Expandable container house – EPS 75 mm walls, glass door, flat roof",
       "description": "Expandable container house (Option A). Standard: budget-focused, mild climates, seasonal or vacation use.",
@@ -227,6 +243,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 @media(max-width:768px){table th,table td{overflow-wrap:anywhere}}
 /*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
 /*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
+.vid-wrap{margin:1.5rem 0;max-width:22rem}.vid-btn{position:relative;display:block;width:100%;padding:0;border:0;background:#000;cursor:pointer}.vid-btn img{display:block;width:100%;height:auto}.vid-btn .vid-play{position:absolute;inset:0;margin:auto;width:4rem;height:4rem;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;font-size:1.6rem;line-height:4rem;text-align:center}.vid-wrap video{display:block;width:100%;height:auto;background:#000}.vid-wrap figcaption{font-size:.82rem;color:var(--muted);margin-top:.4rem;line-height:1.45}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -284,6 +301,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 
     <div class="product-detail-block">
       <figure style="margin:0 0 1.5rem"><img class="product-img" src="/images/expandable-house-factory-showroom.webp" alt="Finished expandable container house on display inside a factory hall" width="810" height="608" loading="lazy" style="margin-bottom:0.45rem"><figcaption style="font-size:0.78rem;color:var(--muted);line-height:1.5">Real photo: a finished expandable unit at the factory, from a client verification case.</figcaption></figure>
+      <figure class="vid-wrap"><button type="button" class="vid-btn" data-src="/assets/blog/visita-fabrica-casas-contenedor/visita-fabrica-paneles.mp4" aria-label="Play the visit video (16 s, no audio)"><img src="/assets/blog/visita-fabrica-casas-contenedor/poster.webp" alt="Inside a production hall of container houses" width="406" height="720" loading="lazy"><span class="vid-play" aria-hidden="true">&#9654;</span></button><figcaption>Excerpt without audio (16 s) from the video of a verification visit to an expandable container house factory; the factory's details are hidden.</figcaption></figure>
       <div class="detail-block-title">Container Homes · Market Data</div>
       <div class="detail-block-h3">Configuration Options — Expandable Container Homes</div>
       <div style="overflow-x:auto">
@@ -483,5 +501,6 @@ CookieConsent.run({
 });
 </script>
 <script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
+<script>document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.vid-btn');if(!b)return;var v=document.createElement('video');v.controls=true;v.autoplay=true;v.playsInline=true;v.preload='auto';v.src=b.getAttribute('data-src');v.setAttribute('aria-label',b.getAttribute('aria-label')||'');b.parentNode.replaceChild(v,b);});</script>
 </body>
 </html>
