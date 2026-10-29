@@ -437,3 +437,7 @@ d5dff9d es/datos/autopartes-china-mexico-importaciones-reforma-arancelaria-2026.
 d5dff9d es/prensa.html
 d5dff9d small-batch.html
 d5dff9d why-sourciavera.html
+702019f blog/china-inspection-companies-compared-latin-america.html
+702019f blog/product-inspection-cost-before-shipment.html
+702019f blog/es/empresas-inspeccion-china-comparativa-latinoamerica.html
+702019f blog/es/costo-inspeccion-producto-antes-embarque.html
