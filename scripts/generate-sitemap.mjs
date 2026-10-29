@@ -155,6 +155,10 @@ function hasNoindex(html) {
   return false;
 }
 
+// Revenue pages must never be noindex (a noindex placeholder also silently drops out of the sitemap).
+// If one slips in, the build fails instead of quietly de-indexing the page.
+const REVENUE_PAGE = /^\/(?:$|verification-services|es\/verificacion-fabricas|es$|categories|es\/categorias|supply-chain-supervision-china|es\/supervision-fabricas-china|china-sourcing-agent|es\/agente-de-compras-china|china-sourcing-process|es\/proceso-de-compra-china|small-batch|es\/lotes-pequenos|why-sourciavera|es\/por-que-sourciavera)(?:\/|$)/;
+
 function redirectSources() {
   const set = new Set();
   try {
@@ -215,7 +219,10 @@ function build() {
     const url = toUrl(rel);
     if (SKIP_BASENAME.test(base)) { excluded.push([url, 'file name looks like a 404/draft/test page']); continue; }
     const html = fs.readFileSync(file, 'utf8');
-    if (hasNoindex(html)) { excluded.push([url, 'noindex']); continue; }
+    if (hasNoindex(html)) {
+      if (REVENUE_PAGE.test(url)) throw new Error(`Revenue page ${url} carries noindex (${rel}). Revenue pages must stay indexable: remove the robots meta.`);
+      excluded.push([url, 'noindex']); continue;
+    }
     if (/<!--\s*sitemap:exclude\s*-->/i.test(html)) { excluded.push([url, 'sitemap:exclude marker']); continue; }
     if (redirects.has(url)) { excluded.push([url, 'redirected away in vercel.json']); continue; }
     const loc = ORIGIN + (url === '/' ? '/' : url);
