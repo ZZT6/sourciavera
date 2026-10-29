@@ -69,6 +69,7 @@
         "@type":"OfferCatalog",
         "name":"Verification Services",
         "itemListElement":[
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Live Video Factory Verification"},"price":"120","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"120","priceCurrency":"USD","unitText":"hour"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Factory Verification"},"price":"449","priceCurrency":"USD"},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pre-Shipment Inspection"},"price":"399","priceCurrency":"USD"},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Factory Audit"},"price":"499","priceCurrency":"USD"}
@@ -152,6 +153,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .service-card:nth-child(2)::before{background:var(--teal)}
 .service-card:nth-child(3)::before{background:var(--navy)}
 .service-card:nth-child(4)::before{background:#8A6D00}
+.service-card:nth-child(5)::before{background:var(--coral)}
 .service-num{font-size:2.5rem;color:var(--border);font-weight:700;position:absolute;top:1rem;right:1.5rem;line-height:1}
 .service-card h3{font-size:1.2rem;font-weight:700;margin-bottom:0.2rem;color:var(--navy)}
 .service-sub{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.75rem;font-weight:500;color:var(--muted)}
@@ -160,6 +162,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .service-card:nth-child(2) .service-price{background:var(--teal)}
 .service-card:nth-child(3) .service-price{background:var(--navy)}
 .service-card:nth-child(4) .service-price{background:#8A6D00}
+.service-card:nth-child(5) .service-price{background:var(--coral)}
 .service-card p{color:var(--muted);font-size:0.88rem;line-height:1.7;margin-bottom:1rem}
 .check-list{list-style:none;display:flex;flex-direction:column;gap:0.45rem}
 .check-list li{font-size:0.86rem;color:var(--navy);padding-left:1.3rem;position:relative;line-height:1.5}
@@ -315,7 +318,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 
 <section class="services" id="services">
   <div class="section-tag">Services and Pricing</div>
-  <div class="section-title">Four services. One goal:<br>your order arrives as you ordered it.</div>
+  <div class="section-title">Five services. One goal:<br>your order arrives as you ordered it.</div>
   <div class="service-grid">
     <div class="service-card">
       <div class="service-num" aria-hidden="true">01</div>
@@ -368,6 +371,13 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <li>Freight quote to your port or Guatemala City</li>
         <li>Purchasing commission only if the order goes ahead</li>
       </ul>
+    </div>
+    <div class="service-card">
+      <div class="service-num" aria-hidden="true">05</div>
+      <h3>Live Video Factory Verification</h3>
+      <div class="service-sub">Walk the factory live</div>
+      <div class="service-price">$120 per hour</div>
+      <p>A team member walks the factory on live HD video while you direct the call, in English and Spanish. One-hour minimum, billed by the hour; recording within 24 hours; no written report. <a href="/live-video-factory-verification">See details</a>.</p>
     </div>
   </div>
 </section>

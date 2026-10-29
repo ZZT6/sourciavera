@@ -159,6 +159,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 /*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
 /*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
 .vid-wrap{margin:1.5rem 0;max-width:22rem}.vid-btn{position:relative;display:block;width:100%;padding:0;border:0;background:#000;cursor:pointer}.vid-btn img{display:block;width:100%;height:auto}.vid-btn .vid-play{position:absolute;inset:0;margin:auto;width:4rem;height:4rem;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;font-size:1.6rem;line-height:4rem;text-align:center}.vid-wrap video{display:block;width:100%;height:auto;background:#000}.vid-wrap figcaption{font-size:.82rem;color:var(--muted);margin-top:.4rem;line-height:1.45}
+/*pg5*/@media(min-width:769px){.pricing-grid{grid-template-columns:repeat(5,1fr)}}
 </style>
 <script type="application/ld+json">
 {
@@ -271,7 +272,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       "@id": "https://sourciavera.com/live-video-factory-verification#service",
       "name": "Live Video Factory Verification",
       "serviceType": "Live video factory verification",
-      "description": "A SourciaVera team member walks a factory in China on live HD video while the client directs the call, in English or Spanish. Recording sent afterward; no written report.",
+      "description": "A SourciaVera team member walks a factory in China on live HD video while the client directs the call, in English and Spanish. Recording sent within 24 hours after the call; no written report.",
       "url": "https://sourciavera.com/live-video-factory-verification",
       "inLanguage": "en",
       "provider": {
@@ -298,7 +299,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       "offers": {
         "@type": "Offer",
         "name": "Live video factory verification, per hour",
-        "description": "One-hour minimum, then half-hour steps. Guangzhou and surroundings included; other regions quoted separately. Not part of the 20% consultation discount.",
+        "description": "Billed by the hour, one-hour minimum. Guangzhou and surroundings included; other regions quoted separately. Not part of the 20% consultation discount.",
         "url": "https://sourciavera.com/live-video-factory-verification",
         "price": "120",
         "priceCurrency": "USD",
@@ -324,7 +325,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           "name": "How much does a live video call from a factory in China cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It costs $120 per hour, with a one-hour minimum, and time beyond the first hour is billed in half-hour steps. Guangzhou and the surrounding area are included in the price; for other regions we quote travel costs separately. The 20% consultation discount does not apply to this service."
+            "text": "It costs $120 per hour, billed by the hour with a one-hour minimum. Guangzhou and the surrounding area are included in the price; for other regions we quote travel costs separately. The 20% consultation discount does not apply to this service."
           }
         },
         {
@@ -332,7 +333,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           "name": "Will I get a recording of the live video call?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We send you the recording of the call afterward. A written report is not included; if you need one, the on-site factory verification, from $449 per visit, comes with a written report and unedited video."
+            "text": "Yes. We send you the recording within 24 hours after the call ends. A written report is not included; if you need one, the on-site factory verification, from $449 per visit, comes with a written report and unedited video."
           }
         },
         {
@@ -345,10 +346,10 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         },
         {
           "@type": "Question",
-          "name": "In which languages is the live video call held?",
+          "name": "Which app and which languages are used for the live video call?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The call is held in English or Spanish, as you prefer. You book it in advance, so we can agree the date, the time and the list of things you want to see before the call starts."
+            "text": "The call uses WhatsApp video by default, and we can use Zoom, Google Meet or Teams if you prefer. We communicate in English and Spanish. You book in advance, so we can agree the date, the time and the list of things you want to see before the call starts."
           }
         },
         {
@@ -390,7 +391,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 <section class="hero">
   <div class="hero-tag">Live video · China</div>
   <h1>Live Video Factory Verification in China</h1>
-  <p>A SourciaVera team member walks a factory in China on live HD video while you watch and direct the call, in English or Spanish. It costs $120 per hour, with a one-hour minimum, and we send you the recording afterward. No written report is included.</p>
+  <p>A SourciaVera team member walks a factory in China on live HD video while you watch and direct the call, in English and Spanish. It costs $120 per hour, billed by the hour with a one-hour minimum; the recording follows within 24 hours. No written report is included.</p>
   <div class="hero-btns">
     <a href="/#contact" data-service="Live Video Factory Verification ($120/hour)" class="btn-coral">Request a Quote</a>
     <a href="https://wa.me/8613688057230" class="btn-wa">Chat on WhatsApp</a>
@@ -403,13 +404,13 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     <p>You book in advance. The steps are the same for any factory in the Guangzhou area:</p>
     <ol style="color:var(--muted);font-size:0.95rem;line-height:1.9;padding-left:1.4rem;margin-bottom:1.5rem">
       <li style="margin-bottom:0.6rem"><strong>Tell us the factory and what you want to see.</strong> Send the factory name, its address and the machines, areas or documents you care about through the <a href="/#contact" data-service="Live Video Factory Verification ($120/hour)">contact form</a> or WhatsApp.</li>
-      <li style="margin-bottom:0.6rem"><strong>We agree a date and time with you.</strong> The call is held in English or Spanish, whichever you prefer.</li>
+      <li style="margin-bottom:0.6rem"><strong>We agree a date and time with you.</strong> The call is held on WhatsApp video by default, in English and Spanish. If you prefer, we can use Zoom, Google Meet or Teams instead.</li>
       <li style="margin-bottom:0.6rem"><strong>A team member goes to the factory.</strong> Guangzhou and the surrounding area are included in the price; for other regions we quote the travel costs separately before you confirm.</li>
       <li style="margin-bottom:0.6rem"><strong>You direct the call live.</strong> Ask us to move to another machine, open the warehouse area or show a certificate, and we do it while you watch.</li>
-      <li style="margin-bottom:0.6rem"><strong>We send you the recording.</strong> The recording of the call reaches you afterward. A written report is not part of this service.</li>
+      <li style="margin-bottom:0.6rem"><strong>We send you the recording.</strong> The recording reaches you within 24 hours after the call ends. A written report is not part of this service.</li>
     </ol>
     <h3 style="font-size:1.1rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.6rem">Price and billing</h3>
-    <p>The price is $120 per hour with a one-hour minimum. Time beyond the first hour is billed in half-hour steps ($60 per half hour). The 20% discount that applies to our on-site services after a detailed consultation does not apply to this service.</p>
+    <p>The price is $120 per hour, billed by the hour with a one-hour minimum. Each additional hour is billed at the same $120 rate. The 20% discount that applies to our on-site services after a detailed consultation does not apply to this service.</p>
   </div>
 </section>
 
@@ -464,7 +465,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">A live HD walk-through that you direct, plus the recording</td>
 <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">Yes: our team member is on site, you watch remotely</td>
 <td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">No</td>
-<td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">At the booked time; recording sent afterward</td>
+<td style="padding:0.9rem 1.1rem;color:var(--navy);font-weight:500">At the booked time; recording within 24 hours</td>
 </tr>
 <tr style="border-bottom:1px solid var(--border);">
 <td style="padding:0.9rem 1.1rem;font-weight:600;color:var(--navy)"><a href="/verification-services">On-site Factory Verification</a></td>
@@ -491,7 +492,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           <span class="faq-toggle">+</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner">It costs $120 per hour, with a one-hour minimum, and time beyond the first hour is billed in half-hour steps. Guangzhou and the surrounding area are included in the price; for other regions we quote travel costs separately. The 20% consultation discount does not apply to this service.</div>
+          <div class="faq-a-inner">It costs $120 per hour, billed by the hour with a one-hour minimum. Guangzhou and the surrounding area are included in the price; for other regions we quote travel costs separately. The 20% consultation discount does not apply to this service.</div>
         </div>
       </div>
 
@@ -501,7 +502,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           <span class="faq-toggle">+</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner">Yes. We send you the recording of the call afterward. A written report is not included; if you need one, the on-site factory verification, from $449 per visit, comes with a written report and unedited video.</div>
+          <div class="faq-a-inner">Yes. We send you the recording within 24 hours after the call ends. A written report is not included; if you need one, the on-site factory verification, from $449 per visit, comes with a written report and unedited video.</div>
         </div>
       </div>
 
@@ -517,11 +518,11 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
-          <span class="faq-q-text">In which languages is the live video call held?</span>
+          <span class="faq-q-text">Which app and which languages are used for the live video call?</span>
           <span class="faq-toggle">+</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner">The call is held in English or Spanish, as you prefer. You book it in advance, so we can agree the date, the time and the list of things you want to see before the call starts.</div>
+          <div class="faq-a-inner">The call uses WhatsApp video by default, and we can use Zoom, Google Meet or Teams if you prefer. We communicate in English and Spanish. You book in advance, so we can agree the date, the time and the list of things you want to see before the call starts.</div>
         </div>
       </div>
 

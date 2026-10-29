@@ -214,12 +214,12 @@
       },
       {
         "question": "How much does a live video call from a factory in China cost?",
-        "answer": "It costs $120 per hour, with a one-hour minimum, and time beyond the first hour is billed in half-hour steps. Guangzhou and the surrounding area are included in the price; for other regions we quote travel costs separately. The 20% consultation discount does not apply to this service.",
+        "answer": "It costs $120 per hour, billed by the hour with a one-hour minimum. Guangzhou and the surrounding area are included in the price; for other regions we quote travel costs separately. The 20% consultation discount does not apply to this service.",
         "source": "https://sourciavera.com/live-video-factory-verification"
       },
       {
         "question": "Will I get a recording of the live video call?",
-        "answer": "Yes. We send you the recording of the call afterward. A written report is not included; if you need one, the on-site factory verification, from $449 per visit, comes with a written report and unedited video.",
+        "answer": "Yes. We send you the recording within 24 hours after the call ends. A written report is not included; if you need one, the on-site factory verification, from $449 per visit, comes with a written report and unedited video.",
         "source": "https://sourciavera.com/live-video-factory-verification"
       },
       {
@@ -228,8 +228,8 @@
         "source": "https://sourciavera.com/live-video-factory-verification"
       },
       {
-        "question": "In which languages is the live video call held?",
-        "answer": "The call is held in English or Spanish, as you prefer. You book it in advance, so we can agree the date, the time and the list of things you want to see before the call starts.",
+        "question": "Which app and which languages are used for the live video call?",
+        "answer": "The call uses WhatsApp video by default, and we can use Zoom, Google Meet or Teams if you prefer. We communicate in English and Spanish. You book in advance, so we can agree the date, the time and the list of things you want to see before the call starts.",
         "source": "https://sourciavera.com/live-video-factory-verification"
       },
       {
@@ -586,12 +586,12 @@
       },
       {
         "question": "¿Cuánto cuesta una videollamada en vivo desde una fábrica en China?",
-        "answer": "Cuesta $120 por hora, con mínimo de una hora, y el tiempo posterior a la primera hora se cobra por medias horas. Guangzhou y sus alrededores están incluidos en el precio; para otras regiones cotizamos aparte el traslado. El descuento de 20% por consulta no aplica a este servicio.",
+        "answer": "Cuesta $120 por hora, cobrada por hora con mínimo de una hora. Guangzhou y sus alrededores están incluidos en el precio; para otras regiones cotizamos aparte el traslado. El descuento de 20% por consulta no aplica a este servicio.",
         "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
       },
       {
         "question": "¿Me envían la grabación de la videollamada?",
-        "answer": "Sí. Le enviamos la grabación de la llamada después. No se incluye informe escrito; si usted lo necesita, la verificación de fábrica en sitio, desde $449 por visita, incluye informe escrito y video sin editar.",
+        "answer": "Sí. Le enviamos la grabación dentro de las 24 horas posteriores al fin de la llamada. No se incluye informe escrito; si usted lo necesita, la verificación de fábrica en sitio, desde $449 por visita, incluye informe escrito y video sin editar.",
         "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
       },
       {
@@ -600,8 +600,8 @@
         "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
       },
       {
-        "question": "¿En qué idiomas se realiza la videollamada en vivo?",
-        "answer": "La llamada se realiza en español o en inglés, según su preferencia. Usted la reserva con anticipación, de modo que podemos acordar fecha, hora y la lista de lo que desea ver antes de que empiece.",
+        "question": "¿Qué aplicación e idiomas se usan en la videollamada en vivo?",
+        "answer": "La llamada usa video de WhatsApp de forma predeterminada, y podemos usar Zoom, Google Meet o Teams si usted lo prefiere. Nos comunicamos en español e inglés. Usted reserva con anticipación, de modo que acordamos fecha, hora y la lista de lo que desea ver antes de que empiece.",
         "source": "https://sourciavera.com/es/verificacion-fabrica-videollamada-en-vivo"
       },
       {
