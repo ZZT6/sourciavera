@@ -80,3 +80,7 @@ b49b188 blog/es/mexico-reforma-ley-aduanera-embargo-mercancia-subvaluada-importa
 41a6e67 blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores.html  # 2026-10-28 source note only (official PDF instead of mLey)
 41a6e67 es/glosario-importacion.html  # 2026-10-28 source note only (official PDF instead of mLey)
 41a6e67 import-glossary.html  # 2026-10-28 source note only (official PDF instead of mLey)
+cf431a8 blog/product-inspection-cost-before-shipment.html
+cf431a8 blog/proforma-invoice-chinese-supplier-what-to-check.html
+cf431a8 blog/es/costo-inspeccion-producto-antes-embarque.html
+cf431a8 blog/es/factura-proforma-proveedor-chino-que-revisar.html
