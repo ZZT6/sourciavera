@@ -41,6 +41,14 @@ Puerta a puerta: precio total antes de producir, despacho por agente aduanal con
 - [China Supplier Verification Checklist](https://sourciavera.com/blog/china-supplier-verification-checklist): what to check before paying a supplier
 - [9 Alibaba Supplier Red Flags](https://sourciavera.com/blog/alibaba-supplier-red-flags): warning signs and how to verify a supplier
 
+## Machine-readable resources
+
+- [AI summary (JSON)](https://sourciavera.com/ai/summary.json): company facts, services, markets, contact and profiles
+- [Services and public prices (JSON)](https://sourciavera.com/ai/service.json): the same prices as the home page, in USD
+- [FAQ (JSON)](https://sourciavera.com/ai/faq.json): questions and answers from the site's FAQPage markup, English and Spanish
+- [Blog feed, English (RSS)](https://sourciavera.com/rss.xml) and [Blog feed, Español (RSS)](https://sourciavera.com/es/rss.xml)
+- [ai.txt](https://sourciavera.com/.well-known/ai.txt): AI crawler permissions
+
 ## Core Service Pages
 
 - [Factory Verification Overview](https://sourciavera.com/): Homepage with full service description and pricing

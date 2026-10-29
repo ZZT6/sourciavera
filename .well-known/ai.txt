@@ -1,0 +1,93 @@
+# ai.txt for sourciavera.com
+# SourciaVera: independent third-party factory verification, inspection and sourcing in China (Guangzhou).
+# Public content may be read, indexed, quoted and used by AI search and assistants. Please cite the page URL.
+# Prices change; read /ai/service.json or the live pricing page before quoting them.
+
+# Machine-readable resources
+# Summary:   https://sourciavera.com/ai/summary.json
+# Services:  https://sourciavera.com/ai/service.json
+# FAQ:       https://sourciavera.com/ai/faq.json
+# llms.txt:  https://sourciavera.com/llms.txt
+# Feeds:     https://sourciavera.com/rss.xml (EN), https://sourciavera.com/es/rss.xml (ES)
+# Sitemap:   https://sourciavera.com/sitemap.xml
+# Contact:   info@sourciavera.com
+
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/
+
+User-agent: Anthropic-AI
+Allow: /
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /api/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /api/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /api/
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /api/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /api/
+
+User-agent: *
+Allow: /
+Disallow: /api/

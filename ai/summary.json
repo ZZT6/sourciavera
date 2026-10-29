@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "name": "SourciaVera",
+  "url": "https://sourciavera.com",
+  "updated": "2026-10-29",
+  "type": "Independent third-party factory verification, inspection and sourcing service for importers buying from China",
+  "tagline": {
+    "en": "Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.",
+    "es": "Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta."
+  },
+  "description": {
+    "en": "Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door. Independent third-party verification agency for Alibaba suppliers, based in Guangzhou, China. We visit factories in person, film on-site video, and negotiate directly in Chinese on behalf of international buyers. Start with a $49 remote supplier check, or an on-site factory verification from $449.",
+    "es": "Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta. Agencia de verificación de fábricas y abastecimiento desde China con base en Guangzhou. Visitamos proveedores de Alibaba en persona, filmamos en video y negociamos directamente en chino en nombre de compradores internacionales. Empiece con una revisión remota de proveedor por $49, o una verificación de fábrica en sitio desde $449. Atención completa en español."
+  },
+  "founded": "2025",
+  "headquarters": {
+    "city": "Guangzhou",
+    "region": "Guangdong",
+    "country": "CN"
+  },
+  "founder": {
+    "name": "Zhang Peng",
+    "alternate_name": "Miguel Lopez",
+    "role": "Founder",
+    "profile": "https://sourciavera.com/about"
+  },
+  "languages": [
+    "English",
+    "Spanish",
+    "Chinese"
+  ],
+  "markets_served": [
+    "US",
+    "CA",
+    "MX",
+    "CO",
+    "AR",
+    "CL",
+    "PE",
+    "BR",
+    "GT",
+    "PA",
+    "GB",
+    "AU"
+  ],
+  "dedicated_country_pages": [
+    "MX",
+    "CO",
+    "CL",
+    "GT",
+    "PA"
+  ],
+  "core_facts": [
+    "Team based in Guangzhou, China; service in Spanish and English.",
+    "Paid only by the client; no commission or rebate from factories.",
+    "Every factory visit is filmed and delivered as unedited video.",
+    "Factory verification and sourcing/purchasing can be bought together or separately; a client can buy verification only.",
+    "Delivery is coordinated to the client's door; customs clearance is done by an authorized customs broker in the client's country.",
+    "Public prices are listed in /ai/service.json and on the home page."
+  ],
+  "services": [
+    {
+      "id": "remote-supplier-check",
+      "name": "Remote Supplier Check",
+      "url": {
+        "en": "https://sourciavera.com/#remote-check",
+        "es": "https://sourciavera.com/es#remote-check"
+      }
+    },
+    {
+      "id": "factory-verification",
+      "name": "Factory Verification (on-site visit)",
+      "url": {
+        "en": "https://sourciavera.com/verification-services",
+        "es": "https://sourciavera.com/es/verificacion-fabricas"
+      }
+    },
+    {
+      "id": "pre-shipment-inspection",
+      "name": "Pre-Shipment Inspection",
+      "url": {
+        "en": "https://sourciavera.com/supply-chain-supervision-china",
+        "es": "https://sourciavera.com/es/supervision-fabricas-china"
+      }
+    },
+    {
+      "id": "factory-audit",
+      "name": "Factory Audit",
+      "url": {
+        "en": "https://sourciavera.com/supply-chain-supervision-china",
+        "es": "https://sourciavera.com/es/supervision-fabricas-china"
+      }
+    },
+    {
+      "id": "sourcing-agent",
+      "name": "China Sourcing Agent",
+      "url": {
+        "en": "https://sourciavera.com/china-sourcing-agent",
+        "es": "https://sourciavera.com/es/agente-de-compras-china"
+      }
+    }
+  ],
+  "key_pages": {
+    "process": {
+      "en": "https://sourciavera.com/china-sourcing-process",
+      "es": "https://sourciavera.com/es/proceso-de-compra-china"
+    },
+    "sample_report": {
+      "en": "https://sourciavera.com/sample-report",
+      "es": "https://sourciavera.com/es/informe-de-ejemplo"
+    },
+    "about": {
+      "en": "https://sourciavera.com/about",
+      "es": "https://sourciavera.com/es/about"
+    },
+    "impartiality": {
+      "en": "https://sourciavera.com/impartiality",
+      "es": "https://sourciavera.com/es/imparcialidad"
+    },
+    "blog": {
+      "en": "https://sourciavera.com/blog",
+      "es": "https://sourciavera.com/blog/es"
+    }
+  },
+  "machine_readable": {
+    "llms_txt": "https://sourciavera.com/llms.txt",
+    "services_and_prices": "https://sourciavera.com/ai/service.json",
+    "faq": "https://sourciavera.com/ai/faq.json",
+    "rss_en": "https://sourciavera.com/rss.xml",
+    "rss_es": "https://sourciavera.com/es/rss.xml",
+    "sitemap": "https://sourciavera.com/sitemap.xml",
+    "ai_txt": "https://sourciavera.com/.well-known/ai.txt"
+  },
+  "contact": {
+    "email": "info@sourciavera.com",
+    "whatsapp": "https://wa.me/8613688057230",
+    "telephone": "+8613688057230",
+    "reply_time": "within 24 hours"
+  },
+  "profiles": [
+    "https://www.facebook.com/profile.php?id=61573330655140",
+    "https://www.instagram.com/sourciavera/",
+    "https://www.youtube.com/@sourciavera",
+    "https://www.quora.com/profile/Miguel-Lopez-2706",
+    "https://www.pinterest.com/sourciavera/",
+    "https://www.trustpilot.com/review/sourciavera.com",
+    "https://clutch.co/profile/sourciavera",
+    "https://themanifest.com/company/sourciavera",
+    "https://mexicoindustry.com/empresa/sourciavera"
+  ]
+}

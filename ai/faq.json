@@ -1,0 +1,584 @@
+{
+  "schema_version": "1.0",
+  "provider": {
+    "name": "SourciaVera",
+    "url": "https://sourciavera.com"
+  },
+  "updated": "2026-10-29",
+  "note": "Questions and answers copied from the FAQPage markup of the site's non-blog pages. Blog articles carry their own FAQ sections.",
+  "counts": {
+    "en": 59,
+    "es": 54
+  },
+  "faq": {
+    "en": [
+      {
+        "question": "What's the difference between OEM and ODM for auto parts?",
+        "answer": "OEM means you supply the design and the factory builds dedicated tooling to your spec, typically 500 to 5,000+ units with a $2,000–$15,000 tooling deposit. ODM means the factory already owns the design and tooling and you put your brand on it, with MOQs closer to 100–300 units and little or no tooling cost.",
+        "source": "https://sourciavera.com/categories/auto-parts"
+      },
+      {
+        "question": "How can I tell if carbon fiber auto parts are real?",
+        "answer": "Real carbon fiber is noticeably lighter than carbon-look fiberglass or ABS at the same size, has a slight three-dimensional weave depth under the clear coat instead of a flat printed pattern, and gives a sharp, hollow sound when tapped. Ask for a physical sample before committing to a production run.",
+        "source": "https://sourciavera.com/categories/auto-parts"
+      },
+      {
+        "question": "What certifications do LED auto parts need for the US market?",
+        "answer": "SAE certification is required for lighting sold as road-legal in the US, and DOT marks are required on headlights, taillights, and turn signals. We verify the actual certificate number against your specific part number rather than trusting a badge on the listing page.",
+        "source": "https://sourciavera.com/categories/auto-parts"
+      },
+      {
+        "question": "Why does wheel offset matter for a BYD Seagull?",
+        "answer": "The correct offset for a BYD Seagull spare wheel is ET 30, not the 54.1 mm center bore, a different measurement a factory spec sheet can easily mix up with offset. If a wheel arrives with the wrong offset, the installer has to add a spacer, which affects suspension geometry and cornering behavior and can cause uneven tire wear at highway speed.",
+        "source": "https://sourciavera.com/categories/auto-parts"
+      },
+      {
+        "question": "How much does a factory verification cost?",
+        "answer": "Factory verification starts at $449 per visit. Pre-shipment inspection runs $399 per man-day, and a full factory audit is $499 per man-day.",
+        "source": "https://sourciavera.com/categories/auto-parts"
+      },
+      {
+        "question": "How much does a sourcing agent in China charge?",
+        "answer": "Our commission is 10% of the order value and is charged only when the purchase closes. On-site verification, inspection and audit are priced separately at published rates: from $449 per visit, $399 and $499 per man-day, with 20% off after a detailed consultation. Always ask in writing what any commission includes.",
+        "source": "https://sourciavera.com/china-sourcing-agent"
+      },
+      {
+        "question": "Does the agent take a commission from the factory?",
+        "answer": "No. SourciaVera charges the client only and does not accept commissions from factories, so we have no interest in which factory you choose. How we are paid is explained in our impartiality statement.",
+        "source": "https://sourciavera.com/china-sourcing-agent"
+      },
+      {
+        "question": "Can I buy from China with no minimum quantity through an agent?",
+        "answer": "It depends on the product. Custom and private-label orders start at 50 pieces, far below a typical factory minimum, and stock items are available from 1 piece. Custom orders get a sample approved before bulk production. The terms are on the small batch page.",
+        "source": "https://sourciavera.com/china-sourcing-agent"
+      },
+      {
+        "question": "What is the difference between a sourcing agent and a factory verification?",
+        "answer": "A verification confirms that a factory you already found is real: we visit, record unedited video and deliver a report. The sourcing agent covers the whole process: factory search, negotiation, sample, follow-up, inspection before export and shipping. You can start with a verification and move to the agent later.",
+        "source": "https://sourciavera.com/china-sourcing-agent"
+      },
+      {
+        "question": "Will you send me video of the inspection before shipping?",
+        "answer": "Yes. Every order is inspected at the factory before export and the inspection is recorded on video, which we send to you. On small batches every piece is checked; on large orders, with the agreed sampling.",
+        "source": "https://sourciavera.com/china-sourcing-agent"
+      },
+      {
+        "question": "Where is the warehouse and who runs it?",
+        "answer": "The warehouse is in Guangzhou and we run it ourselves, not an outside partner. There we handle storage, consolidation, packing and quality checks. We coordinate shipping to your door; customs clearance in Mexico is handled by a licensed customs broker (agente aduanal).",
+        "source": "https://sourciavera.com/china-sourcing-agent"
+      },
+      {
+        "question": "Can you deliver my order from China to my door in Mexico?",
+        "answer": "Yes. We coordinate shipping from the factory to your door and give you an all-in price before production; DDP is available, with duties and delivery included. Customs clearance in Mexico is handled by a licensed customs broker (agente aduanal). In other Latin American countries, an authorized customs broker in your country handles clearance.",
+        "source": "https://sourciavera.com/china-sourcing-process"
+      },
+      {
+        "question": "Who handles customs clearance in Mexico?",
+        "answer": "A licensed customs broker (agente aduanal). If you have a Mexican importer registration (padrón de importadores), the goods are imported under your name so you can credit the VAT. We declare the real invoice value — no undervaluation.",
+        "source": "https://sourciavera.com/china-sourcing-process"
+      },
+      {
+        "question": "What does the door-to-door (DDP) price include?",
+        "answer": "DDP (Delivered Duty Paid) is a delivery term in which the price includes duties and delivery to your door. Before production we give you an all-in price, which can be DDP. What it includes exactly in your case depends on the product and the destination, and we define it before production.",
+        "source": "https://sourciavera.com/china-sourcing-process"
+      },
+      {
+        "question": "Does anyone from your team appear in the inspection video?",
+        "answer": "Yes. We inspect on unedited video and appear on camera: the people you see in our inspection videos are on our team, about 30 people across purchasing, transport and logistics, and foreign trade.",
+        "source": "https://sourciavera.com/china-sourcing-process"
+      },
+      {
+        "question": "What are the main types of China verification and inspection providers?",
+        "answer": "Three are common: large international inspection companies, local Chinese inspection companies, and sourcing agents or individual middlemen. They differ in language support, price transparency, how they are paid, whether you get video, ongoing follow-up and fit for small orders.",
+        "source": "https://sourciavera.com/how-to-choose"
+      },
+      {
+        "question": "When is a large international inspection company the better choice?",
+        "answer": "When you need accredited reports, laboratory testing, product certification or an audit against a recognised scheme, or when your own customer requires a named global company.",
+        "source": "https://sourciavera.com/how-to-choose"
+      },
+      {
+        "question": "What is the most important question to ask any provider?",
+        "answer": "How are you paid, and by whom? If the provider earns anything from the factory, or earns more when your order closes, ask how that is kept apart from the advice you receive.",
+        "source": "https://sourciavera.com/how-to-choose"
+      },
+      {
+        "question": "Should I ask for video, not just photos?",
+        "answer": "Yes. Photos in a report can be selected and reused. Ask whether you receive the unedited video recorded during the visit.",
+        "source": "https://sourciavera.com/how-to-choose"
+      },
+      {
+        "question": "Where is SourciaVera not the right choice?",
+        "answer": "If you need laboratory tests, international certificates or an accredited inspection report, a large inspection company or laboratory is a better fit.",
+        "source": "https://sourciavera.com/how-to-choose"
+      },
+      {
+        "question": "Do you take commissions or rebates from factories?",
+        "answer": "No. We do not take any rebate or commission from factories. Our income comes only from the service fees our clients pay us directly.",
+        "source": "https://sourciavera.com/impartiality"
+      },
+      {
+        "question": "Does the price change if the factory fails?",
+        "answer": "No. Factory verification and inspection have fixed prices. The price is the same whether the factory passes or fails.",
+        "source": "https://sourciavera.com/impartiality"
+      },
+      {
+        "question": "When do you charge the 10% sourcing commission?",
+        "answer": "Only if you use our sourcing service and the order actually goes ahead. It is paid by you, as a share of the order value, not by the factory.",
+        "source": "https://sourciavera.com/impartiality"
+      },
+      {
+        "question": "How can I check your conclusions?",
+        "answer": "We record real video of every on-site verification and give it to you with the report, so you can compare our conclusions with what was filmed.",
+        "source": "https://sourciavera.com/impartiality"
+      },
+      {
+        "question": "Is this statement a certification?",
+        "answer": "No. It describes how SourciaVera is paid. It is not an accreditation or certificate from a third party, and SourciaVera does not claim one.",
+        "source": "https://sourciavera.com/impartiality"
+      },
+      {
+        "question": "How do I know the supplier is a real factory and not a trading company?",
+        "answer": "We visit the facility in person in Guangzhou, verify the business license, walk the production floor on live video, and confirm real manufacturing capability — not just a showroom. You see everything before committing a dollar.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "What if the goods don't match the samples?",
+        "answer": "For small batch orders, every unit is manually checked on camera. For large orders, we do random sampling by your specs. You approve before anything ships — if it doesn't match, we stop the shipment.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "Can I start with a small order to test quality?",
+        "answer": "Yes — we specialize in small batches from 50 units. Start small, verify quality with us, then scale with confidence.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "Can you accompany me to a factory if I visit Guangzhou?",
+        "answer": "Yes — we assign a dedicated team member for factory accompaniment, translation, and negotiation support. Tell us your travel dates and we handle the rest.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "I've been burned by a bad Alibaba supplier. Can you help?",
+        "answer": "That's exactly why we exist. Alibaba's Verified badge does not guarantee product quality or delivery timelines. We go on the ground so you don't have to trust a badge.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "How much does your service cost?",
+        "answer": "Remote Supplier Check: $49. Factory Verification Visit: $449. Pre-Shipment Inspection: $399/man-day. Factory Audit: $499/man-day. Sourcing commission: 10% of order value. After a detailed consultation with our team, all listed prices (except the Remote Supplier Check) are 20% off. Consult us now.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "What's the difference between factory verification, factory audit, and supervision?",
+        "answer": "Factory Verification (Verificación de proveedores) confirms a supplier is real, registered, and operating as claimed — a basic trust check before you commit. Factory Audit (Auditoría de fábrica) is a deeper review of production capability, quality systems, and compliance, typically done before a large or first-time order. Supervision (Supervisión) is ongoing, hands-on monitoring during production or container loading to ensure your order is made and shipped correctly.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "Do you offer factory verification for Spanish-speaking clients?",
+        "answer": "Yes. All our reports, quotes, and communication — from initial verificación de proveedores through a full auditoría de fábrica — are available in both English and Spanish.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "Can you supervise my supplier in China?",
+        "answer": "Yes — this is exactly what our in-production supervision and container loading supervision services cover. We can also combine this with a one-time factory audit if you are working with a new supplier for the first time.",
+        "source": "https://sourciavera.com/"
+      },
+      {
+        "question": "What is AQL in simple terms?",
+        "answer": "AQL (Acceptance Quality Limit) is the agreed limit on defects in an inspection sample. If the sample has no more defects than the accept number for that class, the lot passes; if it has the reject number or more, the lot fails.",
+        "source": "https://sourciavera.com/inspection-standards"
+      },
+      {
+        "question": "Which standard is AQL based on?",
+        "answer": "The usual reference is ISO 2859-1, sampling procedures for inspection by attributes. Its American counterpart is ANSI/ASQ Z1.4, and the two are treated as equivalent in everyday trade.",
+        "source": "https://sourciavera.com/inspection-standards"
+      },
+      {
+        "question": "What does General Inspection Level II mean?",
+        "answer": "It is the default inspection level in the standard. Level I uses a smaller sample and Level III a larger one, so the level sets how much evidence the inspector collects for a given lot size.",
+        "source": "https://sourciavera.com/inspection-standards"
+      },
+      {
+        "question": "Can I set my own AQL values?",
+        "answer": "Yes. Critical 0, major 2.5 and minor 4.0 are common starting points, not a rule. Buyers often use stricter limits for higher-value or safety-related parts. Agree them in writing with your supplier before production ends.",
+        "source": "https://sourciavera.com/inspection-standards"
+      },
+      {
+        "question": "Do you check every unit or only a sample?",
+        "answer": "On small batches we can check every unit. On larger orders we check a sample under a plan agreed with you in advance.",
+        "source": "https://sourciavera.com/inspection-standards"
+      },
+      {
+        "question": "Does a passed AQL inspection mean the whole lot is defect-free?",
+        "answer": "No. AQL sampling is a statistical check. A lot can pass and still contain some defective units; the AQL describes the level of risk you have agreed to accept.",
+        "source": "https://sourciavera.com/inspection-standards"
+      },
+      {
+        "question": "Is this a real report?",
+        "answer": "No. This page shows the structure of a factory verification report with example entries. The names, findings and numbers are illustrative and do not describe a real factory or client.",
+        "source": "https://sourciavera.com/sample-report"
+      },
+      {
+        "question": "Does every report come with video?",
+        "answer": "Yes. Every real report comes with the video recorded on site during the visit, so you can check our conclusions against what we saw.",
+        "source": "https://sourciavera.com/sample-report"
+      },
+      {
+        "question": "In which language is the report written?",
+        "answer": "In English or Spanish, as you prefer.",
+        "source": "https://sourciavera.com/sample-report"
+      },
+      {
+        "question": "Can I see a real, de-identified case?",
+        "answer": "Yes. Our Guatemala expandable-homes case study shows a real factory visit with photos and video, with the client and factory details removed.",
+        "source": "https://sourciavera.com/sample-report"
+      },
+      {
+        "question": "Is the report a quality certificate for the products?",
+        "answer": "No. It describes what we verified and saw on the day of the visit. It is not a laboratory test, a certification or legal advice.",
+        "source": "https://sourciavera.com/sample-report"
+      },
+      {
+        "question": "What's the difference between verification, audit, and supervision?",
+        "answer": "Verification confirms the supplier is real. Audit thoroughly evaluates their capacity and quality systems. Supervision is continuous follow-up during production and loading — the difference is in depth, and in whether it's a one-time event or an ongoing process.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "Can I hire only the supervision, without the initial verification?",
+        "answer": "Yes, if you already know the supplier. But we always recommend starting with a basic verification if it's your first time working with that factory.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "What languages are the reports delivered in?",
+        "answer": "English and Spanish, always.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "Which provinces or cities in China can you operate in?",
+        "answer": "We operate mainly in Guangdong — Guangzhou, Dongguan, Foshan, and Shenzhen account for most of the suppliers our clients work with. We also cover Zhejiang (Yiwu, Ningbo, Wenzhou), Fujian, and Shandong for specific products. If your supplier is outside these areas, ask us — we evaluate case by case based on distance and logistics.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "How often are reports delivered during supervision?",
+        "answer": "You receive a report after each scheduled visit. Frequency depends on the plan defined for your order: for a 4–6 week production run, that's typically 2 to 3 visits (material arrival, midpoint, pre-loading). Shorter cycles may need 1–2 visits. The plan is defined before production starts, not improvised.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "What happens if a problem is found during supervision?",
+        "answer": "We tell you immediately, with photo evidence and a description of the finding. We coordinate directly with the factory in Chinese to understand correction options. You decide how to proceed: pause production, demand rework, adjust the spec, or, in extreme cases, cancel the order before paying the balance. The goal is that you never discover a problem when you open the container at destination.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "How is the price for production supervision calculated?",
+        "answer": "We charge per man-day of factory visit: $399/day for pre-shipment quality inspection, $499/day for a full structured audit. For continuous supervision (multiple visits across production), total cost depends on the number of agreed visits and the distance from Guangzhou. Request a quote now — on that call, we define how many visits make sense for your specific order and give you a fixed budget.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "Which companies supervise factories in China in Spanish?",
+        "answer": "SourciaVera does: a team in Guangzhou serving buyers in Spanish and English, visiting the plant, recording unedited video and writing the report in Spanish or English, with published prices and no factory commission. Whichever provider you consider, check four things: whether it serves you in Spanish, whether staff go to the factory in person, whether prices are published, and who pays the provider.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "How much does it cost to supervise a factory in China?",
+        "answer": "We charge per man-day on site: $399 per day for pre-shipment inspection and $499 per day for a full factory audit; a one-time factory verification visit starts at $449. After a detailed consultation, all three on-site services get 20% off. For several visits during one production run, the total depends on the number of visits and the distance from Guangzhou, and we agree it before work starts.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "Will you send me the supervision video on WhatsApp?",
+        "answer": "Yes. During a visit we can share live video over WhatsApp. The unedited video we record at the factory is delivered to you after the visit, together with the written report in Spanish or English.",
+        "source": "https://sourciavera.com/supply-chain-supervision-china"
+      },
+      {
+        "question": "Do I pay the 6% duty on goods from China?",
+        "answer": "Not necessarily. The SNA says goods from a country with a trade agreement can enter exempt or at a reduced duty, and Chile has had one with China since 2006. Whether your product qualifies depends on its tariff line and on proof of origin, so ask your agente de aduanas to check both before you order.",
+        "source": "https://sourciavera.com/verification-services/chile"
+      },
+      {
+        "question": "Is there a free trade agreement between Colombia and China?",
+        "answer": "No. The trade ministry's report on Colombia's trade agreements does not list China among the partners, so there is no preferential tariff to claim and the duty depends on your tariff line, plus IVA at 19% (5% for listed goods). Ask your customs agency to confirm the subpartida before you order.",
+        "source": "https://sourciavera.com/verification-services/colombia"
+      },
+      {
+        "question": "Do I need a customs agent to import from China into Guatemala?",
+        "answer": "Yes for commercial goods. The SAT says commercial goods, whatever their value, are declared through an agente aduanero authorized by the SAT; only non-commercial goods of up to US$1,000 can be declared without one.",
+        "source": "https://sourciavera.com/verification-services/guatemala"
+      },
+      {
+        "question": "Can I import from China without a corredor de aduanas?",
+        "answer": "The 2008 customs decree requires a corredor for imports, with exceptions such as personal and household goods of individuals up to B/.4,000 CIF. An order for resale does not fall under that exception, so confirm with your corredor.",
+        "source": "https://sourciavera.com/verification-services/panama"
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuánto cobra un agente de compras en China?",
+        "answer": "Nuestra comisión es de 10% del valor del pedido y solo se cobra cuando la compra se cierra. La verificación, inspección y auditoría en fábrica se cotizan aparte con tarifas publicadas: desde $449 por visita, $399 y $499 por día-hombre, con 20% de descuento tras una consulta detallada. Pida siempre por escrito qué incluye cualquier comisión.",
+        "source": "https://sourciavera.com/es/agente-de-compras-china"
+      },
+      {
+        "question": "¿El agente cobra comisión a la fábrica?",
+        "answer": "No. SourciaVera cobra únicamente al cliente y no acepta comisiones de fábricas, por lo que no tenemos interés en que usted elija una fábrica u otra. Cómo se nos paga está explicado en la declaración de imparcialidad.",
+        "source": "https://sourciavera.com/es/agente-de-compras-china"
+      },
+      {
+        "question": "¿Puedo comprar en China sin cantidad mínima con un agente?",
+        "answer": "Depende del producto. En pedidos personalizados y de marca propia partimos de 50 piezas, muy por debajo del mínimo habitual de una fábrica, y hay artículos de stock desde 1 pieza. Los pedidos personalizados llevan una muestra aprobada antes de producir en serie. Las condiciones están en la página de lotes pequeños.",
+        "source": "https://sourciavera.com/es/agente-de-compras-china"
+      },
+      {
+        "question": "¿Cuál es la diferencia entre un agente de compras y una verificación de fábrica?",
+        "answer": "La verificación confirma que una fábrica que usted ya encontró es real: visitamos, grabamos video sin editar y entregamos un informe. El agente de compras cubre todo el proceso: buscar fábrica, negociar, muestra, seguimiento, inspección antes de exportar y envío. Puede empezar por una verificación y pasar al agente después.",
+        "source": "https://sourciavera.com/es/agente-de-compras-china"
+      },
+      {
+        "question": "¿Me envían video de la inspección antes del envío?",
+        "answer": "Sí. Cada pedido se inspecciona en la fábrica antes de exportarse y la inspección se graba en video, que le enviamos. En lotes pequeños se revisa pieza por pieza; en pedidos grandes, con el muestreo acordado.",
+        "source": "https://sourciavera.com/es/agente-de-compras-china"
+      },
+      {
+        "question": "¿Dónde está el almacén y quién lo opera?",
+        "answer": "El almacén está en Guangzhou y lo operamos nosotros, no un socio externo. Ahí hacemos almacenaje, consolidación, empaque y control de calidad. Coordinamos el envío hasta su puerta; el despacho aduanal en México lo realiza un agente aduanal con patente.",
+        "source": "https://sourciavera.com/es/agente-de-compras-china"
+      },
+      {
+        "question": "¿Cuál es la diferencia entre OEM y ODM para autopartes?",
+        "answer": "OEM significa que usted entrega el diseño y la fábrica construye una herramienta dedicada según su especificación, típicamente 500 a 5,000+ unidades con un depósito de herramienta de $2,000–$15,000. ODM significa que la fábrica ya es dueña del diseño y la herramienta y usted pone su marca, con MOQs más cercanos a 100–300 unidades y poco o ningún costo de herramienta.",
+        "source": "https://sourciavera.com/es/categorias/autopartes"
+      },
+      {
+        "question": "¿Cómo sé si una pieza de fibra de carbono es real?",
+        "answer": "La fibra de carbono real es notablemente más ligera que la fibra de vidrio o ABS \"carbon-look\" del mismo tamaño, tiene una leve profundidad tridimensional en el tejido bajo el barniz, y suena hueco y nítido al golpearla. Pida una muestra física antes de comprometerse a una corrida de producción.",
+        "source": "https://sourciavera.com/es/categorias/autopartes"
+      },
+      {
+        "question": "¿Qué certificaciones necesitan las piezas LED para el mercado de EE.UU.?",
+        "answer": "La certificación SAE es requerida para iluminación vendida como legal para circular en EE.UU., y las marcas DOT son requeridas en faros, luces traseras y direccionales. Verificamos el número de certificado real contra su número de parte específico.",
+        "source": "https://sourciavera.com/es/categorias/autopartes"
+      },
+      {
+        "question": "¿Por qué importa el offset del rin en un BYD Seagull?",
+        "answer": "El offset correcto para un rin de refacción de BYD Seagull es ET 30, que no debe confundirse con el buje central de 54.1 mm, una medida distinta que una ficha técnica de fábrica puede confundir fácilmente con el offset. Si un rin llega con un offset equivocado, el instalador tiene que agregar un espaciador, lo que afecta la geometría de la suspensión y el comportamiento en curvas, y puede causar desgaste desigual de la llanta a velocidad de carretera.",
+        "source": "https://sourciavera.com/es/categorias/autopartes"
+      },
+      {
+        "question": "¿Cuánto cuesta una verificación de fábrica?",
+        "answer": "La verificación de fábrica inicia en $449 por visita. La inspección previa al embarque cuesta $399 por día-hombre, y una auditoría completa de fábrica es $499 por día-hombre.",
+        "source": "https://sourciavera.com/es/categorias/autopartes"
+      },
+      {
+        "question": "¿Cuáles son los tipos principales de proveedores de verificación e inspección en China?",
+        "answer": "Hay tres comunes: grandes empresas internacionales de inspección, empresas locales chinas de inspección, y agentes de compras o intermediarios individuales. Cambian en idioma de atención, transparencia de precios, forma de cobrar, si usted recibe video, seguimiento continuo y qué tan bien atienden pedidos pequeños.",
+        "source": "https://sourciavera.com/es/como-elegir"
+      },
+      {
+        "question": "¿Cuándo conviene más una gran empresa internacional de inspección?",
+        "answer": "Cuando necesita informes acreditados, pruebas de laboratorio, certificación de producto o una auditoría contra un esquema reconocido, o cuando su propio cliente exige una empresa global con nombre.",
+        "source": "https://sourciavera.com/es/como-elegir"
+      },
+      {
+        "question": "¿Cuál es la pregunta más importante para cualquier proveedor?",
+        "answer": "¿Cómo cobra y quién le paga? Si el proveedor recibe algo de la fábrica, o gana más cuando se cierra su pedido, pregunte cómo se mantiene separado de la recomendación que le da.",
+        "source": "https://sourciavera.com/es/como-elegir"
+      },
+      {
+        "question": "¿Debo pedir video y no solo fotos?",
+        "answer": "Sí. Las fotos de un informe se pueden seleccionar y reutilizar. Pregunte si recibe el video sin editar que se grabó durante la visita.",
+        "source": "https://sourciavera.com/es/como-elegir"
+      },
+      {
+        "question": "¿En qué casos SourciaVera no es la mejor opción?",
+        "answer": "Si necesita pruebas de laboratorio, certificados internacionales o un informe de inspección acreditado, una gran empresa de inspección o un laboratorio es una mejor opción.",
+        "source": "https://sourciavera.com/es/como-elegir"
+      },
+      {
+        "question": "¿Reciben comisiones o descuentos de las fábricas?",
+        "answer": "No. No recibimos ningún descuento ni comisión de las fábricas. Nuestros ingresos vienen solo de los honorarios que nuestros clientes nos pagan directamente.",
+        "source": "https://sourciavera.com/es/imparcialidad"
+      },
+      {
+        "question": "¿El precio cambia si la fábrica no pasa?",
+        "answer": "No. La verificación de fábrica y la inspección tienen precio fijo. El precio es el mismo si la fábrica pasa o no pasa.",
+        "source": "https://sourciavera.com/es/imparcialidad"
+      },
+      {
+        "question": "¿Cuándo cobran la comisión de compra del 10%?",
+        "answer": "Solo si usted usa nuestro servicio de compras y el pedido sí se concreta. La paga usted, como un porcentaje del valor del pedido, no la fábrica.",
+        "source": "https://sourciavera.com/es/imparcialidad"
+      },
+      {
+        "question": "¿Cómo puedo comprobar sus conclusiones?",
+        "answer": "Grabamos video real de cada verificación en sitio y se lo entregamos con el informe, para que compare nuestras conclusiones con lo que se filmó.",
+        "source": "https://sourciavera.com/es/imparcialidad"
+      },
+      {
+        "question": "¿Esta declaración es una certificación?",
+        "answer": "No. Describe cómo cobra SourciaVera. No es una acreditación ni un certificado de un tercero, y SourciaVera no afirma tener uno.",
+        "source": "https://sourciavera.com/es/imparcialidad"
+      },
+      {
+        "question": "¿Cómo sé que el proveedor es una fábrica real y no un intermediario?",
+        "answer": "Visitamos las instalaciones en persona en Guangzhou. Verificamos la licencia comercial oficial, recorremos toda la línea de producción en video en vivo y confirmamos la capacidad de fabricación real — no solo una sala de exhibición decorada.",
+        "source": "https://sourciavera.com/es"
+      },
+      {
+        "question": "¿Cuánto cuesta el servicio de verificación de fábrica?",
+        "answer": "Revisión Remota de Proveedor: $49. Visita de Verificación de Fábrica: $449. Inspección Previa al Envío: $399/día-hombre. Auditoría de Fábrica: $499/día-hombre. Abastecimiento y compras: 10% del valor del pedido. Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota) tienen un 20% de descuento. La primera consulta siempre es gratuita.",
+        "source": "https://sourciavera.com/es"
+      },
+      {
+        "question": "¿Ofrecen atención en español?",
+        "answer": "Sí. Toda nuestra comunicación, informes y cotizaciones están disponibles en español. Somos una empresa que habla español y entendemos las necesidades del importador latinoamericano.",
+        "source": "https://sourciavera.com/es"
+      },
+      {
+        "question": "¿Solo verifican un tipo de producto?",
+        "answer": "No. Verificamos proveedores del área de Guangzhou en muchas categorías, incluidas iluminación LED, electrónica, hardware, equipos industriales y autopartes. Si no está seguro de que cubramos su producto, pregúntenos.",
+        "source": "https://sourciavera.com/es"
+      },
+      {
+        "question": "¿Es un informe real?",
+        "answer": "No. Esta página muestra la estructura de un informe de verificación de fábrica con entradas de ejemplo. Los nombres, los hallazgos y las cifras son ilustrativos y no describen una fábrica ni un cliente reales.",
+        "source": "https://sourciavera.com/es/informe-de-ejemplo"
+      },
+      {
+        "question": "¿Todos los informes incluyen video?",
+        "answer": "Sí. Cada informe real incluye el video grabado en la fábrica durante la visita, para que usted pueda comparar nuestras conclusiones con lo que vimos.",
+        "source": "https://sourciavera.com/es/informe-de-ejemplo"
+      },
+      {
+        "question": "¿En qué idioma se escribe el informe?",
+        "answer": "En español o en inglés, como usted prefiera.",
+        "source": "https://sourciavera.com/es/informe-de-ejemplo"
+      },
+      {
+        "question": "¿Puedo ver un caso real sin datos de identificación?",
+        "answer": "Sí. Nuestro caso de casas expandibles en Guatemala muestra una visita real a una fábrica, con fotos y video, sin los datos del cliente ni de la fábrica.",
+        "source": "https://sourciavera.com/es/informe-de-ejemplo"
+      },
+      {
+        "question": "¿El informe es un certificado de calidad de los productos?",
+        "answer": "No. Describe lo que verificamos y vimos el día de la visita. No es una prueba de laboratorio, una certificación ni asesoría legal.",
+        "source": "https://sourciavera.com/es/informe-de-ejemplo"
+      },
+      {
+        "question": "¿Qué es el AQL en palabras simples?",
+        "answer": "El AQL (nivel de calidad aceptable) es el límite de defectos acordado para una muestra de inspección. Si la muestra no tiene más defectos que el número de aceptación de esa clase, el lote pasa; si tiene el número de rechazo o más, el lote no pasa.",
+        "source": "https://sourciavera.com/es/normas-de-inspeccion"
+      },
+      {
+        "question": "¿En qué norma se basa el AQL?",
+        "answer": "La referencia habitual es la norma ISO 2859-1, procedimientos de muestreo para la inspección por atributos. Su equivalente estadounidense es ANSI/ASQ Z1.4, y en el comercio de todos los días se tratan como equivalentes.",
+        "source": "https://sourciavera.com/es/normas-de-inspeccion"
+      },
+      {
+        "question": "¿Qué significa el nivel de inspección general II?",
+        "answer": "Es el nivel de inspección que la norma usa por defecto. El nivel I usa una muestra más pequeña y el nivel III una más grande, así que el nivel define cuánta evidencia reúne el inspector para un tamaño de lote dado.",
+        "source": "https://sourciavera.com/es/normas-de-inspeccion"
+      },
+      {
+        "question": "¿Puedo fijar mis propios valores de AQL?",
+        "answer": "Sí. Crítico 0, mayor 2.5 y menor 4.0 son puntos de partida comunes, no una regla. Muchos compradores usan límites más estrictos para piezas de mayor valor o relacionadas con la seguridad. Acuérdelos por escrito con su proveedor antes de que termine la producción.",
+        "source": "https://sourciavera.com/es/normas-de-inspeccion"
+      },
+      {
+        "question": "¿Revisan todas las piezas o solo una muestra?",
+        "answer": "En lotes pequeños podemos revisar todas las piezas. En pedidos más grandes revisamos una muestra con un plan acordado con usted de antemano.",
+        "source": "https://sourciavera.com/es/normas-de-inspeccion"
+      },
+      {
+        "question": "¿Un lote que pasa la inspección AQL está libre de defectos?",
+        "answer": "No. El muestreo AQL es una revisión estadística. Un lote puede pasar y aun así tener algunas piezas defectuosas; el AQL describe el nivel de riesgo que usted aceptó.",
+        "source": "https://sourciavera.com/es/normas-de-inspeccion"
+      },
+      {
+        "question": "¿Pueden entregar mi pedido de China en mi puerta en México?",
+        "answer": "Sí. Coordinamos el envío desde la fábrica hasta su puerta y le damos un precio total antes de producir; puede ser DDP, con impuestos y entrega incluidos. El despacho aduanal en México lo realiza un agente aduanal con patente. En otros países de Latinoamérica, el despacho lo realiza un agente aduanal autorizado en su país.",
+        "source": "https://sourciavera.com/es/proceso-de-compra-china"
+      },
+      {
+        "question": "¿Quién hace el despacho aduanal en México?",
+        "answer": "Un agente aduanal con patente. Si usted cuenta con padrón de importadores, la importación va a su nombre y puede acreditar el IVA. Declaramos el valor real de la factura: no hacemos subvaluación.",
+        "source": "https://sourciavera.com/es/proceso-de-compra-china"
+      },
+      {
+        "question": "¿Qué incluye el precio puerta a puerta (DDP)?",
+        "answer": "DDP (Delivered Duty Paid) es un término de entrega en el que el precio incluye impuestos y entrega hasta su puerta. Antes de producir le damos un precio total acordado, que puede ser DDP. Qué incluye exactamente en su caso depende del producto y del destino, y lo definimos antes de producir.",
+        "source": "https://sourciavera.com/es/proceso-de-compra-china"
+      },
+      {
+        "question": "¿En el video de inspección aparece alguien de su equipo?",
+        "answer": "Sí. Inspeccionamos en video sin editar y aparecemos en cámara: las personas que ve en nuestros videos de inspección son de nuestro equipo, de unas 30 personas entre compras, transporte y logística, y comercio exterior.",
+        "source": "https://sourciavera.com/es/proceso-de-compra-china"
+      },
+      {
+        "question": "¿Cuál es la diferencia entre verificación, auditoría y supervisión?",
+        "answer": "Verificación confirma que el proveedor es real. Auditoría evalúa a fondo su capacidad y sistemas de calidad. Supervisión es el seguimiento continuo durante producción y carga — la diferencia está en la profundidad y en si es un evento único o un proceso continuo.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Puedo contratar solo la supervisión sin la verificación inicial?",
+        "answer": "Sí, si ya conoce al proveedor. Pero recomendamos siempre empezar con una verificación básica si es la primera vez que trabaja con esa fábrica.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿En qué idiomas se entregan los reportes?",
+        "answer": "Español e inglés, siempre.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿En qué provincias o ciudades de China pueden operar?",
+        "answer": "Operamos principalmente en Guangdong — Guangzhou, Dongguan, Foshan y Shenzhen concentran la mayor parte de los proveedores con los que trabajan nuestros clientes. También cubrimos Zhejiang (Yiwu, Ningbo, Wenzhou), Fujian y Shandong para productos específicos. Si su proveedor está fuera de estas zonas, consúltenos — evaluamos caso a caso según distancia y logística.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Con qué frecuencia se entregan los reportes durante la supervisión?",
+        "answer": "Recibe un reporte después de cada visita acordada. La frecuencia depende del plan definido para su pedido: para una producción de 4–6 semanas, típicamente son 2 a 3 visitas (llegada de materiales, punto medio, pre-carga). Para ciclos más cortos puede ser 1–2 visitas. El plan se define antes de que empiece la producción, no se improvisa.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Qué pasa si durante la supervisión se detecta un problema?",
+        "answer": "Se lo comunicamos de inmediato con evidencia fotográfica y descripción del hallazgo. Coordinamos directamente con la fábrica en chino para entender las opciones de corrección. Usted decide cómo proceder: pausar producción, exigir re-trabajo, ajustar especificación o, en casos extremos, cancelar el pedido antes de pagar el saldo. El objetivo es que nunca descubra un problema al abrir el contenedor en su destino.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Cómo se calcula el precio de la supervisión de producción?",
+        "answer": "Cobramos por hombre-día de visita en fábrica: $399/día para inspección de calidad pre-embarque, $499/día para auditoría estructurada completa. Para supervisión continua (varias visitas a lo largo de la producción), el costo total depende del número de visitas acordadas y la distancia desde Guangzhou. Consulte ahora — en esa llamada definimos cuántas visitas tiene sentido para su pedido específico y le damos un presupuesto fijo.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Qué empresas supervisan fábricas en China en español?",
+        "answer": "SourciaVera lo hace: un equipo en Guangzhou que atiende en español e inglés, visita la planta, graba video sin editar y entrega informe escrito en español, con precios publicados y sin comisión de la fábrica. Al evaluar cualquier proveedor de este servicio, revise cuatro puntos: si le atiende en español, si va en persona a la fábrica, si publica sus precios y quién le cobra.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Cuánto cuesta supervisar una fábrica en China?",
+        "answer": "Cobramos por hombre-día en la fábrica: $399 por día la inspección previa al embarque y $499 por día la auditoría de fábrica completa; una visita única de verificación parte de $449. Tras una consulta detallada, los tres servicios en fábrica tienen -20%. Si son varias visitas durante una producción, el total depende del número de visitas y de la distancia desde Guangzhou, y se acuerda antes de empezar.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Me envían el video de la supervisión por WhatsApp?",
+        "answer": "Sí. Durante una visita podemos compartir video en vivo por WhatsApp. El video sin editar que grabamos en la fábrica le llega después de la visita, junto con el informe escrito en español.",
+        "source": "https://sourciavera.com/es/supervision-fabricas-china"
+      },
+      {
+        "question": "¿Pago el arancel de 6% por mercancías de China?",
+        "answer": "No necesariamente. El SNA indica que las mercancías de un país con acuerdo comercial pueden ingresar libres de arancel o con rebaja, y Chile tiene uno con China desde 2006. Que su producto califique depende de su línea arancelaria y de la prueba de origen; pídale a su agente de aduanas que revise ambas antes de pedir.",
+        "source": "https://sourciavera.com/es/verificacion-fabricas/chile"
+      },
+      {
+        "question": "¿Hay un tratado de libre comercio entre Colombia y China?",
+        "answer": "No. El informe del Ministerio de Comercio sobre los acuerdos comerciales de Colombia no incluye a China entre los socios, así que no hay arancel preferencial que reclamar y el gravamen depende de su subpartida, más IVA de 19% (5% para bienes listados). Pídale a su agencia de aduanas que confirme la subpartida antes de pedir.",
+        "source": "https://sourciavera.com/es/verificacion-fabricas/colombia"
+      },
+      {
+        "question": "¿Necesito un agente aduanero para importar de China a Guatemala?",
+        "answer": "Sí, para mercancías comerciales. La SAT indica que las mercancías comerciales, sea cual sea su valor, se declaran con un agente aduanero autorizado por la SAT; solo las mercancías sin fines comerciales de hasta US$1,000 pueden declararse sin agente.",
+        "source": "https://sourciavera.com/es/verificacion-fabricas/guatemala"
+      },
+      {
+        "question": "¿Puedo importar de China sin corredor de aduanas?",
+        "answer": "El decreto aduanero de 2008 exige un corredor para las importaciones, con excepciones como las mercancías de uso personal y del hogar de personas naturales hasta B/.4,000 CIF. Un pedido para reventa no entra en esa excepción, así que confírmelo con su corredor.",
+        "source": "https://sourciavera.com/es/verificacion-fabricas/panama"
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "provider": {
+    "name": "SourciaVera",
+    "url": "https://sourciavera.com"
+  },
+  "updated": "2026-10-29",
+  "currency": "USD",
+  "price_source": "https://sourciavera.com/#services",
+  "services": [
+    {
+      "id": "remote-supplier-check",
+      "name": "Remote Supplier Check",
+      "price": {
+        "amount": 49,
+        "currency": "USD",
+        "unit": "flat fee"
+      },
+      "price_type": "fixed",
+      "description": "Company registration, manufacturer-vs-trader status, address and payment-account consistency.",
+      "delivery": "Written report within 48 hours of receiving payment and the supplier details; in English or Spanish as the client prefers.",
+      "notes": "Credited toward an on-site verification if the client continues.",
+      "url": {
+        "en": "https://sourciavera.com/#remote-check",
+        "es": "https://sourciavera.com/es#remote-check"
+      }
+    },
+    {
+      "id": "factory-verification",
+      "name": "Factory Verification (on-site visit)",
+      "price": {
+        "amount": 449,
+        "currency": "USD",
+        "unit": "per visit"
+      },
+      "price_type": "from",
+      "description": "In-person visit: business license, production line and the product checked against specification, filmed and delivered as unedited video.",
+      "delivery": "Report within 48 hours of the visit.",
+      "discount": "20% discount after a detailed consultation (applies to the three on-site services)",
+      "url": {
+        "en": "https://sourciavera.com/verification-services",
+        "es": "https://sourciavera.com/es/verificacion-fabricas"
+      }
+    },
+    {
+      "id": "pre-shipment-inspection",
+      "name": "Pre-Shipment Inspection",
+      "price": {
+        "amount": 399,
+        "currency": "USD",
+        "unit": "per man-day"
+      },
+      "price_type": "fixed",
+      "description": "Third-party inspection before the goods leave China, with unedited video.",
+      "discount": "20% discount after a detailed consultation (applies to the three on-site services)",
+      "url": {
+        "en": "https://sourciavera.com/supply-chain-supervision-china",
+        "es": "https://sourciavera.com/es/supervision-fabricas-china"
+      }
+    },
+    {
+      "id": "factory-audit",
+      "name": "Factory Audit",
+      "price": {
+        "amount": 499,
+        "currency": "USD",
+        "unit": "per man-day"
+      },
+      "price_type": "fixed",
+      "description": "Full factory audit on site.",
+      "discount": "20% discount after a detailed consultation (applies to the three on-site services)",
+      "url": {
+        "en": "https://sourciavera.com/supply-chain-supervision-china",
+        "es": "https://sourciavera.com/es/supervision-fabricas-china"
+      }
+    },
+    {
+      "id": "sourcing-agent",
+      "name": "China Sourcing Agent",
+      "price": {
+        "amount": 10,
+        "currency": "%",
+        "unit": "of order value"
+      },
+      "price_type": "commission",
+      "description": "Factory search, negotiation, purchase, inspection on video and delivery coordination.",
+      "notes": "Charged only when the purchase closes.",
+      "url": {
+        "en": "https://sourciavera.com/china-sourcing-agent",
+        "es": "https://sourciavera.com/es/agente-de-compras-china"
+      }
+    },
+    {
+      "id": "small-batch",
+      "name": "Small-batch orders",
+      "price": null,
+      "description": "Stock items from 1 piece; custom and private-label orders from 50 pieces. Quote on request via WhatsApp.",
+      "url": {
+        "en": "https://sourciavera.com/small-batch",
+        "es": "https://sourciavera.com/es/lotes-pequenos"
+      }
+    }
+  ],
+  "areas_served": [
+    "US",
+    "CA",
+    "MX",
+    "CO",
+    "AR",
+    "CL",
+    "PE",
+    "BR",
+    "GT",
+    "PA",
+    "GB",
+    "AU"
+  ],
+  "languages": [
+    "English",
+    "Spanish",
+    "Chinese"
+  ],
+  "payment_note": "Fixed prices whatever the result of the check; the company takes no commission from factories."
+}
