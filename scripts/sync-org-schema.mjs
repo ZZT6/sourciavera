@@ -21,13 +21,20 @@ function walk(dir, out) {
 
 function build(lang) {
   const l = cfg[lang];
-  const founder = { ...cfg.founder, jobTitle: l.jobTitle };
+  // The founder is defined once as its own node (buildPerson) and referenced here by @id: the company and the founder's
+  // own profile are linked without being merged. The personal LinkedIn stays in Person.sameAs, never in the Organization's.
+  const founder = { '@id': cfg.founder['@id'] };
   const { '@context': ctx, '@type': type, '@id': id, name, foundingDate, url, logo, address, areaServed, knowsLanguage, email, telephone, priceRange, currenciesAccepted, sameAs } = cfg.common;
   return {
     '@context': ctx, '@type': type, '@id': id, name, foundingDate, url, logo, description: l.description, address, areaServed,
     availableLanguage: l.availableLanguage, knowsLanguage, email, telephone, priceRange, currenciesAccepted,
     serviceType: l.serviceType, founder, sameAs,
   };
+}
+
+function buildPerson(lang) {
+  const { '@id': id, '@type': type, ...rest } = cfg.founder;
+  return { '@id': id, '@type': type, ...rest, jobTitle: cfg[lang].jobTitle, worksFor: { '@id': cfg.common['@id'] } };
 }
 
 const re = /(<script type="application\/ld\+json">\s*)(\{[\s\S]*?\})(\s*<\/script>)/g;
@@ -47,12 +54,14 @@ for (const file of walk(ROOT, [])) {
       hit = true;
       const { '@context': _ctx, ...node } = build(lang);
       d['@graph'][i] = node;
+      d['@graph'] = d['@graph'].filter((n, j) => j === i || !(n && n['@id'] === cfg.founder['@id']));
+      d['@graph'].splice(d['@graph'].indexOf(node) + 1, 0, buildPerson(lang));
       return a + nlText(d) + z;
     }
     if (d['@id'] !== cfg.common['@id']) return all;
     hit = true;
-    const text = nlText(build(lang));
-    return a + text + z;
+    const { '@context': ctx, ...node } = build(lang);
+    return a + nlText({ '@context': ctx, '@graph': [node, buildPerson(lang)] }) + z;
   });
   if (!hit) continue;
   seen++;
