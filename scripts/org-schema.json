@@ -14,8 +14,25 @@
       "addressRegion": "Guangdong",
       "addressCountry": "CN"
     },
-    "areaServed": ["US", "CA", "MX", "CO", "AR", "CL", "PE", "BR", "GT", "PA", "GB", "AU"],
-    "knowsLanguage": ["en", "es", "zh"],
+    "areaServed": [
+      "US",
+      "CA",
+      "MX",
+      "CO",
+      "AR",
+      "CL",
+      "PE",
+      "BR",
+      "GT",
+      "PA",
+      "GB",
+      "AU"
+    ],
+    "knowsLanguage": [
+      "en",
+      "es",
+      "zh"
+    ],
     "email": "info@sourciavera.com",
     "telephone": "+8613688057230",
     "priceRange": "$49–$499",
@@ -41,15 +58,37 @@
     "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
   },
   "en": {
-    "description": "Independent third-party verification agency for Alibaba suppliers, based in Guangzhou, China. We visit factories in person, film on-site video, and negotiate directly in Chinese on behalf of international buyers. Start with a $49 remote supplier check, or an on-site factory verification from $449.",
-    "serviceType": ["Remote Supplier Check", "Factory Verification", "Supplier Audit", "Pre-Shipment Inspection", "Sourcing Agent", "Procurement"],
-    "availableLanguage": ["English", "Spanish", "Chinese"],
+    "description": "Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door. Independent third-party verification agency for Alibaba suppliers, based in Guangzhou, China. We visit factories in person, film on-site video, and negotiate directly in Chinese on behalf of international buyers. Start with a $49 remote supplier check, or an on-site factory verification from $449.",
+    "serviceType": [
+      "Remote Supplier Check",
+      "Factory Verification",
+      "Supplier Audit",
+      "Pre-Shipment Inspection",
+      "Sourcing Agent",
+      "Procurement"
+    ],
+    "availableLanguage": [
+      "English",
+      "Spanish",
+      "Chinese"
+    ],
     "jobTitle": "Founder"
   },
   "es": {
-    "description": "Agencia de verificación de fábricas y abastecimiento desde China con base en Guangzhou. Visitamos proveedores de Alibaba en persona, filmamos en video y negociamos directamente en chino en nombre de compradores internacionales. Empiece con una revisión remota de proveedor por $49, o una verificación de fábrica en sitio desde $449. Atención completa en español.",
-    "serviceType": ["Revisión Remota de Proveedor", "Verificación de Fábrica", "Auditoría de Fábrica", "Inspección Previa al Embarque", "Agente de Compras en China", "Negociación y Compra"],
-    "availableLanguage": ["Spanish", "English", "Chinese"],
+    "description": "Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta. Agencia de verificación de fábricas y abastecimiento desde China con base en Guangzhou. Visitamos proveedores de Alibaba en persona, filmamos en video y negociamos directamente en chino en nombre de compradores internacionales. Empiece con una revisión remota de proveedor por $49, o una verificación de fábrica en sitio desde $449. Atención completa en español.",
+    "serviceType": [
+      "Revisión Remota de Proveedor",
+      "Verificación de Fábrica",
+      "Auditoría de Fábrica",
+      "Inspección Previa al Embarque",
+      "Agente de Compras en China",
+      "Negociación y Compra"
+    ],
+    "availableLanguage": [
+      "Spanish",
+      "English",
+      "Chinese"
+    ],
     "jobTitle": "Fundador"
   }
 }
