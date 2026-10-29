@@ -28,3 +28,4 @@ a2e062cb386660d23bb20dc6deafe8084231c758  # 2026-10-25 axe-core audit fixes: col
 cb90af6  # 2026-10-28: contextual internal links in 38 articles (country pages, small-batch, trust pages, Mexico): no change to article facts
 7da7ea6  # 2026-10-28 wide-screen hero/typography/TOC block on all article and data pages (presentation only)
 aaa698f  # 2026-10-28 wide-screen block on four newly merged guides (presentation only)
+1936f44  # 2026-10-28 proportional rem scaling + srcset on every page (presentation only)

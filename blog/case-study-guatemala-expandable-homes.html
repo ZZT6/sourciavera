@@ -140,12 +140,12 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
 .article-hero-img{width:100%;overflow:hidden}
 .article-hero-img img{width:100%;height:auto;display:block}
-.article-hero{background:var(--navy);padding:4rem max(3rem,calc((100% - 1040px)/2 + 3rem)) 3rem}
+.article-hero{background:var(--navy);padding:4rem max(3rem,calc((100% - 65rem)/2 + 3rem)) 3rem}
 .article-tag{display:inline-block;background:var(--coral);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:1rem;font-weight:500}
 .article-hero h1{font-size:clamp(1.6rem,3.5vw,2.4rem);line-height:1.2;font-weight:700;color:white;margin-bottom:1rem}
 .article-meta{font-size:0.82rem;color:rgba(255,255,255,0.6)}
-.article-body{max-width:1040px;margin:0 auto;padding:3rem}
-.article-body h2{font-size:1.4rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;padding-left:1rem;border-left:4px solid var(--coral)}
+.article-body{max-width:65rem;margin:0 auto;padding:3rem}
+.article-body h2{font-size:1.4rem;font-weight:700;color:var(--navy);margin:2.5rem 0 1rem;padding-left:1rem;border-left:0.25rem solid var(--coral)}
 .article-body h3{font-size:1.05rem;font-weight:600;color:var(--navy);margin:1.8rem 0 0.6rem}
 .article-body p{color:#333;margin-bottom:1.2rem;font-size:0.97rem;line-height:1.85}
 .article-body ul,.article-body ol{margin:0.8rem 0 1.2rem 1.5rem;color:#333;font-size:0.97rem;line-height:1.85}
@@ -161,14 +161,14 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
-.real-case{background:var(--light);border-left:4px solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
+.real-case{background:var(--light);border-left:0.25rem solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
 .real-case strong{color:var(--teal);display:block;margin-bottom:0.5rem;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase}
-.warn-box{background:#FFF4E5;border-left:4px solid #E8A23C;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:0.92rem;color:#5c4620}
+.warn-box{background:#FFF4E5;border-left:0.25rem solid #E8A23C;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:0.92rem;color:#5c4620}
 .back-link{display:inline-block;color:rgba(255,255,255,0.6);font-size:0.85rem;margin-bottom:1rem;letter-spacing:0.05em}
 .back-link::before{content:'← '}
 .lang-alt{display:inline-block;color:rgba(255,255,255,0.55);font-size:0.78rem;margin-bottom:1rem;margin-left:1rem;letter-spacing:0.08em;border:1px solid rgba(255,255,255,0.2);padding:0.18rem 0.55rem;text-transform:uppercase;font-weight:600}
 .lang-alt:hover{color:white;border-color:rgba(255,255,255,0.5)}
-.related{background:var(--light);padding:3rem;max-width:1040px;margin:0 auto}
+.related{background:var(--light);padding:3rem;max-width:65rem;margin:0 auto}
 .related h3{font-size:0.78rem;font-weight:600;color:var(--navy);margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.08em}
 .related-links{display:flex;flex-direction:column;gap:0.6rem}
 .related-links a{color:var(--coral);font-size:0.9rem;border-bottom:1px solid var(--border);padding-bottom:0.6rem}
@@ -176,8 +176,8 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .article-footer{background:var(--navy);color:rgba(255,255,255,0.6);text-align:center;padding:2rem 3rem;font-size:0.82rem}
 .article-footer a{color:var(--yellow)}
 nav{position:relative}
-.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px;flex-shrink:0}
-.nav-hamburger span{display:block;width:20px;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:0.375rem;flex-direction:column;gap:0.3125rem;flex-shrink:0}
+.nav-hamburger span{display:block;width:1.25rem;height:2px;background:rgba(255,255,255,0.75)}
 .nav-hamburger:hover span{background:white}
 @media(max-width:768px){footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem}.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
 html,body{overflow-x:clip;max-width:100%}
@@ -197,10 +197,10 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .footer-links a:hover{color:var(--yellow)}
 @media(max-width:768px){table th,table td{overflow-wrap:anywhere}}
 .body-fig{margin:2rem 0}.body-fig img{width:100%;height:auto;display:block;border:1.5px solid var(--border)}.body-fig figcaption{font-size:0.82rem;color:var(--muted);margin-top:0.5rem;line-height:1.45}
-.article-hero.hero-diagram{margin-top:0;padding-top:1.75rem;background:var(--navy);max-width:none;padding-left:max(1.5rem,calc(50% - 520px + 3rem));padding-right:max(1.5rem,calc(50% - 520px + 3rem))}
+.article-hero.hero-diagram{margin-top:0;padding-top:1.75rem;background:var(--navy);max-width:none;padding-left:max(1.5rem,calc(50% - 32.5rem + 3rem));padding-right:max(1.5rem,calc(50% - 32.5rem + 3rem))}
 .article-hero-img{position:relative}.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
-/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:4px solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:250px;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
-/*ab2*/.author-box{margin:2.5rem 0 2rem;padding:1.25rem 1.4rem;background:var(--light);border:1.5px solid var(--border);border-left:4px solid var(--teal)}.author-box-head{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.8rem}.author-avatar{flex:0 0 auto;width:3.1rem;height:3.1rem;border-radius:50%;object-fit:cover;background:var(--navy);display:block}.author-box-name{font-weight:700;color:var(--navy);font-size:1.02rem;line-height:1.3}.author-box-role{font-size:0.85rem;color:var(--muted)}.author-box .author-box-list{list-style:none;margin:0 0 0.7rem;padding:0}.author-box .author-box-list li{position:relative;padding-left:1.1rem;margin:0.3rem 0;font-size:0.92rem;line-height:1.55;color:var(--navy)}.author-box .author-box-list li::before{content:'';position:absolute;left:0;top:0.62em;width:0.45rem;height:0.45rem;background:var(--coral)}.author-box-links{margin:0;font-size:0.9rem}.author-box-links a{color:var(--coral);text-decoration:underline}
+/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
+/*ab2*/.author-box{margin:2.5rem 0 2rem;padding:1.25rem 1.4rem;background:var(--light);border:1.5px solid var(--border);border-left:0.25rem solid var(--teal)}.author-box-head{display:flex;align-items:center;gap:0.9rem;margin-bottom:0.8rem}.author-avatar{flex:0 0 auto;width:3.1rem;height:3.1rem;border-radius:50%;object-fit:cover;background:var(--navy);display:block}.author-box-name{font-weight:700;color:var(--navy);font-size:1.02rem;line-height:1.3}.author-box-role{font-size:0.85rem;color:var(--muted)}.author-box .author-box-list{list-style:none;margin:0 0 0.7rem;padding:0}.author-box .author-box-list li{position:relative;padding-left:1.1rem;margin:0.3rem 0;font-size:0.92rem;line-height:1.55;color:var(--navy)}.author-box .author-box-list li::before{content:'';position:absolute;left:0;top:0.62em;width:0.45rem;height:0.45rem;background:var(--coral)}.author-box-links{margin:0;font-size:0.9rem}.author-box-links a{color:var(--coral);text-decoration:underline}
 /*nav-mid*/@media(min-width:769px) and (max-width:1000px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
 /*hero-links*/.article-hero .back-link,.article-hero .lang-alt,.article-hero>a[href$="/blog"],.article-hero>a[href$="/blog/es"]{color:#fff!important;background:rgba(13,34,64,0.72);padding:0.2rem 0.6rem;border-radius:2px}
 </style>
@@ -225,26 +225,26 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 </script>
 <style id="wide-v1">
 /*wide-v1*/
-.article-hero-img{max-width:1100px;margin:2rem auto 0;aspect-ratio:21/9;overflow:hidden;background:var(--navy)}
+.article-hero-img{max-width:68.75rem;margin:2rem auto 0;aspect-ratio:21/9;overflow:hidden;background:var(--navy)}
 .article-hero-img img{width:100%;height:100%;object-fit:cover;display:block}
-.article-hero,.article-hero.article-hero-noimg,.article-hero.hero-diagram{max-width:1100px;margin:2rem auto 0;background:var(--navy);padding:2rem 2.5rem 2.25rem}
+.article-hero,.article-hero.article-hero-noimg,.article-hero.hero-diagram{max-width:68.75rem;margin:2rem auto 0;background:var(--navy);padding:2rem 2.5rem 2.25rem}
 .article-hero-img+.article-hero{margin-top:0}
 .article-hero h1{font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.2;margin-bottom:1rem}
 .article-meta{font-size:0.95rem;line-height:1.5;color:rgba(255,255,255,0.82)}
-.article-body{max-width:720px;margin:0 auto;padding:3rem 0 2rem;font-weight:400;font-size:1.125rem;line-height:1.7;color:#1F2937}
+.article-body{max-width:45rem;margin:0 auto;padding:3rem 0 2rem;font-weight:400;font-size:1.125rem;line-height:1.7;color:#1F2937}
 .article-body p,.article-body li{font-size:1.125rem;line-height:1.7}
 .article-body>p,.article-body>ul>li,.article-body>ol>li{color:#1F2937;font-weight:400}
 .article-body p{margin:0 0 1.25rem}
 .article-body ul,.article-body ol{margin:0 0 1.5rem 1.4rem}
 .article-body li{margin-bottom:0.55rem}
-.article-body h2{font-size:1.6rem;line-height:1.3;margin:2.75rem 0 1rem;scroll-margin-top:90px}
+.article-body h2{font-size:1.6rem;line-height:1.3;margin:2.75rem 0 1rem;scroll-margin-top:5.625rem}
 .article-body h3{font-size:1.2rem;line-height:1.35;margin:2rem 0 0.7rem}
-.article-body blockquote{margin:1.75rem 0;padding:0.25rem 0 0.25rem 1.25rem;border-left:4px solid var(--teal)}
+.article-body blockquote{margin:1.75rem 0;padding:0.25rem 0 0.25rem 1.25rem;border-left:0.25rem solid var(--teal)}
 .article-body strong{font-weight:700}
 .article-body img{max-width:100%;height:auto}
 .article-body table{font-size:1rem}
 .article-body .verified-note,.article-body .fine-print{font-size:0.95rem;line-height:1.6}
-.related{max-width:720px;padding:2.5rem 0}
+.related{max-width:45rem;padding:2.5rem 0}
 @media(max-width:768px){
 .article-hero-img{margin:0;aspect-ratio:16/9}
 .article-hero,.article-hero.article-hero-noimg,.article-hero.hero-diagram{margin:0 auto;padding:1.5rem 1.25rem 1.75rem}
@@ -257,7 +257,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 }
 .toc-side{display:none}
 @media(min-width:1280px){
-.toc-side{display:block;position:fixed;top:110px;left:max(1rem,calc(50% - 614px));width:230px;max-height:calc(100vh - 150px);overflow:auto;opacity:0;pointer-events:none;transition:opacity .2s;font-size:0.875rem;line-height:1.4}
+.toc-side{display:block;position:fixed;top:6.875rem;left:max(1rem,calc(50% - 38.375rem));width:14.375rem;max-height:calc(100vh - 9.375rem);overflow:auto;opacity:0;pointer-events:none;transition:opacity .2s;font-size:0.875rem;line-height:1.4}
 .toc-side.on{opacity:1;pointer-events:auto}
 .toc-side .toc-title{font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin:0 0 0.6rem}
 .toc-side ol{list-style:none;margin:0;padding:0;border-left:2px solid var(--border)}
@@ -268,6 +268,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 }
 @media print{.toc-side{display:none!important}}
 </style>
+<style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}</style>
 </head>
 <body>
 
@@ -329,7 +330,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <li><strong>Roof:</strong> a flat roof under tropical rain means water pooling and eventual leaks. A pitched roof sheds water and creates a ventilated air gap above the ceiling. It also simply looks more like a real house, which matters when you're selling it.</li>
   </ul>
 
-  <figure style="margin:2rem auto;max-width:440px">
+  <figure style="margin:2rem auto;max-width:27.5rem">
     <img src="/images/case-guatemala-showroom-unit.webp" alt="A showroom expandable house at the factory with a roof canopy on black posts, a terrace with railing and entry steps, on artificial grass" width="810" height="1080" loading="lazy" style="width:100%;height:auto;display:block;border:1px solid var(--border)">
     <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem;line-height:1.5">Photo from the factory visit: a showroom unit with a roof canopy on posts, a terrace and entry steps.</figcaption>
   </figure>
@@ -348,7 +349,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p>So we did the math. Two folded 20ft units are each about 5,900mm long. End to end, that's 11,800mm, inside a 40ft high-cube container with roughly 12,030mm of internal length. They fit with about 23 centimeters to spare.</p>
 
-  <figure style="margin:2rem auto;max-width:440px">
+  <figure style="margin:2rem auto;max-width:27.5rem">
     <img src="/images/case-guatemala-floor-plan.webp" alt="Floor plan of the expanded unit with dimensions in millimetres: 6,240 wide by 5,900 long, with a bathroom, interior doors and a double entrance door" width="641" height="672" loading="lazy" style="width:100%;height:auto;display:block;border:1px solid var(--border)">
     <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem;line-height:1.5">Floor plan of the expanded unit, in millimetres: 6,240 wide by 5,900 long, with a 2,300 centre section between two 1,970 wings. The 5,900 length is the figure used in the container math above.</figcaption>
   </figure>
@@ -358,7 +359,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <p><strong>What I learned about his thinking:</strong> state the dealbreaker early, and the whole negotiation gets simpler. Many buyers only discover their real limits after the order is placed.</p>
 
       <figure class="body-fig" data-fig="case-study-guatemala-expandable-homes-fig1">
-      <img src="/images/case-study-guatemala-expandable-homes-fig1-en.webp" alt="Bar chart: two folded units of 5,900 mm end to end make 11,800 mm inside a container of about 12,030 mm internal length" width="800" height="481" loading="lazy">
+      <img src="/images/case-study-guatemala-expandable-homes-fig1-en.webp" alt="Bar chart: two folded units of 5,900 mm end to end make 11,800 mm inside a container of about 12,030 mm internal length" width="800" height="481" loading="lazy" srcset="/images/case-study-guatemala-expandable-homes-fig1-en.webp 800w, /images/case-study-guatemala-expandable-homes-fig1-en-2x.webp 1600w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
       <figcaption>Diagram: The container math from the article: two folded 20 ft units inside a 40 ft high-cube container.</figcaption>
     </figure>
 
@@ -377,7 +378,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <p>One more detail from this stage: when I asked factories the same question twice, the answers often changed. At least two of them had given me lead times that turned out to be generated by an AI chatbot, not by anyone in production. So my rule is simple: <a href="/blog/one-person-on-the-ground-in-china-import-decisions">the first answer is a starting point, not a fact</a>.</p>
 
       <figure class="body-fig" data-fig="case-study-guatemala-expandable-homes-fig2">
-      <img src="/images/case-study-guatemala-expandable-homes-fig2-en.webp" alt="Table comparing the zinc layer of cold galvanizing and hot-dip galvanizing" width="800" height="460" loading="lazy">
+      <img src="/images/case-study-guatemala-expandable-homes-fig2-en.webp" alt="Table comparing the zinc layer of cold galvanizing and hot-dip galvanizing" width="800" height="460" loading="lazy" srcset="/images/case-study-guatemala-expandable-homes-fig2-en.webp 800w, /images/case-study-guatemala-expandable-homes-fig2-en-2x.webp 1600w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
       <figcaption>Diagram: The zinc-layer figures the article gives for the two galvanizing methods.</figcaption>
     </figure>
 
@@ -400,11 +401,11 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <p>Because of the 14-hour time difference, I was walking the factory in the middle of his night. I sent photos and videos as I went and called him so he could see it live. I filmed more than the exact unit we were quoting, on purpose: if he ever wants to customize something else with this factory, he already knows what they can build.</p>
 
   <div style="display:flex;gap:1.5rem;justify-content:center;align-items:flex-start;flex-wrap:wrap;margin:2rem 0">
-  <figure style="flex:1 1 260px;max-width:340px;margin:0">
+  <figure style="flex:1 1 16.25rem;max-width:21.25rem;margin:0">
     <img src="/images/case-guatemala-factory-hall.webp" alt="A long green walkway between rows of finished expandable houses under a red overhead crane in the factory hall" width="810" height="1080" loading="lazy" style="width:100%;height:auto;display:block;border:1px solid var(--border)">
     <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem;line-height:1.5">Photo from the factory visit: finished units lined up along the walkway in the production hall.</figcaption>
   </figure>
-  <figure style="flex:1 1 260px;max-width:340px;margin:0">
+  <figure style="flex:1 1 16.25rem;max-width:21.25rem;margin:0">
     <video controls muted playsinline preload="none" poster="/images/case-guatemala-video-poster-en.webp" width="432" height="768" aria-label="Video from the factory visit: stacks of insulation panels in the factory warehouse, no sound" style="width:100%;height:auto;display:block;background:#000;border:1px solid var(--border)">
       <source src="/images/case-guatemala-panel-stock.mp4" type="video/mp4">
     </video>
@@ -425,7 +426,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <p>When he got sick in the middle of the project, I told him the houses could wait. Health first. I meant it.</p>
 
       <figure class="body-fig" data-fig="case-study-guatemala-expandable-homes-fig3">
-  <img src="/images/case-study-guatemala-expandable-homes-hero-en.webp" alt="Diagram: Comparison of the factory catalog default with what a hot, humid climate needed: electrical, insulation and roof" width="1200" height="630" loading="lazy">
+  <img src="/images/case-study-guatemala-expandable-homes-hero-en.webp" alt="Diagram: Comparison of the factory catalog default with what a hot, humid climate needed: electrical, insulation and roof" width="1200" height="630" loading="lazy" srcset="/images/case-study-guatemala-expandable-homes-hero-en.webp 1200w, /images/case-study-guatemala-expandable-homes-hero-en-2x.webp 2400w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
   <figcaption>Diagram: Comparison of the factory catalog default with what a hot, humid climate needed: electrical, insulation and roof</figcaption>
 </figure>
 
@@ -449,7 +450,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
     <li><strong>Don't accept the first answer.</strong> Ask twice. Ask for photos of a previous shipment, and remember that a showroom unit shows what a factory can build once, not what your order will look like (<a href="/blog/alibaba-sample-different-from-bulk-order">Sample Looks Great, Bulk Order Is Garbage</a>).</li>
   </ul>
 
-  <figure style="margin:2rem auto;max-width:440px">
+  <figure style="margin:2rem auto;max-width:27.5rem">
     <img src="/images/case-guatemala-showroom-unit-circled.webp" alt="The showroom expandable house with its terrace and entry steps circled in green marker" width="810" height="1080" loading="lazy" style="width:100%;height:auto;display:block;border:1px solid var(--border)">
     <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem;line-height:1.5">Photo from the factory visit: the terrace and entry steps (circled) were not part of the pitched roof. Ask what a roof upgrade actually covers.</figcaption>
   </figure>
@@ -492,7 +493,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p>Still, amigo, if you're reading this: the factory is still asking whether you want the doors in white or the original color.</p>
 
-  <figure style="margin:2rem auto;max-width:520px">
+  <figure style="margin:2rem auto;max-width:32.5rem">
     <img src="/images/case-guatemala-author-tent-suite.webp" alt="The author giving a thumbs-up inside a tent-style suite with a bed and a woven pendant lamp" width="1080" height="810" loading="lazy" style="width:100%;height:auto;display:block;border:1px solid var(--border)">
     <figcaption style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem;line-height:1.5">Me in a tent-style suite from my earlier work. It is not part of this order; I include it to show that I have worked on this kind of product before.</figcaption>
   </figure>
@@ -595,6 +596,6 @@ CookieConsent.run({
 });
 </script>
 <script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
-<script id="wide-v1-js">(function(){try{var b=document.querySelector('.article-body');if(!b)return;var hs=[].filter.call(b.querySelectorAll('h2'),function(h){return !h.closest('.cta-box,.author-box,.related,.series-box,aside')});if(hs.length<3)return;var es=/^es/i.test(document.documentElement.lang||'');var nav=document.createElement('div');nav.className='toc-side';nav.setAttribute('role','navigation');nav.setAttribute('aria-label',es?'Contenido del art\u00edculo':'Article contents');var t=document.createElement('p');t.className='toc-title';t.textContent=es?'En este art\u00edculo':'In this article';nav.appendChild(t);var ol=document.createElement('ol');var used={};var links=[];hs.forEach(function(h,i){var id=h.id;if(!id){id=(h.textContent||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60)||('s'+i);while(used[id]||(document.getElementById(id)&&document.getElementById(id)!==h))id+='-'+i;h.id=id}used[id]=1;var li=document.createElement('li'),a=document.createElement('a');a.href='#'+id;a.textContent=h.textContent;li.appendChild(a);ol.appendChild(li);links.push(a)});nav.appendChild(ol);document.body.appendChild(nav);var tick=false;function upd(){tick=false;var r=b.getBoundingClientRect();nav.classList.toggle('on',r.top<140&&r.bottom>420);var cur=0;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=160)cur=i}links.forEach(function(a,i){a.classList.toggle('act',i===cur)})}window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});window.addEventListener('resize',upd);upd()}catch(e){}})();</script>
+<script id="wide-v1-js">(function(){try{var b=document.querySelector('.article-body');if(!b)return;var hs=[].filter.call(b.querySelectorAll('h2'),function(h){return !h.closest('.cta-box,.author-box,.related,.series-box,aside')});if(hs.length<3)return;var es=/^es/i.test(document.documentElement.lang||'');var nav=document.createElement('div');nav.className='toc-side';nav.setAttribute('role','navigation');nav.setAttribute('aria-label',es?'Contenido del art\u00edculo':'Article contents');var t=document.createElement('p');t.className='toc-title';t.textContent=es?'En este art\u00edculo':'In this article';nav.appendChild(t);var ol=document.createElement('ol');var used={};var links=[];hs.forEach(function(h,i){var id=h.id;if(!id){id=(h.textContent||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60)||('s'+i);while(used[id]||(document.getElementById(id)&&document.getElementById(id)!==h))id+='-'+i;h.id=id}used[id]=1;var li=document.createElement('li'),a=document.createElement('a');a.href='#'+id;a.textContent=h.textContent;li.appendChild(a);ol.appendChild(li);links.push(a)});nav.appendChild(ol);document.body.appendChild(nav);var tick=false;function upd(){tick=false;var u=parseFloat(getComputedStyle(document.documentElement).fontSize)/16||1;var r=b.getBoundingClientRect();nav.classList.toggle('on',r.top<140*u&&r.bottom>420*u);var cur=0;for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=160*u)cur=i}links.forEach(function(a,i){a.classList.toggle('act',i===cur)})}window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});window.addEventListener('resize',upd);upd()}catch(e){}})();</script>
 </body>
 </html>
