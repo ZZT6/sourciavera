@@ -30,3 +30,4 @@ cb90af6  # 2026-10-28: contextual internal links in 38 articles (country pages, 
 aaa698f  # 2026-10-28 wide-screen block on four newly merged guides (presentation only)
 1936f44  # 2026-10-28 proportional rem scaling + srcset on every page (presentation only)
 3012ab5b44d94ba15e504c12bbb76de9a6761c2f  # 2026-10-29 nav breakpoint 1000->1150px in every page CSS + home why-link colour + sitemap rules: site-wide plumbing, no content change
+59b1c3e750a72abc0dea3501cb0938e97bbcb5de  # 2026-10-29 nav/footer entry for the process pages on every page: site-wide plumbing, no content change
