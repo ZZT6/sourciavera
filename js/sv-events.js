@@ -24,7 +24,7 @@
 (function () {
   'use strict';
   var PROD_HOST = 'sourciavera.com';
-  var GA4_ID = 'G-X40LT2MS4X';
+  var GA4_ID = 'G-TV9FH98VZK';
   var WA_NUMBER = '8613688057230';   // +86 13688057230
 
   var LANG = (/^es/i.test(document.documentElement.lang || '') || /^\/es(\/|$)/.test(location.pathname)) ? 'es' : 'en';
