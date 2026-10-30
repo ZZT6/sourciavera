@@ -562,6 +562,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 /*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
 /*why-link*/.why-card.why-card-highlight a.why-link{display:inline-block;margin-top:0.9rem;color:#fff;font-weight:500;font-size:0.92rem;text-decoration:underline}
 /*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
+.is-hidden{display:none}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -1116,7 +1117,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
     </div>
     <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem" data-en="We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email." data-es="Aceptamos pagos por PayPal y Wise. Después de enviar el formulario, le enviamos el enlace de pago por WhatsApp o correo.">We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email.</p>
     <button type="submit" class="btn-submit" id="remote-check-submit-btn" data-en="Request This Check — $49" data-es="Solicitar esta Revisión — $49">Request This Check — $49</button>
-    <p id="remote-check-success" style="display:none;color:var(--teal);font-weight:600;margin-top:1rem"></p>
+    <p class="is-hidden" id="remote-check-success" style="color:var(--teal);font-weight:600;margin-top:1rem"></p>
   </form>
 </section>
 
@@ -1150,14 +1151,14 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
             <input type="checkbox" id="has-part-list-check" name="has_part_list" value="yes">
             <span data-en="I have a list of part numbers (OEM / FMSI / DPI)" data-es="Tengo una lista de números de parte (OEM / FMSI / DPI)">I have a list of part numbers (OEM / FMSI / DPI)</span>
           </label>
-          <div id="part-list-box" style="display:none;margin-top:0.6rem">
+          <div class="is-hidden" id="part-list-box" style="margin-top:0.6rem">
             <textarea name="part_list" data-en="Paste your part numbers here, one per line..." data-es="Pegue aquí sus números de parte, uno por línea..." placeholder="Paste your part numbers here, one per line..."></textarea>
           </div>
         </div>
         <button type="button" class="btn-submit diag-next" data-next="2" data-en="Next →" data-es="Siguiente →">Next →</button>
       </div>
 
-      <div class="diag-panel" data-panel="2" style="display:none">
+      <div class="diag-panel is-hidden" data-panel="2">
         <div class="form-group">
           <label data-en="Where are you in the process?" data-es="¿En qué etapa está?">Where are you in the process?</label>
           <div class="diag-options">
@@ -1173,7 +1174,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <button type="button" class="btn-submit diag-next" data-next="3" data-en="Next →" data-es="Siguiente →">Next →</button>
       </div>
 
-      <div class="diag-panel" data-panel="3" style="display:none">
+      <div class="diag-panel is-hidden" data-panel="3">
         <div class="form-group">
           <label data-en="Budget range" data-es="Rango de presupuesto">Budget range</label>
           <div class="diag-options">
@@ -1186,7 +1187,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <button type="button" class="btn-submit diag-next" data-next="4" data-en="Next →" data-es="Siguiente →">Next →</button>
       </div>
 
-      <div class="diag-panel" data-panel="4" style="display:none">
+      <div class="diag-panel is-hidden" data-panel="4">
         <div class="form-row">
           <div class="form-group">
             <label data-en="Your name" data-es="Su nombre">Your name</label>
@@ -1222,7 +1223,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
         <button type="submit" class="btn-submit" id="submit-btn" data-en="Get a Free Detailed Quote →" data-es="Cotización Detallada Gratis →">Get a Free Detailed Quote →</button>
       </div>
 
-      <div id="form-success" style="display:none;background:#00796B;color:white;padding:1rem;text-align:center;margin-top:0.5rem;font-size:0.9rem;" data-en="✓ Received — we'll contact you within 24h" data-es="✓ Recibido — le contactamos en menos de 24h">
+      <div class="is-hidden" id="form-success" data-en="✓ Received — we'll contact you within 24h" data-es="✓ Recibido — le contactamos en menos de 24h" style="background:#00796B;color:white;padding:1rem;text-align:center;margin-top:0.5rem;font-size:0.9rem">
         ✓ Received — we'll contact you within 24h
       </div>
     </form>
@@ -1316,7 +1317,7 @@ document.querySelectorAll('.nav-links a').forEach(function(a){
 setLang(currentLang);
 
 function diagGoto(n){
-  document.querySelectorAll('.diag-panel').forEach(function(p){ p.style.display = (p.dataset.panel === String(n)) ? '' : 'none'; });
+  document.querySelectorAll('.diag-panel').forEach(function(p){ p.classList.toggle('is-hidden', p.dataset.panel !== String(n)); });
   document.querySelectorAll('.diag-step-dot').forEach(function(d){
     var dn = parseInt(d.dataset.dot, 10);
     d.classList.toggle('active', dn === n);
@@ -1326,7 +1327,7 @@ function diagGoto(n){
 var hasPartListCheck = document.getElementById('has-part-list-check');
 if (hasPartListCheck) {
   hasPartListCheck.addEventListener('change', function(){
-    document.getElementById('part-list-box').style.display = this.checked ? 'block' : 'none';
+    document.getElementById('part-list-box').classList.toggle('is-hidden', !this.checked);
   });
 }
 function diagValidate(n){
@@ -1407,7 +1408,7 @@ rcForm.addEventListener('submit', async function(e) {
       window.svTrackLead && window.svTrackLead('remote-check-form');
       rcForm.reset();
       rcBtn.style.display = 'none';
-      rcSuccess.style.display = 'block';
+      rcSuccess.classList.remove('is-hidden');
       rcSuccess.textContent = currentLang === 'es'
         ? '✓ Recibido — te contactamos en menos de 24h para coordinar el pago'
         : '✓ Received — we\'ll contact you within 24h to arrange payment';
@@ -1434,7 +1435,7 @@ form.addEventListener('submit', async function(e) {
       window.svTrackLead && window.svTrackLead('contact-form');
       form.reset();
       btn.style.display = 'none';
-      success.style.display = 'block';
+      success.classList.remove('is-hidden');
       success.textContent = currentLang === 'es'
         ? '✓ Recibido — te contactamos en menos de 24h'
         : '✓ Received — we\'ll contact you within 24h';
