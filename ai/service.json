@@ -1,5 +1,6 @@
 {
   "schema_version": "1.0",
+  "name": "SourciaVera",
   "provider": {
     "name": "SourciaVera",
     "url": "https://sourciavera.com"
@@ -118,6 +119,15 @@
         "es": "https://sourciavera.com/es/lotes-pequenos"
       }
     }
+  ],
+  "capabilities": [
+    "Remote Supplier Check",
+    "Live Video Factory Verification",
+    "Factory Verification (on-site visit)",
+    "Pre-Shipment Inspection",
+    "Factory Audit",
+    "China Sourcing Agent",
+    "Small-batch orders"
   ],
   "areas_served": [
     "US",
