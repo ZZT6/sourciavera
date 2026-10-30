@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -20,7 +27,7 @@
       if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
+    gtag('config', 'G-X40LT2MS4X', svInternal ? { traffic_type: 'internal' } : {});
     document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
   }
 </script>
@@ -149,6 +156,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
 .real-case{background:var(--light);border-left:0.25rem solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
@@ -336,11 +344,16 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p>No puede decidir qué acepta una aduana. Lo que sí puede hacer es comprobar que el certificado y la mercancía coinciden antes de que salgan: una persona en la fábrica o en el puerto compara las marcas del material con el certificado e informa lo que encuentra. Una inspección antes de pagar el saldo (<a href="/blog/es/costo-inspeccion-producto-antes-embarque">cuánto cuesta una inspección previa al embarque</a>) cubre esto, y la <a href="/es#remote-check">Revisión Remota de $49</a> revisa si el proveedor es un fabricante real y si la cuenta de pago coincide con la empresa. Las <a href="/blog/es/que-verificar-antes-pagar-deposito-proveedor-china">10 cosas que verificar antes de pagar un anticipo</a> cubren el resto. Un certificado que no coincide con el material es un problema en la aduana y uno mayor para usted.</p>
 
-  <h2>¿Qué Debe Hacer Ahora?</h2>
+  <aside class="sv-inline-cta" aria-label="Servicio">
+      <p>Antes de que salga su acero, podemos comparar el certificado de molino con el material en la fábrica y grabar la revisión sin editar, para que usted vea las marcas. No decidimos qué acepta la aduana.</p>
+      <p class="sv-inline-cta-links"><a href="/es/supervision-fabricas-china" class="cta-btn">Ver revisión antes del embarque</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Escríbanos por WhatsApp</a></p>
+    </aside>
+
+    <h2>¿Qué Debe Hacer Ahora?</h2>
 
   <ol>
-    <li><strong>Pida ya el formato del certificado,</strong> en los pedidos que no se han embarcado.</li>
-    <li><strong>Compruebe las marcas contra el certificado</strong> antes de pagar el saldo.</li>
+    <li><strong>Pida ya el formato del certificado,</strong> en los pedidos que no se han embarcado. Para confirmar primero que el proveedor es un fabricante real, vea la <a href="/blog/es/verificacion-proveedores-china-mexico">guía de verificación de proveedores para importadores mexicanos</a>.</li>
+    <li><strong>Compruebe las marcas contra el certificado</strong> antes de pagar el saldo. El conocimiento de embarque es el otro documento que conviene leer antes de pagar el saldo: <a href="/blog/es/conocimiento-de-embarque-sea-waybill-proveedor-chino-antes-de-pagar-saldo">qué revisar en un conocimiento de embarque o sea waybill</a>.</li>
     <li><strong>Pregunte a su agente aduanal</strong> qué acepta hoy el puerto de destino.</li>
     <li><strong>Escriba la fecha y la responsabilidad del almacenaje</strong> en la factura proforma.</li>
     <li><strong>Deje un margen</strong> en las fechas de entrega por un posible retraso del papel. Para otro cambio mexicano que también puede retener mercancía en la frontera, vea <a href="/blog/es/mexico-reforma-ley-aduanera-embargo-mercancia-subvaluada-importadores">la reforma a la Ley Aduanera de México sobre mercancía declarada por debajo de su valor</a>. Y compruebe que el molino del certificado sea una planta real: México dice que retiró más de 1,000 registros de proveedores asiáticos de acero tras no encontrar las plantas (<a href="/blog/es/mexico-retira-proveedores-acero-asia-plantas-inexistentes-que-revisar">qué debe preguntar el comprador</a>).</li>

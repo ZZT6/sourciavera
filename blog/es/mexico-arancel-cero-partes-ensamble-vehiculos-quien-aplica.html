@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -20,7 +27,7 @@
       if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
+    gtag('config', 'G-X40LT2MS4X', svInternal ? { traffic_type: 'internal' } : {});
     document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
   }
 </script>
@@ -157,6 +164,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
 .real-case{background:var(--light);border-left:0.25rem solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
@@ -355,7 +363,12 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       <figcaption>Diagrama: Los requisitos tal como los reproduce el artículo de la compilación mLey.mx; consulte el texto vigente en el DOF.</figcaption>
     </figure>
 
-  <h2>¿Qué Significa para las Fábricas Chinas?</h2>
+  <aside class="sv-inline-cta" aria-label="Servicio">
+      <p>Un cambio de arancel no le dice si el proveedor es real ni si la mercancía coincide con la especificación. Revisamos ambas cosas: verificación de la fábrica antes de pagar y una revisión antes del embarque, grabada sin editar.</p>
+      <p class="sv-inline-cta-links"><a href="/es/verificacion-fabricas/mexico" class="cta-btn">Verificación de fábricas para importadores en México</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Escríbanos por WhatsApp</a></p>
+    </aside>
+
+    <h2>¿Qué Significa para las Fábricas Chinas?</h2>
 
   <p>Esta sección es inferencia, no un hecho reportado. La medida reduce el arancel que paga una ensambladora autorizada por las partes que importa para ensamblar, así que una fábrica que surte partes o kits a una ensambladora así podría ver más interés en ese canal. Cluster Industrial informa que GAC anunció ensamble SKD en México para el cuarto trimestre de 2026 y que JAC ya trabaja con SKD y DKD en Hidalgo. Radio F&oacute;rmula informa (17 de octubre) que JAC no aparece entre los 11 fabricantes que pueden usar la exenci&oacute;n y que a&uacute;n falta informaci&oacute;n oficial sobre si puede hacerlo. Que llegue algún pedido depende del proyecto de cada ensambladora, y los lineamientos de la SE todavía no los conocemos. Para una fábrica que vende a mayoristas y distribuidores mexicanos, nada en el decreto reportado cambia el arancel que paga su comprador.</p>
 
@@ -373,8 +386,8 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <h2>¿Qué Debe Hacer Ahora?</h2>
 
   <ol>
-    <li><strong>Pregunte a su agente aduanal con qué fracción arancelaria se declara cada una de sus partes</strong> y si la 9803.00.01 puede aplicarle en absoluto. No lo dé por hecho (vea <a href="/blog/es/como-importar-autopartes-de-china-a-mexico">nuestra guía para importar autopartes de China a México</a> para ver cómo entran el arancel y la clasificación en su costo, y <a href="/blog/es/fraccion-arancelaria-codigo-hs-proveedor-chino-mexico-que-pedir">código HS y fracción arancelaria en México</a> para ver cómo se forma el código y qué pedir al proveedor).</li>
-    <li><strong>No renegocie precios por el titular.</strong> Mantenga las cotizaciones vigentes hasta confirmar por escrito qué tasa aplica a sus importaciones.</li>
+    <li><strong>Pregunte a su agente aduanal con qué fracción arancelaria se declara cada una de sus partes</strong> y si la 9803.00.01 puede aplicarle en absoluto. No lo dé por hecho (vea <a href="/blog/es/como-importar-autopartes-de-china-a-mexico">nuestra guía para importar autopartes de China a México</a> para ver cómo entran el arancel y la clasificación en su costo, y <a href="/blog/es/fraccion-arancelaria-codigo-hs-proveedor-chino-mexico-que-pedir">código HS y fracción arancelaria en México</a> para ver cómo se forma el código y qué pedir al proveedor). Anote la tasa acordada y el término de entrega en la factura proforma: <a href="/blog/es/factura-proforma-proveedor-chino-que-revisar">qué debe decir la factura proforma</a>.</li>
+    <li><strong>No renegocie precios por el titular.</strong> Mantenga las cotizaciones vigentes hasta confirmar por escrito qué tasa aplica a sus importaciones. El valor de su factura también debe coincidir con lo que pagó; vea la <a href="/blog/es/mexico-mve-manifestacion-valor-electronica-fechas-importadores-china">manifestación de valor electrónica (MVE)</a>.</li>
     <li><strong>Si surte a una ensambladora o trabaja con una,</strong> pregunte si tiene la autorización de <em>depósito fiscal</em>, qué exigen los lineamientos de la SE y quién será el importador de registro.</li>
     <li><strong>Lea el decreto en el DOF del 13 de octubre de 2026</strong> y los lineamientos de la SE cuando se publiquen; ambos deciden los detalles que los reportes no pueden.</li>
     <li><strong>Mantenga las revisiones de siempre con cualquier socio nuevo:</strong> un arancel distinto no le dice si un proveedor existe ni si la mercancía coincide con la especificación (vea <a href="/blog/es/verificacion-proveedores-china-mexico">verificar a un proveedor chino antes de pagar</a>).</li>

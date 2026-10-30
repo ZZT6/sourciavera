@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -20,7 +27,7 @@
       if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
+    gtag('config', 'G-X40LT2MS4X', svInternal ? { traffic_type: 'internal' } : {});
     document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
   }
 </script>
@@ -157,6 +164,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
 .real-case{background:var(--light);border-left:0.25rem solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
@@ -378,7 +386,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <h2>Can You Buy Fewer Than One Full Set?</h2>
 
-  <p>Sometimes. Some suppliers will split a set and <a href="/blog/buy-single-product-alibaba-personal-use">sell single pieces</a>, usually at a higher price per piece or with a different MOQ; others will not. Ask before you assume, and compare the total cost rather than the unit price.</p>
+  <p>Sometimes. Some suppliers will split a set and <a href="/blog/buy-single-product-alibaba-personal-use">sell single pieces</a>, usually at a higher price per piece or with a different MOQ; others will not. Ask before you assume, and compare the total cost rather than the unit price. Keep in mind that a good sample does not guarantee the bulk order; see <a href="/blog/alibaba-sample-different-from-bulk-order">why a bulk order can differ from the sample</a>.</p>
 
   <h2>What Are the Most Common Mistakes?</h2>
 
@@ -399,9 +407,14 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <figcaption>Diagram: Set or piece: same MOQ number, different commitment</figcaption>
 </figure>
 
-  <h2>What Should You Ask the Supplier?</h2>
+  <aside class="sv-inline-cta" aria-label="Service">
+      <p>If you want the pieces per set, the part numbers and the carton counts checked against your order before it ships, we compare the packing list and cartons with your order at the factory and film the check unedited.</p>
+      <p class="sv-inline-cta-links"><a href="/supply-chain-supervision-china" class="cta-btn">See pre-shipment checks</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Ask us on WhatsApp</a></p>
+    </aside>
 
-  <p>Send the same message to every supplier, so the answers can be compared:</p>
+    <h2>What Should You Ask the Supplier?</h2>
+
+  <p>Send the same message to every supplier, so the answers can be compared: For the full list of papers to ask for, see <a href="/blog/documents-to-request-chinese-manufacturer">8 documents to request from a Chinese manufacturer</a>.</p>
 
   <p style="background:var(--light);border-left:0.25rem solid var(--teal);padding:1rem 1.25rem">Please confirm in writing: (1) the unit used for the MOQ and for the price (pieces, sets, pairs or cartons); (2) how many pieces are in one unit, what each piece is, and its part number; (3) whether accessories such as clips, shims or hardware are included; (4) whether you sell single pieces, and at what price; (5) how many units are packed in one carton.</p>
 

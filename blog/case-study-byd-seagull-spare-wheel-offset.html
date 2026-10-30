@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -20,7 +27,7 @@
       if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
+    gtag('config', 'G-X40LT2MS4X', svInternal ? { traffic_type: 'internal' } : {});
     document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
   }
 </script>
@@ -127,6 +134,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .cta-btn-wa{background:#25D366;color:var(--navy)}.cta-btn-wa:hover{opacity:0.85}
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
@@ -281,7 +289,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       <li>It can cause uneven tire wear or vibration at highway speed.</li>
     </ul>
 
-    <p>A buyer who takes a factory&rsquo;s first spec sheet at face value, without asking for a written re-check, is betting that a single unverified number is correct. On a wheel, that&rsquo;s not a safe bet &mdash; even the supplier that manufactures the part can get its own paperwork wrong.</p>
+    <p>A buyer who takes a factory&rsquo;s first spec sheet at face value, without asking for a written re-check, is betting that a single unverified number is correct. On a wheel, that&rsquo;s not a safe bet &mdash; even the supplier that manufactures the part can get its own paperwork wrong. The same habit applies to units: <a href="/blog/set-vs-piece-moq-alibaba">how to read a set versus a piece on an Alibaba quote</a>.</p>
 
     <div class="spec-box">
       <strong>Key specification (supplier-confirmed):</strong> BYD Seagull (2024&ndash;2026) spare wheel kit &mdash; 15&times;3.5 steel wheel &middot; 125/80R15 tire &middot; Offset ET&nbsp;30 &middot; Center bore (CB) 54.1&nbsp;mm &middot; PCD 4&times;100 &middot; Material: steel
@@ -314,7 +322,12 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <figcaption>Diagram: Table of the confirmed BYD Seagull spare wheel specification: 15x3.5 steel wheel, 125/80R15 tire, ET 30, 54.1 mm center bore, PCD 4x100</figcaption>
 </figure>
 
-  <h2>What evidence should you ask a wheel factory for before ordering?</h2>
+  <aside class="sv-inline-cta" aria-label="Service">
+      <p>If you would rather have someone check the wheels against your written spec before they ship, our team does that at the factory: we check the finished parts on site and film the check unedited, so you see what we see.</p>
+      <p class="sv-inline-cta-links"><a href="/supply-chain-supervision-china" class="cta-btn">See factory supervision and pre-shipment checks</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Ask us on WhatsApp</a></p>
+    </aside>
+
+    <h2>What evidence should you ask a wheel factory for before ordering?</h2>
 
     <p>Before confirming anything, we coordinated directly with the supplier to get two concrete pieces of evidence:</p>
 
@@ -323,7 +336,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       <li>A <strong>written, supplier-stamped spec sheet</strong> with real manufacturing data (offset, center bore, PCD) &mdash; not a generic catalog page, and re-issued in writing if the first version doesn&rsquo;t hold up under a second look.</li>
     </ol>
 
-    <p>With the corrected, stamped specification in hand, we placed a full sample order through Alibaba Trade Assurance: wheel + tire + lug wrench + hydraulic jack + storage bag &mdash; the complete set exactly as the end user would receive it, not just the isolated part.</p>
+    <p>With the corrected, stamped specification in hand, we placed a full sample order through Alibaba Trade Assurance: wheel + tire + lug wrench + hydraulic jack + storage bag &mdash; the complete set exactly as the end user would receive it, not just the isolated part. If you are unsure how to name the part to a Mexican buyer or supplier, the <a href="/blog/mexican-auto-parts-terminology-guide">Mexican auto parts terminology guide</a> lists the words in use.</p>
 
         <figure class="body-fig" data-fig="case-study-byd-seagull-spare-wheel-offset-fig2">
       <img src="/images/case-study-byd-seagull-spare-wheel-offset-fig2-en.webp" alt="Flow diagram of five steps from a stamped spec sheet to a planned bulk order" width="800" height="845" loading="lazy" srcset="/images/case-study-byd-seagull-spare-wheel-offset-fig2-en.webp 800w, /images/case-study-byd-seagull-spare-wheel-offset-fig2-en-2x.webp 1600w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
@@ -336,7 +349,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p>A factory check is only as useful as the person doing it is independent: read our <a href="/impartiality">impartiality statement</a>, and look at a <a href="/sample-report">sample report</a> to see what you would receive.</p>
 
-    <p>To confirm any of this on the ground rather than by message, you can book a <a href="/verification-services/mexico">pre-order factory check</a>.</p>
+    <p>To confirm any of this on the ground rather than by message, you can book a <a href="/verification-services/mexico">pre-order factory check</a>. For what else to look at before auto parts leave the factory, see <a href="/blog/auto-parts-quality-checks-before-shipping">quality checks for auto parts before shipping</a>.</p>
 
   <h2>Summary: Get the Spec in Writing Before the Sample Order</h2>
 
