@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -17,11 +24,11 @@
       gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
     } else {
       gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
-      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
-    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
   }
 </script>
 <script src="/js/sv-events.js" defer></script>
@@ -155,6 +162,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
 .real-case{background:var(--light);border-left:0.25rem solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
@@ -347,7 +355,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <p>Esta sección es consejo general, no una lista oficial. Con el plazo de diez días hábiles del artículo 154 para pedir la sustitución del embargo, conviene tener el expediente armado antes de que llegue la mercancía.</p>
 
   <ul>
-    <li><strong>Pedido, <a href="/blog/es/factura-proforma-proveedor-chino-que-revisar">factura proforma</a> y factura comercial que coincidan</strong> en descripción, cantidad, precio unitario y término de entrega.</li>
+    <li><strong>Pedido, <a href="/blog/es/factura-proforma-proveedor-chino-que-revisar">factura proforma</a> y factura comercial que coincidan</strong> en descripción, cantidad, precio unitario y término de entrega. Para el resto del expediente de proveedor, vea <a href="/blog/es/8-documentos-solicitar-fabricante-chino">8 documentos que debe solicitar a un fabricante chino</a>.</li>
     <li><strong>Pagos que coincidan con la factura:</strong> comprobantes de transferencia del anticipo y del saldo, a nombre del vendedor que factura. El precio pagado incluye lo que se pague de forma indirecta o en beneficio del vendedor.</li>
     <li><strong>Cotizaciones comparables y fechadas</strong> de otros proveedores para la misma especificación, y facturas anteriores del mismo producto, para mostrar el rango de precios del mercado.</li>
     <li><strong>Razones de un precio más bajo,</strong> por escrito: volumen, nivel comercial, condiciones de pago o diferencias de calidad y marca frente a la mercancía con la que podrían compararla.</li>
@@ -365,13 +373,18 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p>Una revisión de un tercero no fija el valor ni sustituye a su agente aduanal. Sirve para que lo que el proveedor factura coincida con lo que realmente se embarca: que la fábrica exista y produzca lo que cotiza (vea <a href="/blog/es/que-verificar-antes-pagar-deposito-proveedor-china">qué verificar antes de pagar un anticipo</a>), que la cantidad y la especificación de la mercancía sean las del pedido y que el precio y los pagos queden en papeles consistentes. Una inspección previa al embarque (<a href="/blog/es/costo-inspeccion-producto-antes-embarque">inspección previa al embarque</a>) deja constancia de la mercancía en la fecha en que se carga.</p>
 
-  <h2>¿Qué Debe Hacer Antes del 1 de Enero de 2027?</h2>
+  <aside class="sv-inline-cta" aria-label="Servicio">
+      <p>Parte del expediente es demostrar que lo facturado es lo que se embarca. Verificamos que la fábrica exista y que lo que sale coincida con el pedido y la factura, con video sin editar. No fijamos el valor ni sustituimos a su agente aduanal.</p>
+      <p class="sv-inline-cta-links"><a href="/es/supervision-fabricas-china" class="cta-btn">Ver supervisión de fábrica</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Escríbanos por WhatsApp</a></p>
+    </aside>
+
+    <h2>¿Qué Debe Hacer Antes del 1 de Enero de 2027?</h2>
 
   <ol>
     <li><strong>Pida a su agente aduanal</strong> que revise sus fracciones y precios frente a lo que se publique en el DOF antes del 31 de diciembre de 2026.</li>
     <li><strong>Arme un expediente por proveedor y producto</strong> con los documentos de la lista anterior.</li>
     <li><strong>Revise que cada pago tenga su factura</strong> y que el pedimento refleje el precio pagado más los cargos que correspondan (vea también <a href="/blog/es/mexico-mve-manifestacion-valor-electronica-fechas-importadores-china">la manifestación de valor electrónica (MVE)</a>).</li>
-    <li><strong>Valide a los proveedores nuevos</strong> antes de pagar un anticipo.</li>
+    <li><strong>Valide a los proveedores nuevos</strong> antes de pagar un anticipo. Guía: <a href="/blog/es/verificacion-proveedores-china-mexico">verificación de proveedores en China para importadores en México</a>.</li>
     <li><strong>Siga el DOF</strong> para las disposiciones del transitorio segundo.</li>
   </ol>
       <figure class="body-fig" data-fig="mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores-fig2">

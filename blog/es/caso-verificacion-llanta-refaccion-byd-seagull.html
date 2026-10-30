@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -17,11 +24,11 @@
       gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
     } else {
       gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
-      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
-    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
   }
 </script>
 <script src="/js/sv-events.js" defer></script>
@@ -132,6 +139,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .cta-btn-wa{background:#25D366;color:var(--navy)}.cta-btn-wa:hover{opacity:0.85}
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
@@ -287,7 +295,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       <li>Puede provocar desgaste irregular de la llanta o vibraci&oacute;n en carretera, que ni la alineaci&oacute;n y balanceo corrigen del todo.</li>
     </ul>
 
-    <p>Un comprador que acepta la primera ficha t&eacute;cnica de la f&aacute;brica sin pedir una revisi&oacute;n por escrito est&aacute; apostando a que un solo dato sin verificar es correcto. En un rin, esa no es una apuesta segura &mdash; hasta el proveedor que fabrica la pieza puede equivocarse en su propia documentaci&oacute;n.</p>
+    <p>Un comprador que acepta la primera ficha t&eacute;cnica de la f&aacute;brica sin pedir una revisi&oacute;n por escrito est&aacute; apostando a que un solo dato sin verificar es correcto. En un rin, esa no es una apuesta segura &mdash; hasta el proveedor que fabrica la pieza puede equivocarse en su propia documentaci&oacute;n. El mismo cuidado aplica a las unidades: <a href="/blog/es/diferencia-set-pieza-moq-alibaba">cómo leer un set frente a una pieza en una cotización de Alibaba</a>.</p>
 
     <div class="spec-box">
       <strong>Especificaci&oacute;n clave (confirmada por el proveedor):</strong> Kit de rin de refacci&oacute;n BYD Seagull (2024&ndash;2026) &mdash; rin de acero 15&times;3.5 &middot; llanta 125/80R15 &middot; Offset ET&nbsp;30 &middot; Buje central (CB) 54.1&nbsp;mm &middot; PCD 4&times;100 &middot; Material: acero
@@ -320,7 +328,12 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <figcaption>Diagrama: Tabla de la especificación confirmada de la rueda de refacción BYD Seagull: rin de acero 15x3.5, llanta 125/80R15, ET 30, centro de 54.1 mm, PCD 4x100</figcaption>
 </figure>
 
-  <h2>&iquest;Qu&eacute; pruebas pedirle a una f&aacute;brica de rines antes de ordenar?</h2>
+  <aside class="sv-inline-cta" aria-label="Servicio">
+      <p>Si prefiere que alguien revise los rines contra su especificación por escrito antes de que salgan, nuestro equipo lo hace en la fábrica: revisamos las piezas terminadas en sitio y grabamos la revisión sin editar, para que usted vea lo mismo que nosotros.</p>
+      <p class="sv-inline-cta-links"><a href="/es/supervision-fabricas-china" class="cta-btn">Ver supervisión de fábrica y revisión antes del embarque</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Escríbanos por WhatsApp</a></p>
+    </aside>
+
+    <h2>&iquest;Qu&eacute; pruebas pedirle a una f&aacute;brica de rines antes de ordenar?</h2>
 
     <p>Antes de confirmar nada, coordinamos directamente con el proveedor para obtener dos pruebas concretas:</p>
 

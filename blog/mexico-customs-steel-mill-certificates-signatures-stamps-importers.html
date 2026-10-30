@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -17,11 +24,11 @@
       gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
     } else {
       gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
-      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
-    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
   }
 </script>
 <script src="/js/sv-events.js" defer></script>
@@ -149,6 +156,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
 .real-case{background:var(--light);border-left:0.25rem solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
@@ -336,11 +344,16 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <p>It cannot decide what a customs office accepts. What it can do is check that the certificate and the goods agree before they leave: a person at the factory or the port compares the markings on the material with the certificate and reports what they find. An inspection before the balance is paid (<a href="/blog/product-inspection-cost-before-shipment">what a pre-shipment inspection costs</a>) covers this, and the <a href="/#remote-check">$49 Remote Check</a> looks at whether the supplier is a real manufacturer and whether the payment account matches the company. The <a href="/blog/things-to-check-before-paying-supplier-deposit">10 things to check before paying a deposit</a> cover the rest. A certificate that does not match the material is a problem at customs and a bigger one for you.</p>
 
-  <h2>What Should You Do Next?</h2>
+  <aside class="sv-inline-cta" aria-label="Service">
+      <p>Before your steel ships, we can compare the mill certificate with the material at the factory and film the check unedited, so you can see the markings yourself. We do not decide what customs accepts.</p>
+      <p class="sv-inline-cta-links"><a href="/supply-chain-supervision-china" class="cta-btn">See pre-shipment checks</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Ask us on WhatsApp</a></p>
+    </aside>
+
+    <h2>What Should You Do Next?</h2>
 
   <ol>
-    <li><strong>Ask for the certificate format now,</strong> for orders that have not shipped.</li>
-    <li><strong>Check the markings against the certificate</strong> before the balance is paid.</li>
+    <li><strong>Ask for the certificate format now,</strong> for orders that have not shipped. To confirm the supplier is a real manufacturer first, see <a href="/blog/china-supplier-verification-guide-mexico">the supplier verification guide for Mexican importers</a>.</li>
+    <li><strong>Check the markings against the certificate</strong> before the balance is paid. The bill of lading is the other document to read before the balance goes out: <a href="/blog/bill-of-lading-sea-waybill-chinese-supplier-before-paying-balance">what to check on a bill of lading or sea waybill</a>.</li>
     <li><strong>Ask your customs broker</strong> what the target port accepts today.</li>
     <li><strong>Write the date and the storage responsibility</strong> on the proforma invoice.</li>
     <li><strong>Leave a buffer</strong> in delivery dates for a possible paper delay. For a different Mexican change that can also hold goods at the border, see <a href="/blog/mexico-customs-law-reform-undervalued-goods-seizure-importers">Mexico's Customs Law reform on goods declared below their value</a>. And check that the mill on the certificate is a real plant: Mexico says it removed more than 1,000 Asian steel supplier registrations after it could not find the plants (<a href="/blog/mexico-removes-asian-steel-suppliers-nonexistent-plants-what-buyers-check">what buyers should ask</a>).</li>

@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -17,11 +24,11 @@
       gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
     } else {
       gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
-      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
-    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
   }
 </script>
 <script src="/js/sv-events.js" defer></script>
@@ -157,6 +164,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500}
 .real-case{background:var(--light);border-left:0.25rem solid var(--teal);padding:1.5rem 1.75rem;margin:1.5rem 0}
@@ -378,7 +386,7 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
   <h2>¿Se Puede Comprar Menos de un Set Completo?</h2>
 
-  <p>A veces. Algunos proveedores separan el set y <a href="/blog/es/comprar-un-solo-producto-alibaba-uso-personal">venden piezas sueltas</a>, normalmente a un precio por pieza más alto o con otro MOQ; otros no. Pregunte antes de suponerlo y compare el costo total, no el precio unitario.</p>
+  <p>A veces. Algunos proveedores separan el set y <a href="/blog/es/comprar-un-solo-producto-alibaba-uso-personal">venden piezas sueltas</a>, normalmente a un precio por pieza más alto o con otro MOQ; otros no. Pregunte antes de suponerlo y compare el costo total, no el precio unitario. Una buena muestra no garantiza el pedido grande; vea <a href="/blog/es/muestra-perfecta-pedido-masivo-defectuoso">por qué el pedido masivo puede salir distinto a la muestra</a>.</p>
 
   <h2>¿Cuáles Son los Errores Más Comunes?</h2>
 
@@ -399,9 +407,14 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
   <figcaption>Diagrama: Set o pieza: el mismo número de MOQ, otro compromiso</figcaption>
 </figure>
 
-  <h2>¿Qué Debe Preguntarle al Proveedor?</h2>
+  <aside class="sv-inline-cta" aria-label="Servicio">
+      <p>Si quiere que revisemos las piezas por set, los números de parte y las cajas contra su pedido antes del embarque, comparamos la lista de empaque y las cajas con su pedido en la fábrica y grabamos la revisión sin editar.</p>
+      <p class="sv-inline-cta-links"><a href="/es/supervision-fabricas-china" class="cta-btn">Ver revisión antes del embarque</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Escríbanos por WhatsApp</a></p>
+    </aside>
 
-  <p>Envíe el mismo mensaje a todos los proveedores, para poder comparar las respuestas:</p>
+    <h2>¿Qué Debe Preguntarle al Proveedor?</h2>
+
+  <p>Envíe el mismo mensaje a todos los proveedores, para poder comparar las respuestas: Para la lista completa de documentos, vea <a href="/blog/es/8-documentos-solicitar-fabricante-chino">8 documentos que debe solicitar a un fabricante chino</a>.</p>
 
   <p style="background:var(--light);border-left:0.25rem solid var(--teal);padding:1rem 1.25rem">Por favor confirme por escrito: (1) la unidad que usan para el MOQ y para el precio (piezas, sets, pares o cajas); (2) cuántas piezas trae una unidad, qué es cada pieza y su número de parte; (3) si los accesorios, como clips, laminillas o tornillería, vienen incluidos; (4) si venden piezas sueltas y a qué precio; (5) cuántas unidades vienen en una caja.</p>
 

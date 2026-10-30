@@ -7,7 +7,14 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  if (location.hostname === 'sourciavera.com') {
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
     // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
     // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
     var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
@@ -17,11 +24,11 @@
       gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
     } else {
       gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
-      if (!svChoice) window['ga-disable-G-X40LT2MS4X'] = true;
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
     }
     gtag('js', new Date());
-    gtag('config', 'G-X40LT2MS4X');
-    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-X40LT2MS4X' }));
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
   }
 </script>
 <script src="/js/sv-events.js" defer></script>
@@ -111,6 +118,7 @@ nav{background:var(--navy);display:flex;justify-content:space-between;align-item
 .cta-box{background:var(--light);border:2px solid var(--coral);padding:2.5rem;margin:3rem 0;text-align:center}
 .cta-box h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
 .cta-box p{color:var(--muted);margin-bottom:1.5rem;font-size:0.95rem}
+.sv-inline-cta{background:var(--light);border-left:0.25rem solid var(--coral);padding:1.25rem 1.5rem;margin:2rem 0}.sv-inline-cta p{margin:0 0 0.75rem;font-size:0.95rem}.sv-inline-cta .sv-inline-cta-links{display:flex;gap:0.75rem;flex-wrap:wrap;margin:0}.sv-inline-cta .cta-btn{margin:0}.sv-inline-cta .sv-inline-wa{background:#25D366;color:var(--navy)}
 .cta-btn{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;text-decoration:none}
 .cta-btn-wa{background:#25D366;color:var(--navy)}.cta-btn-wa:hover{opacity:0.85}
 .sv-cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
@@ -259,14 +267,14 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
         <li><strong>OEM</strong> and <strong>aftermarket</strong> are used directly in Spanish (no translation), but "&iquest;Es original o aftermarket?" is the question you'll actually be asked.</li>
         <li>Category vocabulary (<em>defensa</em>, <em>balatas</em>, <em>balero</em>) varies enough from textbook Spanish that a literal translation can confuse a buyer more than it helps.</li>
         <li>Search behavior splits by language: Mexican buyers researching suppliers mix English industry terms with Spanish business terms &mdash; neither language alone captures how the search actually happens.</li>
-        <li>Getting the vocabulary right doesn't replace verifying the supplier &mdash; it just means the RFQ, the fitment data, and the inspection report are describing the same part everyone thinks they're describing.</li>
+        <li>Getting the vocabulary right doesn't replace verifying the supplier &mdash; it just means the RFQ, the fitment data, and the inspection report are describing the same part everyone thinks they're describing. For the full route from quote to delivery, see <a href="/blog/how-to-import-auto-parts-from-china-to-mexico">how to import auto parts from China to Mexico</a>.</li>
       </ul>
     </div>
 
     <h2>Why Does Vocabulary Matter in Sourcing?</h2>
     <p>Three reasons:</p>
     <ul>
-      <li><strong>A small gap causes real errors.</strong> A supplier misquotes a category, or a customs document uses the wrong term.</li>
+      <li><strong>A small gap causes real errors.</strong> A supplier misquotes a category, or a customs document uses the wrong term. The same care applies to quote units: <a href="/blog/set-vs-piece-moq-alibaba">set versus piece on Alibaba</a>.</li>
       <li><strong>Your customer uses different words.</strong> Mexican buyers say refacciones, while a Chinese catalog says spare parts, so three messages in nobody has confirmed they mean the same category.</li>
       <li><strong>Search keywords follow the words.</strong> A retailer's website can end up not matching the keywords its own customers search.</li>
     </ul>
@@ -322,6 +330,11 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
       </tbody>
     </table>
     <p>In my experience, this is the category where a dictionary translation is most likely to mislead. A bumper is not usually called "parachoques" in Mexican day-to-day use &mdash; it's <strong>defensa</strong>. A supplier deck built around textbook Spanish will still be understood, but it reads like it wasn't written for the market it's targeting.</p>
+
+    <aside class="sv-inline-cta" aria-label="Service">
+      <p>Right names on the RFQ are the first check; the part itself is the second. Our team in Guangzhou works in English and Spanish and checks the parts at the factory against your RFQ, filming the check unedited.</p>
+      <p class="sv-inline-cta-links"><a href="/supply-chain-supervision-china" class="cta-btn">See factory supervision and pre-shipment checks</a> <a href="https://wa.me/8613688057230" class="cta-btn sv-inline-wa">Ask us on WhatsApp</a></p>
+    </aside>
 
     <h2>4. Engine Components in Mexican Spanish</h2>
     <table>
