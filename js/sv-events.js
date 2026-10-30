@@ -27,24 +27,47 @@
   var GA4_ID = 'G-X40LT2MS4X';
   var WA_NUMBER = '8613688057230';   // +86 13688057230
 
+  var LANG = (/^es/i.test(document.documentElement.lang || '') || /^\/es(\/|$)/.test(location.pathname)) ? 'es' : 'en';
+
+  /* Events go through gtag() on every host: gtag.js itself is only loaded on the production hostnames (head block of each page),
+   * so on localhost / previews the call just fills dataLayer and nothing leaves the browser. */
   function send(name, params) {
-    if (location.hostname !== PROD_HOST || typeof window.gtag !== 'function') return;
+    if (typeof window.gtag !== 'function') return;
+    params.page_path = location.pathname;
+    params.page_language = LANG;
     params.send_to = GA4_ID;               // GA4 only: do not forward these events to the Google Ads tag that shares gtag.js
     params.transport_type = 'beacon';      // survives the jump to the WhatsApp app / new tab
     try { window.gtag('event', name, params); } catch (e) { /* analytics must never break the page */ }
   }
 
   window.svTrackLead = function (formId) {
-    send('generate_lead', { form_location: location.pathname, form_id: formId || '' });
+    send('generate_lead', { form_location: location.pathname, form_id: formId || '', link_location: 'form' });
   };
+
+  /* where on the page a link sits: hero | header | footer | float | article_end (CTA box) | article_inline | other */
+  function linkLocation(a) {
+    var d = a.getAttribute('data-wa-location');
+    if (d === 'floating') return 'float';
+    if (a.closest('footer')) return 'footer';
+    if (a.closest('.cta-box, .cta-btns')) return 'article_end';
+    if (a.closest('.sv-inline-cta')) return 'article_inline';
+    if (a.closest('.article-body')) return 'article_inline';
+    if (a.closest('[class*="hero"]')) return 'hero';
+    if (a.closest('header, nav')) return 'header';
+    return 'other';
+  }
 
   function waLocation(a) {
     var d = a.getAttribute('data-wa-location');
     if (d) return d;
     if (a.closest('footer')) return 'footer';
+    if (a.closest('.sv-inline-cta')) return 'article_inline';
     if (a.closest('.cta-box, .cta-btns')) return 'article_cta';
     return 'other';
   }
+
+  var SERVICE_PATHS = /^\/(es\/)?(verification-services|verificacion-fabricas|china-sourcing-agent|agente-de-compras-china|live-video-factory-verification|verificacion-fabrica-videollamada-en-vivo|supply-chain-supervision-china|supervision-fabricas-china|small-batch|lotes-pequenos)(\/|$)/;
+  var IS_ARTICLE = /^\/blog(\/|$)/.test(location.pathname);
 
   function onLinkClick(e) {
     var el = e.target;
@@ -52,9 +75,11 @@
     if (!a) return;
     var href = a.getAttribute('href') || '';
     if (/^mailto:/i.test(href)) {
-      send('email_click', { link_url: 'mailto:' + href.replace(/^mailto:/i, '').split('?')[0] });
-    } else if (a.hostname === 'wa.me') {
-      send('whatsapp_click', { link_url: 'https://wa.me' + a.pathname, button_location: waLocation(a) });
+      send('email_click', { link_url: 'mailto:' + href.replace(/^mailto:/i, '').split('?')[0], link_location: linkLocation(a) });
+    } else if (a.hostname === 'wa.me' || a.hostname === 'api.whatsapp.com') {
+      send('whatsapp_click', { link_url: 'https://' + a.hostname + a.pathname, button_location: waLocation(a), link_location: linkLocation(a) });
+    } else if (IS_ARTICLE && !a.closest('header, nav, footer') && (a.hostname === location.hostname || !a.hostname) && SERVICE_PATHS.test(a.pathname)) {
+      send('service_cta_click', { target_path: a.pathname, link_location: linkLocation(a) });
     }
   }
 
@@ -84,7 +109,7 @@
     try { cats = (detail && detail.cookie && detail.cookie.categories) || []; } catch (e) { /* ignore */ }
     var ok = cats.indexOf('analytics') > -1;
     window['ga-disable-' + GA4_ID] = !ok;
-    if (location.hostname === PROD_HOST && typeof window.gtag === 'function') {
+    if ((location.hostname === PROD_HOST || location.hostname === 'www.' + PROD_HOST) && typeof window.gtag === 'function') {
       window.gtag('consent', 'update', { analytics_storage: ok ? 'granted' : 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
     }
   }
