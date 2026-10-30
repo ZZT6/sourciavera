@@ -648,3 +648,5 @@ ebd6759 why-sourciavera.html
 00f2184 blog/es/lista-verificacion-proveedores-china.html
 00f2184 blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check.html
 00f2184 blog/us-trailer-antidumping-countervailing-duties-china-what-importers-check.html
+558ed71 blog/es/mexico-arancel-cero-partes-ensamble-vehiculos-quien-aplica.html
+558ed71 blog/es/fraccion-arancelaria-codigo-hs-proveedor-chino-mexico-que-pedir.html
