@@ -661,3 +661,4 @@ ebd6759 why-sourciavera.html
 39b70a6 blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores.html  # service block + contextual links, no change to facts (2026-10-30)
 39b70a6 blog/mexican-auto-parts-terminology-guide.html  # service block + contextual links, no change to facts (2026-10-30)
 39b70a6 blog/es/guia-terminologia-autopartes-mexico.html  # service block + contextual links, no change to facts (2026-10-30)
+47fc5e50f7bc blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice.html  # GA4 head block only

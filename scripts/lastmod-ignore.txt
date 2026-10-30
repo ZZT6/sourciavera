@@ -39,3 +39,4 @@ e4891cf321647e5a0f845f4c781dc944f6c81cf8  # 2026-10-29 meta descriptions shorten
 83996eda412d558cb4e0573f3cde68c9f343b7d5  # 2026-10-30 inline display:none -> .is-hidden class and JS classList toggles on 8 pages: no content change
 901c090  # GA4 internal-traffic flag + www host + shared event script on every page: tracking plumbing only, no content change (2026-10-30)
 a5d5a42f5191  # GA4 measurement ID swap to the new property on every page: tracking plumbing only (2026-10-30)
+47fc5e50f7bc  # merge commit: GA4 head block/ID applied to the Oct-30 permiso-previo article, tracking plumbing only (2026-10-30)
