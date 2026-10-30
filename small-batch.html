@@ -196,6 +196,7 @@ footer{
   .footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
 }
 @media(max-width:768px){html,body{overflow-x:clip;max-width:100%}}
+.is-hidden{display:none}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -468,7 +469,7 @@ footer{
 
       <p class="form-note" style="margin-bottom:0.5rem">By submitting this form, you agree to our <a href="/privacy" style="color:var(--coral)">Privacy Policy</a> and <a href="/terms" style="color:var(--coral)">Terms of Service</a>.</p>
       <button type="submit" class="btn-submit" id="sb-btn">Get a Quote →</button>
-      <div id="sb-success" style="display:none;background:#00796B;color:white;padding:1rem;text-align:center;margin-top:0.75rem;font-size:0.9rem;">
+      <div class="is-hidden" id="sb-success" style="background:#00796B;color:white;padding:1rem;text-align:center;margin-top:0.75rem;font-size:0.9rem">
         ✓ Got it — we'll reply within 24 hours with a factory match and price range.
       </div>
       <p class="form-note">No spam. No auto-subscribe. Just a reply from a real person in Guangzhou.</p>
@@ -522,7 +523,7 @@ sbForm.addEventListener('submit', async function(e) {
       window.svTrackLead && window.svTrackLead('sb-form');
       sbForm.reset();
       sbBtn.style.display = 'none';
-      sbOk.style.display = 'block';
+      sbOk.classList.remove('is-hidden');
     } else {
       sbBtn.textContent = 'Error — please try again';
       sbBtn.disabled = false;

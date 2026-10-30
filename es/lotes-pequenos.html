@@ -196,6 +196,7 @@ footer{
   .footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
 }
 @media(max-width:768px){html,body{overflow-x:clip;max-width:100%}}
+.is-hidden{display:none}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
@@ -468,7 +469,7 @@ footer{
 
       <p class="form-note" style="margin-bottom:0.5rem">Al enviar este formulario, acepta nuestra <a href="/privacy" style="color:var(--coral)">Política de Privacidad</a> y <a href="/terms" style="color:var(--coral)">Términos de Servicio</a>.</p>
       <button type="submit" class="btn-submit" id="sb-btn">Solicitar Cotización →</button>
-      <div id="sb-success" style="display:none;background:#00796B;color:white;padding:1rem;text-align:center;margin-top:0.75rem;font-size:0.9rem;">
+      <div class="is-hidden" id="sb-success" style="background:#00796B;color:white;padding:1rem;text-align:center;margin-top:0.75rem;font-size:0.9rem">
         ✓ Recibido — le responderemos en 24 horas con una fábrica compatible y un rango de precio.
       </div>
       <p class="form-note">Sin spam. Sin suscripción automática. Solo una respuesta de una persona real en Guangzhou.</p>
@@ -522,7 +523,7 @@ sbForm.addEventListener('submit', async function(e) {
       window.svTrackLead && window.svTrackLead('sb-form');
       sbForm.reset();
       sbBtn.style.display = 'none';
-      sbOk.style.display = 'block';
+      sbOk.classList.remove('is-hidden');
     } else {
       sbBtn.textContent = 'Error — inténtalo de nuevo';
       sbBtn.disabled = false;

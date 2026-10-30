@@ -36,3 +36,4 @@ d1a3aa7c5dfeb20282e64fd657a3fdafb6d76a11  # 2026-10-29 GEO plumbing: RSS link, o
 33f639ecf81a8fddbf55753ce9e429fe8a6069f6  # 2026-10-29 alt text on 18 images + sitemap noindex guard: accessibility metadata only, no content change
 e4891cf321647e5a0f845f4c781dc944f6c81cf8  # 2026-10-29 meta descriptions shortened: metadata only, no content change
 8a891f3c69a5be33f828d3c0c543381d18e06dc6  # 2026-10-29 Product schema FOB in description + EN agent lead trimmed: schema/wording only, no facts changed
+83996eda412d558cb4e0573f3cde68c9f343b7d5  # 2026-10-30 inline display:none -> .is-hidden class and JS classList toggles on 8 pages: no content change
