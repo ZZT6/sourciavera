@@ -648,3 +648,14 @@ ebd6759 why-sourciavera.html
 00f2184 blog/es/lista-verificacion-proveedores-china.html
 00f2184 blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check.html
 00f2184 blog/us-trailer-antidumping-countervailing-duties-china-what-importers-check.html
+39b70a6 blog/case-study-byd-seagull-spare-wheel-offset.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/es/caso-verificacion-llanta-refaccion-byd-seagull.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/mexico-zero-tariff-vehicle-assembly-parts-who-qualifies.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/es/mexico-arancel-cero-partes-ensamble-vehiculos-quien-aplica.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/mexico-customs-steel-mill-certificates-signatures-stamps-importers.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/es/mexico-aduanas-certificados-de-molino-acero-firmas-sellos-importadores.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/set-vs-piece-moq-alibaba.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/es/diferencia-set-pieza-moq-alibaba.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/mexican-auto-parts-terminology-guide.html  # service block + contextual links, no change to facts (2026-10-30)
+39b70a6 blog/es/guia-terminologia-autopartes-mexico.html  # service block + contextual links, no change to facts (2026-10-30)
