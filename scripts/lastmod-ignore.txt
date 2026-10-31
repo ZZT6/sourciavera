@@ -44,3 +44,5 @@ e8ed2fca2e91  # script rename sv-events.js -> sv-site.js, reference change on ev
 45ca3fa018222d  # 2026-10-31 site-wide visual redesign (header/footer/CSS, blog article template, home layout): layout only, no fact/date/price changes
 adcda0a72dac  # 2026-10-31 redesign follow-up (audit fixes, CSS): layout only, no content change
 508082418b3d  # merge commit: redesign-2026-10-30, layout only (2026-10-31)
+77b67c89c6cb  # 2026-10-31 mobile home compression (layout/JS only, no content change)
+11779698a960  # merge commit compress-mobile, layout only (2026-10-31)
