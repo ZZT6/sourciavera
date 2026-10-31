@@ -511,3 +511,25 @@ html,body.sv2{overflow-x:clip}
 .sv-art .article-body img{height:auto;max-width:100%}
 .pricing-grid>*{min-width:0}
 .sv2 .sec .who-founder-text{color:var(--ink)}
+@media(max-width:700px){
+  .sv2 .m-cl{max-height:6.9em;overflow:hidden}
+  .sv2 .m-cl.open{max-height:none}
+  .sv2 .testimonial-text.m-cl{max-height:9.5em}
+  .sv2 .m-hide:not(.m-show){display:none}
+  .m-rm{background:none;border:0;padding:4px 0;margin:2px 0 6px;font:600 13.5px/1.4 var(--font-body);color:var(--accent-text);cursor:pointer;text-decoration:underline}
+  .sv2 .faq-q{padding:12px 0}.sv2 .faq-q-text{font-size:15px}
+  .sv2 .sec{padding:22px 0}
+  .sv2 .section-title{margin-bottom:14px}.sv2 .section-lead{font-size:19px;margin-bottom:10px}
+  .sv2 .path-card{padding:16px}.sv2 .testimonials-wrap{padding-bottom:22px}
+  .sv2 .form-group{margin-bottom:8px}.sv2 .form-group input,.sv2 .form-group select,.sv2 .form-group textarea{padding:10px 12px}.sv2 .form-group textarea{min-height:76px}
+  .contact-v2{gap:18px}.contact-v2 h2.c-big{font-size:20px;margin-bottom:12px}.contact-v2 .c-list{margin-top:12px;gap:8px}
+  .sv-foot-grid{gap:16px!important}.sv-footer .sv-logo{margin-bottom:6px}.sv-footer li{margin-bottom:5px}.sv-foot-wa{margin-bottom:10px;padding:10px 14px}
+  .hero2 h1{margin-bottom:6px}.photo-grid .photo-card{height:230px}
+}
+@media(max-width:700px){
+  .sv2 .m-cl.trust-line,.sv2 .m-cl.path-note{max-height:3.4em}
+  .sv2 .rc-form .form-row,.sv2 #contact-form>.form-row:first-of-type,.sv2 #contacto .form-row:first-of-type{grid-template-columns:1fr 1fr;gap:10px}
+  .pic-card .pic{aspect-ratio:16/9}
+  .sv2 .how-step-v2{padding:14px}.sv2 .how-num-v2{margin-bottom:6px}
+  .sv-foot-bar{padding-top:10px;padding-bottom:78px}
+}
