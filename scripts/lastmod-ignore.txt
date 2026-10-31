@@ -48,3 +48,5 @@ adcda0a72dac  # 2026-10-31 redesign follow-up (audit fixes, CSS): layout only, n
 11779698a960  # merge commit compress-mobile, layout only (2026-10-31)
 c11de1f9e781  # 2026-10-31 widescreen layout (CSS/layout only, no content change)
 7681d4def30b  # merge commit widescreen, layout only (2026-10-31)
+e91e73f214a8  # 2026-10-31 form layout + section-title fix (layout only; one new optional quantity field)
+cd647e8bde0e  # merge commit forms-layout, layout only (2026-10-31)
