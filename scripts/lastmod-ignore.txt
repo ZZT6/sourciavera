@@ -46,3 +46,5 @@ adcda0a72dac  # 2026-10-31 redesign follow-up (audit fixes, CSS): layout only, n
 508082418b3d  # merge commit: redesign-2026-10-30, layout only (2026-10-31)
 77b67c89c6cb  # 2026-10-31 mobile home compression (layout/JS only, no content change)
 11779698a960  # merge commit compress-mobile, layout only (2026-10-31)
+c11de1f9e781  # 2026-10-31 widescreen layout (CSS/layout only, no content change)
+7681d4def30b  # merge commit widescreen, layout only (2026-10-31)
