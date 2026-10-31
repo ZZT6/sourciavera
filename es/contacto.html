@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | SourciaVera</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Escríbanos por WhatsApp o formulario: respondemos en menos de 24 horas, en español o inglés. Guangzhou, China.">
+<meta name="author" content="Zhang Peng (Miguel Lopez)">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/contact">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/es/contacto">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/contact">
+<meta property="og:title" content="Contacto | SourciaVera">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="Escríbanos por WhatsApp o formulario: respondemos en menos de 24 horas, en español o inglés. Guangzhou, China.">
+<meta property="og:url" content="https://sourciavera.com/es/contacto">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sourciavera.com/og-image-es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/og-image-es.png">
+<link rel="canonical" href="https://sourciavera.com/es/contacto">
+<link rel="alternate" type="application/rss+xml" title="SourciaVera Blog (Español)" href="https://sourciavera.com/es/rss.xml">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#C93A1F;--yellow:#F5C842;--teal:#00796B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+a.logo{text-decoration:none}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem;position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:0.375rem;flex-direction:column;gap:0.3125rem;flex-shrink:0}
+.nav-hamburger span{display:block;width:1.25rem;height:2px;background:rgba(255,255,255,0.75);transition:background 0.2s}
+.nav-hamburger:hover span{background:white}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic;flex-shrink:0}
+.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+@media(min-width:769px){
+  .nav-links{gap:2.25rem;font-size:0.94rem}
+  .lang-btn{padding:0.45rem 0.93rem;font-size:0.89rem}
+}
+.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none}
+.nav-links a:hover{color:var(--yellow)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.lang-switcher{display:flex;align-items:center;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:0.25rem;overflow:hidden}
+.lang-btn{background:transparent;border:none;color:rgba(255,255,255,0.6);padding:0.35rem 0.75rem;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;cursor:pointer;transition:all 0.2s;text-decoration:none;display:inline-block}
+.lang-btn.active{background:var(--yellow);color:var(--navy)}
+.lang-btn:hover:not(.active){color:white}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+.hero{background:var(--navy);padding:5rem 3rem 4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:stretch}
+.hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.35rem 0.9rem;margin-bottom:1.5rem;font-weight:500}
+.hero h1{font-size:clamp(2.3rem,4.75vw,3.9rem);line-height:1.1;font-weight:700;color:white;margin-bottom:0.8rem}
+.hero h1 span{color:var(--yellow)}
+.hero p{color:rgba(255,255,255,0.65);font-size:1.1rem;max-width:32.5rem;margin-bottom:2rem;line-height:1.75}
+.hero p.hero-pos{color:#fff;font-weight:600;font-size:1.2rem;max-width:32.5rem;margin-bottom:1.1rem;line-height:1.5}
+.hero p strong{color:var(--yellow);font-weight:500}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-main{background:var(--coral);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer}
+.btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;background:transparent}
+.btn-wa{background:#25D366;color:var(--navy);padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;text-decoration:none;display:inline-block}
+.btn-wa:hover{opacity:0.9}
+.hero-left{display:flex;flex-direction:column;justify-content:flex-start}
+.hero-map{display:flex;align-items:flex-start;align-self:flex-start;position:relative}
+.hero-map img{width:100%;height:auto;display:block}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
+.hero-map::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 100% 100% at center, transparent 65%, rgba(13,34,64,0.4) 85%, var(--navy) 105%);pointer-events:none}
+.reveal-water{filter:blur(1rem);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 3s cubic-bezier(.22,.68,.36,1),opacity 3s ease,transform 3s cubic-bezier(.22,.68,.36,1),clip-path 3s cubic-bezier(.22,.68,.36,1)}
+.reveal-water.is-visible{filter:blur(0);opacity:1;transform:scale(1);clip-path:circle(150% at 50% 50%)}
+@media(prefers-reduced-motion:reduce){.reveal-water{filter:none;opacity:1;transform:none;clip-path:none;transition:none}}
+.hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem;margin-top:2.5rem}
+.hero-card-tag{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--yellow);margin-bottom:1rem}
+.hero-card h3{font-size:1.2rem;font-weight:600;color:white;margin-bottom:0.75rem}
+.hero-card p{color:rgba(255,255,255,0.6);font-size:0.88rem;line-height:1.7}
+.hero-card-badge{display:inline-block;background:#25D366;color:white;font-size:0.82rem;font-weight:700;padding:0.85rem 1.6rem;margin-top:1rem;text-transform:uppercase;letter-spacing:0.08em;text-decoration:none;cursor:pointer;transition:opacity 0.2s}
+.hero-card-badge:hover{opacity:0.85}
+.stats{background:var(--yellow);padding:1.8rem 3rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.cross-link{text-align:center;padding:1.8rem 3rem;font-size:0.92rem;color:var(--muted);background:var(--white)}
+.cross-link a{color:var(--coral);font-weight:600}
+@media(max-width:768px){.cross-link{padding:1.3rem 1.5rem;font-size:0.85rem}}
+.stat{text-align:center}
+.stat-num{font-size:1.8rem;font-weight:700;color:var(--navy);display:block}
+.stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy)}
+.services{padding:5rem 3rem;background:var(--white)}
+.section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
+.section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:3rem;line-height:1.2}
+.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.service-card{border:1.5px solid var(--border);padding:2.5rem;position:relative}
+.service-card::before{content:'';position:absolute;top:0;left:0;width:0.25rem;height:100%;background:var(--coral)}
+.service-card:nth-child(2)::before{background:var(--teal)}
+.service-num{font-size:2.5rem;color:var(--border);font-weight:700;position:absolute;top:1rem;right:1.5rem;line-height:1}
+.service-card h3{font-size:1.3rem;font-weight:700;margin-bottom:0.2rem;color:var(--navy)}
+.service-card .service-sub{font-size:0.8rem;color:var(--coral);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;font-weight:500}
+.service-card:nth-child(2) .service-sub{color:var(--teal)}
+.service-price{display:inline-block;background:var(--coral);color:white;font-size:0.78rem;font-weight:600;padding:0.25rem 0.75rem;margin:0.5rem 0 0.75rem;letter-spacing:0.04em}
+.service-card:nth-child(2) .service-price{background:var(--teal)}
+.service-card p{color:var(--muted);font-size:0.9rem;line-height:1.7;margin-bottom:1rem}
+.service-steps{display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem}
+.service-step{display:flex;gap:0.75rem;align-items:flex-start}
+.step-dot{width:1.5rem;height:1.5rem;background:var(--coral);color:white;font-size:0.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:0.1rem}
+.service-card:nth-child(2) .step-dot{background:var(--teal)}
+.step-text{font-size:0.88rem;color:var(--navy);line-height:1.5}
+.step-text strong{display:block;font-weight:500;margin-bottom:0.1rem}
+.step-text span{color:var(--muted);font-size:0.82rem;display:block}
+.service-highlight{background:var(--light);border-left:0.1875rem solid var(--coral);padding:0.75rem 1rem;font-size:0.85rem;color:var(--navy);font-style:italic;margin-top:0.5rem}
+.service-card:nth-child(2) .service-highlight{border-color:var(--teal)}
+.paths{background:var(--light);padding:5rem 3rem}
+.paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.path-card{background:var(--white);border:1px solid var(--border);border-radius:0.5rem;padding:2.5rem;box-shadow:0 2px 0.75rem rgba(0,0,0,0.06);display:flex;flex-direction:column}
+.path-icon{font-size:2.5rem;margin-bottom:1rem}
+.path-tag{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.path-card h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.path-card p{color:var(--muted);font-size:0.9rem;line-height:1.8;flex-grow:1}
+.path-note{font-size:0.78rem;color:var(--teal);font-style:italic;margin-top:1rem;line-height:1.6}
+.path-link{display:inline-block;margin-top:1.5rem;color:var(--coral);font-weight:600;text-decoration:none;font-size:0.88rem}
+.path-link:hover{text-decoration:underline}
+.who-section{background:var(--light);padding:5rem 3rem}
+.who-cards{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:3rem 0 2.5rem}
+.who-card{background:var(--white);border:1px solid var(--border);border-radius:0.5rem;padding:2.5rem;box-shadow:0 2px 0.75rem rgba(0,0,0,0.06)}
+.who-icon{font-size:2.5rem;margin-bottom:1rem}
+.who-card h3{font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
+.who-card p{color:var(--muted);font-size:0.9rem;line-height:1.8}
+.who-footer{text-align:center;border-top:1px solid var(--border);padding-top:2rem}
+.who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:40rem;margin:0 auto 1.5rem}
+.who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
+.who-cta:hover{opacity:0.85}
+.rating-widget{margin-top:1.5rem;display:flex;flex-direction:column;align-items:center;gap:0.5rem}
+.rating-stars{display:flex;gap:0.2rem}
+.star-btn{background:none;border:none;font-size:1.9rem;line-height:1;color:#948A7C;cursor:pointer;padding:0.1rem 0.15rem;transition:color 0.15s;font-family:inherit}
+.star-btn:disabled{cursor:default}
+.rating-widget:not(.rated) .star-btn:hover,.rating-widget:not(.rated) .star-btn.hovered{color:var(--yellow)}
+.star-btn.selected{color:var(--coral)}
+.rating-summary{font-size:0.85rem;color:var(--muted)}
+.who-cards-single{grid-template-columns:1fr;max-width:47.5rem;margin-left:auto;margin-right:auto}
+.who-card-wide{text-align:center}
+.who-card-wide .who-icon{margin:0 auto 1rem}
+.cases-section{padding:5rem 3rem;background:var(--white)}
+.case-grid{max-width:56.25rem;margin:0 auto;display:grid;gap:1.5rem}
+.case-card{display:grid;grid-template-columns:11.875rem 1fr;gap:1.75rem;align-items:center;background:var(--light);border:1px solid var(--border);border-radius:0.5rem;padding:1.5rem}
+.case-card img{width:100%;height:auto;border-radius:0.375rem;display:block}
+.case-tag{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.case-card h3{font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem;line-height:1.3}
+.case-card p{color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:0.9rem}
+@media(max-width:700px){.cases-section{padding:3rem 1.5rem}.case-card{grid-template-columns:1fr;padding:1.25rem}.case-card img{max-width:13.75rem;margin:0 auto}}
+.testimonials-wrap{max-width:70rem;margin:0 auto 3rem}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(18.75rem,21.25rem));gap:2rem;justify-content:center}
+.testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:0.5rem;padding:2rem;box-shadow:0 2px 0.75rem rgba(0,0,0,0.06);text-align:center}
+.testimonial-photo{width:4rem;height:4rem;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block}
+.testimonial-text{color:var(--navy);font-size:0.92rem;font-style:italic;margin:0 auto 1rem}
+.testimonial-name{font-weight:700;margin:0;color:var(--navy)}
+.testimonial-role{color:var(--muted);font-size:0.85rem;margin:0.25rem 0 1.25rem}
+.flag-icon{width:1.1em;height:0.75em;vertical-align:middle;margin-left:0.35em;border:1px solid rgba(0,0,0,0.15)}
+.who-founder-text{font-size:1.05rem!important}
+.who-founder-name{color:var(--muted);font-size:0.82rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem;font-style:normal}
+.why{background:var(--navy);padding:5rem 3rem}
+.why .section-tag{color:var(--yellow)}
+.why .section-title{color:white}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.why-card{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.1);padding:2rem}
+.why-card.why-card-highlight{background:var(--coral);border-color:var(--coral)}
+.why-card.why-card-highlight p{color:rgba(255,255,255,0.85)}
+.why-card.why-card-highlight strong{color:white}
+.why-card.why-card-highlight .why-icon{font-size:2rem}
+.why-card.why-card-highlight h3{font-size:1.2rem}
+.why-card.why-card-highlight p{font-size:1rem}
+.why-icon{font-size:1.6rem;margin-bottom:1rem}
+.why-card h3{font-size:1rem;font-weight:500;color:white;margin-bottom:0.3rem}
+.why-card p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7}
+.how{background:var(--light);padding:5rem 3rem}
+.how-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem}
+.how-step{padding:2rem 1.5rem;border-right:1px solid var(--border)}
+.how-step:last-child{border-right:none}
+.how-num{width:2.75rem;height:2.75rem;background:var(--coral);color:white;font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
+.how-step:nth-child(2) .how-num{background:var(--navy)}
+.how-step:nth-child(3) .how-num{background:var(--teal)}
+.how-step h3{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem}
+.how-step p{color:var(--muted);font-size:0.85rem;line-height:1.6}
+/* 8-card services */
+.services-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.svc-card{border:1px solid var(--border);padding:1.75rem 1.5rem;min-width:0}
+.svc-icon{font-size:1.5rem;margin-bottom:0.75rem}
+.svc-card h3{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;line-height:1.3}
+.svc-card p{color:var(--muted);font-size:0.82rem;line-height:1.6}
+.svc-price-tag{display:inline-block;background:var(--light);color:var(--coral);font-size:0.7rem;font-weight:600;padding:0.15rem 0.5rem;margin-bottom:0.5rem;border-left:2px solid var(--coral);letter-spacing:0.04em}
+.services-outro{margin-top:2.5rem;text-align:center;padding-top:2rem;border-top:1px solid var(--border);font-size:0.9rem;color:var(--muted);font-style:italic;line-height:1.8}
+/* 5-step process */
+.how-flow-5{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:3rem}
+.how-step-v2{padding:1.75rem 1.25rem;border-right:1px solid var(--border)}
+.how-step-v2:last-child{border-right:none}
+.how-step-v2.step-featured{background:var(--coral)}
+.how-step-v2.step-featured h3{color:white;font-size:1.08rem}
+.how-step-v2.step-featured p{color:rgba(255,255,255,0.7);font-size:0.94rem}
+.how-step-v2.step-featured .trust-line{color:rgba(255,255,255,0.6);border-color:rgba(255,255,255,0.15);font-size:0.88rem}
+.how-step-v2.step-featured .step-vs-badge{font-size:0.71rem;padding:0.25rem 0.65rem}
+.how-step-v2.step-featured .how-num-v2{width:2.9375rem;height:2.9375rem;font-size:1.05rem}
+.step-vs-badge{display:inline-block;background:var(--yellow);color:var(--navy);font-size:0.62rem;font-weight:700;padding:0.2rem 0.55rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
+.how-num-v2{width:2.5rem;height:2.5rem;background:var(--coral);color:white;font-size:0.9rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.how-step-v2:nth-child(2) .how-num-v2{background:var(--teal)}
+.how-step-v2:nth-child(3) .how-num-v2{background:var(--navy)}
+.how-step-v2.step-featured .how-num-v2{background:var(--yellow);color:var(--navy)}
+.how-step-v2:nth-child(5) .how-num-v2{background:var(--teal)}
+.how-step-v2 h3{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.35rem}
+.how-step-v2 p{color:var(--muted);font-size:0.82rem;line-height:1.6}
+.trust-line{color:var(--teal);font-size:0.78rem;font-style:italic;line-height:1.5;margin-top:0.75rem;padding-top:0.6rem;border-top:1px dashed var(--border)}
+@media(max-width:768px){
+.services{display:none}
+.services-grid-8{grid-template-columns:1fr 1fr}
+.svc-price-tag{word-break:break-word;white-space:normal}
+.svc-pl{display:inline-block;text-decoration:none}.svc-pl:hover .svc-price-tag,.svc-pl:focus-visible .svc-price-tag{text-decoration:underline}
+.how-flow-5{grid-template-columns:1fr}
+.how-step-v2{border-right:none;border-bottom:1px solid var(--border);padding:1.25rem 1rem}
+.how-step-v2.step-featured{border-bottom:1px solid rgba(255,255,255,0.15)}
+.how-step-v2:last-child{border-bottom:none}
+}
+.faq-section{padding:5rem 3rem;background:var(--white)}
+.faq-inner{max-width:68.75rem;margin:0 auto}
+.faq-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;align-items:start}
+.faq-side-card{background:var(--navy);padding:2rem 1.75rem;position:sticky;top:2rem}
+.faq-side-tag{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);font-weight:600;margin-bottom:0.9rem}
+.faq-side-card h3{color:white;font-size:1.15rem;font-weight:700;margin-bottom:0.7rem;line-height:1.35}
+.faq-side-card p{color:rgba(255,255,255,0.65);font-size:0.88rem;line-height:1.65;margin-bottom:1.5rem}
+.faq-side-btn{display:block;text-align:center;padding:0.8rem 1rem;font-size:0.82rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;background:var(--coral);color:white;margin-bottom:0.75rem}
+.faq-side-btn-wa{background:#25D366;color:var(--navy)}
+.faq-side-divider{border-top:1px solid rgba(255,255,255,0.15);margin:1.5rem 0 1.25rem}
+.faq-side-info{color:rgba(255,255,255,0.55);font-size:0.82rem;display:flex;flex-direction:column;gap:0.5rem}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:1.4rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;cursor:pointer;font-family:inherit}
+.faq-q-text{font-size:1rem;font-weight:600;color:var(--navy);line-height:1.4}
+.faq-toggle{width:1.375rem;height:1.375rem;min-width:1.375rem;background:var(--coral);color:white;font-size:1.2rem;font-weight:300;line-height:1.375rem;text-align:center;transition:transform 0.25s;flex-shrink:0}
+.faq-item.open .faq-toggle{transform:rotate(45deg)}
+.faq-a{overflow:hidden;max-height:0;transition:max-height 0.35s ease}
+.faq-item.open .faq-a{max-height:56.25rem}
+.faq-a-inner{padding:0 0 1.5rem;color:var(--muted);font-size:0.9rem;line-height:1.8}
+.faq-a-inner strong{color:var(--navy)}
+.faq-cta{color:var(--coral);font-weight:600;text-decoration:none;border-bottom:2px solid var(--coral);padding-bottom:2px}
+.faq-cta:hover{opacity:0.75}
+.contact{padding:5rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-left>p{color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:2rem}
+.contact-details{display:flex;flex-direction:column;gap:1rem}
+.contact-item{display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--navy)}
+.contact-dot{width:0.5rem;height:0.5rem;background:var(--coral);flex-shrink:0}
+.contact-right form{display:flex;flex-direction:column;gap:1rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-group{display:flex;flex-direction:column;gap:0.4rem}
+.form-group label{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.form-group input,.form-group textarea,.form-group select{background:var(--light);border:1.5px solid var(--border);color:var(--navy);padding:0.75rem 1rem;font-size:0.9rem;outline:none;width:100%;font-family:inherit}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--coral)}
+.form-group textarea{resize:vertical;min-height:6.875rem}
+.btn-submit{background:var(--coral);color:white;padding:1rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;width:100%;font-family:inherit}
+.diag-steps{display:flex;justify-content:center;gap:0.6rem;margin-bottom:0.4rem}
+.diag-step-dot{width:1.8rem;height:1.8rem;border-radius:50%;background:var(--light);border:1.5px solid var(--border);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600;flex-shrink:0}
+.diag-step-dot.active{background:var(--coral);border-color:var(--coral);color:white}
+.diag-step-dot.done{background:var(--navy);border-color:var(--navy);color:var(--yellow)}
+.diag-options{display:flex;flex-direction:column;gap:0.6rem}
+.diag-radio{display:flex;align-items:center;gap:0.6rem;background:var(--light);border:1.5px solid var(--border);padding:0.75rem 1rem;cursor:pointer;font-size:0.9rem;color:var(--navy)}
+.diag-radio:has(input:checked){border-color:var(--coral);background:white}
+.diag-radio input{accent-color:var(--coral);flex-shrink:0;width:auto}
+.btn-back{background:transparent;color:var(--muted);padding:0.75rem 1rem;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:1.5px solid var(--border);cursor:pointer;font-family:inherit;margin-bottom:0.6rem;width:100%}
+.wa-cta{display:inline-flex;align-items:center;gap:0.6rem;background:#25D366;color:var(--navy);padding:0.9rem 1.6rem;font-size:0.85rem;font-weight:500;text-decoration:none;letter-spacing:0.04em;margin-top:1.5rem}
+.wa-cta:hover{opacity:0.9}
+
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+.footer-links{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--yellow)}
+@media(max-width:768px){
+html,body{overflow-x:clip;max-width:100%}
+nav{padding:1rem 1.5rem}
+.nav-hamburger{display:flex}
+.nav-links{display:none}
+nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}
+nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}
+nav.nav-open .nav-links a:last-child{border-bottom:none}
+.nav-cta{display:none}
+.hero{grid-template-columns:1fr;padding:3rem 1.5rem}
+.faq-section{display:none}
+.nav-faq-link{display:none}
+.hero-card{display:none}
+.stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
+.services,.who-section,.why,.how,.contact,.paths{padding:3rem 1.5rem}
+.services-grid,.why-grid,.who-cards,.paths-grid{grid-template-columns:1fr}
+.how-flow{grid-template-columns:1fr 1fr}
+.how-step{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem}
+.contact{grid-template-columns:1fr;gap:2rem}
+.form-row{grid-template-columns:1fr}
+
+.faq-section{padding:3rem 1.5rem}
+.faq-layout{grid-template-columns:1fr;gap:2rem}
+.faq-side-card{position:static}
+footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem 1.5rem 5.5rem}body footer{padding-bottom:5.5rem}
+.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
+.wa-cta{display:block;width:100%;box-sizing:border-box;text-align:center}
+}
+span.sv-off{display:inline-flex;align-items:center;gap:0.4rem;background:#D62828;color:#fff;font-size:0.68rem;font-weight:600;line-height:1.2;padding:0.2rem 0.55rem;margin:0 0.45rem 0.4rem 0;border-radius:0.1875rem;letter-spacing:0.02em;vertical-align:middle;white-space:normal;text-transform:none;text-align:left}
+span.sv-off b{color:#fff;font-size:0.85rem;font-weight:800;letter-spacing:0}
+span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
+/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
+/*why-link*/.why-card.why-card-highlight a.why-link{display:inline-block;margin-top:0.9rem;color:#fff;font-weight:500;font-size:0.92rem;text-decoration:underline}
+/*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
+.is-hidden{display:none}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+
+<style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://sourciavera.com/es"},{"@type":"ListItem","position":2,"name":"Contacto","item":"https://sourciavera.com/es/contacto"}]}</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css" media="print" onload="this.media='all'">
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body class="sv2 sv-contact">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a href="/contact" hreflang="en" lang="en">EN</a><a class="active" aria-current="true" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menú"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Principal"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/es">Inicio</a></li><li><a href="/es/categorias">Categorías</a></li><li class="has-dd"><a href="/es/verificacion-fabricas">Servicios</a><ul class="sv-dd"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></li><li class="has-dd"><a href="/es/como-elegir">Recursos</a><ul class="sv-dd"><li><a href="/es/normas-de-inspeccion">Normas de inspección</a></li><li><a href="/es/informe-de-ejemplo">Informe de ejemplo</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li><li><a href="/es/como-elegir">Cómo elegir un proveedor</a></li></ul></li><li><a href="/blog/es">Blog</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto" aria-current="page">Contacto</a></li></ul></div></div></div>
+<main>
+<section class="sec" id="contact"><div class="sv-wrap">
+  <h1 class="section-title">CONTACTO</h1>
+  <div class="contact-v2">
+    <div class="c-info">
+      <figure class="c-photo"><img src="/images/carbon-fiber-auto-part-factory-check.webp" alt="Nuestro equipo revisando una pieza de fibra de carbono en cámara durante una visita a fábrica en China" width="1600" height="900" loading="lazy" decoding="async"></figure>
+      <ul class="c-list">
+        <li><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><a href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="contact">WhatsApp: +86 136 8805 7230</a></li>
+        <li><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@sourciavera.com">info@sourciavera.com</a></li>
+        <li><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Guangzhou, China</span></li>
+      </ul>
+    </div>
+    <div class="c-form">
+      <h2 class="c-big">ENVÍANOS UN MENSAJE Y TE RESPONDEMOS PRONTO</h2>
+      <p class="c-intro">Le respondemos en menos de 24 horas, en español o inglés, sin compromiso. Un consejo: deje sus requisitos por escrito — un mensaje o un documento, no solo una llamada.</p>
+      <form id="contact-form" action="https://formspree.io/f/mjgjqpbg" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New inquiry - SourciaVera">
+        <input type="hidden" name="service" id="service-hidden" value="">
+        <input type="hidden" name="category" id="category-hidden" value="">
+        <input type="hidden" name="contact" id="contact-hidden" value="">
+        <div class="form-row">
+          <div class="form-group"><label for="f-name">Nombre</label><input type="text" id="f-name" name="name" autocomplete="name" required></div>
+          <div class="form-group"><label for="f-company"><span>Empresa</span> <small>(opcional)</small></label><input type="text" id="f-company" name="company" autocomplete="organization"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label for="f-email">Correo</label><input type="email" id="f-email" name="email" autocomplete="email" required></div>
+          <div class="form-group"><label for="f-wa">WhatsApp</label><input type="tel" id="f-wa" name="whatsapp" autocomplete="tel-national" inputmode="tel"></div>
+        </div>
+        <div class="form-group"><label for="country-select">País</label><select id="country-select" name="country" autocomplete="country-name"><option value="Mexico" selected>México</option><option value="United States">Estados Unidos</option><option value="Colombia">Colombia</option><option value="Guatemala">Guatemala</option><option value="Panama">Panamá</option><option value="Chile">Chile</option><option value="Peru">Perú</option><option value="Argentina">Argentina</option><option value="Brazil">Brasil</option><option value="Canada">Canadá</option><option value="United Kingdom">Reino Unido</option><option value="Australia">Australia</option><option value="Germany">Alemania</option><option value="France">Francia</option><option value="Netherlands">Países Bajos</option><option value="Other">Otro</option></select></div>
+        <div class="form-group"><label for="f-product">¿Qué producto buscas?</label><input type="text" id="f-product" name="product" placeholder="p. ej. faros LED, rines, pines de esmalte" required></div>
+        <div class="form-group"><label for="textarea-msg">Mensaje</label><textarea id="textarea-msg" name="message" rows="4"></textarea></div>
+        <button type="submit" class="btn-submit" id="submit-btn">Cotización Detallada Gratis →</button>
+        <div class="form-ok is-hidden" id="form-success" role="status"></div>
+      </form>
+    </div>
+  </div>
+</div></section>
+</main>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><p>Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta.</p><p>Con base en Guangzhou. Servicio en español e inglés. Solo cobramos al cliente: sin comisión de las fábricas.</p></div><div><div class="sv-foot-h">Servicios</div><ul class="sv-foot-list"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></div><div><div class="sv-foot-h">Sitio</div><ul class="sv-foot-list"><li><a href="/blog/es">Blog</a></li><li><a href="/es/categorias">Categorías</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto">Contacto</a></li><li><a href="/es/prensa">Prensa</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li></ul></div><div><div class="sv-foot-h">Síganos y escríbanos</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · Todos los derechos reservados</div><div class="sv-foot-links"><a href="/es/privacy">Política de Privacidad</a><a href="/es/terms">Términos de Servicio</a><a href="#" role="button" data-cc="show-preferencesModal">Configuración de cookies</a></div><div><span>Verificado en</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Volver arriba</span></button></div></div></div>
+<script src="/js/sv-contact.js" defer></script>
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const adConsent = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', { analytics_storage: adConsent, ad_storage: adConsent, ad_user_data: adConsent, ad_personalization: adConsent });
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const adConsent = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', { analytics_storage: adConsent, ad_storage: adConsent, ad_user_data: adConsent, ad_personalization: adConsent });
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'es',
+    translations: {
+      es: {
+        consentModal: {
+          title: 'Usamos cookies',
+          description: 'Usamos cookies para analizar el tráfico del sitio y mejorar su experiencia.',
+          acceptAllBtn: 'Aceptar todo',
+          acceptNecessaryBtn: 'Solo necesarias',
+          showPreferencesBtn: 'Preferencias'
+        },
+        preferencesModal: {
+          title: 'Preferencias de cookies',
+          acceptAllBtn: 'Aceptar todo',
+          acceptNecessaryBtn: 'Solo necesarias',
+          savePreferencesBtn: 'Guardar preferencias',
+          sections: [
+            { title: 'Cookies necesarias', description: 'Estas cookies son necesarias para el funcionamiento del sitio.', linkedCategory: 'necessary' },
+            { title: 'Cookies de análisis', description: 'Nos ayudan a entender cómo se usa el sitio.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
