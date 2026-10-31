@@ -507,7 +507,6 @@ html,body.sv2{overflow-x:clip}
 :root{--verified-text:#37665a}
 .sv-art .definition-box strong,.sv-art .real-case strong,.sv-art .spec-box strong,.real-case strong,.spec-box strong,.definition-box strong{color:var(--verified-text)}
 .sv2 .how-step-v2 .trust-line,.sv2 .path-note{color:var(--verified-text)}
-.sv-home .sec,.sv-home .testimonials-wrap,.sv-home .sv-footer{content-visibility:auto;contain-intrinsic-size:auto 900px}
 :root{--coral:var(--accent-text)}
 .sv-art .article-body img{height:auto;max-width:100%}
 .pricing-grid>*{min-width:0}
