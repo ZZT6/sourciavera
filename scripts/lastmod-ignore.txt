@@ -41,3 +41,4 @@ e4891cf321647e5a0f845f4c781dc944f6c81cf8  # 2026-10-29 meta descriptions shorten
 a5d5a42f5191  # GA4 measurement ID swap to the new property on every page: tracking plumbing only (2026-10-30)
 47fc5e50f7bc  # merge commit: GA4 head block/ID applied to the Oct-30 permiso-previo article, tracking plumbing only (2026-10-30)
 e8ed2fca2e91  # script rename sv-events.js -> sv-site.js, reference change on every page, no content change (2026-10-30)
+45ca3fa018222d  # 2026-10-31 site-wide visual redesign (header/footer/CSS, blog article template, home layout): layout only, no fact/date/price changes

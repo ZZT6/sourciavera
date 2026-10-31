@@ -48,19 +48,19 @@
   function linkLocation(a) {
     var d = a.getAttribute('data-wa-location');
     if (d === 'floating') return 'float';
-    if (a.closest('footer')) return 'footer';
+    if (a.closest('footer, .sv-footer')) return 'footer';
     if (a.closest('.cta-box, .cta-btns')) return 'article_end';
     if (a.closest('.sv-inline-cta')) return 'article_inline';
     if (a.closest('.article-body')) return 'article_inline';
     if (a.closest('[class*="hero"]')) return 'hero';
-    if (a.closest('header, nav')) return 'header';
+    if (a.closest('header, nav, .sv-header')) return 'header';
     return 'other';
   }
 
   function waLocation(a) {
     var d = a.getAttribute('data-wa-location');
     if (d) return d;
-    if (a.closest('footer')) return 'footer';
+    if (a.closest('footer, .sv-footer')) return 'footer';
     if (a.closest('.sv-inline-cta')) return 'article_inline';
     if (a.closest('.cta-box, .cta-btns')) return 'article_cta';
     return 'other';
@@ -78,7 +78,7 @@
       send('email_click', { link_url: 'mailto:' + href.replace(/^mailto:/i, '').split('?')[0], link_location: linkLocation(a) });
     } else if (a.hostname === 'wa.me' || a.hostname === 'api.whatsapp.com') {
       send('whatsapp_click', { link_url: 'https://' + a.hostname + a.pathname, button_location: waLocation(a), link_location: linkLocation(a) });
-    } else if (IS_ARTICLE && !a.closest('header, nav, footer') && (a.hostname === location.hostname || !a.hostname) && SERVICE_PATHS.test(a.pathname)) {
+    } else if (IS_ARTICLE && !a.closest('header, nav, footer, .sv-header, .sv-footer') && (a.hostname === location.hostname || !a.hostname) && SERVICE_PATHS.test(a.pathname)) {
       send('service_cta_click', { target_path: a.pathname, link_location: linkLocation(a) });
     }
   }
@@ -134,7 +134,7 @@
     '.sv-fbr{display:none}' +
     '@media(max-width:600px){.footer-links{column-gap:.5rem!important;row-gap:.6rem!important}.footer-links a svg{width:1.9em!important;height:1.9em!important}' +
     '.sv-fbr{display:block;flex-basis:100%;height:0}.footer-links a:not(:has(svg)){margin:0 .4rem}}';
-  var COVER = 'a[class*="btn"], button, input, select, textarea, footer a, footer div, .cm a';   // things the button must never sit on
+  var COVER = 'a[class*="btn"], button, input, select, textarea, footer a, footer div, .sv-footer a, .sv-footer div, table td, table th, .section-lead, .form-group label, .who-founder-text, .cm a';   // things the button must never sit on
   var btn, covered = [], raf = 0;
 
   function pageTitle() {
@@ -224,5 +224,6 @@
     schedule();
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+  function later() { (window.requestIdleCallback || function (f) { window.setTimeout(f, 200); })(init, { timeout: 2000 }); }   // floating button is not needed for first paint
+  if (document.readyState === 'complete') later(); else window.addEventListener('load', later);
 })();

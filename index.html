@@ -319,481 +319,162 @@
   ]
 }
 </script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--coral:#CE3D1C;--yellow:#F5C842;--teal:#007A6E;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
-body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
-nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem}
-.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic;flex-shrink:0}
-.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
-.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none}
-.nav-links a:hover{color:var(--yellow)}
-.nav-right{display:flex;align-items:center;gap:1rem}
-.lang-switcher{display:flex;align-items:center;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:0.25rem;overflow:hidden}
-.lang-btn{background:transparent;border:none;color:rgba(255,255,255,0.75);padding:0.35rem 0.75rem;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;cursor:pointer;transition:all 0.2s}
-.lang-btn.active{background:var(--yellow);color:var(--navy)}
-.lang-btn:hover:not(.active){color:white}
-.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
-@media(min-width:769px){
-  .nav-links{gap:2.25rem;font-size:0.94rem}
-  .lang-btn{padding:0.45rem 0.93rem;font-size:0.89rem}
-}
-.hero{background:var(--navy);padding:5rem 3rem 4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:stretch}
-.hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.35rem 0.9rem;margin-bottom:1.5rem;font-weight:500}
-.hero h1{font-size:clamp(2.3rem,4.75vw,3.9rem);line-height:1.1;font-weight:700;color:white;margin-bottom:0.8rem}
-.hero h1 span{color:var(--yellow)}
-.hero p{color:rgba(255,255,255,0.65);font-size:1.1rem;max-width:32.5rem;margin-bottom:2rem;line-height:1.75}
-.hero p.hero-pos{color:#fff;font-weight:600;font-size:1.2rem;max-width:32.5rem;margin-bottom:1.1rem;line-height:1.5}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
-.btn-main{background:var(--coral);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer}
-.btn-outline{border:1.5px solid rgba(255,255,255,0.3);color:white;padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;background:transparent}
-.btn-wa{background:#25D366;color:var(--navy);padding:1rem 2.05rem;font-size:0.95rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;text-decoration:none;display:inline-block}
-.btn-wa:hover{opacity:0.9}
-.hero-left{display:flex;flex-direction:column;justify-content:flex-start}
-.hero-map{display:flex;align-items:flex-start;align-self:flex-start;position:relative}
-.hero-map img{width:100%;height:auto;display:block}
-.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
-.hero-map::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 100% 100% at center, transparent 65%, rgba(13,34,64,0.4) 85%, var(--navy) 105%);pointer-events:none}
-.reveal-water{filter:blur(1rem);opacity:0;transform:scale(1.04);clip-path:circle(0% at 50% 50%);transition:filter 3s cubic-bezier(.22,.68,.36,1),opacity 3s ease,transform 3s cubic-bezier(.22,.68,.36,1),clip-path 3s cubic-bezier(.22,.68,.36,1)}
-.reveal-water.is-visible{filter:blur(0);opacity:1;transform:scale(1);clip-path:circle(150% at 50% 50%)}
-@media(prefers-reduced-motion:reduce){.reveal-water{filter:none;opacity:1;transform:none;clip-path:none;transition:none}}
-.hero-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);padding:2rem;margin-top:2.5rem}
-.hero-card-tag{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--yellow);margin-bottom:1rem}
-.hero-card h2{font-size:1.2rem;font-weight:600;color:white;margin-bottom:0.75rem}
-.hero-card p{color:rgba(255,255,255,0.6);font-size:0.88rem;line-height:1.7}
-.hero-card-badge{display:inline-block;background:#25D366;color:white;font-size:0.82rem;font-weight:700;padding:0.85rem 1.6rem;margin-top:1rem;text-transform:uppercase;letter-spacing:0.08em;text-decoration:none;cursor:pointer;transition:opacity 0.2s}
-.hero-card-badge:hover{opacity:0.85}
-.stats{background:var(--yellow);padding:1.8rem 3rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
-.cross-link{text-align:center;padding:1.8rem 3rem;font-size:0.92rem;color:var(--muted);background:var(--white)}
-.cross-link a{color:var(--coral);font-weight:600}
-@media(max-width:768px){.cross-link{padding:1.3rem 1.5rem;font-size:0.85rem}}
-.stat{text-align:center}
-.stat-num{font-size:1.8rem;font-weight:700;color:var(--navy);display:block}
-.stat-label{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy)}
-.services{padding:5rem 3rem;background:var(--white)}
-.section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
-.section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:3rem;line-height:1.2}
-.services-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-.service-card{border:1.5px solid var(--border);padding:2.5rem;position:relative}
-.service-card::before{content:'';position:absolute;top:0;left:0;width:0.25rem;height:100%;background:var(--coral)}
-.service-card:nth-child(2)::before{background:var(--teal)}
-.service-num{font-size:2.5rem;color:var(--border);font-weight:700;position:absolute;top:1rem;right:1.5rem;line-height:1}
-.service-card h3{font-size:1.3rem;font-weight:700;margin-bottom:0.2rem;color:var(--navy)}
-.service-card .service-sub{font-size:0.8rem;color:var(--coral);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;font-weight:500}
-.service-card:nth-child(2) .service-sub{color:var(--teal)}
-.service-price{display:inline-block;background:var(--coral);color:white;font-size:0.78rem;font-weight:600;padding:0.25rem 0.75rem;margin:0.5rem 0 0.75rem;letter-spacing:0.04em}
-.service-card:nth-child(2) .service-price{background:var(--teal)}
-.service-card p{color:var(--muted);font-size:0.9rem;line-height:1.7;margin-bottom:1rem}
-.service-steps{display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem}
-.service-step{display:flex;gap:0.75rem;align-items:flex-start}
-.step-dot{width:1.5rem;height:1.5rem;background:var(--coral);color:white;font-size:0.7rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:0.1rem}
-.service-card:nth-child(2) .step-dot{background:var(--teal)}
-.step-text{font-size:0.88rem;color:var(--navy);line-height:1.5}
-.step-text strong{display:block;font-weight:500;margin-bottom:0.1rem}
-.step-text span{color:var(--muted);font-size:0.82rem;display:block}
-.service-highlight{background:var(--light);border-left:0.1875rem solid var(--coral);padding:0.75rem 1rem;font-size:0.85rem;color:var(--navy);font-style:italic;margin-top:0.5rem}
-.service-card:nth-child(2) .service-highlight{border-color:var(--teal)}
-.why{background:var(--navy);padding:5rem 3rem}
-.why .section-tag{color:var(--yellow)}
-.why .section-title{color:white}
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.why-card{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.1);padding:2rem}
-.why-card.why-card-highlight{background:var(--coral);border-color:var(--coral)}
-.why-card.why-card-highlight p{color:rgba(255,255,255,0.85)}
-.why-card.why-card-highlight strong{color:white}
-.why-card.why-card-highlight .why-icon{font-size:2rem}
-.why-card.why-card-highlight h3{font-size:1.2rem}
-.why-card.why-card-highlight p{font-size:1rem}
-.why-icon{font-size:1.6rem;margin-bottom:1rem}
-.why-card h3{font-size:1rem;font-weight:500;color:white;margin-bottom:0.3rem}
-.why-card p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7}
-.paths{background:var(--light);padding:5rem 3rem}
-.paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
-.path-card{background:var(--white);border:1px solid var(--border);border-radius:0.5rem;padding:2.5rem;box-shadow:0 2px 0.75rem rgba(0,0,0,0.06);display:flex;flex-direction:column}
-.path-icon{font-size:2.5rem;margin-bottom:1rem}
-.path-tag{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
-.path-card h3{font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
-.path-card p{color:var(--muted);font-size:0.9rem;line-height:1.8;flex-grow:1}
-.path-note{font-size:0.78rem;color:var(--teal);font-style:italic;margin-top:1rem;line-height:1.6}
-.path-link{display:inline-block;margin-top:1.5rem;color:var(--coral);font-weight:600;text-decoration:none;font-size:0.88rem}
-.path-link:hover{text-decoration:underline}
-.who-section{background:var(--light);padding:5rem 3rem}
-.who-cards{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:3rem 0 2.5rem}
-.who-card{background:var(--white);border:1px solid var(--border);border-radius:0.5rem;padding:2.5rem;box-shadow:0 2px 0.75rem rgba(0,0,0,0.06)}
-.who-icon{font-size:2.5rem;margin-bottom:1rem}
-.who-card h3{font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem}
-.who-card p{color:var(--muted);font-size:0.9rem;line-height:1.8}
-.who-footer{text-align:center;border-top:1px solid var(--border);padding-top:2rem}
-.who-footer>p{color:var(--navy);font-size:0.95rem;font-style:italic;max-width:40rem;margin:0 auto 1.5rem}
-.who-cta{display:inline-block;background:var(--coral);color:white;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none}
-.who-cta:hover{opacity:0.85}
-.rating-widget{margin-top:1.5rem;display:flex;flex-direction:column;align-items:center;gap:0.5rem}
-.rating-stars{display:flex;gap:0.2rem}
-.star-btn{background:none;border:none;font-size:1.9rem;line-height:1;color:#948A7C;cursor:pointer;padding:0.1rem 0.15rem;transition:color 0.15s;font-family:inherit}
-.star-btn:disabled{cursor:default}
-.rating-widget:not(.rated) .star-btn:hover,.rating-widget:not(.rated) .star-btn.hovered{color:var(--yellow)}
-.star-btn.selected{color:var(--coral)}
-.rating-summary{font-size:0.85rem;color:var(--muted)}
-.who-cards-single{max-width:47.5rem;margin-left:auto;margin-right:auto}
-.who-cards-single{grid-template-columns:1fr}
-.who-card-wide{text-align:center}
-.who-card-wide .who-icon{margin:0 auto 1rem}
-.cases-section{padding:5rem 3rem;background:var(--white)}
-.case-grid{max-width:56.25rem;margin:0 auto;display:grid;gap:1.5rem}
-.case-card{display:grid;grid-template-columns:11.875rem 1fr;gap:1.75rem;align-items:center;background:var(--light);border:1px solid var(--border);border-radius:0.5rem;padding:1.5rem}
-.case-card img{width:100%;height:auto;border-radius:0.375rem;display:block}
-.case-tag{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
-.case-card h3{font-size:1.15rem;font-weight:700;color:var(--navy);margin-bottom:0.6rem;line-height:1.3}
-.case-card p{color:var(--muted);font-size:0.92rem;line-height:1.75;margin-bottom:0.9rem}
-@media(max-width:700px){.cases-section{padding:3rem 1.5rem}.case-card{grid-template-columns:1fr;padding:1.25rem}.case-card img{max-width:13.75rem;margin:0 auto}}
-.testimonials-wrap{max-width:70rem;margin:0 auto 3rem}
-.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(18.75rem,21.25rem));gap:2rem;justify-content:center}
-.testimonial-card{background:var(--white);border:1px solid var(--border);border-radius:0.5rem;padding:2rem;box-shadow:0 2px 0.75rem rgba(0,0,0,0.06);text-align:center}
-.testimonial-photo{width:4rem;height:4rem;border-radius:50%;object-fit:cover;margin:0 auto 1rem;display:block}
-.testimonial-text{color:var(--navy);font-size:0.92rem;font-style:italic;margin:0 auto 1rem}
-.testimonial-name{font-weight:700;margin:0;color:var(--navy)}
-.testimonial-role{color:var(--muted);font-size:0.85rem;margin:0.25rem 0 1.25rem}
-.flag-icon{width:1.1em;height:0.75em;vertical-align:middle;margin-left:0.35em;border:1px solid rgba(0,0,0,0.15)}
-.who-founder-text{font-size:1.05rem!important}
-.who-founder-name{color:var(--muted);font-size:0.82rem;letter-spacing:0.05em;text-transform:uppercase;font-weight:600;margin-bottom:1.5rem;font-style:normal}
-.how{background:var(--light);padding:5rem 3rem}
-.how-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem}
-.how-step{padding:2rem 1.5rem;border-right:1px solid var(--border)}
-.how-step:last-child{border-right:none}
-.how-num{width:2.75rem;height:2.75rem;background:var(--coral);color:white;font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem}
-.how-step:nth-child(2) .how-num{background:var(--navy)}
-.how-step:nth-child(3) .how-num{background:var(--teal)}
-.how-step h3{font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:0.5rem}
-.how-step p{color:var(--muted);font-size:0.85rem;line-height:1.6}
-.contact{padding:5rem 3rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.contact-left>p{color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:2rem}
-.contact-details{display:flex;flex-direction:column;gap:1rem}
-.contact-item{display:flex;align-items:center;gap:0.75rem;font-size:0.9rem;color:var(--navy)}
-.contact-dot{width:0.5rem;height:0.5rem;background:var(--coral);flex-shrink:0}
-.contact-right form{display:flex;flex-direction:column;gap:1rem}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.form-group{display:flex;flex-direction:column;gap:0.4rem}
-.form-group label{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
-.form-group input,.form-group textarea,.form-group select{background:var(--light);border:1.5px solid var(--border);color:var(--navy);padding:0.75rem 1rem;font-size:0.9rem;outline:none;width:100%;font-family:inherit}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--coral)}
-.form-group textarea{resize:vertical;min-height:6.875rem}
-.btn-submit{background:var(--coral);color:white;padding:1rem 2rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;width:100%;font-family:inherit}
-.diag-steps{display:flex;justify-content:center;gap:0.6rem;margin-bottom:0.4rem}
-.diag-step-dot{width:1.8rem;height:1.8rem;border-radius:50%;background:var(--light);border:1.5px solid var(--border);color:var(--muted);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:600;flex-shrink:0}
-.diag-step-dot.active{background:var(--coral);border-color:var(--coral);color:white}
-.diag-step-dot.done{background:var(--navy);border-color:var(--navy);color:var(--yellow)}
-.diag-options{display:flex;flex-direction:column;gap:0.6rem}
-.diag-radio{display:flex;align-items:center;gap:0.6rem;background:var(--light);border:1.5px solid var(--border);padding:0.75rem 1rem;cursor:pointer;font-size:0.9rem;color:var(--navy)}
-.diag-radio:has(input:checked){border-color:var(--coral);background:white}
-.diag-radio input{accent-color:var(--coral);flex-shrink:0;width:auto}
-.btn-back{background:transparent;color:var(--muted);padding:0.75rem 1rem;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;border:1.5px solid var(--border);cursor:pointer;font-family:inherit;margin-bottom:0.6rem;width:100%}
-
-@media(max-width:600px){.btn-main{max-width:calc(100% - 4.375rem)}}
-footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6)}
-.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
-.footer-links{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
-.footer-links a{color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.2s}
-.footer-links a:hover{color:var(--yellow)}
-.faq{padding:5rem 3rem;background:var(--white)}
-.faq-inner{max-width:68.75rem;margin:0 auto}
-.faq-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem;align-items:start}
-.faq-side-card{background:var(--navy);padding:2rem 1.75rem;position:sticky;top:2rem}
-.faq-side-tag{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--yellow);font-weight:600;margin-bottom:0.9rem}
-.faq-side-card h3{color:white;font-size:1.15rem;font-weight:700;margin-bottom:0.7rem;line-height:1.35}
-.faq-side-card p{color:rgba(255,255,255,0.65);font-size:0.88rem;line-height:1.65;margin-bottom:1.5rem}
-.faq-side-btn{display:block;text-align:center;padding:0.8rem 1rem;font-size:0.82rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;text-decoration:none;background:var(--coral);color:white;margin-bottom:0.75rem}
-.faq-side-btn-wa{background:#25D366;color:var(--navy)}
-.faq-side-divider{border-top:1px solid rgba(255,255,255,0.15);margin:1.5rem 0 1.25rem}
-.faq-side-info{color:rgba(255,255,255,0.55);font-size:0.82rem;display:flex;flex-direction:column;gap:0.5rem}
-.faq-item{border-bottom:1px solid var(--border)}
-.faq-item:first-child{border-top:1px solid var(--border)}
-.faq-item:last-child{border-bottom:none}
-.faq-q{width:100%;background:none;border:none;text-align:left;padding:1.4rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;cursor:pointer;font-family:inherit}
-.faq-q-text{font-size:1rem;font-weight:600;color:var(--navy);line-height:1.4}
-.faq-toggle{width:1.375rem;height:1.375rem;min-width:1.375rem;background:var(--coral);color:white;font-size:1.2rem;font-weight:300;line-height:1.375rem;text-align:center;transition:transform 0.25s;flex-shrink:0}
-.faq-item.open .faq-toggle{transform:rotate(45deg)}
-.faq-a{overflow:hidden;max-height:0;transition:max-height 0.35s ease}
-.faq-item.open .faq-a{max-height:56.25rem}
-.faq-a-inner{padding:0 0 1.5rem;color:var(--muted);font-size:0.9rem;line-height:1.8}
-.faq-a-inner strong{color:var(--navy)}
-.faq-cta{color:var(--coral);font-weight:600;text-decoration:none;border-bottom:2px solid var(--coral);padding-bottom:2px}
-.faq-cta:hover{opacity:0.75}
-.lang-es{display:none}
-nav{position:relative}
-.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:0.375rem;flex-direction:column;gap:0.3125rem;flex-shrink:0}
-.nav-hamburger span{display:block;width:1.25rem;height:2px;background:rgba(255,255,255,0.75);transition:background 0.2s}
-.nav-hamburger:hover span{background:white}
-@media(max-width:768px){
-html,body{overflow-x:clip;max-width:100%}
-nav{padding:1rem 1.5rem}
-.nav-hamburger{display:flex}
-.nav-links{display:none}
-nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}
-nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}
-nav.nav-open .nav-links a:last-child{border-bottom:none}
-.nav-cta{display:none}
-.hero{grid-template-columns:1fr;padding:3rem 1.5rem}
-.faq{display:none}
-.nav-faq-link{display:none}
-.hero-card{display:none}
-.stats{grid-template-columns:repeat(2,1fr);padding:1.5rem}
-.services,.who-section,.why,.how,.contact,.paths{padding:3rem 1.5rem}
-.services-grid,.why-grid,.who-cards,.paths-grid{grid-template-columns:1fr}
-.how-flow{grid-template-columns:1fr 1fr}
-.how-step{border-right:none;border-bottom:1px solid var(--border);padding:1.5rem 1rem}
-.contact{grid-template-columns:1fr;gap:2rem}
-.form-row{grid-template-columns:1fr}
-
-footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem 1.5rem 5.5rem}body footer{padding-bottom:5.5rem}
-.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
-.faq{padding:3rem 1.5rem}
-.faq-layout{grid-template-columns:1fr;gap:2rem}
-.faq-side-card{position:static}
-}
-/* 8-card services */
-.services-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
-.svc-card{border:1px solid var(--border);padding:1.75rem 1.5rem;min-width:0}
-.svc-icon{font-size:1.5rem;margin-bottom:0.75rem}
-.svc-card h3{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.4rem;line-height:1.3}
-.svc-card p{color:var(--muted);font-size:0.82rem;line-height:1.6}
-.svc-price-tag{display:inline-block;background:var(--light);color:var(--coral);font-size:0.7rem;font-weight:600;padding:0.15rem 0.5rem;margin-bottom:0.5rem;border-left:2px solid var(--coral);letter-spacing:0.04em}
-.services-outro{margin-top:2.5rem;text-align:center;padding-top:2rem;border-top:1px solid var(--border);font-size:0.9rem;color:var(--muted);font-style:italic;line-height:1.8}
-/* 5-step process */
-.how-flow-5{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:3rem}
-.how-step-v2{padding:1.75rem 1.25rem;border-right:1px solid var(--border)}
-.how-step-v2:last-child{border-right:none}
-.how-step-v2.step-featured{background:var(--coral)}
-.how-step-v2.step-featured h3{color:white;font-size:1.08rem}
-.how-step-v2.step-featured p{color:rgba(255,255,255,0.7);font-size:0.94rem}
-.how-step-v2.step-featured .trust-line{color:rgba(255,255,255,0.6);border-color:rgba(255,255,255,0.15);font-size:0.88rem}
-.how-step-v2.step-featured .step-vs-badge{font-size:0.71rem;padding:0.25rem 0.65rem}
-.how-step-v2.step-featured .how-num-v2{width:2.9375rem;height:2.9375rem;font-size:1.05rem}
-.step-vs-badge{display:inline-block;background:var(--yellow);color:var(--navy);font-size:0.62rem;font-weight:700;padding:0.2rem 0.55rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.5rem}
-.how-num-v2{width:2.5rem;height:2.5rem;background:var(--coral);color:white;font-size:0.9rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
-.how-step-v2:nth-child(2) .how-num-v2{background:var(--teal)}
-.how-step-v2:nth-child(3) .how-num-v2{background:var(--navy)}
-.how-step-v2.step-featured .how-num-v2{background:var(--yellow);color:var(--navy)}
-.how-step-v2:nth-child(5) .how-num-v2{background:var(--teal)}
-.how-step-v2 h3{font-size:0.9rem;font-weight:700;color:var(--navy);margin-bottom:0.35rem}
-.how-step-v2 p{color:var(--muted);font-size:0.82rem;line-height:1.6}
-.trust-line{color:var(--teal);font-size:0.78rem;font-style:italic;line-height:1.5;margin-top:0.75rem;padding-top:0.6rem;border-top:1px dashed var(--border)}
-@media(max-width:768px){
-.services{display:none}
-.services-grid-8{grid-template-columns:1fr 1fr}
-.svc-price-tag{word-break:break-word;white-space:normal}
-.svc-pl{display:inline-block;text-decoration:none}.svc-pl:hover .svc-price-tag,.svc-pl:focus-visible .svc-price-tag{text-decoration:underline}
-.how-flow-5{grid-template-columns:1fr}
-.how-step-v2{border-right:none;border-bottom:1px solid var(--border);padding:1.25rem 1rem}
-.how-step-v2.step-featured{border-bottom:1px solid rgba(255,255,255,0.15)}
-.how-step-v2:last-child{border-bottom:none}
-}
-span.sv-off{display:inline-flex;align-items:center;gap:0.4rem;background:#D62828;color:#fff;font-size:0.68rem;font-weight:600;line-height:1.2;padding:0.2rem 0.55rem;margin:0 0.45rem 0.4rem 0;border-radius:0.1875rem;letter-spacing:0.02em;vertical-align:middle;white-space:normal;text-transform:none;text-align:left}
-span.sv-off b{color:#fff;font-size:0.85rem;font-weight:800;letter-spacing:0}
-span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
-/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
-/*why-link*/.why-card.why-card-highlight a.why-link{display:inline-block;margin-top:0.9rem;color:#fff;font-weight:500;font-size:0.92rem;text-decoration:underline}
-/*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
-.is-hidden{display:none}
-</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
 
-<style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.5.0/build/css/intlTelInput.css" media="print" onload="this.media='all'">
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><style>/* inlined from /assets/css/site.css */ @font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/inter-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/inter-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/roboto-slab-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/roboto-slab-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}:root{--ink:#1a2332;--ink-deep:#121926;--paper:#f4f2ed;--white:#ffffff;--accent:#c85a3c;--accent-strong:#b34f33;--accent-text:#a9432a;--accent-light:#ee9b7f;--verified:#4a7c6f;--steel:#2c4a5e;--gray-600:#5b6470;--gray-300:#d6d3cc;--gray-100:#ece9e2;--font-head:'Roboto Slab',Georgia,'Times New Roman',serif;--font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;--navy:var(--ink);--coral:var(--accent-strong);--teal:var(--verified);--yellow:var(--accent-light);--light:var(--paper);--muted:var(--gray-600);--border:var(--gray-300);}*,*::before,*::after{box-sizing:border-box}.sv2 :where(h1,h2,h3,h4,p,ul,ol,li,figure,blockquote,form,button,input,select,textarea,table,dl,dd,details,summary){margin:0;padding:0}.sv-header :where(ul,li,p,button),.sv-footer :where(ul,li,p,h4,button){margin:0;padding:0}.sv2{margin:0}body{margin:0}html{-webkit-text-size-adjust:100%;scroll-padding-top:16px}body{font-family:var(--font-body);font-weight:400;color:var(--ink);background:var(--white);line-height:1.65}h1,h2,h3,h4{font-family:var(--font-head)}img{max-width:100%}a{color:inherit}:focus-visible{outline:3px solid var(--accent);outline-offset:2px}.sv-wrap{width:100%;max-width:1240px;margin:0 auto;padding-left:24px;padding-right:24px}.is-hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.sv-ico{width:1.1em;height:1.1em;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vertical-align:-0.15em}.sv-header{position:relative;z-index:300;font-family:var(--font-body);font-size:15px;line-height:1.4}.sv-top{background:var(--white);border-bottom:1px solid var(--gray-300)}.sv-top-in{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}.sv-logo{font-family:var(--font-head);font-weight:700;font-size:24px;letter-spacing:-.01em;color:var(--ink);text-decoration:none;white-space:nowrap}.sv-logo span{color:var(--accent-text)}.sv-top-r{display:flex;align-items:center;gap:12px}.sv-lang{display:flex;border:1px solid var(--gray-300);border-radius:3px;overflow:hidden}.sv-lang a,.sv-lang button{font:600 13px/1 var(--font-body);letter-spacing:.06em;padding:9px 12px;background:var(--white);color:var(--gray-600);text-decoration:none;border:0;cursor:pointer}.sv-lang .active,.sv-lang [aria-current]{background:var(--ink);color:#fff}.sv-wa-sm{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:var(--ink);font:600 13px/1 var(--font-body);padding:10px 14px;border-radius:3px;text-decoration:none;white-space:nowrap}.sv-wa-sm:hover{filter:brightness(.95)}.sv-burger{display:none;background:none;border:1px solid var(--gray-300);border-radius:3px;width:42px;height:40px;padding:0;cursor:pointer;align-items:center;justify-content:center;color:var(--ink)}.sv-bar{background:var(--ink);position:relative}.sv-bar::before{content:"";display:block;height:4px;background:linear-gradient(90deg,var(--accent) 0 33.333%,var(--verified) 33.333% 66.666%,var(--steel) 66.666% 100%)}.sv-menu{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:stretch}.sv-menu>li{position:relative;margin:0}.sv-menu a{display:block;color:#fff;text-decoration:none;font-weight:600;font-size:13px;letter-spacing:.07em;text-transform:uppercase;padding:14px 16px;white-space:nowrap}.sv-menu>li>a:hover,.sv-menu>li:focus-within>a,.sv-menu a[aria-current]{color:var(--accent-light)}.sv-menu .has-dd>a::after{content:"";display:inline-block;margin-left:7px;border:4px solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:2px}.sv-dd{display:none;position:absolute;left:0;top:100%;min-width:270px;background:var(--ink-deep);border-top:3px solid var(--accent);box-shadow:0 12px 24px rgba(0,0,0,.28);padding:6px 0;margin:0;list-style:none}.sv-menu .has-dd:hover>.sv-dd,.sv-menu .has-dd:focus-within>.sv-dd{display:block}.sv-dd a{text-transform:none;letter-spacing:0;font-weight:500;font-size:14px;padding:10px 18px;white-space:normal}.sv-dd a:hover{background:rgba(255,255,255,.07);color:var(--accent-light)}@media(max-width:1000px){.sv-burger{display:inline-flex}.sv-wa-sm span{display:none}.sv-wa-sm{padding:10px}.sv-bar{display:none}.sv-header.sv-open .sv-bar{display:block}.sv-menu{flex-direction:column}.sv-menu a{padding:13px 24px;border-bottom:1px solid rgba(255,255,255,.08);white-space:normal}.sv-menu .has-dd>a::after{display:none}.sv-dd{display:block;position:static;box-shadow:none;border-top:0;background:rgba(0,0,0,.18);padding:0}.sv-dd a{padding-left:40px;font-size:14px}.sv-header.sv-open .sv-bar{max-height:calc(100vh - 70px);overflow-y:auto}}@media(max-width:420px){.sv-wrap{padding-left:16px;padding-right:16px}.sv-logo{font-size:21px}.sv-lang a,.sv-lang button{padding:9px 10px}}.sv-footer{background:var(--ink);color:rgba(255,255,255,.78);font-family:var(--font-body);font-size:14px;line-height:1.65}.sv-foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:40px;padding-top:56px;padding-bottom:44px}.sv-footer .sv-logo{color:#fff;font-size:24px;display:inline-block;margin-bottom:12px}.sv-footer .sv-logo span{color:var(--accent-light)}.sv-footer .sv-foot-h{font:700 13px/1.2 var(--font-head);letter-spacing:.1em;text-transform:uppercase;color:#fff;margin:0 0 16px}.sv-footer ul{list-style:none;margin:0;padding:0}.sv-footer li{margin:0 0 9px}.sv-footer a{color:rgba(255,255,255,.78);text-decoration:none}.sv-footer a:hover{color:#fff;text-decoration:underline}.sv-foot-list li{position:relative;padding-left:16px}.sv-foot-list li::before{content:"";position:absolute;left:0;top:.55em;border:4px solid transparent;border-left:6px solid var(--accent);border-right:0}.sv-foot-wa{display:inline-flex;align-items:center;gap:9px;background:#25D366;color:var(--ink)!important;font-weight:700;padding:12px 18px;border-radius:3px;text-decoration:none!important;margin-bottom:18px}.sv-social{display:flex;flex-wrap:wrap;gap:8px}.sv-social a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:rgba(255,255,255,.09);color:#fff;border-radius:2px}.sv-social a:hover{background:var(--accent-strong);text-decoration:none}.sv-social svg{width:18px;height:18px;fill:currentColor}.sv-foot-bar{background:var(--ink-deep);padding:16px 0}.sv-foot-bar .sv-wrap{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between;font-size:13px}.sv-foot-bar nav,.sv-foot-bar .sv-foot-links{display:flex;flex-wrap:wrap;gap:6px 20px}.sv-top-btn{display:inline-flex;align-items:center;gap:6px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:8px 12px;border-radius:2px;font:600 12px/1 var(--font-body);letter-spacing:.06em;text-transform:uppercase;cursor:pointer}.sv-top-btn:hover{background:rgba(255,255,255,.1)}@media(max-width:900px){.sv-foot-grid{grid-template-columns:1fr 1fr;gap:32px}}@media(max-width:640px){.sv-foot-grid{grid-template-columns:1fr;gap:28px;padding-top:40px}.sv-foot-bar{padding-bottom:84px}}.sv2 .section-title{display:block;width:fit-content;max-width:100%;position:relative;background:var(--ink);color:#fff;font:700 clamp(14px,1.5vw,17px)/1.3 var(--font-head);letter-spacing:.08em;text-transform:uppercase;padding:10px 28px;margin:0 0 28px;text-align:left}.sv2 .section-title::after{content:"";position:absolute;left:100%;bottom:0;width:100vw;height:2px;background:var(--ink)}.sv2 .section-title.on-dark{background:#fff;color:var(--ink)}.sv2 .section-title.on-dark::after{background:#fff}.sv2 .section-lead{font:700 clamp(22px,2.3vw,30px)/1.25 var(--font-head);color:var(--ink);margin:0 0 20px;max-width:900px}.sv2 .section-lead.on-dark{color:#fff}.sv2 .sec{padding:64px 0;background:var(--paper);overflow-x:clip}.sv2 .sec.alt{background:var(--white)}.sv2 .sec.dark{background:var(--ink);color:#fff}.sv2 .sec p{color:var(--gray-600)}.sv2 .sec.dark p{color:rgba(255,255,255,.78)}@media(max-width:700px){.sv2 .sec{padding:36px 0}.sv2 .section-title{padding:9px 20px;margin-bottom:20px}}.meta-row{display:flex;justify-content:space-between;align-items:flex-end;gap:12px 24px;flex-wrap:wrap;margin:14px 0 22px}.meta-cat{font:700 14px/1.2 var(--font-head);text-transform:uppercase;letter-spacing:.07em;color:var(--ink)}.meta-cat::after{content:"";display:block;width:40px;height:3px;background:var(--accent);margin-top:8px}.meta-by,.sv-art .article-meta{font-size:14px;color:var(--gray-600);display:flex;align-items:center;gap:8px;flex-wrap:wrap}.meta-by strong,.article-meta strong{color:var(--ink);font-weight:600}.meta-by .sv-ico,.article-meta .sv-ico{color:var(--accent)}.meta-sub{font-size:13px;color:var(--gray-600);margin:-12px 0 20px}.figure-caption{background:var(--gray-100);color:var(--gray-600);text-align:center;font-size:13.5px;line-height:1.5;padding:9px 14px;margin:0}.quote{position:relative;background:var(--gray-100);border-left:4px solid var(--gray-300);font-style:italic;padding:20px 24px 28px;margin:24px 0;color:var(--ink)}.quote::after{content:"\201D";position:absolute;right:14px;bottom:-14px;font:700 90px/1 var(--font-head);color:var(--ink);opacity:.15;pointer-events:none}.tag{display:inline-block;background:var(--accent-strong);color:#fff;font:600 12px/1 var(--font-body);letter-spacing:.05em;text-transform:uppercase;padding:8px 12px;border-radius:0;text-decoration:none}a.tag:hover{background:var(--ink)}.card{background:var(--white);border:1px solid var(--gray-300);transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(26,35,50,.1)}.photo-card{position:relative;display:block;overflow:hidden;color:#fff;text-decoration:none;background:var(--steel);min-height:280px}.photo-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}.photo-card:hover img{transform:scale(1.04)}.photo-card::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(26,35,50,.9) 0%,rgba(26,35,50,.4) 45%,transparent 75%)}.photo-card .pc-body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px 22px 24px}.photo-card h3{font:700 clamp(19px,1.8vw,24px)/1.25 var(--font-head);color:#fff;margin:0}.photo-card .tag{position:absolute;top:16px;left:16px;z-index:2}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 14px/1 var(--font-body);letter-spacing:.06em;text-transform:uppercase;padding:15px 26px;border:2px solid transparent;border-radius:2px;text-decoration:none;cursor:pointer}.btn-accent{background:var(--accent-strong);color:#fff}.btn-accent:hover{background:#9c452b}.btn-wa2{background:#25D366;color:var(--ink)}.btn-wa2:hover{filter:brightness(.95)}.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}.btn-ghost:hover{background:rgba(255,255,255,.1)}.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:var(--steel)}.hero2{position:relative;background:var(--ink);color:#fff;overflow:hidden;padding:30px 0 32px}.hero2::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}.hero2 .sv-wrap{position:relative}.hero2 .eyebrow{display:flex;align-items:center;gap:8px;font:600 12.5px/1.2 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-light);margin:0 0 10px}.hero2 h1{font:700 clamp(2rem,3.6vw,3rem)/1.12 var(--font-head);color:#fff;margin:0 0 10px;max-width:980px}.hero2 h1 span{color:var(--accent-light)}.hero2 .sub{font-size:17px;line-height:1.5;color:rgba(255,255,255,.86);max-width:860px;margin:0 0 18px}.hero2 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}.hero2 .btn{padding:13px 22px}.photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:1240px;margin:10px auto 0;padding:0 24px}.photo-grid .photo-card{height:420px}.intro{padding:28px 0 8px;background:var(--paper)}.intro p{max-width:980px;font-size:17px;line-height:1.65;color:var(--gray-600);margin:0}.statbar{background:var(--paper);padding:20px 0 28px}.statbar .sv-wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--gray-300);border-bottom:1px solid var(--gray-300)}.statbar .stat{padding:16px 12px;text-align:center;border-right:1px solid var(--gray-300)}.statbar .stat:last-child{border-right:0}.statbar .stat-num{display:block;font:700 28px/1.1 var(--font-head);color:var(--accent-text)}.statbar .stat-label{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray-600);margin-top:4px}.cross-link2{padding:0 0 28px;background:var(--paper);font-size:15px;color:var(--gray-600)}.cross-link2 a{color:var(--accent-text);font-weight:600}@media(max-width:900px){.hero2{padding:24px 0 26px}.hero2 .sub{font-size:16px}.photo-grid{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 16px 6px;margin-top:10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.photo-grid::-webkit-scrollbar{display:none}.photo-grid .photo-card{flex:0 0 85%;height:280px;scroll-snap-align:center}.statbar .sv-wrap{grid-template-columns:1fr 1fr}.statbar .stat:nth-child(2){border-right:0}.statbar .stat:nth-child(-n+2){border-bottom:1px solid var(--gray-300)}.intro{padding-top:22px}.intro p{font-size:16px}}@media(min-width:901px) and (max-height:820px){.photo-grid .photo-card{height:min(420px,46vh)}}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}.snap-x{display:grid}@media(max-width:1000px){.grid-4{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:1fr 1fr}}@media(max-width:700px){.grid-4,.grid-3,.grid-2{grid-template-columns:1fr;gap:12px}.snap-x{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px 8px;scrollbar-width:none}.snap-x::-webkit-scrollbar{display:none}.snap-x>*{flex:0 0 84%;scroll-snap-align:center}}.sv2 .how-flow-5{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:0}.sv2 .how-step-v2{position:relative;background:var(--white);border:1px solid var(--gray-300);padding:24px 20px;transition:transform .2s,box-shadow .2s;min-width:0}.sv2 .how-step-v2:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(26,35,50,.1)}.sv2 .how-num-v2{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--ink);color:#fff;font:700 15px/1 var(--font-head);margin:0 0 14px}.sv2 .how-step-v2 h3{font:700 17px/1.3 var(--font-head);color:var(--ink);margin:0 0 8px}.sv2 .how-step-v2 p{font-size:14.5px;line-height:1.6;color:var(--gray-600);margin:0 0 8px}.sv2 .how-step-v2 .trust-line{font-size:13.5px;font-style:italic;color:var(--verified);border-top:1px dashed var(--gray-300);padding-top:10px;margin-top:10px;line-height:1.5}.sv2 .how-step-v2 .path-link,.sv2 a.path-link{color:var(--accent-text);font-weight:600;font-size:14px;text-decoration:none;display:inline-block;margin-top:8px}.sv2 .how-step-v2 .path-link:hover,.sv2 a.path-link:hover{text-decoration:underline}.sv2 .how-step-v2:nth-child(2) .how-num-v2{background:var(--steel)}.sv2 .how-step-v2:nth-child(3) .how-num-v2{background:var(--verified)}.sv2 .how-step-v2:nth-child(4) .how-num-v2{background:var(--accent-strong)}.sv2 .how-step-v2:nth-child(5) .how-num-v2{background:var(--steel)}.sv2 #ladder .how-step-v2:nth-child(5){grid-column:1/-1;display:grid;grid-template-columns:auto 1fr;gap:4px 20px;align-items:start}.sv2 #ladder .how-step-v2:nth-child(5) .how-num-v2{grid-row:1/4;margin:0}.sv2 .how-step-v2.step-featured{border-color:var(--accent);box-shadow:inset 0 3px 0 var(--accent)}.sv2 .step-vs-badge{display:inline-block;background:var(--accent-strong);color:#fff;font:700 10.5px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;margin-bottom:10px}#process .how-flow-5{grid-template-columns:repeat(5,1fr);gap:12px}@media(max-width:1100px){#process .how-flow-5{grid-template-columns:repeat(3,1fr)}}@media(max-width:1000px){.sv2 .how-flow-5{grid-template-columns:1fr 1fr}}@media(max-width:700px){.sv2 .how-flow-5,#process .how-flow-5{grid-template-columns:1fr;gap:10px}.sv2 .how-step-v2{padding:16px 16px 14px;display:grid;grid-template-columns:auto 1fr;gap:2px 14px;align-items:start}.sv2 .how-step-v2 .how-num-v2{grid-row:1/9;margin:0;width:34px;height:34px;font-size:13px}.sv2 .how-step-v2>*:not(.how-num-v2){grid-column:2}.sv2 #ladder .how-step-v2:nth-child(5){display:grid}}.sv2 .paths-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.sv2 .path-card{background:var(--white);border:1px solid var(--gray-300);padding:28px;display:flex;flex-direction:column}.sv2 .path-icon{width:44px;height:44px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:14px}.sv2 .path-icon .sv-ico{width:22px;height:22px}.sv2 .path-tag{font:700 12px/1.3 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);margin-bottom:6px}.sv2 .path-card h3{font:700 21px/1.3 var(--font-head);margin:0 0 10px;color:var(--ink)}.sv2 .path-card p{font-size:15px;line-height:1.7;color:var(--gray-600);margin:0 0 10px}.sv2 .path-note{font-size:13.5px;color:var(--verified);font-style:italic}@media(max-width:800px){.sv2 .paths-grid{grid-template-columns:1fr;gap:14px}.sv2 .path-card{padding:20px}}.sv2 .services-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.sv2 .svc-card{background:var(--white);border:1px solid var(--gray-300);padding:22px 20px;position:relative;min-width:0;transition:transform .2s,box-shadow .2s}.sv2 .svc-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(26,35,50,.1)}.sv2 .svc-icon{width:40px;height:40px;color:var(--accent);margin-bottom:10px}.sv2 .svc-icon .sv-ico{width:34px;height:34px;stroke-width:1.75}.sv2 .svc-card h3{font:700 16.5px/1.3 var(--font-head);margin:0 0 8px;color:var(--ink)}.sv2 .svc-card p{font-size:14px;line-height:1.6;color:var(--gray-600);margin:0}.sv2 .svc-price-tag{display:inline-block;background:var(--ink);color:#fff;font:700 12.5px/1 var(--font-body);padding:6px 9px;margin:0 0 10px;letter-spacing:.03em}.sv2 .svc-pl{text-decoration:none}.sv2 span.sv-off{display:inline-flex;gap:6px;align-items:center;background:var(--verified);color:#fff;font-size:11px;font-weight:600;line-height:1.2;padding:4px 8px;margin:0 6px 8px 0}.sv2 span.sv-off b{font-size:12px;color:#fff}.sv2 span.sv-off i{font-style:normal;color:#fff}.sv2 .services-outro{margin-top:28px;padding-top:20px;border-top:1px solid var(--gray-300);font-size:15px;color:var(--gray-600);font-style:italic}@media(max-width:1100px){.sv2 .services-grid-8{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.sv2 .services-grid-8{grid-template-columns:1fr 1fr;gap:10px}.sv2 .svc-card{padding:14px 12px}.sv2 .svc-icon{width:28px;height:28px;margin-bottom:6px}.sv2 .svc-icon .sv-ico{width:26px;height:26px}.sv2 .svc-card h3{font-size:14.5px}.sv2 .svc-card p{font-size:12.5px;line-height:1.5}.sv2 .svc-price-tag{font-size:11px}}.pic-card{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--gray-300);text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s;min-width:0}.pic-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(26,35,50,.1)}.pic-card .pic{aspect-ratio:16/10;overflow:hidden;background:var(--steel)}.pic-card .pic img{width:100%;height:100%;object-fit:cover;display:block}.pic-card .pic-body{padding:16px 18px 20px}.pic-card .pic-cat{font:700 11.5px/1.3 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text);margin-bottom:6px}.pic-card h3{font:700 18px/1.3 var(--font-head);margin:0 0 8px;color:var(--ink)}.pic-card p{font-size:14px;line-height:1.55;color:var(--gray-600);margin:0}.sv2 .who-founder-quote{margin-top:36px}.sv2 .who-founder-text{font:italic 400 18px/1.7 var(--font-body);color:var(--ink);max-width:860px;margin:0 0 12px}.sv2 .who-founder-name{font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--gray-600);margin:0 0 16px}.sv2 .who-cta{display:inline-block;background:var(--accent-strong);color:#fff;font:600 14px/1 var(--font-body);letter-spacing:.06em;text-transform:uppercase;padding:14px 24px;text-decoration:none}.sv2 .rating-widget{margin-top:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}.sv2 .rating-stars{display:flex;gap:2px}.sv2 .star-btn{background:none;border:0;font-size:28px;line-height:1;color:#8a8478;cursor:pointer;padding:2px 3px;font-family:inherit}.sv2 .star-btn:disabled{cursor:default}.sv2 .rating-widget:not(.rated) .star-btn:hover,.sv2 .rating-widget:not(.rated) .star-btn.hovered{color:var(--accent)}.sv2 .star-btn.selected{color:var(--accent-strong)}.sv2 .rating-summary{font-size:14px;color:var(--gray-600)}.sv2 .who-intro{max-width:900px;font-size:16px;line-height:1.7;color:var(--gray-600);margin:0 0 24px}.sv2 .testimonials-wrap{padding:0 0 64px;background:var(--paper)}.sv2 .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.sv2 .testimonial-card{position:relative;display:flex;flex-direction:column;background:var(--gray-100);border-left:4px solid var(--gray-300);padding:22px 22px 34px;min-width:0}.sv2 .testimonial-card::after{content:"\201D";position:absolute;right:14px;bottom:-12px;font:700 90px/1 var(--font-head);color:var(--ink);opacity:.15}.sv2 .testimonial-photo{order:-1;width:56px;height:56px;border-radius:50%;object-fit:cover;margin:0 0 10px}.sv2 .testimonial-name{order:0;font:700 16px/1.3 var(--font-head);margin:0;color:var(--ink)}.sv2 .testimonial-role{order:1;font-size:13px;color:var(--gray-600);margin:2px 0 12px}.sv2 .testimonial-text{order:2;font-style:italic;font-size:15px;line-height:1.65;color:var(--ink);margin:0}.sv2 .flag-icon{width:1.1em;height:.75em;vertical-align:middle;margin-left:.35em;border:1px solid rgba(0,0,0,.15)}@media(max-width:1000px){.sv2 .testimonials-grid{grid-template-columns:1fr 1fr}}@media(max-width:700px){.sv2 .testimonials-wrap{padding-bottom:36px}.sv2 .testimonials-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px 8px;scrollbar-width:none}.sv2 .testimonials-grid::-webkit-scrollbar{display:none}.sv2 .testimonial-card{flex:0 0 86%;scroll-snap-align:center}}.sv2 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.sv2 .why-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:24px}.sv2 .why-card.why-card-highlight{background:var(--accent-strong);border-color:var(--accent-strong)}.sv2 .why-icon{width:40px;height:40px;color:var(--accent-light);margin-bottom:12px}.sv2 .why-icon .sv-ico{width:34px;height:34px;stroke-width:1.75}.sv2 .why-card.why-card-highlight .why-icon{color:#fff}.sv2 .why-card h3{font:700 18px/1.3 var(--font-head);color:#fff;margin:0 0 8px}.sv2 .why-card p{font-size:14.5px;line-height:1.65;color:rgba(255,255,255,.8);margin:0}.sv2 .why-card.why-card-highlight p{color:#fff}.sv2 .why-card strong{color:#fff}.sv2 a.why-link{color:#fff;font-weight:600;text-decoration:underline;display:inline-block;margin-top:10px;font-size:14.5px}@media(max-width:900px){.sv2 .why-grid{grid-template-columns:1fr;gap:12px}.sv2 .why-card{padding:18px}}.sv2 .faq-layout{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:start}.sv2 .faq-item{border-bottom:1px solid var(--gray-300)}.sv2 .faq-item:first-child{border-top:1px solid var(--gray-300)}.sv2 .faq-q{width:100%;background:none;border:0;text-align:left;padding:16px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;cursor:pointer;font-family:inherit;color:var(--ink)}.sv2 .faq-q-text{font:700 16px/1.4 var(--font-head);color:var(--ink)}.sv2 .faq-toggle{width:24px;height:24px;min-width:24px;background:var(--accent-strong);color:#fff;font-size:18px;line-height:24px;text-align:center;transition:transform .25s}.sv2 .faq-item.open .faq-toggle{transform:rotate(45deg)}.sv2 .faq-a{overflow:hidden;max-height:0;transition:max-height .35s ease}.sv2 .faq-item.open .faq-a{max-height:900px}.sv2 .faq-a-inner{padding:0 0 18px;color:var(--gray-600);font-size:15px;line-height:1.7}.sv2 .faq-a-inner strong{color:var(--ink)}.sv2 .faq-cta{color:var(--accent-text);font-weight:600}.sv2 .faq-side-card{background:var(--ink);color:#fff;padding:26px 24px;position:sticky;top:20px}.sv2 .faq-side-tag{font:700 12px/1.3 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-light);margin-bottom:10px}.sv2 .faq-side-card h3{font:700 19px/1.35 var(--font-head);color:#fff;margin:0 0 10px}.sv2 .faq-side-card p{font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.8);margin:0 0 18px}.sv2 .faq-side-btn{display:block;text-align:center;padding:13px 14px;font:600 13px/1.2 var(--font-body);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;background:var(--accent-strong);color:#fff;margin-bottom:10px}.sv2 .faq-side-btn-wa{background:#25D366;color:var(--ink)}.sv2 .faq-side-divider{border-top:1px solid rgba(255,255,255,.18);margin:18px 0 14px}.sv2 .faq-side-info{font-size:13.5px;color:rgba(255,255,255,.75);display:flex;flex-direction:column;gap:6px}@media(max-width:900px){.sv2 .faq-layout{grid-template-columns:1fr;gap:24px}.sv2 .faq-side-card{position:static}}.sv2 .rc-inner{max-width:720px;margin:0 auto}.sv2 .rc-inner p{font-size:15.5px;line-height:1.7}.sv2 .rc-note{font-size:13.5px!important}.sv2 .form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}.sv2 .form-group label{font:600 13px/1.3 var(--font-body);color:var(--ink);letter-spacing:.02em}.sv2 .form-group label small{font-weight:400;color:var(--gray-600)}.sv2 .form-group input,.sv2 .form-group textarea,.sv2 .form-group select{width:100%;background:var(--white);border:1.5px solid var(--gray-300);color:var(--ink);padding:12px 14px;font:400 15px/1.4 var(--font-body);border-radius:2px;outline:none}.sv2 .form-group input:focus,.sv2 .form-group textarea:focus,.sv2 .form-group select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(200,90,60,.18)}.sv2 .form-group textarea{resize:vertical;min-height:120px}.sv2 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.sv2 .btn-submit{display:block;width:100%;background:var(--accent-strong);color:#fff;border:0;padding:16px 24px;font:700 15px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border-radius:2px}.sv2 .btn-submit:hover{background:#9c452b}.sv2 .btn-submit:disabled{opacity:.6;cursor:default}.sv2 .form-ok{background:var(--verified);color:#fff;padding:14px 16px;text-align:center;font-weight:600;margin-top:14px}.sv2 .iti{width:100%;display:block}.sv2 .iti input{width:100%}@media(max-width:700px){.sv2 .form-row{grid-template-columns:1fr;gap:0}}.contact-v2{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}.contact-v2 .c-photo{aspect-ratio:16/10;overflow:hidden;background:var(--steel);margin:0}.contact-v2 .c-photo img{width:100%;height:100%;object-fit:cover;display:block}.contact-v2 .c-list{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:14px}.contact-v2 .c-list li{display:flex;align-items:center;gap:12px;font-size:16px;color:var(--ink)}.contact-v2 .c-list .sv-ico{width:22px;height:22px;color:var(--accent);stroke-width:1.9}.contact-v2 .c-list a{color:var(--ink);text-decoration:none;font-weight:500}.contact-v2 .c-list a:hover{color:var(--accent-text);text-decoration:underline}.contact-v2 .c-intro{font-size:15.5px;color:var(--gray-600);margin:0 0 20px;line-height:1.65}.contact-v2 h2.c-big{font:700 clamp(22px,2.4vw,32px)/1.2 var(--font-head);text-transform:uppercase;letter-spacing:.01em;color:var(--ink);margin:0 0 22px}.contact-v2 h2.c-big::after{content:"";display:block;width:48px;height:3px;background:var(--accent);margin-top:14px}@media(max-width:900px){.contact-v2{grid-template-columns:1fr;gap:28px}.contact-v2 .c-info{order:2}.contact-v2 .c-form{order:1}}.sv-art{background:var(--white)}.sv-art .art-wrap{max-width:1200px;margin:0 auto;padding:36px 24px 0}.art-grid{display:grid;grid-template-columns:48px minmax(0,1fr) 300px;gap:32px;align-items:start}.art-main{min-width:0}.art-head h1{font:700 clamp(1.75rem,3vw,2.25rem)/1.22 var(--font-head);color:var(--ink);margin:0;max-width:820px}.art-hero{margin:0 0 28px}.art-hero img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;background:var(--gray-100)}.art-hero .ill{position:relative}.ill-tag{position:absolute;top:10px;left:10px;z-index:3;background:rgba(26,35,50,.88);color:#fff;font:600 11px/1.3 var(--font-body);letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:2px}.art-langs{display:flex;gap:10px;align-items:center;margin:0 0 14px;font-size:13px}.art-langs a{color:var(--gray-600);text-decoration:none;border:1px solid var(--gray-300);padding:4px 9px;border-radius:2px}.art-langs a:hover{color:var(--ink);border-color:var(--ink)}.art-langs a.back::before{content:"\2190 "}.sv-art .article-body{max-width:720px;margin:0;padding:0;font:400 18px/1.75 var(--font-body);color:#2a3342;text-align:left}.sv-art .article-body h2{font:700 clamp(1.4rem,2.2vw,1.65rem)/1.3 var(--font-head);color:var(--ink);margin:56px 0 16px;padding:0;border:0}.sv-art .article-body h3{font:700 1.2rem/1.35 var(--font-head);color:var(--ink);margin:32px 0 10px}.sv-art .article-body p{font-size:18px;line-height:1.75;margin:0 0 20px;color:#2a3342}.sv-art .article-body ul,.sv-art .article-body ol{margin:0 0 22px 24px;font-size:18px;line-height:1.75;color:#2a3342}.sv-art .article-body li{margin-bottom:8px}.sv-art .article-body strong{color:var(--ink);font-weight:600}.sv-art .article-body a{color:var(--accent-text);text-decoration:underline;text-underline-offset:2px}.sv-art .article-body a:hover{color:var(--ink)}.sv-art .article-body a.cta-btn,.sv-art .article-body a.cta-btn:hover{color:#fff;text-decoration:none}.sv-art .article-body a.cta-btn-wa-secondary{color:var(--ink)!important}.sv-art .article-body table{width:100%;border-collapse:collapse;margin:0;font-size:15px;line-height:1.5}.sv-art .article-body th{background:var(--steel);color:#fff;padding:11px 14px;text-align:left;font-weight:600;font-size:13.5px}.sv-art .article-body td{padding:11px 14px;border-bottom:1px solid var(--gray-300);color:#2a3342;vertical-align:top}.sv-art .article-body tr:nth-child(even) td{background:var(--paper)}.sv-art .article-body caption{caption-side:top;text-align:left;font-size:13.5px;color:var(--gray-600);padding:0 0 8px}.tbl-scroll{overflow-x:auto;margin:24px 0;-webkit-overflow-scrolling:touch}.sv-art .body-fig{margin:30px 0}.sv-art .body-fig img{display:block;width:100%;height:auto;border:0}.sv-art .body-fig figcaption{background:var(--gray-100);color:var(--gray-600);text-align:center;font-size:13.5px;line-height:1.5;padding:9px 14px;margin:0}.sv-art .article-body blockquote{position:relative;background:var(--gray-100);border-left:4px solid var(--gray-300);font-style:italic;padding:20px 24px 28px;margin:26px 0;color:var(--ink)}.sv-art .article-body blockquote p{font-size:18px;margin:0 0 10px}.sv-art .article-body blockquote::after{content:"\201D";position:absolute;right:14px;bottom:-14px;font:700 90px/1 var(--font-head);color:var(--ink);opacity:.15}.sv-art .cta-box{background:var(--paper);border:0;border-top:4px solid var(--accent);padding:28px;margin:44px 0;text-align:center}.sv-art .cta-box h3{font:700 1.3rem/1.3 var(--font-head);margin:0 0 10px}.sv-art .cta-box p{font-size:16px;color:var(--gray-600);margin:0 0 18px}.sv-art .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.sv-art .cta-btn{display:inline-block;background:var(--accent-strong);color:#fff;font:600 13px/1.2 var(--font-body);letter-spacing:.06em;text-transform:uppercase;padding:14px 22px;text-decoration:none;border-radius:2px}.sv-art .cta-btn:hover{background:#9c452b}.sv-art .definition-box{background:var(--paper);border-left:4px solid var(--verified);padding:18px 22px;margin:24px 0}.sv-art .definition-box strong{display:block;color:var(--verified);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}.sv-art .definition-box p{margin:0;font-size:16.5px}.sv-art .checklist{list-style:none;margin:18px 0 24px;padding:0}.sv-art .checklist li{position:relative;padding:10px 0 10px 28px;border-bottom:1px solid var(--gray-300);font-size:17px;margin:0}.sv-art .checklist li:last-child{border-bottom:0}.sv-art .checklist li::before{content:"\2713";position:absolute;left:0;color:var(--verified);font-weight:700}.sv-art .quick-list{background:var(--ink);padding:20px 24px;margin:24px 0}.sv-art .quick-list ul{list-style:none;margin:0;padding:0}.sv-art .quick-list li{color:rgba(255,255,255,.9);font-size:16.5px;padding:8px 0 8px 22px;position:relative;border-bottom:1px solid rgba(255,255,255,.1);margin:0}.sv-art .quick-list li:last-child{border-bottom:0}.sv-art .quick-list li::before{content:"\2192";position:absolute;left:0;color:var(--accent-light)}.sv-art .author-box{margin:40px 0 24px;padding:18px 20px;background:var(--paper);border:1px solid var(--gray-300);border-left:4px solid var(--verified);font-size:15px;line-height:1.6}.sv-art .author-box p,.sv-art .author-box li{font-size:15px;line-height:1.6;margin:0 0 6px}.sv-art .author-box ul{margin:8px 0 8px 20px}.sv-art .author-box-head{display:flex;gap:14px;align-items:center;margin-bottom:8px}.sv-art .author-avatar{border-radius:50%;width:50px;height:50px;object-fit:cover}.rel-topics{max-width:720px;margin:32px 0 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center}.rel-topics h3{flex:0 0 100%;font:700 15px/1.2 var(--font-head);text-transform:uppercase;letter-spacing:.08em;margin:0 0 4px;color:var(--ink)}.share-rail{position:sticky;top:24px;display:flex;flex-direction:column;gap:8px;align-items:center}.share-rail a,.share-row a{display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:var(--gray-100);color:var(--ink);border-radius:2px;text-decoration:none}.share-rail a:hover,.share-row a:hover{background:var(--ink);color:#fff}.share-rail svg,.share-row svg{width:18px;height:18px;fill:currentColor}.share-rail svg.st,.share-row svg.st{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.share-row{display:none;gap:8px;margin:28px 0 0;align-items:center;flex-wrap:wrap}.share-row span{font:700 13px/1 var(--font-head);text-transform:uppercase;letter-spacing:.08em;margin-right:6px}.art-side{position:sticky;top:24px;display:grid;gap:18px}.side-card{background:var(--ink);color:#fff;padding:24px 22px}.side-card .sc-tag{font:700 12px/1.3 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-light);margin-bottom:8px}.side-card .sc-price{font:700 40px/1 var(--font-head);color:#fff;margin:0 0 6px}.side-card h3{font:700 18px/1.3 var(--font-head);color:#fff;margin:0 0 8px}.side-card p{font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.82);margin:0 0 16px}.side-card .btn{width:100%;padding:13px 14px;font-size:13px}.side-wa{display:flex;align-items:center;justify-content:center;gap:9px;background:#25D366;color:var(--ink);font:700 14px/1 var(--font-body);padding:15px 14px;text-decoration:none;border-radius:2px}.side-wa:hover{filter:brightness(.95)}.side-pop{border:1px solid var(--gray-300);padding:18px 18px 8px;background:var(--white)}.side-pop h3{font:700 14px/1.2 var(--font-head);text-transform:uppercase;letter-spacing:.08em;color:var(--ink);margin:0 0 6px;padding-bottom:10px;border-bottom:2px solid var(--ink)}.side-pop ol{list-style:none;margin:0;padding:0}.side-pop li{border-bottom:1px solid var(--gray-300);margin:0}.side-pop li:last-child{border-bottom:0}.side-pop a{display:block;padding:12px 0;font:600 14.5px/1.4 var(--font-head);color:var(--ink);text-decoration:none}.side-pop a:hover{color:var(--accent-text)}.mid-card{display:none}.you-may-like{margin:56px -24px 0;padding:44px 24px 56px;background:var(--paper)}.you-may-like .grid-4{max-width:1200px;margin:0 auto}.you-may-like .section-title{margin-left:calc(max(0px,(100vw - 1200px)/2) * 0)}.rel-card{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--gray-300);text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s}.rel-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(26,35,50,.1)}.rel-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;background:var(--gray-100)}.rel-card span{display:block;padding:14px 16px 18px;font:700 16px/1.35 var(--font-head)}.rel-card:hover span{color:var(--accent-text)}.rel-card small{display:block;padding:14px 16px 0;font:700 11px/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-text)}@media(max-width:1100px){.art-grid{grid-template-columns:minmax(0,1fr) 280px}.share-rail{display:none}.share-row{display:flex}}@media(max-width:900px){.art-grid{grid-template-columns:minmax(0,1fr)}.art-side{display:none}.mid-card{display:block}.sv-art .art-wrap{padding:24px 16px 0}.sv-art .article-body,.sv-art .article-body p,.sv-art .article-body ul,.sv-art .article-body ol{font-size:17px}.you-may-like{margin-left:-16px;margin-right:-16px;padding:32px 16px 44px}.you-may-like .grid-4{grid-template-columns:1fr 1fr;gap:12px}}@media(max-width:560px){.you-may-like .grid-4{grid-template-columns:1fr}}.mid-card .side-card{margin:34px 0}.sv-art .article-body .mid-card{margin:0}body:not(.sv2) .article-body,body:not(.sv2) p{font-weight:400}.sv-brand{width:1.15em;height:1.15em;fill:currentColor;flex:0 0 auto}html,body.sv2{overflow-x:clip}@media(max-width:560px){.sv-top-in{gap:8px}.sv-top-r{gap:8px}.sv-logo{font-size:20px}.sv-lang a,.sv-lang button{padding:8px 9px;font-size:12px}.sv-burger{width:38px;height:38px}.sv-wa-sm{padding:9px}}.sv2 .route-map{margin:0 0 24px}.sv2 .route-map .ill{position:relative}.sv2 .route-map img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover}.sv2 .why-more{margin-top:24px}.sv2 .rc-form{max-width:720px;margin:24px 0 0}.sv2 .rc-note{font-size:13.5px}.sv2 .who-intro{margin:0 0 20px}@media(max-width:700px){.sv2 .route-map{display:none}}.sv2 .form-group .iti{display:block!important;width:100%!important}.sv2 .iti input.iti__tel-input{width:100%}.m-more>summary{cursor:pointer;font-weight:600;color:var(--accent-text);margin-bottom:8px}@media(min-width:701px){.m-more>summary{display:none}}@media(max-width:700px){.sv2 .sec{padding:28px 0}.sv2 .section-lead{font-size:21px;margin-bottom:14px}.hero2{padding:20px 0 22px}.hero2 h1{font-size:1.85rem}.hero2 .sub{font-size:15px;margin-bottom:14px}.hero2 .btn{padding:12px 16px;font-size:13px}.intro{padding:16px 0 4px}.intro p{font-size:15px}.statbar{padding:12px 0 14px}.statbar .sv-wrap{grid-template-columns:repeat(4,1fr)!important}.statbar .stat{padding:8px 2px!important;border-bottom:0!important}.statbar .stat:nth-child(2){border-right:1px solid var(--gray-300)!important}.statbar .stat-num{font-size:19px}.statbar .stat-label{font-size:9px;letter-spacing:.03em}.cross-link2{padding-bottom:16px;font-size:14px}.sv2 .how-flow-5,.sv2 #process .how-flow-5,.sv2 .paths-grid,.sv2 .services-grid-8,.sv2 .why-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -16px;padding:0 16px 8px;scrollbar-width:none}.sv2 .how-flow-5::-webkit-scrollbar,.sv2 .paths-grid::-webkit-scrollbar,.sv2 .services-grid-8::-webkit-scrollbar,.sv2 .why-grid::-webkit-scrollbar{display:none}.sv2 .how-flow-5>*,.sv2 .paths-grid>*,.sv2 .why-grid>*{flex:0 0 82%;scroll-snap-align:center;align-self:flex-start}.sv2 .services-grid-8>*{flex:0 0 66%;scroll-snap-align:center}.sv2 .how-step-v2,.sv2 #ladder .how-step-v2:nth-child(5){display:block;padding:18px 16px}.sv2 .how-step-v2 .how-num-v2{margin:0 0 10px;width:34px;height:34px}.sv2 .svc-card{padding:16px 14px}.sv2 .svc-card p{font-size:13.5px}.sv2 .faq-side-card{display:none}.sv2 .who-founder-text{font-size:16px}.contact-v2 .c-photo{aspect-ratio:21/9}.sv-foot-grid{grid-template-columns:1fr 1fr!important;gap:22px!important;padding-top:32px!important;padding-bottom:28px!important}.sv-foot-grid>div:first-child,.sv-foot-grid>div:last-child{grid-column:1/-1}.sv-foot-grid>div:first-child p+p{display:none}}.meta-by .meta-sub{font-size:13px;margin:0}.photo-card .pc-title{font:700 clamp(19px,1.8vw,24px)/1.25 var(--font-head);color:#fff}.sv-art .side-h,.side-pop .side-h{font:700 14px/1.2 var(--font-head);text-transform:uppercase;letter-spacing:.08em;color:var(--ink);margin:0 0 6px;padding-bottom:10px;border-bottom:2px solid var(--ink)}.rel-topics .rel-h{flex:0 0 100%;border:0;padding:0;margin:0 0 4px}.side-card .sc-h{font:700 18px/1.3 var(--font-head);color:#fff;margin:0 0 8px}.sv-art .article-body .side-card p{color:rgba(255,255,255,.88);font-size:14.5px;line-height:1.55;margin:0 0 16px}.sv-art .article-body .side-card p.sc-price{color:#fff;font-size:40px;line-height:1;margin:0 0 6px}.sv-art .article-body .side-card a.btn{color:#fff;text-decoration:none}:root{--verified-text:#37665a}.sv-art .definition-box strong,.sv-art .real-case strong,.sv-art .spec-box strong,.real-case strong,.spec-box strong,.definition-box strong{color:var(--verified-text)}.sv2 .how-step-v2 .trust-line,.sv2 .path-note{color:var(--verified-text)}:root{--coral:var(--accent-text)}.sv-art .article-body img{height:auto;max-width:100%}.pricing-grid>*{min-width:0}.sv2 .sec .who-founder-text{color:var(--ink)}</style><script src="/js/sv-ui.js" defer></script>
 </head>
-<body>
-
-<nav>
-  <div class="logo">SourciaVera</div>
-  <div class="nav-links">
-    <a href="/" data-en="Home" data-es="Inicio">Home</a>
-    <a href="/categories" data-en="Categories" data-es="Categorías">Categories</a>
-    <a href="#faq-shows" class="nav-faq-link" data-en="FAQ" data-es="FAQ">FAQ</a>
-    <a href="/blog" data-en="Blog" data-es="Blog">Blog</a>
-    <a href="/about" data-en="About" data-es="Nosotros">About</a>
-    <div class="nav-dd"><a href="/verification-services" class="nav-dd-t" aria-haspopup="true">Services</a><div class="nav-dd-menu"><a href="/china-sourcing-process">China sourcing process</a><a href="/verification-services">Factory verification</a><a href="/live-video-factory-verification">Live video verification</a><a href="/china-sourcing-agent">China sourcing agent</a><a href="/supply-chain-supervision-china">Factory supervision</a><a href="/small-batch">Small batches</a><a href="/categories/auto-parts">Auto parts</a></div></div>
-    <div class="nav-dd"><a href="/how-to-choose" class="nav-dd-t" aria-haspopup="true">Resources</a><div class="nav-dd-menu"><a href="/inspection-standards">Inspection standards</a><a href="/sample-report">Sample report</a><a href="/impartiality">Impartiality</a><a href="/how-to-choose">How to choose a provider</a></div></div>
-    <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
-  </div>
-  <div class="nav-right">
-    <button class="nav-hamburger" onclick="this.closest('nav').classList.toggle('nav-open')" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="lang-switcher">
-      <button class="lang-btn active" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="window.location='/es/'">ES</button>
-    </div>
-  </div>
-</nav>
+<body class="sv2 sv-home">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><button type="button" class="lang-btn active" onclick="setLang('en')">EN</button><button type="button" class="lang-btn" onclick="window.location='/es/'">ES</button></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menu"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Main"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/" aria-current="page" data-en="Home" data-es="Inicio">Home</a></li><li><a href="/categories" data-en="Categories" data-es="Categorías">Categories</a></li><li class="has-dd"><a href="/verification-services">Services</a><ul class="sv-dd"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></li><li class="has-dd"><a href="/how-to-choose">Resources</a><ul class="sv-dd"><li><a href="/inspection-standards">Inspection standards</a></li><li><a href="/sample-report">Sample report</a></li><li><a href="/impartiality">Impartiality</a></li><li><a href="/how-to-choose">How to choose a provider</a></li></ul></li><li><a href="/blog" data-en="Blog" data-es="Blog">Blog</a></li><li><a href="/about" data-en="About" data-es="Nosotros">About</a></li><li><a href="/#faq-shows" data-en="FAQ" data-es="FAQ">FAQ</a></li><li><a href="/contact" data-en="Contact" data-es="Contacto">Contact</a></li></ul></div></div></div>
 <main>
-
-<section class="hero">
-  <div class="hero-left">
-    <div class="hero-tag" data-en="📍 Guangzhou, China — Worldwide Buyers" data-es="📍 Guangzhou, China — Compradores Globales">📍 Guangzhou, China — Worldwide Buyers</div>
-    <h1 data-en='Factories in China,<br>verified <span>before you pay</span>.' data-es='Fábricas en China,<br>verificadas <span>antes de que pagues</span>.'>Factories in China,<br>verified <span>before you pay</span>.</h1>
-    <p class="hero-pos" data-en="Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door." data-es="Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta.">Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p>
-    <p data-en="We're an independent third-party verification company in Guangzhou, serving importers worldwide. Send us the factory listing you found on 1688 or Alibaba — LED lighting, hardware, electronics, carbon fiber parts, wheels or your own private-label project — and we go on site, camera in hand, before you send a deposit." data-es="Somos una empresa independiente de verificación de terceros en Guangzhou, al servicio de importadores de todo el mundo. Envíenos la ficha de la fábrica que encontró en 1688 o Alibaba — iluminación LED, hardware, electrónica, piezas de fibra de carbono, rines o su proyecto de marca propia — y vamos a la fábrica, cámara en mano, antes de que envíe un depósito.">We're an independent third-party verification company in Guangzhou, serving importers worldwide. Send us the factory listing you found on 1688 or Alibaba — LED lighting, hardware, electronics, carbon fiber parts, wheels or your own private-label project — and we go on site, camera in hand, before you send a deposit.</p>
-    <div class="hero-btns">
-      <button class="btn-main" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Get a Free Detailed Quote" data-es="Cotización Detallada Gratis">Get a Free Detailed Quote</button>
-      <a class="btn-wa" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" data-en="Chat on WhatsApp" data-es="Hablar por WhatsApp">Chat on WhatsApp</a>
-    </div>
-  </div>
-  <div class="hero-map reveal-water"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Illustrated shipping route map from Guangzhou, China to Los Angeles, Lázaro Cárdenas, Colón, Callao and Chile, with auto parts cargo" loading="eager"><span class="ill-tag" data-en="Illustrative image" data-es="Imagen ilustrativa">Illustrative image</span></div>
-</section>
-
-<div class="stats">
+<section class="hero2"><div class="sv-wrap">
+  <div class="eyebrow"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span data-en="Guangzhou, China — Worldwide Buyers" data-es="Guangzhou, China — Compradores Globales">Guangzhou, China — Worldwide Buyers</span></div>
+  <h1 data-en='Factories in China,<br>verified <span>before you pay</span>.' data-es='Fábricas en China,<br>verificadas <span>antes de que pagues</span>.'>Factories in China,<br>verified <span>before you pay</span>.</h1>
+  <p class="sub" data-en="Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door." data-es="Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta.">Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p>
+  <div class="hero-btns"><button type="button" class="btn btn-accent" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" data-en="Get a Free Detailed Quote" data-es="Cotización Detallada Gratis">Get a Free Detailed Quote</button>
+  <a class="btn btn-wa2" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" data-en="Chat on WhatsApp" data-es="Hablar por WhatsApp">Chat on WhatsApp</a></div>
+</div></section>
+<div class="photo-grid"><a class="photo-card" href="#svc-factory"><img src="/images/home-card-factory.webp" alt="" width="640" height="448" fetchpriority="high" loading="eager" decoding="async"><span class="tag" data-en="FROM $449" data-es="DESDE $449">FROM $449</span><div class="pc-body"><div class="pc-title" data-en="On-site Factory Verification" data-es="Verificación de Fábrica en Sitio">On-site Factory Verification</div></div></a><a class="photo-card" href="/categories/auto-parts"><img src="/images/home-card-autoparts.webp" alt="" width="640" height="448" loading="lazy" decoding="async"><div class="pc-body"><div class="pc-title" data-en="Auto Parts / OEM Sourcing" data-es="Autopartes / Abastecimiento OEM">Auto Parts / OEM Sourcing</div></div></a><a class="photo-card" href="#svc-inspection"><img src="/images/home-card-inspection.webp" alt="" width="640" height="448" loading="lazy" decoding="async"><span class="tag" data-en="FROM $399" data-es="DESDE $399">FROM $399</span><div class="pc-body"><div class="pc-title" data-en="Pre-Shipment Inspection" data-es="Inspección Previa al Envío">Pre-Shipment Inspection</div></div></a></div>
+<div class="intro"><div class="sv-wrap"><p data-en="We're an independent third-party verification company in Guangzhou, serving importers worldwide. Send us the factory listing you found on 1688 or Alibaba — LED lighting, hardware, electronics, carbon fiber parts, wheels or your own private-label project — and we go on site, camera in hand, before you send a deposit." data-es="Somos una empresa independiente de verificación de terceros en Guangzhou, al servicio de importadores de todo el mundo. Envíenos la ficha de la fábrica que encontró en 1688 o Alibaba — iluminación LED, hardware, electrónica, piezas de fibra de carbono, rines o su proyecto de marca propia — y vamos a la fábrica, cámara en mano, antes de que envíe un depósito.">We're an independent third-party verification company in Guangzhou, serving importers worldwide. Send us the factory listing you found on 1688 or Alibaba — LED lighting, hardware, electronics, carbon fiber parts, wheels or your own private-label project — and we go on site, camera in hand, before you send a deposit.</p></div></div>
+<div class="statbar"><div class="sv-wrap">
   <div class="stat"><span class="stat-num">48h</span><span class="stat-label" data-en="Report in 48 hours" data-es="Informe en 48 horas">Report in 48 hours</span></div>
   <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-en="Raw video footage" data-es="Video sin editar">Raw video footage</span></div>
   <div class="stat"><span class="stat-num">EN/ES</span><span class="stat-label" data-en="English & Spanish" data-es="Inglés y Español">English & Spanish</span></div>
-  <div class="stat"><span class="stat-num">0%</span><span class="stat-label" data-en="Factory commission" data-es="Comisión de fábrica">Factory commission</span></div>
-</div>
-
-<div class="cross-link" data-en='Our verification process works for any product. → <a href="/categories">See what we verify</a>' data-es='Nuestro proceso de verificación funciona para cualquier producto. → <a href="/es/categorias">Ver qué verificamos</a>'>Our verification process works for any product. → <a href="/categories">See what we verify</a></div>
-
-<section class="how" id="ladder" style="background:var(--light)">
-  <div class="section-tag" data-en="Start Anywhere" data-es="Empiece Donde Quiera">Start Anywhere</div>
-  <h2 class="section-title" data-en="Your procurement team in China, from the first supplier check to shipment." data-es="Su equipo de compras en China, desde la primera revisión del proveedor hasta el embarque.">Your procurement team in China, from the first supplier check to shipment.</h2>
-  <p style="max-width:47.5rem;margin:-1.5rem auto 0;text-align:center;color:var(--muted)" data-en="You don't need to understand China's supply chain — that's what we're here for. Start wherever you are; not every buyer needs all five steps." data-es="No necesita entender la cadena de suministro china — para eso estamos aquí. Empiece donde esté; no todos los compradores necesitan los cinco pasos.">You don't need to understand China's supply chain — that's what we're here for. Start wherever you are; not every buyer needs all five steps.</p>
-  <div class="how-flow-5" style="margin-top:2.5rem">
+  <div class="stat"><span class="stat-num">0%</span><span class="stat-label" data-en="Factory commission" data-es="Comisión de fábrica">Factory commission</span></div></div></div>
+<div class="cross-link2"><div class="sv-wrap"><span data-en='Our verification process works for any product. → <a href="/categories">See what we verify</a>' data-es='Nuestro proceso de verificación funciona para cualquier producto. → <a href="/es/categorias">Ver qué verificamos</a>'>Our verification process works for any product. → <a href="/categories">See what we verify</a></span></div></div>
+<section class="sec" id="ladder"><div class="sv-wrap">
+  <div class="section-title" data-en="Start Anywhere" data-es="Empiece Donde Quiera">Start Anywhere</div>
+  <h2 class="section-lead" data-en="Your procurement team in China, from the first supplier check to shipment." data-es="Su equipo de compras en China, desde la primera revisión del proveedor hasta el embarque.">Your procurement team in China, from the first supplier check to shipment.</h2>
+  <p class="who-intro" data-en="You don't need to understand China's supply chain — that's what we're here for. Start wherever you are; not every buyer needs all five steps." data-es="No necesita entender la cadena de suministro china — para eso estamos aquí. Empiece donde esté; no todos los compradores necesitan los cinco pasos.">You don't need to understand China's supply chain — that's what we're here for. Start wherever you are; not every buyer needs all five steps.</p>
+  <div class="how-flow-5">
     <div class="how-step-v2">
       <div class="how-num-v2">01</div>
       <h3 data-en="Remote Supplier Check" data-es="Revisión Remota de Proveedor">Remote Supplier Check</h3>
       <p data-en="Already have a supplier? A fast remote check — company registration, manufacturer vs. trader, payment-account match. $49, 48 hours." data-es="¿Ya tiene un proveedor? Una revisión remota rápida — registro de la empresa, fabricante o comercializadora, coincidencia de cuenta de pago. $49, 48 horas.">Already have a supplier? A fast remote check — company registration, manufacturer vs. trader, payment-account match. $49, 48 hours.</p>
       <div class="trust-line" data-en="The lowest-commitment way to start — no on-site visit required." data-es="La forma de empezar con menor compromiso — sin necesidad de visita presencial.">The lowest-commitment way to start — no on-site visit required.</div>
-      <a href="#remote-check" class="path-link" data-en="Start here — $49 →" data-es="Empiece aquí — $49 →" style="display:inline-block;margin-top:0.6rem">Start here — $49 →</a>
+      <a href="#remote-check" class="path-link" data-en="Start here — $49 →" data-es="Empiece aquí — $49 →">Start here — $49 →</a>
     </div>
     <div class="how-step-v2">
       <div class="how-num-v2">02</div>
       <h3 data-en="On-Site Factory Verification" data-es="Verificación de Fábrica en Sitio">On-Site Factory Verification</h3>
       <p data-en="We go in person — business license, production line, your product checked against spec. From $449." data-es="Vamos en persona — licencia comercial, línea de producción, su producto contra la ficha técnica. Desde $449.">We go in person — business license, production line, your product checked against spec. From $449.</p>
       <div class="trust-line" data-en="The $49 remote check is credited toward this if you've already done one." data-es="La revisión remota de $49 se descuenta de este costo si ya la hizo.">The $49 remote check is credited toward this if you've already done one.</div>
-      <a href="#services" class="path-link" data-en="See verification pricing →" data-es="Ver precios de verificación →" style="display:inline-block;margin-top:0.6rem">See verification pricing →</a>
+      <a href="#services" class="path-link" data-en="See verification pricing →" data-es="Ver precios de verificación →">See verification pricing →</a>
     </div>
     <div class="how-step-v2">
       <div class="how-num-v2">03</div>
       <h3 data-en="Production Follow-Up &amp; Pre-Shipment Inspection" data-es="Seguimiento de Producción e Inspección Final">Production Follow-Up &amp; Pre-Shipment Inspection</h3>
       <p data-en="On-site, milestone by milestone, through to a $399 pre-shipment inspection before your goods leave China." data-es="Presencial, hito por hito, hasta una inspección final de $399 antes de que su mercancía salga de China.">On-site, milestone by milestone, through to a $399 pre-shipment inspection before your goods leave China.</p>
       <div class="trust-line" data-en="We stay until your order ships correctly — not just one visit and walk away." data-es="Nos quedamos hasta que su pedido salga bien — no solo una visita y adiós.">We stay until your order ships correctly — not just one visit and walk away.</div>
-      <a href="#services" class="path-link" data-en="See inspection pricing →" data-es="Ver precios de inspección →" style="display:inline-block;margin-top:0.6rem">See inspection pricing →</a>
+      <a href="#services" class="path-link" data-en="See inspection pricing →" data-es="Ver precios de inspección →">See inspection pricing →</a>
     </div>
     <div class="how-step-v2">
       <div class="how-num-v2">04</div>
       <h3 data-en="Procurement Partner" data-es="Socio de Compras">Procurement Partner</h3>
       <p data-en="Don't have a supplier yet? We source, negotiate, and warehouse in Guangzhou — storage, consolidation, packing, quality checks — as your ongoing team." data-es="¿Aún no tiene proveedor? Buscamos, negociamos y almacenamos en Guangzhou — inventario, consolidación, empaque, control de calidad — como su equipo permanente.">Don't have a supplier yet? We source, negotiate, and warehouse in Guangzhou — storage, consolidation, packing, quality checks — as your ongoing team.</p>
       <div class="trust-line" data-en="Selective — built for buyers ready for a long-term relationship, not one-off orders." data-es="Selectivo — pensado para compradores listos para una relación a largo plazo, no pedidos aislados.">Selective — built for buyers ready for a long-term relationship, not one-off orders.</div>
-      <a href="#contact" data-service="Procurement Partner (long-term)" class="path-link" data-en="Talk to us about partnering →" data-es="Hablemos de ser socios →" style="display:inline-block;margin-top:0.6rem">Talk to us about partnering →</a>
+      <a href="#contact" data-service="Procurement Partner (long-term)" class="path-link" data-en="Talk to us about partnering →" data-es="Hablemos de ser socios →">Talk to us about partnering →</a>
     </div>
     <div class="how-step-v2">
       <div class="how-num-v2">05</div>
       <h3 data-en="Freight, Customs &amp; Payment" data-es="Flete, Aduana y Pagos">Freight, Customs &amp; Payment</h3>
       <p data-en="International shipping, customs clearance and payment are handled through partners we coordinate — not performed by us directly." data-es="El flete internacional, el despacho aduanal y los pagos se gestionan a través de socios que coordinamos — no los realizamos directamente nosotros.">International shipping, customs clearance and payment are handled through partners we coordinate — not performed by us directly.</p>
       <div class="trust-line" data-en="Ask us how this works for your specific shipment." data-es="Pregúntenos cómo funciona esto para su embarque específico.">Ask us how this works for your specific shipment.</div>
-      <a href="#contact" class="path-link" data-en="Ask how this works →" data-es="Pregunte cómo funciona →" style="display:inline-block;margin-top:0.6rem">Ask how this works →</a>
+      <a href="#contact" class="path-link" data-en="Ask how this works →" data-es="Pregunte cómo funciona →">Ask how this works →</a>
     </div>
   </div>
-</section>
-
-<section class="paths" id="paths">
-  <div class="section-tag" data-en="Two Ways to Work With Us" data-es="Dos Formas de Trabajar con Nosotros">Two Ways to Work With Us</div>
-  <h2 class="section-title" data-en="Already found a factory? Or need us to open the door?" data-es="¿Ya encontró una fábrica? ¿O necesita que le abramos la puerta?">Already found a factory? Or need us to open the door?</h2>
+</div></section>
+<section class="sec alt" id="paths"><div class="sv-wrap">
+  <div class="section-title" data-en="Two Ways to Work With Us" data-es="Dos Formas de Trabajar con Nosotros">Two Ways to Work With Us</div>
+  <h2 class="section-lead" data-en="Already found a factory? Or need us to open the door?" data-es="¿Ya encontró una fábrica? ¿O necesita que le abramos la puerta?">Already found a factory? Or need us to open the door?</h2>
   <div class="paths-grid">
     <div class="path-card">
-      <div class="path-icon">🔍</div>
+      <div class="path-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
       <div class="path-tag" data-en="Path 1 — Independent Verification" data-es="Camino 1 — Verificación Independiente">Path 1 — Independent Verification</div>
       <h3 data-en="You found the factory. We confirm it's real." data-es="Usted encontró la fábrica. Nosotros confirmamos que es real.">You found the factory. We confirm it's real.</h3>
       <p data-en="You already have a listing from Alibaba or 1688. Send it to us and we verify it in person — as an independent third party, camera in hand, zero commission from the factory. You get the evidence before you ever send a deposit. Want us to also negotiate and place the order for you? That's a separate, optional step — 10% of the order value, only if you ask." data-es="Ya tiene una ficha de Alibaba o 1688. Envíenosla y la verificamos en persona — como tercero independiente, cámara en mano, sin comisión de la fábrica. Recibe la evidencia antes de enviar el depósito. ¿Quiere que también negociemos y coloquemos el pedido por usted? Es un paso aparte y opcional — 10% del valor del pedido, solo si lo pide.">You already have a listing from Alibaba or 1688. Send it to us and we verify it in person — as an independent third party, camera in hand, zero commission from the factory. You get the evidence before you ever send a deposit. Want us to also negotiate and place the order for you? That's a separate, optional step — 10% of the order value, only if you ask.</p>
       <a href="/verification-services" class="path-link" data-en="See verification services →" data-es="Ver servicios de verificación →">See verification services →</a>
     </div>
     <div class="path-card">
-      <div class="path-icon">🤝</div>
+      <div class="path-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
       <div class="path-tag" data-en="Path 2 — Procurement Partner" data-es="Camino 2 — Socio de Compras">Path 2 — Procurement Partner</div>
       <h3 data-en="Don't have a factory yet? We become your supply chain team." data-es="¿Aún no tiene fábrica? Nos convertimos en su equipo de cadena de suministro.">Don't have a factory yet? We become your supply chain team.</h3>
       <p data-en="Beyond a one-time inspection, we put our own network in Guangzhou to work for you as an ongoing partner — connecting you with factories we already trust, warehousing your goods, and keeping quality control in place at every stage. One accountable partner for the whole chain, not a new vendor for every step." data-es="Más allá de una inspección puntual, ponemos nuestra propia red en Guangzhou a su servicio como socio permanente — conectándole con fábricas en las que ya confiamos, almacenando su mercancía y manteniendo el control de calidad en cada etapa. Un solo socio responsable para toda la cadena, no un proveedor distinto para cada paso.">Beyond a one-time inspection, we put our own network in Guangzhou to work for you as an ongoing partner — connecting you with factories we already trust, warehousing your goods, and keeping quality control in place at every stage. One accountable partner for the whole chain, not a new vendor for every step.</p>
-      <p class="path-note" data-en="This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders." data-es="Este camino es selectivo — pensado para compradores listos para crecer en una relación a largo plazo, no pedidos aislados.">This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders.</p>
+      <details class="m-more" open><summary data-en="More details" data-es="Más detalles">More details</summary><p class="path-note" data-en="This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders." data-es="Este camino es selectivo — pensado para compradores listos para crecer en una relación a largo plazo, no pedidos aislados.">This path is selective — built for buyers ready to grow into a long-term relationship, not one-off orders.</p>
       <p class="path-note" data-en="Our own team in Guangzhou handles sourcing, factory verification, negotiation, production follow-up and warehousing (storage, consolidation, packing and quality checks). For every order we handle through this service, we inspect the goods at the factory before they leave China, on camera, and send you the video (every unit on small batches, agreed sampling on large orders). International freight, customs clearance and payments are handled through partners we coordinate." data-es="Nuestro propio equipo en Guangzhou se encarga de la búsqueda de proveedores, la verificación de fábricas, la negociación, el seguimiento de producción y el almacenamiento (inventario, consolidación, empaque y control de calidad). En cada pedido que manejamos con este servicio, inspeccionamos la mercancía en la fábrica antes de que salga de China, frente a cámara, y le enviamos el video (cada unidad en lotes pequeños, muestreo acordado en pedidos grandes). El flete internacional, el despacho aduanal y los pagos se gestionan a través de socios que coordinamos.">Our own team in Guangzhou handles sourcing, factory verification, negotiation, production follow-up and warehousing (storage, consolidation, packing and quality checks). For every order we handle through this service, we inspect the goods at the factory before they leave China, on camera, and send you the video (every unit on small batches, agreed sampling on large orders). International freight, customs clearance and payments are handled through partners we coordinate.</p>
-      <a href="/china-sourcing-agent" class="path-link" data-en="How our China sourcing agent works →" data-es="Cómo funciona nuestro agente de compras →">How our China sourcing agent works →</a>
+      </details><a href="/china-sourcing-agent" class="path-link" data-en="How our China sourcing agent works →" data-es="Cómo funciona nuestro agente de compras →">How our China sourcing agent works →</a>
       <a href="/china-sourcing-process" class="path-link" data-en="See the process, factory to your door →" data-es="Vea el proceso, de la fábrica a su puerta →">See the process, factory to your door →</a>
       <a href="#contact" data-service="Procurement Partner (long-term)" class="path-link" data-en="Talk to us about partnering →" data-es="Hablemos de ser socios →">Talk to us about partnering →</a>
     </div>
   </div>
-</section>
-
-<section class="services" id="services">
-  <div class="section-tag" data-en="Our Services" data-es="Nuestros Servicios">Our Services</div>
-  <h2 class="section-title" data-en="Everything you need to source from China — safely." data-es="Todo lo que necesita para importar desde China — con seguridad.">Everything you need to source from China — safely.</h2>
+</div></section>
+<section class="sec" id="services"><div class="sv-wrap">
+  <div class="section-title" data-en="Our Services" data-es="Nuestros Servicios">Our Services</div>
+  <h2 class="section-lead" data-en="Everything you need to source from China — safely." data-es="Todo lo que necesita para importar desde China — con seguridad.">Everything you need to source from China — safely.</h2>
   <div class="services-grid-8">
     <div class="svc-card">
-      <div class="svc-icon">🔍</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
       <div class="svc-price-tag" data-en="$49" data-es="$49">$49</div>
       <h3 data-en="Remote Supplier Check" data-es="Revisión Remota de Proveedor">Remote Supplier Check</h3>
       <p data-en="A fast remote check before you commit further — company registration, manufacturer vs. trader, address and payment-account match. Written report within 48 hours. Not a substitute for an on-site visit, but it tells you if you need one." data-es="Un filtro remoto rápido antes de comprometerse más — registro de la empresa, fabricante o comercializadora, dirección y cuenta de pago. Reporte escrito en 48 horas. No sustituye una visita en sitio, pero le dice si la necesita.">A fast remote check before you commit further — company registration, manufacturer vs. trader, address and payment-account match. Written report within 48 hours. Not a substitute for an on-site visit, but it tells you if you need one.</p>
     </div>
-    <div class="svc-card">
-      <div class="svc-icon">🏭</div>
+    <div class="svc-card" id="svc-factory">
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1M12 18h1M7 18h1"/></svg></div>
       <span class="sv-off"><b>-20%</b><i data-en="after a detailed consultation" data-es="tras una consulta detallada">after a detailed consultation</i></span><div class="svc-price-tag" data-en="From $449" data-es="Desde $449">From $449</div>
       <h3 data-en="Factory Verification" data-es="Verificación de Fábrica">Factory Verification</h3>
       <p data-en="Confirm legitimacy, production capacity, and real conditions on the ground. No more deposits for phantom factories." data-es="Confirme existencia, capacidad productiva y condiciones reales. Sin más depósitos para fábricas fantasma.">Confirm legitimacy, production capacity, and real conditions on the ground. No more deposits for phantom factories.</p>
     </div>
     <div class="svc-card">
-      <div class="svc-icon">📹</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg></div>
       <a class="svc-pl" href="/live-video-factory-verification"><div class="svc-price-tag" data-en="$120/hour" data-es="$120/hora">$120/hour</div></a>
       <h3 data-en="Live Video Factory Verification" data-es="Verificación de Fábrica por Videollamada en Vivo">Live Video Factory Verification</h3>
       <p data-en="Our team walks the factory on live HD video while you direct the call, in English and Spanish. $120 per hour, one-hour minimum, recording within 24 hours. No written report." data-es="Nuestro equipo recorre la fábrica en videollamada HD en vivo y usted dirige la llamada, en español e inglés. $120 por hora, mínimo una hora, grabación en 24 horas. Sin informe escrito.">Our team walks the factory on live HD video while you direct the call, in English and Spanish. $120 per hour, one-hour minimum, recording within 24 hours. No written report.</p>
     </div>
     <div class="svc-card">
-      <div class="svc-icon">👁️</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></svg></div>
       <span class="sv-off"><b>-20%</b><i data-en="after a detailed consultation" data-es="tras una consulta detallada">after a detailed consultation</i></span><a class="svc-pl" href="/supply-chain-supervision-china"><div class="svc-price-tag" data-en="From $399/day" data-es="Desde $399/día">From $399/day</div></a>
       <h3 data-en="On-site Supervision" data-es="Supervisión Presencial">On-site Supervision</h3>
       <p data-en="Continuous production monitoring. Stop chasing suppliers daily — we're on the factory floor so you don't have to be." data-es="Supervisión continua de producción. Deje de perseguir al proveedor — estamos en la fábrica por usted.">Continuous production monitoring. Stop chasing suppliers daily — we're on the factory floor so you don't have to be.</p>
     </div>
-    <div class="svc-card">
-      <div class="svc-icon">✅</div>
+    <div class="svc-card" id="svc-inspection">
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg></div>
       <span class="sv-off"><b>-20%</b><i data-en="after a detailed consultation" data-es="tras una consulta detallada">after a detailed consultation</i></span><a class="svc-pl" href="/supply-chain-supervision-china"><div class="svc-price-tag" data-en="$399/man-day" data-es="$399/día-hombre">$399/man-day</div></a>
       <h3 data-en="Pre-Shipment Inspection" data-es="Inspección Previa al Envío">Pre-Shipment Inspection</h3>
       <p data-en="Quantity, appearance, packaging, function — every item checked against your specs before it leaves the factory." data-es="Cantidad, apariencia, empaque, función — cada artículo verificado contra sus especificaciones antes de salir.">Quantity, appearance, packaging, function — every item checked against your specs before it leaves the factory.</p>
     </div>
     <div class="svc-card">
-      <div class="svc-icon">📋</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg></div>
       <span class="sv-off"><b>-20%</b><i data-en="after a detailed consultation" data-es="tras una consulta detallada">after a detailed consultation</i></span><a class="svc-pl" href="/supply-chain-supervision-china"><div class="svc-price-tag" data-en="$499/man-day" data-es="$499/día-hombre">$499/man-day</div></a>
       <h3 data-en="Factory Audit" data-es="Auditoría de Fábrica">Factory Audit</h3>
       <p data-en="Deep review of supplier credentials, production capability, and compliance risk — before committing to a large order." data-es="Revisión profunda de credenciales, capacidad productiva y riesgos de cumplimiento — antes de comprometerse.">Deep review of supplier credentials, production capability, and compliance risk — before committing to a large order.</p>
     </div>
     <div class="svc-card">
-      <div class="svc-icon">🤝</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
       <div class="svc-price-tag" data-en="10% commission" data-es="10% comisión">10% commission</div>
       <h3 data-en="Sourcing &amp; Procurement" data-es="Abastecimiento y Compra">Sourcing &amp; Procurement</h3>
       <p data-en="The optional next step after verification — once your factory is confirmed real, we negotiate and place the order for you. Zero kickbacks from factories — every dollar you pay goes to the product, not a middleman." data-es="El paso opcional después de la verificación — una vez confirmada su fábrica, negociamos y colocamos el pedido por usted. Sin comisiones ocultas — cada dólar va al producto, no al intermediario.">The optional next step after verification — once your factory is confirmed real, we negotiate and place the order for you. Zero kickbacks from factories — every dollar you pay goes to the product, not a middleman.</p>
     </div>
     <div class="svc-card">
-      <div class="svc-icon">🏗️</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M14 6a6 6 0 0 1 6 6v3"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><rect x="2" y="15" width="20" height="4" rx="1"/></svg></div>
       <h3 data-en="Vertical Sourcing" data-es="Abastecimiento por Sector">Vertical Sourcing</h3>
       <p data-en="Construction / Custom Badges / Auto Parts and more. Serving buyers worldwide." data-es="Construcción / Insignias / Autopartes y más. Servicio a compradores de todo el mundo.">Construction / Custom Badges / Auto Parts and more. Serving buyers worldwide.</p>
     </div>
     <div class="svc-card">
-      <div class="svc-icon">🗣️</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></div>
       <h3 data-en="Bilingual Coordination" data-es="Coordinación Bilingüe">Bilingual Coordination</h3>
       <p data-en="EN/ES bilingual team talks directly to you and the factory. Less lost in translation. Fewer costly misunderstandings." data-es="Equipo bilingüe EN/ES habla directamente con usted y la fábrica. Menos información perdida. Menos errores costosos.">EN/ES bilingual team talks directly to you and the factory. Less lost in translation. Fewer costly misunderstandings.</p>
     </div>
     <div class="svc-card">
-      <div class="svc-icon">⚖️</div>
+      <div class="svc-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></div>
       <h3 data-en="Dispute Support" data-es="Apoyo en Disputas">Dispute Support</h3>
       <p data-en="Sourcing went wrong? We provide legal referrals and supplier dispute coordination when things don't go as planned." data-es="¿Algo salió mal? Ofrecemos derivación legal y coordinación de disputas cuando el proceso no va según lo planeado.">Sourcing went wrong? We provide legal referrals and supplier dispute coordination when things don't go as planned.</p>
     </div>
   </div>
   <p class="services-outro" data-en="Every service above is designed for one outcome: you receive the goods you ordered, at the price you agreed, without surprises. Consult us now — no commitment required." data-es="Cada servicio está diseñado para un solo resultado: recibe lo que pidió, al precio acordado, sin sorpresas. La primera consulta siempre es gratuita.">Every service above is designed for one outcome: you receive the goods you ordered, at the price you agreed, without surprises. Consult us now — no commitment required.</p>
-</section>
-
-<section class="who-section" id="who">
-  <div class="section-tag" data-en="Who We Work With" data-es="Con Quién Trabajamos">Who We Work With</div>
-  <h2 class="section-title" data-en="Built for bulk buyers worldwide." data-es="Hecho para compradores de gran volumen de todo el mundo.">Built for bulk buyers worldwide.</h2>
-  <div class="who-cards who-cards-single">
-    <div class="who-card who-card-wide">
-      <div class="who-icon">🌎</div>
-      <h3 data-en="Bulk Sourcing for Buyers Worldwide" data-es="Abastecimiento a Gran Escala para Compradores de Todo el Mundo">Bulk Sourcing for Buyers Worldwide</h3>
-      <p data-en="Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for buyers worldwide — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, custom badges, medals &amp; keychains, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to." data-es="Ya sea que compre directamente o represente a clientes en el extranjero, nos especializamos en compras de gran volumen para compradores de todo el mundo — acero y materiales de construcción, autopartes, iluminación LED personalizada, componentes de fibra de carbono, insignias, medallas y llaveros personalizados, y casas contenedoras expandibles. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores en Guangzhou, para que usted no tenga que hacerlo.">Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for buyers worldwide — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, custom badges, medals &amp; keychains, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to.</p>
-    </div>
-  </div>
-
-  <div class="who-footer who-founder-quote">
+</div></section>
+<section class="sec alt" id="who"><div class="sv-wrap"><div class="section-title" data-en="Who We Work With" data-es="Con Quién Trabajamos">Who We Work With</div>
+  <h2 class="section-lead" data-en="Built for bulk buyers worldwide." data-es="Hecho para compradores de gran volumen de todo el mundo.">Built for bulk buyers worldwide.</h2><p class="who-intro" data-en="Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for buyers worldwide — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, custom badges, medals &amp; keychains, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to." data-es="Ya sea que compre directamente o represente a clientes en el extranjero, nos especializamos en compras de gran volumen para compradores de todo el mundo — acero y materiales de construcción, autopartes, iluminación LED personalizada, componentes de fibra de carbono, insignias, medallas y llaveros personalizados, y casas contenedoras expandibles. Nos encargamos de la verificación de fábricas, inspección de calidad y coordinación de proveedores en Guangzhou, para que usted no tenga que hacerlo.">Whether you buy directly or represent clients overseas, we specialize in large-volume sourcing for buyers worldwide — steel and construction materials, auto parts, custom LED lighting, carbon fiber components, custom badges, medals &amp; keychains, and expandable container homes. We handle factory verification, quality inspection, and supplier coordination on the ground in Guangzhou, so you don't have to.</p><div class="grid-3 snap-x"><a class="pic-card" href="/categories/construction"><div class="pic"><img src="/images/expandable-house-factory-showroom.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></div><div class="pic-body"><div class="pic-cat" data-en="Construction" data-es="Construcción">Construction</div><h3 data-en="Expandable &amp; container homes" data-es="Casas expandibles y contenedor">Expandable & container homes</h3><p data-en="Verify construction material suppliers in China before you pay." data-es="Verifique proveedores de materiales de construcción en China antes de pagar.">Verify construction material suppliers in China before you pay.</p></div></a><a class="pic-card" href="/categories/auto-parts"><div class="pic"><img src="/images/carbon-fiber-auto-part-factory-check.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></div><div class="pic-body"><div class="pic-cat" data-en="Auto parts" data-es="Autopartes">Auto parts</div><h3 data-en="Wheels, LED lighting, carbon fiber" data-es="Rines, iluminación LED, fibra de carbono">Wheels, LED lighting, carbon fiber</h3><p data-en="We verify Chinese auto parts suppliers before you pay." data-es="Verificamos proveedores chinos de autopartes antes de pagar.">We verify Chinese auto parts suppliers before you pay.</p></div></a><a class="pic-card" href="/categories/badges-medals-keychains"><div class="pic"><img src="/images/badges-custom-award-medal.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></div><div class="pic-body"><div class="pic-cat" data-en="Badges &amp; medals" data-es="Insignias y medallas">Badges & medals</div><h3 data-en="Custom badges, medals &amp; keychains" data-es="Insignias, medallas y llaveros">Custom badges, medals & keychains</h3><p data-en="Enamel pins, challenge coins, on-site mold and plating checks." data-es="Pines de esmalte, monedas, verificación de molde en sitio.">Enamel pins, challenge coins, on-site mold and plating checks.</p></div></a></div><div class="who-footer who-founder-quote">
     <p class="who-founder-text" data-en="“Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company.”" data-es="“Una vez que confirma la fábrica, seguimos como su tercero independiente en planta — supervisando la producción para proteger la calidad y la fecha de entrega. Usted solo espera en WhatsApp los videos e información que le envío. Que el cliente tenga el control de cada cambio, en todo momento, es la razón por la que fundé esta empresa.”">"Once you've chosen the factory, we stay on as your independent third party on the ground — supervising production to protect quality and your delivery date. You just wait on WhatsApp for the videos and updates I send you. Giving clients control over every change, every step of the way, is the reason I started this company."</p>
     <p class="who-founder-name" data-en="— Zhang Peng (Miguel Lopez), Founder" data-es="— Zhang Peng (Miguel Lopez), Fundador">— Zhang Peng (Miguel Lopez), Founder</p>
     <a href="#contact" class="who-cta" data-en="Get in Touch →" data-es="Contáctenos →">Get in Touch →</a>
@@ -808,36 +489,34 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <div class="rating-summary" id="ratingSummary"></div>
     </div>
   </div>
-</section>
-
-<section class="why">
-  <div class="section-tag" data-en="Why Us" data-es="¿Por qué elegirnos?">Why Us</div>
-  <h2 class="section-title" data-en="We're on your side,<br>not the factory's." data-es="Estamos de su lado,<br>no del lado de la fábrica.">We're on your side,<br>not the factory's.</h2>
+</div></section>
+<section class="sec dark" id="why"><div class="sv-wrap">
+  <div class="section-title on-dark" data-en="Why Us" data-es="¿Por qué elegirnos?">Why Us</div>
+  <h2 class="section-lead on-dark" data-en="We're on your side,<br>not the factory's." data-es="Estamos de su lado,<br>no del lado de la fábrica.">We're on your side,<br>not the factory's.</h2>
   <div class="why-grid">
     <div class="why-card">
-      <div class="why-icon">📍</div>
+      <div class="why-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
       <h3 data-en="Based in Guangzhou" data-es="Con base en Guangzhou">Based in Guangzhou</h3>
       <p data-en="At the heart of China's largest manufacturing hub. We can reach most factories in Guangdong province the same day." data-es="En el corazón del mayor hub manufacturero de China. Podemos llegar a la mayoría de las fábricas en Guangdong el mismo día.">At the heart of China's largest manufacturing hub. We can reach most factories in Guangdong province the same day.</p>
     </div>
     <div class="why-card">
-      <div class="why-icon">🗣️</div>
+      <div class="why-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></div>
       <h3 data-en="Industry experts, not order-takers" data-es="Expertos del sector, no solo vendedores">Industry experts, not order-takers</h3>
       <p data-en="We catch what you really mean, not just what you type. Our team are industry specialists who know the product inside and out — far more than an Alibaba sales rep can tell you." data-es="Entendemos lo que realmente necesita, no solo sus palabras. Nuestro equipo son especialistas del sector que conocen el producto a fondo — mucho más de lo que le puede explicar un vendedor de Alibaba.">We catch what you really mean, not just what you type. Our team are industry specialists who know the product inside and out — far more than an Alibaba sales rep can tell you.</p>
     </div>
-    <div class="why-card why-card-highlight reveal-water">
-      <div class="why-icon">🤝</div>
+    <div class="why-card why-card-highlight">
+      <div class="why-icon"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
       <h3 data-en="Purchasing commission only if the order goes ahead" data-es="Comisión de compra solo si hay pedido">Purchasing commission only if the order goes ahead</h3>
       <p data-en="<strong>We receive zero commission from factories.</strong> The 10% purchasing commission is only charged if the order goes ahead. Verification services have a fixed price." data-es="<strong>No recibimos comisión de las fábricas.</strong> La comisión de compra (10%) solo se cobra si se concreta el pedido. Los servicios de verificación tienen precio fijo."><strong>We receive zero commission from factories.</strong> The 10% purchasing commission is only charged if the order goes ahead. Verification services have a fixed price.</p>
       <a class="why-link" href="/impartiality" data-en="Read our impartiality statement →" data-es="Lea nuestra declaración de imparcialidad →">Read our impartiality statement →</a>
     </div>
   </div>
-  <p style="text-align:center;margin-top:2rem"><a class="why-link" style="color:#fff;font-weight:500;text-decoration:underline" href="/why-sourciavera" data-en="Why SourciaVera, compared with larger inspection companies →" data-es="Por qué SourciaVera, frente a las empresas de inspección más grandes →">Why SourciaVera, compared with larger inspection companies →</a></p>
-</section>
-
-<section class="how" id="process">
-  <div class="section-tag" data-en="How It Works" data-es="Cómo Funciona">How It Works</div>
-  <h2 class="section-title" data-en="From your first message to goods at your door — five steps." data-es="Desde su primer mensaje hasta la mercancía en su puerta — cinco pasos.">From your first message to goods at your door — five steps.</h2>
-  <div class="how-flow-5">
+  <p class="why-more"><a class="why-link" href="/why-sourciavera" data-en="Why SourciaVera, compared with larger inspection companies →" data-es="Por qué SourciaVera, frente a las empresas de inspección más grandes →">Why SourciaVera, compared with larger inspection companies →</a></p>
+</div></section>
+<section class="sec alt" id="process"><div class="sv-wrap">
+  <div class="section-title" data-en="How It Works" data-es="Cómo Funciona">How It Works</div>
+  <h2 class="section-lead" data-en="From your first message to goods at your door — five steps." data-es="Desde su primer mensaje hasta la mercancía en su puerta — cinco pasos.">From your first message to goods at your door — five steps.</h2>
+  <figure class="route-map"><div class="ill"><img src="/images/guangzhou-latam-auto-parts-route-map.webp" alt="Illustrated shipping route map from Guangzhou, China to Los Angeles, Lázaro Cárdenas, Colón, Callao and Chile, with auto parts cargo" width="1376" height="768" loading="lazy" decoding="async"><span class="ill-tag" data-en="Illustrative image" data-es="Imagen ilustrativa">Illustrative image</span></div></figure><div class="how-flow-5">
     <div class="how-step-v2">
       <div class="how-num-v2">01</div>
       <h3 data-en="Submit Requirements" data-es="Envíe sus Necesidades">Submit Requirements</h3>
@@ -856,7 +535,7 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <p data-en="Transparent pricing from $449. On-site visit with unedited video — what you see is what exists." data-es="Precios transparentes desde $449. Visita presencial con video sin editar — lo que ve es lo que existe.">Transparent pricing from $449. On-site visit with unedited video — what you see is what exists.</p>
       <div class="trust-line" data-en="Seeing is believing. We film every factory visit, so you see what actually exists." data-es="Ver para creer. Grabamos cada visita a la fábrica, para que usted vea lo que realmente existe.">Seeing is believing. We film every factory visit, so you see what actually exists.</div>
     </div>
-    <div class="how-step-v2 step-featured reveal-water">
+    <div class="how-step-v2 step-featured">
       <div class="step-vs-badge" data-en="vs. one-time inspection" data-es="vs. inspección única">vs. one-time inspection</div>
       <div class="how-num-v2">04</div>
       <h3 data-en="Ongoing Supervision" data-es="Seguimiento Continuo">Ongoing Supervision</h3>
@@ -870,30 +549,12 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <div class="trust-line" data-en="Before your goods leave China, you see the inspection results and decide." data-es="Antes de que la mercancía salga de China, usted ve los resultados de la inspección y decide.">Before your goods leave China, you see the inspection results and decide.</div>
     </div>
   </div>
-</section>
-
-<section class="cases-section" id="cases">
-  <div class="section-tag" data-en="Real Cases" data-es="Casos Reales">Real Cases</div>
-  <h2 class="section-title" data-en="What a verification looks like in practice." data-es="Cómo se ve una verificación en la práctica.">What a verification looks like in practice.</h2>
-  <div class="case-grid">
-    <div class="case-card">
-      <img src="/images/auto-parts-byd-wheel-rim.webp" alt="BYD Dolphin Mini (Seagull) spare wheel and tire from the verified order" width="393" height="630" loading="lazy">
-      <div class="case-body">
-        <div class="case-tag" data-en="Wheel verification · Latin American buyer" data-es="Verificación de rines · Comprador latinoamericano">Wheel verification · Latin American buyer</div>
-        <h3 data-en="BYD Dolphin Mini (Seagull) spare wheel" data-es="Rin de refacción BYD Dolphin Mini (Seagull)">BYD Dolphin Mini (Seagull) spare wheel</h3>
-        <p data-en="The supplier's first spec sheet listed the offset as ET 54.1 — which is actually the center bore. We asked for a formal, stamped spec sheet, and the supplier corrected it to the real offset: ET 30." data-es="La primera ficha técnica del proveedor indicaba el offset como ET 54.1, que en realidad es el buje central (CB). Exigimos una ficha técnica sellada por el proveedor y la fábrica lo corrigió al offset real: ET 30.">The supplier's first spec sheet listed the offset as ET 54.1 — which is actually the center bore. We asked for a formal, stamped spec sheet, and the supplier corrected it to the real offset: ET 30.</p>
-        <a class="path-link lang-en" href="/blog/case-study-byd-seagull-spare-wheel-offset">Read the full case →</a>
-        <a class="path-link lang-es" href="/blog/es/caso-verificacion-llanta-refaccion-byd-seagull">Leer el caso completo →</a>
-        <a class="path-link lang-en" href="/data/mexico-auto-parts-imports-china-tariff-reform-2026">Data: Mexico's auto parts imports from China →</a>
-        <a class="path-link lang-es" href="/es/datos/autopartes-china-mexico-importaciones-reforma-arancelaria-2026">Datos: importaciones de autopartes de China a México →</a>
-      </div>
-    </div>
-    <!-- TODO (owner): sample factory-verification report card -- add here once the report page is published -->
-    <!-- TODO (owner): factory verification video card -- add here once a YouTube link is provided; no illustrations or stock images -->
-  </div>
-</section>
-
-<div class="testimonials-wrap" id="reviews">
+</div></section>
+<section class="sec alt" id="cases"><div class="sv-wrap">
+  <div class="section-title" data-en="Real Cases" data-es="Casos Reales">Real Cases</div>
+  <h2 class="section-lead" data-en="What a verification looks like in practice." data-es="Cómo se ve una verificación en la práctica.">What a verification looks like in practice.</h2>
+  <div class="grid-3 snap-x"><div class="pic-card"><div class="pic"><img src="/images/auto-parts-byd-wheel-rim.webp" alt="BYD Dolphin Mini (Seagull) spare wheel and tire from the verified order" width="393" height="630" loading="lazy" decoding="async"></div><div class="pic-body"><div class="pic-cat" data-en="Wheel verification · Latin American buyer" data-es="Verificación de rines · Comprador latinoamericano">Wheel verification · Latin American buyer</div><h3 data-en="BYD Dolphin Mini (Seagull) spare wheel" data-es="Rin de refacción BYD Dolphin Mini (Seagull)">BYD Dolphin Mini (Seagull) spare wheel</h3><p data-en="The supplier's first spec sheet listed the offset as ET 54.1 — which is actually the center bore. We asked for a formal, stamped spec sheet, and the supplier corrected it to the real offset: ET 30." data-es="La primera ficha técnica del proveedor indicaba el offset como ET 54.1, que en realidad es el buje central (CB). Exigimos una ficha técnica sellada por el proveedor y la fábrica lo corrigió al offset real: ET 30.">The supplier's first spec sheet listed the offset as ET 54.1 — which is actually the center bore. We asked for a formal, stamped spec sheet, and the supplier corrected it to the real offset: ET 30.</p><a class="path-link lang-en" href="/blog/case-study-byd-seagull-spare-wheel-offset">Read the full case →</a><a class="path-link lang-es" href="/blog/es/caso-verificacion-llanta-refaccion-byd-seagull">Leer el caso completo →</a><a class="path-link lang-en" href="/data/mexico-auto-parts-imports-china-tariff-reform-2026">Data: Mexico's auto parts imports from China →</a><a class="path-link lang-es" href="/es/datos/autopartes-china-mexico-importaciones-reforma-arancelaria-2026">Datos: importaciones de autopartes de China a México →</a></div></div><a class="pic-card" href="/blog/case-study-guatemala-expandable-homes"><div class="pic"><img src="/images/case-guatemala-factory-hall.webp" alt="" width="800" height="500" loading="lazy" decoding="async"></div><div class="pic-body"><div class="pic-cat" data-en="Real case · Guatemala" data-es="Caso real · Guatemala">Real case · Guatemala</div><h3 data-en="Expandable homes for a first test order" data-es="Casas expandibles para un primer pedido de prueba">Expandable homes for a first test order</h3><p data-en="Climate upgrades, one-container math and a factory visit." data-es="Mejoras por el clima, un solo contenedor y una visita a la fábrica.">Climate upgrades, one-container math and a factory visit.</p></div></a><a class="pic-card" href="/data/mexico-auto-parts-imports-china-tariff-reform-2026"><div class="pic"><img src="/images/mexico-auto-parts-imports-china-tariff-reform-2026-og.jpg" alt="" width="800" height="500" loading="lazy" decoding="async"></div><div class="pic-body"><div class="pic-cat" data-en="Data · Mexico" data-es="Datos · México">Data · Mexico</div><h3 data-en="Auto parts imports from China (HS 8708)" data-es="Importaciones de autopartes de China (SA 8708)">Auto parts imports from China (HS 8708)</h3><p data-en="US$2,449 million, Feb–Jul 2026 (−0.8%), from UN Comtrade." data-es="US$2,449 millones de febrero a julio de 2026 (−0.8%), según UN Comtrade.">US$2,449 million, Feb–Jul 2026 (−0.8%), from UN Comtrade.</p></div></a></div></div></section>
+<div class="testimonials-wrap" id="reviews"><div class="sv-wrap">
   <div class="testimonials-grid">
     <div class="testimonial-card">
       <p class="testimonial-name">Carlos Mendoza <svg class="flag-icon" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mexico"><rect width="1" height="2" fill="#006847"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#CE1126"/></svg></p>
@@ -913,16 +574,14 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <img src="/images/testimonial-jorge-garza.webp" alt="Jorge Garza" class="testimonial-photo" width="64" height="64" loading="lazy">
       <p class="testimonial-text" data-en="“Hey, my friend! I wanted to thank you for the excellent wheel rim inspection. We had doubts about this new supplier since their prices were lower, but with the live WhatsApp videos testing the balance and the varnish finish, you gave us 100% confidence.<br><br>Your quick response and direct communication made all the difference. We've already approved production for the container to Manzanillo. Let's stay in touch for the next shipment!”" data-es="“¡Qué tal, amigo! Quería agradecerte por la excelente inspección de los rines. Teníamos dudas con este nuevo proveedor por tener precios más bajos, pero con los videos en vivo por WhatsApp probando el balanceo y el acabado del barniz, nos diste un 100% de confianza.<br><br>Tu respuesta rápida y la comunicación tan directa marcaron toda la diferencia. Ya aprobamos la producción para el contenedor hacia Manzanillo. ¡Seguimos en contacto para el próximo envío!”">"Hey, my friend! I wanted to thank you for the excellent wheel rim inspection. We had doubts about this new supplier since their prices were lower, but with the live WhatsApp videos testing the balance and the varnish finish, you gave us 100% confidence.<br><br>Your quick response and direct communication made all the difference. We've already approved production for the container to Manzanillo. Let's stay in touch for the next shipment!"</p>
     </div>
-    <!-- Add more .testimonial-card blocks here as new client testimonials come in -->
-  </div>
-</div>
+    
+  </div></div></div>
 
-
-<section class="faq" id="faq-shows">
+<section class="sec alt" id="faq-shows"><div class="sv-wrap">
   <div class="faq-inner">
 
-      <div class="section-tag" data-en="FAQ" data-es="FAQ">FAQ</div>
-      <h2 class="section-title" data-en="Frequently Asked Questions" data-es="Preguntas Frecuentes">Frequently Asked Questions</h2>
+      <div class="section-title" data-en="FAQ" data-es="FAQ">FAQ</div>
+      <h2 class="section-lead" data-en="Frequently Asked Questions" data-es="Preguntas Frecuentes">Frequently Asked Questions</h2>
 
       <div class="faq-layout">
       <div class="faq-list">
@@ -1021,8 +680,8 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
           <span class="faq-toggle">+</span>
         </button>
         <div class="faq-a">
-          <div class="faq-a-inner lang-en">Our standard rates: Remote Supplier Check — <strong>$49</strong> (credited toward a full verification if you upgrade). Factory Verification Visit — <strong>$449</strong>. Pre-Shipment Inspection — <strong>$399/man-day</strong>. Factory Audit — <strong>$499/man-day</strong>. Live Video Factory Verification — <strong>$120/hour</strong> (one-hour minimum). Sourcing &amp; procurement — <strong>10% of order value</strong>. Consult us now — no commitment required. <strong style="color:#D62828">After a detailed consultation with our team, all listed prices (except the Remote Supplier Check and Live Video Factory Verification) are 20% off.</strong></div>
-          <div class="faq-a-inner lang-es">Nuestras tarifas estándar: Revisión Remota de Proveedor — <strong>$49</strong> (se descuenta del costo si luego continúa con la verificación completa). Visita de Verificación de Fábrica — <strong>$449</strong>. Inspección Previa al Envío — <strong>$399/día-hombre</strong>. Auditoría de Fábrica — <strong>$499/día-hombre</strong>. Verificación de Fábrica por Videollamada en Vivo — <strong>$120/hora</strong> (mínimo una hora). Abastecimiento y compras — <strong>10% del valor del pedido</strong>. La primera consulta siempre es gratuita. <strong style="color:#D62828">Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota y la Verificación de Fábrica por Videollamada en Vivo) tienen un 20% de descuento.</strong></div>
+          <div class="faq-a-inner lang-en">Our standard rates: Remote Supplier Check — <strong>$49</strong> (credited toward a full verification if you upgrade). Factory Verification Visit — <strong>$449</strong>. Pre-Shipment Inspection — <strong>$399/man-day</strong>. Factory Audit — <strong>$499/man-day</strong>. Live Video Factory Verification — <strong>$120/hour</strong> (one-hour minimum). Sourcing &amp; procurement — <strong>10% of order value</strong>. Consult us now — no commitment required. <strong>After a detailed consultation with our team, all listed prices (except the Remote Supplier Check and Live Video Factory Verification) are 20% off.</strong></div>
+          <div class="faq-a-inner lang-es">Nuestras tarifas estándar: Revisión Remota de Proveedor — <strong>$49</strong> (se descuenta del costo si luego continúa con la verificación completa). Visita de Verificación de Fábrica — <strong>$449</strong>. Inspección Previa al Envío — <strong>$399/día-hombre</strong>. Auditoría de Fábrica — <strong>$499/día-hombre</strong>. Verificación de Fábrica por Videollamada en Vivo — <strong>$120/hora</strong> (mínimo una hora). Abastecimiento y compras — <strong>10% del valor del pedido</strong>. La primera consulta siempre es gratuita. <strong>Tras una consulta detallada con nuestro equipo, todos los precios publicados (excepto la Revisión Remota y la Verificación de Fábrica por Videollamada en Vivo) tienen un 20% de descuento.</strong></div>
         </div>
       </div>
 
@@ -1102,193 +761,92 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       </div>
 
   </div>
-</section>
-
-<section class="remote-check" id="remote-check" style="background:var(--light);padding:4rem 3rem;">
-  <div style="max-width:45rem;margin:0 auto;text-align:center">
-    <div class="section-tag" data-en="Start Here" data-es="Empiece Aquí">Start Here</div>
-    <h2 class="section-title" data-en="Not Sure Yet? Start With a $49 Remote Check" data-es="¿No Está Seguro Todavía? Empiece con una Revisión Remota de $49">Not Sure Yet? Start With a $49 Remote Check</h2>
+</div></section>
+<section class="sec" id="remote-check"><div class="sv-wrap">
+  <div class="rc-inner">
+    <div class="section-title" data-en="Start Here" data-es="Empiece Aquí">Start Here</div>
+    <h2 class="section-lead" data-en="Not Sure Yet? Start With a $49 Remote Check" data-es="¿No Está Seguro Todavía? Empiece con una Revisión Remota de $49">Not Sure Yet? Start With a $49 Remote Check</h2>
     <p data-en="Before committing to a full on-site verification, we check the basics remotely: company registration, manufacturer vs. trader, address, and whether the payment account matches the company name. Report delivered within 48 hours after we receive payment and the supplier details, in English or Spanish as you prefer." data-es="Antes de comprometerse con una verificación completa en sitio, revisamos lo básico de forma remota: registro de la empresa, si es fabricante o comercializadora, dirección, y si la cuenta de pago coincide con el nombre de la empresa. Entrega del reporte en 48 horas a partir de recibir el pago y los datos del proveedor, en español o en inglés, a su elección.">Before committing to a full on-site verification, we check the basics remotely: company registration, manufacturer vs. trader, address, and whether the payment account matches the company name. Report delivered within 48 hours after we receive payment and the supplier details, in English or Spanish as you prefer.</p>
-    <p style="font-size:0.85rem;color:var(--muted)" data-en="This is a remote check, not an on-site factory visit — the result is either &quot;lower risk&quot; or &quot;we recommend an on-site verification.&quot; The $49 is credited toward a full Factory Verification if you continue." data-es="Esto es una revisión remota, no una visita a la fábrica — el resultado es &quot;riesgo más bajo&quot; o &quot;recomendamos verificación en sitio.&quot; Los $49 se descuentan del costo si luego continúa con la Verificación de Fábrica completa.">This is a remote check, not an on-site factory visit — the result is either "lower risk" or "we recommend an on-site verification." The $49 is credited toward a full Factory Verification if you continue.</p>
-    <p style="font-size:0.85rem;color:var(--muted)" data-en="We take a limited number of checks each week. If this week is full, we'll confirm the next available date." data-es="Atendemos un número limitado de revisiones por semana. Si el cupo de esta semana está lleno, le confirmamos la fecha disponible.">We take a limited number of checks each week. If this week is full, we'll confirm the next available date.</p>
-  </div>
-  <form id="remote-check-form" action="https://formspree.io/f/mjgjqpbg" method="POST" enctype="multipart/form-data" style="max-width:35rem;margin:2rem auto 0">
+    <details class="m-more" open><summary data-en="More details" data-es="Más detalles">More details</summary><p class="rc-note" data-en="This is a remote check, not an on-site factory visit — the result is either &quot;lower risk&quot; or &quot;we recommend an on-site verification.&quot; The $49 is credited toward a full Factory Verification if you continue." data-es="Esto es una revisión remota, no una visita a la fábrica — el resultado es &quot;riesgo más bajo&quot; o &quot;recomendamos verificación en sitio.&quot; Los $49 se descuentan del costo si luego continúa con la Verificación de Fábrica completa.">This is a remote check, not an on-site factory visit — the result is either "lower risk" or "we recommend an on-site verification." The $49 is credited toward a full Factory Verification if you continue.</p>
+    <p class="rc-note" data-en="We take a limited number of checks each week. If this week is full, we'll confirm the next available date." data-es="Atendemos un número limitado de revisiones por semana. Si el cupo de esta semana está lleno, le confirmamos la fecha disponible.">We take a limited number of checks each week. If this week is full, we'll confirm the next available date.</p>
+  </details></div>
+  <form id="remote-check-form" action="https://formspree.io/f/mjgjqpbg" method="POST" enctype="multipart/form-data" class="rc-form">
     <input type="hidden" name="_subject" value="Remote Supplier Check request - SourciaVera">
     <input type="hidden" name="service" value="Remote Supplier Check ($49)">
     <div class="form-group">
-      <label data-en="Supplier link (Alibaba, 1688, or website)" data-es="Enlace del proveedor (Alibaba, 1688 o sitio web)">Supplier link (Alibaba, 1688, or website)</label>
-      <input type="text" inputmode="url" name="supplier_link" placeholder="https://..." required>
-      <p style="font-size:0.78rem;color:var(--muted);margin:0" data-en="Paste the link, or the text you copied from the Alibaba or 1688 app." data-es="Pegue el enlace o el texto que copió de la app de Alibaba o 1688.">Paste the link, or the text you copied from the Alibaba or 1688 app.</p>
+      <label for="rc1" data-en="Supplier link (Alibaba, 1688, or website)" data-es="Enlace del proveedor (Alibaba, 1688 o sitio web)">Supplier link (Alibaba, 1688, or website)</label>
+      <input id="rc1" type="text" inputmode="url" name="supplier_link" placeholder="https://..." required>
+      <p class="rc-note" data-en="Paste the link, or the text you copied from the Alibaba or 1688 app." data-es="Pegue el enlace o el texto que copió de la app de Alibaba o 1688.">Paste the link, or the text you copied from the Alibaba or 1688 app.</p>
     </div>
     <div class="form-group">
-      <label data-en="What product?" data-es="¿Qué producto?">What product?</label>
-      <input type="text" name="product" required>
+      <label for="rc2" data-en="What product?" data-es="¿Qué producto?">What product?</label>
+      <input id="rc2" type="text" name="product" required>
     </div>
     <div class="form-row">
       <div class="form-group">
-        <label data-en="Estimated order value" data-es="Monto estimado del pedido">Estimated order value</label>
-        <select name="order_value">
+        <label for="rc3" data-en="Estimated order value" data-es="Monto estimado del pedido">Estimated order value</label>
+        <select id="rc3" name="order_value">
           <option>Under $5,000</option>
           <option>$5,000–$20,000</option>
           <option>$20,000+</option>
         </select>
       </div>
       <div class="form-group">
-        <label data-en="Your name" data-es="Su nombre">Your name</label>
-        <input type="text" name="name" required>
+        <label for="rc4" data-en="Your name" data-es="Su nombre">Your name</label>
+        <input id="rc4" type="text" name="name" required>
       </div>
     </div>
     <div class="form-group">
-      <label data-en="Email or WhatsApp" data-es="Correo o WhatsApp">Email or WhatsApp</label>
-      <input type="text" name="contact" required>
+      <label for="rc5" data-en="Email or WhatsApp" data-es="Correo o WhatsApp">Email or WhatsApp</label>
+      <input id="rc5" type="text" name="contact" required>
     </div>
     <div class="form-group">
-      <label data-en="Quote or PI (optional — needed to check the payment account)" data-es="Cotización o PI (opcional — necesaria para revisar la cuenta de pago)">Quote or PI (optional — needed to check the payment account)</label>
-      <input type="file" name="attachment">
+      <label for="rc6" data-en="Quote or PI (optional — needed to check the payment account)" data-es="Cotización o PI (opcional — necesaria para revisar la cuenta de pago)">Quote or PI (optional — needed to check the payment account)</label>
+      <input id="rc6" type="file" name="attachment">
     </div>
-    <p style="font-size:0.82rem;color:var(--muted);margin-bottom:1rem" data-en="We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email." data-es="Aceptamos pagos por PayPal y Wise. Después de enviar el formulario, le enviamos el enlace de pago por WhatsApp o correo.">We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email.</p>
+    <p class="rc-note" data-en="We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email." data-es="Aceptamos pagos por PayPal y Wise. Después de enviar el formulario, le enviamos el enlace de pago por WhatsApp o correo.">We accept PayPal and Wise. After you submit the form, we'll send you a payment link by WhatsApp or email.</p>
     <button type="submit" class="btn-submit" id="remote-check-submit-btn" data-en="Request This Check — $49" data-es="Solicitar esta Revisión — $49">Request This Check — $49</button>
-    <p class="is-hidden" id="remote-check-success" style="color:var(--teal);font-weight:600;margin-top:1rem"></p>
+    <p class="is-hidden" id="remote-check-success"></p>
   </form>
-</section>
-
-<section class="contact" id="contact">
-  <div class="contact-left">
-    <div class="section-tag" data-en="Contact" data-es="Contacto">Contact</div>
-    <h2 class="section-title" data-en="Let's talk about your supplier" data-es="Hablemos sobre su proveedor">Let's talk about your supplier</h2>
-    <p data-en="Tell us what you need. We reply within 24 hours, in English or Spanish, no commitment required." data-es="Cuéntenos qué necesita. Le respondemos en menos de 24 horas, en español o inglés, sin compromiso.">Tell us what you need. We reply within 24 hours, in English or Spanish, no commitment required.</p>
-    <p data-en="💡 Quick tip: leave us your WhatsApp and put your requirements in writing — a message or a document, not just a phone call. Humans forget. Text messages, annoyingly, do not." data-es="💡 Un consejo: déjenos su WhatsApp y ponga sus necesidades por escrito — un mensaje o un documento, no solo una llamada. Los humanos olvidamos. Los mensajes de texto, por suerte, no.">💡 Quick tip: leave us your WhatsApp and put your requirements in writing — a message or a document, not just a phone call. Humans forget. Text messages, annoyingly, do not.</p>
-  </div>
-  <div class="contact-right">
-    <form id="contact-form" action="https://formspree.io/f/mjgjqpbg" method="POST">
-      <input type="hidden" name="_subject" value="New inquiry - SourciaVera">
-      <input type="hidden" name="service" id="service-hidden" value="">
-      <input type="hidden" name="category" id="category-hidden" value="">
-
-      <div class="diag-steps" id="diag-steps">
-        <span class="diag-step-dot active" data-dot="1">1</span>
-        <span class="diag-step-dot" data-dot="2">2</span>
-        <span class="diag-step-dot" data-dot="3">3</span>
-        <span class="diag-step-dot" data-dot="4">4</span>
-      </div>
-
-      <div class="diag-panel" data-panel="1">
-        <div class="form-group">
-          <label data-en="What product are you sourcing?" data-es="¿Qué producto busca?">What product are you sourcing?</label>
-          <textarea name="message" id="textarea-msg" placeholder="What product are you sourcing? Do you have a supplier in mind? Alibaba link if available..." required></textarea>
-        </div>
-        <div class="form-group">
-          <label class="diag-radio">
-            <input type="checkbox" id="has-part-list-check" name="has_part_list" value="yes">
-            <span data-en="I have a list of part numbers (OEM / FMSI / DPI)" data-es="Tengo una lista de números de parte (OEM / FMSI / DPI)">I have a list of part numbers (OEM / FMSI / DPI)</span>
-          </label>
-          <div class="is-hidden" id="part-list-box" style="margin-top:0.6rem">
-            <textarea name="part_list" data-en="Paste your part numbers here, one per line..." data-es="Pegue aquí sus números de parte, uno por línea..." placeholder="Paste your part numbers here, one per line..."></textarea>
-          </div>
-        </div>
-        <button type="button" class="btn-submit diag-next" data-next="2" data-en="Next →" data-es="Siguiente →">Next →</button>
-      </div>
-
-      <div class="diag-panel is-hidden" data-panel="2">
-        <div class="form-group">
-          <label data-en="Where are you in the process?" data-es="¿En qué etapa está?">Where are you in the process?</label>
-          <div class="diag-options">
-            <label class="diag-radio"><input type="radio" name="stage" value="no_supplier" data-service="Procurement Partner (long-term)"><span data-en="I haven't found a supplier yet" data-es="Todavía no encuentro proveedor">I haven't found a supplier yet</span></label>
-            <label class="diag-radio"><input type="radio" name="stage" value="untrusted_supplier" data-service="Factory Verification"><span data-en="I found suppliers but don't trust them" data-es="Encontré proveedores pero no confío en ellos">I found suppliers but don't trust them</span></label>
-            <label class="diag-radio"><input type="radio" name="stage" value="need_negotiation" data-service="Negotiation & Procurement"><span data-en="I need someone to negotiate" data-es="Necesito que alguien negocie por mí">I need someone to negotiate</span></label>
-            <label class="diag-radio"><input type="radio" name="stage" value="need_inspection" data-service="Pre-Shipment Inspection"><span data-en="I need quality inspection" data-es="Necesito inspección de calidad">I need quality inspection</span></label>
-            <label class="diag-radio"><input type="radio" name="stage" value="need_logistics" data-service="Logistics Coordination"><span data-en="I need logistics help" data-es="Necesito ayuda con logística">I need logistics help</span></label>
-            <label class="diag-radio"><input type="radio" name="stage" value="full_handoff" data-service="Procurement Partner (long-term)"><span data-en="I want to hand the whole thing to you" data-es="Quiero dejarles todo el proceso a ustedes">I want to hand the whole thing to you</span></label>
-          </div>
-        </div>
-        <button type="button" class="btn-back diag-back" data-next="1" data-en="← Back" data-es="← Atrás">← Back</button>
-        <button type="button" class="btn-submit diag-next" data-next="3" data-en="Next →" data-es="Siguiente →">Next →</button>
-      </div>
-
-      <div class="diag-panel is-hidden" data-panel="3">
-        <div class="form-group">
-          <label data-en="Budget range" data-es="Rango de presupuesto">Budget range</label>
-          <div class="diag-options">
-            <label class="diag-radio"><input type="radio" name="budget" value="1k_5k"><span>$1,000–$5,000</span></label>
-            <label class="diag-radio"><input type="radio" name="budget" value="5k_50k"><span>$5,000–$50,000</span></label>
-            <label class="diag-radio"><input type="radio" name="budget" value="50k_plus"><span>$50,000+</span></label>
-          </div>
-        </div>
-        <button type="button" class="btn-back diag-back" data-next="2" data-en="← Back" data-es="← Atrás">← Back</button>
-        <button type="button" class="btn-submit diag-next" data-next="4" data-en="Next →" data-es="Siguiente →">Next →</button>
-      </div>
-
-      <div class="diag-panel is-hidden" data-panel="4">
+</div></section>
+<section class="sec" id="contact"><div class="sv-wrap">
+  <h2 class="section-title" data-en="CONTACT" data-es="CONTACTO">CONTACT</h2>
+  <div class="contact-v2">
+    <div class="c-info">
+      <figure class="c-photo"><img src="/images/carbon-fiber-auto-part-factory-check.webp" alt="Our team checking a carbon fiber auto part on camera during a factory visit in China" width="1600" height="900" loading="lazy" decoding="async"></figure>
+      <ul class="c-list">
+        <li><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><a href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="contact">WhatsApp: +86 136 8805 7230</a></li>
+        <li><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:info@sourciavera.com">info@sourciavera.com</a></li>
+        <li><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Guangzhou, China</span></li>
+      </ul>
+    </div>
+    <div class="c-form">
+      <h2 class="c-big" data-en="SEND US A MESSAGE AND WE&#x27;LL GET BACK TO YOU SOON" data-es="ENVÍANOS UN MENSAJE Y TE RESPONDEMOS PRONTO">SEND US A MESSAGE AND WE'LL GET BACK TO YOU SOON</h2>
+      <p class="c-intro" data-en="We reply within 24 hours, in English or Spanish, no commitment required. Tip: put your requirements in writing — a message or a document, not just a phone call." data-es="Le respondemos en menos de 24 horas, en español o inglés, sin compromiso. Un consejo: deje sus requisitos por escrito — un mensaje o un documento, no solo una llamada.">We reply within 24 hours, in English or Spanish, no commitment required. Tip: put your requirements in writing — a message or a document, not just a phone call.</p>
+      <form id="contact-form" action="https://formspree.io/f/mjgjqpbg" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New inquiry - SourciaVera">
+        <input type="hidden" name="service" id="service-hidden" value="">
+        <input type="hidden" name="category" id="category-hidden" value="">
+        <input type="hidden" name="contact" id="contact-hidden" value="">
         <div class="form-row">
-          <div class="form-group">
-            <label data-en="Your name" data-es="Su nombre">Your name</label>
-            <input type="text" name="name" placeholder="John Smith" required>
-          </div>
-          <div class="form-group">
-            <label for="country-select" data-en="Country" data-es="País">Country</label>
-            <select id="country-select" name="country">
-              <option>United States</option>
-              <option>United Kingdom</option>
-              <option>Australia</option>
-              <option>Canada</option>
-              <option>Germany</option>
-              <option>France</option>
-              <option>Netherlands</option>
-              <option>Mexico</option>
-              <option>Guatemala</option>
-              <option>Panama</option>
-              <option>Colombia</option>
-              <option>Argentina</option>
-              <option>Chile</option>
-              <option>Peru</option>
-              <option>Brazil</option>
-              <option data-en="Other" data-es="Otro">Other</option>
-            </select>
-          </div>
+          <div class="form-group"><label for="f-name" data-en="Name" data-es="Nombre">Name</label><input type="text" id="f-name" name="name" autocomplete="name" required></div>
+          <div class="form-group"><label for="f-company"><span data-en="Company" data-es="Empresa">Company</span> <small data-en="(optional)" data-es="(opcional)">(optional)</small></label><input type="text" id="f-company" name="company" autocomplete="organization"></div>
         </div>
-        <div class="form-group">
-          <label data-en="WhatsApp or Email" data-es="WhatsApp o Email">WhatsApp or Email</label>
-          <input type="text" name="contact" placeholder="+1 555 123 4567 or email@domain.com" required>
+        <div class="form-row">
+          <div class="form-group"><label for="f-email" data-en="Email" data-es="Correo">Email</label><input type="email" id="f-email" name="email" autocomplete="email" required></div>
+          <div class="form-group"><label for="f-wa" data-en="WhatsApp" data-es="WhatsApp">WhatsApp</label><input type="tel" id="f-wa" name="whatsapp" autocomplete="tel-national" inputmode="tel"></div>
         </div>
-        <button type="button" class="btn-back diag-back" data-next="3" data-en="← Back" data-es="← Atrás">← Back</button>
+        <div class="form-group"><label for="country-select" data-en="Country" data-es="País">Country</label><select id="country-select" name="country" autocomplete="country-name"><option value="Mexico" selected data-en="Mexico" data-es="México">Mexico</option><option value="United States" data-en="United States" data-es="Estados Unidos">United States</option><option value="Colombia" data-en="Colombia" data-es="Colombia">Colombia</option><option value="Guatemala" data-en="Guatemala" data-es="Guatemala">Guatemala</option><option value="Panama" data-en="Panama" data-es="Panamá">Panama</option><option value="Chile" data-en="Chile" data-es="Chile">Chile</option><option value="Peru" data-en="Peru" data-es="Perú">Peru</option><option value="Argentina" data-en="Argentina" data-es="Argentina">Argentina</option><option value="Brazil" data-en="Brazil" data-es="Brasil">Brazil</option><option value="Canada" data-en="Canada" data-es="Canadá">Canada</option><option value="United Kingdom" data-en="United Kingdom" data-es="Reino Unido">United Kingdom</option><option value="Australia" data-en="Australia" data-es="Australia">Australia</option><option value="Germany" data-en="Germany" data-es="Alemania">Germany</option><option value="France" data-en="France" data-es="Francia">France</option><option value="Netherlands" data-en="Netherlands" data-es="Países Bajos">Netherlands</option><option value="Other" data-en="Other" data-es="Otro">Other</option></select></div>
+        <div class="form-group"><label for="f-product" data-en="What product are you sourcing?" data-es="¿Qué producto buscas?">What product are you sourcing?</label><input type="text" id="f-product" name="product" placeholder="e.g. LED headlights, wheel rims, enamel pins" required></div>
+        <div class="form-group"><label for="textarea-msg" data-en="Message" data-es="Mensaje">Message</label><textarea id="textarea-msg" name="message" rows="4"></textarea></div>
         <button type="submit" class="btn-submit" id="submit-btn" data-en="Get a Free Detailed Quote →" data-es="Cotización Detallada Gratis →">Get a Free Detailed Quote →</button>
-      </div>
-
-      <div class="is-hidden" id="form-success" data-en="✓ Received — we'll contact you within 24h" data-es="✓ Recibido — le contactamos en menos de 24h" style="background:#00796B;color:white;padding:1rem;text-align:center;margin-top:0.5rem;font-size:0.9rem">
-        ✓ Received — we'll contact you within 24h
-      </div>
-    </form>
+        <div class="form-ok is-hidden" id="form-success" role="status"></div>
+      </form>
+    </div>
   </div>
-</section>
-
+</div></section>
 </main>
-
-<footer>
-  <div class="footer-logo">SourciaVera</div>
-  <div class="footer-links">
-    <a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="3.3em" height="3.3em" fill="#FF0000" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
-    <a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" aria-hidden="true"><defs><linearGradient id="igGradFooterEn" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="25%" stop-color="#e6683c"/><stop offset="50%" stop-color="#dc2743"/><stop offset="75%" stop-color="#cc2366"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><path fill="url(#igGradFooterEn)" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-    <a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="3.3em" height="3.3em" fill="#1877F2" aria-hidden="true"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
-    <a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#B92B27" aria-hidden="true"><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a>
-    <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#0A66C2" aria-hidden="true"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
-    <a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="3.3em" height="3.3em" fill="#E60023" aria-hidden="true"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a>
-    <a href="https://wa.me/8613688057230" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" data-wa-location="footer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="3.3em" height="3.3em" fill="#25D366" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><span class="sv-fbr" aria-hidden="true"></span>
-    <a href="/china-sourcing-process">China sourcing process</a>
-    <a href="/verification-services">Factory verification</a><a href="/live-video-factory-verification">Live video verification</a>
-    <a href="/china-sourcing-agent">China sourcing agent</a>
-    <a href="/supply-chain-supervision-china">Factory supervision</a>
-    <a href="/small-batch">Small batches</a>
-    <a href="/categories/auto-parts">Auto parts</a>
-    <a href="/press">Press</a>
-    <a href="/impartiality">Impartiality</a>
-    <span>Verified on <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></span>
-    <a href="/privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a>
-    <a href="/terms" data-en="Terms of Service" data-es="Términos de Servicio">Terms of Service</a>
-    <a href="#" role="button" data-cc="show-preferencesModal" data-en="Cookie Settings" data-es="Configuración de cookies">Cookie Settings</a>
-  </div>
-  <div data-en="© 2026 SourciaVera · Guangzhou, China · All rights reserved" data-es="© 2026 SourciaVera · Guangzhou, China · Todos los derechos reservados">© 2026 SourciaVera · Guangzhou, China · All rights reserved</div>
-  <div><time datetime="2026-10-30" data-en="Last updated: Oct 30, 2026" data-es="Última actualización: 30 oct 2026">Last updated: Oct 30, 2026</time></div>
-</footer>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><p data-en="Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door." data-es="Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta.">Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p><p data-en="Based in Guangzhou. English and Spanish service. We charge the client only — no commission from factories." data-es="Con base en Guangzhou. Servicio en español e inglés. Solo cobramos al cliente: sin comisión de las fábricas.">Based in Guangzhou. English and Spanish service. We charge the client only — no commission from factories.</p></div><div><div class="sv-foot-h" data-en="Services" data-es="Servicios">Services</div><ul class="sv-foot-list"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></div><div><div class="sv-foot-h" data-en="Site" data-es="Sitio">Site</div><ul class="sv-foot-list"><li><a href="/blog" data-en="Blog" data-es="Blog">Blog</a></li><li><a href="/categories" data-en="Categories" data-es="Categorías">Categories</a></li><li><a href="/about" data-en="About" data-es="Nosotros">About</a></li><li><a href="/#faq-shows" data-en="FAQ" data-es="FAQ">FAQ</a></li><li><a href="/contact" data-en="Contact" data-es="Contacto">Contact</a></li><li><a href="/press" data-en="Press" data-es="Prensa">Press</a></li><li><a href="/impartiality" data-en="Impartiality" data-es="Imparcialidad">Impartiality</a></li></ul></div><div><div class="sv-foot-h" data-en="Follow &amp; chat" data-es="Síganos y escríbanos">Follow & chat</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div data-en="© 2026 SourciaVera · Guangzhou, China · All rights reserved" data-es="© 2026 SourciaVera · Guangzhou, China · Todos los derechos reservados">© 2026 SourciaVera · Guangzhou, China · All rights reserved</div><div class="sv-foot-links"><a href="/privacy" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a><a href="/terms" data-en="Terms of Service" data-es="Términos de Servicio">Terms of Service</a><a href="#" role="button" data-cc="show-preferencesModal" data-en="Cookie Settings" data-es="Configuración de cookies">Cookie Settings</a></div><div><span data-en="Verified on" data-es="Verificado en">Verified on</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><div><time datetime="2026-10-30" data-en="Last updated: Oct 30, 2026" data-es="Última actualización: 30 oct 2026">Last updated: Oct 30, 2026</time></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span data-en="Back to top" data-es="Volver arriba">Back to top</span></button></div></div></div>
 
 
 <script>
@@ -1339,93 +897,12 @@ function setLang(lang) {
 function toggleFaq(btn) {
   btn.closest('.faq-item').classList.toggle('open');
 }
-document.querySelectorAll('.nav-links a').forEach(function(a){
-  a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});
-});
+
 
 
 
 (function(){var yr=new Date().getFullYear(),el=document.querySelector('[data-en*="rights reserved"]');if(el){el.dataset.en=el.dataset.en.replace(/\d{4}/,yr);el.dataset.es=el.dataset.es.replace(/\d{4}/,yr);}})();
 setLang(currentLang);
-
-function diagGoto(n){
-  document.querySelectorAll('.diag-panel').forEach(function(p){ p.classList.toggle('is-hidden', p.dataset.panel !== String(n)); });
-  document.querySelectorAll('.diag-step-dot').forEach(function(d){
-    var dn = parseInt(d.dataset.dot, 10);
-    d.classList.toggle('active', dn === n);
-    d.classList.toggle('done', dn < n);
-  });
-}
-var hasPartListCheck = document.getElementById('has-part-list-check');
-if (hasPartListCheck) {
-  hasPartListCheck.addEventListener('change', function(){
-    document.getElementById('part-list-box').classList.toggle('is-hidden', !this.checked);
-  });
-}
-function diagValidate(n){
-  if(n === 1){
-    var msg = document.getElementById('textarea-msg');
-    if(msg && !msg.value.trim()){ msg.focus(); return false; }
-  }
-  if(n === 2 && !document.querySelector('input[name="stage"]:checked')){ return false; }
-  if(n === 3 && !document.querySelector('input[name="budget"]:checked')){ return false; }
-  return true;
-}
-document.querySelectorAll('.diag-next').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var current = parseInt(btn.closest('.diag-panel').dataset.panel, 10);
-    if(!diagValidate(current)) return;
-    diagGoto(parseInt(btn.dataset.next, 10));
-  });
-});
-document.querySelectorAll('.diag-back').forEach(function(btn){
-  btn.addEventListener('click', function(){ diagGoto(parseInt(btn.dataset.next, 10)); });
-});
-document.querySelectorAll('input[name="stage"]').forEach(function(r){
-  r.addEventListener('change', function(){
-    document.getElementById('service-hidden').value = r.dataset.service || '';
-  });
-});
-
-function svApplyService(p){
-  if(!p) return;
-  var categoryValues = ['construction','auto-parts','badges','other'];
-  if(categoryValues.indexOf(p) !== -1){
-    document.getElementById('category-hidden').value = p;
-  } else {
-    var stageByService = {
-      'Factory Verification':'untrusted_supplier',
-      'Verificación de fábrica':'untrusted_supplier',
-      'Negociación y compra':'need_negotiation',
-      'Socio de Compras (largo plazo)':'full_handoff',
-      'Negotiation & Procurement':'need_negotiation',
-      'Procurement Partner (long-term)':'full_handoff'
-    };
-    var stageVal = stageByService[p];
-    if(stageVal){
-      var radio = document.querySelector('input[name="stage"][value="'+stageVal+'"]');
-      if(radio){
-        radio.checked = true;
-        document.getElementById('service-hidden').value = radio.dataset.service;
-      }
-    }
-    diagGoto(2);
-  }
-  var el = document.getElementById('contact');
-  if(el) el.scrollIntoView({behavior:'smooth'});
-}
-window.svApplyService = svApplyService;
-(function(){
-  var p = new URLSearchParams(window.location.search).get('service');
-  if(!p){
-    try {
-      var r = JSON.parse(localStorage.getItem('sv-service') || 'null');
-      localStorage.removeItem('sv-service');
-      if(r && r.v && Date.now() - r.t < 900000) p = r.v;
-    } catch(e) {}
-  }
-  svApplyService(p);
-})();
 
 const rcForm = document.getElementById('remote-check-form');
 const rcBtn = document.getElementById('remote-check-submit-btn');
@@ -1451,36 +928,6 @@ rcForm.addEventListener('submit', async function(e) {
   } catch(err) {
     rcBtn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
     rcBtn.disabled = false;
-  }
-});
-
-const form = document.getElementById('contact-form');
-const btn = document.getElementById('submit-btn');
-const success = document.getElementById('form-success');
-form.addEventListener('submit', async function(e) {
-  e.preventDefault();
-  btn.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
-  btn.disabled = true;
-  try {
-    const res = await fetch(form.action, {method:'POST', body:new FormData(form), headers:{Accept:'application/json'}});
-    if (res.ok) {
-      window.svTrackLead && window.svTrackLead('contact-form');
-      form.reset();
-      btn.style.display = 'none';
-      success.classList.remove('is-hidden');
-      success.textContent = currentLang === 'es'
-        ? '✓ Recibido — te contactamos en menos de 24h'
-        : '✓ Received — we\'ll contact you within 24h';
-      setTimeout(function() {
-        window.location.href = '/blog';
-      }, 2500);
-    } else {
-      btn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
-      btn.disabled = false;
-    }
-  } catch(err) {
-    btn.textContent = currentLang === 'es' ? 'Error — intenta de nuevo' : 'Error — try again';
-    btn.disabled = false;
   }
 });
 
@@ -1640,5 +1087,6 @@ CookieConsent.run({
   }
 });
 </script>
+<script src="/js/sv-contact.js" defer></script>
 </body>
 </html>
