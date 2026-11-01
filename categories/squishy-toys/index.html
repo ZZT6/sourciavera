@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squishy Toys Wholesale Sourcing from China | SourciaVera</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Squishy toys and stress toys wholesale from China for Mexico and LatAm: factory verification, NOM labeling and the 2026 tariff. Remote check from $49.">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/categories/squishy-toys">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/es/categorias/squishies">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/categories/squishy-toys">
+<meta property="og:title" content="Squishy Toys Wholesale Sourcing from China | SourciaVera">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="Squishy toys and stress toys wholesale from China for Mexico and LatAm: factory verification, NOM labeling and the 2026 tariff. Remote check from $49.">
+<meta property="og:url" content="https://sourciavera.com/categories/squishy-toys">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sourciavera.com/images/squishies-coleccion-nina-mexico.jpg">
+<link rel="canonical" href="https://sourciavera.com/categories/squishy-toys">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://sourciavera.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Categories",
+          "item": "https://sourciavera.com/categories"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Squishy Toys & Sensory Toys",
+          "item": "https://sourciavera.com/categories/squishy-toys"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Squishy and sensory toy sourcing in China",
+      "name": "Squishy Toys Sourcing and Verification — China",
+      "description": "Wholesale sourcing of squishy and stress toys from Chinese factories: factory selection, samples, verification, video inspection, Spanish labeling and delivery to your door.",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Mexico"
+        },
+        {
+          "@type": "Country",
+          "name": "Guatemala"
+        },
+        {
+          "@type": "Country",
+          "name": "Colombia"
+        },
+        {
+          "@type": "Country",
+          "name": "Chile"
+        },
+        {
+          "@type": "Country",
+          "name": "Panama"
+        }
+      ],
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://sourciavera.com/#organization",
+        "name": "SourciaVera",
+        "url": "https://sourciavera.com"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Live Video Factory Verification"
+            },
+            "price": "120",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "120",
+              "priceCurrency": "USD",
+              "unitText": "hour"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Factory Verification"
+            },
+            "price": "449",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pre-Shipment Inspection"
+            },
+            "price": "399",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Factory Audit"
+            },
+            "price": "499",
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--coral:#C93A1F;--yellow:#F5C842;--teal:#00796B;--navy:#0D2240;--white:#FFFDF8;--light:#FFF8F0;--muted:#6B6B6B;--border:#E8E0D5}
+body{background:var(--white);color:var(--navy);font-family:system-ui,sans-serif;font-weight:300;line-height:1.7}
+a{text-decoration:none}
+nav{background:var(--navy);display:flex;justify-content:space-between;align-items:center;padding:1.2rem 3rem;gap:1rem}
+.logo{font-size:1.4rem;font-weight:700;color:var(--yellow);letter-spacing:0.02em;font-style:italic;flex-shrink:0}
+.nav-links{display:flex;gap:2rem;font-size:0.82rem;letter-spacing:0.06em;text-transform:uppercase}
+.nav-links a{color:rgba(255,255,255,0.6)}.nav-links a:hover,.nav-links a.active{color:var(--yellow)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.lang-switcher{display:flex;align-items:center;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:0.25rem;overflow:hidden}
+.lang-btn{background:transparent;border:none;color:rgba(255,255,255,0.6);padding:0.35rem 0.75rem;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;cursor:pointer;display:inline-block}
+.lang-btn.active{background:var(--yellow);color:var(--navy)}
+.lang-btn:hover:not(.active){color:white}
+.nav-cta{background:var(--coral);color:white;padding:0.5rem 1.2rem;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase}
+.breadcrumb{background:var(--navy);padding:0.6rem 3rem;border-top:1px solid rgba(255,255,255,0.08)}
+.breadcrumb a,.breadcrumb span{font-size:0.78rem;color:rgba(255,255,255,0.6)}
+.breadcrumb a:hover{color:var(--yellow)}
+.breadcrumb .sep{margin:0 0.5rem;color:rgba(255,255,255,0.6)}
+.breadcrumb .current{color:rgba(255,255,255,0.7)}
+.hero{background:var(--navy);padding:4.5rem 3rem 4rem}
+.hero-inner{max-width:137.5rem}
+.hero-tag{display:inline-block;background:var(--coral);color:white;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-bottom:1.5rem;font-weight:500}
+.hero h1{font-size:clamp(2rem,4vw,3rem);line-height:1.1;font-weight:700;color:white;margin-bottom:1rem}
+.hero h1 span{color:var(--yellow)}
+.hero p{color:rgba(255,255,255,0.65);font-size:1rem;max-width:40rem;margin-bottom:2rem;line-height:1.8}
+.btn-main{background:var(--coral);color:white;padding:0.9rem 1.8rem;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;display:inline-block}
+.btn-main:hover{background:#c03520}
+.quality-notice{background:#fff8e1;border:1.5px solid #f0c040;border-left:0.25rem solid #e0a000;padding:1.25rem 1.5rem;margin-bottom:2.5rem;font-size:0.88rem;color:#5a4500;line-height:1.65}
+.quality-notice strong{color:#3a2d00}
+.section-tag{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--coral);font-weight:500;margin-bottom:0.8rem}
+.section-title{font-size:2rem;font-weight:700;color:var(--navy);margin-bottom:2rem;line-height:1.2}
+.scope{padding:5rem 3rem;background:var(--light)}
+.scope-inner{max-width:137.5rem}
+.scope-intro{color:var(--muted);font-size:0.95rem;line-height:1.8;max-width:47.5rem;margin-bottom:2.5rem}
+.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.product-item{background:var(--white);border:1.5px solid var(--border);padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:0.75rem}
+.product-dot{width:0.5rem;height:0.5rem;background:var(--coral);flex-shrink:0;margin-top:0.5rem}
+.product-item strong{display:block;font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:0.15rem}
+.product-item span{font-size:0.82rem;color:var(--muted);line-height:1.5}
+.spec-table{width:100%;min-width:40rem;border-collapse:collapse;font-size:0.88rem;margin:0 0 0.5rem}
+.spec-table th:nth-child(1),.spec-table td:nth-child(1){width:6.875rem}
+.spec-table th:nth-child(2),.spec-table td:nth-child(2){width:18.125rem}
+.spec-table th:nth-child(3),.spec-table td:nth-child(3){width:15rem}
+.spec-table th{background:var(--navy);color:white;padding:0.7rem 1rem;text-align:left;font-weight:500;font-size:0.78rem;letter-spacing:0.04em}
+.spec-table td{padding:0.8rem 1rem;border-bottom:1px solid var(--border);color:#333;vertical-align:top;line-height:1.65;font-size:0.86rem}
+.spec-table tr:nth-child(even) td{background:var(--light)}
+.fact-row{display:flex;flex-wrap:wrap;gap:0.6rem 2rem;margin-top:1.5rem}
+.fact-item{display:flex;align-items:center;gap:0.5rem;font-size:0.82rem;color:var(--muted)}
+.fact-dot{width:0.375rem;height:0.375rem;background:var(--coral);flex-shrink:0;border-radius:50%}
+.feature-row{display:grid;grid-template-columns:22.5rem 1fr;gap:2.5rem;align-items:center;padding:2rem 0;border-bottom:1px solid var(--border)}
+.feature-row:last-child{border-bottom:none}
+.feature-row img{width:100%;height:auto;object-fit:contain;border:1.5px solid var(--border);cursor:zoom-in}
+.ill-wrap{position:relative}
+.ill-tag{position:absolute;top:0.6rem;left:0.6rem;z-index:3;background:rgba(13,34,64,0.88);color:#fff;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.22rem 0.55rem;border-radius:2px;line-height:1.3;pointer-events:none;font-weight:500}
+.feature-row-body{flex:1}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(13,34,64,0.92);z-index:999;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}
+.lightbox.active{display:flex}
+.lightbox img{max-width:90vw;max-height:90vh;object-fit:contain;border:none;cursor:default}
+.lightbox-close{position:absolute;top:1.5rem;right:2rem;color:white;font-size:2rem;line-height:1;background:none;border:none;cursor:pointer;padding:0.5rem}
+.feature-row-tag{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.6rem}
+.feature-row-title{font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:0.75rem;line-height:1.3}
+.feature-row-body p{font-size:0.92rem;color:var(--muted);line-height:1.8;margin-bottom:0.75rem;max-width:56.25rem}
+.feature-row-body p:last-child{margin-bottom:0}
+.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:1rem}
+.hub-card{display:block;background:var(--white);border:1.5px solid var(--border);padding:1.4rem;text-decoration:none}
+.hub-card:hover{border-color:var(--coral)}
+.hub-card-tag{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--coral);font-weight:600;margin-bottom:0.5rem}
+.hub-card-title{font-size:0.92rem;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:0.5rem}
+.hub-card p{font-size:0.82rem;color:var(--muted);line-height:1.6;margin:0}
+.cta-section{padding:5rem 3rem;background:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.cta-left h2{font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:1rem;line-height:1.25}
+.cta-left p{color:var(--muted);font-size:0.9rem;line-height:1.8;margin-bottom:1.5rem}
+.price-row{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
+.price-pill{border:1.5px solid var(--border);padding:0.5rem 1rem;font-size:0.82rem;color:var(--navy)}
+.price-pill strong{color:var(--coral)}
+.cta-right{background:var(--light);border:1.5px solid var(--border);padding:2.5rem}
+.cta-right p{font-size:0.9rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.7}
+.btn-white{background:white;color:var(--coral);padding:1rem 2.5rem;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;display:inline-block}
+.btn-white:hover{background:var(--light)}
+
+footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;font-size:0.8rem;color:rgba(255,255,255,0.6)}
+.footer-logo{font-size:1rem;font-weight:700;color:var(--yellow);font-style:italic}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,0.6)}.footer-links a:hover{color:var(--yellow)}
+@media(max-width:768px){
+nav{padding:1rem 1.5rem}.nav-links{display:none}
+.breadcrumb{padding:0.6rem 1.5rem}
+.hero{padding:3rem 1.5rem}
+.scope,.cta-section{padding:3rem 1.5rem}
+.product-grid,.cta-section,.hub-grid{grid-template-columns:1fr}
+footer{flex-direction:column;gap:0.75rem;text-align:center;padding:1.5rem 1.5rem 5.5rem}body footer{padding-bottom:5.5rem}
+.footer-links{gap:1rem;flex-wrap:wrap;justify-content:center}
+.feature-row{grid-template-columns:1fr;gap:1.25rem;align-items:stretch}
+.feature-row img{width:100%;height:auto;max-height:20rem}
+}
+nav{position:relative}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:0.375rem;flex-direction:column;gap:0.3125rem;flex-shrink:0}
+.nav-hamburger span{display:block;width:1.25rem;height:2px;background:rgba(255,255,255,0.75)}
+.nav-hamburger:hover span{background:white}
+@media(max-width:768px){html,body{overflow-x:clip;max-width:100%}nav{padding:1rem 1.5rem}.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
+span.sv-off{display:inline-flex;align-items:center;gap:0.4rem;background:#D62828;color:#fff;font-size:0.68rem;font-weight:600;line-height:1.2;padding:0.2rem 0.55rem;margin:0 0.45rem 0.4rem 0;border-radius:0.1875rem;letter-spacing:0.02em;vertical-align:middle;white-space:normal;text-transform:none;text-align:left}
+span.sv-off b{color:#fff;font-size:0.85rem;font-weight:800;letter-spacing:0}
+span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
+@media(max-width:768px){table th,table td{overflow-wrap:anywhere}}
+/*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
+/*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+
+<style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}</style>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body>
+
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a class="active" aria-current="true" lang="en">EN</a><a href="/es/categorias/squishies" hreflang="es" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menu"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Main"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/">Home</a></li><li><a href="/categories" aria-current="page">Categories</a></li><li class="has-dd"><a href="/verification-services">Services</a><ul class="sv-dd"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></li><li class="has-dd"><a href="/how-to-choose">Resources</a><ul class="sv-dd"><li><a href="/inspection-standards">Inspection standards</a></li><li><a href="/sample-report">Sample report</a></li><li><a href="/impartiality">Impartiality</a></li><li><a href="/how-to-choose">How to choose a provider</a></li></ul></li><li><a href="/blog">Blog</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li></ul></div></div></div>
+
+<div class="breadcrumb">
+  <a href="https://sourciavera.com/">Home</a><span class="sep">›</span>
+  <a href="/categories">Categories</a><span class="sep">›</span>
+  <span class="current">Squishy Toys & Sensory Toys</span>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">🧸 Squishy toys & sensory toys · China</div>
+    <h1>Squishy toys &amp; sensory toys, sourced and verified in China</h1>
+    <p>Our team in Guangdong helps buyers in Mexico and Latin America source squishy toys: we choose the factory, request samples, verify the factory, inspect piece by piece on video, handle Spanish labeling to NOM requirements and coordinate delivery to your door. We charge only the buyer; we take no commission from factories.</p>
+    <a href="/#contact" data-service="squishies" class="btn-main">Consult Us Now →</a>
+  </div>
+</section>
+
+<section class="scope" style="background:var(--white)">
+  <div class="scope-inner">
+    <div class="section-tag">Product types</div>
+    <div class="section-title">Squishy and stress toys we source</div>
+    <div class="feature-row">
+      <div class="ill-wrap"><img src="/images/squishies-por-mayoreo-modelos-china.webp" alt="Illustrative image of squishies and stress balls on a wooden table: strawberry, animals and filled cubes" width="1200" height="573" loading="lazy" decoding="async" style="object-fit:contain"><span class="ill-tag">Illustrative image</span></div>
+      <div class="feature-row-body">
+        <div class="feature-row-title">Squishy toys wholesale</div>
+        <p>Slow-rising foam squishies, silicone or TPR figures and stress balls are collectible products: customers come back for the new model. Most of these factories cluster in Guangdong, above all Chenghai (Shantou). What decides the purchase is odor, rebound, paint and a NOM-compliant label, not the listing photo.</p>
+        <p>Licensed characters cannot be made or imported without the brand owner's permission. We work with generic designs or your own design.</p>
+      </div>
+    </div>
+    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;"><table class="spec-table"><tr><th>Type</th><th>Typical material</th><th>Key trait</th><th>What we check</th></tr><tr><td><strong>Slow-rising squishy</strong> (bread, cakes, animals)</td><td>Polyurethane (PU) foam</td><td>Takes several seconds to regain its shape</td><td>Rebound speed, odor, paint that does not peel</td></tr><tr><td><strong>Mochi / taba-style squishy</strong></td><td>Silicone or TPR</td><td>Soft, elastic texture, returns quickly</td><td>No stickiness or residue, mold seams</td></tr><tr><td><strong>Stress ball</strong></td><td>TPR, sometimes with gel or bead filling</td><td>Squeezes and recovers its shape</td><td>Filling leaks, squeeze resistance</td></tr><tr><td><strong>Pop it / silicone fidget</strong></td><td>Silicone</td><td>Washable, very durable</td><td>Thickness, odor, edges</td></tr></table></div>
+  </div>
+</section>
+
+<section class="scope">
+  <div class="scope-inner">
+    <div class="section-tag">What you must meet in Mexico</div>
+    <div class="section-title">Tariff and toy standards</div>
+    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;"><table class="spec-table"><tr><th>Point</th><th>Detail</th></tr><tr><td><strong>Tariff</strong></td><td>Since January 1, 2026, toys from countries without a trade agreement with Mexico (China included) pay a 30% tariff plus 16% VAT. Confirm the exact tariff line (chapter 95, heading 9503) with your customs broker.</td></tr><tr><td><strong>Labeling</strong></td><td>NOM-015-SCFI-2007 (commercial information, toy labeling): a Spanish label with recommended age, warnings, country of origin and importer details.</td></tr><tr><td><strong>Heavy metals</strong></td><td>NOM-252-SSA1-2011: bioavailability limits for heavy metals in toys and school supplies (applies to paints and coatings).</td></tr><tr><td><strong>Small parts</strong></td><td>Mini models must not be sold for children under 3; the warning must be on the label.</td></tr></table></div>
+    <p style="font-size:0.82rem;color:var(--muted);margin-top:0.75rem;line-height:1.6">Sources: El Financiero (Dec 29, 2025) and PLATIICA pages, Ministry of Economy. Checked November 1, 2026; confirm with your customs broker.</p>
+  </div>
+</section>
+
+<section class="scope" style="background:var(--white)">
+  <div class="scope-inner">
+    <div class="section-tag">How we work and pricing</div>
+    <div class="section-title">Services and rates</div>
+    <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;"><table class="spec-table"><tr><th>Service</th><th>Price</th><th>What it includes</th></tr><tr><td>Remote supplier check</td><td>$49</td><td>Written report in 48 hours</td></tr><tr><td>On-site factory verification</td><td>from $449</td><td>Factory visit with unedited video; 48 hours</td></tr><tr><td>Pre-shipment inspection</td><td>$399 per man-day</td><td>Piece-by-piece check and full video</td></tr><tr><td>Factory audit</td><td>$499 per man-day</td><td>On-site audit</td></tr><tr><td>Live video call</td><td>$120 per hour</td><td>Real-time verification, 1-hour minimum</td></tr><tr><td>Purchasing commission</td><td>10% of the order</td><td>Charged only if the order closes</td></tr></table></div>
+    <p style="font-size:0.82rem;color:var(--muted);margin-top:0.75rem;line-height:1.6">The three on-site services get -20% after a detailed consultation. Prices in US dollars; the live video call is not discounted.</p>
+    <div class="section-tag" style="margin-top:2rem">More information</div>
+    <ul class="spec-links" style="line-height:2"><li><a href="/blog/squishy-toys-wholesale-china-mexico">Guide: squishy toys wholesale from China to Mexico</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/verification-services">Factory verification</a></li></ul>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-left">
+    <div class="section-tag">Ready for a quote?</div>
+    <h2>Tell us which squishies you want to import.</h2>
+    <p>Send the models, approximate quantity and destination city. We will tell you honestly what is possible and at what price.</p>
+    <div class="price-row"><div class="price-pill">Live video call — <strong>$120/hour</strong></div><div class="price-pill">Factory Verification — <span class="sv-off"><b>-20%</b><i>after a detailed consultation</i></span><strong>$449</strong></div><div class="price-pill">Pre-Shipment Inspection — <span class="sv-off"><b>-20%</b><i>after a detailed consultation</i></span><strong>$399/man-day</strong></div><div class="price-pill">Factory Audit — <span class="sv-off"><b>-20%</b><i>after a detailed consultation</i></span><strong>$499/man-day</strong></div></div>
+    <a href="/#contact" data-service="squishies" class="btn-main">Consult Us Now →</a>
+    <a href="https://wa.me/8613688057230?text=Hi%2C%20I%20want%20a%20quote%20on%20squishy%20toys%20wholesale%20from%20China." class="btn-main" style="background:transparent;border:2px solid #25D366;color:var(--navy)" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <div class="cta-right">
+    <p><strong>What you get:</strong></p>
+    <p>Factory selection and verification · Samples compared on texture, rebound, odor and paint · NOM label printed at the factory · Uncut video inspection · Delivery to your door</p>
+  </div>
+</section>
+
+
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><p>Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p><p>Based in Guangzhou. English and Spanish service. We charge the client only — no commission from factories.</p></div><div><div class="sv-foot-h">Services</div><ul class="sv-foot-list"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></div><div><div class="sv-foot-h">Site</div><ul class="sv-foot-list"><li><a href="/blog">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li><li><a href="/press">Press</a></li><li><a href="/impartiality">Impartiality</a></li></ul></div><div><div class="sv-foot-h">Follow & chat</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · All rights reserved</div><div class="sv-foot-links"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a></div><div><span>Verified on</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Back to top</span></button></div></div></div>
+
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+document.querySelectorAll('.feature-row img').forEach(function(img){
+  img.addEventListener('click', function(){
+    var lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = this.src;
+    document.getElementById('lightbox-img').alt = this.alt;
+    lb.classList.add('active');
+  });
+});
+document.getElementById('lightbox-img').addEventListener('click', function(e){ e.stopPropagation(); });
+document.querySelector('.lightbox-close').addEventListener('click', function(){ document.getElementById('lightbox').classList.remove('active'); });
+document.getElementById('lightbox').addEventListener('click', function(){ this.classList.remove('active'); });
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') document.getElementById('lightbox').classList.remove('active'); });
+</script>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions:{consentModal:{layout:'bar',position:'bottom'}},
+  onConsent:()=>{if(typeof gtag!=='undefined'){const v=CookieConsent.acceptedCategory('analytics')?'granted':'denied';gtag('consent','update',{analytics_storage:v,ad_storage:v,ad_user_data:v,ad_personalization:v});}},
+  onChange:()=>{if(typeof gtag!=='undefined'){const v=CookieConsent.acceptedCategory('analytics')?'granted':'denied';gtag('consent','update',{analytics_storage:v,ad_storage:v,ad_user_data:v,ad_personalization:v});}},
+  categories:{necessary:{enabled:true,readOnly:true},analytics:{autoClear:{cookies:[{name:/^(_ga|_gid)/}]}}},
+  language:{default:'en',translations:{en:{consentModal:{title:'We use cookies',description:'We use cookies to analyze site traffic and improve your experience.',acceptAllBtn:'Accept All',acceptNecessaryBtn:'Reject All',showPreferencesBtn:'Manage Preferences'},preferencesModal:{title:'Cookie Preferences',acceptAllBtn:'Accept All',acceptNecessaryBtn:'Reject All',savePreferencesBtn:'Save Preferences',closeIconLabel:'Close',sections:[{title:'Necessary Cookies',linkedCategory:'necessary'},{title:'Analytics Cookies',linkedCategory:'analytics'}]}}}}
+});
+</script>
+<script>document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.querySelector('nav').classList.remove('nav-open');});});</script>
+</body>
+</html>
