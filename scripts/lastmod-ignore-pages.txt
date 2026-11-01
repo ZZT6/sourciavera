@@ -664,3 +664,4 @@ ebd6759 why-sourciavera.html
 47fc5e50f7bc blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice.html  # GA4 head block only
 3b7e470 blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice.html
 3b7e470 blog/es/china-reembolso-iva-exportacion-vehiculos-electricos-9-por-ciento-abril-2027.html
+fdcfe0a blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice.html
