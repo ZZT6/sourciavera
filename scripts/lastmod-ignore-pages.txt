@@ -691,3 +691,6 @@ ae9c326 blog/us-trailer-antidumping-countervailing-duties-china-what-importers-c
 03e7725 blog/us-trailer-antidumping-countervailing-duties-china-what-importers-check.html
 03e7725 blog/us-ieepa-tariff-refunds-cape-importers-china-what-to-check.html
 4698f75 blog/china-us-freight-late-october-2026-ocean-flat-air-rising-how-to-book.html
+f780ea7 blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores.html
+f780ea7 blog/es/mexico-mve-manifestacion-valor-electronica-fechas-importadores-china.html
+f780ea7 blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice.html
