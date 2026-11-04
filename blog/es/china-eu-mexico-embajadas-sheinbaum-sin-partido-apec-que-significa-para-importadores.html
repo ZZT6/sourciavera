@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disputa China-EE. UU. en México: Qué Significa al Importar</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Las embajadas de China y EE. UU. cruzaron declaraciones y Sheinbaum evitó tomar partido. Qué reglas siguen vigentes para quien importa de China.">
+<link rel="canonical" href="https://sourciavera.com/blog/es/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores">
+<link rel="alternate" type="application/rss+xml" title="SourciaVera Blog (Español)" href="https://sourciavera.com/es/rss.xml">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/blog/es/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/es/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores">
+<meta property="og:title" content="Disputa China-EE. UU. en México: Qué Significa al Importar | SourciaVera">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="Las embajadas de China y EE. UU. cruzaron declaraciones y Sheinbaum evitó tomar partido. Qué reglas siguen vigentes para quien importa de China.">
+<meta property="og:url" content="https://sourciavera.com/blog/es/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-photo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/es/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores#article",
+  "headline": "Disputa China-EE. UU. en México: Qué Significa al Importar",
+  "description": "Las embajadas de China y EE. UU. cruzaron declaraciones y Sheinbaum evitó tomar partido. Qué reglas siguen vigentes para quien importa de China.",
+  "inLanguage": "es",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Fundador", "url": "https://sourciavera.com/es/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-photo.webp",
+  "datePublished": "2026-11-04",
+  "dateModified": "2026-11-04",
+  "mainEntityOfPage": "https://sourciavera.com/blog/es/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores",
+  "keywords": "embajada de China México Ronald Johnson, Sheinbaum China Estados Unidos buena relación, APEC Shenzhen México 2026, aranceles China México 2026, T-MEC revisión anual, importar de China a México reglas vigentes, disputa diplomática China EE. UU. México"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sourciavera.com/es/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog/es"},
+    {"@type": "ListItem", "position": 3, "name": "Disputa China-EE. UU. en México: Qué Significa al Importar", "item": "https://sourciavera.com/blog/es/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿La disputa entre las embajadas de China y EE. UU. cambió los aranceles a productos chinos en México?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No encontramos ninguna medida nueva al 4 de noviembre de 2026. Siguen vigentes los aranceles del decreto publicado en el DOF el 29 de diciembre de 2025, que entró en vigor el 1 de enero de 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué dijo Sheinbaum sobre China y Estados Unidos el 4 de noviembre de 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dijo que México tiene buenas relaciones con ambos gobiernos y que no quiere un debate en México sobre el tema, sino las relaciones comerciales que tiene, según El Universal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuándo es la cumbre de APEC en Shenzhen y va México?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Según Golpe Político, que cita a El Universal, Sheinbaum prevé viajar a Shenzhen el 18 de noviembre de 2026 para participar en APEC. No encontramos una confirmación oficial de México."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué reglas aduanales ya publicadas debe revisar un importador desde China?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El permiso previo para la fracción 9803.00.01, el calendario de la manifestación de valor electrónica y la reforma a la Ley Aduanera que entra en vigor el 1 de enero de 2027, todos publicados en el DOF o por la ANAM."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué puede hacer un comprador para reducir riesgos si cambia el contexto político?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Verificar al proveedor, escribir en la proforma la validez del precio y quién asume cambios de derechos, mantener factura, contrato y pago alineados, inspeccionar antes de pagar el saldo y dejar margen en la fecha de entrega."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Fundador",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body class="sv2 sv-art">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a href="/" lang="en">EN</a><a class="active" aria-current="true" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menú"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Principal"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/es">Inicio</a></li><li><a href="/es/categorias">Categorías</a></li><li class="has-dd"><a href="/es/verificacion-fabricas">Servicios</a><ul class="sv-dd"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></li><li class="has-dd"><a href="/es/como-elegir">Recursos</a><ul class="sv-dd"><li><a href="/es/normas-de-inspeccion">Normas de inspección</a></li><li><a href="/es/informe-de-ejemplo">Informe de ejemplo</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li><li><a href="/es/como-elegir">Cómo elegir un proveedor</a></li></ul></li><li><a href="/blog/es" aria-current="page">Blog</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto">Contacto</a></li></ul></div></div></div>
+<main><div class="art-wrap"><div class="art-grid"><div class="share-rail" aria-label="Compartir"><a href="https://wa.me/?text=Disputa%20China-EE.%20UU.%20en%20M%C3%A9xico%3A%20Qu%C3%A9%20Significa%20al%20Importar%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" title="Compartir en WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" target="_blank" rel="noopener" aria-label="Compartir en Facebook" title="Compartir en Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" title="Compartir en LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores&text=Disputa%20China-EE.%20UU.%20en%20M%C3%A9xico%3A%20Qu%C3%A9%20Significa%20al%20Importar" target="_blank" rel="noopener" aria-label="Compartir en X" title="Compartir en X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=Disputa%20China-EE.%20UU.%20en%20M%C3%A9xico%3A%20Qu%C3%A9%20Significa%20al%20Importar&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" aria-label="Compartir por correo" title="Compartir por correo"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><article class="art-main"><div class="art-head"><div class="art-langs"><a class="back" href="/blog/es">Volver al blog</a></div><h1>Disputa China-EE. UU. en México: Qué Significa al Importar</h1><div class="meta-row"><div class="meta-cat">Noticias del Mercado</div><div class="article-meta"><strong>SourciaVera Team</strong><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><time>4 nov 2026</time><span class="meta-sub"> · 11 min de lectura</span></div></div></div><figure class="art-hero"><div class="ill"><img fetchpriority="high" src="/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-photo.webp" alt="Pasillo de un almacén de fábrica con tarimas de cajas de cartón apiladas" width="1200" height="630" loading="eager"></div><figcaption class="figure-caption">Pasillo de un almacén de fábrica con tarimas de cajas de cartón apiladas</figcaption></figure><!-- review_by: 2026-11-18 (cumbre de APEC en Shenzhen prevista para el 18 de noviembre de 2026; revisar declaraciones de las partes y cualquier medida comercial) --><div class="article-body">
+
+  <p><strong>La respuesta corta:</strong> al 4 de noviembre de 2026 no encontramos aranceles ni reglas nuevas por la disputa entre las embajadas de China y EE. UU. en México. Sheinbaum pidió no convertirla en debate. Siguen vigentes los aranceles de enero de 2026 y las reglas aduanales ya publicadas.</p>
+
+  <p class="verified-note"><strong>Verificado al 4 de noviembre de 2026</strong> contra <a href="https://www.eluniversal.com.mx/nacion/sheinbaum-rechaza-entrar-en-debate-por-discusion-entre-embajadas-de-china-y-eu-destaca-buena-relacion-con-todos-los-paises/" target="_blank" rel="noopener">El Universal (4 de noviembre)</a>, <a href="https://diariodelyaqui.mx/nacional/sheinbaum-evita-confrontacion-entre-china-y-eeuu-tenemos-buena-relacion-con-ambos/147142" target="_blank" rel="noopener">Diario del Yaqui (4 de noviembre)</a>, <a href="https://www.periodicoenfoque.com.mx/internacional/china-responde-a-ronald-johnson-y-lanza-acusacion-contra-eu-por-la-relacion-con-mexico" target="_blank" rel="noopener">Periódico Enfoque (3 de noviembre)</a> y los textos oficiales del DOF citados abajo. Del extracto de Reforma solo se abre el primer párrafo. Los dichos de cada parte se atribuyen a quien los dijo.</p>
+
+  <p>Este artículo ordena lo que pasó, lo que dijo cada parte con su fuente, lo que significa para quien compra en China y lo que todavía no se sabe. No toma partido ni evalúa a ningún gobierno. Se basa en las fuentes citadas y en buenas prácticas generales, no en experiencia propia con estos hechos. Su agente aduanal y su abogado deciden cómo le aplica cada regla.</p>
+
+  <h2>¿Qué Pasó? Línea de Tiempo con Fechas</h2>
+
+  <div class="table-wrap" style="overflow-x:auto">
+  <table>
+    <caption>Hechos de la disputa y su contexto, del 28 de octubre al 4 de noviembre de 2026. Cada fila cita su fuente; consultado el 4 de noviembre de 2026.</caption>
+    <thead><tr><th scope="col">Fecha</th><th scope="col">Qué pasó</th><th scope="col">Fuente</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">28 de octubre</th><td>El embajador de EE. UU. en México, Ronald Johnson, habló en la Conferencia de Inversionistas Globales del Instituto Milken en la Ciudad de México</td><td><a href="https://www.periodicoenfoque.com.mx/internacional/china-responde-a-ronald-johnson-y-lanza-acusacion-contra-eu-por-la-relacion-con-mexico" target="_blank" rel="noopener">Periódico Enfoque</a></td></tr>
+      <tr><th scope="row">30 de octubre</th><td>La Embajada de China en México publicó una declaración en respuesta</td><td><a href="https://www.eluniversal.com.mx/nacion/sheinbaum-rechaza-entrar-en-debate-por-discusion-entre-embajadas-de-china-y-eu-destaca-buena-relacion-con-todos-los-paises/" target="_blank" rel="noopener">El Universal</a></td></tr>
+      <tr><th scope="row">2 de noviembre</th><td>El portavoz de la cancillería china informó que Wang Yi y Wang Wentao copresidirían por videoconferencia la reunión ministerial de APEC el 3 de noviembre</td><td><a href="https://mx.china-embassy.gov.cn/esp/fyrth/202611/t20261104_12052914.htm" target="_blank" rel="noopener">Conferencia de prensa en el sitio de la Embajada</a></td></tr>
+      <tr><th scope="row">3 de noviembre</th><td>Una columna reproducida por Golpe Político, que cita a El Universal, dice que Sheinbaum prevé viajar a Shenzhen el 18 de noviembre para APEC</td><td><a href="https://golpepolitico.com/2026/11/03/la-pelea-de-china-y-eu-en-territorio-de-mexico/" target="_blank" rel="noopener">Golpe Político</a></td></tr>
+      <tr><th scope="row">4 de noviembre</th><td>Sheinbaum respondió en su conferencia matutina que no quiere un debate en México sobre el tema</td><td><a href="https://www.eluniversal.com.mx/nacion/sheinbaum-rechaza-entrar-en-debate-por-discusion-entre-embajadas-de-china-y-eu-destaca-buena-relacion-con-todos-los-paises/" target="_blank" rel="noopener">El Universal</a>; <a href="https://www.reforma.com/evita-csp-tomar-partido-en-disputa-de-eu-y-china/ar3307995" target="_blank" rel="noopener">Reforma</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>¿Qué Dijo Cada Parte?</h2>
+
+  <p>Cada postura es de quien la emitió. No las evaluamos.</p>
+
+  <ul>
+    <li><strong>Estados Unidos.</strong> Según Canal 44 y Telediario, Johnson dijo en el Instituto Milken que a China le convendría un México caótico e inseguro en la frontera sur de EE. UU. y cuestionó las intenciones de las empresas chinas que buscan operar en México (<a href="https://canal44.com/embajador-eu-china-caos-frontera-mexico/" target="_blank" rel="noopener">Canal 44</a>; <a href="https://amp.telediario.mx/internacional/embajador-de-usa-advierte-sobre-estrategia-de-china-en-mexico" target="_blank" rel="noopener">Telediario</a>). Canal 44 añade que, según la información del encuentro, no presentó ejemplos ni pruebas públicas.</li>
+    <li><strong>China.</strong> La Embajada de China en México dijo: &ldquo;Estas retóricas pasan por alto los hechos, tergiversan la verdad e intentan deliberadamente sembrar discordia entre China y México&rdquo; (<a href="https://www.eluniversal.com.mx/nacion/sheinbaum-rechaza-entrar-en-debate-por-discusion-entre-embajadas-de-china-y-eu-destaca-buena-relacion-con-todos-los-paises/" target="_blank" rel="noopener">El Universal</a>). En su texto en español pregunta si EE. UU. se preocupa realmente por México &ldquo;o solo quiere desviar la atención del público&rdquo; (<a href="https://mx.china-embassy.gov.cn/esp/sgzc/202610/t20261031_12050666.htm" target="_blank" rel="noopener">declaración en el sitio de la Embajada</a>), y señala la demanda de drogas y el flujo de armas desde EE. UU. (<a href="https://www.periodicoenfoque.com.mx/internacional/china-responde-a-ronald-johnson-y-lanza-acusacion-contra-eu-por-la-relacion-con-mexico" target="_blank" rel="noopener">Periódico Enfoque</a>). También defiende a las empresas chinas.</li>
+    <li><strong>México.</strong> Sheinbaum dijo en su conferencia del 4 de noviembre: &ldquo;Tenemos buenas relaciones con el gobierno chino y tenemos buenas relaciones con el gobierno de Estados Unidos y no queremos que sea un debate en México en ese punto, sino sencillamente las relaciones comerciales que tenemos&rdquo;. Añadió que automotrices estadounidenses importan de China y que &ldquo;no tenemos un tratado libre comercio con China&rdquo; (<a href="https://www.eluniversal.com.mx/nacion/sheinbaum-rechaza-entrar-en-debate-por-discusion-entre-embajadas-de-china-y-eu-destaca-buena-relacion-con-todos-los-paises/" target="_blank" rel="noopener">El Universal</a>).</li>
+    <li><strong>México, sobre los aranceles.</strong> Sheinbaum recordó que el aumento de aranceles a China de diciembre de 2025 se tomó en el marco del Plan México y explicó: &ldquo;hay muchos productos que se fabrican en México que se estaban importando a menor precio y que estaban afectando la producción nacional. Y por esa razón decidimos elevar los aranceles&rdquo; (<a href="https://diariodelyaqui.mx/nacional/sheinbaum-evita-confrontacion-entre-china-y-eeuu-tenemos-buena-relacion-con-ambos/147142" target="_blank" rel="noopener">Diario del Yaqui</a>).</li>
+    <li><strong>Cancillería china.</strong> En el extracto de la conferencia del 2 de noviembre que leímos no hay una pregunta sobre México ni sobre esta disputa. En las fuentes oficiales chinas que revisamos hasta el 4 de noviembre de 2026 no encontramos una postura sobre las palabras de Sheinbaum; eso no significa que China no la tenga.</li>
+  </ul>
+
+  <h2>¿Qué Significa para Quien Importa de China?</h2>
+
+  <p>Solo escribimos lo que tiene respaldo oficial. En lo que revisamos, <strong>ninguna de las partes anunció una medida comercial nueva</strong> por esta disputa. Estas son las reglas ya publicadas que siguen su curso:</p>
+
+  <ul>
+    <li><strong>Aranceles.</strong> El decreto del Congreso publicado en el DOF el 29 de diciembre de 2025 modificó cuotas de la tarifa de importación y entró en vigor el 1 de enero de 2026; su transitorio cuarto permite a Economía crear mecanismos de importación para mercancías de países sin tratado de libre comercio (<a href="https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29/12/2025" target="_blank" rel="noopener">DOF</a>). El DOF del 29 de octubre de 2026 registra otras modificaciones a la tarifa el 26 de marzo, el 23 de abril y el 13 de octubre de 2026 (<a href="https://dof.gob.mx/nota_detalle.php?codigo=5802465&fecha=29/10/2026" target="_blank" rel="noopener">DOF</a>). Revise la fracción de cada producto con su agente aduanal.</li>
+    <li><strong>Partes de ensamble.</strong> Desde el 30 de octubre de 2026 la fracción 9803.00.01 requiere permiso previo, y el decreto del 13 de octubre la exenta de arancel por cinco años (<a href="https://dof.gob.mx/nota_detalle.php?codigo=5802465&fecha=29/10/2026" target="_blank" rel="noopener">DOF</a>; <a href="https://dof.gob.mx/nota_detalle.php?codigo=5800977&fecha=13/10/2026" target="_blank" rel="noopener">DOF</a>). Vea <a href="/blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice">permiso previo para partes de ensamble en México</a>.</li>
+    <li><strong>Valor declarado.</strong> La reforma a la Ley Aduanera publicada el 23 de octubre de 2026 entra en vigor el 1 de enero de 2027 (<a href="https://dof.gob.mx/nota_detalle.php?codigo=5802077&fecha=23/10/2026" target="_blank" rel="noopener">DOF</a>); vea <a href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores">cómo probar el precio real de su factura</a>. La manifestación de valor electrónica ya se aplica por etapas desde el 1 de noviembre de 2026 (<a href="https://www.anam.gob.mx/comunicado-de-prensa-92-2026/" target="_blank" rel="noopener">comunicado de la ANAM 92/2026</a>); vea <a href="/blog/es/mexico-mve-manifestacion-valor-electronica-fechas-importadores-china">las fechas de la MVE</a>.</li>
+    <li><strong>T-MEC.</strong> Según Mexico Business News, el 1 de julio de 2026 EE. UU. no aceptó extender el tratado otros 16 años en su primera revisión conjunta; el tratado sigue vigente con revisiones anuales. El medio añade que, según resultados preliminares, los demócratas ganaron el control de ambas cámaras en las elecciones del 3 de noviembre y que el resultado puede influir en la negociación, aunque no implica menos presión sobre México (<a href="https://mexicobusiness.news/policyandeconomy/news/us-midterm-elections-reshape-mexicos-strategic-outlook" target="_blank" rel="noopener">Mexico Business News</a>). Según Cluster Industrial, México busca una reducción significativa de los aranceles de EE. UU. a autos, acero y aluminio, y Washington planteó inquietudes sobre contenido automotriz e inversión china (<a href="https://clusterindustrial.com.mx/mexico-busca-reducir-aranceles-automotrices-y-al-acero-en-negociaciones-con-estados-unidos/" target="_blank" rel="noopener">Cluster Industrial</a>).</li>
+    <li><strong>APEC.</strong> La reunión ministerial estaba prevista por videoconferencia el 3 de noviembre, según el anuncio del portavoz de la cancillería china (<a href="https://mx.china-embassy.gov.cn/esp/fyrth/202611/t20261104_12052914.htm" target="_blank" rel="noopener">conferencia del 2 de noviembre</a>), y la cumbre en Shenzhen está prevista, según Golpe Político, para el 18 de noviembre, con viaje de Sheinbaum (<a href="https://golpepolitico.com/2026/11/03/la-pelea-de-china-y-eu-en-territorio-de-mexico/" target="_blank" rel="noopener">Golpe Político</a>).</li>
+  </ul>
+
+      <figure class="body-fig" data-fig="china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-fig2">
+  <img src="/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-hero-es.webp" alt="Tabla con las reglas que siguen vigentes para quien importa de China al 4 de noviembre de 2026 y el estado de una medida nueva por la disputa entre embajadas" width="1200" height="630" loading="lazy" srcset="/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-hero-es.webp 1200w, /images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-hero-es-2x.webp 2400w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+  <figcaption class="figure-caption">Diagrama: Qué sigue vigente al 4 de nov de 2026</figcaption>
+</figure>
+
+  <h2>Lo Que Todavía No Sabemos</h2>
+
+  <ul>
+    <li>Si algún gobierno tomará una medida comercial a raíz de la disputa. No encontramos ninguna al 4 de noviembre de 2026.</li>
+    <li>Qué se tratará en APEC entre las delegaciones y si el tema comercial con China o con EE. UU. aparecerá en la agenda.</li>
+    <li>Cómo evolucionarán las revisiones anuales del T-MEC y la negociación bilateral entre México y EE. UU.</li>
+    <li>El texto completo de la declaración de la Embajada de China: leímos el extracto del sitio de la Embajada y la cobertura de la prensa. No encontramos el enlace a la publicación original en X de ninguna de las dos embajadas, por eso no la incluimos; la cuenta oficial de la Embajada de China es <a href="https://x.com/EmbChinaMex" target="_blank" rel="noopener">@EmbChinaMex</a>.</li>
+  </ul>
+
+  <div class="mid-card"><div class="side-card"><div class="sc-tag">Revisión remota</div><p class="sc-price">$49</p><div class="sc-h">Revisión remota de proveedor</div><p>Informe escrito en 48 horas: registro de la empresa, fábrica o comercializadora, y coincidencia de la cuenta de pago.</p><a class="btn btn-accent" href="/es#remote-check">Solicitar revisión de $49</a></div></div><h2>¿Qué Puede Controlar un Comprador Cuando el Contexto Político Es Incierto?</h2>
+
+  <p>Somos una empresa de verificación de proveedores y de compras en China, y no tomamos partido en una disputa entre gobiernos. Lo que sí podemos decir con claridad es qué decisiones de una compra siguen en manos del comprador, sin importar cómo evolucionen las reglas. Esto es consejo general, no una regla de las fuentes.</p>
+
+  <ul>
+    <li><strong>Saber con quién compra.</strong> Verifique que el proveedor exista, que el nombre legal coincida con la licencia y que fabrique lo que cotiza (vea <a href="/blog/es/lista-verificacion-proveedores-china">la lista de verificación de proveedores</a> y <a href="/blog/es/nombre-legal-chino-vs-nombre-en-ingles-proveedor-china-que-verificar">nombre legal y nombre en inglés</a>).</li>
+    <li><strong>Escribir los cambios de costo en el contrato.</strong> En la factura proforma, fije hasta cuándo vale el precio, quién asume un cambio de derechos y qué pasa con el anticipo si el embarque se retrasa (vea <a href="/blog/es/factura-proforma-proveedor-chino-que-revisar">qué revisar en la factura proforma</a>).</li>
+    <li><strong>Declarar el valor real.</strong> Una factura, un contrato y un pago que cuenten la misma historia son una defensa sólida ante la revisión aduanal. No hacemos subvaluación, y la reforma de enero de 2027 hace más importante tener ese expediente listo.</li>
+    <li><strong>Revisar la mercancía antes de que salga.</strong> Una inspección antes de pagar el saldo compara cantidades, empaque y especificación con el pedido (vea <a href="/blog/es/costo-inspeccion-producto-antes-embarque">cuánto cuesta una inspección previa al embarque</a>).</li>
+    <li><strong>Dejar margen en la fecha.</strong> Un contenedor detenido por un documento faltante cuesta más que un par de semanas de colchón en el calendario.</li>
+  </ul>
+
+  <p>Para ver cómo trabajamos de principio a fin, vea nuestro <a href="/es/proceso-de-compra-china">proceso de compra en China</a>; si necesita que alguien compre y coordine por usted, vea el <a href="/es/agente-de-compras-china">servicio de agente de compras en China</a>; para pedidos en producción, la <a href="/es/supervision-fabricas-china">supervisión de fábricas</a>; y si compra componentes para vehículos, la <a href="/es/categorias/autopartes">página de autopartes</a>.</p>
+
+      <figure class="body-fig" data-fig="china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-fig1">
+      <img src="/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-fig1-es.webp" alt="Lista de cuatro cosas que un comprador controla aunque cambie el contexto político al importar de China" width="800" height="596" loading="lazy" srcset="/images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-fig1-es.webp 800w, /images/china-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores-fig1-es-2x.webp 1600w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+      <figcaption class="figure-caption">Diagrama: Consejo general, no una conclusión de las fuentes.</figcaption>
+    </figure>
+
+  <h2>Preguntas Frecuentes</h2>
+
+  <h3>¿La disputa entre las embajadas de China y EE. UU. cambió los aranceles a productos chinos en México?</h3>
+  <p>No encontramos ninguna medida nueva al 4 de noviembre de 2026. Siguen vigentes los aranceles del decreto publicado en el DOF el 29 de diciembre de 2025, que entró en vigor el 1 de enero de 2026.</p>
+
+  <h3>¿Qué dijo Sheinbaum sobre China y Estados Unidos el 4 de noviembre de 2026?</h3>
+  <p>Dijo que México tiene buenas relaciones con ambos gobiernos y que no quiere un debate en México sobre el tema, sino las relaciones comerciales que tiene, según El Universal.</p>
+
+  <h3>¿Cuándo es la cumbre de APEC en Shenzhen y va México?</h3>
+  <p>Según Golpe Político, que cita a El Universal, Sheinbaum prevé viajar a Shenzhen el 18 de noviembre de 2026 para participar en APEC. No encontramos una confirmación oficial de México.</p>
+
+  <h3>¿Qué reglas aduanales ya publicadas debe revisar un importador desde China?</h3>
+  <p>El permiso previo para la fracción 9803.00.01, el calendario de la manifestación de valor electrónica y la reforma a la Ley Aduanera que entra en vigor el 1 de enero de 2027, todos publicados en el DOF o por la ANAM.</p>
+
+  <h3>¿Qué puede hacer un comprador para reducir riesgos si cambia el contexto político?</h3>
+  <p>Verificar al proveedor, escribir en la proforma la validez del precio y quién asume cambios de derechos, mantener factura, contrato y pago alineados, inspeccionar antes de pagar el saldo y dejar margen en la fecha de entrega.</p>
+  <h2>Fuentes</h2>
+
+  <ul>
+    <li>El Universal, 4 de noviembre de 2026: <a href="https://www.eluniversal.com.mx/nacion/sheinbaum-rechaza-entrar-en-debate-por-discusion-entre-embajadas-de-china-y-eu-destaca-buena-relacion-con-todos-los-paises/" target="_blank" rel="noopener">Sheinbaum rechaza entrar en debate por discusión entre embajadas de China y EU</a>.</li>
+    <li>Reforma, 4 de noviembre de 2026: <a href="https://www.reforma.com/evita-csp-tomar-partido-en-disputa-de-eu-y-china/ar3307995" target="_blank" rel="noopener">Evita CSP tomar partido en disputa de EU y China</a> (solo el primer párrafo está abierto).</li>
+    <li>Diario del Yaqui, 4 de noviembre de 2026: <a href="https://diariodelyaqui.mx/nacional/sheinbaum-evita-confrontacion-entre-china-y-eeuu-tenemos-buena-relacion-con-ambos/147142" target="_blank" rel="noopener">Sheinbaum evita confrontación entre China y EE.UU.</a>.</li>
+    <li>Periódico Enfoque, 3 de noviembre de 2026: <a href="https://www.periodicoenfoque.com.mx/internacional/china-responde-a-ronald-johnson-y-lanza-acusacion-contra-eu-por-la-relacion-con-mexico" target="_blank" rel="noopener">China responde a Ronald Johnson</a>.</li>
+    <li>Golpe Político, 3 de noviembre de 2026: <a href="https://golpepolitico.com/2026/11/03/la-pelea-de-china-y-eu-en-territorio-de-mexico/" target="_blank" rel="noopener">La pelea de China y EU en territorio de México</a>.</li>
+    <li>Canal 44 y Telediario, 29 de octubre de 2026: <a href="https://canal44.com/embajador-eu-china-caos-frontera-mexico/" target="_blank" rel="noopener">Canal 44</a>; <a href="https://amp.telediario.mx/internacional/embajador-de-usa-advierte-sobre-estrategia-de-china-en-mexico" target="_blank" rel="noopener">Telediario</a>.</li>
+    <li>Embajada de China en México: <a href="https://mx.china-embassy.gov.cn/esp/sgzc/202610/t20261031_12050666.htm" target="_blank" rel="noopener">declaración</a> y <a href="https://mx.china-embassy.gov.cn/esp/fyrth/202611/t20261104_12052914.htm" target="_blank" rel="noopener">conferencia de prensa del 2 de noviembre de 2026</a> (extractos).</li>
+    <li>Mexico Business News, 4 de noviembre de 2026: <a href="https://mexicobusiness.news/policyandeconomy/news/us-midterm-elections-reshape-mexicos-strategic-outlook" target="_blank" rel="noopener">US Midterm Elections Reshape Mexico&rsquo;s Strategic Outlook</a>. Cluster Industrial, 29 de octubre de 2026: <a href="https://clusterindustrial.com.mx/mexico-busca-reducir-aranceles-automotrices-y-al-acero-en-negociaciones-con-estados-unidos/" target="_blank" rel="noopener">México busca reducir aranceles</a>.</li>
+    <li>DOF: <a href="https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29/12/2025" target="_blank" rel="noopener">29 de diciembre de 2025</a>, <a href="https://dof.gob.mx/nota_detalle.php?codigo=5800977&fecha=13/10/2026" target="_blank" rel="noopener">13 de octubre de 2026</a>, <a href="https://dof.gob.mx/nota_detalle.php?codigo=5802077&fecha=23/10/2026" target="_blank" rel="noopener">23 de octubre de 2026</a> y <a href="https://dof.gob.mx/nota_detalle.php?codigo=5802465&fecha=29/10/2026" target="_blank" rel="noopener">29 de octubre de 2026</a>. ANAM: <a href="https://www.anam.gob.mx/comunicado-de-prensa-92-2026/" target="_blank" rel="noopener">comunicado 92/2026</a>.</li>
+  </ul>
+
+  <h2>Resumen y Siguiente Paso</h2>
+
+  <p>Las embajadas de China y EE. UU. cruzaron declaraciones, Sheinbaum pidió no debatirlo y, al 4 de noviembre de 2026, no encontramos medidas comerciales nuevas por esta razón. Lo vigente es lo ya publicado: aranceles de 2026, permiso previo en la fracción 9803.00.01, MVE y la reforma aduanal de 2027. El primer paso es revisar su expediente de precio y a su proveedor.</p>
+
+  <div class="series-box">
+    <h3>Más sobre importar a México</h3>
+    <ul><li><a href="/blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice">permiso previo para partes de ensamble en México</a></li><li><a href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores">cómo probar el precio real de su factura</a></li><li><a href="/blog/es/mexico-mve-manifestacion-valor-electronica-fechas-importadores-china">las fechas de la MVE</a></li></ul>
+  </div>
+
+  <p>En pocas palabras: no puede controlar la política, pero sí a quién compra, qué firma y qué declara. Puede contarnos su pedido si quiere ayuda para preparar las preguntas a su proveedor.</p>
+
+  <p class="fine-print">Yo ofrezco servicios de verificación de proveedores, así que tome mi recomendación en consecuencia. SourciaVera no es una agencia aduanal ni un despacho de abogados, y nada de esto es asesoría aduanal ni legal.</p>
+
+  <aside class="author-box" aria-label="Sobre el autor">
+    <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), fundador de SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Fundador, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>De Guangzhou, con larga experiencia a pie de fábrica en Guangdong y las provincias vecinas</li><li>Años de experiencia en comercio exterior y publicidad internacional</li><li>Trabaja con un equipo de compras, transporte y logística, y comercio exterior</li><li>Graba cada verificación de fábrica en sitio y entrega el video real al cliente</li></ul>
+    <p class="author-box-links"><a href="/es/about">Sobre el autor</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/es#remote-check" class="cta-btn">Empiece con una Revisión Remota de $49</a>
+      <a href="/es#contacto" class="cta-btn">Cuéntenos su pedido</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#0B7A6E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Escríbanos por WhatsApp</a>
+    </div>
+  </div>
+</div><div class="share-row"><span>Compartir</span><a href="https://wa.me/?text=Disputa%20China-EE.%20UU.%20en%20M%C3%A9xico%3A%20Qu%C3%A9%20Significa%20al%20Importar%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" title="Compartir en WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" target="_blank" rel="noopener" aria-label="Compartir en Facebook" title="Compartir en Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" title="Compartir en LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores&text=Disputa%20China-EE.%20UU.%20en%20M%C3%A9xico%3A%20Qu%C3%A9%20Significa%20al%20Importar" target="_blank" rel="noopener" aria-label="Compartir en X" title="Compartir en X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=Disputa%20China-EE.%20UU.%20en%20M%C3%A9xico%3A%20Qu%C3%A9%20Significa%20al%20Importar&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fchina-eu-mexico-embajadas-sheinbaum-sin-partido-apec-que-significa-para-importadores" aria-label="Compartir por correo" title="Compartir por correo"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><div class="rel-topics"><div class="side-h rel-h">Temas relacionados</div><span class="tag">Aduanas e importación</span><span class="tag">México</span></div></article><aside class="art-side"><div class="side-card"><div class="sc-tag">Revisión remota</div><p class="sc-price">$49</p><div class="sc-h">Revisión remota de proveedor</div><p>Informe escrito en 48 horas: registro de la empresa, fábrica o comercializadora, y coincidencia de la cuenta de pago.</p><a class="btn btn-accent" href="/es#remote-check">Solicitar revisión de $49</a></div><a class="side-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="sidebar"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Consultar por WhatsApp</a><div class="side-pop"><div class="side-h">Artículos populares</div><ol><li><a href="/blog/es/estafa-alibaba">Me Estafaron en Alibaba: Qué Hacer Ahora</a></li><li><a href="/blog/es/alibaba-confiable">¿Es Alibaba Confiable? Respuesta Honesta para Importadores Mexicanos</a></li><li><a href="/blog/es/verificacion-proveedores-china-mexico">Verificación de Proveedores en China: La Guía que Todo Importador Mexicano Necesita Leer</a></li><li><a href="/blog/es/guia-estafas-piezas-led-alibaba">¿Comprando Piezas LED de Auto en Alibaba? En Esto se Equivocan los Distribuidores</a></li></ol></div></aside></div><section class="you-may-like"><div class="sv-wrap"><div class="section-title"><span>Te puede interesar</span></div><div class="grid-4"><a class="rel-card" href="/blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice"><img src="/images/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Permiso Previo para Partes de Ensamble en México: Qué Cambia</span></a><a class="rel-card" href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores"><img src="/images/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Subvaluación en México 2027: Cómo Probar su Precio Real</span></a><a class="rel-card" href="/blog/es/mexico-mve-manifestacion-valor-electronica-fechas-importadores-china"><img src="/images/mexico-mve-electronic-value-declaration-deadlines-importers-china-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>MVE en México: Fechas y Qué Cuadrar con su Proveedor</span></a><a class="rel-card" href="/blog/es/autos-chinos-america-latina-argentina-mexico-brasil-rutas-distintas-byd"><img src="/images/autos-chinos-america-latina-argentina-mexico-brasil-rutas-distintas-byd-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Autos Chinos en Latinoamérica: Argentina, México y Brasil</span></a></div></div></section></div></main>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><p>Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta.</p><p>Con base en Guangzhou. Servicio en español e inglés. Solo cobramos al cliente: sin comisión de las fábricas.</p></div><div><div class="sv-foot-h">Servicios</div><ul class="sv-foot-list"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></div><div><div class="sv-foot-h">Sitio</div><ul class="sv-foot-list"><li><a href="/blog/es">Blog</a></li><li><a href="/es/categorias">Categorías</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto">Contacto</a></li><li><a href="/es/prensa">Prensa</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li></ul></div><div><div class="sv-foot-h">Síganos y escríbanos</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · Todos los derechos reservados</div><div class="sv-foot-links"><a href="/es/privacy">Política de Privacidad</a><a href="/es/terms">Términos de Servicio</a><a href="#" role="button" data-cc="show-preferencesModal">Configuración de cookies</a></div><div><span>Verificado en</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Volver arriba</span></button></div></div></div>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'es',
+    translations: {
+      es: {
+        consentModal: {
+          title: 'Usamos cookies',
+          description: 'Usamos cookies para analizar el tráfico del sitio y mejorar su experiencia.',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          showPreferencesBtn: 'Gestionar Preferencias'
+        },
+        preferencesModal: {
+          title: 'Preferencias de Cookies',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          savePreferencesBtn: 'Guardar Preferencias',
+          closeIconLabel: 'Cerrar',
+          sections: [
+            { title: 'Cookies Necesarias', description: 'Requeridas para el correcto funcionamiento del sitio web.', linkedCategory: 'necessary' },
+            { title: 'Cookies de Análisis', description: 'Nos ayudan a entender cómo los visitantes usan nuestro sitio mediante Google Analytics. Todos los datos son anonimizados.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
