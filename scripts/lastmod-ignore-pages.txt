@@ -694,3 +694,8 @@ ae9c326 blog/us-trailer-antidumping-countervailing-duties-china-what-importers-c
 f780ea7 blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores.html
 f780ea7 blog/es/mexico-mve-manifestacion-valor-electronica-fechas-importadores-china.html
 f780ea7 blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice.html
+58478bf blog/us-trailer-antidumping-countervailing-duties-china-what-importers-check.html
+58478bf blog/us-section-301-exclusions-end-november-9-2026-china-what-importers-check.html
+58478bf blog/china-us-freight-early-november-2026-ocean-flat-air-high-port-strike-risk-how-to-book.html
+58478bf blog/es/mexico-permiso-previo-partes-ensamble-fraccion-9803-armadoras-lineamientos-snice.html
+58478bf blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores.html
