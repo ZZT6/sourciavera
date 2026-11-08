@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBP: Importador de Registro Extranjero y CTPAT en 2027</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="La regla de la CBP del 6 de noviembre de 2026 exige CTPAT o un agente validado a importadores extranjeros desde el 5 de enero de 2027. Qué revisar.">
+<link rel="canonical" href="https://sourciavera.com/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico">
+<link rel="alternate" type="application/rss+xml" title="SourciaVera Blog (Español)" href="https://sourciavera.com/es/rss.xml">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico">
+<meta property="og:title" content="CBP: Importador de Registro Extranjero y CTPAT en 2027">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="La regla de la CBP del 6 de noviembre de 2026 exige CTPAT o un agente validado a importadores extranjeros desde el 5 de enero de 2027. Qué revisar.">
+<meta property="og:url" content="https://sourciavera.com/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-photo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico#article",
+  "headline": "CBP: Importador de Registro Extranjero y CTPAT en 2027",
+  "description": "La regla de la CBP del 6 de noviembre de 2026 exige CTPAT o un agente validado a importadores extranjeros desde el 5 de enero de 2027. Qué revisar.",
+  "inLanguage": "es",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Fundador", "url": "https://sourciavera.com/es/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-photo.webp",
+  "datePublished": "2026-11-08",
+  "dateModified": "2026-11-08",
+  "mainEntityOfPage": "https://sourciavera.com/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico",
+  "keywords": "CBP importador de registro extranjero CTPAT, regla provisional final 91 FR 69977, importador de registro Estados Unidos empresas mexicanas, 5 de enero de 2027 CBP, agente aduanal verificar importador estadounidense, Orden Ejecutiva 14411, vender a Estados Unidos desde México"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sourciavera.com/es/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog/es"},
+    {"@type": "ListItem", "position": 3, "name": "CBP: Importador de Registro Extranjero y CTPAT en 2027", "item": "https://sourciavera.com/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué publicó la CBP el 6 de noviembre de 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una regla provisional final: el importador de registro extranjero no puede despachar mercancía para consumo salvo que esté validado en CTPAT o designe a un agente aduanal validado en CTPAT. Los agentes deben verificar el estatus de su cliente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuándo entra en vigor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El 5 de enero de 2027, según el Federal Register. Los comentarios cierran ese día. Los agentes aduanales pueden pedir cumplimiento diferido hasta esa fecha y deben cumplir a más tardar el 6 de mayo de 2027."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Una empresa mexicana es importador estadounidense según la regla?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No por sí misma: la regla pide una entidad organizada bajo leyes de EE. UU. y ubicada allá, con 51% de beneficiarios finales estadounidenses o bienes raíces propios. No encontramos una excepción para México ni mención del T-MEC."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se prohíben las entradas informales a importadores extranjeros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No en esta regla. La orden ejecutiva lo pedía, pero la CBP dice que solo las vigilará y que podría prohibirlas después; pide comentarios sobre esa alternativa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué debo preguntar a mi agente aduanal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quién es el importador de registro de cada embarque a EE. UU., si está validado en CTPAT o usa un agente validado y desde cuándo, y qué registros debe conservar sobre propiedad, activos y capital."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Fundador",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body class="sv2 sv-art">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a href="/" lang="en">EN</a><a class="active" aria-current="true" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menú"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Principal"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/es">Inicio</a></li><li><a href="/es/categorias">Categorías</a></li><li class="has-dd"><a href="/es/verificacion-fabricas">Servicios</a><ul class="sv-dd"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></li><li class="has-dd"><a href="/es/como-elegir">Recursos</a><ul class="sv-dd"><li><a href="/es/normas-de-inspeccion">Normas de inspección</a></li><li><a href="/es/informe-de-ejemplo">Informe de ejemplo</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li><li><a href="/es/como-elegir">Cómo elegir un proveedor</a></li></ul></li><li><a href="/blog/es" aria-current="page">Blog</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto">Contacto</a></li></ul></div></div></div>
+<main><div class="art-wrap"><div class="art-grid"><div class="share-rail" aria-label="Compartir"><a href="https://wa.me/?text=CBP%3A%20Importador%20de%20Registro%20Extranjero%20y%20CTPAT%20en%202027%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" title="Compartir en WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" target="_blank" rel="noopener" aria-label="Compartir en Facebook" title="Compartir en Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" title="Compartir en LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico&text=CBP%3A%20Importador%20de%20Registro%20Extranjero%20y%20CTPAT%20en%202027" target="_blank" rel="noopener" aria-label="Compartir en X" title="Compartir en X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=CBP%3A%20Importador%20de%20Registro%20Extranjero%20y%20CTPAT%20en%202027&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" aria-label="Compartir por correo" title="Compartir por correo"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><article class="art-main"><div class="art-head"><div class="art-langs"><a class="back" href="/blog/es">Volver al blog</a></div><h1>CBP: Importador de Registro Extranjero y CTPAT en 2027</h1><div class="meta-row"><div class="meta-cat">Noticias del Mercado</div><div class="article-meta"><strong>SourciaVera Team</strong><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><time>8 nov 2026</time><span class="meta-sub"> · 8 min de lectura</span></div></div></div><figure class="art-hero"><div class="ill"><img fetchpriority="high" src="/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-photo.webp" alt="Línea de ensamble de vehículos con brazos robóticos y operarios en una nave industrial" width="1200" height="630" loading="eager"></div><figcaption class="figure-caption">Línea de ensamble de vehículos con brazos robóticos y operarios en una nave industrial</figcaption></figure><!-- review_by: 2026-12-08 (la regla entra en vigor el 5 de enero de 2027 y los comentarios cierran ese día; revisar el Federal Register y las páginas de la CBP por guías, preguntas frecuentes y cambios sobre entradas informales) --><div class="article-body">
+
+  <p><strong>La respuesta corta:</strong> La CBP exige desde el 5 de enero de 2027 que todo importador de registro extranjero esté validado en CTPAT o use un agente validado. La regla se publicó el 6 de noviembre de 2026. Una empresa organizada fuera de EE. UU. no cumple los criterios de importador estadounidense.</p>
+
+  <p class="verified-note"><strong>Verificado al 8 de noviembre de 2026</strong> contra la regla en el <a href="https://www.federalregister.gov/documents/2026/11/06/2026-22735/heightened-requirements-for-foreign-importers-of-record" target="_blank" rel="noopener">Federal Register (91 FR 69977, documento 2026-22735)</a>, cuya explicación leímos completa, y contra <a href="https://www.vinetur.com/es/20261107110570/cbp-requires-foreign-importers-of-record-to-join-ctpat-or-use-validated-brokers.html" target="_blank" rel="noopener">Vinetur (7 de noviembre)</a>. No leímos línea por línea el texto regulatorio final, así que los números de sección salen de la explicación.</p>
+
+  <p>Este artículo explica qué dice la regla desde el punto de vista de empresas de México y América Latina que venden a EE. UU. o importan allá con sus propios datos, qué falta saber y qué conviene preguntar. No es una traducción de otro texto nuestro. Se basa en la regla citada y en buenas prácticas generales, no en experiencia propia con su aplicación. Su agente aduanal estadounidense y su abogado deciden cómo le aplica.</p>
+
+  <h2>¿Qué Dice la Regla?</h2>
+
+  <p>Según la CBP, el <a href="/es/glosario-importacion#ior">importador de registro</a> (IOR, el responsable legal de la entrada y de los derechos) puede ser "estadounidense" o "extranjero", y la regla añade condiciones al segundo (<a href="https://www.federalregister.gov/documents/2026/11/06/2026-22735/heightened-requirements-for-foreign-importers-of-record" target="_blank" rel="noopener">Federal Register</a>).</p>
+
+  <div class="table-wrap" style="overflow-x:auto">
+  <table>
+    <caption>Puntos principales de la regla provisional final publicada el 6 de noviembre de 2026. Consultado el 8 de noviembre de 2026.</caption>
+    <thead><tr><th scope="col">Tema</th><th scope="col">Qué dice la regla</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Vigencia</th><td>5 de enero de 2027; los comentarios cierran ese día (expediente USCBP-2026-1387)</td></tr>
+      <tr><th scope="row">Origen</th><td>Sección 2 de la Orden Ejecutiva 14411, "Strengthening Customs Enforcement", firmada el 3 de junio de 2026</td></tr>
+      <tr><th scope="row">Importador de registro estadounidense</th><td>Ciudadano o residente permanente de EE. UU., o una entidad organizada bajo leyes estadounidenses y ubicada en EE. UU. que mantenga siempre al menos 51% de beneficiarios finales ciudadanos o residentes permanentes con control, o la propiedad directa de un monto significativo de bienes raíces estadounidenses sin gravámenes (nuevo 19 CFR 110.2)</td></tr>
+      <tr><th scope="row">Importador de registro extranjero</th><td>El que no cumple esos criterios (nuevo 19 CFR 110.3)</td></tr>
+      <tr><th scope="row">Condición nueva para el extranjero</th><td>No puede despachar mercancía para consumo salvo que esté validado en CTPAT o designe a un agente aduanal validado en CTPAT (nuevo 19 CFR 141.21)</td></tr>
+      <tr><th scope="row">Agentes aduanales de EE. UU.</th><td>Deben verificar y declarar que su cliente califica como importador estadounidense y guardar los registros (19 CFR 111.29, 111.21 y 111.23)</td></tr>
+      <tr><th scope="row">Plazos para los agentes</th><td>Pueden pedir cumplimiento diferido hasta el 5 de enero de 2027; se espera cumplimiento total a más tardar el 6 de mayo de 2027</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>La CBP explica que verificará el estatus estadounidense por fondo y forma: dónde está el domicilio principal, si hay presencia física con operaciones reales, activos sin gravámenes y capital suficientes, y si la entidad es un instrumento de un fabricante extranjero sin presencia sustancial en EE. UU. (<a href="https://www.federalregister.gov/documents/2026/11/06/2026-22735/heightened-requirements-for-foreign-importers-of-record" target="_blank" rel="noopener">Federal Register</a>). Puede pedir actas constitutivas, estados financieros y documentos de propiedad. La regla define al beneficiario final como la persona física que ejerce control sustancial o posee o controla al menos 25% de la entidad, directa o indirectamente.</p>
+
+  <h2>¿Qué Significa para Empresas de México y América Latina?</h2>
+
+  <p>Solo escribimos lo que dice la regla. Según su texto, una empresa organizada fuera de EE. UU. no es importador estadounidense, así que una empresa mexicana que actúe como importador de registro en EE. UU. sería importador extranjero. En el texto que leímos <strong>no encontramos una excepción para México ni una mención del T-MEC</strong>. México aparece solo en la lista de quienes pueden pedir CTPAT (transportistas por carretera entre México y EE. UU.) y en una nota que dice que México, Brasil, India, Corea del Sur, Vietnam y China no permiten que personas extranjeras actúen como importador de registro (<a href="https://www.federalregister.gov/documents/2026/11/06/2026-22735/heightened-requirements-for-foreign-importers-of-record" target="_blank" rel="noopener">Federal Register</a>).</p>
+
+  <ul>
+    <li><strong>Si su empresa es importador de registro en EE. UU.,</strong> pregunte a su agente aduanal estadounidense si cumple los criterios o si debe estar validada en CTPAT, y desde qué fecha.</li>
+    <li><strong>Si vende con precio entregado en EE. UU. (DDP),</strong> confirme quién es el importador de registro en cada entrada y si ese importador cumple la regla (vea <a href="/blog/es/fob-exw-cif-ddp-cotizacion-proveedor-chino">qué término de precio pedir a un proveedor chino</a>).</li>
+    <li><strong>Si compra de China y revende a EE. UU.,</strong> revise los documentos que respaldan su cadena, porque la regla pone el foco en quién es el responsable de la entrada y de los derechos.</li>
+  </ul>
+
+  <h2>Lo Que Todavía No Sabemos</h2>
+
+  <ul>
+    <li><strong>Cuánto tarda la validación CTPAT</strong> para un importador extranjero que la solicite después del 6 de noviembre de 2026. No lo encontramos en la regla.</li>
+    <li><strong>Cómo decidirá la CBP qué es un monto "significativo"</strong> de bienes raíces o activos y capital "suficientes". Los criterios se describen como flexibles y no exhaustivos.</li>
+    <li><strong>Si el texto final cambiará.</strong> Es una regla provisional final con periodo de comentarios.</li>
+    <li><strong>Si se prohibirán las entradas informales</strong> a importadores extranjeros. La orden ejecutiva lo pedía, la regla no lo impone y la CBP dice que podría hacerlo después.</li>
+    <li><strong>Si habrá trato especial para México.</strong> No lo encontramos.</li>
+  </ul>
+
+  <h2>¿Qué Debe Preguntar a Su Agente Aduanal y a Su Proveedor?</h2>
+
+  <p>Esta sección es consejo general, no una regla del documento.</p>
+
+  <ul>
+    <li><strong>Quién aparece como importador de registro</strong> en cada embarque a EE. UU. y por qué.</li>
+    <li><strong>Si ese importador está validado en CTPAT</strong> o usa un agente validado, y con qué fecha de inicio.</li>
+    <li><strong>Qué registros debe conservar</strong> sobre propiedad, domicilio, activos y capital, por si la CBP los pide (vea <a href="/blog/es/8-documentos-solicitar-fabricante-chino">los documentos que se piden a un fabricante chino</a>).</li>
+    <li><strong>Quién asume el costo</strong> de cualquier cambio, escrito en la proforma (vea <a href="/blog/es/factura-proforma-proveedor-chino-que-revisar">qué revisar en una factura proforma</a>).</li>
+  </ul>
+
+      <figure class="body-fig" data-fig="cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-fig1">
+      <img src="/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-fig1-es.webp" alt="Lista de cuatro cosas que preguntar al agente aduanal y al proveedor antes del 5 de enero de 2027" width="800" height="556" loading="lazy" srcset="/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-fig1-es.webp 800w, /images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-fig1-es-2x.webp 1600w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+      <figcaption class="figure-caption">Diagrama: Consejo general, no una regla del documento.</figcaption>
+    </figure>
+
+  <div class="mid-card"><div class="side-card"><div class="sc-tag">Revisión remota</div><p class="sc-price">$49</p><div class="sc-h">Revisión remota de proveedor</div><p>Informe escrito en 48 horas: registro de la empresa, fábrica o comercializadora, y coincidencia de la cuenta de pago.</p><a class="btn btn-accent" href="/es#remote-check">Solicitar revisión de $49</a></div></div><h2>¿Dónde Ayuda una Revisión de un Tercero?</h2>
+
+  <p>No decide quién califica como importador de registro ni si una empresa está validada en CTPAT; eso lo hacen la CBP y su agente aduanal. Sí puede confirmar lo que está del lado del proveedor: que el vendedor de los documentos es quien fabrica, dónde se produce y que lo embarcado coincide con el pedido. Vea nuestro <a href="/es/supervision-fabricas-china">servicio de supervisión de fábricas en China</a> y nuestra <a href="/categories/auto-parts">categoría de autopartes</a>. Para los riesgos de valor y origen del lado mexicano, vea <a href="/blog/es/operacion-trade-bridge-cbp-anam-otay-mesa-valor-origen-que-revisar-importadores">la Operación Trade Bridge de la CBP y la ANAM</a>.</p>
+
+  <h2>¿Qué No Dice la Regla?</h2>
+
+  <p>No dice si su empresa califica, cuántas entradas se verán afectadas ni cuánto costará. Tampoco evalúa a ningún proveedor ni a ningún agente aduanal.</p>
+
+      <figure class="body-fig" data-fig="cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-fig2">
+  <img src="/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-hero-es.webp" alt="Tabla con la fecha de publicación, la vigencia, la condición para importadores extranjeros, el deber de los agentes aduanales y la ausencia de una excepción para el T-MEC en la regla de la CBP" width="1200" height="630" loading="lazy" srcset="/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-hero-es.webp 1200w, /images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-hero-es-2x.webp 2400w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+  <figcaption class="figure-caption">Tabla: puntos principales de la regla de la CBP.</figcaption>
+</figure>
+
+  <h2>¿Qué Conviene Hacer?</h2>
+
+  <ol>
+    <li><strong>Liste</strong> sus embarques a EE. UU. con el importador de registro de cada uno.</li>
+    <li><strong>Consulte a su agente aduanal</strong> en EE. UU. sobre CTPAT y los criterios de importador estadounidense.</li>
+    <li><strong>Escriba en la proforma</strong> el término de precio y quién responde por la entrada.</li>
+    <li><strong>Revise el Federal Register y las páginas de la CBP</strong> antes del 5 de enero de 2027.</li>
+    <li><strong>Verifique a todo proveedor nuevo</strong> antes de pagar; vea <a href="/blog/es/lista-verificacion-proveedores-china">la lista de verificación de proveedores</a>.</li>
+  </ol>
+
+  <h2>Preguntas Frecuentes</h2>
+
+  <h3>¿Qué publicó la CBP el 6 de noviembre de 2026?</h3>
+  <p>Una regla provisional final: el importador de registro extranjero no puede despachar mercancía para consumo salvo que esté validado en CTPAT o designe a un agente aduanal validado en CTPAT. Los agentes deben verificar el estatus de su cliente.</p>
+
+  <h3>¿Cuándo entra en vigor?</h3>
+  <p>El 5 de enero de 2027, según el Federal Register. Los comentarios cierran ese día. Los agentes aduanales pueden pedir cumplimiento diferido hasta esa fecha y deben cumplir a más tardar el 6 de mayo de 2027.</p>
+
+  <h3>¿Una empresa mexicana es importador estadounidense según la regla?</h3>
+  <p>No por sí misma: la regla pide una entidad organizada bajo leyes de EE. UU. y ubicada allá, con 51% de beneficiarios finales estadounidenses o bienes raíces propios. No encontramos una excepción para México ni mención del T-MEC.</p>
+
+  <h3>¿Se prohíben las entradas informales a importadores extranjeros?</h3>
+  <p>No en esta regla. La orden ejecutiva lo pedía, pero la CBP dice que solo las vigilará y que podría prohibirlas después; pide comentarios sobre esa alternativa.</p>
+
+  <h3>¿Qué debo preguntar a mi agente aduanal?</h3>
+  <p>Quién es el importador de registro de cada embarque a EE. UU., si está validado en CTPAT o usa un agente validado y desde cuándo, y qué registros debe conservar sobre propiedad, activos y capital.</p>
+  <h2>Resumen y Siguiente Paso</h2>
+
+  <p>Desde el 5 de enero de 2027, según la regla de la CBP, un importador de registro extranjero debe estar validado en CTPAT o usar un agente aduanal validado, y los agentes deben verificar el estatus estadounidense de su cliente. El primer paso es saber quién es el importador de registro en cada embarque a EE. UU.</p>
+
+  <div class="series-box">
+    <h3>Más sobre importar de China a México y vender a EE. UU.</h3>
+    <ul><li><a href="/blog/es/operacion-trade-bridge-cbp-anam-otay-mesa-valor-origen-que-revisar-importadores">la Operación Trade Bridge de la CBP y la ANAM</a></li><li><a href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores">cómo probar el precio real de la factura</a></li><li><a href="/blog/es/elecciones-eeuu-tmec-ebrard-sheinbaum-xi-apec-que-cambia-para-importar-de-china">las elecciones de EE. UU., el T-MEC y la reunión Sheinbaum-Xi</a></li></ul>
+  </div>
+
+  <p>En resumen, sepa quién firma la entrada antes del 5 de enero de 2027. Cuéntenos su pedido si quiere ayuda para preparar las preguntas para su proveedor y su agente aduanal.</p>
+
+  <p class="fine-print">Ofrezco servicios de verificación de proveedores, así que debe tomar mi recomendación en ese contexto. SourciaVera no es agente aduanal ni despacho de abogados, y nada de lo anterior es asesoría aduanera ni legal.</p>
+
+  <aside class="author-box" aria-label="Sobre el autor">
+    <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), fundador de SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Fundador, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>De Guangzhou, con larga experiencia a pie de fábrica en Guangdong y las provincias vecinas</li><li>Años de experiencia en comercio exterior y publicidad internacional</li><li>Trabaja con un equipo de compras, transporte y logística, y comercio exterior</li><li>Graba cada verificación de fábrica en sitio y entrega el video real al cliente</li></ul>
+    <p class="author-box-links"><a href="/es/about">Sobre el autor</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/es#remote-check" class="cta-btn">Empiece con una Revisión Remota de $49</a>
+      <a href="/es#contacto" class="cta-btn">Cuéntenos su pedido</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#0B7A6E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Escríbanos por WhatsApp</a>
+    </div>
+  </div>
+</div><div class="share-row"><span>Compartir</span><a href="https://wa.me/?text=CBP%3A%20Importador%20de%20Registro%20Extranjero%20y%20CTPAT%20en%202027%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" title="Compartir en WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" target="_blank" rel="noopener" aria-label="Compartir en Facebook" title="Compartir en Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" title="Compartir en LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico&text=CBP%3A%20Importador%20de%20Registro%20Extranjero%20y%20CTPAT%20en%202027" target="_blank" rel="noopener" aria-label="Compartir en X" title="Compartir en X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=CBP%3A%20Importador%20de%20Registro%20Extranjero%20y%20CTPAT%20en%202027&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fcbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico" aria-label="Compartir por correo" title="Compartir por correo"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><div class="rel-topics"><div class="side-h rel-h">Temas relacionados</div><span class="tag">Aduanas e importación</span><span class="tag">México</span></div></article><aside class="art-side"><div class="side-card"><div class="sc-tag">Revisión remota</div><p class="sc-price">$49</p><div class="sc-h">Revisión remota de proveedor</div><p>Informe escrito en 48 horas: registro de la empresa, fábrica o comercializadora, y coincidencia de la cuenta de pago.</p><a class="btn btn-accent" href="/es#remote-check">Solicitar revisión de $49</a></div><a class="side-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="sidebar"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Consultar por WhatsApp</a><div class="side-pop"><div class="side-h">Artículos populares</div><ol><li><a href="/blog/es/estafa-alibaba">Me Estafaron en Alibaba: Qué Hacer Ahora</a></li><li><a href="/blog/es/alibaba-confiable">¿Es Alibaba Confiable? Respuesta Honesta para Importadores Mexicanos</a></li><li><a href="/blog/es/verificacion-proveedores-china-mexico">Verificación de Proveedores en China: La Guía que Todo Importador Mexicano Necesita Leer</a></li><li><a href="/blog/es/guia-estafas-piezas-led-alibaba">¿Comprando Piezas LED de Auto en Alibaba? En Esto se Equivocan los Distribuidores</a></li></ol></div></aside></div><section class="you-may-like"><div class="sv-wrap"><div class="section-title"><span>Te puede interesar</span></div><div class="grid-4"><a class="rel-card" href="/blog/es/operacion-trade-bridge-cbp-anam-otay-mesa-valor-origen-que-revisar-importadores"><img src="/images/operacion-trade-bridge-cbp-anam-otay-mesa-valor-origen-que-revisar-importadores-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Operación Trade Bridge: CBP y ANAM Revisan Valor y Origen</span></a><a class="rel-card" href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores"><img src="/images/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Subvaluación en México 2027: Cómo Probar su Precio Real</span></a><a class="rel-card" href="/blog/es/elecciones-eeuu-tmec-ebrard-sheinbaum-xi-apec-que-cambia-para-importar-de-china"><img src="/images/elecciones-eeuu-tmec-ebrard-sheinbaum-xi-apec-que-cambia-para-importar-de-china-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Elecciones en EE. UU. y T-MEC: Qué Dijo Ebrard y Qué Sigue</span></a><a class="rel-card" href="/blog/es/hapag-lloyd-amx-servicio-semanal-china-mexico-enero-2027-que-preguntar-forwarder"><img src="/images/hapag-lloyd-amx-servicio-semanal-china-mexico-enero-2027-que-preguntar-forwarder-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Hapag-Lloyd AMX: Ruta Semanal China-México en 2027</span></a></div></div></section></div></main>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><p>Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta.</p><p>Con base en Guangzhou. Servicio en español e inglés. Solo cobramos al cliente: sin comisión de las fábricas.</p></div><div><div class="sv-foot-h">Servicios</div><ul class="sv-foot-list"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></div><div><div class="sv-foot-h">Sitio</div><ul class="sv-foot-list"><li><a href="/blog/es">Blog</a></li><li><a href="/es/categorias">Categorías</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto">Contacto</a></li><li><a href="/es/prensa">Prensa</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li></ul></div><div><div class="sv-foot-h">Síganos y escríbanos</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · Todos los derechos reservados</div><div class="sv-foot-links"><a href="/es/privacy">Política de Privacidad</a><a href="/es/terms">Términos de Servicio</a><a href="#" role="button" data-cc="show-preferencesModal">Configuración de cookies</a></div><div><span>Verificado en</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Volver arriba</span></button></div></div></div>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'es',
+    translations: {
+      es: {
+        consentModal: {
+          title: 'Usamos cookies',
+          description: 'Usamos cookies para analizar el tráfico del sitio y mejorar su experiencia.',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          showPreferencesBtn: 'Gestionar Preferencias'
+        },
+        preferencesModal: {
+          title: 'Preferencias de Cookies',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          savePreferencesBtn: 'Guardar Preferencias',
+          closeIconLabel: 'Cerrar',
+          sections: [
+            { title: 'Cookies Necesarias', description: 'Requeridas para el correcto funcionamiento del sitio web.', linkedCategory: 'necessary' },
+            { title: 'Cookies de Análisis', description: 'Nos ayudan a entender cómo los visitantes usan nuestro sitio mediante Google Analytics. Todos los datos son anonimizados.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
