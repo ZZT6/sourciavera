@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>US-China Truce Extended to Jan 10, 2027: Importer Checks</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="USTR and China extended their trade pause to Jan 10, 2027: 178 Section 301 exclusions, maritime fees, a 24% tariff. What importers check next.">
+<link rel="canonical" href="https://sourciavera.com/blog/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check">
+<link rel="alternate" type="application/rss+xml" title="SourciaVera Blog" href="https://sourciavera.com/rss.xml">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/blog/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check">
+<meta property="og:title" content="US-China Truce Extended to Jan 10, 2027: Importer Checks | SourciaVera">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="USTR and China extended their trade pause to Jan 10, 2027: 178 Section 301 exclusions, maritime fees, a 24% tariff. What importers check next.">
+<meta property="og:url" content="https://sourciavera.com/blog/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-photo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check#article",
+  "headline": "US-China Truce Extended to Jan 10, 2027: Importer Checks",
+  "description": "USTR and China extended their trade pause to Jan 10, 2027: 178 Section 301 exclusions, maritime fees, a 24% tariff. What importers check next.",
+  "inLanguage": "en",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "url": "https://sourciavera.com/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-photo.webp",
+  "datePublished": "2026-11-10",
+  "dateModified": "2026-11-10",
+  "mainEntityOfPage": "https://sourciavera.com/blog/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check",
+  "keywords": "US China trade truce extended January 10 2027, Section 301 exclusions extended January 9 2027, USTR maritime fees suspended, China 24% tariff suspended 10% levy, FR Doc 2026-22925, FR Doc 2026-22867, export controls suspension January 10 2027, importers from China what to check"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sourciavera.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog"},
+    {"@type": "ListItem", "position": 3, "name": "US-China Truce Extended to Jan 10, 2027: Importer Checks", "item": "https://sourciavera.com/blog/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long did the U.S. and China extend their trade truce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By two months, to January 10, 2027, according to USTR's notices, which run through 11:59 p.m. eastern time on January 9, 2027, and to reports of China's announcements by Supply Chain Dive and CNA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What did USTR extend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All 178 Section 301 exclusions on Chinese products, through 11:59 p.m. eastern time on January 9, 2027, and the suspension of its Section 301 action on China's maritime, logistics and shipbuilding sectors, through the same time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What did China extend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As reported, it kept a 24% additional tariff on U.S. goods suspended while still charging a 10% levy, continued suspending October 2025 export controls to January 10, 2027, and suspended special port fees on U.S. ships for two months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this change the tariff on Chinese goods I import?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The notices we read extend exclusions and suspensions; they do not set a new tariff rate. Supply Chain Dive says the reduced 10% fentanyl-related tariff stays. Ask your broker which duties apply to your entries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do before January 10, 2027?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "List open orders by expected entry date, check with your broker whether an exclusion applies, write price validity and duty responsibility into the proforma invoice, and recheck the notices after the APEC meetings."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Founder",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body class="sv2 sv-art">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a class="active" aria-current="true" lang="en">EN</a><a href="/es" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menu"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Main"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/">Home</a></li><li><a href="/categories">Categories</a></li><li class="has-dd"><a href="/verification-services">Services</a><ul class="sv-dd"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></li><li class="has-dd"><a href="/how-to-choose">Resources</a><ul class="sv-dd"><li><a href="/inspection-standards">Inspection standards</a></li><li><a href="/sample-report">Sample report</a></li><li><a href="/impartiality">Impartiality</a></li><li><a href="/how-to-choose">How to choose a provider</a></li></ul></li><li><a href="/blog" aria-current="page">Blog</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li></ul></div></div></div>
+<main><div class="art-wrap"><div class="art-grid"><div class="share-rail" aria-label="Share"><a href="https://wa.me/?text=US-China%20Truce%20Extended%20to%20Jan%2010%2C%202027%3A%20Importer%20Checks%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check&text=US-China%20Truce%20Extended%20to%20Jan%2010%2C%202027%3A%20Importer%20Checks" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=US-China%20Truce%20Extended%20to%20Jan%2010%2C%202027%3A%20Importer%20Checks&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" aria-label="Share by email" title="Share by email"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><article class="art-main"><div class="art-head"><div class="art-langs"><a class="back" href="/blog">Back to Blog</a></div><h1>US-China Truce Extended to Jan 10, 2027: Importer Checks</h1><div class="meta-row"><div class="meta-cat">Market News</div><div class="article-meta"><strong>SourciaVera Team</strong><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><time>Nov 10, 2026</time><span class="meta-sub"> · 8 min read</span></div></div></div><figure class="art-hero"><div class="ill"><img fetchpriority="high" src="/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-photo.webp" alt="Visitors walk along a green aisle between assembly lines in a large factory hall" width="1200" height="630" loading="eager"></div><figcaption class="figure-caption">Visitors walk along a green aisle between assembly lines in a large factory hall</figcaption></figure><!-- review_by: 2026-12-10 (the extension runs to January 9-10, 2027; recheck the Federal Register publication of FR Docs. 2026-22925 and 2026-22867, the APEC meeting results on November 18-19, 2026 and any new notice) --><div class="article-body">
+
+  <p><strong>The short answer:</strong> The United States and China extended their trade truce by two months, to January 10, 2027, according to U.S. and Chinese announcements. USTR extended 178 Section 301 exclusions and the suspension of its maritime action. China kept a 24% tariff on U.S. goods suspended, with a 10% levy still charged.</p>
+
+  <p class="verified-note"><strong>Verified as of November 10, 2026</strong> against USTR's two notices filed for public inspection on November 9, 2026 (<a href="https://www.federalregister.gov/public-inspection/2026-22925/product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology-transfer" target="_blank" rel="noopener">FR Doc. 2026-22925</a> and <a href="https://www.federalregister.gov/public-inspection/2026-22867/section-301-action-chinas-targeting-of-the-maritime-logistics-and-shipbuilding-sectors-for-dominance" target="_blank" rel="noopener">FR Doc. 2026-22867</a>), scheduled for publication on November 10, and against <a href="https://www.supplychaindive.com/news/us-china-officially-extend-trade-war-truce-by-2-months/874107/" target="_blank" rel="noopener">Supply Chain Dive</a> and <a href="https://money.udn.com/money/story/5603/9868648" target="_blank" rel="noopener">Taiwan's CNA</a>, which report China's announcements. We did not open the Chinese ministries' own pages, so China's side is attributed to those outlets.</p>
+
+  <p>This article sets out what each side extended, what the sources do not say and what an importer can check. It does not predict the outcome of the leaders' meeting. It is based on the documents cited and on general good practice, not on any first-hand experience of these measures. Your customs broker or trade attorney decides how any rule applies to your entries.</p>
+
+  <h2>What Did Each Side Extend?</h2>
+
+  <div class="table-wrap" style="overflow-x:auto">
+  <table>
+    <caption>Measures extended on November 9, 2026. U.S. rows from the Federal Register notices; Chinese rows as reported by CNA and Supply Chain Dive. Read November 10, 2026.</caption>
+    <thead><tr><th scope="col">Measure</th><th scope="col">Extended to</th><th scope="col">Source</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">U.S.: 178 Section 301 exclusions on Chinese products</th><td>11:59 p.m. eastern time, January 9, 2027 (the previous deadline was November 9, 2026)</td><td><a href="https://www.federalregister.gov/public-inspection/2026-22925/product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology-transfer" target="_blank" rel="noopener">Federal Register</a></td></tr>
+      <tr><th scope="row">U.S.: Section 301 action on China's maritime, logistics and shipbuilding sectors (fees on certain maritime transport services, duties on ship-to-shore cranes)</th><td>Further suspended through 11:59 p.m. eastern time, January 9, 2027</td><td><a href="https://www.federalregister.gov/public-inspection/2026-22867/section-301-action-chinas-targeting-of-the-maritime-logistics-and-shipbuilding-sectors-for-dominance" target="_blank" rel="noopener">Federal Register</a></td></tr>
+      <tr><th scope="row">U.S.: reduced tariff on Chinese imports tied to fentanyl trafficking</th><td>Stays at 10%, down from 20%, according to Supply Chain Dive</td><td><a href="https://www.supplychaindive.com/news/us-china-officially-extend-trade-war-truce-by-2-months/874107/" target="_blank" rel="noopener">Supply Chain Dive</a></td></tr>
+      <tr><th scope="row">China: 24% additional tariff on U.S. goods</th><td>Stays suspended for two months; a 10% additional levy is still charged</td><td><a href="https://www.supplychaindive.com/news/us-china-officially-extend-trade-war-truce-by-2-months/874107/" target="_blank" rel="noopener">Supply Chain Dive</a>; <a href="https://money.udn.com/money/story/5603/9868648" target="_blank" rel="noopener">CNA</a></td></tr>
+      <tr><th scope="row">China: suspension of the October 2025 export controls (announcements 55 to 58, 61 and 62)</th><td>November 11, 2026 to January 10, 2027</td><td><a href="https://money.udn.com/money/story/5603/9868648" target="_blank" rel="noopener">CNA</a>; <a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/09/china-extends-suspension-of-rare-earth-export-controls-until-january" target="_blank" rel="noopener">The Star</a></td></tr>
+      <tr><th scope="row">China: special port fees on U.S. ships; measures on U.S. entities on its export control and unreliable entity lists</th><td>Suspension continued for two months, to January 10, 2027 for the port fees</td><td><a href="https://money.udn.com/money/story/5603/9868648" target="_blank" rel="noopener">CNA</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>The U.S. notices say "through 11:59 p.m. eastern time on January 9, 2027", and the press describes the pause as running "until January 10, 2027". They are the same moment: January 10 is the first day without the extension. According to Supply Chain Dive, the extension is part of an agreement the two countries reached in September 2026, and the pause on the trade actions would otherwise have ended on Tuesday, November 10, 2026 (<a href="https://www.supplychaindive.com/news/us-china-officially-extend-trade-war-truce-by-2-months/874107/" target="_blank" rel="noopener">Supply Chain Dive</a>).</p>
+
+  <h2>Why Does It Matter to a U.S. Buyer?</h2>
+
+  <ul>
+    <li><strong>The Section 301 exclusions continue.</strong> Entries of excluded products made before the new deadline are not charged the additional Section 301 duty; see <a href="/blog/us-section-301-exclusions-end-november-9-2026-china-what-importers-check">the Section 301 exclusions article, updated November 10, 2026</a>.</li>
+    <li><strong>The maritime fees and crane duties stay suspended.</strong> The notice says the extension allows further discussion with China (<a href="https://www.federalregister.gov/public-inspection/2026-22867/section-301-action-chinas-targeting-of-the-maritime-logistics-and-shipbuilding-sectors-for-dominance" target="_blank" rel="noopener">Federal Register</a>). Several trade groups are urging USTR to remove the fees permanently, according to Supply Chain Dive (<a href="https://www.supplychaindive.com/news/us-china-officially-extend-trade-war-truce-by-2-months/874107/" target="_blank" rel="noopener">Supply Chain Dive</a>).</li>
+    <li><strong>It is a pause, not a settlement.</strong> The measures could return after the new dates, and the sources do not say what happens then.</li>
+  </ul>
+
+  <h2>What Is Still Unknown?</h2>
+
+  <ul>
+    <li><strong>What happens after January 10, 2027.</strong> We found no statement beyond the new dates.</li>
+    <li><strong>The outcome of the leaders' meeting.</strong> According to Reuters, as quoted by other outlets, Trump and Xi are expected to meet at APEC in Shenzhen; the dates are November 18-19, 2026 according to apec.org.</li>
+    <li><strong>China's own texts.</strong> We read them only as reported by CNA and Supply Chain Dive.</li>
+    <li><strong>The final Federal Register publication.</strong> We read the public-inspection versions; both are scheduled for November 10, 2026.</li>
+    <li><strong>Other duties.</strong> These notices do not change other U.S. tariffs, but we did not review them all; ask your broker.</li>
+  </ul>
+
+  <h2>What Should a Buyer Ask the Supplier and the Forwarder to Confirm?</h2>
+
+  <p>This section is general advice, not a rule from the documents.</p>
+
+  <ul>
+    <li><strong>The expected entry date of each shipment,</strong> so you know which entries fall before or after January 9, 2027 (see <a href="/blog/china-us-freight-early-november-2026-ocean-flat-air-high-port-strike-risk-how-to-book">China-US freight in November 2026</a>).</li>
+    <li><strong>The product description and tariff number</strong> the supplier uses, so your broker can check whether an exclusion applies (see <a href="/blog/documents-to-request-chinese-manufacturer">the documents to request from a Chinese manufacturer</a>).</li>
+    <li><strong>The price validity and who pays any change in duties or fees,</strong> written into the proforma invoice (see <a href="/blog/proforma-invoice-chinese-supplier-what-to-check">what to check on a proforma invoice</a> and <a href="/blog/fob-exw-cif-ddp-chinese-supplier-quote">which price term to ask a Chinese supplier to quote</a>).</li>
+    <li><strong>Plans for entries after January 10, 2027,</strong> such as earlier shipment or a clause that lets you adjust the price.</li>
+  </ul>
+
+      <figure class="body-fig" data-fig="us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-fig1">
+      <img src="/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-fig1-en.webp" alt="Checklist of four things to confirm with a supplier and forwarder before the extended pause ends" width="800" height="516" loading="lazy" srcset="/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-fig1-en.webp 800w, /images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-fig1-en-2x.webp 1600w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+      <figcaption class="figure-caption">Diagram: General advice, not a rule from the documents.</figcaption>
+    </figure>
+
+  <div class="mid-card"><div class="side-card"><div class="sc-tag">Remote check</div><p class="sc-price">$49</p><div class="sc-h">Remote supplier check</div><p>Written report in 48 hours: company registration, manufacturer vs. trader, and payment-account match.</p><a class="btn btn-accent" href="/#remote-check">Request the $49 check</a></div></div><h2>Where Does a Third-Party Check Help?</h2>
+
+  <p>It cannot predict the talks or decide what duty applies. It can confirm what is on the supplier's side of the paperwork: that the company is a real manufacturer, where production happens and that the goods match the description your broker files. See our <a href="/supply-chain-supervision-china">factory supervision service</a> for orders in production and our <a href="/categories/auto-parts">auto parts category page</a> if you buy vehicle components. For another date in the same period, see <a href="/blog/us-cbp-foreign-importer-of-record-rule-ctpat-january-5-2027-what-importers-check">CBP's rule on foreign importers of record, effective January 5, 2027</a>.</p>
+
+  <h2>What Do the Sources Not Tell You?</h2>
+
+  <p>They do not tell you whether your product is excluded or what duty you would pay if the pause ends. They say nothing about any supplier.</p>
+
+      <figure class="body-fig" data-fig="us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-fig2">
+  <img src="/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-hero-en.webp" alt="Table with the measures extended by the United States and China in November 2026: Section 301 exclusions, maritime fees and crane duties, China&#x27;s suspended 24% tariff and 10% levy, export controls and the absence of a stated plan after January 10, 2027" width="1200" height="630" loading="lazy" srcset="/images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-hero-en.webp 1200w, /images/us-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check-hero-en-2x.webp 2400w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+  <figcaption class="figure-caption">Table: measures extended on November 9, 2026.</figcaption>
+</figure>
+
+  <h2>What Should You Do Next?</h2>
+
+  <ol>
+    <li><strong>List your open orders</strong> from China with expected entry dates before and after January 9, 2027.</li>
+    <li><strong>Ask your customs broker</strong> whether your products match one of the 178 exclusions.</li>
+    <li><strong>Write the price validity and duty responsibility</strong> into each proforma invoice.</li>
+    <li><strong>Check the Federal Register and USTR pages</strong> after the Shenzhen meetings, before you commit to new orders.</li>
+    <li><strong>Check any new supplier</strong> before you pay, see <a href="/blog/china-supplier-verification-checklist">the supplier verification checklist</a>.</li>
+  </ol>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How long did the U.S. and China extend their trade truce?</h3>
+  <p>By two months, to January 10, 2027, according to USTR's notices, which run through 11:59 p.m. eastern time on January 9, 2027, and to reports of China's announcements by Supply Chain Dive and CNA.</p>
+
+  <h3>What did USTR extend?</h3>
+  <p>All 178 Section 301 exclusions on Chinese products, through 11:59 p.m. eastern time on January 9, 2027, and the suspension of its Section 301 action on China's maritime, logistics and shipbuilding sectors, through the same time.</p>
+
+  <h3>What did China extend?</h3>
+  <p>As reported, it kept a 24% additional tariff on U.S. goods suspended while still charging a 10% levy, continued suspending October 2025 export controls to January 10, 2027, and suspended special port fees on U.S. ships for two months.</p>
+
+  <h3>Does this change the tariff on Chinese goods I import?</h3>
+  <p>The notices we read extend exclusions and suspensions; they do not set a new tariff rate. Supply Chain Dive says the reduced 10% fentanyl-related tariff stays. Ask your broker which duties apply to your entries.</p>
+
+  <h3>What should I do before January 10, 2027?</h3>
+  <p>List open orders by expected entry date, check with your broker whether an exclusion applies, write price validity and duty responsibility into the proforma invoice, and recheck the notices after the APEC meetings.</p>
+  <h2>Summary and Next Step</h2>
+
+  <p>The U.S.-China pause was extended two months, to January 10, 2027: USTR extended the 178 Section 301 exclusions and the suspension of its maritime action, and China kept its 24% tariff on U.S. goods suspended while charging a 10% levy. The first step is to list your open orders by expected entry date.</p>
+
+  <div class="series-box">
+    <h3>More on importing from China to the U.S.</h3>
+    <ul><li><a href="/blog/us-section-301-exclusions-end-november-9-2026-china-what-importers-check">the Section 301 exclusions, updated November 10, 2026</a></li><li><a href="/blog/us-china-trade-call-november-6-2026-busan-commitments-what-importers-check">the U.S.-China trade call and what the readouts say</a></li><li><a href="/blog/us-cbp-foreign-importer-of-record-rule-ctpat-january-5-2027-what-importers-check">CBP's rule on foreign importers of record and CTPAT from January 5, 2027</a></li></ul>
+  </div>
+
+  <p>In short, a pause gives you two more months, not a new rule. Tell us about your order if you want help preparing the questions for your supplier and forwarder.</p>
+
+  <p class="fine-print">I provide supplier verification services, so you should treat my recommendation accordingly. SourciaVera is not a customs broker or a law firm, and nothing here is customs or legal advice.</p>
+
+  <aside class="author-box" aria-label="About the author">
+    <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), founder of SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Founder, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>From Guangzhou, with long hands-on experience in factories across Guangdong and neighboring provinces</li><li>Years of experience in foreign trade and international advertising</li><li>Works with a team that covers procurement, transport and logistics, and foreign trade</li><li>Films every on-site factory verification and gives the real video to the client</li></ul>
+    <p class="author-box-links"><a href="/about">About the author</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/#remote-check" class="cta-btn">Start with a $49 Remote Supplier Check</a>
+      <a href="/#contact" class="cta-btn">Talk to us about your order</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#0B7A6E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Chat on WhatsApp</a>
+    </div>
+  </div>
+</div><div class="share-row"><span>Share</span><a href="https://wa.me/?text=US-China%20Truce%20Extended%20to%20Jan%2010%2C%202027%3A%20Importer%20Checks%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check&text=US-China%20Truce%20Extended%20to%20Jan%2010%2C%202027%3A%20Importer%20Checks" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=US-China%20Truce%20Extended%20to%20Jan%2010%2C%202027%3A%20Importer%20Checks&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fus-china-trade-truce-extended-january-10-2027-section-301-exclusions-port-fees-what-importers-check" aria-label="Share by email" title="Share by email"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><div class="rel-topics"><div class="side-h rel-h">Related topics</div><span class="tag">Customs &amp; import</span><span class="tag">Market News</span></div></article><aside class="art-side"><div class="side-card"><div class="sc-tag">Remote check</div><p class="sc-price">$49</p><div class="sc-h">Remote supplier check</div><p>Written report in 48 hours: company registration, manufacturer vs. trader, and payment-account match.</p><a class="btn btn-accent" href="/#remote-check">Request the $49 check</a></div><a class="side-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="sidebar"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Chat on WhatsApp</a><div class="side-pop"><div class="side-h">Popular articles</div><ol><li><a href="/blog/got-scammed-on-alibaba">Got Scammed on Alibaba? Here's What to Do Next</a></li><li><a href="/blog/china-factory-inspection-cost">What Does Factory Inspection in China Cost? (And Is It Worth It)</a></li><li><a href="/blog/how-to-import-auto-parts-from-china-to-mexico">How to Import Auto Parts from China to Mexico</a></li><li><a href="/blog/manufacturer-due-diligence-checklist-china">Choosing a Manufacturer in China: The Due Diligence Checklist Most Buyers Skip</a></li></ol></div></aside></div><section class="you-may-like"><div class="sv-wrap"><div class="section-title"><span>You may also like</span></div><div class="grid-4"><a class="rel-card" href="/blog/us-section-301-exclusions-end-november-9-2026-china-what-importers-check"><img src="/images/us-section-301-exclusions-end-november-9-2026-china-what-importers-check-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Market News</small><span>Section 301 Exclusions End Nov 9: What China Buyers Check</span></a><a class="rel-card" href="/blog/us-china-trade-call-november-6-2026-busan-commitments-what-importers-check"><img src="/images/us-china-trade-call-november-6-2026-busan-commitments-what-importers-check-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Market News</small><span>US-China Trade Call: What the November 6 Readouts Say</span></a><a class="rel-card" href="/blog/us-cbp-foreign-importer-of-record-rule-ctpat-january-5-2027-what-importers-check"><img src="/images/us-cbp-foreign-importer-of-record-rule-ctpat-january-5-2027-what-importers-check-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Market News</small><span>CBP Foreign Importer of Record Rule: CTPAT by Jan 5, 2027</span></a><a class="rel-card" href="/blog/australia-aluminum-windows-doors-china-anti-dumping-securities-what-importers-check"><img src="/images/australia-aluminum-windows-doors-china-anti-dumping-securities-what-importers-check-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Market News</small><span>Australia Aluminum Windows and Doors From China: Duties</span></a></div></div></section></div></main>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><p>Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p><p>Based in Guangzhou. English and Spanish service. We charge the client only — no commission from factories.</p></div><div><div class="sv-foot-h">Services</div><ul class="sv-foot-list"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></div><div><div class="sv-foot-h">Site</div><ul class="sv-foot-list"><li><a href="/blog">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li><li><a href="/press">Press</a></li><li><a href="/impartiality">Impartiality</a></li></ul></div><div><div class="sv-foot-h">Follow & chat</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · All rights reserved</div><div class="sv-foot-links"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a></div><div><span>Verified on</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Back to top</span></button></div></div></div>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
