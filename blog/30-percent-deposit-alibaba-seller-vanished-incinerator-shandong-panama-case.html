@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30% Deposit Paid, Alibaba Seller Vanished: A Panama Case</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="A Panamanian buyer paid a 30% deposit for an incinerator in Shandong and the seller went silent. What I verified over 1,700 km of travel and video.">
+<link rel="canonical" href="https://sourciavera.com/blog/30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case">
+<link rel="alternate" type="application/rss+xml" title="SourciaVera Blog" href="https://sourciavera.com/rss.xml">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/blog/30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/blog/es/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case">
+<meta property="og:title" content="30% Deposit Paid, Alibaba Seller Vanished: A Panama Case | SourciaVera">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="A Panamanian buyer paid a 30% deposit for an incinerator in Shandong and the seller went silent. What I verified over 1,700 km of travel and video.">
+<meta property="og:url" content="https://sourciavera.com/blog/30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama-photo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case#article",
+  "headline": "30% Deposit Paid, Alibaba Seller Vanished: A Panama Case",
+  "description": "A Panamanian buyer paid a 30% deposit for an incinerator in Shandong and the seller went silent. What I verified over 1,700 km of travel and video.",
+  "inLanguage": "en",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "url": "https://sourciavera.com/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama-photo.webp",
+  "datePublished": "2026-11-09",
+  "dateModified": "2026-11-09",
+  "mainEntityOfPage": "https://sourciavera.com/blog/30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case",
+  "keywords": "Alibaba seller disappeared after deposit, 30% deposit China supplier, verify factory Shandong, medical waste incinerator China, pay balance Made-in-China.com, buying from China from Panama, factory verification video"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sourciavera.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog"},
+    {"@type": "ListItem", "position": 3, "name": "30% Deposit Paid, Alibaba Seller Vanished: A Panama Case", "item": "https://sourciavera.com/blog/30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What should I do if the seller stops answering after I pay a deposit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Contact the factory through another channel, such as the manager, and ask for confirmation in writing. In this case the salesperson was on wedding leave. Then verify that the factory exists, the payment account and the equipment before you pay the balance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it a sign of a scam when they ask me to pay the balance on another platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not by itself, but it is a reason to verify. Ask for the payment account certificate and compare it point by point with the platform's data, and confirm the account again on the day of payment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I ask for in a machinery verification video?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A full walk around the equipment, a person standing next to it to show its real size, the inside of the chambers, the burner and its nameplate, the control panel powered on and the ignition recorded without cuts."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Founder",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body class="sv2 sv-art">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a class="active" aria-current="true" lang="en">EN</a><a href="/blog/es/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama" hreflang="es" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menu"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Main"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/">Home</a></li><li><a href="/categories">Categories</a></li><li class="has-dd"><a href="/verification-services">Services</a><ul class="sv-dd"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></li><li class="has-dd"><a href="/how-to-choose">Resources</a><ul class="sv-dd"><li><a href="/inspection-standards">Inspection standards</a></li><li><a href="/sample-report">Sample report</a></li><li><a href="/impartiality">Impartiality</a></li><li><a href="/how-to-choose">How to choose a provider</a></li></ul></li><li><a href="/blog" aria-current="page">Blog</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li></ul></div></div></div>
+<main><div class="art-wrap"><div class="art-grid"><div class="share-rail" aria-label="Share"><a href="https://wa.me/?text=30%25%20Deposit%20Paid%2C%20Alibaba%20Seller%20Vanished%3A%20A%20Panama%20Case%20https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case&text=30%25%20Deposit%20Paid%2C%20Alibaba%20Seller%20Vanished%3A%20A%20Panama%20Case" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=30%25%20Deposit%20Paid%2C%20Alibaba%20Seller%20Vanished%3A%20A%20Panama%20Case&body=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" aria-label="Share by email" title="Share by email"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><article class="art-main"><div class="art-head"><div class="art-langs"><a class="back" href="/blog">Back to Blog</a></div><h1>30% Deposit Paid, Alibaba Seller Vanished: A Panama Case</h1><div class="meta-row"><div class="meta-cat">Case Study</div><div class="article-meta"><strong>SourciaVera Team</strong><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><time>Nov 9, 2026</time><span class="meta-sub"> · 9 min read</span></div></div></div><figure class="art-hero"><div class="ill"><img fetchpriority="high" src="/images/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama-photo.webp" alt="Zhang Peng standing next to a blue incinerator in a factory in Liaocheng, Shandong, with a clipboard in his hand" width="1200" height="630" loading="eager"></div><figcaption class="figure-caption">Next to the incinerator at the factory in Liaocheng, Shandong, to see its real size. My own photo.</figcaption></figure><div class="article-body">
+
+  <p><strong>The short answer:</strong> A Panamanian businessman paid a 30% deposit for an incinerator in Shandong and his seller stopped answering. The reason was simple: the seller was on wedding leave. I traveled 1,700 km, filmed unedited video and checked the payment account before the balance was paid.</p>
+
+  <p>The client is 69 years old, with decades in medical waste treatment and half a century of working with boilers. He knows the equipment and he knows business. I publish this case with his permission and without the names of the client or the factory.</p>
+
+  <h2>A Situation That Would Scare Anyone</h2>
+
+  <p>A few months earlier he had found an incinerator factory in Shandong, China, on Alibaba. They agreed on the price and, following the platform's process, he paid a 30% deposit. Then things started to go wrong:</p>
+
+  <ul>
+    <li>The salesperson he had always talked to stopped answering messages and calls.</li>
+    <li>Another person at the company asked him to pay the balance on Made-in-China.com instead of Alibaba.</li>
+  </ul>
+
+  <p>He had already paid the deposit, his contact had disappeared and he was being asked to pay the remaining 70% on another platform. Anyone would worry; it is completely reasonable. In his place, I would already have refused to pay the balance.</p>
+
+  <p>He did not walk away. He wanted to get to know the factory better and give it a chance, because he understood that, for a small factory, his order could mean a lot. The one thing he did not know was what was really happening in China. At that moment he found me on the internet.</p>
+
+  <h2>My Role: Helping Him See the Truth</h2>
+
+  <p>I verify factories and do bilingual sourcing for buyers in Latin America. In this case my role was clear: not to decide for the client, but to help him see the truth. Being a bridge between China and Panama, and part of the foundation of trust between both sides, made me very happy.</p>
+
+  <h2>First, a Phone Call: the Truth About the "Missing" Salesperson</h2>
+
+  <p>With all the client's information, I first contacted the factory manager. He explained that the salesperson had gotten married: during his wedding leave he could not answer at all times, and from Panama it looked as if he had "disappeared". About the switch to Made-in-China.com for the payment, the manager also gave me an explanation. I took the payment account certificate they sent me and compared it point by point with the platform's information.</p>
+
+  <p>I recorded every point of the conversation, organized it and sent it to the client:</p>
+
+  <ul>
+    <li><strong>Does the factory exist?</strong> Yes. It is in Liaocheng, Shandong, and it is a real factory.</li>
+    <li><strong>Why did the salesperson disappear?</strong> He got married and was on leave. He had not run away.</li>
+    <li><strong>Is the payment account reliable?</strong> The certificate matches the platform's information.</li>
+    <li><strong>Where is the equipment?</strong> At the factory, and it can be seen in person.</li>
+    <li><strong>Freight and container type?</strong> There is a formal quote from the freight forwarder. The equipment fits in a 40HC container.</li>
+  </ul>
+
+  <p>Half of the weight came off the client's shoulders. The other half had to be seen with his own eyes.</p>
+
+  <h2>Two Details in the Spec Sheet, Solved Before Traveling</h2>
+
+  <p>Before leaving I went through the equipment configuration list with the client, point by point, and we found two details that could cause problems:</p>
+
+  <ul>
+    <li><strong>The burner power.</strong> The sheet said 0.35 kW and the client was alarmed: how can it burn anything with so little? When we asked the factory we learned that 0.35 kW is the power of the fan motor. The burner is 200,000 kcal/h, about 233 kW. A misunderstood number can end in a big misunderstanding.</li>
+    <li><strong>The fuel.</strong> In Panama the client will use LPG (liquefied petroleum gas), but the machine came with a diesel tank. We had to agree with the factory, before the trip, on changing the burner to LPG.</li>
+  </ul>
+
+  <h2>From Guangzhou in Short Sleeves to the Cold of Shandong</h2>
+
+  <p>On inspection day I left Guangzhou early: 3 hours by plane and another 2 hours by taxi. In Guangzhou people were still in short sleeves. In Liaocheng the wind cut across my face.</p>
+
+  <p>The client did not ask for a video call. He gave me a list of what he wanted to see:</p>
+
+  <ul>
+    <li>A full walk around the machine.</li>
+    <li>A person standing next to the machine, to see its real size.</li>
+    <li>The refractory lining inside the two combustion chambers.</li>
+    <li>The burner and its nameplate.</li>
+    <li>The control panel powered on.</li>
+    <li>The burner igniting, recorded without a single cut.</li>
+  </ul>
+
+  <p>I uploaded each video as an unlisted link and sent them to him. For the burner video I used a simple title: "Real video, unedited".</p>
+
+      <figure class="body-fig" data-fig="30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case-fig1">
+      <img src="/images/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama-fig1-es.webp" alt="Gray incinerator with the control panel powered on and the burner in a factory in Liaocheng, Shandong" width="800" height="800" loading="lazy" srcset="/images/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama-fig1-es.webp 800w, /images/anticipo-30-alibaba-vendedor-desaparecio-incinerador-shandong-panama-fig1-es-2x.webp 1600w" sizes="(max-width: 800px) 100vw, 800px">
+      <figcaption class="figure-caption">The control panel powered on, one of the items on the client's list. My own photo.</figcaption>
+    </figure>
+
+  <div class="mid-card"><div class="side-card"><div class="sc-tag">Remote check</div><p class="sc-price">$49</p><div class="sc-h">Remote supplier check</div><p>Written report in 48 hours: company registration, manufacturer vs. trader, and payment-account match.</p><a class="btn btn-accent" href="/#remote-check">Request the $49 check</a></div></div><h2>The Twist: the Factory Wanted to Sell Two Machines</h2>
+
+  <p>When I arrived I found two incinerators joined together. The client was only going to buy one at first; the second, when he had the money in December. The factory owner's concern was direct: if they separate the machines and the client takes the first, what happens if he later does not want the second? That is why the factory wanted a deposit for the second machine, as a guarantee.</p>
+
+  <p>That was the key point of everything, and I told the client clearly: "What the factory really wants is a deposit for the second machine. Maybe it is part of their sales strategy, but what they are looking for is a guarantee." The client was also honest: the money for the second one arrives in December, he cannot leave a deposit yet, but he commits to buying it.</p>
+
+  <p>The final solution was practical:</p>
+
+  <ul>
+    <li>Each machine uses its own control panel and ignites separately.</li>
+    <li>At the end the smoke outlets are joined into one, to do a single emissions test as if it were one unit.</li>
+    <li>The first one ships first; the second, in December.</li>
+  </ul>
+
+  <p>In the client's words: "This is the practical solution."</p>
+
+  <h2>Why Has He Not Paid the Balance Yet?</h2>
+
+  <p>When the inspection ended, the client watched the videos and the first thing he said was: "The work has been very good." The second: "When should we pay?" I asked him to wait one more night:</p>
+
+  <ul>
+    <li>We had to confirm with the factory whether the switch to LPG changed the price.</li>
+    <li>We had to confirm the payment account again the next day.</li>
+  </ul>
+
+  <p>I told him: "It is better to be safe with that amount of money." Someone who lived through the "disappearing salesperson" does not need someone who pushes him to pay. He needs someone who guards the last door for him.</p>
+
+  <h2>An Unexpected Advantage: Two Machines in the Same Container</h2>
+
+  <p>The client had also ordered a shredder from a factory in Zhengzhou. Because it was being made for Panama's voltage, it would not arrive in time for the original ship and would have had to go as separate consolidated cargo. The incinerator was delayed by a week because of the switch to LPG and the preparation of the electrical panel, and the dates lined up. The shredder is sent directly to Liaocheng and leaves with the incinerator in the same container. The client saves an entire consolidated freight charge.</p>
+
+  <h2>How We Verify Before You Pay</h2>
+
+  <p>These steps repeat in any purchase from China: call the factory, compare the payment account with the platform, go through the spec sheet with the buyer and record the equipment without cuts. See how our <a href="/supply-chain-supervision-china">factory supervision in China</a> works, our <a href="/verification-services/panama">factory verification for buyers in Panama</a> and our <a href="/categories">product categories</a>. If you already paid a deposit and something does not add up, also read <a href="/blog/questions-before-wiring-money-alibaba-supplier">the questions to ask before wiring money to an Alibaba supplier</a>.</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>What should I do if the seller stops answering after I pay a deposit?</h3>
+  <p>Contact the factory through another channel, such as the manager, and ask for confirmation in writing. In this case the salesperson was on wedding leave. Then verify that the factory exists, the payment account and the equipment before you pay the balance.</p>
+
+  <h3>Is it a sign of a scam when they ask me to pay the balance on another platform?</h3>
+  <p>Not by itself, but it is a reason to verify. Ask for the payment account certificate and compare it point by point with the platform's data, and confirm the account again on the day of payment.</p>
+
+  <h3>What should I ask for in a machinery verification video?</h3>
+  <p>A full walk around the equipment, a person standing next to it to show its real size, the inside of the chambers, the burner and its nameplate, the control panel powered on and the ignition recorded without cuts.</p>
+  <h2>Summary and Next Step</h2>
+
+  <p>After watching the video, the client wrote: "The equipment looks very robust. It is like buying an anvil." At 10 at night I told him I was going to rest, and he answered: "You keep banker's hours!" I replied: "A minister of intelligence spends a lot of neurons negotiating with the factories. They have to be let to rest so that tomorrow they keep working for the empire."</p>
+
+  <p>Looking back, the misunderstanding was not complicated: a salesperson got married and a payment platform changed. But for a client on the other side of the world, every change without an explanation is a reason not to pay. What I did was simple: call, take notes, verify accounts, take a plane, a taxi and stand in the cold wind recording videos.</p>
+
+  <p>You can compete on prices. You cannot compete on trust. I flew 1,700 km to be able to say a single sentence: "Relax, I saw it with my own eyes."</p>
+
+  <div class="series-box">
+    <h3>More on verifying suppliers before you pay</h3>
+    <ul><li><a href="/blog/questions-before-wiring-money-alibaba-supplier">7 questions before wiring money to an Alibaba supplier</a></li><li><a href="/blog/video-call-vs-factory-photos">5 things a video call reveals that photos do not</a></li><li><a href="/blog/documents-to-request-chinese-manufacturer">8 documents you should always request from a Chinese manufacturer</a></li></ul>
+  </div>
+
+  <p class="fine-print">Published with the client's permission; the names of the client and the factory were omitted. I provide supplier verification services, so you should read my account in that context. SourciaVera is not a customs broker or a law firm, and nothing here is customs or legal advice.</p>
+
+  <aside class="author-box" aria-label="About the author">
+    <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), founder of SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Founder, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>From Guangzhou, with long hands-on experience in factories across Guangdong and neighboring provinces</li><li>Years of experience in foreign trade and international advertising</li><li>Works with a team that covers procurement, transport and logistics, and foreign trade</li><li>Films every on-site factory verification and gives the real video to the client</li></ul>
+    <p class="author-box-links"><a href="/about">About the author</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/#remote-check" class="cta-btn">Start with a $49 Remote Supplier Check</a>
+      <a href="/#contact" class="cta-btn">Talk to us about your order</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#0B7A6E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Chat on WhatsApp</a>
+    </div>
+  </div>
+</div><div class="share-row"><span>Share</span><a href="https://wa.me/?text=30%25%20Deposit%20Paid%2C%20Alibaba%20Seller%20Vanished%3A%20A%20Panama%20Case%20https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case&text=30%25%20Deposit%20Paid%2C%20Alibaba%20Seller%20Vanished%3A%20A%20Panama%20Case" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=30%25%20Deposit%20Paid%2C%20Alibaba%20Seller%20Vanished%3A%20A%20Panama%20Case&body=https%3A%2F%2Fsourciavera.com%2Fblog%2F30-percent-deposit-alibaba-seller-vanished-incinerator-shandong-panama-case" aria-label="Share by email" title="Share by email"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><div class="rel-topics"><div class="side-h rel-h">Related topics</div><span class="tag">Alibaba</span><span class="tag">Case Study</span></div></article><aside class="art-side"><div class="side-card"><div class="sc-tag">Remote check</div><p class="sc-price">$49</p><div class="sc-h">Remote supplier check</div><p>Written report in 48 hours: company registration, manufacturer vs. trader, and payment-account match.</p><a class="btn btn-accent" href="/#remote-check">Request the $49 check</a></div><a class="side-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="sidebar"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Chat on WhatsApp</a><div class="side-pop"><div class="side-h">Popular articles</div><ol><li><a href="/blog/got-scammed-on-alibaba">Got Scammed on Alibaba? Here's What to Do Next</a></li><li><a href="/blog/china-factory-inspection-cost">What Does Factory Inspection in China Cost? (And Is It Worth It)</a></li><li><a href="/blog/how-to-import-auto-parts-from-china-to-mexico">How to Import Auto Parts from China to Mexico</a></li><li><a href="/blog/manufacturer-due-diligence-checklist-china">Choosing a Manufacturer in China: The Due Diligence Checklist Most Buyers Skip</a></li></ol></div></aside></div><section class="you-may-like"><div class="sv-wrap"><div class="section-title"><span>You may also like</span></div><div class="grid-4"><a class="rel-card" href="/blog/is-alibaba-trustworthy"><img src="/images/is-alibaba-trustworthy-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Buyer&#x27;s Guide</small><span>Is Alibaba Trustworthy? An Honest Answer for First-Time Buyers</span></a><a class="rel-card" href="/blog/questions-before-wiring-money-alibaba-supplier"><img src="/images/questions-before-wiring-money-alibaba-supplier-hero-en.webp" srcset="/images/questions-before-wiring-money-alibaba-supplier-hero-en.webp 1200w" sizes="(max-width:560px) 92vw, 280px" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Due Diligence</small><span>7 Questions to Ask Before You Wire Money to an Alibaba Supplier</span></a><a class="rel-card" href="/blog/video-call-vs-factory-photos"><img src="/images/video-call-vs-factory-photos-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Verification</small><span>5 Things a Live Video Call Can Reveal That Factory Photos Can't</span></a><a class="rel-card" href="/blog/case-study-guatemala-expandable-homes"><img src="/images/case-study-guatemala-expandable-homes-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Real Case</small><span>Two Container Homes, Two Ways of Thinking: What a Guatemalan Buyer and a Chinese Sourcing Agent Learned From Each Other</span></a></div></div></section></div></main>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><p>Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p><p>Based in Guangzhou. English and Spanish service. We charge the client only — no commission from factories.</p></div><div><div class="sv-foot-h">Services</div><ul class="sv-foot-list"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></div><div><div class="sv-foot-h">Site</div><ul class="sv-foot-list"><li><a href="/blog">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li><li><a href="/press">Press</a></li><li><a href="/impartiality">Impartiality</a></li></ul></div><div><div class="sv-foot-h">Follow & chat</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · All rights reserved</div><div class="sv-foot-links"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a></div><div><span>Verified on</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Back to top</span></button></div></div></div>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
