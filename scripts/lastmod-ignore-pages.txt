@@ -734,3 +734,5 @@ fa82a24 blog/es/china-controles-exportacion-baterias-litio-grafito-suspension-10
 d611d44 blog/index.html
 d611d44 blog/es/index.html
 37a1f7b blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar.html
+08370eb blog/es/trump-amenaza-duplicar-aranceles-mexico-caravanas-12-noviembre-2026-que-revisar-importadores.html
+08370eb blog/es/operacion-trade-bridge-cbp-anam-otay-mesa-valor-origen-que-revisar-importadores.html
