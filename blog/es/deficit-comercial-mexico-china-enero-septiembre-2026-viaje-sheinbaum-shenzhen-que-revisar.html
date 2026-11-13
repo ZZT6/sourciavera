@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<!-- Google tag (gtag.js): production hostname only, so previews, localhost and file:// are not counted -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Internal traffic flag: open any page with ?sv_internal=1 to mark this browser, ?sv_internal=0 to clear it (GA4 then gets traffic_type=internal).
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    // Consent Mode by region (owner rule 2026-10-16, memory §137): EEA + UK + Switzerland start with analytics denied until Accept;
+    // every other region starts granted (banner still shown, Reject All stops collection at once). Ads stay denied everywhere.
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Déficit de México con China y Viaje a APEC: Qué Revisar</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="México tuvo un déficit de unos 94,878 millones de dólares con China de enero a septiembre de 2026; Sheinbaum va a APEC. Qué cifras y qué revisar.">
+<link rel="canonical" href="https://sourciavera.com/blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar">
+<link rel="alternate" type="application/rss+xml" title="SourciaVera Blog (Español)" href="https://sourciavera.com/es/rss.xml">
+<link rel="alternate" hreflang="es" href="https://sourciavera.com/blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar">
+<meta property="og:title" content="Déficit de México con China y Viaje a APEC: Qué Revisar | SourciaVera">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="México tuvo un déficit de unos 94,878 millones de dólares con China de enero a septiembre de 2026; Sheinbaum va a APEC. Qué cifras y qué revisar.">
+<meta property="og:url" content="https://sourciavera.com/blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-photo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar#article",
+  "headline": "Déficit de México con China y Viaje a APEC: Qué Revisar",
+  "description": "México tuvo un déficit de unos 94,878 millones de dólares con China de enero a septiembre de 2026; Sheinbaum va a APEC. Qué cifras y qué revisar.",
+  "inLanguage": "es",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Fundador", "url": "https://sourciavera.com/es/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-photo.webp",
+  "datePublished": "2026-11-13",
+  "dateModified": "2026-11-13",
+  "mainEntityOfPage": "https://sourciavera.com/blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar",
+  "keywords": "déficit comercial México China 2026, 94,878 millones de dólares, Sheinbaum APEC Shenzhen agenda 17 al 19 de noviembre, aranceles México países sin tratado 1,463 fracciones, importaciones de China a México 2026, INEGI comercio México China, importar de China a México"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sourciavera.com/es/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog/es"},
+    {"@type": "ListItem", "position": 3, "name": "Déficit de México con China y Viaje a APEC: Qué Revisar", "item": "https://sourciavera.com/blog/es/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuál fue el déficit comercial de México con China de enero a septiembre de 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unos 94,878 millones de dólares, según Xpectro y La Jornada Zacatecas, con importaciones de China por unos 106 mil millones y exportaciones a China por 11,100 millones. Es la cifra más alta para un periodo similar, según Xpectro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto fue de enero a agosto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un déficit de 82,721 millones de dólares, con importaciones de 92,655 millones (+8.7%) y exportaciones de 9,934 millones (+58.1%), según Tierra Fuerte, que cita datos del INEGI."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué aranceles aplica México a productos de China?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Según Tierra Fuerte, desde el 1 de enero de 2026 hay aranceles de 5% a 50% a 1,463 clasificaciones de productos de países sin tratado con México. Confirme la fracción de su producto con su agente aduanal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuándo está Sheinbaum en Shenzhen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Según Infobae, tiene actividades oficiales del 17 al 19 de noviembre de 2026. La Reunión de Líderes Económicos de APEC es del 18 al 19 de noviembre, según apec.org."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cambia esto las reglas para importar de China?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No encontramos una regla nueva ni un anuncio oficial de medidas. Siguen vigentes las ya publicadas; revise las fuentes oficiales después de APEC antes de cambiar precios o contratos."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Fundador",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body class="sv2 sv-art">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a href="/" lang="en">EN</a><a class="active" aria-current="true" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hola%2C%20quiero%20verificar%20un%20proveedor%20en%20China%20antes%20de%20pagar." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menú"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Principal"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/es">Inicio</a></li><li><a href="/es/categorias">Categorías</a></li><li class="has-dd"><a href="/es/verificacion-fabricas">Servicios</a><ul class="sv-dd"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></li><li class="has-dd"><a href="/es/como-elegir">Recursos</a><ul class="sv-dd"><li><a href="/es/normas-de-inspeccion">Normas de inspección</a></li><li><a href="/es/informe-de-ejemplo">Informe de ejemplo</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li><li><a href="/es/como-elegir">Cómo elegir un proveedor</a></li></ul></li><li><a href="/blog/es" aria-current="page">Blog</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto">Contacto</a></li></ul></div></div></div>
+<main><div class="art-wrap"><div class="art-grid"><div class="share-rail" aria-label="Compartir"><a href="https://wa.me/?text=D%C3%A9ficit%20de%20M%C3%A9xico%20con%20China%20y%20Viaje%20a%20APEC%3A%20Qu%C3%A9%20Revisar%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" title="Compartir en WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" target="_blank" rel="noopener" aria-label="Compartir en Facebook" title="Compartir en Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" title="Compartir en LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar&text=D%C3%A9ficit%20de%20M%C3%A9xico%20con%20China%20y%20Viaje%20a%20APEC%3A%20Qu%C3%A9%20Revisar" target="_blank" rel="noopener" aria-label="Compartir en X" title="Compartir en X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=D%C3%A9ficit%20de%20M%C3%A9xico%20con%20China%20y%20Viaje%20a%20APEC%3A%20Qu%C3%A9%20Revisar&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" aria-label="Compartir por correo" title="Compartir por correo"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><article class="art-main"><div class="art-head"><div class="art-langs"><a class="back" href="/blog/es">Volver al blog</a></div><h1>Déficit de México con China y Viaje a APEC: Qué Revisar</h1><div class="meta-row"><div class="meta-cat">Noticias del Mercado</div><div class="article-meta"><strong>SourciaVera Team</strong><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><time>13 nov 2026</time><span class="meta-sub"> · 8 min de lectura</span></div></div></div><figure class="art-hero"><div class="ill"><img fetchpriority="high" src="/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-photo.webp" alt="Larga nave industrial con tornos y máquinas herramienta a ambos lados de un pasillo central" width="1200" height="630" loading="eager"></div><figcaption class="figure-caption">Larga nave industrial con tornos y máquinas herramienta a ambos lados de un pasillo central</figcaption></figure><!-- review_by: 2026-11-24 (APEC en Shenzhen del 18 al 19 de noviembre de 2026 y la visita de Sheinbaum; revisar resultados, anuncios comerciales y la tabla del INEGI de enero a septiembre) --><div class="article-body">
+
+  <p><strong>La respuesta corta:</strong> De enero a septiembre de 2026, México tuvo un déficit comercial con China de unos 94,878 millones de dólares, según medios. Sheinbaum tiene actividades oficiales en Shenzhen del 17 al 19 de noviembre. No encontramos reglas nuevas para importar de China.</p>
+
+  <p class="verified-note"><strong>Verificado al 13 de noviembre de 2026</strong> contra <a href="https://xpectrofm.com/rompe-record-deficit-comercial-de-mexico-con-china/" target="_blank" rel="noopener">Xpectro FM</a>, <a href="https://ljz.mx/12/11/2026/deficit-comercial-con-china-alcanza-nivel-sin-precedente/" target="_blank" rel="noopener">La Jornada Zacatecas</a> y <a href="https://www.vocerodelnorte.com/mexico-deficit-comercial-china-94-mil-millones/" target="_blank" rel="noopener">Vocero del Norte</a> para las cifras de enero a septiembre, <a href="https://www.tierrafuerte.mx/archivos/85042" target="_blank" rel="noopener">Tierra Fuerte</a>, que cita al INEGI, para enero a agosto, e <a href="https://www.infobae.com/mexico/2026/11/12/agenda-de-sheinbaum-en-china-entre-reuniones-bilaterales-discurso-y-sesiones-en-el-apec/" target="_blank" rel="noopener">Infobae</a> para la agenda. No abrimos la tabla del INEGI, así que las cifras se atribuyen a esos medios.</p>
+
+  <p>Este artículo ordena qué cifras se publicaron sobre el comercio de México con China, qué aranceles mexicanos siguen vigentes y qué agenda anunció el gobierno para APEC. No toma partido ni predice resultados. Se basa en las fuentes citadas y en buenas prácticas generales, no en experiencia propia con estas negociaciones. Su agente aduanal decide cómo le aplican las reglas.</p>
+
+  <h2>¿Qué Cifras se Publicaron?</h2>
+
+  <div class="table-wrap" style="overflow-x:auto">
+  <table>
+    <caption>Comercio de México con China en 2026, en millones de dólares, según los medios citados. Consultado el 13 de noviembre de 2026.</caption>
+    <thead><tr><th scope="col">Periodo</th><th scope="col">Importaciones de China</th><th scope="col">Exportaciones a China</th><th scope="col">Déficit</th><th scope="col">Fuente</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Enero a agosto</th><td>92,655 (+8.7%)</td><td>9,934 (+58.1%)</td><td>82,721 (+4.8%)</td><td><a href="https://www.tierrafuerte.mx/archivos/85042" target="_blank" rel="noopener">Tierra Fuerte</a>, con datos del INEGI</td></tr>
+      <tr><th scope="row">Enero a septiembre</th><td>105,978 según La Jornada Zacatecas; 105 mil millones según Xpectro</td><td>11,100</td><td>94,878; la cifra del mismo periodo de 2025 fue de 89,887 (+5.55%)</td><td><a href="https://xpectrofm.com/rompe-record-deficit-comercial-de-mexico-con-china/" target="_blank" rel="noopener">Xpectro</a>; <a href="https://ljz.mx/12/11/2026/deficit-comercial-con-china-alcanza-nivel-sin-precedente/" target="_blank" rel="noopener">La Jornada Zacatecas</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>Según Xpectro, el tercer trimestre de 2026 cerró con el déficit más alto para un periodo similar desde que hay registros oficiales (<a href="https://xpectrofm.com/rompe-record-deficit-comercial-de-mexico-con-china/" target="_blank" rel="noopener">Xpectro</a>). Vocero del Norte da una cifra aproximada de 94 mil millones y recuerda que un déficit bilateral no equivale por sí solo a una pérdida de riqueza, porque parte de las importaciones se usa para producir bienes que se venden en otros mercados (<a href="https://www.vocerodelnorte.com/mexico-deficit-comercial-china-94-mil-millones/" target="_blank" rel="noopener">Vocero del Norte</a>). Según los medios, China vende a México sobre todo teléfonos, automóviles, autopartes, computadoras, circuitos integrados y transformadores eléctricos, y México vende minerales metálicos, autopartes, instrumentos médicos y alimentos (<a href="https://xpectrofm.com/rompe-record-deficit-comercial-de-mexico-con-china/" target="_blank" rel="noopener">Xpectro</a>; <a href="https://www.tierrafuerte.mx/archivos/85042" target="_blank" rel="noopener">Tierra Fuerte</a>).</p>
+
+  <h2>¿Qué Aranceles Mexicanos Siguen Vigentes?</h2>
+
+  <p>Según Tierra Fuerte, el 1 de enero de 2026 entraron en vigor ajustes arancelarios a importaciones de países sin tratado comercial con México, como China, Corea del Sur, India, Indonesia y Brasil: aranceles de entre 5% y 50% a 1,463 clasificaciones de productos, que afectan unos 52,000 millones de dólares de importaciones, 8.6% del total (<a href="https://www.tierrafuerte.mx/archivos/85042" target="_blank" rel="noopener">Tierra Fuerte</a>). El decreto de reforma arancelaria se publicó en el DOF el 29 de diciembre de 2025 (<a href="https://dof.gob.mx/nota_detalle.php?codigo=5777376&fecha=29/12/2025" target="_blank" rel="noopener">DOF</a>). Revise la fracción de cada producto con su agente aduanal.</p>
+
+  <h2>¿Qué Agenda Anunció el Gobierno para APEC?</h2>
+
+  <ul>
+    <li><strong>Fechas.</strong> Según Infobae, el secretario de Economía, Marcelo Ebrard, presentó el 12 de noviembre la agenda de la presidenta: actividades oficiales del 17 al 19 de noviembre en Shenzhen (<a href="https://www.infobae.com/mexico/2026/11/12/agenda-de-sheinbaum-en-china-entre-reuniones-bilaterales-discurso-y-sesiones-en-el-apec/" target="_blank" rel="noopener">Infobae</a>). La Reunión de Líderes Económicos de APEC es del 18 al 19 de noviembre de 2026, según <a href="https://www.apec.org/" target="_blank" rel="noopener">apec.org</a>.</li>
+    <li><strong>Qué hará.</strong> Hablará ante el Consejo Asesor de Negocios de APEC, tendrá encuentros bilaterales con líderes de China, Canadá, Australia y Vietnam y participará en la sesión de APEC "Construyendo una comunidad del Asia Pacífico para prosperar juntos" (<a href="https://www.infobae.com/mexico/2026/11/12/agenda-de-sheinbaum-en-china-entre-reuniones-bilaterales-discurso-y-sesiones-en-el-apec/" target="_blank" rel="noopener">Infobae</a>).</li>
+    <li><strong>El viaje.</strong> Según La Jornada Zacatecas, es su primera visita oficial a China y saldría el 15 de noviembre (<a href="https://ljz.mx/12/11/2026/deficit-comercial-con-china-alcanza-nivel-sin-precedente/" target="_blank" rel="noopener">La Jornada Zacatecas</a>).</li>
+  </ul>
+
+  <h2>¿Qué Significa para Quien Importa de China a México?</h2>
+
+  <p>Solo escribimos lo que tiene respaldo en las fuentes. Las cifras y la agenda <strong>no cambian por sí solas las reglas de importación</strong>, y no encontramos un anuncio oficial de medidas nuevas. Siguen su curso las reglas ya publicadas; para el contexto de la visita y del T-MEC, vea <a href="/blog/es/elecciones-eeuu-tmec-ebrard-sheinbaum-xi-apec-que-cambia-para-importar-de-china">las elecciones de EE. UU., el T-MEC y la reunión Sheinbaum-Xi</a>. Las cifras muestran la dependencia de insumos chinos; para sus propios documentos, vea <a href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores">cómo probar el precio real de la factura</a> y <a href="/blog/es/operacion-trade-bridge-cbp-anam-otay-mesa-valor-origen-que-revisar-importadores">la Operación Trade Bridge de la CBP y la ANAM</a>.</p>
+
+  <h2>Lo Que Todavía No Sabemos</h2>
+
+  <ul>
+    <li><strong>La tabla del INEGI de enero a septiembre.</strong> No la abrimos; las cifras vienen de medios y la importación de enero a septiembre aparece como 105,978 y como "105 mil" según la fuente.</li>
+    <li><strong>Qué se acordará en Shenzhen.</strong> La agenda no incluye anuncios comerciales concretos que hayamos encontrado.</li>
+    <li><strong>Si habrá cambios arancelarios</strong> o acuerdos con China después de la visita.</li>
+    <li><strong>La agenda completa.</strong> Leímos solo la parte de Infobae sobre actividades y reuniones.</li>
+  </ul>
+
+  <div class="mid-card"><div class="side-card"><div class="sc-tag">Revisión remota</div><p class="sc-price">$49</p><div class="sc-h">Revisión remota de proveedor</div><p>Informe escrito en 48 horas: registro de la empresa, fábrica o comercializadora, y coincidencia de la cuenta de pago.</p><a class="btn btn-accent" href="/es#remote-check">Solicitar revisión de $49</a></div></div><h2>¿Qué Debe Preguntar a Su Proveedor y a Su Agente Aduanal?</h2>
+
+  <p>Esta sección es consejo general, no una regla de las fuentes.</p>
+
+  <ul>
+    <li><strong>La fracción arancelaria y el arancel</strong> de cada producto, y si cae entre las clasificaciones con ajuste de 2026 (vea <a href="/blog/es/8-documentos-solicitar-fabricante-chino">los documentos que se piden a un fabricante chino</a>).</li>
+    <li><strong>La validez del precio y quién asume un cambio de aranceles,</strong> escritos en la proforma (vea <a href="/blog/es/factura-proforma-proveedor-chino-que-revisar">qué revisar en una factura proforma</a>).</li>
+    <li><strong>Las fechas de entrada de sus embarques,</strong> para saber qué entradas podrían verse afectadas por un cambio posterior a APEC.</li>
+    <li><strong>Un proveedor alterno</strong> para las partidas más dependientes de un solo origen (vea <a href="/blog/es/lista-verificacion-proveedores-china">la lista de verificación de proveedores</a>).</li>
+  </ul>
+
+      <figure class="body-fig" data-fig="deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-fig1">
+      <img src="/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-fig1-es.webp" alt="Lista de cuatro cosas que revisar con el proveedor y el agente aduanal antes de la cumbre de APEC" width="800" height="516" loading="lazy" srcset="/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-fig1-es.webp 800w, /images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-fig1-es-2x.webp 1600w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+      <figcaption class="figure-caption">Diagrama: Consejo general, no una regla de las fuentes.</figcaption>
+    </figure>
+
+  <h2>¿Dónde Ayuda una Revisión de un Tercero?</h2>
+
+  <p>No predice aranceles ni decide cómo se declara una mercancía. Sí puede confirmar lo que está del lado del proveedor: que la fábrica existe, que produce lo que aparece en la factura y que lo embarcado coincide con el pedido. Vea nuestro <a href="/es/supervision-fabricas-china">servicio de supervisión de fábricas en China</a> y nuestra <a href="/categories/auto-parts">categoría de autopartes</a>.</p>
+
+  <h2>¿Qué No Dicen las Fuentes?</h2>
+
+  <p>No dicen que exista una regla nueva para importar de China ni que los importadores mexicanos estén bajo sospecha. No evalúan a ningún proveedor.</p>
+
+      <figure class="body-fig" data-fig="deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-fig2">
+  <img src="/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-hero-es.webp" alt="Tabla con el déficit comercial de México con China de enero a septiembre de 2026, las exportaciones, los aranceles vigentes desde enero, las fechas de la visita de Sheinbaum a Shenzhen y la ausencia de medidas nuevas" width="1200" height="630" loading="lazy" srcset="/images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-hero-es.webp 1200w, /images/deficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar-hero-es-2x.webp 2400w" sizes="(min-width:1920px) 1080px, (min-width:1280px) 56.25vw, (min-width:769px) 720px, calc(100vw - 2.5rem)">
+  <figcaption class="figure-caption">Tabla: comercio de México con China según los medios citados.</figcaption>
+</figure>
+
+  <h2>¿Qué Conviene Hacer?</h2>
+
+  <ol>
+    <li><strong>Compare</strong> la fracción y el arancel de cada producto con su agente aduanal.</li>
+    <li><strong>Escriba en la proforma</strong> la validez del precio y quién asume un cambio de aranceles.</li>
+    <li><strong>Liste</strong> sus embarques con fecha de entrada prevista.</li>
+    <li><strong>Revise las fuentes oficiales</strong> después de APEC antes de cambiar precios o contratos.</li>
+    <li><strong>Verifique a todo proveedor nuevo</strong> antes de pagar.</li>
+  </ol>
+
+  <h2>Preguntas Frecuentes</h2>
+
+  <h3>¿Cuál fue el déficit comercial de México con China de enero a septiembre de 2026?</h3>
+  <p>Unos 94,878 millones de dólares, según Xpectro y La Jornada Zacatecas, con importaciones de China por unos 106 mil millones y exportaciones a China por 11,100 millones. Es la cifra más alta para un periodo similar, según Xpectro.</p>
+
+  <h3>¿Cuánto fue de enero a agosto?</h3>
+  <p>Un déficit de 82,721 millones de dólares, con importaciones de 92,655 millones (+8.7%) y exportaciones de 9,934 millones (+58.1%), según Tierra Fuerte, que cita datos del INEGI.</p>
+
+  <h3>¿Qué aranceles aplica México a productos de China?</h3>
+  <p>Según Tierra Fuerte, desde el 1 de enero de 2026 hay aranceles de 5% a 50% a 1,463 clasificaciones de productos de países sin tratado con México. Confirme la fracción de su producto con su agente aduanal.</p>
+
+  <h3>¿Cuándo está Sheinbaum en Shenzhen?</h3>
+  <p>Según Infobae, tiene actividades oficiales del 17 al 19 de noviembre de 2026. La Reunión de Líderes Económicos de APEC es del 18 al 19 de noviembre, según apec.org.</p>
+
+  <h3>¿Cambia esto las reglas para importar de China?</h3>
+  <p>No encontramos una regla nueva ni un anuncio oficial de medidas. Siguen vigentes las ya publicadas; revise las fuentes oficiales después de APEC antes de cambiar precios o contratos.</p>
+  <h2>Resumen y Siguiente Paso</h2>
+
+  <p>Según medios que citan datos oficiales, México tuvo un déficit de unos 94,878 millones de dólares con China de enero a septiembre de 2026, y Sheinbaum tiene actividades en Shenzhen del 17 al 19 de noviembre. El primer paso es revisar la fracción y el precio de cada producto antes de cambiar contratos.</p>
+
+  <div class="series-box">
+    <h3>Más sobre importar de China a México</h3>
+    <ul><li><a href="/blog/es/elecciones-eeuu-tmec-ebrard-sheinbaum-xi-apec-que-cambia-para-importar-de-china">las elecciones de EE. UU., el T-MEC y la reunión Sheinbaum-Xi</a></li><li><a href="/blog/es/trump-amenaza-duplicar-aranceles-mexico-caravanas-12-noviembre-2026-que-revisar-importadores">la amenaza de Trump de duplicar los aranceles a México</a></li><li><a href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores">cómo probar el precio real de la factura</a></li></ul>
+  </div>
+
+  <p>En resumen, las cifras y la agenda no son una regla nueva. Cuéntenos su pedido si quiere ayuda para preparar las preguntas para su proveedor y su agente aduanal.</p>
+
+  <p class="fine-print">Ofrezco servicios de verificación de proveedores, así que debe tomar mi recomendación en ese contexto. SourciaVera no es agente aduanal ni despacho de abogados, y nada de lo anterior es asesoría aduanera ni legal.</p>
+
+  <aside class="author-box" aria-label="Sobre el autor">
+    <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), fundador de SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Fundador, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>De Guangzhou, con larga experiencia a pie de fábrica en Guangdong y las provincias vecinas</li><li>Años de experiencia en comercio exterior y publicidad internacional</li><li>Trabaja con un equipo de compras, transporte y logística, y comercio exterior</li><li>Graba cada verificación de fábrica en sitio y entrega el video real al cliente</li></ul>
+    <p class="author-box-links"><a href="/es/about">Sobre el autor</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/es#remote-check" class="cta-btn">Empiece con una Revisión Remota de $49</a>
+      <a href="/es#contacto" class="cta-btn">Cuéntenos su pedido</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#0B7A6E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Escríbanos por WhatsApp</a>
+    </div>
+  </div>
+</div><div class="share-row"><span>Compartir</span><a href="https://wa.me/?text=D%C3%A9ficit%20de%20M%C3%A9xico%20con%20China%20y%20Viaje%20a%20APEC%3A%20Qu%C3%A9%20Revisar%20https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" target="_blank" rel="noopener" aria-label="Compartir en WhatsApp" title="Compartir en WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" target="_blank" rel="noopener" aria-label="Compartir en Facebook" title="Compartir en Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" title="Compartir en LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar&text=D%C3%A9ficit%20de%20M%C3%A9xico%20con%20China%20y%20Viaje%20a%20APEC%3A%20Qu%C3%A9%20Revisar" target="_blank" rel="noopener" aria-label="Compartir en X" title="Compartir en X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=D%C3%A9ficit%20de%20M%C3%A9xico%20con%20China%20y%20Viaje%20a%20APEC%3A%20Qu%C3%A9%20Revisar&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Fes%2Fdeficit-comercial-mexico-china-enero-septiembre-2026-viaje-sheinbaum-shenzhen-que-revisar" aria-label="Compartir por correo" title="Compartir por correo"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><div class="rel-topics"><div class="side-h rel-h">Temas relacionados</div><span class="tag">México</span><span class="tag">Noticias del Mercado</span></div></article><aside class="art-side"><div class="side-card"><div class="sc-tag">Revisión remota</div><p class="sc-price">$49</p><div class="sc-h">Revisión remota de proveedor</div><p>Informe escrito en 48 horas: registro de la empresa, fábrica o comercializadora, y coincidencia de la cuenta de pago.</p><a class="btn btn-accent" href="/es#remote-check">Solicitar revisión de $49</a></div><a class="side-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="sidebar"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Consultar por WhatsApp</a><div class="side-pop"><div class="side-h">Artículos populares</div><ol><li><a href="/blog/es/estafa-alibaba">Me Estafaron en Alibaba: Qué Hacer Ahora</a></li><li><a href="/blog/es/alibaba-confiable">¿Es Alibaba Confiable? Respuesta Honesta para Importadores Mexicanos</a></li><li><a href="/blog/es/verificacion-proveedores-china-mexico">Verificación de Proveedores en China: La Guía que Todo Importador Mexicano Necesita Leer</a></li><li><a href="/blog/es/guia-estafas-piezas-led-alibaba">¿Comprando Piezas LED de Auto en Alibaba? En Esto se Equivocan los Distribuidores</a></li></ol></div></aside></div><section class="you-may-like"><div class="sv-wrap"><div class="section-title"><span>Te puede interesar</span></div><div class="grid-4"><a class="rel-card" href="/blog/es/elecciones-eeuu-tmec-ebrard-sheinbaum-xi-apec-que-cambia-para-importar-de-china"><img src="/images/elecciones-eeuu-tmec-ebrard-sheinbaum-xi-apec-que-cambia-para-importar-de-china-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Elecciones en EE. UU. y T-MEC: Qué Dijo Ebrard y Qué Sigue</span></a><a class="rel-card" href="/blog/es/trump-amenaza-duplicar-aranceles-mexico-caravanas-12-noviembre-2026-que-revisar-importadores"><img src="/images/trump-amenaza-duplicar-aranceles-mexico-caravanas-12-noviembre-2026-que-revisar-importadores-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Trump Amenaza Duplicar Aranceles a México: Qué Revisar</span></a><a class="rel-card" href="/blog/es/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores"><img src="/images/mexico-subvaluacion-2027-como-probar-precio-real-factura-importadores-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>Subvaluación en México 2027: Cómo Probar su Precio Real</span></a><a class="rel-card" href="/blog/es/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico"><img src="/images/cbp-importador-de-registro-extranjero-ctpat-5-enero-2027-que-revisar-empresas-mexico-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Noticias del Mercado</small><span>CBP: Importador de Registro Extranjero y CTPAT en 2027</span></a></div></div></section></div></main>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/es">Sourcia<span>Vera</span></a><p>Su equipo en China, de principio a fin: elegimos la fábrica, compramos, inspeccionamos en video sin editar —con nosotros en cámara— y coordinamos la entrega hasta su puerta.</p><p>Con base en Guangzhou. Servicio en español e inglés. Solo cobramos al cliente: sin comisión de las fábricas.</p></div><div><div class="sv-foot-h">Servicios</div><ul class="sv-foot-list"><li><a href="/es/proceso-de-compra-china">Proceso de compra en China</a></li><li><a href="/es/verificacion-fabricas">Verificación de fábricas</a></li><li><a href="/es/verificacion-fabrica-videollamada-en-vivo">Verificación por videollamada</a></li><li><a href="/es/agente-de-compras-china">Agente de compras</a></li><li><a href="/es/supervision-fabricas-china">Supervisión de fábricas</a></li><li><a href="/es/lotes-pequenos">Lotes pequeños</a></li><li><a href="/es/categorias/autopartes">Autopartes</a></li></ul></div><div><div class="sv-foot-h">Sitio</div><ul class="sv-foot-list"><li><a href="/blog/es">Blog</a></li><li><a href="/es/categorias">Categorías</a></li><li><a href="/es/about">Nosotros</a></li><li><a href="/es#faq">FAQ</a></li><li><a href="/es/contacto">Contacto</a></li><li><a href="/es/prensa">Prensa</a></li><li><a href="/es/imparcialidad">Imparcialidad</a></li></ul></div><div><div class="sv-foot-h">Síganos y escríbanos</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · Todos los derechos reservados</div><div class="sv-foot-links"><a href="/es/privacy">Política de Privacidad</a><a href="/es/terms">Términos de Servicio</a><a href="#" role="button" data-cc="show-preferencesModal">Configuración de cookies</a></div><div><span>Verificado en</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Volver arriba</span></button></div></div></div>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'es',
+    translations: {
+      es: {
+        consentModal: {
+          title: 'Usamos cookies',
+          description: 'Usamos cookies para analizar el tráfico del sitio y mejorar su experiencia.',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          showPreferencesBtn: 'Gestionar Preferencias'
+        },
+        preferencesModal: {
+          title: 'Preferencias de Cookies',
+          acceptAllBtn: 'Aceptar Todo',
+          acceptNecessaryBtn: 'Rechazar Todo',
+          savePreferencesBtn: 'Guardar Preferencias',
+          closeIconLabel: 'Cerrar',
+          sections: [
+            { title: 'Cookies Necesarias', description: 'Requeridas para el correcto funcionamiento del sitio web.', linkedCategory: 'necessary' },
+            { title: 'Cookies de Análisis', description: 'Nos ayudan a entender cómo los visitantes usan nuestro sitio mediante Google Analytics. Todos los datos son anonimizados.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
