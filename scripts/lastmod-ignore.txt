@@ -51,3 +51,4 @@ c11de1f9e781  # 2026-10-31 widescreen layout (CSS/layout only, no content change
 e91e73f214a8  # 2026-10-31 form layout + section-title fix (layout only; one new optional quantity field)
 cd647e8bde0e  # merge commit forms-layout, layout only (2026-10-31)
 9b35c4fc09f49d4394af331d9db87105addacf5d  # Nov 15 blog follow-up: internal links to new Nov 15 posts on 4 existing pages, no content change
+f9447c13c70ff777af6a9a90ca0f5bc9f63d7c3b  # Nov 15 blog hero image replacement (AI concept visuals + Illustrative image caption, no content change)
