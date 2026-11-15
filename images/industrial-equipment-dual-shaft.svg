@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#0D2240" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Chamber / Hopper Guide -->
+  <path d="M12 14 L28 30 L28 76 L72 76 L72 30 L88 14" />
+  <!-- Left Shaft Center -->
+  <circle cx="38" cy="50" r="13" />
+  <circle cx="38" cy="50" r="4" fill="#0D2240" />
+  <!-- Left Shaft Claw Blades -->
+  <path d="M38 37 C44 33 49 37 46 43" />
+  <path d="M51 50 C55 56 51 61 45 58" />
+  <path d="M38 63 C32 67 27 63 30 57" />
+  <path d="M25 50 C21 44 25 39 31 42" />
+  <!-- Right Shaft Center -->
+  <circle cx="62" cy="50" r="13" />
+  <circle cx="62" cy="50" r="4" fill="#0D2240" />
+  <!-- Right Shaft Claw Blades (Interlocking) -->
+  <path d="M62 37 C56 33 51 37 54 43" />
+  <path d="M49 50 C45 56 49 61 55 58" />
+  <path d="M62 63 C68 67 73 63 70 57" />
+  <path d="M75 50 C79 44 75 39 69 42" />
+  <!-- Rotation Arrows (Inward drawing) -->
+  <path d="M30 38 A15 15 0 0 1 44 36" stroke="#C93A1F" stroke-width="2" />
+  <polyline points="43 32 46 37 41 40" stroke="#C93A1F" stroke-width="2" />
+  <path d="M70 38 A15 15 0 0 0 56 36" stroke="#C93A1F" stroke-width="2" />
+  <polyline points="57 32 54 37 59 40" stroke="#C93A1F" stroke-width="2" />
+  <!-- Downward Feed Arrow -->
+  <line x1="50" y1="20" x2="50" y2="34" stroke="#00796B" stroke-width="2" />
+  <polyline points="46 30 50 35 54 30" stroke="#00796B" stroke-width="2" />
+  <!-- Discharge Opening -->
+  <line x1="34" y1="84" x2="66" y2="84" stroke-width="3" />
+</svg>
