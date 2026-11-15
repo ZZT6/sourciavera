@@ -1,0 +1,81 @@
+<svg viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <style>
+    .step-box { fill: #FFFDF8; stroke: #E8E0D5; stroke-width: 1.5; rx: 6px; }
+    .step-num { fill: #C93A1F; font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 700; }
+    .step-title { fill: #0D2240; font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 600; }
+    .step-desc { fill: #6B6B6B; font-family: system-ui, -apple-system, sans-serif; font-size: 11px; line-height: 1.4; }
+    .step-arrow { stroke: #00796B; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+
+  <!-- Step 1 -->
+  <rect x="10" y="15" width="155" height="130" class="step-box" />
+  <circle cx="32" cy="38" r="12" fill="#FFF8F0" stroke="#C93A1F" stroke-width="1.5" />
+  <text x="32" y="43" text-anchor="middle" class="step-num">1</text>
+  <text x="52" y="43" class="step-title">Requisitos</text>
+  <text x="24" y="70" class="step-desc">
+    <tspan x="24" dy="0">Material a triturar,</tspan>
+    <tspan x="24" dy="16">tamaño de entrada,</tspan>
+    <tspan x="24" dy="16">volumen por hora</tspan>
+    <tspan x="24" dy="16">y voltaje local (60 Hz).</tspan>
+  </text>
+
+  <!-- Arrow 1-2 -->
+  <path d="M173 80 L189 80 M183 74 L189 80 L183 86" class="step-arrow" />
+
+  <!-- Step 2 -->
+  <rect x="195" y="15" width="155" height="130" class="step-box" />
+  <circle cx="217" cy="38" r="12" fill="#FFF8F0" stroke="#C93A1F" stroke-width="1.5" />
+  <text x="217" y="43" text-anchor="middle" class="step-num">2</text>
+  <text x="237" y="43" class="step-title">Filtrar Fábricas</text>
+  <text x="209" y="70" class="step-desc">
+    <tspan x="209" dy="0">Buscamos fabricante</tspan>
+    <tspan x="209" dy="16">real, no intermediario.</tspan>
+    <tspan x="209" dy="16">Revisión de registro</tspan>
+    <tspan x="209" dy="16">y planta industrial.</tspan>
+  </text>
+
+  <!-- Arrow 2-3 -->
+  <path d="M358 80 L374 80 M368 74 L374 80 L368 86" class="step-arrow" />
+
+  <!-- Step 3 -->
+  <rect x="380" y="15" width="155" height="130" class="step-box" />
+  <circle cx="402" cy="38" r="12" fill="#FFF8F0" stroke="#C93A1F" stroke-width="1.5" />
+  <text x="402" y="43" text-anchor="middle" class="step-num">3</text>
+  <text x="422" y="43" class="step-title">Cotizaciones</text>
+  <text x="394" y="70" class="step-desc">
+    <tspan x="394" dy="0">Comparativa técnica</tspan>
+    <tspan x="394" dy="16">por escrito: motores,</tspan>
+    <tspan x="394" dy="16">cuchillas, repuestos</tspan>
+    <tspan x="394" dy="16">y plazo de entrega.</tspan>
+  </text>
+
+  <!-- Arrow 3-4 -->
+  <path d="M543 80 L559 80 M553 74 L559 80 L553 86" class="step-arrow" />
+
+  <!-- Step 4 -->
+  <rect x="565" y="15" width="155" height="130" class="step-box" />
+  <circle cx="587" cy="38" r="12" fill="#FFF8F0" stroke="#C93A1F" stroke-width="1.5" />
+  <text x="587" y="43" text-anchor="middle" class="step-num">4</text>
+  <text x="607" y="43" class="step-title">Inspección</text>
+  <text x="579" y="70" class="step-desc">
+    <tspan x="579" dy="0">Prueba de máquina</tspan>
+    <tspan x="579" dy="16">en video continuo,</tspan>
+    <tspan x="579" dy="16">verificación de placa</tspan>
+    <tspan x="579" dy="16">antes de pagar saldo.</tspan>
+  </text>
+
+  <!-- Arrow 4-5 -->
+  <path d="M728 80 L744 80 M738 74 L744 80 L738 86" class="step-arrow" />
+
+  <!-- Step 5 -->
+  <rect x="750" y="15" width="140" height="130" class="step-box" />
+  <circle cx="772" cy="38" r="12" fill="#FFF8F0" stroke="#C93A1F" stroke-width="1.5" />
+  <text x="772" y="43" text-anchor="middle" class="step-num">5</text>
+  <text x="792" y="43" class="step-title">Carga y Envío</text>
+  <text x="764" y="70" class="step-desc">
+    <tspan x="764" dy="0">Supervisión en planta,</tspan>
+    <tspan x="764" dy="16">amarre de bultos,</tspan>
+    <tspan x="764" dy="16">contenedor 40HQ</tspan>
+    <tspan x="764" dy="16">y número de sello.</tspan>
+  </text>
+</svg>

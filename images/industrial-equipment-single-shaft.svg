@@ -1,0 +1,26 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#0D2240" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Chamber Frame -->
+  <rect x="12" y="16" width="76" height="68" rx="3" />
+  <!-- Top Hopper Flange -->
+  <path d="M8 16 L22 16" />
+  <path d="M78 16 L92 16" />
+  <!-- Hydraulic Ram / Pusher on the left -->
+  <rect x="16" y="26" width="16" height="34" rx="1" fill="#E8E0D5" fill-opacity="0.3" />
+  <line x1="8" y1="43" x2="16" y2="43" stroke-width="3" />
+  <polyline points="20 39 25 43 20 47" stroke-width="2" />
+  <!-- Single Rotor Center -->
+  <circle cx="58" cy="46" r="14" />
+  <circle cx="58" cy="46" r="4" fill="#0D2240" />
+  <!-- Rotor Teeth -->
+  <path d="M58 32 L63 26 L65 33" />
+  <path d="M72 46 L78 51 L71 53" />
+  <path d="M58 60 L53 66 L51 59" />
+  <path d="M44 46 L38 41 L45 39" />
+  <!-- Rotation arrow -->
+  <path d="M68 37 A16 16 0 0 1 68 55" stroke="#C93A1F" stroke-width="2" />
+  <polyline points="65 57 69 55 70 51" stroke="#C93A1F" stroke-width="2" />
+  <!-- Fixed Counter Knife Bed at bottom right -->
+  <path d="M72 58 L76 68 L84 68" />
+  <!-- Bottom Sizing Screen -->
+  <path d="M38 72 Q58 80 78 72" stroke-dasharray="3 3" stroke-width="2" />
+</svg>
