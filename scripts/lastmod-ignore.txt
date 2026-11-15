@@ -50,3 +50,4 @@ c11de1f9e781  # 2026-10-31 widescreen layout (CSS/layout only, no content change
 7681d4def30b  # merge commit widescreen, layout only (2026-10-31)
 e91e73f214a8  # 2026-10-31 form layout + section-title fix (layout only; one new optional quantity field)
 cd647e8bde0e  # merge commit forms-layout, layout only (2026-10-31)
+9b35c4fc09f49d4394af331d9db87105addacf5d  # Nov 15 blog follow-up: internal links to new Nov 15 posts on 4 existing pages, no content change
