@@ -56,3 +56,4 @@ f9447c13c70ff777af6a9a90ca0f5bc9f63d7c3b  # Nov 15 blog hero image replacement (
 01c0d3177f7d9131ae18bdfb5014a70d367ce7fb  # Nov 15 review_by extension only (no content change)
 d678c5a40519b62550f0392b8b637e14a42b5938  # merge commit chore/review-by-2026-11-15 (no content change)
 711b9108286e973c327dd03595ffac7774ad0225 # link-only: transparent sourcing guides -> 10% commission quality articles
+631c312645d16f6afa9b2fa6cfa5227d65605de5 # link-only: Nov 17 news inbound links
