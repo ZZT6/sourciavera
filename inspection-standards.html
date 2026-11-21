@@ -33,7 +33,7 @@
 </script>
 <script src="/js/sv-site.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inspection Standards: AQL Sampling and Defect Classes</title>
+<title>Inspection Standards &amp; AQL Calculator | SourciaVera</title>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -149,7 +149,29 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 .btn-o:hover{border-color:var(--yellow);color:var(--yellow)}
 .faq-i{border-bottom:1px solid var(--border);padding:1rem 0}.faq-i h3{font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.4rem}.faq-i p{color:var(--muted);font-size:0.93rem;line-height:1.8;margin:0}
 .rel{display:flex;flex-direction:column;gap:0.5rem;margin:0.8rem 0 0}.rel a{color:var(--coral);font-size:0.93rem;text-decoration:underline}
-@media(max-width:640px){.cards{grid-template-columns:1fr}.still{grid-template-columns:1fr}.lead-box{padding:1.25rem 1.2rem}.cta-panel{padding:1.8rem 1.25rem}.btn-c,.btn-o{width:100%;text-align:center}}
+.aql-calc{background:var(--light);border:1.5px solid var(--border);border-top:0.25rem solid var(--coral);padding:1.6rem 1.75rem;margin:0 0 3.5rem}
+.aql-calc h2{font-size:1.35rem;font-weight:700;color:var(--navy);margin:0 0 0.45rem;line-height:1.25}
+.aql-calc-sub{color:var(--muted);font-size:0.9rem;line-height:1.7;margin:0 0 1.25rem}
+.aql-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem 1.25rem;margin-bottom:1.25rem}
+.aql-field label{display:block;font-size:0.74rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);font-weight:700;margin-bottom:0.35rem}
+.aql-field input,.aql-field select{width:100%;padding:0.65rem 0.75rem;border:1.5px solid var(--border);background:#fff;color:var(--navy);font-size:0.95rem;font-family:inherit;border-radius:0}
+.aql-field input:focus,.aql-field select:focus{outline:none;border-color:var(--coral)}
+.aql-aqls{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.35rem}
+.aql-out{background:var(--navy);color:#fff;padding:1.25rem 1.35rem;margin-bottom:1rem}
+.aql-top{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:baseline;padding-bottom:0.95rem;margin-bottom:0.95rem;border-bottom:1px solid rgba(255,255,255,0.16)}
+.aql-stat-k{display:block;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.68)}
+.aql-stat-v{font-size:1.55rem;font-weight:700;color:var(--yellow);line-height:1.2}
+.aql-res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0.85rem}
+.aql-res-card{background:rgba(255,255,255,0.07);border-left:0.2rem solid var(--coral);padding:0.8rem 0.9rem}
+.aql-res-card.is-maj{border-left-color:var(--yellow)}
+.aql-res-card.is-min{border-left-color:var(--teal)}
+.aql-res-title{font-size:0.74rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:0.25rem}
+.aql-res-num{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:0.2rem}
+.aql-res-meta{font-size:0.78rem;color:rgba(255,255,255,0.72);line-height:1.5}
+.aql-note{font-size:0.82rem;color:var(--muted);line-height:1.65;margin:0 0 1rem}
+.aql-foot{display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;justify-content:space-between}
+.aql-foot a.btn-c{font-size:0.8rem;padding:0.7rem 1.3rem}
+@media(max-width:640px){.aql-calc{padding:1.25rem 1.1rem}.aql-grid,.aql-aqls,.aql-res-grid{grid-template-columns:1fr}.aql-foot a.btn-c{width:100%;text-align:center}.cards{grid-template-columns:1fr}.still{grid-template-columns:1fr}.lead-box{padding:1.25rem 1.2rem}.cta-panel{padding:1.8rem 1.25rem}.btn-c,.btn-o{width:100%;text-align:center}}
 /*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
 </style>
 <meta property="og:title" content="Inspection Standards: AQL Sampling and Defect Classes | SourciaVera">
@@ -284,6 +306,93 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 <li>On small batches we can check every unit; on larger orders we check a sample under a plan agreed with you.</li>
 </ul></div>
 
+<div class="aql-calc" id="aql-calculator" aria-labelledby="aql-calc-title">
+  <div class="section-label">Interactive Tool · ISO 2859-1</div>
+  <h2 id="aql-calc-title">AQL Sample Size Calculator (Normal Single Sampling)</h2>
+  <p class="aql-calc-sub">Enter your order quantity, inspection level, and AQL limits to see the code letter, sample size, and accept/reject defect numbers under ISO 2859-1 / ANSI/ASQ Z1.4 (including arrow rules).</p>
+  <div class="aql-grid">
+    <div class="aql-field">
+      <label for="aql-lot">Order / Lot Quantity (units)</label>
+      <input type="number" id="aql-lot" min="2" max="10000000" step="1" value="5000" inputmode="numeric">
+    </div>
+    <div class="aql-field">
+      <label for="aql-level">Inspection Level</label>
+      <select id="aql-level">
+        <option value="G1">General Level I (smaller sample)</option>
+        <option value="G2" selected>General Level II (standard default)</option>
+        <option value="G3">General Level III (larger sample)</option>
+        <option value="S1">Special S-1</option>
+        <option value="S2">Special S-2</option>
+        <option value="S3">Special S-3</option>
+        <option value="S4">Special S-4</option>
+      </select>
+    </div>
+  </div>
+  <div class="aql-aqls">
+    <div class="aql-field">
+      <label for="aql-crit">Critical Defects AQL</label>
+      <select id="aql-crit">
+        <option value="0" selected>0 (None accepted)</option>
+        <option value="0.065">0.065</option>
+        <option value="0.10">0.10</option>
+        <option value="0.15">0.15</option>
+        <option value="0.25">0.25</option>
+        <option value="0.40">0.40</option>
+        <option value="0.65">0.65</option>
+      </select>
+    </div>
+    <div class="aql-field">
+      <label for="aql-maj">Major Defects AQL</label>
+      <select id="aql-maj">
+        <option value="0.65">0.65</option>
+        <option value="1.0">1.0</option>
+        <option value="1.5">1.5</option>
+        <option value="2.5" selected>2.5 (Common default)</option>
+        <option value="4.0">4.0</option>
+      </select>
+    </div>
+    <div class="aql-field">
+      <label for="aql-min">Minor Defects AQL</label>
+      <select id="aql-min">
+        <option value="1.0">1.0</option>
+        <option value="1.5">1.5</option>
+        <option value="2.5">2.5</option>
+        <option value="4.0" selected>4.0 (Common default)</option>
+        <option value="6.5">6.5</option>
+      </select>
+    </div>
+  </div>
+  <div class="aql-out" aria-live="polite">
+    <div class="aql-top">
+      <div><span class="aql-stat-k">Code Letter</span><span class="aql-stat-v" id="out-code">L</span></div>
+      <div><span class="aql-stat-k">Base Sample Size</span><span class="aql-stat-v" id="out-sample">200 units</span></div>
+      <div><span class="aql-stat-k">Lot Band</span><span class="aql-stat-v" id="out-band" style="font-size:1.1rem;color:rgba(255,255,255,0.92)">3,201 – 10,000</span></div>
+    </div>
+    <div class="aql-res-grid">
+      <div class="aql-res-card">
+        <div class="aql-res-title">Critical (AQL <span id="lbl-crit">0</span>)</div>
+        <div class="aql-res-num" id="out-crit">Accept: 0 · Reject: 1</div>
+        <div class="aql-res-meta" id="meta-crit">Sample: 200 units</div>
+      </div>
+      <div class="aql-res-card is-maj">
+        <div class="aql-res-title">Major (AQL <span id="lbl-maj">2.5</span>)</div>
+        <div class="aql-res-num" id="out-maj">Accept: 10 · Reject: 11</div>
+        <div class="aql-res-meta" id="meta-maj">Sample: 200 units</div>
+      </div>
+      <div class="aql-res-card is-min">
+        <div class="aql-res-title">Minor (AQL <span id="lbl-min">4.0</span>)</div>
+        <div class="aql-res-num" id="out-min">Accept: 14 · Reject: 15</div>
+        <div class="aql-res-meta" id="meta-min">Sample: 200 units</div>
+      </div>
+    </div>
+  </div>
+  <p class="aql-note" id="out-note">Reference calculation based on ISO 2859-1 normal single sampling. When an arrow rule changes the sample size for a specific AQL, the adjusted sample is shown in that card. Always confirm contract terms against the published standard.</p>
+  <div class="aql-foot">
+    <span style="font-size:0.86rem;color:var(--navy);font-weight:600">Need an inspector in China to run this AQL check before balance payment?</span>
+    <a href="/#contact" class="btn-c" data-service="pre-shipment-inspection">Book Pre-Shipment Inspection</a>
+  </div>
+</div>
+
 <div class="section prose"><div class="section-label">AQL</div><h2>What AQL means</h2>
 <p>AQL stands for Acceptance Quality Limit. In ISO 2859-1 it is the worst quality level that is still considered acceptable as a process average when lots are inspected one after another. In day-to-day trade it works as the agreed pass-or-fail limit: it says how many defects the sample may contain before the lot is rejected.</p>
 <p>ISO 2859-1 sets out sampling schemes for lot-by-lot inspection by attributes. ANSI/ASQ Z1.4 is the American counterpart, and buyers and inspection companies use the two names interchangeably.</p>
@@ -339,6 +448,91 @@ footer{background:var(--navy);padding:2rem 3rem;display:flex;justify-content:spa
 
 </div>
 </div>
+
+<script>
+(function(){
+  var BANDS=[
+    {max:8,label:'2 – 8',G1:'A',G2:'A',G3:'B',S1:'A',S2:'A',S3:'A',S4:'A'},
+    {max:15,label:'9 – 15',G1:'A',G2:'B',G3:'C',S1:'A',S2:'A',S3:'A',S4:'A'},
+    {max:25,label:'16 – 25',G1:'B',G2:'C',G3:'D',S1:'A',S2:'A',S3:'B',S4:'B'},
+    {max:50,label:'26 – 50',G1:'C',G2:'D',G3:'E',S1:'A',S2:'B',S3:'B',S4:'C'},
+    {max:90,label:'51 – 90',G1:'C',G2:'E',G3:'F',S1:'B',S2:'B',S3:'C',S4:'C'},
+    {max:150,label:'91 – 150',G1:'D',G2:'F',G3:'G',S1:'B',S2:'B',S3:'C',S4:'D'},
+    {max:280,label:'151 – 280',G1:'E',G2:'G',G3:'H',S1:'B',S2:'C',S3:'D',S4:'E'},
+    {max:500,label:'281 – 500',G1:'F',G2:'H',G3:'J',S1:'B',S2:'C',S3:'D',S4:'E'},
+    {max:1200,label:'501 – 1,200',G1:'G',G2:'J',G3:'K',S1:'C',S2:'C',S3:'E',S4:'F'},
+    {max:3200,label:'1,201 – 3,200',G1:'H',G2:'K',G3:'L',S1:'C',S2:'D',S3:'E',S4:'G'},
+    {max:10000,label:'3,201 – 10,000',G1:'J',G2:'L',G3:'M',S1:'C',S2:'D',S3:'F',S4:'G'},
+    {max:35000,label:'10,001 – 35,000',G1:'K',G2:'M',G3:'N',S1:'C',S2:'D',S3:'F',S4:'H'},
+    {max:150000,label:'35,001 – 150,000',G1:'L',G2:'N',G3:'P',S1:'D',S2:'E',S3:'G',S4:'J'},
+    {max:500000,label:'150,001 – 500,000',G1:'M',G2:'P',G3:'Q',S1:'D',S2:'E',S3:'G',S4:'J'},
+    {max:Infinity,label:'500,001+',G1:'N',G2:'Q',G3:'R',S1:'D',S2:'E',S3:'H',S4:'K'}
+  ];
+  var CODES=['A','B','C','D','E','F','G','H','J','K','L','M','N','P','Q','R'];
+  var SIZES={A:2,B:3,C:5,D:8,E:13,F:20,G:32,H:50,J:80,K:125,L:200,M:315,N:500,P:800,Q:1250,R:2000};
+  var TABLE={
+    '0.065':{L:[0,1],P:[1,2],Q:[2,3],R:[3,4]},
+    '0.10':{K:[0,1],N:[1,2],P:[2,3],Q:[3,4],R:[5,6]},
+    '0.15':{J:[0,1],M:[1,2],N:[2,3],P:[3,4],Q:[5,6],R:[7,8]},
+    '0.25':{H:[0,1],L:[1,2],M:[2,3],N:[3,4],P:[5,6],Q:[7,8],R:[10,11]},
+    '0.40':{G:[0,1],K:[1,2],L:[2,3],M:[3,4],N:[5,6],P:[7,8],Q:[10,11],R:[14,15]},
+    '0.65':{F:[0,1],J:[1,2],K:[2,3],L:[3,4],M:[5,6],N:[7,8],P:[10,11],Q:[14,15],R:[21,22]},
+    '1.0':{E:[0,1],H:[1,2],J:[2,3],K:[3,4],L:[5,6],M:[7,8],N:[10,11],P:[14,15],Q:[21,22]},
+    '1.5':{D:[0,1],G:[1,2],H:[2,3],J:[3,4],K:[5,6],L:[7,8],M:[10,11],N:[14,15],P:[21,22]},
+    '2.5':{C:[0,1],F:[1,2],G:[2,3],H:[3,4],J:[5,6],K:[7,8],L:[10,11],M:[14,15],N:[21,22]},
+    '4.0':{B:[0,1],E:[1,2],F:[2,3],G:[3,4],H:[5,6],J:[7,8],K:[10,11],L:[14,15],M:[21,22]},
+    '6.5':{A:[0,1],D:[1,2],E:[2,3],F:[3,4],G:[5,6],H:[7,8],J:[10,11],K:[14,15],L:[21,22]}
+  };
+  var UP_ARROW={'0.065':['N'],'0.10':['M'],'0.15':['L'],'0.25':['K'],'0.40':['J'],'0.65':['H'],'1.0':['G','R'],'1.5':['F','Q','R'],'2.5':['E','P','Q','R'],'4.0':['D','N','P','Q','R'],'6.5':['C','M','N','P','Q','R']};
+  function lookup(code,aql,lot){
+    if(aql==='0'){
+      var n0=Math.min(SIZES[code],lot);
+      return {ac:0,re:1,n:n0,code:code,full:SIZES[code]>=lot,arrow:false};
+    }
+    var col=TABLE[aql], idx=CODES.indexOf(code), used=code, arrow=false;
+    if(!col[used]){
+      arrow=true;
+      var goUp=(UP_ARROW[aql]||[]).indexOf(code)>-1;
+      if(goUp){
+        for(var i=idx-1;i>=0;i--){if(col[CODES[i]]){used=CODES[i];break;}}
+      }else{
+        for(var j=idx+1;j<CODES.length;j++){if(col[CODES[j]]){used=CODES[j];break;}}
+      }
+    }
+    var pair=col[used], rawN=SIZES[used], effN=Math.min(rawN,lot);
+    return {ac:pair[0],re:pair[1],n:effN,code:used,full:rawN>=lot,arrow:arrow};
+  }
+  function fmt(n){return n.toLocaleString('en-US');}
+  function update(){
+    var lotEl=document.getElementById('aql-lot');
+    var lot=parseInt(lotEl.value,10);
+    if(isNaN(lot)||lot<2) lot=2;
+    var lvl=document.getElementById('aql-level').value;
+    var band=BANDS[BANDS.length-1];
+    for(var i=0;i<BANDS.length;i++){if(lot<=BANDS[i].max){band=BANDS[i];break;}}
+    var code=band[lvl];
+    var baseN=Math.min(SIZES[code],lot);
+    document.getElementById('out-code').textContent=code;
+    document.getElementById('out-sample').textContent=fmt(baseN)+' units'+(SIZES[code]>=lot?' (100%)':'');
+    document.getElementById('out-band').textContent=band.label;
+    [['crit','aql-crit'],['maj','aql-maj'],['min','aql-min']].forEach(function(p){
+      var val=document.getElementById(p[1]).value;
+      var r=lookup(code,val,lot);
+      document.getElementById('lbl-'+p[0]).textContent=val;
+      document.getElementById('out-'+p[0]).textContent='Accept: '+r.ac+' · Reject: '+r.re;
+      var meta='Sample: '+fmt(r.n)+' units';
+      if(r.full) meta='Inspect 100% of lot ('+fmt(lot)+' units)';
+      else if(r.arrow) meta='Arrow rule → Code '+r.code+' ('+fmt(r.n)+' units)';
+      document.getElementById('meta-'+p[0]).textContent=meta;
+    });
+  }
+  ['aql-lot','aql-level','aql-crit','aql-maj','aql-min'].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el){el.addEventListener('input',update);el.addEventListener('change',update);}
+  });
+  update();
+})();
+</script>
 
 <div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><p>Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p><p>Based in Guangzhou. English and Spanish service. We charge the client only — no commission from factories.</p></div><div><div class="sv-foot-h">Services</div><ul class="sv-foot-list"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></div><div><div class="sv-foot-h">Site</div><ul class="sv-foot-list"><li><a href="/blog">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li><li><a href="/press">Press</a></li><li><a href="/impartiality">Impartiality</a></li></ul></div><div><div class="sv-foot-h">Follow & chat</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · All rights reserved</div><div class="sv-foot-links"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a></div><div><span>Verified on</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Back to top</span></button></div></div></div>
 
