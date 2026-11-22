@@ -350,8 +350,56 @@ footer{
   ]
 }
 </script>
-<style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}</style>
+<style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}
+.faq-sec{max-width:980px;margin:0 auto;padding:64px 24px;border-top:1px solid rgba(15,23,42,.08)}
+.faq-sec .section-tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#1d4ed8;font-weight:700;margin-bottom:10px}
+.faq-sec .faq-heading{font-size:clamp(24px,3vw,32px);line-height:1.25;margin:0 0 28px;color:#0f172a;font-weight:700}
+.faq-list{display:grid;gap:16px}
+.faq-card{background:#fff;border:1px solid rgba(15,23,42,.1);border-radius:12px;padding:20px 22px}
+.faq-card h3{font-size:17px;line-height:1.4;margin:0 0 8px;color:#0f172a;font-weight:600}
+.faq-card p{margin:0;font-size:15px;line-height:1.65;color:#475569}
+</style>
 <link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la cantidad mínima para fabricar lotes pequeños en China con SourciaVera?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trabajamos con fábricas chinas que aceptan pedidos personalizados desde 50 hasta 500 unidades según el producto y el proceso de fabricación. Validamos el mínimo real (MOQ), el costo de molde o personalización y el precio directo de fábrica antes de que usted pague un anticipo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo cobra SourciaVera el servicio de compras para lotes pequeños?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La comisión de compras es del 10% sobre el valor del pedido y solo se cobra cuando usted confirma la operación. Si únicamente necesita verificar una fábrica que ya encontró, puede contratar la revisión remota de $49, videollamada de $120 por hora o visita presencial desde $449."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo se controla la calidad en un pedido de 50 a 500 unidades antes del embarque?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Antes de liberar el saldo final, realizamos inspección preembarque ($399 por día-hombre, con 20% de descuento tras consulta detallada) siguiendo tablas ISO 2859-1 AQL, con video sin editar y nosotros en cámara revisando medidas, acabado, empaque y etiquetas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo funciona el envío puerta a puerta hacia México y otros países de Latinoamérica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En México cotizamos el total puerta a puerta antes de producir, con despacho por agente aduanal con patente y declaración al valor real de factura; si usted cuenta con padrón de importadores, importa a su nombre para acreditar IVA. En otros países coordinamos la entrega con agente aduanal autorizado."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -437,6 +485,16 @@ footer{
 </section>
 
 <!-- Quote form -->
+<section class="faq-sec" id="faq">
+  <div class="section-tag">Preguntas Frecuentes</div>
+  <h2 class="faq-heading">Dudas comunes sobre fabricación en lotes pequeños desde China</h2>
+  <div class="faq-list">
+    <div class="faq-card"><h3>¿Cuál es la cantidad mínima para fabricar lotes pequeños en China con SourciaVera?</h3><p>Trabajamos con fábricas chinas que aceptan pedidos personalizados desde 50 hasta 500 unidades según el producto y el proceso de fabricación. Validamos el mínimo real (MOQ), el costo de molde o personalización y el precio directo de fábrica antes de que usted pague un anticipo.</p></div>
+    <div class="faq-card"><h3>¿Cómo cobra SourciaVera el servicio de compras para lotes pequeños?</h3><p>La comisión de compras es del 10% sobre el valor del pedido y solo se cobra cuando usted confirma la operación. Si únicamente necesita verificar una fábrica que ya encontró, puede contratar la revisión remota de $49, videollamada de $120 por hora o visita presencial desde $449.</p></div>
+    <div class="faq-card"><h3>¿Cómo se controla la calidad en un pedido de 50 a 500 unidades antes del embarque?</h3><p>Antes de liberar el saldo final, realizamos inspección preembarque ($399 por día-hombre, con 20% de descuento tras consulta detallada) siguiendo tablas ISO 2859-1 AQL, con video sin editar y nosotros en cámara revisando medidas, acabado, empaque y etiquetas.</p></div>
+    <div class="faq-card"><h3>¿Cómo funciona el envío puerta a puerta hacia México y otros países de Latinoamérica?</h3><p>En México cotizamos el total puerta a puerta antes de producir, con despacho por agente aduanal con patente y declaración al valor real de factura; si usted cuenta con padrón de importadores, importa a su nombre para acreditar IVA. En otros países coordinamos la entrega con agente aduanal autorizado.</p></div>
+  </div>
+</section>
 <section class="quote" id="quote-form">
   <div class="quote-inner">
     <div class="section-tag" style="text-align:center">Solicite una cotización</div>
