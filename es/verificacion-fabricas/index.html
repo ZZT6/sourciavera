@@ -234,7 +234,48 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
 /*nav-dd*/.nav-dd{position:relative;display:flex;align-items:center}.nav-dd-t::after{content:'';display:inline-block;margin-left:0.4rem;border:0.25rem solid transparent;border-top-color:currentColor;border-bottom:0;vertical-align:middle}.nav-dd-menu{display:none;position:absolute;top:100%;left:-1rem;min-width:15.625rem;background:var(--navy);border-top:2px solid var(--coral);padding:0.4rem 0;z-index:300;flex-direction:column;box-shadow:0 0.5rem 1.5rem rgba(0,0,0,0.25)}.nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{display:flex}.nav-dd-menu a{padding:0.65rem 1.1rem;white-space:nowrap}@media(max-width:768px){nav.nav-open .nav-dd{display:block}nav.nav-open .nav-dd-t::after{display:none}nav.nav-open .nav-dd-menu{display:flex;position:static;border-top:none;box-shadow:none;padding:0 0 0 1rem;min-width:0}nav.nav-open .nav-dd-menu a{white-space:normal;padding:0.65rem 0}}
 /*nav-mid*/@media(min-width:769px) and (max-width:1150px){.nav-hamburger{display:flex}.nav-cta{display:none}.nav-links{display:none}nav.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:0.75rem 1.5rem;gap:0;z-index:200;border-top:1px solid rgba(255,255,255,0.1)}nav.nav-open .nav-links a{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:0.88rem;text-transform:uppercase;letter-spacing:0.06em}nav.nav-open .nav-links a:last-child{border-bottom:none}}
 /*pg5*/@media(min-width:769px){.pricing-grid{grid-template-columns:repeat(5,1fr)}}
+.faq-sec{max-width:68rem;margin:0 auto;padding:3.5rem 3rem}.faq-list{display:flex;flex-direction:column;gap:1.1rem;margin-top:1.5rem}.faq-card{border:1px solid var(--border);border-left:0.25rem solid var(--coral);background:#fff;padding:1.25rem 1.4rem}.faq-card h3{font-size:1rem;font-weight:700;color:var(--navy);margin:0 0 0.45rem}.faq-card p{color:var(--muted);font-size:0.92rem;line-height:1.75;margin:0}@media(max-width:768px){.faq-sec{padding:2.5rem 1.5rem}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué incluye una verificación presencial de fábrica en China con SourciaVera?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Incluye visita presencial en planta, revisión de licencia comercial en GSXT para confirmar si es fabricante o intermediario, grabación de video sin editar con nosotros en cámara e informe escrito en español en 48 horas. El servicio parte de $449 por visita, con 20% de descuento tras consulta detallada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo contratar solo la verificación de fábrica sin usar el servicio de compras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Usted puede contratar únicamente la revisión remota de $49, la videollamada en vivo de $120 por hora, la verificación presencial desde $449 o la inspección preembarque de $399 por día-hombre, sin obligación de comprar a través de SourciaVera."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda el informe y en qué idioma se entrega?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La revisión remota de $49 y la verificación presencial desde $449 entregan informe escrito en español o inglés en 48 horas. En la verificación por videollamada en vivo ($120 por hora), la grabación completa se envía en un plazo de 24 horas al finalizar la llamada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿SourciaVera recibe comisiones de las fábricas chinas que inspecciona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Cobramos tarifas fijas únicamente al comprador y no aceptamos comisiones, reembolsos ni incentivos de ninguna fábrica china. Puede revisar las reglas completas en nuestra declaración de imparcialidad."
+      }
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
 <style id="rem-scale">html{font-size:clamp(100%,1.25vw,150%)}input[type=checkbox],input[type=radio]{width:.8125rem;height:.8125rem}img.article-img{width:100%}</style>
@@ -346,6 +387,17 @@ span.sv-off i{color:#fff;font-style:normal;opacity:0.95}
       <div class="price-val">10%</div>
       <div class="price-desc">Del valor del pedido · Gestión completa, flete incluido</div>
     </div>
+  </div>
+</section>
+
+<section class="faq-sec" id="faq">
+  <div class="section-tag">Preguntas Frecuentes</div>
+  <div class="section-title">Dudas comunes sobre la verificación de fábricas en China</div>
+  <div class="faq-list">
+    <div class="faq-card"><h3>¿Qué incluye una verificación presencial de fábrica en China con SourciaVera?</h3><p>Incluye visita presencial en planta, revisión de licencia comercial en GSXT para confirmar si es fabricante o intermediario, grabación de video sin editar con nosotros en cámara e informe escrito en español en 48 horas. El servicio parte de $449 por visita, con 20% de descuento tras consulta detallada.</p></div>
+    <div class="faq-card"><h3>¿Puedo contratar solo la verificación de fábrica sin usar el servicio de compras?</h3><p>Sí. Usted puede contratar únicamente la revisión remota de $49, la videollamada en vivo de $120 por hora, la verificación presencial desde $449 o la inspección preembarque de $399 por día-hombre, sin obligación de comprar a través de SourciaVera.</p></div>
+    <div class="faq-card"><h3>¿Cuánto tarda el informe y en qué idioma se entrega?</h3><p>La revisión remota de $49 y la verificación presencial desde $449 entregan informe escrito en español o inglés en 48 horas. En la verificación por videollamada en vivo ($120 por hora), la grabación completa se envía en un plazo de 24 horas al finalizar la llamada.</p></div>
+    <div class="faq-card"><h3>¿SourciaVera recibe comisiones de las fábricas chinas que inspecciona?</h3><p>No. Cobramos tarifas fijas únicamente al comprador y no aceptamos comisiones, reembolsos ni incentivos de ninguna fábrica china. Puede revisar las reglas completas en nuestra declaración de imparcialidad.</p></div>
   </div>
 </section>
 
