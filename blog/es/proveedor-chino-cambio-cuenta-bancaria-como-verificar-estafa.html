@@ -173,6 +173,24 @@
   <p>El segundo caso famoso golpea directamente el corazón de las importaciones desde China y Hong Kong. En agosto de 2015, la firma tecnológica estadounidense <strong>Ubiquiti Networks</strong> informó oficialmente ante la <a href="https://www.sec.gov/" target="_blank" rel="noopener">Comisión de Bolsa y Valores de EE. UU. (SEC, Formulario 8-K)</a> que había sufrido una pérdida de <strong>$46.7 millones de dólares</strong> mediante ingeniería social y suplantación de correos electrónicos dirigidos a su departamento financiero. Los atacantes lograron que se ejecutaran transferencias bancarias internacionales desde su <strong>filial registrada en Hong Kong</strong> hacia cuentas extranjeras controladas por terceros, revelando debilidades críticas en los controles de verificación de giros internacionales.</p>
   <p>La lección práctica para cualquier importador mexicano o latinoamericano es inmediata: cuando reciba un correo avisando "nuestra cuenta en China está en auditoría fiscal, transfiera el 70% restante a esta nueva cuenta en Hong Kong", <strong>no está ante un trámite rutinario, sino ante el guion exacto de los mayores fraudes BEC de la historia corporativa</strong>.</p>
 
+  <h2>Cómo Empieza Realmente el Hackeo: El Correo Falso que Nos Llegó a SourciaVera ("Your mailbox is 100% full")</h2>
+  <p>Muchos compradores nos preguntan: <em>"¿Cómo demonios entra el estafador al correo real de una fábrica china o de una empresa de comercio exterior para leer nuestras facturas?"</em> La respuesta rara vez es un hackeo de película. Casi siempre empieza con un anzuelo de phishing cotidiano tan creíble que logra engañar a la inmensa mayoría de los empleados ocupados.</p>
+  <p>En <strong>SourciaVera</strong> nos intentaron exactamente ese ataque en nuestra propia cuenta corporativa <code>info@sourciavera.com</code>. Recibimos un correo limpio y urgente con el encabezado amarillo <em>"SYSTEM NOTICE: AUTOMATED ALERT"</em> y el aviso en rojo <strong>"Your mailbox is 100% full"</strong>, afirmando que la cuenta había alcanzado su límite máximo y no podría recibir ni enviar correos hasta pulsar el botón rojo <strong>"Manage Storage Space"</strong>. Al hacer clic, la página pedía introducir el usuario y la contraseña del correo para "liberar espacio".</p>
+
+  <figure class="body-fig" data-fig="sourciavera-phishing-mailbox-100-full-real">
+    <img src="/images/sourciavera-phishing-mailbox-100-full-real.webp" alt="Captura real del correo de phishing enviado a info@sourciavera.com simulando que el buzón está al 100 por ciento de capacidad con botón rojo Manage Storage Space" width="1200" height="630" loading="lazy">
+    <figcaption class="figure-caption">Captura real del intento de phishing recibido en nuestra propia cuenta info@sourciavera.com: así roban las contraseñas de correo los atacantes BEC antes de enviarle una factura con cuenta bancaria modificada.</figcaption>
+  </figure>
+
+  <h3>Por qué nuestro fundador detectó la estafa al instante (5 filtros que usted puede aplicar hoy)</h3>
+  <ol>
+    <li><strong>La paradoja técnica del buzón lleno:</strong> Si un buzón de correo corporativo estuviera de verdad al <strong>100% de su capacidad</strong>, el servidor rechazaría correos entrantes —no le entregaría un aviso HTML diseñado con botón rojo pidiéndole iniciar sesión en una web externa.</li>
+    <li><strong>Dominio imitado y enlace externo en el botón:</strong> El atacante falsifica el nombre visible o usa un dominio similar al de su empresa; al pasar el cursor sobre <em>"Manage Storage Space"</em> (sin hacer clic), la URL real apunta a un servidor desconocido, nunca al panel oficial de su proveedor de correo (como Google Workspace, Microsoft 365 o Zoho).</li>
+    <li><strong>Ningún proveedor legítimo pide su contraseña por correo:</strong> Para ver cuánto espacio ocupa su bandeja de entrada, usted entra directo escribiendo la dirección de su panel de correo en el navegador, jamás desde un botón incrustado en un correo de alerta.</li>
+    <li><strong>Urgencia artificial ("preventing you from sending or receiving"):</strong> En pleno despacho de pedidos y cotizaciones, amenazar con bloquear correos comerciales empuja a vendedores de fábricas chinas o compradores distraídos a escribir su clave en 10 segundos sin revisar la barra de direcciones.</li>
+    <li><strong>Conexión directa con la estafa de cambio de cuenta bancaria:</strong> En cuanto un empleado de la fábrica china cae en un correo idéntico a este y entrega su contraseña, el atacante entra silenciosamente al buzón real, crea una regla oculta de reenvío, lee sus conversaciones durante semanas y, justo cuando toca pagar el <strong>70% del saldo</strong>, envía un PDF con una cuenta bancaria distinta.</li>
+  </ol>
+
   <h2>Protocolo de 5 Pasos Para Verificar una Cuenta Nueva</h2>
 
   <p>Antes de autorizar el giro en dólares desde su banco en México o Latinoamérica, ejecute estos cinco controles:</p>
