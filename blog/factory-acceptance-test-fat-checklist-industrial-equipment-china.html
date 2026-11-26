@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<meta charset="UTF-8">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var svInternal = false;
+  try {
+    var svQ = /[?&]sv_internal=([01])(?:&|#|$)/.exec(location.search);
+    if (svQ) { if (svQ[1] === '1') localStorage.setItem('sv_internal', '1'); else localStorage.removeItem('sv_internal'); svInternal = svQ[1] === '1'; }
+    else svInternal = localStorage.getItem('sv_internal') === '1';
+  } catch (e) { if (svQ && svQ[1] === '1') svInternal = true; }
+  if (location.hostname === 'sourciavera.com' || location.hostname === 'www.sourciavera.com') {
+    var svEU = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH','BR'], svAd = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }, svChoice = null;
+    try { var svM = document.cookie.match(/(?:^|; )cc_cookie=([^;]*)/); if (svM) svChoice = (JSON.parse(decodeURIComponent(svM[1])).categories || []).indexOf('analytics') > -1; } catch (e) {}
+    if (svChoice === null) {
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'denied', region: svEU, wait_for_update: 500 }, svAd));
+      gtag('consent', 'default', Object.assign({ analytics_storage: 'granted' }, svAd));
+    } else {
+      gtag('consent', 'default', Object.assign({ analytics_storage: svChoice ? 'granted' : 'denied', wait_for_update: 500 }, svAd));
+      if (!svChoice) window['ga-disable-G-TV9FH98VZK'] = true;
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-TV9FH98VZK', svInternal ? { traffic_type: 'internal' } : {});
+    document.head.appendChild(Object.assign(document.createElement('script'), { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-TV9FH98VZK' }));
+  }
+</script>
+<script src="/js/sv-site.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Factory Acceptance Test (FAT) Checklist in China</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="description" content="Field-ready Factory Acceptance Test (FAT) checklist for China machinery: 4-hour load runs, 480V/60Hz voltage checks, E-stop tests, and punch-list holdback.">
+<link rel="canonical" href="https://sourciavera.com/blog/factory-acceptance-test-fat-checklist-industrial-equipment-china">
+<link rel="alternate" type="application/rss+xml" title="SourciaVera Blog" href="https://sourciavera.com/rss.xml">
+<link rel="alternate" hreflang="en" href="https://sourciavera.com/blog/factory-acceptance-test-fat-checklist-industrial-equipment-china">
+<link rel="alternate" hreflang="x-default" href="https://sourciavera.com/blog/factory-acceptance-test-fat-checklist-industrial-equipment-china">
+<meta property="og:title" content="Factory Acceptance Test (FAT) Checklist in China | SourciaVera">
+<meta property="og:site_name" content="SourciaVera">
+<meta property="og:description" content="Field-ready Factory Acceptance Test (FAT) checklist for China machinery: 4-hour load runs, 480V/60Hz voltage checks, E-stop tests, and punch-list holdback.">
+<meta property="og:url" content="https://sourciavera.com/blog/factory-acceptance-test-fat-checklist-industrial-equipment-china">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sourciavera.com/images/factory-acceptance-test-fat-checklist-industrial-equipment-china-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sourciavera.com/images/factory-acceptance-test-fat-checklist-industrial-equipment-china-photo.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": "https://sourciavera.com/blog/factory-acceptance-test-fat-checklist-industrial-equipment-china#article",
+  "headline": "Factory Acceptance Test (FAT) Checklist for Industrial Equipment in China",
+  "description": "Field-ready Factory Acceptance Test (FAT) checklist for China machinery: 4-hour load runs, 480V/60Hz voltage checks, E-stop tests, and punch-list holdback.",
+  "inLanguage": "en",
+  "author": {"@type": "Person", "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp", "name": "Zhang Peng", "alternateName": "Miguel Lopez", "jobTitle": "Founder", "url": "https://sourciavera.com/about", "worksFor": {"@id": "https://sourciavera.com/#organization"}, "sameAs": "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"},
+  "publisher": {"@type": "Organization", "@id": "https://sourciavera.com/#organization", "name": "SourciaVera", "url": "https://sourciavera.com", "logo": {"@type": "ImageObject", "url": "https://sourciavera.com/favicon-192x192.png"}},
+  "image": "https://sourciavera.com/images/factory-acceptance-test-fat-checklist-industrial-equipment-china-photo.webp",
+  "datePublished": "2026-11-26",
+  "dateModified": "2026-11-26",
+  "mainEntityOfPage": "https://sourciavera.com/blog/factory-acceptance-test-fat-checklist-industrial-equipment-china",
+  "keywords": "factory acceptance test checklist china, fat inspection industrial equipment china, machinery load test china, 480v 60hz machinery check"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sourciavera.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sourciavera.com/blog"},
+    {"@type": "ListItem", "position": 3, "name": "Factory Acceptance Test (FAT) Checklist in China", "item": "https://sourciavera.com/blog/factory-acceptance-test-fat-checklist-industrial-equipment-china"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long should a Factory Acceptance Test load run take for Chinese machinery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plan for at least 2 to 4 hours of continuous operation under real or simulated production load after a 30-minute no-load warmup. Short 5-minute demo clips never reveal hydraulic oil leaks, motor overheating, or bearing vibration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify 480V 60Hz electrical compatibility during a China FAT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inspect the physical metal motor nameplates, VFD inverter ratings, and transformer wiring inside the control cabinet on unedited video—since Chinese plants run 380V 50Hz natively and sometimes quote export voltage without rewiring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should happen if the machine fails an item on the FAT checklist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Record every deficiency in a dated punch list with target fix dates and hold the 70% balance payment until a re-test confirms repairs on camera. Never allow crating or container loading before punch-list sign-off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does an on-site FAT replace ASME or CNAS laboratory certification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. An on-site FAT checks assembly quality, electrical interlocks, dimensional tolerances, and running performance, whereas pressure-vessel stamps or destructive alloy metallurgy require accredited CNAS, ISO 17025, or ASME inspection bodies."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://sourciavera.com/#founder", "image": "https://sourciavera.com/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp",
+  "name": "Zhang Peng",
+  "alternateName": "Miguel Lopez",
+  "jobTitle": "Founder",
+  "url": "https://sourciavera.com/about",
+  "worksFor": {
+    "@id": "https://sourciavera.com/#organization"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/"
+  ]
+}
+</script>
+<link rel="preload" href="/assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/roboto-slab-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/css/site.css?v=20261030"><script src="/js/sv-ui.js" defer></script>
+</head>
+<body class="sv2 sv-art">
+<div class="sv-header" role="banner" id="sv-header"><div class="sv-top"><div class="sv-wrap sv-top-in"><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><div class="sv-top-r"><div class="sv-lang"><a class="active" aria-current="true" lang="en">EN</a><a href="/es" lang="es">ES</a></div><a class="sv-wa-sm" href="https://wa.me/8613688057230?text=Hi%2C%20I%27d%20like%20to%20verify%20a%20supplier%20in%20China%20before%20paying." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><span>WhatsApp</span></a><button type="button" class="sv-burger" aria-expanded="false" aria-controls="sv-menu" aria-label="Menu"><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div class="sv-bar" role="navigation" aria-label="Main"><div class="sv-wrap"><ul class="sv-menu" id="sv-menu"><li><a href="/">Home</a></li><li><a href="/categories">Categories</a></li><li class="has-dd"><a href="/verification-services">Services</a><ul class="sv-dd"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></li><li class="has-dd"><a href="/how-to-choose">Resources</a><ul class="sv-dd"><li><a href="/inspection-standards">Inspection standards</a></li><li><a href="/sample-report">Sample report</a></li><li><a href="/impartiality">Impartiality</a></li><li><a href="/how-to-choose">How to choose a provider</a></li></ul></li><li><a href="/blog" aria-current="page">Blog</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li></ul></div></div></div>
+<main><div class="art-wrap"><div class="art-grid"><div class="share-rail" aria-label="Share"><a href="https://wa.me/?text=Factory%20Acceptance%20Test%20Checklist%20in%20China%20https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china&text=Factory%20Acceptance%20Test%20Checklist%20in%20China" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=Factory%20Acceptance%20Test%20Checklist%20in%20China&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" aria-label="Share by email" title="Share by email"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><article class="art-main"><div class="art-head"><div class="art-langs"><a class="back" href="/blog">Back to Blog</a></div><h1>Factory Acceptance Test (FAT) Checklist for Industrial Equipment in China</h1><div class="meta-row"><div class="meta-cat">Industrial Machinery</div><div class="article-meta"><strong>SourciaVera Team</strong><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><time>Nov 26, 2026</time><span class="meta-sub"> · 8 min read</span></div></div></div><figure class="art-hero"><div class="ill"><img fetchpriority="high" src="/images/factory-acceptance-test-fat-checklist-industrial-equipment-china-photo.webp" alt="Automated industrial assembly stations and testing lines inside a Chinese manufacturing plant" width="1200" height="630" loading="eager"></div><figcaption class="figure-caption">Automated industrial stations during pre-delivery testing; every FAT checkpoint must be signed off before crating.</figcaption></figure><div class="article-body">
+
+  <p><strong>The short answer:</strong> A complete China FAT checklist locks five checkpoints before you pay the 70% balance: 480V/60Hz motor and cabinet verification, 0.01 mm mechanical tolerances, a 2-to-4-hour continuous load run, live E-stop safety interlock testing, and a dated punch list signed before crating.</p>
+
+  <p><em>Verified as of November 26, 2026.</em></p>
+
+  <h2>Pre-FAT Setup: Nameplate, Voltage, and Raw Material Verification</h2>
+
+  <p>Before powering up a single motor, verify that the physical machine built on the shop floor matches your Proforma Invoice and the supplier's 18-digit GSXT legal registration. Chinese plants operate natively on 380V 50Hz three-phase power, while North American and Panamanian buyers routinely require 480V 60Hz or 220V 60Hz setups.</p>
+
+  <p>Always photograph the riveted metal motor nameplates, PLC and VFD inverter model stickers, and main transformer taps inside the electrical enclosure. For critical pressure vessels or certified steel grades, distinguish field verification from accredited testing: on-site FAT confirms component brands, dimensions, and running output, while destructive alloy chemistry or ASME U-Stamp compliance requires CNAS, ISO 17025, or authorized code bodies.</p>
+
+  <h2>The 6-Stage Factory Acceptance Test (FAT) Checklist for China Machinery</h2>
+
+  <p>Use our overview of <a href="/blog/factory-acceptance-test-fat-industrial-equipment-china">what a Factory Acceptance Test covers for China equipment</a> alongside this six-stage field checklist when inspecting <a href="/categories/industrial-equipment">industrial equipment in China</a>:</p>
+
+  <ol>
+    <li><strong>Electrical cabinet &amp; voltage audit:</strong> Confirm 480V/60Hz (or contract voltage), phase sequence, grounding continuity, DIN-rail labeling, and matching breaker amperage using a calibrated multimeter and clamp meter.</li>
+    <li><strong>Mechanical tolerances &amp; visual finish:</strong> Measure critical shaft bores, plate thicknesses, and frame alignment with a 0.01 mm digital caliper under 500+ lux lighting at 50 cm, checking welds for porosity and paint adhesion.</li>
+    <li><strong>30-minute no-load warmup:</strong> Run motors, conveyors, and gearboxes unloaded for 30 minutes to verify rotation direction, abnormal bearing noise, and smooth belt or chain tracking.</li>
+    <li><strong>2-to-4-hour continuous load run:</strong> Feed actual or simulated material for 2–4 hours, logging steady amp draw, hydraulic pressure gauges, throughput per hour, and bearing housing temperature stabilization.</li>
+    <li><strong>Safety interlocks &amp; E-stop shutdown:</strong> Press every Emergency Stop button and open interlocked safety guards under live power to confirm immediate power cut and zero unintended restart.</li>
+    <li><strong>Punch list, spares &amp; export crating:</strong> Log any defects on a numbered punch list, hold final payment until re-tested on camera, count spare wear parts, and verify bolted steel skids or fumigated ISPM-15 wooden crates for heavy units over 40 kg.</li>
+  </ol>
+
+  <div class="table-wrap" style="overflow-x:auto">
+  <table>
+    <caption>6-Stage Factory Acceptance Test (FAT) checklist for Chinese industrial machinery with holdback triggers (SourciaVera field protocol, checked November 26, 2026).</caption>
+    <thead><tr><th scope="col">FAT Stage</th><th scope="col">Instrument or Test Method</th><th scope="col">Target Verification Standard</th><th scope="col">Holdback Red Flag</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">1. Power &amp; Cabinet</th><td>Clamp meter, multimeter, nameplate check</td><td>Matches 480V/60Hz (or PO spec) + clean grounding</td><td>380V 50Hz components or missing labels</td></tr>
+      <tr><th scope="row">2. Tolerances &amp; Welds</th><td>0.01 mm caliper + 500+ lux at 50 cm</td><td>Shafts/plates within ±0.1–0.5 mm drawing</td><td>Cracked welds, oil seepage, thin steel</td></tr>
+      <tr><th scope="row">3. No-Load Warmup</th><td>30-minute dry run + thermal reading</td><td>Smooth RPM, zero gear knock or rubbing</td><td>Hot bearings or misaligned pulleys</td></tr>
+      <tr><th scope="row">4. Full Load Run</th><td>2–4 hours feeding load + amp log</td><td>Steady output rate without trip or leak</td><td>VFD overload trip or hydraulic drop</td></tr>
+      <tr><th scope="row">5. Safety &amp; E-Stop</th><td>Live E-stop + guard interlock trigger</td><td>Instant full stop; manual reset required</td><td>Bypassed switches or delayed braking</td></tr>
+      <tr><th scope="row">6. Punch List &amp; Crate</th><td>Signed fix log + ISPM-15 wood crate</td><td>100% items closed before balance transfer</td><td>Supplier pushes crating before re-test</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>How to Link Your FAT Checklist to Payment Control and AQL Standards</h2>
+
+  <p>Never wire your remaining balance based on a 90-second edited WhatsApp clip. Pair this FAT checklist with the contract controls in our <a href="/blog/deposit-protection-balance-payment-control-china-equipment">deposit protection and balance payment guide</a> so final payment waits until punch-list items pass re-inspection.</p>
+
+  <p>For multi-unit equipment lots or spare wear-part shipments, calculate sample counts with our free <a href="/inspection-standards#aql-calculator">ISO 2859-1 AQL sampling calculator</a>, attach our <a href="/downloads/sourciavera-psi-inspection-checklist-en.pdf">PSI inspection checklist PDF</a> to your purchase order, and inspect our <a href="/sample-report">10-section sample verification report PDF</a> to see how findings are documented.</p>
+
+  <h2>How SourciaVera Executes Industrial FAT Checks in China</h2>
+
+  <p>From our Guangzhou base, SourciaVera attends industrial FAT sessions across Guangdong and neighboring manufacturing hubs under our <a href="/supply-chain-supervision-china">supply chain supervision service</a> ($399/man-day for focused testing, $449+ for full plant verification with 48-hour report, or $120/hour live video checks). Because we bill only the buyer and accept zero factory commissions, our team films the entire cabinet inspection, load run gauges, and E-stop shutdowns in continuous unedited video before you release the final balance.</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How long should a Factory Acceptance Test load run take for Chinese machinery?</h3>
+  <p>Plan for at least 2 to 4 hours of continuous operation under real or simulated production load after a 30-minute no-load warmup. Short 5-minute demo clips never reveal hydraulic oil leaks, motor overheating, or bearing vibration.</p>
+
+  <h3>How do I verify 480V 60Hz electrical compatibility during a China FAT?</h3>
+  <p>Inspect the physical metal motor nameplates, VFD inverter ratings, and transformer wiring inside the control cabinet on unedited video—since Chinese plants run 380V 50Hz natively and sometimes quote export voltage without rewiring.</p>
+
+  <h3>What should happen if the machine fails an item on the FAT checklist?</h3>
+  <p>Record every deficiency in a dated punch list with target fix dates and hold the 70% balance payment until a re-test confirms repairs on camera. Never allow crating or container loading before punch-list sign-off.</p>
+
+  <h3>Does an on-site FAT replace ASME or CNAS laboratory certification?</h3>
+  <p>No. An on-site FAT checks assembly quality, electrical interlocks, dimensional tolerances, and running performance, whereas pressure-vessel stamps or destructive alloy metallurgy require accredited CNAS, ISO 17025, or ASME inspection bodies.</p>
+
+  <h2>Next Step Before Scheduling Your Equipment FAT</h2>
+
+  <p>Insert these six FAT stages and a mandatory punch-list holdback clause into your Proforma Invoice before production wraps up. Download the <a href="/downloads/sourciavera-psi-inspection-checklist-en.pdf">PSI inspection checklist PDF</a> and verify your <a href="/inspection-standards#aql-calculator">AQL sample thresholds</a> today.</p>
+
+  <p class="fine-print">I provide supplier verification and sourcing services, so you should treat my recommendation accordingly. SourciaVera is not a licensed electrical engineering firm, testing laboratory, or customs broker, and nothing here is engineering certification, customs, or legal advice.</p>
+
+  <aside class="author-box" aria-label="About the author">
+    <div class="author-box-head"><img class="author-avatar" src="/assets/blog/visita-fabrica-casas-contenedor/zhang-peng-avatar.webp" alt="Zhang Peng (Miguel Lopez), founder of SourciaVera" width="50" height="50" loading="lazy"><div><div class="author-box-name">Zhang Peng (Miguel Lopez)</div><div class="author-box-role">Founder, SourciaVera</div></div></div>
+    <ul class="author-box-list"><li>From Guangzhou, with long hands-on experience in factories across Guangdong and neighboring provinces</li><li>Years of experience in foreign trade and international advertising</li><li>Works with a team that covers procurement, transport and logistics, and foreign trade</li><li>Films every on-site factory verification and gives the real video to the client</li></ul>
+    <p class="author-box-links"><a href="/about">About the author</a> &middot; <a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </aside>
+
+  <div class="cta-box">
+    <div class="cta-btns" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+      <a href="/#contact" class="cta-btn" data-service="factory-supervision">Book an industrial FAT inspection</a>
+      <a href="https://wa.me/8613688057230" class="cta-btn cta-btn-wa-secondary" style="background:transparent;color:#0B7A6E;border:2px solid #25D366;padding:calc(0.85rem - 2px) calc(2rem - 2px)">Chat on WhatsApp</a>
+    </div>
+  </div>
+</div><div class="share-row"><span>Share</span><a href="https://wa.me/?text=Factory%20Acceptance%20Test%20Checklist%20in%20China%20https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" target="_blank" rel="noopener" aria-label="Share on Facebook" title="Share on Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china&text=Factory%20Acceptance%20Test%20Checklist%20in%20China" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="mailto:?subject=Factory%20Acceptance%20Test%20Checklist%20in%20China&body=https%3A%2F%2Fsourciavera.com%2Fblog%2Ffactory-acceptance-test-fat-checklist-industrial-equipment-china" aria-label="Share by email" title="Share by email"><svg class="st" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a></div><div class="rel-topics"><div class="side-h rel-h">Related topics</div><span class="tag">Industrial Machinery</span><span class="tag">FAT Inspection</span></div></article><aside class="art-side"><div class="side-card"><div class="sc-tag">Remote check</div><p class="sc-price">$49</p><div class="sc-h">Remote supplier check</div><p>Written report in 48 hours: company registration, manufacturer vs. trader, and payment-account match.</p><a class="btn btn-accent" href="/#remote-check">Request the $49 check</a></div><a class="side-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="sidebar"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Chat on WhatsApp</a><div class="side-pop"><div class="side-h">Popular articles</div><ol><li><a href="/blog/factory-acceptance-test-fat-industrial-equipment-china">Factory Acceptance Test (FAT) for Industrial Equipment</a></li><li><a href="/blog/deposit-protection-balance-payment-control-china-equipment">Deposit &amp; Balance Payment Control for China Equipment</a></li><li><a href="/blog/does-ce-or-iso-certificate-replace-pre-shipment-inspection-china">Does CE or ISO 9001 Replace Pre-Shipment Inspection?</a></li><li><a href="/blog/how-chinese-factories-cheat-inspectors-and-how-to-prevent-it">How Chinese Factories Cheat Quality Inspectors</a></li></ol></div></aside></div><section class="you-may-like"><div class="sv-wrap"><div class="section-title"><span>You may also like</span></div><div class="grid-4"><a class="rel-card" href="/blog/factory-acceptance-test-fat-industrial-equipment-china"><img src="/images/factory-acceptance-test-fat-industrial-equipment-china-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Industrial Machinery</small><span>Factory Acceptance Test (FAT) for Industrial Equipment</span></a><a class="rel-card" href="/blog/deposit-protection-balance-payment-control-china-equipment"><img src="/images/deposit-protection-balance-payment-control-china-equipment-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Payment Control</small><span>Deposit &amp; Balance Payment Control for China Equipment</span></a><a class="rel-card" href="/blog/does-ce-or-iso-certificate-replace-pre-shipment-inspection-china"><img src="/images/does-ce-or-iso-certificate-replace-pre-shipment-inspection-china-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Quality Control</small><span>Does CE or ISO 9001 Replace Pre-Shipment Inspection?</span></a><a class="rel-card" href="/blog/dpi-vs-psi-vs-container-loading-inspection-china"><img src="/images/product-inspection-cost-before-shipment-photo.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"><small>Quality Control</small><span>DPI vs PSI vs Container Loading Inspection in China</span></a></div></div></section></div></main>
+<div class="sv-footer" role="contentinfo"><div class="sv-wrap sv-foot-grid"><div><a class="sv-logo" href="/">Sourcia<span>Vera</span></a><p>Your team in China, start to finish: we choose the factory, buy, inspect on unedited video — with us on camera — and coordinate delivery to your door.</p><p>Based in Guangzhou. English and Spanish service. We charge the client only — no commission from factories.</p></div><div><div class="sv-foot-h">Services</div><ul class="sv-foot-list"><li><a href="/china-sourcing-process">China sourcing process</a></li><li><a href="/verification-services">Factory verification</a></li><li><a href="/live-video-factory-verification">Live video verification</a></li><li><a href="/china-sourcing-agent">China sourcing agent</a></li><li><a href="/supply-chain-supervision-china">Factory supervision</a></li><li><a href="/small-batch">Small batches</a></li><li><a href="/categories/auto-parts">Auto parts</a></li></ul></div><div><div class="sv-foot-h">Site</div><ul class="sv-foot-list"><li><a href="/blog">Blog</a></li><li><a href="/categories">Categories</a></li><li><a href="/about">About</a></li><li><a href="/#faq-shows">FAQ</a></li><li><a href="/contact">Contact</a></li><li><a href="/press">Press</a></li><li><a href="/impartiality">Impartiality</a></li></ul></div><div><div class="sv-foot-h">Follow &amp; chat</div><a class="sv-foot-wa" href="https://wa.me/8613688057230" target="_blank" rel="noopener" data-wa-location="footer"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class="sv-brand"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a><div class="sv-social"><a href="https://www.youtube.com/@sourciavera" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 576 512" aria-hidden="true" focusable="false" class=""><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a><a href="https://www.instagram.com/sourciavera/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61573330655140" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" class=""><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a><a href="https://www.linkedin.com/in/%E9%B9%8F-%E5%BC%A0-192465303/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a><a href="https://www.pinterest.com/sourciavera/" target="_blank" rel="noopener" aria-label="Pinterest" title="Pinterest"><svg viewBox="0 0 496 512" aria-hidden="true" focusable="false" class=""><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></a><a href="https://www.quora.com/profile/Miguel-Lopez-2706" target="_blank" rel="noopener" aria-label="Quora" title="Quora"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false" class=""><path d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z"/></svg></a></div></div></div><div class="sv-foot-bar"><div class="sv-wrap"><div>© 2026 SourciaVera · Guangzhou, China · All rights reserved</div><div class="sv-foot-links"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="#" role="button" data-cc="show-preferencesModal">Cookie Settings</a></div><div><span>Verified on</span> <a href="https://www.trustpilot.com/review/sourciavera.com" target="_blank" rel="noopener">Trustpilot</a> / <a href="https://clutch.co/profile/sourciavera" target="_blank" rel="noopener">Clutch</a></div><button type="button" class="sv-top-btn" data-sv-top><svg class="sv-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 19V5"/></svg><span>Back to top</span></button></div></div></div>
+
+<script type="module">
+import * as CookieConsent from 'https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.esm.js';
+CookieConsent.run({
+  guiOptions: { consentModal: { layout: 'bar', position: 'bottom' } },
+  onConsent: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  onChange: () => {
+    if (typeof gtag !== 'undefined') {
+      const analytics = CookieConsent.acceptedCategory('analytics') ? 'granted' : 'denied';
+      gtag('consent', 'update', {analytics_storage:analytics,ad_storage:analytics,ad_user_data:analytics,ad_personalization:analytics});
+    }
+  },
+  categories: {
+    necessary: { enabled: true, readOnly: true },
+    analytics: { autoClear: { cookies: [{ name: /^(_ga|_gid)/ }] } }
+  },
+  language: {
+    default: 'en',
+    translations: {
+      en: {
+        consentModal: {
+          title: 'We use cookies',
+          description: 'We use cookies to analyze site traffic and improve your experience.',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          showPreferencesBtn: 'Manage Preferences'
+        },
+        preferencesModal: {
+          title: 'Cookie Preferences',
+          acceptAllBtn: 'Accept All',
+          acceptNecessaryBtn: 'Reject All',
+          savePreferencesBtn: 'Save Preferences',
+          closeIconLabel: 'Close',
+          sections: [
+            { title: 'Necessary Cookies', description: 'Required for the website to function properly.', linkedCategory: 'necessary' },
+            { title: 'Analytics Cookies', description: 'Help us understand how visitors use our site via Google Analytics. All data is anonymized.', linkedCategory: 'analytics' }
+          ]
+        }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
